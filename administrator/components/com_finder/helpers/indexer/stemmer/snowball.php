@@ -21,10 +21,10 @@ class FinderIndexerStemmerSnowball extends FinderIndexerStemmer
 	/**
 	 * Method to stem a token and return the root.
 	 *
-	 * @param   string  $token  The token to stem.
-	 * @param   string  $lang   The language of the token.
+     * @param  string  $token  The token to stem.
+     * @param  string  $lang   The language of the token.
 	 *
-	 * @return  string  The root token.
+     * @return  string  The root token.
 	 *
 	 * @since   2.5
 	 */

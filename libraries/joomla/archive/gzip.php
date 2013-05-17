@@ -43,14 +43,14 @@ class JArchiveGzip implements JArchiveExtractable
 	/**
 	 * Extract a Gzip compressed file to a given path
 	 *
-	 * @param   string  $archive      Path to ZIP archive to extract
-	 * @param   string  $destination  Path to extract archive to
-	 * @param   array   $options      Extraction options [unused]
+     * @param  string  $archive      Path to ZIP archive to extract
+     * @param  string  $destination  Path to extract archive to
+     * @param  array   $options      Extraction options [unused]
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function extract($archive, $destination, array $options = array ())
 	{
@@ -174,7 +174,7 @@ class JArchiveGzip implements JArchiveExtractable
 	/**
 	 * Tests whether this adapter can unpack files on this computer.
 	 *
-	 * @return  boolean  True if supported
+     * @return  boolean  True if supported
 	 *
 	 * @since   11.3
 	 */
@@ -186,10 +186,10 @@ class JArchiveGzip implements JArchiveExtractable
 	/**
 	 * Get file data offset for archive
 	 *
-	 * @return  integer  Data position marker for archive
+     * @return  integer  Data position marker for archive
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function _getFilePosition()
 	{

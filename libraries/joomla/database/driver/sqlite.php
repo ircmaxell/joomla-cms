@@ -52,7 +52,7 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	/**
 	 * Disconnects the database.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -65,10 +65,10 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	/**
 	 * Drops a table from the database.
 	 *
-	 * @param   string   $tableName  The name of the database table to drop.
-	 * @param   boolean  $ifExists   Optionally specify that the table must exist before it is dropped.
+     * @param  string   $tableName  The name of the database table to drop.
+     * @param  boolean  $ifExists   Optionally specify that the table must exist before it is dropped.
 	 *
-	 * @return  JDatabaseDriverSqlite  Returns this object to support chaining.
+     * @return  JDatabaseDriverSqlite  Returns this object to support chaining.
 	 *
 	 * @since   12.1
 	 */
@@ -91,10 +91,10 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	 * Note: Using query objects with bound variables is
 	 * preferable to the below.
 	 *
-	 * @param   string   $text   The string to be escaped.
-	 * @param   boolean  $extra  Unused optional parameter to provide extra escaping.
+     * @param  string   $text   The string to be escaped.
+     * @param  boolean  $extra  Unused optional parameter to provide extra escaping.
 	 *
-	 * @return  string  The escaped string.
+     * @return  string  The escaped string.
 	 *
 	 * @since   12.1
 	 */
@@ -111,7 +111,7 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	/**
 	 * Method to get the database collation in use by sampling a text field of a table in the database.
 	 *
-	 * @return  mixed  The collation in use by the database or boolean false if not supported.
+     * @return  mixed  The collation in use by the database or boolean false if not supported.
 	 *
 	 * @since   12.1
 	 */
@@ -125,12 +125,12 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	 *
 	 * Note: Doesn't appear to have support in SQLite
 	 *
-	 * @param   mixed  $tables  A table name or a list of table names.
+     * @param  mixed  $tables  A table name or a list of table names.
 	 *
-	 * @return  array  A list of the create SQL for the tables.
+     * @return  array  A list of the create SQL for the tables.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function getTableCreate($tables)
 	{
@@ -145,13 +145,13 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	/**
 	 * Retrieves field information about a given table.
 	 *
-	 * @param   string   $table     The name of the database table.
-	 * @param   boolean  $typeOnly  True to only return field types.
+     * @param  string   $table     The name of the database table.
+     * @param  boolean  $typeOnly  True to only return field types.
 	 *
-	 * @return  array  An array of fields for the database table.
+     * @return  array  An array of fields for the database table.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function getTableColumns($table, $typeOnly = true)
 	{
@@ -202,12 +202,12 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	/**
 	 * Get the details list of keys for a table.
 	 *
-	 * @param   string  $table  The name of the table.
+     * @param  string  $table  The name of the table.
 	 *
-	 * @return  array  An array of the column specification for the table.
+     * @return  array  An array of the column specification for the table.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function getTableKeys($table)
 	{
@@ -244,10 +244,10 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	/**
 	 * Method to get an array of all tables in the database (schema).
 	 *
-	 * @return  array   An array of all the tables in the database.
+     * @return  array  An array of all the tables in the database.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function getTableList()
 	{
@@ -274,7 +274,7 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	/**
 	 * Get the version of the database connector.
 	 *
-	 * @return  string  The database connector version.
+     * @return  string  The database connector version.
 	 *
 	 * @since   12.1
 	 */
@@ -289,12 +289,12 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	/**
 	 * Select a database for use.
 	 *
-	 * @param   string  $database  The name of the database to select for use.
+     * @param  string  $database  The name of the database to select for use.
 	 *
-	 * @return  boolean  True if the database was successfully selected.
+     * @return  boolean  True if the database was successfully selected.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function select($database)
 	{
@@ -310,7 +310,7 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	 * you can only set the character set when the connection
 	 * is created.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   12.1
 	 */
@@ -324,12 +324,12 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	/**
 	 * Locks a table in the database.
 	 *
-	 * @param   string  $table  The name of the table to unlock.
+     * @param  string  $table  The name of the table to unlock.
 	 *
-	 * @return  JDatabaseDriverSqlite  Returns this object to support chaining.
+     * @return  JDatabaseDriverSqlite  Returns this object to support chaining.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function lockTable($table)
 	{
@@ -339,15 +339,15 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	/**
 	 * Renames a table in the database.
 	 *
-	 * @param   string  $oldTable  The name of the table to be renamed
-	 * @param   string  $newTable  The new name for the table.
-	 * @param   string  $backup    Not used by Sqlite.
-	 * @param   string  $prefix    Not used by Sqlite.
+     * @param  string  $oldTable  The name of the table to be renamed
+     * @param  string  $newTable  The new name for the table.
+     * @param  string  $backup    Not used by Sqlite.
+     * @param  string  $prefix    Not used by Sqlite.
 	 *
-	 * @return  JDatabaseDriverSqlite  Returns this object to support chaining.
+     * @return  JDatabaseDriverSqlite  Returns this object to support chaining.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function renameTable($oldTable, $newTable, $backup = null, $prefix = null)
 	{
@@ -359,10 +359,10 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	/**
 	 * Unlocks tables in the database.
 	 *
-	 * @return  JDatabaseDriverSqlite  Returns this object to support chaining.
+     * @return  JDatabaseDriverSqlite  Returns this object to support chaining.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function unlockTables()
 	{
@@ -372,7 +372,7 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	/**
 	 * Test to see if the PDO ODBC connector is available.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   12.1
 	 */

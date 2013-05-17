@@ -86,7 +86,7 @@ class JInstallerExtension extends JObject
 	/**
 	 * Constructor
 	 *
-	 * @param   SimpleXMLElement  $element  A SimpleXMLElement from which to load data from
+     * @param  SimpleXMLElement  $element  A SimpleXMLElement from which to load data from
 	 *
 	 * @since  3.1
 	 */
@@ -156,7 +156,7 @@ class JExtension extends JInstallerExtension
 	/**
 	 * Constructor
 	 *
-	 * @param   SimpleXMLElement  $element  A SimpleXMLElement from which to load data from
+     * @param  SimpleXMLElement  $element  A SimpleXMLElement from which to load data from
 	 *
 	 * @since  3.1
 	 */

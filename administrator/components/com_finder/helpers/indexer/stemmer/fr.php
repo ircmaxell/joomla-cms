@@ -32,10 +32,10 @@ class FinderIndexerStemmerFr extends FinderIndexerStemmer
 	/**
 	 * Method to stem a token and return the root.
 	 *
-	 * @param   string  $token  The token to stem.
-	 * @param   string  $lang   The language of the token.
+     * @param  string  $token  The token to stem.
+     * @param  string  $lang   The language of the token.
 	 *
-	 * @return  string  The root token.
+     * @return  string  The root token.
 	 *
 	 * @since   3.0
 	 */
@@ -69,7 +69,7 @@ class FinderIndexerStemmerFr extends FinderIndexerStemmer
 	/**
 	 * French stemmer rules variables.
 	 *
-	 * @return  array  The rules
+     * @return  array  The rules
 	 *
 	 * @since   3.0
 	 */
@@ -156,10 +156,10 @@ class FinderIndexerStemmerFr extends FinderIndexerStemmer
 	 * that can be applied to the given reversed input.
 	 * returns -1 if no rule can be applied, ie the stem has been found
 	 *
-	 * @param   string   $reversed_input
-	 * @param   integer  $rule_number
+     * @param  string   $reversed_input
+     * @param  integer  $rule_number
 	 *
-	 * @return  integer  Number of the first rule
+     * @return  integer  Number of the first rule
 	 *
 	 * @since   3.0
 	 */
@@ -187,9 +187,9 @@ class FinderIndexerStemmerFr extends FinderIndexerStemmer
 	/**
 	 * Check the acceptability of a stem for French language
 	 *
-	 * @param   string  $reversed_stem  The stem to check in reverse form
+     * @param  string  $reversed_stem  The stem to check in reverse form
 	 *
-	 * @return  boolean  True if stem is acceptable
+     * @return  boolean  True if stem is acceptable
 	 *
 	 * @since   3.0
 	 */
@@ -218,9 +218,9 @@ class FinderIndexerStemmerFr extends FinderIndexerStemmer
 	/**
 	 * Paice/Husk stemmer which returns a stem for the given $input
 	 *
-	 * @param   string  $input  The word for which we want the stem in UTF-8
+     * @param  string  $input  The word for which we want the stem in UTF-8
 	 *
-	 * @return  string  The stem
+     * @return  string  The stem
 	 *
 	 * @since   3.0
 	 */

@@ -17,10 +17,10 @@ class TestMockApplicationWeb
 	/**
 	 * Creates and instance of the mock JApplicationBase object.
 	 *
-	 * @param   object  $test     A test object.
-	 * @param   array   $options  A set of options to configure the mock.
+     * @param  object  $test     A test object.
+     * @param  array   $options  A set of options to configure the mock.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */

@@ -23,8 +23,8 @@ class JInputFiles extends JInput
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $source   Ignored.
-	 * @param   array  $options  Array of configuration parameters (Optional)
+     * @param  array  $source   Ignored.
+     * @param  array  $options  Array of configuration parameters (Optional)
 	 *
 	 * @since   12.1
 	 */
@@ -49,11 +49,11 @@ class JInputFiles extends JInput
 	/**
 	 * Gets a value from the input data.
 	 *
-	 * @param   string  $name     Name of the value to get.
-	 * @param   mixed   $default  Default value to return if variable does not exist.
-	 * @param   string  $filter   Filter to apply to the value.
+     * @param  string  $name     Name of the value to get.
+     * @param  mixed   $default  Default value to return if variable does not exist.
+     * @param  string  $filter   Filter to apply to the value.
 	 *
-	 * @return  mixed  The filtered input value.
+     * @return  mixed  The filtered input value.
 	 *
 	 * @since   11.1
 	 */
@@ -80,9 +80,9 @@ class JInputFiles extends JInput
 	/**
 	 * Method to decode a data array.
 	 *
-	 * @param   array  $data  The data array to decode.
+     * @param  array  $data  The data array to decode.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.1
 	 */
@@ -105,10 +105,10 @@ class JInputFiles extends JInput
 	/**
 	 * Sets a value
 	 *
-	 * @param   string  $name   Name of the value to set.
-	 * @param   mixed   $value  Value to assign to the input.
+     * @param  string  $name   Name of the value to set.
+     * @param  mixed   $value  Value to assign to the input.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */

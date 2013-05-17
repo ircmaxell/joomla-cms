@@ -23,7 +23,7 @@ class InstallerModelUpdate extends JModelList
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $config  An optional associative array of configuration settings.
+     * @param  array  $config  An optional associative array of configuration settings.
 	 *
 	 * @see     JController
 	 * @since   1.6
@@ -51,10 +51,10 @@ class InstallerModelUpdate extends JModelList
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @param   string  $ordering   An optional ordering field.
-	 * @param   string  $direction  An optional direction (asc|desc).
+     * @param  string  $ordering   An optional ordering field.
+     * @param  string  $direction  An optional direction (asc|desc).
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -84,7 +84,7 @@ class InstallerModelUpdate extends JModelList
 	/**
 	 * Method to get the database query
 	 *
-	 * @return  JDatabaseQuery  The database query
+     * @return  JDatabaseQuery  The database query
 	 *
 	 * @since   1.6
 	 */
@@ -138,10 +138,10 @@ class InstallerModelUpdate extends JModelList
 	/**
 	 * Finds updates for an extension.
 	 *
-	 * @param   int  $eid            Extension identifier to look for
-	 * @param   int  $cache_timeout  Cache timout
+     * @param  int  $eid            Extension identifier to look for
+     * @param  int  $cache_timeout  Cache timout
 	 *
-	 * @return  boolean Result
+     * @return  boolean  Result
 	 *
 	 * @since   1.6
 	 */
@@ -158,7 +158,7 @@ class InstallerModelUpdate extends JModelList
 	/**
 	 * Removes all of the updates from the table.
 	 *
-	 * @return  boolean result of operation
+     * @return  boolean  result of operation
 	 *
 	 * @since   1.6
 	 */
@@ -190,7 +190,7 @@ class InstallerModelUpdate extends JModelList
 	/**
 	 * Enables any disabled rows in #__update_sites table
 	 *
-	 * @return  boolean result of operation
+     * @return  boolean  result of operation
 	 *
 	 * @since   1.6
 	 */
@@ -222,9 +222,9 @@ class InstallerModelUpdate extends JModelList
 	 *
 	 * Sets the "result" state with the result of the operation.
 	 *
-	 * @param   array  $uids  Array[int] List of updates to apply
+     * @param  array  $uids  Array[int] List of updates to apply
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -256,9 +256,9 @@ class InstallerModelUpdate extends JModelList
 	/**
 	 * Handles the actual update installation.
 	 *
-	 * @param   JUpdate  $update  An update definition
+     * @param  JUpdate  $update  An update definition
 	 *
-	 * @return  boolean   Result of install
+     * @return  boolean  Result of install
 	 *
 	 * @since   1.6
 	 */
@@ -371,7 +371,7 @@ class InstallerModelUpdate extends JModelList
 	/**
 	 * Method to get the data that should be injected in the form.
 	 *
-	 * @return  mixed  The data for the form.
+     * @return  mixed  The data for the form.
 	 *
 	 * @since	2.5.2
 	 */

@@ -21,7 +21,7 @@ class InstallerControllerDatabase extends JControllerLegacy
 	/**
 	 * Tries to fix missing database updates
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */

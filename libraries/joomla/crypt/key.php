@@ -41,9 +41,9 @@ class JCryptKey
 	/**
 	 * Constructor.
 	 *
-	 * @param   string  $type     The key type.
-	 * @param   string  $private  The private key.
-	 * @param   string  $public   The public key.
+     * @param  string  $type     The key type.
+     * @param  string  $private  The private key.
+     * @param  string  $public   The public key.
 	 *
 	 * @since   12.1
 	 */
@@ -60,9 +60,9 @@ class JCryptKey
 	/**
 	 * Magic method to return some protected property values.
 	 *
-	 * @param   string  $name  The name of the property to return.
+     * @param  string  $name  The name of the property to return.
 	 *
-	 * @return  mixed
+     * @return  mixed
 	 *
 	 * @since   12.1
 	 */

@@ -50,7 +50,8 @@ class ContactModelContact extends JModelForm
 		$this->setState('params', $params);
 
 		$user = JFactory::getUser();
-		if ((!$user->authorise('core.edit.state', 'com_contact')) &&  (!$user->authorise('core.edit', 'com_contact'))){
+		if ((!$user->authorise('core.edit.state', 'com_contact')) &&  (!$user->authorise('core.edit', 'com_contact')))
+		{
 			$this->setState('filter.published', 1);
 			$this->setState('filter.archived', 2);
 		}
@@ -62,9 +63,9 @@ class ContactModelContact extends JModelForm
 	 * The base form is loaded from XML and then an event is fired
 	 *
 	 *
-	 * @param   array  $data		An optional array of data for the form to interrogate.
-	 * @param   boolean	$loadData	True if the form is to load its own data (default case), false if not.
-	 * @return  JForm	A JForm object on success, false on failure
+     * @param   array    $data      An optional array of data for the form to interrogate.
+     * @param   boolean  $loadData  True if the form is to load its own data (default case), false if not.
+     * @return  JForm    A JForm object on success, false on failure
 	 * @since   1.6
 	 */
 	public function getForm($data = array(), $loadData = true)
@@ -81,7 +82,8 @@ class ContactModelContact extends JModelForm
 		$contact = $this->_item[$id];
 		$params->merge($contact->params);
 
-		if (!$params->get('show_email_copy', 0)){
+		if (!$params->get('show_email_copy', 0))
+		{
 			$form->removeField('contact_email_copy');
 		}
 
@@ -100,9 +102,9 @@ class ContactModelContact extends JModelForm
 	/**
 	 * Gets a contact
 	 *
-	 * @param integer $pk  Id for the contact
+     * @param  integer  $pk  Id for the contact
 	 *
-	 * @return mixed Object or null
+     * @return  mixed  Object or null
 	 */
 	public function &getItem($pk = null)
 	{
@@ -193,12 +195,13 @@ class ContactModelContact extends JModelForm
 				$data->tags->getItemTags('com_contact.contact', $data->id);
 
 				// Compute access permissions.
-				if ($access = $this->getState('filter.access')) {
-
+				if ($access = $this->getState('filter.access'))
+				{
 					// If the access filter has been set, we already know this user can view.
 					$data->params->set('access-view', true);
 				}
-				else {
+				else
+				{
 					// If no access filter is set, the layout takes some responsibility for display of limited information.
 					$user = JFactory::getUser();
 					$groups = $user->getAuthorisedViewLevels();
@@ -207,7 +210,8 @@ class ContactModelContact extends JModelForm
 					{
 						$data->params->set('access-view', in_array($data->access, $groups));
 					}
-					else {
+					else
+					{
 						$data->params->set('access-view', in_array($data->access, $groups) && in_array($data->category_access, $groups));
 					}
 				}
@@ -377,9 +381,9 @@ class ContactModelContact extends JModelForm
 	/**
 	 * Increment the hit counter for the contact.
 	 *
-	 * @param   int  $pk  Optional primary key of the article to increment.
+     * @param  int  $pk  Optional primary key of the article to increment.
 	 *
-	 * @return  boolean  True if successful; false otherwise and internal error set.
+     * @return  boolean  True if successful; false otherwise and internal error set.
 	 *
 	 * @since   3.0
 	 */

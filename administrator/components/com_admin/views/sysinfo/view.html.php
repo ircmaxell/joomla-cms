@@ -68,7 +68,7 @@ class AdminViewSysinfo extends JViewLegacy
 	/**
 	 * Setup the SubMenu
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 * @note    Necessary for Hathor compatibility

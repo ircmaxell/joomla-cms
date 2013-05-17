@@ -39,8 +39,8 @@ class PlgSystemDebug extends JPlugin
 	/**
 	 * Constructor.
 	 *
-	 * @param   object  &$subject  The object to observe
-	 * @param   array   $config    An array that holds the plugin configuration
+     * @param  object  &$subject  The object to observe
+     * @param  array   $config    An array that holds the plugin configuration
 	 *
 	 * @since 1.5
 	 */
@@ -94,7 +94,7 @@ class PlgSystemDebug extends JPlugin
 	 * Add the CSS for debug. We can't do this in the constructor because
 	 * stuff breaks.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -221,7 +221,7 @@ class PlgSystemDebug extends JPlugin
 	/**
 	 * Method to check if the current user is allowed to see the debug information or not.
 	 *
-	 * @return  boolean  True is access is allowed
+     * @return  boolean  True is access is allowed
 	 *
 	 * @since   3.0
 	 */
@@ -255,10 +255,10 @@ class PlgSystemDebug extends JPlugin
 	/**
 	 * General display method.
 	 *
-	 * @param   string  $item    The item to display
-	 * @param   array   $errors  Errors occured during execution
+     * @param  string  $item    The item to display
+     * @param  array   $errors  Errors occured during execution
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   2.5
 	 */
@@ -303,11 +303,11 @@ class PlgSystemDebug extends JPlugin
 	 *
 	 * Called recursive.
 	 *
-	 * @param   string   $key      A session key
-	 * @param   mixed    $session  The session array, initially null
-	 * @param   integer  $id       The id is used for JS toggling the div
+     * @param  string   $key      A session key
+     * @param  mixed    $session  The session array, initially null
+     * @param  integer  $id       The id is used for JS toggling the div
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   2.5
 	 */
@@ -387,7 +387,7 @@ class PlgSystemDebug extends JPlugin
 	/**
 	 * Display errors.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   2.5
 	 */
@@ -423,7 +423,7 @@ class PlgSystemDebug extends JPlugin
 	/**
 	 * Display profile information.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   2.5
 	 */
@@ -442,7 +442,7 @@ class PlgSystemDebug extends JPlugin
 	/**
 	 * Display memory usage
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   2.5
 	 */
@@ -461,7 +461,7 @@ class PlgSystemDebug extends JPlugin
 	/**
 	 * Display logged queries.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   2.5
 	 */
@@ -589,7 +589,7 @@ class PlgSystemDebug extends JPlugin
 	/**
 	 * Displays errors in language files.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   2.5
 	 */
@@ -621,7 +621,7 @@ class PlgSystemDebug extends JPlugin
 	/**
 	 * Display loaded language files.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   2.5
 	 */
@@ -655,7 +655,7 @@ class PlgSystemDebug extends JPlugin
 	/**
 	 * Display untranslated language strings.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   2.5
 	 */
@@ -748,9 +748,9 @@ class PlgSystemDebug extends JPlugin
 	/**
 	 * Simple highlight for SQL queries.
 	 *
-	 * @param   string  $query  The query to highlight
+     * @param  string  $query  The query to highlight
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   2.5
 	 */
@@ -790,9 +790,9 @@ class PlgSystemDebug extends JPlugin
 	 *
 	 * Stolen from JError to prevent it's removal.
 	 *
-	 * @param   integer  $error  The error
+     * @param  integer  $error  The error
 	 *
-	 * @return  string  Contents of the backtrace
+     * @return  string  Contents of the backtrace
 	 *
 	 * @since   2.5
 	 */
@@ -856,10 +856,10 @@ class PlgSystemDebug extends JPlugin
 	 * Formats a link with a special value xdebug.file_link_format
 	 * from the php.ini file.
 	 *
-	 * @param   string  $file  The full path to the file.
-	 * @param   string  $line  The line number.
+     * @param  string  $file  The full path to the file.
+     * @param  string  $line  The line number.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   2.5
 	 */
@@ -888,7 +888,7 @@ class PlgSystemDebug extends JPlugin
 	 * Store log messages so they can be displayed later.
 	 * This function is passed log entries by JLogLoggerCallback.
 	 *
-	 * @param   JLogEntry  $entry  A log entry.
+     * @param  JLogEntry  $entry  A log entry.
 	 *
 	 * @since   3.1
 	 */
@@ -900,7 +900,7 @@ class PlgSystemDebug extends JPlugin
 	/**
 	 * Display log messages
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   3.1
 	 */

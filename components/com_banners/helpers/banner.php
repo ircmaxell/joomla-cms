@@ -19,7 +19,7 @@ abstract class BannerHelper
 	 * Checks if a URL is an image
 	 *
 	 * @param string
-	 * @return URL
+     * @return  URL
 	 */
 	public static function isImage($url)
 	{
@@ -31,7 +31,7 @@ abstract class BannerHelper
 	 * Checks if a URL is a Flash file
 	 *
 	 * @param string
-	 * @return URL
+     * @return  URL
 	 */
 	public static function isFlash($url)
 	{

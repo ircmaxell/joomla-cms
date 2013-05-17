@@ -37,8 +37,8 @@ class JUcmBase implements JUcm
 	/**
 	 * Instantiate the UcmBase.
 	 *
-	 * @param   string    $alias  The alias string
-	 * @param   JUcmType  $type   The type object
+     * @param  string    $alias  The alias string
+     * @param  JUcmType  $type   The type object
 	 *
 	 * @since   3.1
 	 */
@@ -54,14 +54,14 @@ class JUcmBase implements JUcm
 	/**
 	 * Store data to the appropriate table
 	 *
-	 * @param   array   $data        Data to be stored
-	 * @param   JTable  $table       JTable Object
-	 * @param   string  $primaryKey  The primary key name
+     * @param  array   $data        Data to be stored
+     * @param  JTable  $table       JTable Object
+     * @param  string  $primaryKey  The primary key name
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
-	 * @throws  Exception
+     * @throws  Exception
 	 */
 	protected function store($data, JTable $table = null, $primaryKey = null)
 	{
@@ -102,7 +102,7 @@ class JUcmBase implements JUcm
 	/**
 	 * Get the UCM Content type.
 	 *
-	 * @return  object  The UCM content type
+     * @return  object  The UCM content type
 	 *
 	 * @since   3.1
 	 */
@@ -116,10 +116,10 @@ class JUcmBase implements JUcm
 	/**
 	 * Method to map the base ucm fields
 	 *
-	 * @param   array     $original  Data array
-	 * @param   JUcmType  $type      UCM Content Type
+     * @param  array     $original  Data array
+     * @param  JUcmType  $type      UCM Content Type
 	 *
-	 * @return  array  Data array of UCM mappings
+     * @return  array  Data array of UCM mappings
 	 *
 	 * @since   3.1
 	 */

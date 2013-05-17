@@ -21,12 +21,12 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to get a group.
 	 *
-	 * @param   string   $id      The unique identifier for a group.
-	 * @param   string   $fields  Request fields beyond the default ones.
-	 * @param   integer  $start   Starting location within the result set for paginated returns.
-	 * @param   integer  $count   The number of results returned.
+     * @param  string   $id      The unique identifier for a group.
+     * @param  string   $fields  Request fields beyond the default ones.
+     * @param  integer  $start   Starting location within the result set for paginated returns.
+     * @param  integer  $count   The number of results returned.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -74,14 +74,14 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to find the groups a member belongs to.
 	 *
-	 * @param   string   $id                The unique identifier for a user.
-	 * @param   string   $fields            Request fields beyond the default ones.
-	 * @param   integer  $start             Starting location within the result set for paginated returns.
-	 * @param   integer  $count             The number of results returned.
-	 * @param   string   $membership_state  The state of the caller’s membership to the specified group.
+     * @param  string   $id                The unique identifier for a user.
+     * @param  string   $fields            Request fields beyond the default ones.
+     * @param  integer  $start             Starting location within the result set for paginated returns.
+     * @param  integer  $count             The number of results returned.
+     * @param  string   $membership_state  The state of the caller’s membership to the specified group.
 	 * 										Values are: non-member, awaiting-confirmation, awaiting-parent-group-confirmation, member, moderator, manager, owner.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -145,13 +145,13 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to find the groups a member belongs to.
 	 *
-	 * @param   string   $person_id  The unique identifier for a user.
-	 * @param   string   $group_id   The unique identifier for a group.
-	 * @param   string   $fields     Request fields beyond the default ones.
-	 * @param   integer  $start      Starting location within the result set for paginated returns.
-	 * @param   integer  $count      The number of results returned.
+     * @param  string   $person_id  The unique identifier for a user.
+     * @param  string   $group_id   The unique identifier for a group.
+     * @param  string   $fields     Request fields beyond the default ones.
+     * @param  integer  $start      Starting location within the result set for paginated returns.
+     * @param  integer  $count      The number of results returned.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -215,14 +215,14 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to change a groups settings.
 	 *
-	 * @param   string   $group_id          The unique identifier for a group.
-	 * @param   boolean  $show_logo         Show group logo in profile.
-	 * @param   string   $digest_frequency  E-mail digest frequency.
-	 * @param   boolean  $announcements     E-mail announcements from managers.
-	 * @param   boolean  $allow_messages    Allow messages from members.
-	 * @param   boolean  $new_post          E-mail for every new post.
+     * @param  string   $group_id          The unique identifier for a group.
+     * @param  boolean  $show_logo         Show group logo in profile.
+     * @param  string   $digest_frequency  E-mail digest frequency.
+     * @param  boolean  $announcements     E-mail announcements from managers.
+     * @param  boolean  $allow_messages    Allow messages from members.
+     * @param  boolean  $new_post          E-mail for every new post.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -283,14 +283,14 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to join a group.
 	 *
-	 * @param   string   $group_id          The unique identifier for a group.
-	 * @param   boolean  $show_logo         Show group logo in profile.
-	 * @param   string   $digest_frequency  E-mail digest frequency.
-	 * @param   boolean  $announcements     E-mail announcements from managers.
-	 * @param   boolean  $allow_messages    Allow messages from members.
-	 * @param   boolean  $new_post          E-mail for every new post.
+     * @param  string   $group_id          The unique identifier for a group.
+     * @param  boolean  $show_logo         Show group logo in profile.
+     * @param  string   $digest_frequency  E-mail digest frequency.
+     * @param  boolean  $announcements     E-mail announcements from managers.
+     * @param  boolean  $allow_messages    Allow messages from members.
+     * @param  boolean  $new_post          E-mail for every new post.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -354,9 +354,9 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to leave a group.
 	 *
-	 * @param   string  $group_id  The unique identifier for a group.
+     * @param  string  $group_id  The unique identifier for a group.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -387,15 +387,15 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to get dicussions for a group.
 	 *
-	 * @param   string   $id              The unique identifier for a group.
-	 * @param   string   $fields          Request fields beyond the default ones.
-	 * @param   integer  $start           Starting location within the result set for paginated returns.
-	 * @param   integer  $count           The number of results returned.
-	 * @param   string   $order           Sort order for posts. Valid for: recency, popularity.
-	 * @param   string   $category        Category of posts. Valid for: discussion
-	 * @param   string   $modified_since  Timestamp filter for posts created after the specified value.
+     * @param  string   $id              The unique identifier for a group.
+     * @param  string   $fields          Request fields beyond the default ones.
+     * @param  integer  $start           Starting location within the result set for paginated returns.
+     * @param  integer  $count           The number of results returned.
+     * @param  string   $order           Sort order for posts. Valid for: recency, popularity.
+     * @param  string   $category        Category of posts. Valid for: discussion
+     * @param  string   $modified_since  Timestamp filter for posts created after the specified value.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -461,17 +461,17 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to get posts a user started / participated in / follows for a group.
 	 *
-	 * @param   string   $group_id        The unique identifier for a group.
-	 * @param   string   $role            Filter for posts related to the caller. Valid for: creator, commenter, follower.
-	 * @param   string   $person_id       The unique identifier for a user.
-	 * @param   string   $fields          Request fields beyond the default ones.
-	 * @param   integer  $start           Starting location within the result set for paginated returns.
-	 * @param   integer  $count           The number of results returned.
-	 * @param   string   $order           Sort order for posts. Valid for: recency, popularity.
-	 * @param   string   $category        Category of posts. Valid for: discussion
-	 * @param   string   $modified_since  Timestamp filter for posts created after the specified value.
+     * @param  string   $group_id        The unique identifier for a group.
+     * @param  string   $role            Filter for posts related to the caller. Valid for: creator, commenter, follower.
+     * @param  string   $person_id       The unique identifier for a user.
+     * @param  string   $fields          Request fields beyond the default ones.
+     * @param  integer  $start           Starting location within the result set for paginated returns.
+     * @param  integer  $count           The number of results returned.
+     * @param  string   $order           Sort order for posts. Valid for: recency, popularity.
+     * @param  string   $category        Category of posts. Valid for: discussion
+     * @param  string   $modified_since  Timestamp filter for posts created after the specified value.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -551,10 +551,10 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to retrieve details about a post.
 	 *
-	 * @param   string  $post_id  The unique identifier for a post.
-	 * @param   string  $fields   Request fields beyond the default ones.
+     * @param  string  $post_id  The unique identifier for a post.
+     * @param  string  $fields   Request fields beyond the default ones.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -590,12 +590,12 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to retrieve all comments of a post.
 	 *
-	 * @param   string   $post_id  The unique identifier for a post.
-	 * @param   string   $fields   Request fields beyond the default ones.
-	 * @param   integer  $start    Starting location within the result set for paginated returns.
-	 * @param   integer  $count    The number of results returned.
+     * @param  string   $post_id  The unique identifier for a post.
+     * @param  string   $fields   Request fields beyond the default ones.
+     * @param  integer  $start    Starting location within the result set for paginated returns.
+     * @param  integer  $count    The number of results returned.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -643,11 +643,11 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to retrieve all comments of a post.
 	 *
-	 * @param   string  $group_id  The unique identifier for a group.
-	 * @param   string  $title     Post title.
-	 * @param   string  $summary   Post summary.
+     * @param  string  $group_id  The unique identifier for a group.
+     * @param  string  $title     Post title.
+     * @param  string  $summary   Post summary.
 	 *
-	 * @return  string  The created post's id.
+     * @return  string  The created post's id.
 	 *
 	 * @since   13.1
 	 */
@@ -686,10 +686,10 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to like or unlike a post.
 	 *
-	 * @param   string   $post_id  The unique identifier for a group.
-	 * @param   boolean  $like     True to like post, false otherwise.
+     * @param  string   $post_id  The unique identifier for a group.
+     * @param  boolean  $like     True to like post, false otherwise.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -725,9 +725,9 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method used to like a post.
 	 *
-	 * @param   string  $post_id  The unique identifier for a group.
+     * @param  string  $post_id  The unique identifier for a group.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -739,9 +739,9 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method used to unlike a post.
 	 *
-	 * @param   string  $post_id  The unique identifier for a group.
+     * @param  string  $post_id  The unique identifier for a group.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -753,10 +753,10 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to follow or unfollow a post.
 	 *
-	 * @param   string   $post_id  The unique identifier for a group.
-	 * @param   boolean  $follow   True to like post, false otherwise.
+     * @param  string   $post_id  The unique identifier for a group.
+     * @param  boolean  $follow   True to like post, false otherwise.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -792,9 +792,9 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method used to follow a post.
 	 *
-	 * @param   string  $post_id  The unique identifier for a group.
+     * @param  string  $post_id  The unique identifier for a group.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -806,9 +806,9 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method used to unfollow a post.
 	 *
-	 * @param   string  $post_id  The unique identifier for a group.
+     * @param  string  $post_id  The unique identifier for a group.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -820,10 +820,10 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to flag a post as a Promotion or Job.
 	 *
-	 * @param   string  $post_id  The unique identifier for a group.
-	 * @param   string  $flag     Flag as a 'promotion' or 'job'.
+     * @param  string  $post_id  The unique identifier for a group.
+     * @param  string  $flag     Flag as a 'promotion' or 'job'.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -859,9 +859,9 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to delete a post if the current user is the creator or flag it as inappropriate otherwise.
 	 *
-	 * @param   string  $post_id  The unique identifier for a group.
+     * @param  string  $post_id  The unique identifier for a group.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -892,10 +892,10 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to access the comments resource.
 	 *
-	 * @param   string  $comment_id  The unique identifier for a comment.
-	 * @param   string  $fields      Request fields beyond the default ones.
+     * @param  string  $comment_id  The unique identifier for a comment.
+     * @param  string  $fields      Request fields beyond the default ones.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -931,10 +931,10 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to add a comment to a post
 	 *
-	 * @param   string  $post_id  The unique identifier for a group.
-	 * @param   string  $comment  The post comment's text.
+     * @param  string  $post_id  The unique identifier for a group.
+     * @param  string  $comment  The post comment's text.
 	 *
-	 * @return  string   The created comment's id.
+     * @return  string  The created comment's id.
 	 *
 	 * @since   13.1
 	 */
@@ -973,9 +973,9 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to delete a comment if the current user is the creator or flag it as inappropriate otherwise.
 	 *
-	 * @param   string  $comment_id  The unique identifier for a group.
+     * @param  string  $comment_id  The unique identifier for a group.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -1006,10 +1006,10 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to get suggested groups for a user.
 	 *
-	 * @param   string  $person_id  The unique identifier for a user.
-	 * @param   string  $fields     Request fields beyond the default ones.
+     * @param  string  $person_id  The unique identifier for a user.
+     * @param  string  $fields     Request fields beyond the default ones.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -1055,10 +1055,10 @@ class JLinkedinGroups extends JLinkedinObject
 	/**
 	 * Method to delete a group suggestion for a user.
 	 *
-	 * @param   string  $suggestion_id  The unique identifier for a suggestion.
-	 * @param   string  $person_id      The unique identifier for a user.
+     * @param  string  $suggestion_id  The unique identifier for a suggestion.
+     * @param  string  $person_id      The unique identifier for a user.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */

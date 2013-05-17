@@ -34,8 +34,8 @@ abstract class JGoogleEmbed
 	/**
 	 * Constructor.
 	 *
-	 * @param   JRegistry  $options  Google options object
-	 * @param   JURI       $uri      URL of the page being rendered
+     * @param  JRegistry  $options  Google options object
+     * @param  JURI       $uri      URL of the page being rendered
 	 *
 	 * @since   12.3
 	 */
@@ -48,7 +48,7 @@ abstract class JGoogleEmbed
 	/**
 	 * Method to retrieve the javascript header for the embed API
 	 *
-	 * @return  string  The header
+     * @return  string  The header
 	 *
 	 * @since   12.3
 	 */
@@ -60,7 +60,7 @@ abstract class JGoogleEmbed
 	/**
 	 * Method to retrieve the header for the API
 	 *
-	 * @return  string  The header
+     * @return  string  The header
 	 *
 	 * @since   12.3
 	 */
@@ -69,7 +69,7 @@ abstract class JGoogleEmbed
 	/**
 	 * Method to retrieve the body for the API
 	 *
-	 * @return  string  The body
+     * @return  string  The body
 	 *
 	 * @since   12.3
 	 */
@@ -78,7 +78,7 @@ abstract class JGoogleEmbed
 	/**
 	 * Method to output the javascript header for the embed API
 	 *
-	 * @return  null
+     * @return  null
 	 *
 	 * @since   12.3
 	 */
@@ -90,7 +90,7 @@ abstract class JGoogleEmbed
 	/**
 	 * Method to output the body for the API
 	 *
-	 * @return  null
+     * @return  null
 	 *
 	 * @since   12.3
 	 */
@@ -102,9 +102,9 @@ abstract class JGoogleEmbed
 	/**
 	 * Get an option from the JGoogleEmbed instance.
 	 *
-	 * @param   string  $key  The name of the option to get.
+     * @param  string  $key  The name of the option to get.
 	 *
-	 * @return  mixed  The option value.
+     * @return  mixed  The option value.
 	 *
 	 * @since   12.3
 	 */
@@ -116,10 +116,10 @@ abstract class JGoogleEmbed
 	/**
 	 * Set an option for the JGoogleEmbed instance.
 	 *
-	 * @param   string  $key    The name of the option to set.
-	 * @param   mixed   $value  The option value to set.
+     * @param  string  $key    The name of the option to set.
+     * @param  mixed   $value  The option value to set.
 	 *
-	 * @return  JGoogleEmbed  This object for method chaining.
+     * @return  JGoogleEmbed  This object for method chaining.
 	 *
 	 * @since   12.3
 	 */

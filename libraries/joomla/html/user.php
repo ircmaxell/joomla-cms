@@ -21,9 +21,9 @@ abstract class JHtmlUser
 	/**
 	 * Displays a list of user groups.
 	 *
-	 * @param   boolean  $includeSuperAdmin  true to include super admin groups, false to exclude them
+     * @param  boolean  $includeSuperAdmin  true to include super admin groups, false to exclude them
 	 *
-	 * @return  array  An array containing a list of user groups.
+     * @return  array  An array containing a list of user groups.
 	 *
 	 * @since   11.4
 	 */
@@ -66,7 +66,7 @@ abstract class JHtmlUser
 	/**
 	 * Get a list of users.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.4
 	 */

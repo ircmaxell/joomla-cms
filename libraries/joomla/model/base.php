@@ -29,7 +29,7 @@ abstract class JModelBase implements JModel
 	/**
 	 * Instantiate the model.
 	 *
-	 * @param   JRegistry  $state  The model state.
+     * @param  JRegistry  $state  The model state.
 	 *
 	 * @since   12.1
 	 */
@@ -42,7 +42,7 @@ abstract class JModelBase implements JModel
 	/**
 	 * Get the model state.
 	 *
-	 * @return  JRegistry  The state object.
+     * @return  JRegistry  The state object.
 	 *
 	 * @since   12.1
 	 */
@@ -54,9 +54,9 @@ abstract class JModelBase implements JModel
 	/**
 	 * Set the model state.
 	 *
-	 * @param   JRegistry  $state  The state object.
+     * @param  JRegistry  $state  The state object.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -68,7 +68,7 @@ abstract class JModelBase implements JModel
 	/**
 	 * Load the model state.
 	 *
-	 * @return  JRegistry  The state object.
+     * @return  JRegistry  The state object.
 	 *
 	 * @since   12.1
 	 */

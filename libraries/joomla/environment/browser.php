@@ -149,8 +149,8 @@ class JBrowser
 	/**
 	 * Create a browser instance (constructor).
 	 *
-	 * @param   string  $userAgent  The browser string to parse.
-	 * @param   string  $accept     The HTTP_ACCEPT settings to use.
+     * @param  string  $userAgent  The browser string to parse.
+     * @param  string  $accept     The HTTP_ACCEPT settings to use.
 	 *
 	 * @since   11.1
 	 */
@@ -163,14 +163,14 @@ class JBrowser
 	 * Returns the global Browser object, only creating it
 	 * if it doesn't already exist.
 	 *
-	 * @param   string  $userAgent  The browser string to parse.
-	 * @param   string  $accept     The HTTP_ACCEPT settings to use.
+     * @param  string  $userAgent  The browser string to parse.
+     * @param  string  $accept     The HTTP_ACCEPT settings to use.
 	 *
-	 * @return JBrowser  The Browser object.
+     * @return  JBrowser  The Browser object.
 	 *
 	 * @since  11.1
 	 */
-	static public function getInstance($userAgent = null, $accept = null)
+	public static function getInstance($userAgent = null, $accept = null)
 	{
 		$signature = serialize(array($userAgent, $accept));
 
@@ -186,10 +186,10 @@ class JBrowser
 	 * Parses the user agent string and inititializes the object with
 	 * all the known features and quirks for the given browser.
 	 *
-	 * @param   string  $userAgent  The browser string to parse.
-	 * @param   string  $accept     The HTTP_ACCEPT settings to use.
+     * @param  string  $userAgent  The browser string to parse.
+     * @param  string  $accept     The HTTP_ACCEPT settings to use.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -405,7 +405,7 @@ class JBrowser
 	 * to let us tell what line breaks to send, so it's good enough
 	 * for its purpose.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -428,7 +428,7 @@ class JBrowser
 	/**
 	 * Return the currently matched platform.
 	 *
-	 * @return  string  The user's platform.
+     * @return  string  The user's platform.
 	 *
 	 * @since   11.1
 	 */
@@ -441,7 +441,7 @@ class JBrowser
 	 * Set browser version, not by engine version
 	 * Fallback to use when no other method identify the engine version
 	 *
-	 * @return void
+     * @return  void
 	 */
 	protected function identifyBrowserVersion()
 	{
@@ -459,9 +459,9 @@ class JBrowser
 	/**
 	 * Sets the current browser.
 	 *
-	 * @param   string  $browser  The browser to set as current.
+     * @param  string  $browser  The browser to set as current.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -473,7 +473,7 @@ class JBrowser
 	/**
 	 * Retrieve the current browser.
 	 *
-	 * @return  string  The current browser.
+     * @return  string  The current browser.
 	 *
 	 * @since   11.1
 	 */
@@ -485,7 +485,7 @@ class JBrowser
 	/**
 	 * Retrieve the current browser's major version.
 	 *
-	 * @return  integer  The current browser's major version
+     * @return  integer  The current browser's major version
 	 *
 	 * @since   11.1.
 	 */
@@ -497,7 +497,7 @@ class JBrowser
 	/**
 	 * Retrieve the current browser's minor version.
 	 *
-	 * @return  integer  The current browser's minor version.
+     * @return  integer  The current browser's minor version.
 	 *
 	 * @since   11.1
 	 */
@@ -509,7 +509,7 @@ class JBrowser
 	/**
 	 * Retrieve the current browser's version.
 	 *
-	 * @return  string  The current browser's version.
+     * @return  string  The current browser's version.
 	 *
 	 * @since   11.1
 	 */
@@ -521,7 +521,7 @@ class JBrowser
 	/**
 	 * Return the full browser agent string.
 	 *
-	 * @return  string  The browser agent string
+     * @return  string  The browser agent string
 	 *
 	 * @since   11.1
 	 */
@@ -533,7 +533,7 @@ class JBrowser
 	/**
 	 * Returns the server protocol in use on the current server.
 	 *
-	 * @return  string  The HTTP server protocol version.
+     * @return  string  The HTTP server protocol version.
 	 *
 	 * @since   11.1
 	 */
@@ -556,9 +556,9 @@ class JBrowser
 	 * entity, but Mozilla doesn't seem to want to accept the latter.
 	 * For our purposes, we will treat them the same.
 	 *
-	 * @param   string  $mimetype  The MIME type to check.
+     * @param  string  $mimetype  The MIME type to check.
 	 *
-	 * @return  boolean  True if the browser can display the MIME type.
+     * @return  boolean  True if the browser can display the MIME type.
 	 *
 	 * @since   11.1
 	 */
@@ -608,9 +608,9 @@ class JBrowser
 	/**
 	 * Determine if the given browser is the same as the current.
 	 *
-	 * @param   string  $browser  The browser to check.
+     * @param  string  $browser  The browser to check.
 	 *
-	 * @return  boolean  Is the given browser the same as the current?
+     * @return  boolean  Is the given browser the same as the current?
 	 *
 	 * @since   11.1
 	 */
@@ -622,7 +622,7 @@ class JBrowser
 	/**
 	 * Determines if the browser is a robot or not.
 	 *
-	 * @return  boolean  True if browser is a known robot.
+     * @return  boolean  True if browser is a known robot.
 	 *
 	 * @since   11.1
 	 */
@@ -641,7 +641,7 @@ class JBrowser
 	/**
 	 * Determines if the browser is mobile version or not.
 	 *
-	 * @return boolean  True if browser is a known mobile version.
+     * @return  boolean  True if browser is a known mobile version.
 	 *
 	 * @since   11.1
 	 */
@@ -653,7 +653,7 @@ class JBrowser
 	/**
 	 * Determine if we are using a secure (SSL) connection.
 	 *
-	 * @return  boolean  True if using SSL, false if not.
+     * @return  boolean  True if using SSL, false if not.
 	 *
 	 * @since   11.1
 	 * @deprecated  13.3  Use the isSSLConnection method on the application object.

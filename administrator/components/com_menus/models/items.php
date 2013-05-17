@@ -63,7 +63,7 @@ class MenusModelItems extends JModelList
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.6
 	 */
 	protected function populateState($ordering = null, $direction = null)
@@ -124,9 +124,9 @@ class MenusModelItems extends JModelList
 	 * different modules that might need different sets of data or different
 	 * ordering requirements.
 	 *
-	 * @param   string  $id    A prefix for the store id.
+     * @param  string  $id  A prefix for the store id.
 	 *
-	 * @return  string  A store id.
+     * @return  string  A store id.
 	 * @since   1.6
 	 */
 	protected function getStoreId($id = '')
@@ -147,7 +147,7 @@ class MenusModelItems extends JModelList
 	 *
 	 * In the absence of better information, this is the first menu ordered by title.
 	 *
-	 * @return  string    The default menu type
+     * @return  string  The default menu type
 	 * @since   1.6
 	 */
 	protected function getDefaultMenuType()
@@ -167,7 +167,7 @@ class MenusModelItems extends JModelList
 	/**
 	 * Builds an SQL query to load the list data.
 	 *
-	 * @return  JDatabaseQuery    A query object.
+     * @return  JDatabaseQuery  A query object.
 	 */
 	protected function getListQuery()
 	{
@@ -307,7 +307,7 @@ class MenusModelItems extends JModelList
 		// Add the list ordering clause.
 		$query->order($db->escape($this->getState('list.ordering', 'a.lft')) . ' ' . $db->escape($this->getState('list.direction', 'ASC')));
 
-		//echo nl2br(str_replace('#__','jos_',(string)$query)).'<hr/>';
+		//echo nl2br(str_replace('#__','jos_',(string) $query)).'<hr/>';
 		return $query;
 	}
 }

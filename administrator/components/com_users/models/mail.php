@@ -21,9 +21,9 @@ class UsersModelMail extends JModelAdmin
 	/**
 	 * Method to get the row form.
 	 *
-	 * @param   array  $data		An optional array of data for the form to interogate.
-	 * @param   boolean	$loadData	True if the form is to load its own data (default case), false if not.
-	 * @return  JForm	A JForm object on success, false on failure
+     * @param   array    $data      An optional array of data for the form to interogate.
+     * @param   boolean  $loadData  True if the form is to load its own data (default case), false if not.
+     * @return  JForm    A JForm object on success, false on failure
 	 * @since   1.6
 	 */
 	public function getForm($data = array(), $loadData = true)
@@ -43,7 +43,7 @@ class UsersModelMail extends JModelAdmin
 	/**
 	 * Method to get the data that should be injected in the form.
 	 *
-	 * @return  mixed  The data for the form.
+     * @return  mixed  The data for the form.
 	 * @since   1.6
 	 */
 	protected function loadFormData()
@@ -61,7 +61,7 @@ class UsersModelMail extends JModelAdmin
 	 *
 	 * @param   object	A form object.
 	 * @param   mixed	The data expected for the form.
-	 * @throws	Exception if there is an error in the form event.
+     * @throws  Exception  if there is an error in the form event.
 	 * @since   1.6
 	 */
 	protected function preprocessForm(JForm $form, $data, $group = 'user')
@@ -112,12 +112,14 @@ class UsersModelMail extends JModelAdmin
 			if (empty($to))
 			{
 				$query->where('0');
-			} else {
+			}
+			else {
 				$query->where('id IN (' . implode(',', $to) . ')');
 			}
 		}
 
-		if ($disabled == 0){
+		if ($disabled == 0)
+		{
 			$query->where("block = 0");
 		}
 
@@ -169,7 +171,8 @@ class UsersModelMail extends JModelAdmin
 			$app->setUserState('com_users.display.mail.data', $data);
 			$this->setError($rs->getError());
 			return false;
-		} elseif (empty($rs))
+		}
+		elseif (empty($rs))
 		{
 			$app->setUserState('com_users.display.mail.data', $data);
 			$this->setError(JText::_('COM_USERS_MAIL_THE_MAIL_COULD_NOT_BE_SENT'));

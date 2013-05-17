@@ -19,15 +19,15 @@ use SeleniumClient\CapabilityType;
 
 require_once 'CapabilityType.php';
 
-class DesiredCapabilities {	
-	
+class DesiredCapabilities
+{
 	private $_capabilities = null;
-	
+
 	/**
 	 * Create DesiredCapabilities
-	 * @param String $browser
-	 * @param String $version
-	 * @param String $platform
+     * @param  String  $browser
+     * @param  String  $version
+     * @param  String  $platform
 	 */
 	public function __construct($browser = null, $version = null, $platform = null)
 	{
@@ -35,32 +35,32 @@ class DesiredCapabilities {
 		{
 			$this->setCapability(CapabilityType::browserName, $browser);
 		}
-	
+
 		if(isset($version))
 		{
 			$this->setCapability(CapabilityType::version, $version);
 		}
-	
+
 		if(isset($platform))
 		{
 			$this->setCapability(CapabilityType::platform, $platform);
 		}
 	}
-	
+
 	/**
 	 * Gets current capabilities
-	 * @return Array
+     * @return  Array
 	 */
 	public function getCapabilities()
 	{
 		return $this->_capabilities;
 	}
-	
+
 	/**
 	 * Gets specified capability
-	 * @param String $capabilityType
-	 * @throws \Exception
-	 * @return String
+     * @param   String      $capabilityType
+     * @throws  \Exception
+     * @return  String
 	 */
 	public function getCapability($capabilityType)
 	{
@@ -77,52 +77,51 @@ class DesiredCapabilities {
 			return $this->_capabilities[$capabilityType];
 		}
 	}
-	
+
 	/**
 	 * Gets browser name
-	 * @return String
+     * @return  String
 	 */
 	public function getBrowserName()
 	{
 		return $this->getCapability(CapabilityType::browserName);
 	}
-	
+
 	/**
 	 * Gets platform name
-	 * @return String
+     * @return  String
 	 */
 	public function getPlatform()
 	{
 		return $this->getCapability(CapabilityType::platform);
 	}
-	
+
 	/**
 	 * Gets version
-	 * @return String
+     * @return  String
 	 */
 	public function  getVersion()
 	{
 		return $this->getCapability(CapabilityType::version);
 	}
-	
+
 	/**
 	 * Gets whether javascript is enabled
-	 * @return String
+     * @return  String
 	 */
 	public function getIsJavaScriptEnabled()
 	{
 		return $this->getCapability(CapabilityType::javascriptEnabled);
 	}
-	
-	
+
 	/**
 	 * Sets specified capability
-	 * @param String $capabilityType
-	 * @param String $value
-	 * @throws \Exception
+     * @param   String      $capabilityType
+     * @param   String      $value
+     * @throws  \Exception
 	 */
 	public function setCapability($capabilityType,$value)
-	{	
+	{
 		if(CapabilityType::isValidCapabilityType($capabilityType))
 		{
 			$this->_capabilities[$capabilityType] = $value;
@@ -132,23 +131,23 @@ class DesiredCapabilities {
 			throw new \Exception("'".$capabilityType ."' is not an valid capability type");
 		}
 	}
-	
+
 	public function __toString()
 	{
 		$result = "DesiredCapabilities{BrowserName = " . $this->getBrowserName() ;
-		
+
 		if($this->getVersion())
 		{
 			$result .= " Version = " . $this->getVersion();
 		}
-		
+
 		if($this->getPlatform())
 		{
 			$result.= " Platform = " . $this->getPlatform();
 		}
-	
+
 		$result.= "}";
-		
+
 		return $result;
 	}
 }

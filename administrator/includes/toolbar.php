@@ -22,10 +22,10 @@ abstract class JToolbarHelper
 	 * this title fucntion must be called before the starttable function and the toolbars icons
 	 * this is due to the nature of how the css has been used to postion the title in respect to the toolbar.
 	 *
-	 * @param   string  $title  The title.
-	 * @param   string  $icon   The space-separated names of the image.
+     * @param  string  $title  The title.
+     * @param  string  $icon   The space-separated names of the image.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -48,9 +48,9 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a spacer cell.
 	 *
-	 * @param   string  $width  The width for the cell
+     * @param  string  $width  The width for the cell
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -65,7 +65,7 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a divider between menu buttons
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -80,13 +80,13 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a custom option and task button for the button bar.
 	 *
-	 * @param   string  $task        The task to perform (picked up by the switch($task) blocks.
-	 * @param   string  $icon        The image to display.
-	 * @param   string  $iconOver    The image to display when moused over.
-	 * @param   string  $alt         The alt text for the icon image.
-	 * @param   bool    $listSelect  True if required to check that a standard list item is checked.
+     * @param  string  $task        The task to perform (picked up by the switch($task) blocks.
+     * @param  string  $icon        The image to display.
+     * @param  string  $iconOver    The image to display when moused over.
+     * @param  string  $alt         The alt text for the icon image.
+     * @param  bool    $listSelect  True if required to check that a standard list item is checked.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -104,10 +104,10 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a preview button for a given option (opens a popup window).
 	 *
-	 * @param   string  $url            The name of the popup file (excluding the file extension)
-	 * @param   bool    $updateEditors
+     * @param  string  $url            The name of the popup file (excluding the file extension)
+     * @param  bool    $updateEditors
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -122,12 +122,12 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a preview button for a given option (opens a popup window).
 	 *
-	 * @param   string  $ref        The name of the popup file (excluding the file extension for an xml file).
-	 * @param   bool    $com        Use the help file in the component directory.
-	 * @param   string  $override   Use this URL instead of any other
-	 * @param   string  $component  Name of component to get Help (null for current component)
+     * @param  string  $ref        The name of the popup file (excluding the file extension for an xml file).
+     * @param  bool    $com        Use the help file in the component directory.
+     * @param  string  $override   Use this URL instead of any other
+     * @param  string  $component  Name of component to get Help (null for current component)
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -143,10 +143,10 @@ abstract class JToolbarHelper
 	 * Writes a cancel button that will go back to the previous page without doing
 	 * any other operation.
 	 *
-	 * @param   string  $alt   Alternative text.
-	 * @param   string  $href  URL of the href attribute.
+     * @param  string  $alt   Alternative text.
+     * @param  string  $href  URL of the href attribute.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -161,10 +161,10 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a media_manager button.
 	 *
-	 * @param   string  $directory  The sub-directory to upload the media to.
-	 * @param   string  $alt        An override for the alt text.
+     * @param  string  $directory  The sub-directory to upload the media to.
+     * @param  string  $alt        An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -179,10 +179,10 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a common 'default' button for a record.
 	 *
-	 * @param   string  $task  An override for the task.
-	 * @param   string  $alt   An override for the alt text.
+     * @param  string  $task  An override for the task.
+     * @param  string  $alt   An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -197,10 +197,10 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a common 'assign' button for a record.
 	 *
-	 * @param   string  $task  An override for the task.
-	 * @param   string  $alt   An override for the alt text.
+     * @param  string  $task  An override for the task.
+     * @param  string  $alt   An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -215,11 +215,11 @@ abstract class JToolbarHelper
 	/**
 	 * Writes the common 'new' icon for the button bar.
 	 *
-	 * @param   string   $task   An override for the task.
-	 * @param   string   $alt    An override for the alt text.
-	 * @param   boolean  $check  True if required to check that a standard list item is checked.
+     * @param  string   $task   An override for the task.
+     * @param  string   $alt    An override for the alt text.
+     * @param  boolean  $check  True if required to check that a standard list item is checked.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -234,11 +234,11 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a common 'publish' button.
 	 *
-	 * @param   string   $task   An override for the task.
-	 * @param   string   $alt    An override for the alt text.
-	 * @param   boolean  $check  True if required to check that a standard list item is checked.
+     * @param  string   $task   An override for the task.
+     * @param  string   $alt    An override for the alt text.
+     * @param  boolean  $check  True if required to check that a standard list item is checked.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -253,10 +253,10 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a common 'publish' button for a list of records.
 	 *
-	 * @param   string  $task  An override for the task.
-	 * @param   string  $alt   An override for the alt text.
+     * @param  string  $task  An override for the task.
+     * @param  string  $alt   An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -271,11 +271,11 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a common 'unpublish' button.
 	 *
-	 * @param   string   $task   An override for the task.
-	 * @param   string   $alt    An override for the alt text.
-	 * @param   boolean  $check  True if required to check that a standard list item is checked.
+     * @param  string   $task   An override for the task.
+     * @param  string   $alt    An override for the alt text.
+     * @param  boolean  $check  True if required to check that a standard list item is checked.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -290,10 +290,10 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a common 'unpublish' button for a list of records.
 	 *
-	 * @param   string  $task  An override for the task.
-	 * @param   string  $alt   An override for the alt text.
+     * @param  string  $task  An override for the task.
+     * @param  string  $alt   An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -308,10 +308,10 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a common 'archive' button for a list of records.
 	 *
-	 * @param   string  $task  An override for the task.
-	 * @param   string  $alt   An override for the alt text.
+     * @param  string  $task  An override for the task.
+     * @param  string  $alt   An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -326,10 +326,10 @@ abstract class JToolbarHelper
 	/**
 	 * Writes an unarchive button for a list of records.
 	 *
-	 * @param   string  $task  An override for the task.
-	 * @param   string  $alt   An override for the alt text.
+     * @param  string  $task  An override for the task.
+     * @param  string  $alt   An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -344,10 +344,10 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a common 'edit' button for a list of records.
 	 *
-	 * @param   string  $task  An override for the task.
-	 * @param   string  $alt   An override for the alt text.
+     * @param  string  $task  An override for the task.
+     * @param  string  $alt   An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -362,10 +362,10 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a common 'edit' button for a template html.
 	 *
-	 * @param   string  $task  An override for the task.
-	 * @param   string  $alt   An override for the alt text.
+     * @param  string  $task  An override for the task.
+     * @param  string  $alt   An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -380,10 +380,10 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a common 'edit' button for a template css.
 	 *
-	 * @param   string  $task  An override for the task.
-	 * @param   string  $alt   An override for the alt text.
+     * @param  string  $task  An override for the task.
+     * @param  string  $alt   An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -398,11 +398,11 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a common 'delete' button for a list of records.
 	 *
-	 * @param   string  $msg   Postscript for the 'are you sure' message.
-	 * @param   string  $task  An override for the task.
-	 * @param   string  $alt   An override for the alt text.
+     * @param  string  $msg   Postscript for the 'are you sure' message.
+     * @param  string  $task  An override for the task.
+     * @param  string  $alt   An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -424,11 +424,11 @@ abstract class JToolbarHelper
 	/**
 	 * Write a trash button that will move items to Trash Manager.
 	 *
-	 * @param   string  $task   An override for the task.
-	 * @param   string  $alt    An override for the alt text.
-	 * @param   bool    $check
+     * @param  string  $task   An override for the task.
+     * @param  string  $alt    An override for the alt text.
+     * @param  bool    $check
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -444,10 +444,10 @@ abstract class JToolbarHelper
 	 * Writes a save button for a given option.
 	 * Apply operation leads to a save action only (does not leave edit mode).
 	 *
-	 * @param   string  $task  An override for the task.
-	 * @param   string  $alt   An override for the alt text.
+     * @param  string  $task  An override for the task.
+     * @param  string  $alt   An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -463,10 +463,10 @@ abstract class JToolbarHelper
 	 * Writes a save button for a given option.
 	 * Save operation leads to a save and then close action.
 	 *
-	 * @param   string  $task  An override for the task.
-	 * @param   string  $alt   An override for the alt text.
+     * @param  string  $task  An override for the task.
+     * @param  string  $alt   An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -482,10 +482,10 @@ abstract class JToolbarHelper
 	 * Writes a save and create new button for a given option.
 	 * Save and create operation leads to a save and then add action.
 	 *
-	 * @param   string  $task  An override for the task.
-	 * @param   string  $alt   An override for the alt text.
+     * @param  string  $task  An override for the task.
+     * @param  string  $alt   An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -502,10 +502,10 @@ abstract class JToolbarHelper
 	 * Save as copy operation leads to a save after clearing the key,
 	 * then returns user to edit mode with new key.
 	 *
-	 * @param   string  $task  An override for the task.
-	 * @param   string  $alt   An override for the alt text.
+     * @param  string  $task  An override for the task.
+     * @param  string  $alt   An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -520,11 +520,11 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a checkin button for a given option.
 	 *
-	 * @param   string   $task   An override for the task.
-	 * @param   string   $alt    An override for the alt text.
-	 * @param   boolean  $check  True if required to check that a standard list item is checked.
+     * @param  string   $task   An override for the task.
+     * @param  string   $alt    An override for the alt text.
+     * @param  boolean  $check  True if required to check that a standard list item is checked.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.7
 	 */
@@ -539,10 +539,10 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a cancel button and invokes a cancel operation (eg a checkin).
 	 *
-	 * @param   string  $task  An override for the task.
-	 * @param   string  $alt   An override for the alt text.
+     * @param  string  $task  An override for the task.
+     * @param  string  $alt   An override for the alt text.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -557,13 +557,13 @@ abstract class JToolbarHelper
 	/**
 	 * Writes a configuration button and invokes a cancel operation (eg a checkin).
 	 *
-	 * @param   string  $component  The name of the component, eg, com_content.
-	 * @param   int     $height     The height of the popup. [UNUSED]
-	 * @param   int     $width      The width of the popup. [UNUSED]
-	 * @param   string  $alt        The name of the button.
-	 * @param   string  $path       An alternative path for the configuation xml relative to JPATH_SITE.
+     * @param  string  $component  The name of the component, eg, com_content.
+     * @param  int     $height     The height of the popup. [UNUSED]
+     * @param  int     $width      The width of the popup. [UNUSED]
+     * @param  string  $alt        The name of the button.
+     * @param  string  $path       An alternative path for the configuation xml relative to JPATH_SITE.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -620,11 +620,11 @@ abstract class JSubMenuHelper
 	/**
 	 * Method to add a menu item to submenu.
 	 *
-	 * @param   string	$name	 Name of the menu item.
-	 * @param   string	$link	 URL of the menu item.
-	 * @param   bool	$active  True if the item is active, false otherwise.
+     * @param  string  $name    Name of the menu item.
+     * @param  string  $link    URL of the menu item.
+     * @param  bool    $active  True if the item is active, false otherwise.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 * @deprecated  4.0  Use JHtmlSidebar::addEntry() instead.
@@ -638,7 +638,7 @@ abstract class JSubMenuHelper
 	/**
 	 * Returns an array of all submenu entries
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   3.0
 	 * @deprecated  4.0  Use JHtmlSidebar::getEntries() instead.
@@ -652,12 +652,12 @@ abstract class JSubMenuHelper
 	/**
 	 * Method to add a filter to the submenu
 	 *
-	 * @param   string	$label      Label for the menu item.
-	 * @param   string	$name       name for the filter. Also used as id.
-	 * @param   string	$options    options for the select field.
-	 * @param   bool	$noDefault  Don't the label as the empty option
+     * @param  string  $label      Label for the menu item.
+     * @param  string  $name       name for the filter. Also used as id.
+     * @param  string  $options    options for the select field.
+     * @param  bool    $noDefault  Don't the label as the empty option
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 * @deprecated  4.0  Use JHtmlSidebar::addFilter() instead.
@@ -671,7 +671,7 @@ abstract class JSubMenuHelper
 	/**
 	 * Returns an array of all filters
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   3.0
 	 * @deprecated  4.0  Use JHtmlSidebar::getFilters() instead.
@@ -685,9 +685,9 @@ abstract class JSubMenuHelper
 	/**
 	 * Set value for the action attribute of the filter form
 	 *
-	 * @param   string  $action  Value for the action attribute of the form
+     * @param  string  $action  Value for the action attribute of the form
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 * @deprecated  4.0  Use JHtmlSidebar::setAction() instead.
@@ -701,7 +701,7 @@ abstract class JSubMenuHelper
 	/**
 	 * Get value for the action attribute of the filter form
 	 *
-	 * @return  string  Value for the action attribute of the form
+     * @return  string  Value for the action attribute of the form
 	 *
 	 * @since   3.0
 	 * @deprecated  4.0  Use JHtmlSidebar::getAction() instead.

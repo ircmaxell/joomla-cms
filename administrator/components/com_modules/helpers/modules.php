@@ -21,7 +21,7 @@ abstract class ModulesHelper
 	/**
 	 * Configure the Linkbar.
 	 *
-	 * @param   string  $vName  The name of the active view.
+     * @param  string  $vName  The name of the active view.
 	 */
 	public static function addSubmenu($vName)
 	{
@@ -31,7 +31,7 @@ abstract class ModulesHelper
 	/**
 	 * Gets a list of the actions that can be performed.
 	 *
-	 * @return  JObject
+     * @return  JObject
 	 */
 	public static function getActions()
 	{
@@ -51,7 +51,7 @@ abstract class ModulesHelper
 	/**
 	 * Get a list of filter options for the state of a module.
 	 *
-	 * @return  array  An array of JHtmlOption elements.
+     * @return  array  An array of JHtmlOption elements.
 	 */
 	public static function getStateOptions()
 	{
@@ -66,7 +66,7 @@ abstract class ModulesHelper
 	/**
 	 * Get a list of filter options for the application clients.
 	 *
-	 * @return  array  An array of JHtmlOption elements.
+     * @return  array  An array of JHtmlOption elements.
 	 */
 	public static function getClientOptions()
 	{
@@ -80,9 +80,9 @@ abstract class ModulesHelper
 	/**
 	 * Get a list of modules positions
 	 *
-	 * @param   integer  $clientId  Client ID
+     * @param  integer  $clientId  Client ID
 	 *
-	 * @return  array  A list of positions
+     * @return  array  A list of positions
 	 */
 	public static function getPositions($clientId, $editPositions = false)
 	{
@@ -126,11 +126,11 @@ abstract class ModulesHelper
 	/**
 	 * Return a list of templates
 	 *
-	 * @param   integer  $clientId  Client ID
-	 * @param   string   $state     State
-	 * @param   string   $template  Template name
+     * @param  integer  $clientId  Client ID
+     * @param  string   $state     State
+     * @param  string   $template  Template name
 	 *
-	 * @return  array  List of templates
+     * @return  array  List of templates
 	 */
 	public static function getTemplates($clientId = 0, $state = '', $template = '')
 	{
@@ -163,9 +163,9 @@ abstract class ModulesHelper
 	/**
 	 * Get a list of the unique modules installed in the client application.
 	 *
-	 * @param   int  $clientId  The client id.
+     * @param  int  $clientId  The client id.
 	 *
-	 * @return  array  Array of unique modules
+     * @return  array  Array of unique modules
 	 */
 	public static function getModules($clientId)
 	{
@@ -201,9 +201,9 @@ abstract class ModulesHelper
 	/**
 	 * Get a list of the assignment options for modules to menus.
 	 *
-	 * @param   int  $clientId  The client id.
+     * @param  int  $clientId  The client id.
 	 *
-	 * @return  array
+     * @return  array
 	 */
 	public static function getAssignmentOptions($clientId)
 	{
@@ -223,10 +223,10 @@ abstract class ModulesHelper
 	/**
 	 * Return a translated module position name
 	 *
-	 * @param   string  $template  Template name
-	 * @param   string  $position  Position name
+     * @param  string  $template  Template name
+     * @param  string  $position  Position name
 	 *
-	 * @return  string  Return a translated position name
+     * @return  string  Return a translated position name
 	 *
 	 * @since   3.0
 	 */
@@ -266,10 +266,10 @@ abstract class ModulesHelper
 	/**
 	 * Check if the string was translated
 	 *
-	 * @param   string  $langKey  Language file text key
-	 * @param   string  $text     The "translated" text to be checked
+     * @param  string  $langKey  Language file text key
+     * @param  string  $text     The "translated" text to be checked
 	 *
-	 * @return  boolean  Return true for translated text
+     * @return  boolean  Return true for translated text
 	 *
 	 * @since   3.0
 	 */
@@ -281,10 +281,10 @@ abstract class ModulesHelper
 	/**
 	 * Create and return a new Option
 	 *
-	 * @param   string  $value  The option value [optional]
-	 * @param   string  $text   The option text [optional]
+     * @param  string  $value  The option value [optional]
+     * @param  string  $text   The option text [optional]
 	 *
-	 * @return  object  The option as an object (stdClass instance)
+     * @return  object  The option as an object (stdClass instance)
 	 *
 	 * @since   3.0
 	 */
@@ -305,10 +305,10 @@ abstract class ModulesHelper
 	/**
 	 * Create and return a new Option Group
 	 *
-	 * @param   string  $label    Value and label for group [optional]
-	 * @param   array   $options  Array of options to insert into group [optional]
+     * @param  string  $label    Value and label for group [optional]
+     * @param  array   $options  Array of options to insert into group [optional]
 	 *
-	 * @return  array  Return the new group as an array
+     * @return  array  Return the new group as an array
 	 *
 	 * @since   3.0
 	 */

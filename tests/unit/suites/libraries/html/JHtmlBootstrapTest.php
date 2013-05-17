@@ -28,7 +28,7 @@ class JHtmlBootstrapTest extends TestCase
 	 * Sets up the fixture, for example, opens a network connection.
 	 * This method is called before a test is executed.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -49,7 +49,7 @@ class JHtmlBootstrapTest extends TestCase
 	 * Tears down the fixture, for example, closes a network connection.
 	 * This method is called after a test is executed.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -66,7 +66,7 @@ class JHtmlBootstrapTest extends TestCase
 	/**
 	 * Tests the alert method.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -104,7 +104,7 @@ class JHtmlBootstrapTest extends TestCase
 	/**
 	 * Tests the dropdown method.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -132,7 +132,7 @@ class JHtmlBootstrapTest extends TestCase
 	/**
 	 * Tests the framework method.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -220,7 +220,7 @@ class JHtmlBootstrapTest extends TestCase
 	/**
 	 * Tests the endAccordion method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -245,7 +245,7 @@ class JHtmlBootstrapTest extends TestCase
 	/**
 	 * Tests the endSlide method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -270,7 +270,7 @@ class JHtmlBootstrapTest extends TestCase
 	/**
 	 * Tests the endTabSet method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -295,7 +295,7 @@ class JHtmlBootstrapTest extends TestCase
 	/**
 	 * Tests the endTab method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -320,7 +320,7 @@ class JHtmlBootstrapTest extends TestCase
 	/**
 	 * Tests the endPane method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -345,7 +345,7 @@ class JHtmlBootstrapTest extends TestCase
 	/**
 	 * Tests the endPanel method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -360,7 +360,7 @@ class JHtmlBootstrapTest extends TestCase
 	/**
 	 * Tests the loadCss method.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */

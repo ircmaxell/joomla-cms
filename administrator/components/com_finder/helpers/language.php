@@ -23,7 +23,7 @@ class FinderHelperLanguage
 	 *
 	 * @param   string  Branch title.
 	 *
-	 * @return  string  Language key code.
+     * @return  string  Language key code.
 	 */
 	public static function branchPlural($branchName)
 	{
@@ -37,7 +37,7 @@ class FinderHelperLanguage
 	 *
 	 * @param   string  Branch name.
 	 *
-	 * @return  string  Language key code.
+     * @return  string  Language key code.
 	 */
 	public static function branchSingular($branchName)
 	{
@@ -49,7 +49,7 @@ class FinderHelperLanguage
 	/**
 	 * Method to load Smart Search component language file.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -62,7 +62,7 @@ class FinderHelperLanguage
 	/**
 	 * Method to load Smart Search plug-in language files.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */

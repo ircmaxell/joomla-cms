@@ -76,7 +76,7 @@ final class InstallationApplicationWeb extends JApplicationWeb
 	/**
 	 * Method to display errors in language parsing
 	 *
-	 * @return  string  Language debug output
+     * @return  string  Language debug output
 	 *
 	 * @since   3.1
 	 */
@@ -148,7 +148,7 @@ final class InstallationApplicationWeb extends JApplicationWeb
 	/**
 	 * Dispatch the application
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -209,7 +209,7 @@ final class InstallationApplicationWeb extends JApplicationWeb
 	/**
 	 * Method to run the Web application routines.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -225,10 +225,10 @@ final class InstallationApplicationWeb extends JApplicationWeb
 	/**
 	 * Enqueue a system message.
 	 *
-	 * @param   string  $msg   The message to enqueue.
-	 * @param   string  $type  The message type. Default is message.
+     * @param  string  $msg   The message to enqueue.
+     * @param  string  $type  The message type. Default is message.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -254,12 +254,12 @@ final class InstallationApplicationWeb extends JApplicationWeb
 	/**
 	 * Method to get a controller object.
 	 *
-	 * @param   string  $task  The task being executed
+     * @param  string  $task  The task being executed
 	 *
-	 * @return  JController
+     * @return  JController
 	 *
 	 * @since   3.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	protected function fetchController($task)
 	{
@@ -284,7 +284,7 @@ final class InstallationApplicationWeb extends JApplicationWeb
 	/**
 	 * Gets the client id of the current running application.
 	 *
-	 * @return  integer  A client identifier.
+     * @return  integer  A client identifier.
 	 *
 	 * @since   3.1
 	 */
@@ -297,7 +297,7 @@ final class InstallationApplicationWeb extends JApplicationWeb
 	 * Returns the language code and help url set in the localise.xml file.
 	 * Used for forcing a particular language in localised releases.
 	 *
-	 * @return  mixed  False on failure, array on success.
+     * @return  mixed  False on failure, array on success.
 	 *
 	 * @since   3.1
 	 */
@@ -330,9 +330,9 @@ final class InstallationApplicationWeb extends JApplicationWeb
 	 * Returns the installed language files in the administrative and
 	 * front-end area.
 	 *
-	 * @param   mixed  $db  JDatabaseDriver instance
+     * @param  mixed  $db  JDatabaseDriver instance
 	 *
-	 * @return  array  Array with installed language packs in admin and site area
+     * @return  array  Array with installed language packs in admin and site area
 	 *
 	 * @since   3.1
 	 */
@@ -389,7 +389,7 @@ final class InstallationApplicationWeb extends JApplicationWeb
 	/**
 	 * Get the system message queue.
 	 *
-	 * @return  array  The system message queue.
+     * @return  array  The system message queue.
 	 *
 	 * @since   3.1
 	 */
@@ -414,9 +414,9 @@ final class InstallationApplicationWeb extends JApplicationWeb
 	/**
 	 * Gets the name of the current template.
 	 *
-	 * @param   boolean  $params  True to return the template parameters
+     * @param  boolean  $params  True to return the template parameters
 	 *
-	 * @return  string  The name of the template.
+     * @return  string  The name of the template.
 	 *
 	 * @since   3.1
 	 */
@@ -436,9 +436,9 @@ final class InstallationApplicationWeb extends JApplicationWeb
 	/**
 	 * Initialise the application.
 	 *
-	 * @param   array  $options  An optional associative array of configuration settings.
+     * @param  array  $options  An optional associative array of configuration settings.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -504,9 +504,9 @@ final class InstallationApplicationWeb extends JApplicationWeb
 	 * but for many applications it will make sense to override this method and create a session,
 	 * if required, based on more specific needs.
 	 *
-	 * @param   JSession  $session  An optional session object. If omitted, the session is created.
+     * @param  JSession  $session  An optional session object. If omitted, the session is created.
 	 *
-	 * @return  JApplicationWeb This method is chainable.
+     * @return  JApplicationWeb  This method is chainable.
 	 *
 	 * @since   3.1
 	 */
@@ -537,7 +537,7 @@ final class InstallationApplicationWeb extends JApplicationWeb
 	 * placeholders, retrieving data from the document and pushing it into
 	 * the application response buffer.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -567,9 +567,9 @@ final class InstallationApplicationWeb extends JApplicationWeb
 	 * can be a Exception object for when an error has occurred or
 	 * a stdClass for a good response.
 	 *
-	 * @param   mixed  $response  stdClass on success, Exception on failure.
+     * @param  mixed  $response  stdClass on success, Exception on failure.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -594,10 +594,10 @@ final class InstallationApplicationWeb extends JApplicationWeb
 	/**
 	 * Set configuration values
 	 *
-	 * @param   array   $vars       Array of configuration values
-	 * @param   string  $namespace  The namespace
+     * @param  array   $vars       Array of configuration values
+     * @param  string  $namespace  The namespace
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */

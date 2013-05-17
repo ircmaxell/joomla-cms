@@ -75,7 +75,7 @@ class TagsModelTag extends JModelList
 	/**
 	 * Method to get a list of items for a list of tags.
 	 *
-	 * @return  mixed  An array of objects on success, false on failure.
+     * @return  mixed  An array of objects on success, false on failure.
 	 *
 	 * @since   3.1
 	 */
@@ -120,7 +120,7 @@ class TagsModelTag extends JModelList
 	/**
 	 * Method to build an SQL query to load the list data of all items with a given tag.
 	 *
-	 * @return  string  An SQL query
+     * @return  string  An SQL query
 	 *
 	 * @since   3.1
 	 */
@@ -158,10 +158,10 @@ class TagsModelTag extends JModelList
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @param   string  $ordering   An optional ordering field.
-	 * @param   string  $direction  An optional direction (asc|desc).
+     * @param  string  $ordering   An optional ordering field.
+     * @param  string  $direction  An optional direction (asc|desc).
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -248,7 +248,7 @@ class TagsModelTag extends JModelList
 	 *
 	 * @param   integer  An optional ID
 	 *
-	 * @return  object
+     * @return  object
 	 * @since   3.1
 	 */
 	public function getItem($pk = null)

@@ -23,9 +23,9 @@ class ContentHelper
 	/**
 	 * Configure the Linkbar.
 	 *
-	 * @param   string	$vName	The name of the active view.
+     * @param  string  $vName  The name of the active view.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.6
 	 */
 	public static function addSubmenu($vName)
@@ -52,7 +52,7 @@ class ContentHelper
 	 * @param   integer  The category ID.
 	 * @param   integer  The article ID.
 	 *
-	 * @return  JObject
+     * @return  JObject
 	 * @since   1.6
 	 */
 	public static function getActions($categoryId = 0, $articleId = 0)
@@ -89,9 +89,9 @@ class ContentHelper
 	/**
 	 * Applies the content tag filters to arbitrary text as per settings for current user group
 	 *
-	 * @param   text  $text  The string to filter
+     * @param  text  $text  The string to filter
 	 *
-	 * @return  string  The filtered string
+     * @return  string  The filtered string
 	 *
 	 * @deprecated  4.0  Use JComponentHelper::filterText() instead.
 	*/

@@ -21,8 +21,8 @@ class JGoogleDataPicasa extends JGoogleData
 	/**
 	 * Constructor.
 	 *
-	 * @param   JRegistry    $options  Google options object
-	 * @param   JGoogleAuth  $auth     Google data http client object
+     * @param  JRegistry    $options  Google options object
+     * @param  JGoogleAuth  $auth     Google data http client object
 	 *
 	 * @since   12.3
 	 */
@@ -39,12 +39,12 @@ class JGoogleDataPicasa extends JGoogleData
 	/**
 	 * Method to retrieve a list of Picasa Albums
 	 *
-	 * @param   string  $userID  ID of user
+     * @param  string  $userID  ID of user
 	 *
-	 * @return  mixed  Data from Google
+     * @return  mixed  Data from Google
 	 *
 	 * @since   12.3
-	 * @throws UnexpectedValueException
+     * @throws  UnexpectedValueException
 	 */
 	public function listAlbums($userID = 'default')
 	{
@@ -78,15 +78,15 @@ class JGoogleDataPicasa extends JGoogleData
 	/**
 	 * Method to create a Picasa Album
 	 *
-	 * @param   string  $userID    ID of user
-	 * @param   string  $title     New album title
-	 * @param   string  $access    New album access settings
-	 * @param   string  $summary   New album summary
-	 * @param   string  $location  New album location
-	 * @param   int     $time      New album timestamp
-	 * @param   array   $keywords  New album keywords
+     * @param  string  $userID    ID of user
+     * @param  string  $title     New album title
+     * @param  string  $access    New album access settings
+     * @param  string  $summary   New album summary
+     * @param  string  $location  New album location
+     * @param  int     $time      New album timestamp
+     * @param  array   $keywords  New album keywords
 	 *
-	 * @return  mixed  Data from Google.
+     * @return  mixed  Data from Google.
 	 *
 	 * @since   12.3
 	 */
@@ -125,12 +125,12 @@ class JGoogleDataPicasa extends JGoogleData
 	/**
 	 * Get Picasa Album
 	 *
-	 * @param   string  $url  URL of album to get
+     * @param  string  $url  URL of album to get
 	 *
-	 * @return  mixed  Data from Google
+     * @return  mixed  Data from Google
 	 *
 	 * @since   12.3
-	 * @throws UnexpectedValueException
+     * @throws  UnexpectedValueException
 	 */
 	public function getAlbum($url)
 	{

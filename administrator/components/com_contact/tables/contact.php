@@ -26,7 +26,7 @@ class ContactTableContact extends JTable
 	/**
 	 * Constructor
 	 *
-	 * @param   JDatabaseDriver  &$db  Database connector object
+     * @param  JDatabaseDriver  &$db  Database connector object
 	 *
 	 * @since   1.0
 	 */
@@ -40,10 +40,10 @@ class ContactTableContact extends JTable
 	/**
 	 * Overloaded bind function
 	 *
-	 * @param   array  $array   Named array to bind
-	 * @param   mixed  $ignore  An optional array or space separated list of properties to ignore while binding.
+     * @param  array  $array   Named array to bind
+     * @param  mixed  $ignore  An optional array or space separated list of properties to ignore while binding.
 	 *
-	 * @return  mixed  Null if operation was satisfactory, otherwise returns an error
+     * @return  mixed  Null if operation was satisfactory, otherwise returns an error
 	 * @since   1.6
 	 */
 	public function bind($array, $ignore = '')
@@ -68,12 +68,12 @@ class ContactTableContact extends JTable
 	/**
 	 * Override parent delete method to delete tags information.
 	 *
-	 * @param   integer  $pk  Primary key to delete.
+     * @param  integer  $pk  Primary key to delete.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
-	 * @throws  UnexpectedValueException
+     * @throws  UnexpectedValueException
 	 */
 	public function delete($pk = null)
 	{
@@ -86,7 +86,7 @@ class ContactTableContact extends JTable
 	 *
 	 * @param   boolean	True to update fields even if they are null.
 	 *
-	 * @return  boolean  True on success, false on failure.
+     * @return  boolean  True on success, false on failure.
 	 *
 	 * @since   1.6
 	 */
@@ -158,7 +158,7 @@ class ContactTableContact extends JTable
 	/**
 	 * Overloaded check function
 	 *
-	 * @return  boolean  True on success, false on failure
+     * @return  boolean  True on success, false on failure
 	 *
 	 * @see JTable::check
 	 * @since 1.5

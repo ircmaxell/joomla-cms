@@ -21,9 +21,9 @@ class JRouterInstallation extends JRouter
 	/**
 	 * Function to convert a route to an internal URI
 	 *
-	 * @param   JURI  $url  The uri.
+     * @param  JURI  $url  The uri.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.5
 	 */
@@ -35,9 +35,9 @@ class JRouterInstallation extends JRouter
 	/**
 	 * Function to convert an internal URI to a route
 	 *
-	 * @param   string  $url  The internal URL
+     * @param  string  $url  The internal URL
 	 *
-	 * @return  string  The absolute search engine friendly URL
+     * @return  string  The absolute search engine friendly URL
 	 *
 	 * @since   1.5
 	 */

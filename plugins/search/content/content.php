@@ -21,7 +21,7 @@ require_once JPATH_SITE . '/components/com_content/router.php';
 class PlgSearchContent extends JPlugin
 {
 	/**
-	 * @return array An array of search areas
+     * @return  array  An array of search areas
 	 */
 	public function onContentSearchAreas()
 	{

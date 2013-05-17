@@ -18,7 +18,7 @@ class JFormFieldHelpsiteTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getInput method.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -31,7 +31,6 @@ class JFormFieldHelpsiteTest extends PHPUnit_Framework_TestCase
 			$this->isTrue(),
 			'Line:' . __LINE__ . ' XML string should load successfully.'
 		);
-
 
 		$field = new JFormFieldHelpsite($form);
 

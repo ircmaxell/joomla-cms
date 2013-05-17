@@ -54,7 +54,7 @@ class JModelList extends JModelLegacy
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $config  An optional associative array of configuration settings.
+     * @param  array  $config  An optional associative array of configuration settings.
 	 *
 	 * @see     JModelLegacy
 	 * @since   12.2
@@ -81,7 +81,7 @@ class JModelList extends JModelLegacy
 	 *
 	 * This method ensures that the query is constructed only once for a given state of the model.
 	 *
-	 * @return  JDatabaseQuery  A JDatabaseQuery object
+     * @return  JDatabaseQuery  A JDatabaseQuery object
 	 *
 	 * @since   12.2
 	 */
@@ -106,7 +106,7 @@ class JModelList extends JModelLegacy
 	/**
 	 * Method to get an array of data items.
 	 *
-	 * @return  mixed  An array of data items on success, false on failure.
+     * @return  mixed  An array of data items on success, false on failure.
 	 *
 	 * @since   12.2
 	 */
@@ -143,7 +143,7 @@ class JModelList extends JModelLegacy
 	/**
 	 * Method to get a JDatabaseQuery object for retrieving the data set from a database.
 	 *
-	 * @return  JDatabaseQuery   A JDatabaseQuery object to retrieve the data set.
+     * @return  JDatabaseQuery  A JDatabaseQuery object to retrieve the data set.
 	 *
 	 * @since   12.2
 	 */
@@ -158,7 +158,7 @@ class JModelList extends JModelLegacy
 	/**
 	 * Method to get a JPagination object for the data set.
 	 *
-	 * @return  JPagination  A JPagination object for the data set.
+     * @return  JPagination  A JPagination object for the data set.
 	 *
 	 * @since   12.2
 	 */
@@ -190,9 +190,9 @@ class JModelList extends JModelLegacy
 	 * different modules that might need different sets of data or different
 	 * ordering requirements.
 	 *
-	 * @param   string  $id  An identifier string to generate the store id.
+     * @param  string  $id  An identifier string to generate the store id.
 	 *
-	 * @return  string  A store id.
+     * @return  string  A store id.
 	 *
 	 * @since   12.2
 	 */
@@ -210,7 +210,7 @@ class JModelList extends JModelLegacy
 	/**
 	 * Method to get the total number of items for the data set.
 	 *
-	 * @return  integer  The total number of items available in the data set.
+     * @return  integer  The total number of items available in the data set.
 	 *
 	 * @since   12.2
 	 */
@@ -246,7 +246,7 @@ class JModelList extends JModelLegacy
 	/**
 	 * Method to get the starting number of items for the data set.
 	 *
-	 * @return  integer  The starting number of items available in the data set.
+     * @return  integer  The starting number of items available in the data set.
 	 *
 	 * @since   12.2
 	 */
@@ -283,10 +283,10 @@ class JModelList extends JModelLegacy
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @param   string  $ordering   An optional ordering field.
-	 * @param   string  $direction  An optional direction (asc|desc).
+     * @param  string  $ordering   An optional ordering field.
+     * @param  string  $direction  An optional direction (asc|desc).
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.2
 	 */
@@ -336,13 +336,13 @@ class JModelList extends JModelLegacy
 	 * This is the same as the method in JApplication except that this also can optionally
 	 * force you back to the first page when a filter has changed
 	 *
-	 * @param   string   $key        The key of the user state variable.
-	 * @param   string   $request    The name of the variable passed in a request.
-	 * @param   string   $default    The default value for the variable if not found. Optional.
-	 * @param   string   $type       Filter for the variable, for valid values see {@link JFilterInput::clean()}. Optional.
-	 * @param   boolean  $resetPage  If true, the limitstart in request is set to zero
+     * @param  string   $key        The key of the user state variable.
+     * @param  string   $request    The name of the variable passed in a request.
+     * @param  string   $default    The default value for the variable if not found. Optional.
+     * @param  string   $type       Filter for the variable, for valid values see {@link JFilterInput::clean()}. Optional.
+     * @param  boolean  $resetPage  If true, the limitstart in request is set to zero
 	 *
-	 * @return  The request user state.
+     * @return  The  request user state.
 	 *
 	 * @since   12.2
 	 */

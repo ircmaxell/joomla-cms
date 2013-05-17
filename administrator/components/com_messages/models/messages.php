@@ -74,7 +74,7 @@ class MessagesModelMessages extends JModelList
 	 *
 	 * @param   string    A prefix for the store id.
 	 *
-	 * @return  string    A store id.
+     * @return  string  A store id.
 	 */
 	protected function getStoreId($id = '')
 	{
@@ -88,7 +88,7 @@ class MessagesModelMessages extends JModelList
 	/**
 	 * Build an SQL query to load the list data.
 	 *
-	 * @return  JDatabaseQuery
+     * @return  JDatabaseQuery
 	 */
 	protected function getListQuery()
 	{

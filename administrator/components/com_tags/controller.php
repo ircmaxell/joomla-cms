@@ -22,10 +22,10 @@ class TagsController extends JControllerLegacy
 	/**
 	 * Method to display a view.
 	 *
-	 * @param   boolean  $cachable   If true, the view output will be cached
-	 * @param   array    $urlparams  An array of safe url parameters and their variable types, for valid values see {@link JFilterInput::clean()}.
+     * @param  boolean  $cachable   If true, the view output will be cached
+     * @param  array    $urlparams  An array of safe url parameters and their variable types, for valid values see {@link JFilterInput::clean()}.
 	 *
-	 * @return  JControllerLegacy  This object to support chaining.
+     * @return  JControllerLegacy  This object to support chaining.
 	 *
 	 * @since   3.1
 	 */

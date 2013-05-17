@@ -110,7 +110,7 @@ class JUri
 	 * Constructor.
 	 * You can pass a URI string to the constructor to initialise a specific URI.
 	 *
-	 * @param   string  $uri  The optional URI string
+     * @param  string  $uri  The optional URI string
 	 *
 	 * @since   11.1
 	 */
@@ -125,7 +125,7 @@ class JUri
 	/**
 	 * Magic method to get the string representation of the URI object.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -138,9 +138,9 @@ class JUri
 	 * Returns the global JURI object, only creating it
 	 * if it doesn't already exist.
 	 *
-	 * @param   string  $uri  The URI to parse.  [optional: if null uses script URI]
+     * @param  string  $uri  The URI to parse.  [optional: if null uses script URI]
 	 *
-	 * @return  JURI  The URI object.
+     * @return  JURI  The URI object.
 	 *
 	 * @since   11.1
 	 */
@@ -211,9 +211,9 @@ class JUri
 	/**
 	 * Returns the base URI for the request.
 	 *
-	 * @param   boolean  $pathonly  If false, prepend the scheme, host and port information. Default is false.
+     * @param  boolean  $pathonly  If false, prepend the scheme, host and port information. Default is false.
 	 *
-	 * @return  string  The base URI string
+     * @return  string  The base URI string
 	 *
 	 * @since   11.1
 	 */
@@ -267,10 +267,10 @@ class JUri
 	/**
 	 * Returns the root URI for the request.
 	 *
-	 * @param   boolean  $pathonly  If false, prepend the scheme, host and port information. Default is false.
-	 * @param   string   $path      The path
+     * @param  boolean  $pathonly  If false, prepend the scheme, host and port information. Default is false.
+     * @param  string   $path      The path
 	 *
-	 * @return  string  The root URI string.
+     * @return  string  The root URI string.
 	 *
 	 * @since   11.1
 	 */
@@ -296,7 +296,7 @@ class JUri
 	/**
 	 * Returns the URL for the request, minus the query.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -315,7 +315,7 @@ class JUri
 	/**
 	 * Method to reset class static members for testing and other various issues.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -330,9 +330,9 @@ class JUri
 	/**
 	 * Parse a given URI and populate the class fields.
 	 *
-	 * @param   string  $uri  The URI string to parse.
+     * @param  string  $uri  The URI string to parse.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   11.1
 	 */
@@ -376,9 +376,9 @@ class JUri
 	/**
 	 * Returns full uri string.
 	 *
-	 * @param   array  $parts  An array specifying the parts to render.
+     * @param  array  $parts  An array specifying the parts to render.
 	 *
-	 * @return  string  The rendered URI string.
+     * @return  string  The rendered URI string.
 	 *
 	 * @since   11.1
 	 */
@@ -404,10 +404,10 @@ class JUri
 	 * Adds a query variable and value, replacing the value if it
 	 * already exists and returning the old value.
 	 *
-	 * @param   string  $name   Name of the query variable to set.
-	 * @param   string  $value  Value of the query variable.
+     * @param  string  $name   Name of the query variable to set.
+     * @param  string  $value  Value of the query variable.
 	 *
-	 * @return  string  Previous value for the query variable.
+     * @return  string  Previous value for the query variable.
 	 *
 	 * @since   11.1
 	 */
@@ -426,9 +426,9 @@ class JUri
 	/**
 	 * Checks if variable exists.
 	 *
-	 * @param   string  $name  Name of the query variable to check.
+     * @param  string  $name  Name of the query variable to check.
 	 *
-	 * @return  boolean  True if the variable exists.
+     * @return  boolean  True if the variable exists.
 	 *
 	 * @since   11.1
 	 */
@@ -440,10 +440,10 @@ class JUri
 	/**
 	 * Returns a query variable by name.
 	 *
-	 * @param   string  $name     Name of the query variable to get.
-	 * @param   string  $default  Default value to return if the variable is not set.
+     * @param  string  $name     Name of the query variable to get.
+     * @param  string  $default  Default value to return if the variable is not set.
 	 *
-	 * @return  array   Query variables.
+     * @return  array  Query variables.
 	 *
 	 * @since   11.1
 	 */
@@ -459,9 +459,9 @@ class JUri
 	/**
 	 * Removes an item from the query string variables if it exists.
 	 *
-	 * @param   string  $name  Name of variable to remove.
+     * @param  string  $name  Name of variable to remove.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -480,9 +480,9 @@ class JUri
 	 * Sets the query to a supplied string in format:
 	 * foo=bar&x=y
 	 *
-	 * @param   mixed  $query  The query string or array.
+     * @param  mixed  $query  The query string or array.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -508,9 +508,9 @@ class JUri
 	/**
 	 * Returns flat query string.
 	 *
-	 * @param   boolean  $toArray  True to return the query as a key => value pair array.
+     * @param  boolean  $toArray  True to return the query as a key => value pair array.
 	 *
-	 * @return  string   Query string.
+     * @return  string  Query string.
 	 *
 	 * @since   11.1
 	 */
@@ -533,9 +533,9 @@ class JUri
 	/**
 	 * Build a query from a array (reverse of the PHP parse_str()).
 	 *
-	 * @param   array  $params  The array of key => value pairs to return as a query string.
+     * @param  array  $params  The array of key => value pairs to return as a query string.
 	 *
-	 * @return  string  The resulting query string.
+     * @return  string  The resulting query string.
 	 *
 	 * @see     parse_str()
 	 * @since   11.1
@@ -554,7 +554,7 @@ class JUri
 	 * Get URI scheme (protocol)
 	 * ie. http, https, ftp, etc...
 	 *
-	 * @return  string  The URI scheme.
+     * @return  string  The URI scheme.
 	 *
 	 * @since   11.1
 	 */
@@ -567,9 +567,9 @@ class JUri
 	 * Set URI scheme (protocol)
 	 * ie. http, https, ftp, etc...
 	 *
-	 * @param   string  $scheme  The URI scheme.
+     * @param  string  $scheme  The URI scheme.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -582,7 +582,7 @@ class JUri
 	 * Get URI username
 	 * Returns the username, or null if no username was specified.
 	 *
-	 * @return  string  The URI username.
+     * @return  string  The URI username.
 	 *
 	 * @since   11.1
 	 */
@@ -594,9 +594,9 @@ class JUri
 	/**
 	 * Set URI username.
 	 *
-	 * @param   string  $user  The URI username.
+     * @param  string  $user  The URI username.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -609,7 +609,7 @@ class JUri
 	 * Get URI password
 	 * Returns the password, or null if no password was specified.
 	 *
-	 * @return  string  The URI password.
+     * @return  string  The URI password.
 	 *
 	 * @since   11.1
 	 */
@@ -621,9 +621,9 @@ class JUri
 	/**
 	 * Set URI password.
 	 *
-	 * @param   string  $pass  The URI password.
+     * @param  string  $pass  The URI password.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -636,7 +636,7 @@ class JUri
 	 * Get URI host
 	 * Returns the hostname/ip or null if no hostname/ip was specified.
 	 *
-	 * @return  string  The URI host.
+     * @return  string  The URI host.
 	 *
 	 * @since   11.1
 	 */
@@ -648,9 +648,9 @@ class JUri
 	/**
 	 * Set URI host.
 	 *
-	 * @param   string  $host  The URI host.
+     * @param  string  $host  The URI host.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -663,7 +663,7 @@ class JUri
 	 * Get URI port
 	 * Returns the port number, or null if no port was specified.
 	 *
-	 * @return  integer  The URI port number.
+     * @return  integer  The URI port number.
 	 *
 	 * @since   11.1
 	 */
@@ -675,9 +675,9 @@ class JUri
 	/**
 	 * Set URI port.
 	 *
-	 * @param   integer  $port  The URI port number.
+     * @param  integer  $port  The URI port number.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -689,7 +689,7 @@ class JUri
 	/**
 	 * Gets the URI path string.
 	 *
-	 * @return  string  The URI path string.
+     * @return  string  The URI path string.
 	 *
 	 * @since   11.1
 	 */
@@ -701,9 +701,9 @@ class JUri
 	/**
 	 * Set the URI path string.
 	 *
-	 * @param   string  $path  The URI path string.
+     * @param  string  $path  The URI path string.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -716,7 +716,7 @@ class JUri
 	 * Get the URI archor string
 	 * Everything after the "#".
 	 *
-	 * @return  string  The URI anchor string.
+     * @return  string  The URI anchor string.
 	 *
 	 * @since   11.1
 	 */
@@ -729,9 +729,9 @@ class JUri
 	 * Set the URI anchor string
 	 * everything after the "#".
 	 *
-	 * @param   string  $anchor  The URI anchor string.
+     * @param  string  $anchor  The URI anchor string.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -743,7 +743,7 @@ class JUri
 	/**
 	 * Checks whether the current URI is using HTTPS.
 	 *
-	 * @return  boolean  True if using SSL via HTTPS.
+     * @return  boolean  True if using SSL via HTTPS.
 	 *
 	 * @since   11.1
 	 */
@@ -755,9 +755,9 @@ class JUri
 	/**
 	 * Checks if the supplied URL is internal
 	 *
-	 * @param   string  $url  The URL to check.
+     * @param  string  $url  The URL to check.
 	 *
-	 * @return  boolean  True if Internal.
+     * @return  boolean  True if Internal.
 	 *
 	 * @since   11.1
 	 */
@@ -781,9 +781,9 @@ class JUri
 	 * /foo/bar/../../boo.php => /boo.php
 	 * /foo/bar/.././/boo.php => /foo/boo.php
 	 *
-	 * @param   string  $path  The URI path to clean.
+     * @param  string  $path  The URI path to clean.
 	 *
-	 * @return  string  Cleaned and resolved URI path.
+     * @return  string  Cleaned and resolved URI path.
 	 *
 	 * @since   11.1
 	 */

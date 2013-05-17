@@ -42,7 +42,7 @@ abstract class JCryptCipherMcrypt implements JCryptCipher
 	 * Constructor.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function __construct()
 	{
@@ -55,10 +55,10 @@ abstract class JCryptCipherMcrypt implements JCryptCipher
 	/**
 	 * Method to decrypt a data string.
 	 *
-	 * @param   string     $data  The encrypted string to decrypt.
-	 * @param   JCryptKey  $key   The key object to use for decryption.
+     * @param  string     $data  The encrypted string to decrypt.
+     * @param  JCryptKey  $key   The key object to use for decryption.
 	 *
-	 * @return  string  The decrypted data string.
+     * @return  string  The decrypted data string.
 	 *
 	 * @since   12.1
 	 */
@@ -79,10 +79,10 @@ abstract class JCryptCipherMcrypt implements JCryptCipher
 	/**
 	 * Method to encrypt a data string.
 	 *
-	 * @param   string     $data  The data string to encrypt.
-	 * @param   JCryptKey  $key   The key object to use for encryption.
+     * @param  string     $data  The data string to encrypt.
+     * @param  JCryptKey  $key   The key object to use for encryption.
 	 *
-	 * @return  string  The encrypted data string.
+     * @return  string  The encrypted data string.
 	 *
 	 * @since   12.1
 	 */
@@ -103,9 +103,9 @@ abstract class JCryptCipherMcrypt implements JCryptCipher
 	/**
 	 * Method to generate a new encryption key object.
 	 *
-	 * @param   array  $options  Key generation options.
+     * @param  array  $options  Key generation options.
 	 *
-	 * @return  JCryptKey
+     * @return  JCryptKey
 	 *
 	 * @since   12.1
 	 */
@@ -130,13 +130,13 @@ abstract class JCryptCipherMcrypt implements JCryptCipher
 	/**
 	 * PBKDF2 Implementation for deriving keys.
 	 *
-	 * @param   string   $p   Password
-	 * @param   string   $s   Salt
-	 * @param   integer  $kl  Key length
-	 * @param   integer  $c   Iteration count
-	 * @param   string   $a   Hash algorithm
+     * @param  string   $p   Password
+     * @param  string   $s   Salt
+     * @param  integer  $kl  Key length
+     * @param  integer  $c   Iteration count
+     * @param  string   $a   Hash algorithm
 	 *
-	 * @return  string  The derived key.
+     * @return  string  The derived key.
 	 *
 	 * @see     http://en.wikipedia.org/wiki/PBKDF2
 	 * @see     http://www.ietf.org/rfc/rfc2898.txt

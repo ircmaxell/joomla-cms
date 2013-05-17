@@ -64,7 +64,7 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $options  List of options used to configure the connection
+     * @param  array  $options  List of options used to configure the connection
 	 *
 	 * @since   12.1
 	 */
@@ -97,10 +97,10 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Connects to the database if needed.
 	 *
-	 * @return  void  Returns void if the database connected successfully.
+     * @return  void  Returns void if the database connected successfully.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function connect()
 	{
@@ -303,7 +303,7 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Disconnects the database.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -327,10 +327,10 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	 * Note: Using query objects with bound variables is
 	 * preferable to the below.
 	 *
-	 * @param   string   $text   The string to be escaped.
-	 * @param   boolean  $extra  Unused optional parameter to provide extra escaping.
+     * @param  string   $text   The string to be escaped.
+     * @param  boolean  $extra  Unused optional parameter to provide extra escaping.
 	 *
-	 * @return  string  The escaped string.
+     * @return  string  The escaped string.
 	 *
 	 * @since   12.1
 	 */
@@ -349,11 +349,11 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Execute the SQL statement.
 	 *
-	 * @return  mixed  A database cursor resource on success, boolean false on failure.
+     * @return  mixed  A database cursor resource on success, boolean false on failure.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
-	 * @throws  Exception
+     * @throws  RuntimeException
+     * @throws  Exception
 	 */
 	public function execute()
 	{
@@ -459,9 +459,9 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	 *
 	 * Usage: $db->getOption(PDO::ATTR_CASE);
 	 *
-	 * @param   mixed  $key  One of the PDO::ATTR_* Constants
+     * @param  mixed  $key  One of the PDO::ATTR_* Constants
 	 *
-	 * @return mixed
+     * @return  mixed
 	 *
 	 * @since  12.1
 	 */
@@ -475,7 +475,7 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Get a query to run and verify the database is operational.
 	 *
-	 * @return  string  The query to check the health of the DB.
+     * @return  string  The query to check the health of the DB.
 	 *
 	 * @since   12.2
 	 */
@@ -490,12 +490,12 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	 *
 	 * Usage: $db->setOption(PDO::ATTR_CASE, PDO::CASE_UPPER);
 	 *
-	 * @param   integer  $key    One of the PDO::ATTR_* Constants
-	 * @param   mixed    $value  One of the associated PDO Constants
+     * @param  integer  $key    One of the PDO::ATTR_* Constants
+     * @param  mixed    $value  One of the associated PDO Constants
 	 *                           related to the particular attribute
 	 *                           key.
 	 *
-	 * @return boolean
+     * @return  boolean
 	 *
 	 * @since  12.1
 	 */
@@ -510,7 +510,7 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	 * Test to see if the PDO extension is available.
 	 * Override as needed to check for specific PDO Drivers.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   12.1
 	 */
@@ -522,7 +522,7 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Determines if the connection to the server is active.
 	 *
-	 * @return  boolean  True if connected to the database engine.
+     * @return  boolean  True if connected to the database engine.
 	 *
 	 * @since   12.1
 	 */
@@ -573,7 +573,7 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	 * Get the number of affected rows for the previous executed SQL statement.
 	 * Only applicable for DELETE, INSERT, or UPDATE statements.
 	 *
-	 * @return  integer  The number of affected rows.
+     * @return  integer  The number of affected rows.
 	 *
 	 * @since   12.1
 	 */
@@ -594,9 +594,9 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Get the number of returned rows for the previous executed SQL statement.
 	 *
-	 * @param   resource  $cursor  An optional database cursor resource to extract the row count from.
+     * @param  resource  $cursor  An optional database cursor resource to extract the row count from.
 	 *
-	 * @return  integer   The number of returned rows.
+     * @return  integer  The number of returned rows.
 	 *
 	 * @since   12.1
 	 */
@@ -621,7 +621,7 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Method to get the auto-incremented value from the last INSERT statement.
 	 *
-	 * @return  integer  The value of the auto-increment field from the last inserted row.
+     * @return  integer  The value of the auto-increment field from the last inserted row.
 	 *
 	 * @since   12.1
 	 */
@@ -636,12 +636,12 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Select a database for use.
 	 *
-	 * @param   string  $database  The name of the database to select for use.
+     * @param  string  $database  The name of the database to select for use.
 	 *
-	 * @return  boolean  True if the database was successfully selected.
+     * @return  boolean  True if the database was successfully selected.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function select($database)
 	{
@@ -653,12 +653,12 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Sets the SQL statement string for later execution.
 	 *
-	 * @param   mixed    $query          The SQL statement to set either as a JDatabaseQuery object or a string.
-	 * @param   integer  $offset         The affected row offset to set.
-	 * @param   integer  $limit          The maximum affected rows to set.
-	 * @param   array    $driverOptions  The optional PDO driver options
+     * @param  mixed    $query          The SQL statement to set either as a JDatabaseQuery object or a string.
+     * @param  integer  $offset         The affected row offset to set.
+     * @param  integer  $limit          The maximum affected rows to set.
+     * @param  array    $driverOptions  The optional PDO driver options
 	 *
-	 * @return  JDatabaseDriver  This object to support method chaining.
+     * @return  JDatabaseDriver  This object to support method chaining.
 	 *
 	 * @since   12.1
 	 */
@@ -692,7 +692,7 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Set the connection to use UTF-8 character encoding.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   12.1
 	 */
@@ -704,10 +704,10 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Method to commit a transaction.
 	 *
-	 * @return  bool
+     * @return  bool
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function transactionCommit()
 	{
@@ -719,10 +719,10 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Method to roll back a transaction.
 	 *
-	 * @return  bool
+     * @return  bool
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function transactionRollback()
 	{
@@ -734,10 +734,10 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Method to initialize a transaction.
 	 *
-	 * @return  bool
+     * @return  bool
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function transactionStart()
 	{
@@ -749,9 +749,9 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Method to fetch a row from the result set cursor as an array.
 	 *
-	 * @param   mixed  $cursor  The optional result set cursor from which to fetch the row.
+     * @param  mixed  $cursor  The optional result set cursor from which to fetch the row.
 	 *
-	 * @return  mixed  Either the next row from the result set or false if there are no more rows.
+     * @return  mixed  Either the next row from the result set or false if there are no more rows.
 	 *
 	 * @since   12.1
 	 */
@@ -770,9 +770,9 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Method to fetch a row from the result set cursor as an associative array.
 	 *
-	 * @param   mixed  $cursor  The optional result set cursor from which to fetch the row.
+     * @param  mixed  $cursor  The optional result set cursor from which to fetch the row.
 	 *
-	 * @return  mixed  Either the next row from the result set or false if there are no more rows.
+     * @return  mixed  Either the next row from the result set or false if there are no more rows.
 	 *
 	 * @since   12.1
 	 */
@@ -791,10 +791,10 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Method to fetch a row from the result set cursor as an object.
 	 *
-	 * @param   mixed   $cursor  The optional result set cursor from which to fetch the row.
-	 * @param   string  $class   Unused, only necessary so method signature will be the same as parent.
+     * @param  mixed   $cursor  The optional result set cursor from which to fetch the row.
+     * @param  string  $class   Unused, only necessary so method signature will be the same as parent.
 	 *
-	 * @return  mixed   Either the next row from the result set or false if there are no more rows.
+     * @return  mixed  Either the next row from the result set or false if there are no more rows.
 	 *
 	 * @since   12.1
 	 */
@@ -813,9 +813,9 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Method to free up the memory used for the result set.
 	 *
-	 * @param   mixed  $cursor  The optional result set cursor from which to fetch the row.
+     * @param  mixed  $cursor  The optional result set cursor from which to fetch the row.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -838,12 +838,12 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Method to get the next row in the result set from the database query as an object.
 	 *
-	 * @param   string  $class  The class name to use for the returned row object.
+     * @param  string  $class  The class name to use for the returned row object.
 	 *
-	 * @return  mixed   The result of the query as an array, false if there are no more rows.
+     * @return  mixed  The result of the query as an array, false if there are no more rows.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function loadNextObject($class = 'stdClass')
 	{
@@ -873,10 +873,10 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Method to get the next row in the result set from the database query as an array.
 	 *
-	 * @return  mixed  The result of the query as an array, false if there are no more rows.
+     * @return  mixed  The result of the query as an array, false if there are no more rows.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function loadNextAssoc()
 	{
@@ -906,10 +906,10 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Method to get the next row in the result set from the database query as an array.
 	 *
-	 * @return  mixed  The result of the query as an array, false if there are no more rows.
+     * @return  mixed  The result of the query as an array, false if there are no more rows.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function loadNextRow()
 	{
@@ -939,7 +939,7 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * PDO does not support serialize
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   12.3
 	 */
@@ -967,7 +967,7 @@ abstract class JDatabaseDriverPdo extends JDatabaseDriver
 	/**
 	 * Wake up after serialization
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   12.3
 	 */

@@ -31,7 +31,7 @@ class ContactViewFeatured extends JViewLegacy
 	/**
 	 * Display the view
 	 *
-	 * @return  mixed  False on error, null otherwise.
+     * @return  mixed  False on error, null otherwise.
 	 */
 	public function display($tpl = null)
 	{
@@ -73,7 +73,8 @@ class ContactViewFeatured extends JViewLegacy
 				if (!empty($item->email_to) && JMailHelper::isEmailAddress($item->email_to))
 				{
 					$item->email_to = JHtml::_('email.cloak', $item->email_to);
-				} else {
+				}
+				else {
 					$item->email_to = '';
 				}
 			}

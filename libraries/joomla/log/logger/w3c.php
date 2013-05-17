@@ -31,7 +31,7 @@ class JLogLoggerW3c extends JLogLoggerFormattedtext
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  &$options  Log object options.
+     * @param  array  &$options  Log object options.
 	 *
 	 * @since   11.1
 	 */

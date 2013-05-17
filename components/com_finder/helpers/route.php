@@ -21,10 +21,10 @@ class FinderHelperRoute
 	/**
 	 * Method to get the route for a search page.
 	 *
-	 * @param   integer  $f  The search filter id. [optional]
-	 * @param   string   $q  The search query string. [optional]
+     * @param  integer  $f  The search filter id. [optional]
+     * @param  string   $q  The search query string. [optional]
 	 *
-	 * @return  string  The search route.
+     * @return  string  The search route.
 	 *
 	 * @since   2.5
 	 */
@@ -61,10 +61,10 @@ class FinderHelperRoute
 	/**
 	 * Method to get the route for an advanced search page.
 	 *
-	 * @param   integer  $f  The search filter id. [optional]
-	 * @param   string   $q  The search query string. [optional]
+     * @param  integer  $f  The search filter id. [optional]
+     * @param  string   $q  The search query string. [optional]
 	 *
-	 * @return  string  The advanced search route.
+     * @return  string  The advanced search route.
 	 *
 	 * @since   2.5
 	 */
@@ -102,9 +102,9 @@ class FinderHelperRoute
 	 * Method to get the most appropriate menu item for the route based on the
 	 * supplied query needles.
 	 *
-	 * @param   array  $query  An array of URL parameters.
+     * @param  array  $query  An array of URL parameters.
 	 *
-	 * @return  mixed  An integer on success, null otherwise.
+     * @return  mixed  An integer on success, null otherwise.
 	 *
 	 * @since   2.5
 	 */

@@ -33,7 +33,7 @@ class BannersTableClient extends JTable
 	 *					set the instance property value is used.
 	 * @param   integer The publishing state. eg. [0 = unpublished, 1 = published]
 	 * @param   integer The user id of the user performing the operation.
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 * @since   1.0.4
 	 */
 	public function publish($pks = null, $state = 1, $userId = 0)
@@ -53,7 +53,8 @@ class BannersTableClient extends JTable
 				$pks = array($this->$k);
 			}
 			// Nothing to set publishing state on, return false.
-			else {
+			else
+			{
 				$this->setError(JText::_('JLIB_DATABASE_ERROR_NO_ROWS_SELECTED'));
 				return false;
 			}

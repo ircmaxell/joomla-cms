@@ -70,9 +70,9 @@ class JOpenstreetmap
 	/**
 	 * Constructor.
 	 *
-	 * @param   JOpenstreetmapOauth  $oauth    Openstreetmap oauth client.
-	 * @param   JRegistry            $options  Openstreetmap options object.
-	 * @param   JOpenstreetmapHttp   $client   The HTTP client object.
+     * @param  JOpenstreetmapOauth  $oauth    Openstreetmap oauth client.
+     * @param  JRegistry            $options  Openstreetmap options object.
+     * @param  JOpenstreetmapHttp   $client   The HTTP client object.
 	 *
 	 * @since   13.1
 	 */
@@ -88,12 +88,12 @@ class JOpenstreetmap
 		// $this->options->def('api.url', 'http://api06.dev.openstreetmap.org/api/0.6/');
 	}
 
-	/**	
+	/**
 	 * Method to get object instances
-	 * 
-	 * @param   string  $name  Name of property to retrieve
 	 *
-	 * @return  JOpenstreetmapObject  Openstreetmap API object .
+     * @param  string  $name  Name of property to retrieve
+	 *
+     * @return  JOpenstreetmapObject  Openstreetmap API object .
 	 *
 	 * @since   13.1
 	 */
@@ -141,9 +141,9 @@ class JOpenstreetmap
 	/**
 	 * Get an option from the JOpenstreetmap instance.
 	 *
-	 * @param   string  $key  The name of the option to get.
+     * @param  string  $key  The name of the option to get.
 	 *
-	 * @return  mixed  The option value.
+     * @return  mixed  The option value.
 	 *
 	 * @since   13.1
 	 */
@@ -155,10 +155,10 @@ class JOpenstreetmap
 	/**
 	 * Set an option for the Openstreetmap instance.
 	 *
-	 * @param   string  $key    The name of the option to set.
-	 * @param   mixed   $value  The option value to set.
+     * @param  string  $key    The name of the option to set.
+     * @param  mixed   $value  The option value to set.
 	 *
-	 * @return  JOpenstreetmap  This object for method chaining.
+     * @return  JOpenstreetmap  This object for method chaining.
 	 *
 	 * @since   13.1
 	 */

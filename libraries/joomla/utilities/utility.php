@@ -21,9 +21,9 @@ class JUtility
 	/**
 	 * Method to extract key/value pairs out of a string with XML style attributes
 	 *
-	 * @param   string  $string  String containing XML style attributes
+     * @param  string  $string  String containing XML style attributes
 	 *
-	 * @return  array  Key/Value pairs for the attributes
+     * @return  array  Key/Value pairs for the attributes
 	 *
 	 * @since   11.1
 	 */

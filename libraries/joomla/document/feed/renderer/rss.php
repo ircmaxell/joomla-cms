@@ -30,11 +30,11 @@ class JDocumentRendererRSS extends JDocumentRenderer
 	/**
 	 * Render the feed.
 	 *
-	 * @param   string  $name     The name of the element to render
-	 * @param   array   $params   Array of values
-	 * @param   string  $content  Override the output of the renderer
+     * @param  string  $name     The name of the element to render
+     * @param  array   $params   Array of values
+     * @param  string  $content  Override the output of the renderer
 	 *
-	 * @return  string  The output of the script
+     * @return  string  The output of the script
 	 *
 	 * @see JDocumentRenderer::render()
 	 * @since   11.1
@@ -235,9 +235,9 @@ class JDocumentRendererRSS extends JDocumentRenderer
 	/**
 	 * Convert links in a text from relative to absolute
 	 *
-	 * @param   string  $text  The text processed
+     * @param  string  $text  The text processed
 	 *
-	 * @return  string   Text with converted links
+     * @return  string  Text with converted links
 	 *
 	 * @since   11.1
 	 */

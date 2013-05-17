@@ -51,7 +51,7 @@ class JLogLoggerFormattedtext extends JLogLogger
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  &$options  Log object options.
+     * @param  array  &$options  Log object options.
 	 *
 	 * @since   11.1
 	 */
@@ -107,12 +107,12 @@ class JLogLoggerFormattedtext extends JLogLogger
 	/**
 	 * Method to add an entry to the log.
 	 *
-	 * @param   JLogEntry  $entry  The log entry object to add to the log.
+     * @param  JLogEntry  $entry  The log entry object to add to the log.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function addEntry(JLogEntry $entry)
 	{
@@ -174,7 +174,7 @@ class JLogLoggerFormattedtext extends JLogLogger
 	/**
 	 * Method to generate the log file header.
 	 *
-	 * @return  string  The log file header
+     * @return  string  The log file header
 	 *
 	 * @since   11.1
 	 */
@@ -207,7 +207,7 @@ class JLogLoggerFormattedtext extends JLogLogger
 	 * exist and also get a new file header if the file doesn't already exist.  If the file already exists it
 	 * will simply open it for writing.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -245,7 +245,7 @@ class JLogLoggerFormattedtext extends JLogLogger
 	/**
 	 * Method to parse the format string into an array of fields.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */

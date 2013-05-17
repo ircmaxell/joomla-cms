@@ -21,7 +21,7 @@ class InstallationControllerSetlanguage extends JControllerBase
 	/**
 	 * Execute the controller.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */

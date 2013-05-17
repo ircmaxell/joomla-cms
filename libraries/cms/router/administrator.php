@@ -23,9 +23,9 @@ class JRouterAdministrator extends JRouter
 	/**
 	 * Function to convert a route to an internal URI.
 	 *
-	 * @param   JURI  $uri  The uri.
+     * @param  JURI  $uri  The uri.
 	 *
-	 * @return  array
+     * @return  array
 	 */
 	public function parse($uri)
 	{
@@ -35,9 +35,9 @@ class JRouterAdministrator extends JRouter
 	/**
 	 * Function to convert an internal URI to a route
 	 *
-	 * @param   string  $url  The internal URL
+     * @param  string  $url  The internal URL
 	 *
-	 * @return  string  The absolute search engine friendly URL
+     * @return  string  The absolute search engine friendly URL
 	 *
 	 * @since   1.5
 	 */

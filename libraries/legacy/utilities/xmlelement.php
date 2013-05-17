@@ -24,7 +24,7 @@ class JXMLElement extends SimpleXMLElement
 	/**
 	 * Get the name of the element.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 * @deprecated 13.3  Use SimpleXMLElement::getName() instead.
@@ -38,11 +38,11 @@ class JXMLElement extends SimpleXMLElement
 	/**
 	 * Return a well-formed XML string based on SimpleXML element
 	 *
-	 * @param   boolean  $compressed  Should we use indentation and newlines ?
-	 * @param   string   $indent      Indention character.
-	 * @param   integer  $level       The level within the document which informs the indentation.
+     * @param  boolean  $compressed  Should we use indentation and newlines ?
+     * @param  string   $indent      Indention character.
+     * @param  integer  $level       The level within the document which informs the indentation.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 * @deprecated 13.3  Use SimpleXMLElement::asXML() instead.

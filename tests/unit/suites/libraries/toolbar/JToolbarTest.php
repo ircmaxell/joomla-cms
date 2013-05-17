@@ -38,7 +38,7 @@ class JToolbarTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the constructor
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -53,7 +53,7 @@ class JToolbarTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getInstance method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -70,7 +70,7 @@ class JToolbarTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the appendButton method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -85,7 +85,7 @@ class JToolbarTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getItems method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -100,7 +100,7 @@ class JToolbarTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getName method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -115,7 +115,7 @@ class JToolbarTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the prependButton method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -130,7 +130,7 @@ class JToolbarTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the render method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -169,7 +169,7 @@ class JToolbarTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the addButtonPath method with an array parameter
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -202,7 +202,7 @@ class JToolbarTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the addButtonPath method with a string parameter
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

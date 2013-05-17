@@ -7,9 +7,7 @@
  * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
-
 defined('JPATH_PLATFORM') or die();
-
 
 /**
  * Facebook API Status class for the Joomla Platform.
@@ -25,9 +23,9 @@ class JFacebookStatus extends JFacebookObject
 	/**
 	 * Method to get a status message. Requires authentication.
 	 *
-	 * @param   string  $status  The status message id.
+     * @param  string  $status  The status message id.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -39,13 +37,13 @@ class JFacebookStatus extends JFacebookObject
 	/**
 	 * Method to get a status message's comments. Requires authentication.
 	 *
-	 * @param   string   $status  The status message id.
-	 * @param   integer  $limit   The number of objects per page.
-	 * @param   integer  $offset  The object's number on the page.
-	 * @param   string   $until   A unix timestamp or any date accepted by strtotime.
-	 * @param   string   $since   A unix timestamp or any date accepted by strtotime.
+     * @param  string   $status  The status message id.
+     * @param  integer  $limit   The number of objects per page.
+     * @param  integer  $offset  The object's number on the page.
+     * @param  string   $until   A unix timestamp or any date accepted by strtotime.
+     * @param  string   $since   A unix timestamp or any date accepted by strtotime.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -57,10 +55,10 @@ class JFacebookStatus extends JFacebookObject
 	/**
 	 * Method to post a comment to the status message. Requires authentication and publish_stream and user_status or friends_status permission.
 	 *
-	 * @param   string  $status   The status message id.
-	 * @param   string  $message  The comment's text.
+     * @param  string  $status   The status message id.
+     * @param  string  $message  The comment's text.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -75,9 +73,9 @@ class JFacebookStatus extends JFacebookObject
 	/**
 	 * Method to delete a comment. Requires authentication and publish_stream and user_status or friends_status permission.
 	 *
-	 * @param   string  $comment  The comment's id.
+     * @param  string  $comment  The comment's id.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -89,13 +87,13 @@ class JFacebookStatus extends JFacebookObject
 	/**
 	 * Method to get a status message's likes. Requires authentication.
 	 *
-	 * @param   string   $status  The status message id.
-	 * @param   integer  $limit   The number of objects per page.
-	 * @param   integer  $offset  The object's number on the page.
-	 * @param   string   $until   A unix timestamp or any date accepted by strtotime.
-	 * @param   string   $since   A unix timestamp or any date accepted by strtotime.
+     * @param  string   $status  The status message id.
+     * @param  integer  $limit   The number of objects per page.
+     * @param  integer  $offset  The object's number on the page.
+     * @param  string   $until   A unix timestamp or any date accepted by strtotime.
+     * @param  string   $since   A unix timestamp or any date accepted by strtotime.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -107,9 +105,9 @@ class JFacebookStatus extends JFacebookObject
 	/**
 	 * Method to like status message. Requires authentication and publish_stream and user_status or friends_status permission.
 	 *
-	 * @param   string  $status  The status message id.
+     * @param  string  $status  The status message id.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -121,9 +119,9 @@ class JFacebookStatus extends JFacebookObject
 	/**
 	 * Method to unlike a status message. Requires authentication and publish_stream and user_status or friends_status permission.
 	 *
-	 * @param   string  $status  The status message id.
+     * @param  string  $status  The status message id.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */

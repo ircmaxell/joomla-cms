@@ -149,7 +149,8 @@ class MenusViewItems extends JViewLegacy
 						{
 							$value = JText::sprintf('COM_MENUS_TYPE_UNEXISTING', $result[1]);
 						}
-						else {
+						else
+						{
 							$value = JText::_('COM_MENUS_TYPE_UNKNOWN');
 						}
 					}
@@ -282,7 +283,7 @@ class MenusViewItems extends JViewLegacy
 	/**
 	 * Returns an array of fields the table can be sorted by
 	 *
-	 * @return  array  Array containing the field name to sort by as the key and display text as value
+     * @return  array  Array containing the field name to sort by as the key and display text as value
 	 *
 	 * @since   3.0
 	 */

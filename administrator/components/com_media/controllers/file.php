@@ -31,7 +31,7 @@ class MediaControllerFile extends JControllerLegacy
 	/**
 	 * Upload one or more files
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.5
 	 */
@@ -149,9 +149,9 @@ class MediaControllerFile extends JControllerLegacy
 	/**
 	 * Check that the user is authorized to perform this action
 	 *
-	 * @param   string   $action - the action to be peformed (create or delete)
+     * @param  string  $action  - the action to be peformed (create or delete)
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.6
 	 */
@@ -170,7 +170,7 @@ class MediaControllerFile extends JControllerLegacy
 	/**
 	 * Deletes paths from the current path
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.5
 	 */

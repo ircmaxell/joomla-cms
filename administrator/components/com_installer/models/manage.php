@@ -23,7 +23,7 @@ class InstallerModelManage extends InstallerModel
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $config  An optional associative array of configuration settings.
+     * @param  array  $config  An optional associative array of configuration settings.
 	 *
 	 * @see     JController
 	 * @since   1.6
@@ -43,10 +43,10 @@ class InstallerModelManage extends InstallerModel
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @param   string  $ordering   An optional ordering field.
-	 * @param   string  $direction  An optional direction (asc|desc).
+     * @param  string  $ordering   An optional ordering field.
+     * @param  string  $direction  An optional direction (asc|desc).
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -81,10 +81,10 @@ class InstallerModelManage extends InstallerModel
 	/**
 	 * Enable/Disable an extension.
 	 *
-	 * @param   array  &$eid   Extension ids to un/publish
-	 * @param   int    $value  Publish value
+     * @param  array  &$eid   Extension ids to un/publish
+     * @param  int    $value  Publish value
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   1.5
 	 */
@@ -149,9 +149,9 @@ class InstallerModelManage extends InstallerModel
 	/**
 	 * Refreshes the cached manifest information for an extension.
 	 *
-	 * @param   int  $eid  extension identifier (key in #__extensions)
+     * @param  int  $eid  extension identifier (key in #__extensions)
 	 *
-	 * @return  boolean  result of refresh
+     * @return  boolean  result of refresh
 	 *
 	 * @since   1.6
 	 */
@@ -177,9 +177,9 @@ class InstallerModelManage extends InstallerModel
 	/**
 	 * Remove (uninstall) an extension
 	 *
-	 * @param   array  $eid  An array of identifiers
+     * @param  array  $eid  An array of identifiers
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   1.5
 	 */
@@ -274,7 +274,7 @@ class InstallerModelManage extends InstallerModel
 	/**
 	 * Method to get the database query
 	 *
-	 * @return  JDatabaseQuery  The database query
+     * @return  JDatabaseQuery  The database query
 	 *
 	 * @since   1.6
 	 */

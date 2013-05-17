@@ -21,7 +21,7 @@ class JTableCorecontent extends JTable
 	/**
 	 * Constructor
 	 *
-	 * @param   JDatabaseDriver  $db  A database connector object
+     * @param  JDatabaseDriver  $db  A database connector object
 	 *
 	 * @since   3.1
 	 */
@@ -33,11 +33,11 @@ class JTableCorecontent extends JTable
 	/**
 	 * Overloaded bind function
 	 *
-	 * @param   array  $array   Named array
-	 * @param   mixed  $ignore  An optional array or space separated list of properties
+     * @param  array  $array   Named array
+     * @param  mixed  $ignore  An optional array or space separated list of properties
 	 *                          to ignore while binding.
 	 *
-	 * @return  mixed  Null if operation was satisfactory, otherwise returns an error string
+     * @return  mixed  Null if operation was satisfactory, otherwise returns an error string
 	 *
 	 * @see     JTable::bind
 	 * @since   3.1
@@ -85,7 +85,7 @@ class JTableCorecontent extends JTable
 	/**
 	 * Overloaded check function
 	 *
-	 * @return  boolean  True on success, false on failure
+     * @return  boolean  True on success, false on failure
 	 *
 	 * @see     JTable::check
 	 * @since   3.1
@@ -154,12 +154,12 @@ class JTableCorecontent extends JTable
 	/**
 	 * Override JTable delete method to include deleting corresponding row from #__ucm_base.
 	 *
-	 * @param   integer  $pk  primary key value to delete. Must be set or throws an exception.
+     * @param  integer  $pk  primary key value to delete. Must be set or throws an exception.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
-	 * @throws  UnexpectedValueException
+     * @throws  UnexpectedValueException
 	 */
 	public function delete($pk = null)
 	{
@@ -170,12 +170,12 @@ class JTableCorecontent extends JTable
 	/**
 	 * Method to delete a row from the #__ucm_content table by content_item_id.
 	 *
-	 * @param   integer  $contentItemId  value of the core_content_item_id to delete. Corresponds to the primary key of the content table.
+     * @param  integer  $contentItemId  value of the core_content_item_id to delete. Corresponds to the primary key of the content table.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
-	 * @throws  UnexpectedValueException
+     * @throws  UnexpectedValueException
 	 */
 	public function deleteByContentId($contentItemId = null)
 	{
@@ -203,9 +203,9 @@ class JTableCorecontent extends JTable
 	/**
 	 * Overrides JTable::store to set modified data and user id.
 	 *
-	 * @param   boolean  $updateNulls  True to update fields even if they are null.
+     * @param  boolean  $updateNulls  True to update fields even if they are null.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
 	 */
@@ -253,10 +253,10 @@ class JTableCorecontent extends JTable
 	/**
 	 * Insert or update row in ucm_base table
 	 *
-	 * @param   boolean  $updateNulls  True to update fields even if they are null.
-	 * @param   boolean  $isNew        if true, need to insert. Otherwise update.
+     * @param  boolean  $updateNulls  True to update fields even if they are null.
+     * @param  boolean  $isNew        if true, need to insert. Otherwise update.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
 	 */
@@ -292,11 +292,11 @@ class JTableCorecontent extends JTable
 	 * table. The method respects checked out rows by other users and will attempt
 	 * to checkin rows that it can after adjustments are made.
 	 *
-	 * @param   mixed    $pks     An optional array of primary key values to update.  If not set the instance property value is used.
-	 * @param   integer  $state   The publishing state. eg. [0 = unpublished, 1 = published]
-	 * @param   integer  $userId  The user id of the user performing the operation.
+     * @param  mixed    $pks     An optional array of primary key values to update.  If not set the instance property value is used.
+     * @param  integer  $state   The publishing state. eg. [0 = unpublished, 1 = published]
+     * @param  integer  $userId  The user id of the user performing the operation.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
 	 */

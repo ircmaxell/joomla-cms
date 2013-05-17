@@ -67,7 +67,7 @@ class JLogLoggerDatabase extends JLogLogger
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  &$options  Log object options.
+     * @param  array  &$options  Log object options.
 	 *
 	 * @since   11.1
 	 */
@@ -105,9 +105,9 @@ class JLogLoggerDatabase extends JLogLogger
 	/**
 	 * Method to add an entry to the log.
 	 *
-	 * @param   JLogEntry  $entry  The log entry object to add to the log.
+     * @param  JLogEntry  $entry  The log entry object to add to the log.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -128,10 +128,10 @@ class JLogLoggerDatabase extends JLogLogger
 	/**
 	 * Method to connect to the database server based on object properties.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	protected function connect()
 	{

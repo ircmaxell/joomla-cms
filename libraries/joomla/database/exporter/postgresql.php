@@ -85,10 +85,10 @@ class JDatabaseExporterPostgresql extends JDatabaseExporter
 	/**
 	 * Magic function to exports the data to a string.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   12.1
-	 * @throws  Exception if an error is encountered.
+     * @throws  Exception  if an error is encountered.
 	 */
 	public function __toString()
 	{
@@ -112,7 +112,7 @@ class JDatabaseExporterPostgresql extends JDatabaseExporter
 	/**
 	 * Set the output option for the exporter to XML format.
 	 *
-	 * @return  JDatabaseExporterPostgresql  Method supports chaining.
+     * @return  JDatabaseExporterPostgresql  Method supports chaining.
 	 *
 	 * @since   12.1
 	 */
@@ -126,10 +126,10 @@ class JDatabaseExporterPostgresql extends JDatabaseExporter
 	/**
 	 * Builds the XML data for the tables to export.
 	 *
-	 * @return  string  An XML string
+     * @return  string  An XML string
 	 *
 	 * @since   12.1
-	 * @throws  Exception if an error occurs.
+     * @throws  Exception  if an error occurs.
 	 */
 	protected function buildXml()
 	{
@@ -150,10 +150,10 @@ class JDatabaseExporterPostgresql extends JDatabaseExporter
 	/**
 	 * Builds the XML structure to export.
 	 *
-	 * @return  array  An array of XML lines (strings).
+     * @return  array  An array of XML lines (strings).
 	 *
 	 * @since   12.1
-	 * @throws  Exception if an error occurs.
+     * @throws  Exception  if an error occurs.
 	 */
 	protected function buildXmlStructure()
 	{
@@ -208,11 +208,11 @@ class JDatabaseExporterPostgresql extends JDatabaseExporter
 	/**
 	 * Checks if all data and options are in order prior to exporting.
 	 *
-	 * @return  JDatabaseExporterPostgresql  Method supports chaining.
+     * @return  JDatabaseExporterPostgresql  Method supports chaining.
 	 *
 	 * @since   12.1
 	 *
-	 * @throws  Exception if an error is encountered.
+     * @throws  Exception  if an error is encountered.
 	 */
 	public function check()
 	{
@@ -234,9 +234,9 @@ class JDatabaseExporterPostgresql extends JDatabaseExporter
 	/**
 	 * Get the generic name of the table, converting the database prefix to the wildcard string.
 	 *
-	 * @param   string  $table  The name of the table.
+     * @param  string  $table  The name of the table.
 	 *
-	 * @return  string  The name of the table with the database prefix replaced with #__.
+     * @return  string  The name of the table with the database prefix replaced with #__.
 	 *
 	 * @since   12.1
 	 */
@@ -254,12 +254,12 @@ class JDatabaseExporterPostgresql extends JDatabaseExporter
 	/**
 	 * Specifies a list of table names to export.
 	 *
-	 * @param   mixed  $from  The name of a single table, or an array of the table names to export.
+     * @param  mixed  $from  The name of a single table, or an array of the table names to export.
 	 *
-	 * @return  JDatabaseExporterPostgresql  Method supports chaining.
+     * @return  JDatabaseExporterPostgresql  Method supports chaining.
 	 *
 	 * @since   12.1
-	 * @throws  Exception if input is not a string or array.
+     * @throws  Exception  if input is not a string or array.
 	 */
 	public function from($from)
 	{
@@ -282,9 +282,9 @@ class JDatabaseExporterPostgresql extends JDatabaseExporter
 	/**
 	 * Sets the database connector to use for exporting structure and/or data from PostgreSQL.
 	 *
-	 * @param   JDatabaseDriverPostgresql  $db  The database connector.
+     * @param  JDatabaseDriverPostgresql  $db  The database connector.
 	 *
-	 * @return  JDatabaseExporterPostgresql  Method supports chaining.
+     * @return  JDatabaseExporterPostgresql  Method supports chaining.
 	 *
 	 * @since   12.1
 	 */
@@ -298,9 +298,9 @@ class JDatabaseExporterPostgresql extends JDatabaseExporter
 	/**
 	 * Sets an internal option to export the structure of the input table(s).
 	 *
-	 * @param   boolean  $setting  True to export the structure, false to not.
+     * @param  boolean  $setting  True to export the structure, false to not.
 	 *
-	 * @return  JDatabaseExporterPostgresql  Method supports chaining.
+     * @return  JDatabaseExporterPostgresql  Method supports chaining.
 	 *
 	 * @since   12.1
 	 */

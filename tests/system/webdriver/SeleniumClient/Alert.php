@@ -21,14 +21,14 @@ class Alert
 	private $_driver;
 
 	/**
-	 * @param WebDriver $driver
+     * @param  WebDriver  $driver
 	 */
 	public function __construct(WebDriver $driver) { $this->_driver = $driver; }
 
 	#region IAlert Members
 	/**
 	 * Gets the text of the alert.
-	 * @return String
+     * @return  String
 	 */
 	public function getText() { return $this->_driver->getAlertText(); }
 
@@ -44,7 +44,7 @@ class Alert
 
 	/**
 	 * Sends keys to the alert.
-	 * @param String $keysToSend
+     * @param  String  $keysToSend
 	 */
 	public function sendKeys($keysToSend)
 	{

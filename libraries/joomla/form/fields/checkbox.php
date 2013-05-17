@@ -34,7 +34,7 @@ class JFormFieldCheckbox extends JFormField
 	 * Method to get the field input markup.
 	 * The checked element sets the field to selected.
 	 *
-	 * @return  string   The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   11.1
 	 */

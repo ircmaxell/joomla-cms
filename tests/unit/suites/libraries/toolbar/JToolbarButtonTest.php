@@ -46,7 +46,7 @@ class JToolbarButtonTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the constructor
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -61,7 +61,7 @@ class JToolbarButtonTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getName method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -86,7 +86,7 @@ class JToolbarButtonTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the fetchIconClass method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

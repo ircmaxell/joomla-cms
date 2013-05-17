@@ -68,8 +68,8 @@ class JInput implements Serializable, Countable
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $source   Source data (Optional, default is $_REQUEST)
-	 * @param   array  $options  Array of configuration parameters (Optional)
+     * @param  array  $source   Source data (Optional, default is $_REQUEST)
+     * @param  array  $options  Array of configuration parameters (Optional)
 	 *
 	 * @since   11.1
 	 */
@@ -100,9 +100,9 @@ class JInput implements Serializable, Countable
 	/**
 	 * Magic method to get an input object
 	 *
-	 * @param   mixed  $name  Name of the input object to retrieve.
+     * @param  mixed  $name  Name of the input object to retrieve.
 	 *
-	 * @return  JInput  The request input object
+     * @return  JInput  The request input object
 	 *
 	 * @since   11.1
 	 */
@@ -133,7 +133,7 @@ class JInput implements Serializable, Countable
 	/**
 	 * Get the number of variables.
 	 *
-	 * @return  integer  The number of variables in the input.
+     * @return  integer  The number of variables in the input.
 	 *
 	 * @since   12.2
 	 * @see     Countable::count()
@@ -146,11 +146,11 @@ class JInput implements Serializable, Countable
 	/**
 	 * Gets a value from the input data.
 	 *
-	 * @param   string  $name     Name of the value to get.
-	 * @param   mixed   $default  Default value to return if variable does not exist.
-	 * @param   string  $filter   Filter to apply to the value.
+     * @param  string  $name     Name of the value to get.
+     * @param  mixed   $default  Default value to return if variable does not exist.
+     * @param  string  $filter   Filter to apply to the value.
 	 *
-	 * @return  mixed  The filtered input value.
+     * @return  mixed  The filtered input value.
 	 *
 	 * @since   11.1
 	 */
@@ -167,10 +167,10 @@ class JInput implements Serializable, Countable
 	/**
 	 * Gets an array of values from the request.
 	 *
-	 * @param   array  $vars        Associative array of keys and filter types to apply.
-	 * @param   mixed  $datasource  Array to retrieve data from, or null
+     * @param  array  $vars        Associative array of keys and filter types to apply.
+     * @param  mixed  $datasource  Array to retrieve data from, or null
 	 *
-	 * @return  mixed  The filtered input data.
+     * @return  mixed  The filtered input data.
 	 *
 	 * @since   11.1
 	 */
@@ -214,10 +214,10 @@ class JInput implements Serializable, Countable
 	/**
 	 * Sets a value
 	 *
-	 * @param   string  $name   Name of the value to set.
-	 * @param   mixed   $value  Value to assign to the input.
+     * @param  string  $name   Name of the value to set.
+     * @param  mixed   $value  Value to assign to the input.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -229,10 +229,10 @@ class JInput implements Serializable, Countable
 	/**
 	 * Define a value. The value will only be set if there's no value for the name or if it is null.
 	 *
-	 * @param   string  $name   Name of the value to define.
-	 * @param   mixed   $value  Value to assign to the input.
+     * @param  string  $name   Name of the value to define.
+     * @param  mixed   $value  Value to assign to the input.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -249,10 +249,10 @@ class JInput implements Serializable, Countable
 	/**
 	 * Magic method to get filtered input data.
 	 *
-	 * @param   string  $name       Name of the filter type prefixed with 'get'.
-	 * @param   array   $arguments  [0] The name of the variable [1] The default value.
+     * @param  string  $name       Name of the filter type prefixed with 'get'.
+     * @param  array   $arguments  [0] The name of the variable [1] The default value.
 	 *
-	 * @return  mixed   The filtered input value.
+     * @return  mixed  The filtered input value.
 	 *
 	 * @since   11.1
 	 */
@@ -276,7 +276,7 @@ class JInput implements Serializable, Countable
 	/**
 	 * Gets the request method.
 	 *
-	 * @return  string   The request method.
+     * @return  string  The request method.
 	 *
 	 * @since   11.1
 	 */
@@ -289,7 +289,7 @@ class JInput implements Serializable, Countable
 	/**
 	 * Method to serialize the input.
 	 *
-	 * @return  string  The serialized input.
+     * @return  string  The serialized input.
 	 *
 	 * @since   12.1
 	 */
@@ -310,9 +310,9 @@ class JInput implements Serializable, Countable
 	/**
 	 * Method to unserialize the input.
 	 *
-	 * @param   string  $input  The serialized input.
+     * @param  string  $input  The serialized input.
 	 *
-	 * @return  JInput  The input object.
+     * @return  JInput  The input object.
 	 *
 	 * @since   12.1
 	 */
@@ -335,7 +335,7 @@ class JInput implements Serializable, Countable
 	/**
 	 * Method to load all of the global inputs.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */

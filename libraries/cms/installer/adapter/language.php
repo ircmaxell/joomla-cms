@@ -36,7 +36,7 @@ class JInstallerAdapterLanguage extends JAdapterInstance
 	 * the ability to install multiple distinct packs in one install. The
 	 * preferred method is to use a package to install multiple language packs.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -87,12 +87,12 @@ class JInstallerAdapterLanguage extends JAdapterInstance
 	/**
 	 * Install function that is designed to handle individual clients
 	 *
-	 * @param   string   $cname     Cname @todo: not used
-	 * @param   string   $basePath  The base name.
-	 * @param   integer  $clientId  The client id.
-	 * @param   object   &$element  The XML element.
+     * @param  string   $cname     Cname @todo: not used
+     * @param  string   $basePath  The base name.
+     * @param  integer  $clientId  The client id.
+     * @param  object   &$element  The XML element.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since  3.1
 	 */
@@ -274,7 +274,7 @@ class JInstallerAdapterLanguage extends JAdapterInstance
 	/**
 	 * Custom update method
 	 *
-	 * @return  boolean  True on success, false on failure
+     * @return  boolean  True on success, false on failure
 	 *
 	 * @since   3.1
 	 */
@@ -416,9 +416,9 @@ class JInstallerAdapterLanguage extends JAdapterInstance
 	/**
 	 * Custom uninstall method
 	 *
-	 * @param   string  $eid  The tag of the language to uninstall
+     * @param  string  $eid  The tag of the language to uninstall
 	 *
-	 * @return  mixed  Return value for uninstall method in component uninstall file
+     * @return  mixed  Return value for uninstall method in component uninstall file
 	 *
 	 * @since   3.1
 	 */
@@ -542,7 +542,7 @@ class JInstallerAdapterLanguage extends JAdapterInstance
 	 * Custom discover method
 	 * Finds language files
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since  3.1
 	 */
@@ -593,7 +593,7 @@ class JInstallerAdapterLanguage extends JAdapterInstance
 	 * Custom discover install method
 	 * Basically updates the manifest cache and leaves everything alone
 	 *
-	 * @return  integer  The extension id
+     * @return  integer  The extension id
 	 *
 	 * @since   3.1
 	 */
@@ -630,7 +630,7 @@ class JInstallerAdapterLanguage extends JAdapterInstance
 	/**
 	 * Refreshes the extension table cache
 	 *
-	 * @return  boolean result of operation, true if updated, false on failure
+     * @return  boolean  result of operation, true if updated, false on failure
 	 *
 	 * @since   3.1
 	 */

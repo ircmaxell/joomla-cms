@@ -21,10 +21,10 @@ interface JFeedParserNamespace
 	/**
 	 * Method to handle an element for the feed given that a certain namespace is present.
 	 *
-	 * @param   JFeed             $feed  The JFeed object being built from the parsed feed.
-	 * @param   SimpleXMLElement  $el    The current XML element object to handle.
+     * @param  JFeed             $feed  The JFeed object being built from the parsed feed.
+     * @param  SimpleXMLElement  $el    The current XML element object to handle.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.3
 	 */
@@ -33,10 +33,10 @@ interface JFeedParserNamespace
 	/**
 	 * Method to handle the feed entry element for the feed given that a certain namespace is present.
 	 *
-	 * @param   JFeedEntry        $entry  The JFeedEntry object being built from the parsed feed entry.
-	 * @param   SimpleXMLElement  $el     The current XML element object to handle.
+     * @param  JFeedEntry        $entry  The JFeedEntry object being built from the parsed feed entry.
+     * @param  SimpleXMLElement  $el     The current XML element object to handle.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.3
 	 */

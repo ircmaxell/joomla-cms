@@ -76,7 +76,7 @@ class ModulesModelPositions extends JModelList
 	/**
 	 * Method to get an array of data items.
 	 *
-	 * @return  mixed  An array of data items on success, false on failure.
+     * @return  mixed  An array of data items on success, false on failure.
 	 * @since   1.6
 	 */
 	public function getItems()
@@ -184,16 +184,19 @@ class ModulesModelPositions extends JModelList
 				{
 					ksort($positions);
 				}
-				else {
+				else
+				{
 					krsort($positions);
 				}
 			}
-			else {
+			else
+			{
 				if ($direction == 'asc')
 				{
 					asort($positions);
 				}
-				else {
+				else
+				{
 					arsort($positions);
 				}
 			}
@@ -205,7 +208,7 @@ class ModulesModelPositions extends JModelList
 	/**
 	 * Method to get the total number of items.
 	 *
-	 * @return  int	The total number of items.
+     * @return  int  The total number of items.
 	 * @since   1.6
 	 */
 	public function getTotal()

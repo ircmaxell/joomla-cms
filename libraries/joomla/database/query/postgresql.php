@@ -57,7 +57,7 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	/**
 	 * Magic function to convert the query to a string, only for postgresql specific query
 	 *
-	 * @return  string	The completed query.
+     * @return  string  The completed query.
 	 *
 	 * @since   11.3
 	 */
@@ -195,9 +195,9 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	/**
 	 * Clear data from the query or a specific clause of the query.
 	 *
-	 * @param   string  $clause  Optionally, the name of the clause to clear, or nothing to clear the whole query.
+     * @param  string  $clause  Optionally, the name of the clause to clear, or nothing to clear the whole query.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.3
 	 */
@@ -268,9 +268,9 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	 * Usage:
 	 * $query->select($query->castAsChar('a'));
 	 *
-	 * @param   string  $value  The value to cast as a char.
+     * @param  string  $value  The value to cast as a char.
 	 *
-	 * @return  string  Returns the cast value.
+     * @return  string  Returns the cast value.
 	 *
 	 * @since   11.1
 	 */
@@ -285,10 +285,10 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	 * Usage:
 	 * $query->select($query->concatenate(array('a', 'b')));
 	 *
-	 * @param   array   $values     An array of values to concatenate.
-	 * @param   string  $separator  As separator to place between each value.
+     * @param  array   $values     An array of values to concatenate.
+     * @param  string  $separator  As separator to place between each value.
 	 *
-	 * @return  string  The concatenated values.
+     * @return  string  The concatenated values.
 	 *
 	 * @since   11.3
 	 */
@@ -307,7 +307,7 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	/**
 	 * Gets the current date and time.
 	 *
-	 * @return  string  Return string used in query to obtain
+     * @return  string  Return string used in query to obtain
 	 *
 	 * @since   11.3
 	 */
@@ -319,10 +319,10 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	/**
 	 * Sets the FOR UPDATE lock on select's output row
 	 *
-	 * @param   string   $table_name  The table to lock
-	 * @param   boolean  $glue        The glue by which to join the conditions. Defaults to ',' .
+     * @param  string   $table_name  The table to lock
+     * @param  boolean  $glue        The glue by which to join the conditions. Defaults to ',' .
 	 *
-	 * @return  JDatabaseQuery  FOR UPDATE query element
+     * @return  JDatabaseQuery  FOR UPDATE query element
 	 *
 	 * @since   11.3
 	 */
@@ -346,10 +346,10 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	/**
 	 * Sets the FOR SHARE lock on select's output row
 	 *
-	 * @param   string   $table_name  The table to lock
-	 * @param   boolean  $glue        The glue by which to join the conditions. Defaults to ',' .
+     * @param  string   $table_name  The table to lock
+     * @param  boolean  $glue        The glue by which to join the conditions. Defaults to ',' .
 	 *
-	 * @return  JDatabaseQuery  FOR SHARE query element
+     * @return  JDatabaseQuery  FOR SHARE query element
 	 *
 	 * @since   11.3
 	 */
@@ -376,9 +376,9 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	 * Usage:
 	 * $query->select($query->year($query->quoteName('dateColumn')));
 	 *
-	 * @param   string  $date  Date column containing year to be extracted.
+     * @param  string  $date  Date column containing year to be extracted.
 	 *
-	 * @return  string  Returns string to extract year from a date.
+     * @return  string  Returns string to extract year from a date.
 	 *
 	 * @since   12.1
 	 */
@@ -393,9 +393,9 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	 * Usage:
 	 * $query->select($query->month($query->quoteName('dateColumn')));
 	 *
-	 * @param   string  $date  Date column containing month to be extracted.
+     * @param  string  $date  Date column containing month to be extracted.
 	 *
-	 * @return  string  Returns string to extract month from a date.
+     * @return  string  Returns string to extract month from a date.
 	 *
 	 * @since   12.1
 	 */
@@ -410,9 +410,9 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	 * Usage:
 	 * $query->select($query->day($query->quoteName('dateColumn')));
 	 *
-	 * @param   string  $date  Date column containing day to be extracted.
+     * @param  string  $date  Date column containing day to be extracted.
 	 *
-	 * @return  string  Returns string to extract day from a date.
+     * @return  string  Returns string to extract day from a date.
 	 *
 	 * @since   12.1
 	 */
@@ -427,9 +427,9 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	 * Usage:
 	 * $query->select($query->hour($query->quoteName('dateColumn')));
 	 *
-	 * @param   string  $date  Date column containing hour to be extracted.
+     * @param  string  $date  Date column containing hour to be extracted.
 	 *
-	 * @return  string  Returns string to extract hour from a date.
+     * @return  string  Returns string to extract hour from a date.
 	 *
 	 * @since   12.1
 	 */
@@ -444,9 +444,9 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	 * Usage:
 	 * $query->select($query->minute($query->quoteName('dateColumn')));
 	 *
-	 * @param   string  $date  Date column containing minute to be extracted.
+     * @param  string  $date  Date column containing minute to be extracted.
 	 *
-	 * @return  string  Returns string to extract minute from a date.
+     * @return  string  Returns string to extract minute from a date.
 	 *
 	 * @since   12.1
 	 */
@@ -461,9 +461,9 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	 * Usage:
 	 * $query->select($query->second($query->quoteName('dateColumn')));
 	 *
-	 * @param   string  $date  Date column containing second to be extracted.
+     * @param  string  $date  Date column containing second to be extracted.
 	 *
-	 * @return  string  Returns string to extract second from a date.
+     * @return  string  Returns string to extract second from a date.
 	 *
 	 * @since   12.1
 	 */
@@ -475,7 +475,7 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	/**
 	 * Sets the NOWAIT lock on select's output row
 	 *
-	 * @return  JDatabaseQuery  NO WAIT query element
+     * @return  JDatabaseQuery  NO WAIT query element
 	 *
 	 * @since   11.3
 	 */
@@ -494,9 +494,9 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	/**
 	 * Set the LIMIT clause to the query
 	 *
-	 * @param   int  $limit  An int of how many row will be returned
+     * @param  int  $limit  An int of how many row will be returned
 	 *
-	 * @return  JDatabaseQuery  Returns this object to allow chaining.
+     * @return  JDatabaseQuery  Returns this object to allow chaining.
 	 *
 	 * @since   11.3
 	 */
@@ -513,9 +513,9 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	/**
 	 * Set the OFFSET clause to the query
 	 *
-	 * @param   int  $offset  An int for skipping row
+     * @param  int  $offset  An int for skipping row
 	 *
-	 * @return  JDatabaseQuery  Returns this object to allow chaining.
+     * @return  JDatabaseQuery  Returns this object to allow chaining.
 	 *
 	 * @since   11.3
 	 */
@@ -532,9 +532,9 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	/**
 	 * Add the RETURNING element to INSERT INTO statement.
 	 *
-	 * @param   mixed  $pkCol  The name of the primary key column.
+     * @param  mixed  $pkCol  The name of the primary key column.
 	 *
-	 * @return  JDatabaseQuery  Returns this object to allow chaining.
+     * @return  JDatabaseQuery  Returns this object to allow chaining.
 	 *
 	 * @since   11.3
 	 */
@@ -555,10 +555,10 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	 * $query->setLimit(100, 0); (retrieve 100 rows, starting at first record)
 	 * $query->setLimit(50, 50); (retrieve 50 rows, starting at 50th record)
 	 *
-	 * @param   integer  $limit   The limit for the result set
-	 * @param   integer  $offset  The offset for the result set
+     * @param  integer  $limit   The limit for the result set
+     * @param  integer  $offset  The offset for the result set
 	 *
-	 * @return  JDatabaseQuery  Returns this object to allow chaining.
+     * @return  JDatabaseQuery  Returns this object to allow chaining.
 	 *
 	 * @since   12.1
 	 */
@@ -575,11 +575,11 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	 * additions to make the query limited to a particular number of
 	 * results, or start at a particular offset.
 	 *
-	 * @param   string   $query   The query in string format
-	 * @param   integer  $limit   The limit for the result set
-	 * @param   integer  $offset  The offset for the result set
+     * @param  string   $query   The query in string format
+     * @param  integer  $limit   The limit for the result set
+     * @param  integer  $offset  The offset for the result set
 	 *
-	 * @return string
+     * @return  string
 	 *
 	 * @since 12.1
 	 */
@@ -604,11 +604,11 @@ class JDatabaseQueryPostgresql extends JDatabaseQuery implements JDatabaseQueryL
 	 * $query->select($query->dateAdd());
 	 * Prefixing the interval with a - (negative sign) will cause subtraction to be used.
 	 *
-	 * @param   datetime  $date      The date to add to
-	 * @param   string    $interval  The string representation of the appropriate number of units
-	 * @param   string    $datePart  The part of the date to perform the addition on
+     * @param  datetime  $date      The date to add to
+     * @param  string    $interval  The string representation of the appropriate number of units
+     * @param  string    $datePart  The part of the date to perform the addition on
 	 *
-	 * @return  string  The string with the appropriate sql for addition of dates
+     * @return  string  The string with the appropriate sql for addition of dates
 	 *
 	 * @since   13.1
 	 * @note Not all drivers support all units. Check appropriate references

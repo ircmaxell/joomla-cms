@@ -21,9 +21,9 @@ class JoomlaInstallerScript
 	/**
 	 * Method to update Joomla!
 	 *
-	 * @param   JInstallerFile    $installer    The class calling this method
+     * @param  JInstallerFile  $installer  The class calling this method
 	 *
-	 * @return void
+     * @return  void
 	 */
 	public function update($installer)
 	{

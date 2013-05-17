@@ -31,10 +31,10 @@ class TagsModelTags extends JModelList
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @param   string  $ordering   An optional ordering field.
-	 * @param   string  $direction  An optional direction (asc|desc).
+     * @param  string  $ordering   An optional ordering field.
+     * @param  string  $direction  An optional direction (asc|desc).
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -76,7 +76,7 @@ class TagsModelTags extends JModelList
 	/**
 	 * Redefine the function and add some properties to make the styling more easy
 	 *
-	 * @return  mixed  An array of data items on success, false on failure.
+     * @return  mixed  An array of data items on success, false on failure.
 	 *
 	 * @since   3.1
 	 */
@@ -102,7 +102,7 @@ class TagsModelTags extends JModelList
 	/**
 	 * Method to build an SQL query to load the list data.
 	 *
-	 * @return  string  An SQL query
+     * @return  string  An SQL query
 	 *
 	 * @since   1.6
 	 */

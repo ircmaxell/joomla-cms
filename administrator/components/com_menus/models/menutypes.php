@@ -30,7 +30,7 @@ class MenusModelMenutypes extends JModelLegacy
 	/**
 	 * Method to get the reverse lookup of the base link URL to Title
 	 *
-	 * @return  array  Array of reverse lookup of the base link URL to Title
+     * @return  array  Array of reverse lookup of the base link URL to Title
 	 * @since   1.6
 	 */
 	public function getReverseLookup()
@@ -45,7 +45,7 @@ class MenusModelMenutypes extends JModelLegacy
 	/**
 	 * Method to get the available menu item type options.
 	 *
-	 * @return  array  Array of groups with menu item types.
+     * @return  array  Array of groups with menu item types.
 	 * @since   1.6
 	 */
 	public function getTypeOptions()
@@ -269,7 +269,8 @@ class MenusModelMenutypes extends JModelLegacy
 									}
 								}
 							}
-							else {
+							else
+							{
 								$options = array_merge($options, (array) $this->getTypeOptionsFromLayouts($component, $view));
 							}
 						}
@@ -277,7 +278,8 @@ class MenusModelMenutypes extends JModelLegacy
 					}
 
 				}
-				else {
+				else
+				{
 					$options = array_merge($options, (array) $this->getTypeOptionsFromLayouts($component, $view));
 				}
 			}

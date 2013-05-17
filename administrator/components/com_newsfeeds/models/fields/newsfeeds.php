@@ -31,7 +31,7 @@ class JFormFieldNewsfeeds extends JFormFieldList
 	/**
 	 * Method to get the field options.
 	 *
-	 * @return  array  The field option objects.
+     * @return  array  The field option objects.
 	 * @since   1.6
 	 */
 	protected function getOptions()

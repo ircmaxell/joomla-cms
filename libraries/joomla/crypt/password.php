@@ -29,10 +29,10 @@ interface JCryptPassword
 	/**
 	 * Creates a password hash
 	 *
-	 * @param   string  $password  The password to hash.
-	 * @param   string  $prefix    The prefix of the hashing function.
+     * @param  string  $password  The password to hash.
+     * @param  string  $prefix    The prefix of the hashing function.
 	 *
-	 * @return  string  The hashed password.
+     * @return  string  The hashed password.
 	 *
 	 * @since   12.2
 	 */
@@ -41,10 +41,10 @@ interface JCryptPassword
 	/**
 	 * Verifies a password hash
 	 *
-	 * @param   string  $password  The password to verify.
-	 * @param   string  $hash      The password hash to check.
+     * @param  string  $password  The password to verify.
+     * @param  string  $hash      The password hash to check.
 	 *
-	 * @return  boolean  True if the password is valid, false otherwise.
+     * @return  boolean  True if the password is valid, false otherwise.
 	 *
 	 * @since   12.2
 	 */

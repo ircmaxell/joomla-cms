@@ -21,16 +21,16 @@ class JGithubCommits extends JGithubObject
 	/**
 	 * Method to create a commit.
 	 *
-	 * @param   string  $user     The name of the owner of the GitHub repository.
-	 * @param   string  $repo     The name of the GitHub repository.
-	 * @param   string  $message  The commit message.
-	 * @param   string  $tree     SHA of the tree object this commit points to.
-	 * @param   array   $parents  Array of the SHAs of the commits that were the parents of this commit.
+     * @param  string  $user     The name of the owner of the GitHub repository.
+     * @param  string  $repo     The name of the GitHub repository.
+     * @param  string  $message  The commit message.
+     * @param  string  $tree     SHA of the tree object this commit points to.
+     * @param  array   $parents  Array of the SHAs of the commits that were the parents of this commit.
 	 *                            If omitted or empty, the commit will be written as a root commit.
 	 *                            For a single parent, an array of one SHA should be provided.
 	 *                            For a merge commit, an array of more than one should be provided.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.1
 	 */
@@ -60,15 +60,15 @@ class JGithubCommits extends JGithubObject
 	/**
 	 * Method to create a comment on a commit.
 	 *
-	 * @param   string   $user      The name of the owner of the GitHub repository.
-	 * @param   string   $repo      The name of the GitHub repository.
-	 * @param   string   $sha       The SHA of the commit to comment on.
-	 * @param   string   $comment   The text of the comment.
-	 * @param   integer  $line      The line number of the commit to comment on.
-	 * @param   string   $filepath  A relative path to the file to comment on within the commit.
-	 * @param   integer  $position  Line index in the diff to comment on.
+     * @param  string   $user      The name of the owner of the GitHub repository.
+     * @param  string   $repo      The name of the GitHub repository.
+     * @param  string   $sha       The SHA of the commit to comment on.
+     * @param  string   $comment   The text of the comment.
+     * @param  integer  $line      The line number of the commit to comment on.
+     * @param  string   $filepath  A relative path to the file to comment on within the commit.
+     * @param  integer  $position  Line index in the diff to comment on.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.1
 	 */
@@ -104,11 +104,11 @@ class JGithubCommits extends JGithubObject
 	/**
 	 * Method to delete a comment on a commit.
 	 *
-	 * @param   string  $user  The name of the owner of the GitHub repository.
-	 * @param   string  $repo  The name of the GitHub repository.
-	 * @param   string  $id    The ID of the comment to edit.
+     * @param  string  $user  The name of the owner of the GitHub repository.
+     * @param  string  $repo  The name of the GitHub repository.
+     * @param  string  $id    The ID of the comment to edit.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.1
 	 */
@@ -134,12 +134,12 @@ class JGithubCommits extends JGithubObject
 	/**
 	 * Method to edit a comment on a commit.
 	 *
-	 * @param   string  $user     The name of the owner of the GitHub repository.
-	 * @param   string  $repo     The name of the GitHub repository.
-	 * @param   string  $id       The ID of the comment to edit.
-	 * @param   string  $comment  The text of the comment.
+     * @param  string  $user     The name of the owner of the GitHub repository.
+     * @param  string  $repo     The name of the GitHub repository.
+     * @param  string  $id       The ID of the comment to edit.
+     * @param  string  $comment  The text of the comment.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.1
 	 */
@@ -171,13 +171,13 @@ class JGithubCommits extends JGithubObject
 	/**
 	 * Method to get a single commit for a repository.
 	 *
-	 * @param   string   $user   The name of the owner of the GitHub repository.
-	 * @param   string   $repo   The name of the GitHub repository.
-	 * @param   string   $sha    The SHA of the commit to retrieve.
-	 * @param   integer  $page   Page to request
-	 * @param   integer  $limit  Number of results to return per page
+     * @param  string   $user   The name of the owner of the GitHub repository.
+     * @param  string   $repo   The name of the GitHub repository.
+     * @param  string   $sha    The SHA of the commit to retrieve.
+     * @param  integer  $page   Page to request
+     * @param  integer  $limit  Number of results to return per page
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   12.1
 	 */
@@ -203,11 +203,11 @@ class JGithubCommits extends JGithubObject
 	/**
 	 * Method to get a single comment on a commit.
 	 *
-	 * @param   string   $user  The name of the owner of the GitHub repository.
-	 * @param   string   $repo  The name of the GitHub repository.
-	 * @param   integer  $id    ID of the comment to retrieve
+     * @param  string   $user  The name of the owner of the GitHub repository.
+     * @param  string   $repo  The name of the GitHub repository.
+     * @param  integer  $id    ID of the comment to retrieve
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   12.1
 	 */
@@ -233,13 +233,13 @@ class JGithubCommits extends JGithubObject
 	/**
 	 * Method to get a list of comments for a single commit for a repository.
 	 *
-	 * @param   string   $user   The name of the owner of the GitHub repository.
-	 * @param   string   $repo   The name of the GitHub repository.
-	 * @param   string   $sha    The SHA of the commit to retrieve.
-	 * @param   integer  $page   Page to request
-	 * @param   integer  $limit  Number of results to return per page
+     * @param  string   $user   The name of the owner of the GitHub repository.
+     * @param  string   $repo   The name of the GitHub repository.
+     * @param  string   $sha    The SHA of the commit to retrieve.
+     * @param  integer  $page   Page to request
+     * @param  integer  $limit  Number of results to return per page
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   12.1
 	 */
@@ -265,12 +265,12 @@ class JGithubCommits extends JGithubObject
 	/**
 	 * Method to get a diff for two commits.
 	 *
-	 * @param   string  $user  The name of the owner of the GitHub repository.
-	 * @param   string  $repo  The name of the GitHub repository.
-	 * @param   string  $base  The base of the diff, either a commit SHA or branch.
-	 * @param   string  $head  The head of the diff, either a commit SHA or branch.
+     * @param  string  $user  The name of the owner of the GitHub repository.
+     * @param  string  $repo  The name of the GitHub repository.
+     * @param  string  $base  The base of the diff, either a commit SHA or branch.
+     * @param  string  $head  The head of the diff, either a commit SHA or branch.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   12.1
 	 */
@@ -296,12 +296,12 @@ class JGithubCommits extends JGithubObject
 	/**
 	 * Method to list commits for a repository.
 	 *
-	 * @param   string   $user   The name of the owner of the GitHub repository.
-	 * @param   string   $repo   The name of the GitHub repository.
-	 * @param   integer  $page   Page to request
-	 * @param   integer  $limit  Number of results to return per page
+     * @param  string   $user   The name of the owner of the GitHub repository.
+     * @param  string   $repo   The name of the GitHub repository.
+     * @param  integer  $page   Page to request
+     * @param  integer  $limit  Number of results to return per page
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   12.1
 	 */
@@ -327,12 +327,12 @@ class JGithubCommits extends JGithubObject
 	/**
 	 * Method to get a list of commit comments for a repository.
 	 *
-	 * @param   string   $user   The name of the owner of the GitHub repository.
-	 * @param   string   $repo   The name of the GitHub repository.
-	 * @param   integer  $page   Page to request
-	 * @param   integer  $limit  Number of results to return per page
+     * @param  string   $user   The name of the owner of the GitHub repository.
+     * @param  string   $repo   The name of the GitHub repository.
+     * @param  integer  $page   Page to request
+     * @param  integer  $limit  Number of results to return per page
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   12.1
 	 */

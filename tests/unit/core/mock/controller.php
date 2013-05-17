@@ -17,9 +17,9 @@ class TestMockController
 	/**
 	 * Creates and instance of the mock JController object.
 	 *
-	 * @param   object  $test  A test object.
+     * @param  object  $test  A test object.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.1
 	 */

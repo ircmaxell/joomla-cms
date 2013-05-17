@@ -47,7 +47,7 @@ class MenusHelper
 	 *
 	 * @param   integer  The menu ID.
 	 *
-	 * @return  JObject
+     * @return  JObject
 	 * @since   1.6
 	 */
 	public static function getActions($parentId = 0)
@@ -79,7 +79,7 @@ class MenusHelper
 	 *
 	 * @param   mixed    A link string or array of request variables.
 	 *
-	 * @return  mixed  A link in standard option-view-layout form, or false if the supplied response is invalid.
+     * @return  mixed  A link in standard option-view-layout form, or false if the supplied response is invalid.
 	 */
 	public static function getLinkKey($request)
 	{
@@ -121,7 +121,7 @@ class MenusHelper
 	/**
 	 * Get the menu list for create a menu module
 	 *
-	 * @return    array    The menu array list
+     * @return  array  The menu array list
 	 * @since        1.6
 	 */
 	public static function getMenuTypes()
@@ -246,7 +246,7 @@ class MenusHelper
 		}
 	}
 
-	static public function getAssociations($pk)
+	public static function getAssociations($pk)
 	{
 		$associations = array();
 		$db = JFactory::getDbo();

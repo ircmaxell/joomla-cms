@@ -22,7 +22,7 @@ class InstallerModel extends JModelList
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $config  An optional associative array of configuration settings.
+     * @param  array  $config  An optional associative array of configuration settings.
 	 *
 	 * @see     JController
 	 * @since   1.6
@@ -47,11 +47,11 @@ class InstallerModel extends JModelList
 	/**
 	 * Returns an object list
 	 *
-	 * @param   string  $query       The query
-	 * @param   int     $limitstart  Offset
-	 * @param   int     $limit       The number of records
+     * @param  string  $query       The query
+     * @param  int     $limitstart  Offset
+     * @param  int     $limit       The number of records
 	 *
-	 * @return  array
+     * @return  array
 	 */
 	protected function _getList($query, $limitstart = 0, $limit = 0)
 	{
@@ -100,9 +100,9 @@ class InstallerModel extends JModelList
 	/**
 	 * Translate a list of objects
 	 *
-	 * @param   array  &$items  The array of objects
+     * @param  array  &$items  The array of objects
 	 *
-	 * @return  array The array of translated objects
+     * @return  array  The array of translated objects
 	 */
 	private function translate(&$items)
 	{

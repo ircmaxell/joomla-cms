@@ -32,7 +32,7 @@ class PlgQuickiconExtensionupdate extends JPlugin
 	 *
 	 * @param  $context  The calling context
 	 *
-	 * @return array A list of icon definition associative arrays, consisting of the
+     * @return  array  A list of icon definition associative arrays, consisting of the
 	 *				 keys link, image, text and access.
 	 *
 	 * @since       2.5

@@ -21,9 +21,9 @@ class ModMenuHelper
 	/**
 	 * Get a list of the menu items.
 	 *
-	 * @param  JRegistry   $params  The module options.
+     * @param  JRegistry  $params  The module options.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   1.5
 	 */
@@ -146,9 +146,9 @@ class ModMenuHelper
 	/**
 	 * Get base menu item.
 	 *
-	 * @param   JRegistry  $params  The module options.
+     * @param  JRegistry  $params  The module options.
 	 *
-	 * @return   object
+     * @return  object
 	 *
 	 * @since	3.0.2
 	 */
@@ -177,9 +177,9 @@ class ModMenuHelper
 	/**
 	 * Get active menu item.
 	 *
-	 * @param   JRegistry  $params  The module options.
+     * @param  JRegistry  $params  The module options.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since	3.0.2
 	 */

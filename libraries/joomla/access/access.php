@@ -63,7 +63,7 @@ class JAccess
 	/**
 	 * Method for clearing static caches.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.3
 	 */
@@ -79,11 +79,11 @@ class JAccess
 	/**
 	 * Method to check if a user is authorised to perform an action, optionally on an asset.
 	 *
-	 * @param   integer  $userId  Id of the user for which to check authorisation.
-	 * @param   string   $action  The name of the action to authorise.
-	 * @param   mixed    $asset   Integer asset id or the name of the asset as a string.  Defaults to the global asset node.
+     * @param  integer  $userId  Id of the user for which to check authorisation.
+     * @param  string   $action  The name of the action to authorise.
+     * @param  mixed    $asset   Integer asset id or the name of the asset as a string.  Defaults to the global asset node.
 	 *
-	 * @return  boolean  True if authorised.
+     * @return  boolean  True if authorised.
 	 *
 	 * @since   11.1
 	 */
@@ -120,11 +120,11 @@ class JAccess
 	/**
 	 * Method to check if a group is authorised to perform an action, optionally on an asset.
 	 *
-	 * @param   integer  $groupId  The path to the group for which to check authorisation.
-	 * @param   string   $action   The name of the action to authorise.
-	 * @param   mixed    $asset    Integer asset id or the name of the asset as a string.  Defaults to the global asset node.
+     * @param  integer  $groupId  The path to the group for which to check authorisation.
+     * @param  string   $action   The name of the action to authorise.
+     * @param  mixed    $asset    Integer asset id or the name of the asset as a string.  Defaults to the global asset node.
 	 *
-	 * @return  boolean  True if authorised.
+     * @return  boolean  True if authorised.
 	 *
 	 * @since   11.1
 	 */
@@ -159,9 +159,9 @@ class JAccess
 	 * Gets the parent groups that a leaf group belongs to in its branch back to the root of the tree
 	 * (including the leaf group id).
 	 *
-	 * @param   mixed  $groupId  An integer or array of integers representing the identities to check.
+     * @param  mixed  $groupId  An integer or array of integers representing the identities to check.
 	 *
-	 * @return  mixed  True if allowed, false for an explicit deny, null for an implicit deny.
+     * @return  mixed  True if allowed, false for an explicit deny, null for an implicit deny.
 	 *
 	 * @since   11.1
 	 */
@@ -207,10 +207,10 @@ class JAccess
 	 * only the rules explicitly set for the asset or the summation of all inherited rules from
 	 * parent assets and explicit rules.
 	 *
-	 * @param   mixed    $asset      Integer asset id or the name of the asset as a string.
-	 * @param   boolean  $recursive  True to return the rules object with inherited rules.
+     * @param  mixed    $asset      Integer asset id or the name of the asset as a string.
+     * @param  boolean  $recursive  True to return the rules object with inherited rules.
 	 *
-	 * @return  JAccessRules   JAccessRules object for the asset.
+     * @return  JAccessRules  JAccessRules object for the asset.
 	 *
 	 * @since   11.1
 	 */
@@ -274,10 +274,10 @@ class JAccess
 	 * only the groups explicitly mapped to the user or all groups both explicitly mapped and inherited
 	 * by the user.
 	 *
-	 * @param   integer  $userId     Id of the user for which to get the list of groups.
-	 * @param   boolean  $recursive  True to include inherited user groups.
+     * @param  integer  $userId     Id of the user for which to get the list of groups.
+     * @param  boolean  $recursive  True to include inherited user groups.
 	 *
-	 * @return  array    List of user group ids to which the user is mapped.
+     * @return  array  List of user group ids to which the user is mapped.
 	 *
 	 * @since   11.1
 	 */
@@ -355,10 +355,10 @@ class JAccess
 	/**
 	 * Method to return a list of user Ids contained in a Group
 	 *
-	 * @param   integer  $groupId    The group Id
-	 * @param   boolean  $recursive  Recursively include all child groups (optional)
+     * @param  integer  $groupId    The group Id
+     * @param  boolean  $recursive  Recursively include all child groups (optional)
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.1
 	 * @todo    This method should move somewhere else
@@ -391,9 +391,9 @@ class JAccess
 	/**
 	 * Method to return a list of view levels for which the user is authorised.
 	 *
-	 * @param   integer  $userId  Id of the user for which to get the list of authorised view levels.
+     * @param  integer  $userId  Id of the user for which to get the list of authorised view levels.
 	 *
-	 * @return  array    List of view levels for which the user is authorised.
+     * @return  array  List of view levels for which the user is authorised.
 	 *
 	 * @since   11.1
 	 */
@@ -451,10 +451,10 @@ class JAccess
 	/**
 	 * Method to return a list of actions for which permissions can be set given a component and section.
 	 *
-	 * @param   string  $component  The component from which to retrieve the actions.
-	 * @param   string  $section    The name of the section within the component from which to retrieve the actions.
+     * @param  string  $component  The component from which to retrieve the actions.
+     * @param  string  $section    The name of the section within the component from which to retrieve the actions.
 	 *
-	 * @return  array  List of actions available for the given component and section.
+     * @return  array  List of actions available for the given component and section.
 	 *
 	 * @since   11.1
 	 *
@@ -483,10 +483,10 @@ class JAccess
 	/**
 	 * Method to return a list of actions from a file for which permissions can be set.
 	 *
-	 * @param   string  $file   The path to the XML file.
-	 * @param   string  $xpath  An optional xpath to search for the fields.
+     * @param  string  $file   The path to the XML file.
+     * @param  string  $xpath  An optional xpath to search for the fields.
 	 *
-	 * @return  boolean|array   False if case of error or the list of actions available.
+     * @return  boolean|array  False if case of error or the list of actions available.
 	 *
 	 * @since   12.1
 	 */
@@ -508,10 +508,10 @@ class JAccess
 	/**
 	 * Method to return a list of actions from a string or from an xml for which permissions can be set.
 	 *
-	 * @param   string|SimpleXMLElement  $data   The XML string or an XML element.
-	 * @param   string                   $xpath  An optional xpath to search for the fields.
+     * @param  string|SimpleXMLElement  $data   The XML string or an XML element.
+     * @param  string                   $xpath  An optional xpath to search for the fields.
 	 *
-	 * @return  boolean|array   False if case of error or the list of actions available.
+     * @return  boolean|array  False if case of error or the list of actions available.
 	 *
 	 * @since   12.1
 	 */

@@ -85,10 +85,10 @@ class JPagination
 	/**
 	 * Constructor.
 	 *
-	 * @param   integer  $total       The total number of items.
-	 * @param   integer  $limitstart  The offset of the item to start at.
-	 * @param   integer  $limit       The number of items to display per page.
-	 * @param   string   $prefix      The prefix used for request variables.
+     * @param  integer  $total       The total number of items.
+     * @param  integer  $limitstart  The offset of the item to start at.
+     * @param  integer  $limit       The number of items to display per page.
+     * @param  string   $prefix      The prefix used for request variables.
 	 *
 	 * @since   11.1
 	 */
@@ -162,10 +162,10 @@ class JPagination
 	 * Method to set an additional URL parameter to be added to all pagination class generated
 	 * links.
 	 *
-	 * @param   string  $key    The name of the URL parameter for which to set a value.
-	 * @param   mixed   $value  The value to set for the URL parameter.
+     * @param  string  $key    The name of the URL parameter for which to set a value.
+     * @param  mixed   $value  The value to set for the URL parameter.
 	 *
-	 * @return  mixed  The old value for the parameter.
+     * @return  mixed  The old value for the parameter.
 	 *
 	 * @since   11.1
 	 */
@@ -191,9 +191,9 @@ class JPagination
 	 * Method to get an additional URL parameter (if it exists) to be added to
 	 * all pagination class generated links.
 	 *
-	 * @param   string  $key  The name of the URL parameter for which to get the value.
+     * @param  string  $key  The name of the URL parameter for which to get the value.
 	 *
-	 * @return  mixed  The value if it exists or null if it does not.
+     * @return  mixed  The value if it exists or null if it does not.
 	 *
 	 * @since   11.1
 	 */
@@ -207,9 +207,9 @@ class JPagination
 	/**
 	 * Return the rationalised offset for a row with a given index.
 	 *
-	 * @param   integer  $index  The row index
+     * @param  integer  $index  The row index
 	 *
-	 * @return  integer  Rationalised offset for a row with a given index.
+     * @return  integer  Rationalised offset for a row with a given index.
 	 *
 	 * @since   11.1
 	 */
@@ -221,7 +221,7 @@ class JPagination
 	/**
 	 * Return the pagination data object, only creating it if it doesn't already exist.
 	 *
-	 * @return  object   Pagination data object.
+     * @return  object  Pagination data object.
 	 *
 	 * @since   11.1
 	 */
@@ -238,7 +238,7 @@ class JPagination
 	/**
 	 * Create and return the pagination pages counter string, ie. Page 2 of 4.
 	 *
-	 * @return  string   Pagination pages counter string.
+     * @return  string  Pagination pages counter string.
 	 *
 	 * @since   11.1
 	 */
@@ -255,7 +255,7 @@ class JPagination
 	/**
 	 * Create and return the pagination result set counter string, e.g. Results 1-10 of 42
 	 *
-	 * @return  string   Pagination result set counter string.
+     * @return  string  Pagination result set counter string.
 	 *
 	 * @since   11.1
 	 */
@@ -291,7 +291,7 @@ class JPagination
 	/**
 	 * Create and return the pagination page list string, ie. Previous, Next, 1 2 3 ... x.
 	 *
-	 * @return  string  Pagination page list string.
+     * @return  string  Pagination page list string.
 	 *
 	 * @since   11.1
 	 */
@@ -406,7 +406,7 @@ class JPagination
 	/**
 	 * Return the pagination footer.
 	 *
-	 * @return  string   Pagination footer.
+     * @return  string  Pagination footer.
 	 *
 	 * @since   11.1
 	 */
@@ -438,7 +438,7 @@ class JPagination
 	/**
 	 * Creates a dropdown box for selecting how many records to show per page.
 	 *
-	 * @return  string  The HTML for the limit # input box.
+     * @return  string  The HTML for the limit # input box.
 	 *
 	 * @since   11.1
 	 */
@@ -489,14 +489,14 @@ class JPagination
 	/**
 	 * Return the icon to move an item UP.
 	 *
-	 * @param   integer  $i          The row index.
-	 * @param   boolean  $condition  True to show the icon.
-	 * @param   string   $task       The task to fire.
-	 * @param   string   $alt        The image alternative text string.
-	 * @param   boolean  $enabled    An optional setting for access control on the action.
-	 * @param   string   $checkbox   An optional prefix for checkboxes.
+     * @param  integer  $i          The row index.
+     * @param  boolean  $condition  True to show the icon.
+     * @param  string   $task       The task to fire.
+     * @param  string   $alt        The image alternative text string.
+     * @param  boolean  $enabled    An optional setting for access control on the action.
+     * @param  string   $checkbox   An optional prefix for checkboxes.
 	 *
-	 * @return  string   Either the icon to move an item up or a space.
+     * @return  string  Either the icon to move an item up or a space.
 	 *
 	 * @since   11.1
 	 */
@@ -515,15 +515,15 @@ class JPagination
 	/**
 	 * Return the icon to move an item DOWN.
 	 *
-	 * @param   integer  $i          The row index.
-	 * @param   integer  $n          The number of items in the list.
-	 * @param   boolean  $condition  True to show the icon.
-	 * @param   string   $task       The task to fire.
-	 * @param   string   $alt        The image alternative text string.
-	 * @param   boolean  $enabled    An optional setting for access control on the action.
-	 * @param   string   $checkbox   An optional prefix for checkboxes.
+     * @param  integer  $i          The row index.
+     * @param  integer  $n          The number of items in the list.
+     * @param  boolean  $condition  True to show the icon.
+     * @param  string   $task       The task to fire.
+     * @param  string   $alt        The image alternative text string.
+     * @param  boolean  $enabled    An optional setting for access control on the action.
+     * @param  string   $checkbox   An optional prefix for checkboxes.
 	 *
-	 * @return  string   Either the icon to move an item down or a space.
+     * @return  string  Either the icon to move an item down or a space.
 	 *
 	 * @since   11.1
 	 */
@@ -542,9 +542,9 @@ class JPagination
 	/**
 	 * Create the HTML for a list footer
 	 *
-	 * @param   array  $list  Pagination list data structure.
+     * @param  array  $list  Pagination list data structure.
 	 *
-	 * @return  string  HTML for a list footer
+     * @return  string  HTML for a list footer
 	 *
 	 * @since   11.1
 	 */
@@ -565,9 +565,9 @@ class JPagination
 	/**
 	 * Create the html for a list footer
 	 *
-	 * @param   array  $list  Pagination list data structure.
+     * @param  array  $list  Pagination list data structure.
 	 *
-	 * @return  string  HTML for a list start, previous, next,end
+     * @return  string  HTML for a list start, previous, next,end
 	 *
 	 * @since   11.1
 	 */
@@ -591,9 +591,9 @@ class JPagination
 	/**
 	 * Method to create an active pagination link to the item
 	 *
-	 * @param   JPaginationObject  $item  The object with which to make an active link.
+     * @param  JPaginationObject  $item  The object with which to make an active link.
 	 *
-	 * @return   string  HTML link
+     * @return  string  HTML link
 	 *
 	 * @since    11.1
 	 */
@@ -622,9 +622,9 @@ class JPagination
 	/**
 	 * Method to create an inactive pagination string
 	 *
-	 * @param   JPaginationObject  $item  The item to be processed
+     * @param  JPaginationObject  $item  The item to be processed
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -644,7 +644,7 @@ class JPagination
 	/**
 	 * Create and return the pagination data object.
 	 *
-	 * @return  object  Pagination data object.
+     * @return  object  Pagination data object.
 	 *
 	 * @since   11.1
 	 */
@@ -727,10 +727,10 @@ class JPagination
 	/**
 	 * Modifies a property of the object, creating it if it does not already exist.
 	 *
-	 * @param   string  $property  The name of the property.
-	 * @param   mixed   $value     The value of the property to set.
+     * @param  string  $property  The name of the property.
+     * @param  mixed   $value     The value of the property to set.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.2
 	 * @deprecated  13.3  Access the properties directly.
@@ -751,10 +751,10 @@ class JPagination
 	/**
 	 * Returns a property of the object or the default value if the property is not set.
 	 *
-	 * @param   string  $property  The name of the property.
-	 * @param   mixed   $default   The default value.
+     * @param  string  $property  The name of the property.
+     * @param  mixed   $default   The default value.
 	 *
-	 * @return  mixed    The value of the property.
+     * @return  mixed  The value of the property.
 	 *
 	 * @since   12.2
 	 * @deprecated  13.3  Access the properties directly.

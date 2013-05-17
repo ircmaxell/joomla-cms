@@ -21,7 +21,7 @@ class UsersHelperDebug
 	/**
 	 * Get a list of the components.
 	 *
-	 * @return  array
+     * @return  array
 	 * @since   1.6
 	 */
 	public static function getComponents()
@@ -66,7 +66,7 @@ class UsersHelperDebug
 	 *
 	 * @param   string    The name of the component.
 	 *
-	 * @return  array
+     * @return  array
 	 * @since   1.6
 	 */
 	public static function getDebugActions($component = null)
@@ -137,7 +137,7 @@ class UsersHelperDebug
 	/**
 	 * Get a list of filter options for the levels.
 	 *
-	 * @return  array  An array of JHtmlOption elements.
+     * @return  array  An array of JHtmlOption elements.
 	 */
 	public static function getLevelsOptions()
 	{

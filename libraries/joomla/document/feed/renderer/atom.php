@@ -34,11 +34,11 @@ class JDocumentRendererAtom extends JDocumentRenderer
 	/**
 	 * Render the feed.
 	 *
-	 * @param   string  $name     The name of the element to render
-	 * @param   array   $params   Array of values
-	 * @param   string  $content  Override the output of the renderer
+     * @param  string  $name     The name of the element to render
+     * @param  array   $params   Array of values
+     * @param  string  $content  Override the output of the renderer
 	 *
-	 * @return  string  The output of the script
+     * @return  string  The output of the script
 	 *
 	 * @see JDocumentRenderer::render()
 	 * @since   11.1

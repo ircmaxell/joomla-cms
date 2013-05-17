@@ -30,10 +30,10 @@ class JFormFieldGroupedList extends JFormField
 	/**
 	 * Method to get the field option groups.
 	 *
-	 * @return  array  The field option objects as a nested array in groups.
+     * @return  array  The field option objects as a nested array in groups.
 	 *
 	 * @since   11.1
-	 * @throws  UnexpectedValueException
+     * @throws  UnexpectedValueException
 	 */
 	protected function getGroups()
 	{
@@ -129,7 +129,7 @@ class JFormFieldGroupedList extends JFormField
 	 * Method to get the field input markup fora grouped list.
 	 * Multiselect is enabled by using the multiple attribute.
 	 *
-	 * @return  string  The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   11.1
 	 */

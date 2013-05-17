@@ -43,7 +43,7 @@ class BannersTableBanner extends JTable
 	/**
 	 * Overloaded check function
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 * @see     JTable::check
 	 * @since   1.5
 	 */
@@ -71,7 +71,8 @@ class BannersTableBanner extends JTable
 		{
 			// Set ordering to 0 if state is archived or trashed
 			$this->ordering = 0;
-		} elseif (empty($this->ordering))
+		}
+		elseif (empty($this->ordering))
 		{
 			// Set ordering to last if ordering was 0
 			$this->ordering = self::getNextOrder($this->_db->quoteName('catid').'=' . $this->_db->quote($this->catid).' AND state>=0');
@@ -83,8 +84,8 @@ class BannersTableBanner extends JTable
 	/**
 	 * Overloaded bind function
 	 *
-	 * @param   array  $hash named array
-	 * @return  null|string	null is operation was satisfactory, otherwise returns an error
+     * @param   array        $hash  named array
+     * @return  null|string  null is operation was satisfactory, otherwise returns an error
 	 * @see JTable:bind
 	 * @since 1.5
 	 */
@@ -95,12 +96,14 @@ class BannersTableBanner extends JTable
 			$registry = new JRegistry;
 			$registry->loadArray($array['params']);
 
-			if ((int) $registry->get('width', 0) < 0){
+			if ((int) $registry->get('width', 0) < 0)
+			{
 				$this->setError(JText::sprintf('JLIB_DATABASE_ERROR_NEGATIVE_NOT_PERMITTED', JText::_('COM_BANNERS_FIELD_WIDTH_LABEL')));
 				return false;
 			}
 
-			if ((int) $registry->get('height', 0) < 0){
+			if ((int) $registry->get('height', 0) < 0)
+			{
 				$this->setError(JText::sprintf('JLIB_DATABASE_ERROR_NEGATIVE_NOT_PERMITTED', JText::_('COM_BANNERS_FIELD_HEIGHT_LABEL')));
 				return false;
 			}
@@ -126,7 +129,7 @@ class BannersTableBanner extends JTable
 	/**
 	 * Method to store a row
 	 *
-	 * @param boolean $updateNulls True to update fields even if they are null.
+     * @param  boolean  $updateNulls  True to update fields even if they are null.
 	 */
 	public function store($updateNulls = false)
 	{
@@ -209,7 +212,7 @@ class BannersTableBanner extends JTable
 	 *					set the instance property value is used.
 	 * @param   integer The publishing state. eg. [0 = unpublished, 1 = published, 2=archived, -2=trashed]
 	 * @param   integer The user id of the user performing the operation.
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 * @since   1.6
 	 */
 	public function publish($pks = null, $state = 1, $userId = 0)
@@ -229,7 +232,8 @@ class BannersTableBanner extends JTable
 				$pks = array($this->$k);
 			}
 			// Nothing to set publishing state on, return false.
-			else {
+			else
+			{
 				$this->setError(JText::_('JLIB_DATABASE_ERROR_NO_ROWS_SELECTED'));
 				return false;
 			}
@@ -277,7 +281,7 @@ class BannersTableBanner extends JTable
 	 *					set the instance property value is used.
 	 * @param   integer The sticky state. eg. [0 = unsticked, 1 = sticked]
 	 * @param   integer The user id of the user performing the operation.
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 * @since   1.6
 	 */
 	public function stick($pks = null, $state = 1, $userId = 0)
@@ -297,7 +301,8 @@ class BannersTableBanner extends JTable
 				$pks = array($this->$k);
 			}
 			// Nothing to set publishing state on, return false.
-			else {
+			else
+			{
 				$this->setError(JText::_('JLIB_DATABASE_ERROR_NO_ROWS_SELECTED'));
 				return false;
 			}

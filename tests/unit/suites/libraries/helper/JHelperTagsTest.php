@@ -22,7 +22,7 @@ class JHelperTagsTest extends PHPUnit_Framework_TestCase
 	 * Sets up the fixture, for example, opens a network connection.
 	 * This method is called before a test is executed.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -34,7 +34,7 @@ class JHelperTagsTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the tagItem method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -46,7 +46,7 @@ class JHelperTagsTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the tagItems method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -58,7 +58,7 @@ class JHelperTagsTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the unTagItem method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -70,7 +70,7 @@ class JHelperTagsTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getTagsId method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -82,7 +82,7 @@ class JHelperTagsTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getItemTags method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -94,7 +94,7 @@ class JHelperTagsTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getTagItemsQuery method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -106,7 +106,7 @@ class JHelperTagsTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getTypes method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -118,7 +118,7 @@ class JHelperTagsTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the tagDeleteInstances method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -130,7 +130,7 @@ class JHelperTagsTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the searchTags method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -142,7 +142,7 @@ class JHelperTagsTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the deleteTagData method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -154,7 +154,7 @@ class JHelperTagsTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getTagTreeArray method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -166,7 +166,7 @@ class JHelperTagsTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the convertPathsToNames method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */

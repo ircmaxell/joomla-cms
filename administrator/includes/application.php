@@ -39,9 +39,9 @@ class JAdministrator extends JApplication
 	/**
 	 * Initialise the application.
 	 *
-	 * @param   array  $options    An optional associative array of configuration settings.
+     * @param  array  $options  An optional associative array of configuration settings.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.5
 	 */
 	public function initialise($options = array())
@@ -100,7 +100,7 @@ class JAdministrator extends JApplication
 	/**
 	 * Route the application
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.5
 	 */
 	public function route()
@@ -122,10 +122,10 @@ class JAdministrator extends JApplication
 	/**
 	 * Return a reference to the JRouter object.
 	 *
-	 * @return  JRouter
+     * @return  JRouter
 	 * @since   1.5
 	 */
-	static public function getRouter($name = null, array $options = array())
+	public static function getRouter($name = null, array $options = array())
 	{
 		$router = parent::getRouter('administrator');
 		return $router;
@@ -134,9 +134,9 @@ class JAdministrator extends JApplication
 	/**
 	 * Dispatch the application
 	 *
-	 * @param   string    $component    The component to dispatch.
+     * @param  string  $component  The component to dispatch.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.5
 	 */
 	public function dispatch($component = null)
@@ -174,7 +174,7 @@ class JAdministrator extends JApplication
 	/**
 	 * Display the application.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.5
 	 */
 	public function render()
@@ -219,7 +219,7 @@ class JAdministrator extends JApplication
 	 * @param   array  Array('username' => string, 'password' => string)
 	 * @param   array  Array('remember' => boolean)
 	 *
-	 * @return  boolean True on success.
+     * @return  boolean  True on success.
 	 * @see     JApplication::login
 	 * @since   1.5
 	 */
@@ -257,7 +257,7 @@ class JAdministrator extends JApplication
 	/**
 	 * Get the template
 	 *
-	 * @return  string    The template name
+     * @return  string  The template name
 	 * @since   1.0
 	 */
 	public function getTemplate($params = false)
@@ -309,7 +309,7 @@ class JAdministrator extends JApplication
 	/**
 	 * Purge the jos_messages table of old messages
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.5
 	 */
 	public static function purgeMessages()

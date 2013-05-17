@@ -21,7 +21,7 @@ class ConfigHelperComponent
 	/**
 	 * Get an array of all enabled components.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   3.0
 	 */
@@ -42,9 +42,9 @@ class ConfigHelperComponent
 	/**
 	 * Returns true if the component has configuration options.
 	 *
-	 * @param   string  $components
+     * @param  string  $components
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   3.0
 	 */
@@ -57,9 +57,9 @@ class ConfigHelperComponent
 	 * Returns an array of all components with configuration options. By only
 	 * components for which the current user has 'core.manage' rights are returned.
 	 *
-	 * @param   boolean  $authCheck
+     * @param  boolean  $authCheck
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   3.0
 	 */
@@ -86,9 +86,9 @@ class ConfigHelperComponent
 	/**
 	 * Load the sys language for the given component.
 	 *
-	 * @param   string  $components
+     * @param  string  $components
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

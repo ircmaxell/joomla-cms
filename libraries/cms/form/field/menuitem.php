@@ -34,7 +34,7 @@ class JFormFieldMenuitem extends JFormFieldGroupedList
 	/**
 	 * Method to get the field option groups.
 	 *
-	 * @return  array  The field option objects as a nested array in groups.
+     * @return  array  The field option objects as a nested array in groups.
 	 *
 	 * @since   1.6
 	 */

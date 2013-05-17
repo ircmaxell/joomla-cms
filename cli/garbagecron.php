@@ -33,12 +33,12 @@ require_once JPATH_LIBRARIES . '/cms.php';
  * @package  Joomla.CLI
  * @since    2.5
  */
-class GarbageCron extends JApplicationCli
+class garbagecron extends JApplicationCli
 {
 	/**
 	 * Entry point for the script
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */

@@ -24,7 +24,7 @@ class MenusControllerMenus extends JControllerLegacy
 	 * @param   boolean            If true, the view output will be cached
 	 * @param   array              An array of safe url parameters and their variable types, for valid values see {@link JFilterInput::clean()}.
 	 *
-	 * @return  JController        This object to support chaining.
+     * @return  JController  This object to support chaining.
 	 * @since   1.6
 	 */
 	public function display($cachable = false, $urlparams = false)
@@ -34,11 +34,11 @@ class MenusControllerMenus extends JControllerLegacy
 	/**
 	 * Method to get a model object, loading it if required.
 	 *
-	 * @param   string  $name    The model name. Optional.
-	 * @param   string  $prefix  The class prefix. Optional.
-	 * @param   array   $config  Configuration array for model. Optional.
+     * @param  string  $name    The model name. Optional.
+     * @param  string  $prefix  The class prefix. Optional.
+     * @param  array   $config  Configuration array for model. Optional.
 	 *
-	 * @return  object  The model.
+     * @return  object  The model.
 	 *
 	 * @since   1.6
 	 */
@@ -89,7 +89,7 @@ class MenusControllerMenus extends JControllerLegacy
 	/**
 	 * Rebuild the menu tree.
 	 *
-	 * @return  bool    False on failure or error, true on success.
+     * @return  bool  False on failure or error, true on success.
 	 */
 	public function rebuild()
 	{

@@ -24,7 +24,7 @@ class MediaControllerFolder extends JControllerLegacy
 	/**
 	 * Deletes paths from the current path
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.5
 	 */
@@ -139,7 +139,7 @@ class MediaControllerFolder extends JControllerLegacy
 	/**
 	 * Create a folder
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.5
 	 */

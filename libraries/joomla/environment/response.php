@@ -44,9 +44,9 @@ class JResponse
 	 *
 	 * If $allow is set, sets the cachable state of the response.  Always returns current state.
 	 *
-	 * @param   boolean  $allow  True to allow browser caching.
+     * @param  boolean  $allow  True to allow browser caching.
 	 *
-	 * @return  boolean  True if browser caching should be allowed
+     * @return  boolean  True if browser caching should be allowed
 	 *
 	 * @since   11.1
 	 */
@@ -65,11 +65,11 @@ class JResponse
 	 *
 	 * If $replace is true, replaces any headers already defined with that $name.
 	 *
-	 * @param   string   $name     The name of the header to set.
-	 * @param   string   $value    The value of the header to set.
-	 * @param   boolean  $replace  True to replace any existing headers by name.
+     * @param  string   $name     The name of the header to set.
+     * @param  string   $value    The value of the header to set.
+     * @param  boolean  $replace  True to replace any existing headers by name.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -95,7 +95,7 @@ class JResponse
 	/**
 	 * Return array of headers.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.1
 	 */
@@ -107,7 +107,7 @@ class JResponse
 	/**
 	 * Clear headers.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -119,7 +119,7 @@ class JResponse
 	/**
 	 * Send all headers.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -147,9 +147,9 @@ class JResponse
 	 *
 	 * If body content already defined, this will replace it.
 	 *
-	 * @param   string  $content  The content to set to the response body.
+     * @param  string  $content  The content to set to the response body.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -161,9 +161,9 @@ class JResponse
 	/**
 	 * Prepend content to the body content
 	 *
-	 * @param   string  $content  The content to prepend to the response body.
+     * @param  string  $content  The content to prepend to the response body.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -175,9 +175,9 @@ class JResponse
 	/**
 	 * Append content to the body content
 	 *
-	 * @param   string  $content  The content to append to the response body.
+     * @param  string  $content  The content to append to the response body.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -189,9 +189,9 @@ class JResponse
 	/**
 	 * Return the body content
 	 *
-	 * @param   boolean  $toArray  Whether or not to return the body content as an array of strings or as a single string; defaults to false.
+     * @param  boolean  $toArray  Whether or not to return the body content as an array of strings or as a single string; defaults to false.
 	 *
-	 * @return  string  array
+     * @return  string  array
 	 *
 	 * @since   11.1
 	 */
@@ -214,9 +214,9 @@ class JResponse
 	/**
 	 * Sends all headers prior to returning the string
 	 *
-	 * @param   boolean  $compress  If true, compress the data
+     * @param  boolean  $compress  If true, compress the data
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -249,9 +249,9 @@ class JResponse
 	 * Checks the accept encoding of the browser and compresses the data before
 	 * sending it to the client.
 	 *
-	 * @param   string  $data  Content to compress for output.
+     * @param  string  $data  Content to compress for output.
 	 *
-	 * @return  string  compressed data
+     * @return  string  compressed data
 	 *
 	 * @note    Replaces _compress method in 11.1
 	 * @since   11.1
@@ -305,7 +305,7 @@ class JResponse
 	/**
 	 * Check, whether client supports compressed data
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   11.1
 	 * @note    Replaces _clientEncoding method from 11.1

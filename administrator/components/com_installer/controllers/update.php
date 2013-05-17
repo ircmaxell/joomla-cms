@@ -21,7 +21,7 @@ class InstallerControllerUpdate extends JControllerLegacy
 	/**
 	 * Update a set of extensions.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -59,7 +59,7 @@ class InstallerControllerUpdate extends JControllerLegacy
 	/**
 	 * Find new updates.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -85,7 +85,7 @@ class InstallerControllerUpdate extends JControllerLegacy
 	/**
 	 * Purges updates.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -103,7 +103,7 @@ class InstallerControllerUpdate extends JControllerLegacy
 	/**
 	 * Fetch and report updates in JSON format, for AJAX requests
 	 *
-	 * @return void
+     * @return  void
 	 *
 	 * @since 2.5
 	 */

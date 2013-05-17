@@ -127,12 +127,12 @@ class JLog
 	/**
 	 * Method to add an entry to the log.
 	 *
-	 * @param   mixed    $entry     The JLogEntry object to add to the log or the message for a new JLogEntry object.
-	 * @param   integer  $priority  Message priority.
-	 * @param   string   $category  Type of entry
-	 * @param   string   $date      Date of entry (defaults to now if not specified or blank)
+     * @param  mixed    $entry     The JLogEntry object to add to the log or the message for a new JLogEntry object.
+     * @param  integer  $priority  Message priority.
+     * @param  string   $category  Type of entry
+     * @param  string   $date      Date of entry (defaults to now if not specified or blank)
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -156,11 +156,11 @@ class JLog
 	/**
 	 * Add a logger to the JLog instance.  Loggers route log entries to the correct files/systems to be logged.
 	 *
-	 * @param   array    $options     The object configuration array.
-	 * @param   integer  $priorities  Message priority
-	 * @param   array    $categories  Types of entry
+     * @param  array    $options     The object configuration array.
+     * @param  integer  $priorities  Message priority
+     * @param  array    $categories  Types of entry
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -211,9 +211,9 @@ class JLog
 	 * Returns a reference to the a JLog object, only creating it if it doesn't already exist.
 	 * Note: This is principally made available for testing and internal purposes.
 	 *
-	 * @param   JLog  $instance  The logging object instance to be used by the static methods.
+     * @param  JLog  $instance  The logging object instance to be used by the static methods.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -228,12 +228,12 @@ class JLog
 	/**
 	 * Method to add an entry to the appropriate loggers.
 	 *
-	 * @param   JLogEntry  $entry  The JLogEntry object to send to the loggers.
+     * @param  JLogEntry  $entry  The JLogEntry object to send to the loggers.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	protected function addLogEntry(JLogEntry $entry)
 	{
@@ -265,10 +265,10 @@ class JLog
 	/**
 	 * Method to find the loggers to use based on priority and category values.
 	 *
-	 * @param   integer  $priority  Message priority.
-	 * @param   string   $category  Type of entry
+     * @param  integer  $priority  Message priority.
+     * @param  string   $category  Type of entry
 	 *
-	 * @return  array  The array of loggers to use for the given priority and category values.
+     * @return  array  The array of loggers to use for the given priority and category values.
 	 *
 	 * @since   11.1
 	 */

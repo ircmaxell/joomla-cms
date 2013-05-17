@@ -21,7 +21,7 @@ class InstallationControllerInstallEmail extends JControllerBase
 	/**
 	 * Execute the controller.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -134,9 +134,9 @@ class InstallationControllerInstallEmail extends JControllerBase
 	/**
 	 * Prepares a title line for the e-mail
 	 *
-	 * @param   string  $title  The title pre-formatting
+     * @param  string  $title  The title pre-formatting
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   3.1
 	 */

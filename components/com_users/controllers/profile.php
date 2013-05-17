@@ -67,7 +67,7 @@ class UsersControllerProfile extends UsersController
 	/**
 	 * Method to save a user's profile data.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.6
 	 */
 	public function save()
@@ -109,7 +109,8 @@ class UsersControllerProfile extends UsersController
 				if ($errors[$i] instanceof Exception)
 				{
 					$app->enqueueMessage($errors[$i]->getMessage(), 'warning');
-				} else {
+				}
+				else {
 					$app->enqueueMessage($errors[$i], 'warning');
 				}
 			}
@@ -176,10 +177,10 @@ class UsersControllerProfile extends UsersController
 	/**
 	 * Function that allows child controller access to model data after the data has been saved.
 	 *
-	 * @param   JModelLegacy  $model      The data model object.
-	 * @param   array         $validData  The validated data.
+     * @param  JModelLegacy  $model      The data model object.
+     * @param  array         $validData  The validated data.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   3.1
 	 */
 	protected function postSaveHook(JModelLegacy $model, $validData = array())

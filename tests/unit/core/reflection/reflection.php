@@ -17,13 +17,13 @@ class TestReflection
 	/**
 	 * Helper method that gets a protected or private property in a class by relfection.
 	 *
-	 * @param   object  $object        The object from which to return the property value.
-	 * @param   string  $propertyName  The name of the property to return.
+     * @param  object  $object        The object from which to return the property value.
+     * @param  string  $propertyName  The name of the property to return.
 	 *
-	 * @return  mixed  The value of the property.
+     * @return  mixed  The value of the property.
 	 *
 	 * @since   11.3
-	 * @throws  InvalidArgumentException if property not available.
+     * @throws  InvalidArgumentException  if property not available.
 	 */
 	public static function getValue($object, $propertyName)
 	{
@@ -57,10 +57,10 @@ class TestReflection
 	 *
 	 * $this->asserTrue(TestCase::invoke('methodName', $this->object, 123));
 	 *
-	 * @param   object  $object      The object on which to invoke the method.
-	 * @param   string  $methodName  The name of the method to invoke.
+     * @param  object  $object      The object on which to invoke the method.
+     * @param  string  $methodName  The name of the method to invoke.
 	 *
-	 * @return  mixed
+     * @return  mixed
 	 *
 	 * @since   11.3
 	 */
@@ -84,11 +84,11 @@ class TestReflection
 	/**
 	 * Helper method that sets a protected or private property in a class by relfection.
 	 *
-	 * @param   object  $object        The object for which to set the property.
-	 * @param   string  $propertyName  The name of the property to set.
-	 * @param   mixed   $value         The value to set for the property.
+     * @param  object  $object        The object for which to set the property.
+     * @param  string  $propertyName  The name of the property to set.
+     * @param  mixed   $value         The value to set for the property.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.3
 	 */

@@ -27,9 +27,9 @@ class TagsModelTag extends JModelAdmin
 	/**
 	 * Method to test whether a record can be deleted.
 	 *
-	 * @param   object  $record  A record object.
+     * @param  object  $record  A record object.
 	 *
-	 * @return  boolean  True if allowed to delete the record. Defaults to the permission set in the component.
+     * @return  boolean  True if allowed to delete the record. Defaults to the permission set in the component.
 	 *
 	 * @since   3.1
 	 */
@@ -50,9 +50,9 @@ class TagsModelTag extends JModelAdmin
 	/**
 	 * Method to test whether a record can have its state changed.
 	 *
-	 * @param   object  $record  A record object.
+     * @param  object  $record  A record object.
 	 *
-	 * @return  boolean  True if allowed to change the state of the record. Defaults to the permission set in the component.
+     * @return  boolean  True if allowed to change the state of the record. Defaults to the permission set in the component.
 	 *
 	 * @since   3.1
 	 */
@@ -66,11 +66,11 @@ class TagsModelTag extends JModelAdmin
 	/**
 	 * Method to get a table object, load it if necessary.
 	 *
-	 * @param   string  $type    The table name. Optional.
-	 * @param   string  $prefix  The class prefix. Optional.
-	 * @param   array   $config  Configuration array for model. Optional.
+     * @param  string  $type    The table name. Optional.
+     * @param  string  $prefix  The class prefix. Optional.
+     * @param  array   $config  Configuration array for model. Optional.
 	 *
-	 * @return  JTable  A JTable object
+     * @return  JTable  A JTable object
 	 *
 	 * @since   3.1
 	*/
@@ -84,7 +84,7 @@ class TagsModelTag extends JModelAdmin
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -107,9 +107,9 @@ class TagsModelTag extends JModelAdmin
 	/**
 	 * Method to get a tag.
 	 *
-	 * @param   integer  $pk  An optional id of the object to get, otherwise the id from the model state is used.
+     * @param  integer  $pk  An optional id of the object to get, otherwise the id from the model state is used.
 	 *
-	 * @return  mixed  Tag data object on success, false on failure.
+     * @return  mixed  Tag data object on success, false on failure.
 	 *
 	 * @since   3.1
 	 */
@@ -171,10 +171,10 @@ class TagsModelTag extends JModelAdmin
 	/**
 	 * Method to get the row form.
 	 *
-	 * @param   array    $data      Data for the form.
-	 * @param   boolean  $loadData  True if the form is to load its own data (default case), false if not.
+     * @param  array    $data      Data for the form.
+     * @param  boolean  $loadData  True if the form is to load its own data (default case), false if not.
 	 *
-	 * @return  mixed  A JForm object on success, false on failure
+     * @return  mixed  A JForm object on success, false on failure
 	 *
 	 * @since   3.1
 	 */
@@ -209,7 +209,7 @@ class TagsModelTag extends JModelAdmin
 	/**
 	 * Method to get the data that should be injected in the form.
 	 *
-	 * @return  mixed  The data for the form.
+     * @return  mixed  The data for the form.
 	 *
 	 * @since   3.1
 	 */
@@ -231,15 +231,15 @@ class TagsModelTag extends JModelAdmin
 	/**
 	 * Method to preprocess the form.
 	 *
-	 * @param   JForm   $form    A JForm object.
-	 * @param   mixed   $data    The data expected for the form.
-	 * @param   string  $group  The name of the plugin group to import.
+     * @param  JForm   $form   A JForm object.
+     * @param  mixed   $data   The data expected for the form.
+     * @param  string  $group  The name of the plugin group to import.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @see     JFormField
 	 * @since   3.1
-	 * @throws  Exception if there is an error in the form event.
+     * @throws  Exception  if there is an error in the form event.
 	 */
 	protected function preprocessForm(JForm $form, $data, $group = 'content')
 	{
@@ -250,9 +250,9 @@ class TagsModelTag extends JModelAdmin
 	/**
 	 * Method to save the form data.
 	 *
-	 * @param   array  $data  The form data.
+     * @param  array  $data  The form data.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
 	 */
@@ -367,7 +367,7 @@ class TagsModelTag extends JModelAdmin
 	/**
 	 * Method rebuild the entire nested set tree.
 	 *
-	 * @return  boolean  False on failure or error, true otherwise.
+     * @return  boolean  False on failure or error, true otherwise.
 	 *
 	 * @since   3.1
 	 */
@@ -393,10 +393,10 @@ class TagsModelTag extends JModelAdmin
 	 * First we save the new order values in the lft values of the changed ids.
 	 * Then we invoke the table rebuild to implement the new ordering.
 	 *
-	 * @param   array    $idArray    An array of primary key ids.
-	 * @param   integer  $lft_array  The lft value
+     * @param  array    $idArray    An array of primary key ids.
+     * @param  integer  $lft_array  The lft value
 	 *
-	 * @return  boolean  False on failure or error, True otherwise
+     * @return  boolean  False on failure or error, True otherwise
 	 *
 	 * @since   3.1
 	*/
@@ -420,11 +420,11 @@ class TagsModelTag extends JModelAdmin
 	/**
 	 * Method to change the title & alias.
 	 *
-	 * @param   integer  $parent_id  The id of the parent.
-	 * @param   string   $alias      The alias.
-	 * @param   string   $title      The title.
+     * @param  integer  $parent_id  The id of the parent.
+     * @param  string   $alias      The alias.
+     * @param  string   $title      The title.
 	 *
-	 * @return  array  Contains the modified title and alias.
+     * @return  array  Contains the modified title and alias.
 	 *
 	 * @since   3.1
 	 */

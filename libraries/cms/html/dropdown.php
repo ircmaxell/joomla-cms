@@ -33,7 +33,7 @@ abstract class JHtmlDropdown
 	/**
 	 * Method to inject needed script
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -60,8 +60,8 @@ abstract class JHtmlDropdown
 						$('.btn-group',$(this)).removeClass('open');
 					});
 
-					contextAction =function (cbId, task)
-					{
+					contextAction =function (cbId, task)=
+=function (cbId, task){
 						$('input[name=\"cid[]\"]').removeAttr('checked');
 						$('#' + cbId).attr('checked','checked');
 						Joomla.submitbutton(task);
@@ -79,7 +79,7 @@ abstract class JHtmlDropdown
 	/**
 	 * Method to start a new dropdown menu
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -104,7 +104,7 @@ abstract class JHtmlDropdown
 	/**
 	 * Method to render current dropdown menu
 	 *
-	 * @return  string  HTML markup for the dropdown list
+     * @return  string  HTML markup for the dropdown list
 	 *
 	 * @since   3.0
 	 */
@@ -122,11 +122,11 @@ abstract class JHtmlDropdown
 	/**
 	 * Append an edit item to the current dropdown menu
 	 *
-	 * @param   integer  $id          Record ID
-	 * @param   string   $prefix      Task prefix
-	 * @param   string   $customLink  The custom link if dont use default Joomla action format
+     * @param  integer  $id          Record ID
+     * @param  string   $prefix      Task prefix
+     * @param  string   $customLink  The custom link if dont use default Joomla action format
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -154,10 +154,10 @@ abstract class JHtmlDropdown
 	/**
 	 * Append a publish item to the current dropdown menu
 	 *
-	 * @param   string  $checkboxId  ID of corresponding checkbox of the record
-	 * @param   string  $prefix      The task prefix
+     * @param  string  $checkboxId  ID of corresponding checkbox of the record
+     * @param  string  $prefix      The task prefix
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -171,10 +171,10 @@ abstract class JHtmlDropdown
 	/**
 	 * Append an unpublish item to the current dropdown menu
 	 *
-	 * @param   string  $checkboxId  ID of corresponding checkbox of the record
-	 * @param   string  $prefix      The task prefix
+     * @param  string  $checkboxId  ID of corresponding checkbox of the record
+     * @param  string  $prefix      The task prefix
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -188,10 +188,10 @@ abstract class JHtmlDropdown
 	/**
 	 * Append a featured item to the current dropdown menu
 	 *
-	 * @param   string  $checkboxId  ID of corresponding checkbox of the record
-	 * @param   string  $prefix      The task prefix
+     * @param  string  $checkboxId  ID of corresponding checkbox of the record
+     * @param  string  $prefix      The task prefix
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -205,10 +205,10 @@ abstract class JHtmlDropdown
 	/**
 	 * Append an unfeatured item to the current dropdown menu
 	 *
-	 * @param   string  $checkboxId  ID of corresponding checkbox of the record
-	 * @param   string  $prefix      The task prefix
+     * @param  string  $checkboxId  ID of corresponding checkbox of the record
+     * @param  string  $prefix      The task prefix
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -222,10 +222,10 @@ abstract class JHtmlDropdown
 	/**
 	 * Append an archive item to the current dropdown menu
 	 *
-	 * @param   string  $checkboxId  ID of corresponding checkbox of the record
-	 * @param   string  $prefix      The task prefix
+     * @param  string  $checkboxId  ID of corresponding checkbox of the record
+     * @param  string  $prefix      The task prefix
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -239,10 +239,10 @@ abstract class JHtmlDropdown
 	/**
 	 * Append an unarchive item to the current dropdown menu
 	 *
-	 * @param   string  $checkboxId  ID of corresponding checkbox of the record
-	 * @param   string  $prefix      The task prefix
+     * @param  string  $checkboxId  ID of corresponding checkbox of the record
+     * @param  string  $prefix      The task prefix
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -256,10 +256,10 @@ abstract class JHtmlDropdown
 	/**
 	 * Append a trash item to the current dropdown menu
 	 *
-	 * @param   string  $checkboxId  ID of corresponding checkbox of the record
-	 * @param   string  $prefix      The task prefix
+     * @param  string  $checkboxId  ID of corresponding checkbox of the record
+     * @param  string  $prefix      The task prefix
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -273,10 +273,10 @@ abstract class JHtmlDropdown
 	/**
 	 * Append an untrash item to the current dropdown menu
 	 *
-	 * @param   string  $checkboxId  ID of corresponding checkbox of the record
-	 * @param   string  $prefix      The task prefix
+     * @param  string  $checkboxId  ID of corresponding checkbox of the record
+     * @param  string  $prefix      The task prefix
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -290,10 +290,10 @@ abstract class JHtmlDropdown
 	/**
 	 * Append a checkin item to the current dropdown menu
 	 *
-	 * @param   string  $checkboxId  ID of corresponding checkbox of the record
-	 * @param   string  $prefix      The task prefix
+     * @param  string  $checkboxId  ID of corresponding checkbox of the record
+     * @param  string  $prefix      The task prefix
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -307,7 +307,7 @@ abstract class JHtmlDropdown
 	/**
 	 * Writes a divider between dropdown items
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -320,14 +320,14 @@ abstract class JHtmlDropdown
 	/**
 	 * Append a custom item to current dropdown menu
 	 *
-	 * @param   string   $label           The label of item
-	 * @param   string   $link            The link of item
-	 * @param   string   $linkAttributes  Custom link attributes
-	 * @param   string   $className       Class name of item
-	 * @param   boolean  $ajaxLoad        True if using ajax load when item clicked
-	 * @param   string   $jsCallBackFunc  Javascript function name, called when ajax load successfully
+     * @param  string   $label           The label of item
+     * @param  string   $link            The link of item
+     * @param  string   $linkAttributes  Custom link attributes
+     * @param  string   $className       Class name of item
+     * @param  boolean  $ajaxLoad        True if using ajax load when item clicked
+     * @param  string   $jsCallBackFunc  Javascript function name, called when ajax load successfully
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

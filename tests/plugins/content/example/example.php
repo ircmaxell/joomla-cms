@@ -21,7 +21,7 @@ class plgContentExample extends JPlugin
 	 *
 	 * @param	string	The context for the content passed to the plugin.
 	 * @param	object	The data relating to the content that was deleted.
-	 * @return	boolean
+     * @return  boolean
 	 * @since	1.6
 	 */
 	public function onContentAfterDelete($context, $data)
@@ -35,10 +35,10 @@ class plgContentExample extends JPlugin
 	 * Method is called by the view and the results are imploded and displayed in a placeholder
 	 *
 	 * @param   string  The context for the content passed to the plugin.
-	 * @param   object		The content object.  Note $article->text is also available
+     * @param  object		The content object.  Note  $article->text  is also available
 	 * @param   object		The content params
 	 * @param   integer  	The 'page' number
-	 * @return  string
+     * @return  string
 	 * @since   1.6
 	 */
 	public function onContentAfterDisplay($context, &$article, &$params, $limitstart)
@@ -71,10 +71,10 @@ class plgContentExample extends JPlugin
 	 * Method is called by the view and the results are imploded and displayed in a placeholder
 	 *
 	 * @param	string		The context for the content passed to the plugin.
-	 * @param	object		The content object.  Note $article->text is also available
+     * @param  object		The content object.  Note  $article->text  is also available
 	 * @param	object		The content params
 	 * @param	int			The 'page' number
-	 * @return	string
+     * @return  string
 	 * @since	1.6
 	 */
 	public function onContentAfterTitle($context, &$article, &$params, $limitstart)
@@ -89,7 +89,7 @@ class plgContentExample extends JPlugin
 	 *
 	 * @param	string	The context for the content passed to the plugin.
 	 * @param	object	The data relating to the content that is to be deleted.
-	 * @return	boolean
+     * @return  boolean
 	 * @since	1.6
 	 */
 	public function onContentBeforeDelete($context, $data)
@@ -103,10 +103,10 @@ class plgContentExample extends JPlugin
 	 * Method is called by the view and the results are imploded and displayed in a placeholder
 	 *
 	 * @param   string  The context for the content passed to the plugin.
-	 * @param   object		The content object.  Note $article->text is also available
+     * @param  object		The content object.  Note  $article->text  is also available
 	 * @param   object		The content params
 	 * @param   integer  	The 'page' number
-	 * @return  string
+     * @return  string
 	 * @since   1.6
 	 */
 	public function onContentBeforeDisplay($context, &$article, &$params, $limitstart)
@@ -127,7 +127,7 @@ class plgContentExample extends JPlugin
 	 * @param	string		The context of the content passed to the plugin.
 	 * @param	object		A JTableContent object
 	 * @param	bool		If the content is just about to be created
-	 * @return	bool		If false, abort the save
+     * @return  bool  If false, abort the save
 	 * @since	1.6
 	 */
 	public function onContentBeforeSave($context, &$article, $isNew)
@@ -143,7 +143,7 @@ class plgContentExample extends JPlugin
 	 * @param   string	The context for the content passed to the plugin.
 	 * @param   array	A list of primary key ids of the content that has changed state.
 	 * @param   integer  The value of the state that the content has been changed to.
-	 * @return  boolean
+     * @return  boolean
 	 * @since   1.6
 	 */
 	public function onContentChangeState($context, $pks, $value)
@@ -157,7 +157,7 @@ class plgContentExample extends JPlugin
 	 * Method is called by the view
 	 *
 	 * @param   string	The context of the content being passed to the plugin.
-	 * @param   object	The content object.  Note $article->text is also available
+     * @param  object	The content object.  Note  $article->text  is also available
 	 * @param   object	The content params
 	 * @param   integer  The 'page' number
 	 * @since   1.6

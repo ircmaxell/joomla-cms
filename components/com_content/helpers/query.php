@@ -22,9 +22,9 @@ class ContentHelperQuery
 	/**
 	 * Translate an order code to a field for primary category ordering.
 	 *
-	 * @param   string	$orderby	The ordering code.
+     * @param  string  $orderby  The ordering code.
 	 *
-	 * @return  string	The SQL field(s) to order by.
+     * @return  string  The SQL field(s) to order by.
 	 * @since   1.5
 	 */
 	public static function orderbyPrimary($orderby)
@@ -54,10 +54,10 @@ class ContentHelperQuery
 	/**
 	 * Translate an order code to a field for secondary category ordering.
 	 *
-	 * @param   string	$orderby	The ordering code.
-	 * @param   string	$orderDate	The ordering code for the date.
+     * @param  string  $orderby    The ordering code.
+     * @param  string  $orderDate  The ordering code for the date.
 	 *
-	 * @return  string	The SQL field(s) to order by.
+     * @return  string  The SQL field(s) to order by.
 	 * @since   1.5
 	 */
 	public static function orderbySecondary($orderby, $orderDate = 'created')
@@ -117,9 +117,9 @@ class ContentHelperQuery
 	/**
 	 * Translate an order code to a field for primary category ordering.
 	 *
-	 * @param   string	$orderDate	The ordering code.
+     * @param  string  $orderDate  The ordering code.
 	 *
-	 * @return  string	The SQL field(s) to order by.
+     * @return  string  The SQL field(s) to order by.
 	 * @since   1.6
 	 */
 	public static function getQueryDate($orderDate)
@@ -149,9 +149,9 @@ class ContentHelperQuery
 	/**
 	 * Get join information for the voting query.
 	 *
-	 * @param   JRegistry	$param	An options object for the article.
+     * @param  JRegistry  $param  An options object for the article.
 	 *
-	 * @return  array  	A named array with "select" and "join" keys.
+     * @return  array  A named array with "select" and "join" keys.
 	 * @since   1.5
 	 */
 	public static function buildVotingQuery($params=null)
@@ -188,10 +188,10 @@ class ContentHelperQuery
 	 * across columns in the layout, the result is that the
 	 * desired article ordering is achieved down the columns.
 	 *
-	 * @param   array  $articles	Array of intro text articles
-	 * @param   integer	$numColumns	Number of columns in the layout
+     * @param  array    $articles    Array of intro text articles
+     * @param  integer  $numColumns  Number of columns in the layout
 	 *
-	 * @return  array  Reordered array to achieve desired ordering down columns
+     * @return  array  Reordered array to achieve desired ordering down columns
 	 * @since   1.6
 	 */
 	public static function orderDownColumns(&$articles, $numColumns = 1)
@@ -204,7 +204,8 @@ class ContentHelperQuery
 			$return = $articles;
 		}
 		// we need to re-order the intro articles array
-		else {
+		else
+		{
 			// we need to preserve the original array keys
 			$keys = array_keys($articles);
 
@@ -227,7 +228,8 @@ class ContentHelperQuery
 						// put -1 in empty cells
 						$index[$row][$col] = -1;
 					}
-					else {
+					else
+					{
 						// put in zero as placeholder
 						$index[$row][$col] = 0;
 					}

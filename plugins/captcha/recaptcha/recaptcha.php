@@ -34,9 +34,9 @@ class PlgCaptchaRecaptcha extends JPlugin
 	/**
 	 * Initialise the captcha
 	 *
-	 * @param   string	$id	The id of the field.
+     * @param  string  $id  The id of the field.
 	 *
-	 * @return  Boolean	True on success, false otherwise
+     * @return  Boolean  True on success, false otherwise
 	 *
 	 * @since  2.5
 	 */
@@ -62,7 +62,7 @@ class PlgCaptchaRecaptcha extends JPlugin
 
 		JHtml::_('script', $server.'/js/recaptcha_ajax.js');
 		$document->addScriptDeclaration('window.addEvent(\'domready\', function()
-		{
+ function(){
 			Recaptcha.create("'.$pubkey.'", "dynamic_recaptcha_1", {theme: "'.$theme.'",'.$lang.'tabindex: 0});});'
 		);
 
@@ -72,7 +72,7 @@ class PlgCaptchaRecaptcha extends JPlugin
 	/**
 	 * Gets the challenge HTML
 	 *
-	 * @return  string  The HTML to be embedded in the form.
+     * @return  string  The HTML to be embedded in the form.
 	 *
 	 * @since  2.5
 	 */
@@ -144,9 +144,9 @@ class PlgCaptchaRecaptcha extends JPlugin
 	/**
 	 * Encodes the given data into a query string format.
 	 *
-	 * @param   string  $data  Array of string elements to be encoded
+     * @param  string  $data  Array of string elements to be encoded
 	 *
-	 * @return  string  Encoded request
+     * @return  string  Encoded request
 	 *
 	 * @since  2.5
 	 */
@@ -166,12 +166,12 @@ class PlgCaptchaRecaptcha extends JPlugin
 	/**
 	 * Submits an HTTP POST to a reCAPTCHA server.
 	 *
-	 * @param   string  $host
-	 * @param   string  $path
-	 * @param   array   $data
-	 * @param   int     $port
+     * @param  string  $host
+     * @param  string  $path
+     * @param  array   $data
+     * @param  int     $port
 	 *
-	 * @return  array   Response
+     * @return  array  Response
 	 *
 	 * @since  2.5
 	 */
@@ -210,7 +210,7 @@ class PlgCaptchaRecaptcha extends JPlugin
 	/**
 	 * Get the language tag or a custom translation
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since  2.5
 	 */

@@ -32,7 +32,7 @@ class JFormFieldCombo extends JFormFieldList
 	/**
 	 * Method to get the field input markup for a combo box field.
 	 *
-	 * @return  string   The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   11.1
 	 */

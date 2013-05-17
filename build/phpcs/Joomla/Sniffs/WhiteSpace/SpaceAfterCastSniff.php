@@ -19,7 +19,7 @@
  *
  * Example:
  * <b class="bad">(int) $foo;</b>
- * <b class="good">(int)$foo;</b>
+ * <b class="good">(int) $foo;</b>
  *
  * @category  PHP
  * @package   PHP_CodeSniffer
@@ -35,7 +35,7 @@ class Joomla_Sniffs_WhiteSpace_SpaceAfterCastSniff implements PHP_CodeSniffer_Sn
 	/**
 	 * Returns an array of tokens this test wants to listen for.
 	 *
-	 * @return array
+     * @return  array
 	 */
 	public function register()
 	{
@@ -45,11 +45,11 @@ class Joomla_Sniffs_WhiteSpace_SpaceAfterCastSniff implements PHP_CodeSniffer_Sn
 	/**
 	 * Processes this test, when one of its tokens is encountered.
 	 *
-	 * @param PHP_CodeSniffer_File $phpcsFile The file being scanned.
-	 * @param integer                  $stackPtr  The position of the current token in
+     * @param  PHP_CodeSniffer_File  $phpcsFile  The file being scanned.
+     * @param  integer               $stackPtr   The position of the current token in
 	 *                                        the stack passed in $tokens.
 	 *
-	 * @return void
+     * @return  void
 	 */
 	public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
 	{

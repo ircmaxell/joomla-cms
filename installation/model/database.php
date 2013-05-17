@@ -32,7 +32,7 @@ class InstallationModelDatabase extends JModelBase
 	/**
 	 * Generates the user ID
 	 *
-	 * @return  integer  The user ID
+     * @return  integer  The user ID
 	 *
 	 * @since   3.1
 	 */
@@ -54,7 +54,7 @@ class InstallationModelDatabase extends JModelBase
 	/**
 	 * Resets the user ID
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -68,7 +68,7 @@ class InstallationModelDatabase extends JModelBase
 	/**
 	 * Retrieves the default user ID and sets it if necessary
 	 *
-	 * @return  integer  The user ID
+     * @return  integer  The user ID
 	 *
 	 * @since   3.1
 	 */
@@ -85,9 +85,9 @@ class InstallationModelDatabase extends JModelBase
 	/**
 	 * Method to initialise the database
 	 *
-	 * @param   array  $options  The options to use for configuration
+     * @param  array  $options  The options to use for configuration
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -174,9 +174,9 @@ class InstallationModelDatabase extends JModelBase
 	/**
 	 * Method to create a new database.
 	 *
-	 * @param   array  $options  The configuration options
+     * @param  array  $options  The configuration options
 	 *
-	 * @return    boolean    True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since    3.1
 	 */
@@ -300,9 +300,9 @@ class InstallationModelDatabase extends JModelBase
 	/**
 	 * Method to process the old database
 	 *
-	 * @param   array  $options  The options array
+     * @param  array  $options  The options array
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -349,9 +349,9 @@ class InstallationModelDatabase extends JModelBase
 	/**
 	 * Method to create the database tables
 	 *
-	 * @param   array  $options  The options array
+     * @param  array  $options  The options array
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -559,9 +559,9 @@ class InstallationModelDatabase extends JModelBase
 	/**
 	 * Method to install the sample data
 	 *
-	 * @param   array  $options  The options array
+     * @param  array  $options  The options array
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -620,9 +620,9 @@ class InstallationModelDatabase extends JModelBase
 	/**
 	 * Method to update the user id of the sample data content to the new rand user id
 	 *
-	 * @param   JDatabaseDriver  $db  Database connector object $db*
+     * @param  JDatabaseDriver  $db  Database connector object $db*
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -654,10 +654,10 @@ class InstallationModelDatabase extends JModelBase
 	/**
 	 * Method to backup all tables in a database with a given prefix.
 	 *
-	 * @param   JDatabaseDriver  $db      JDatabaseDriver object.
-	 * @param   string           $prefix  Database table prefix.
+     * @param  JDatabaseDriver  $db      JDatabaseDriver object.
+     * @param  string           $prefix  Database table prefix.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since    3.1
 	 */
@@ -710,12 +710,12 @@ class InstallationModelDatabase extends JModelBase
 	/**
 	 * Method to create a new database.
 	 *
-	 * @param   JDatabaseDriver  $db       JDatabase object.
-	 * @param   JObject          $options  JObject coming from "initialise" function to pass user
+     * @param  JDatabaseDriver  $db       JDatabase object.
+     * @param  JObject          $options  JObject coming from "initialise" function to pass user
 	 *                                     and database name to database driver.
-	 * @param   boolean          $utf      True if the database supports the UTF-8 character set.
+     * @param  boolean  $utf  True if the database supports the UTF-8 character set.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
 	 */
@@ -739,10 +739,10 @@ class InstallationModelDatabase extends JModelBase
 	/**
 	 * Method to delete all tables in a database with a given prefix.
 	 *
-	 * @param   JDatabaseDriver  $db      JDatabaseDriver object.
-	 * @param   string           $prefix  Database table prefix.
+     * @param  JDatabaseDriver  $db      JDatabaseDriver object.
+     * @param  string           $prefix  Database table prefix.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
 	 */
@@ -780,10 +780,10 @@ class InstallationModelDatabase extends JModelBase
 	/**
 	 * Method to import a database schema from a file.
 	 *
-	 * @param   JDatabaseDriver  $db      JDatabase object.
-	 * @param   string           $schema  Path to the schema file.
+     * @param  JDatabaseDriver  $db      JDatabase object.
+     * @param  string           $schema  Path to the schema file.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
 	 */
@@ -834,10 +834,10 @@ class InstallationModelDatabase extends JModelBase
 	/**
 	 * Method to set the database character set to UTF-8.
 	 *
-	 * @param   JDatabaseDriver  $db    JDatabaseDriver object.
-	 * @param   string           $name  Name of the database to process.
+     * @param  JDatabaseDriver  $db    JDatabaseDriver object.
+     * @param  string           $name  Name of the database to process.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
 	 */
@@ -861,9 +861,9 @@ class InstallationModelDatabase extends JModelBase
 	/**
 	 * Method to split up queries from a schema file into an array.
 	 *
-	 * @param   string  $query  SQL schema.
+     * @param  string  $query  SQL schema.
 	 *
-	 * @return  array  Queries to perform.
+     * @return  array  Queries to perform.
 	 *
 	 * @since   3.1
 	 */

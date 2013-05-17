@@ -34,7 +34,7 @@ class JObject
 	/**
 	 * Class constructor, overridden in descendant classes.
 	 *
-	 * @param   mixed  $properties  Either and associative array or another
+     * @param  mixed  $properties  Either and associative array or another
 	 *                              object to set the initial properties of the object.
 	 *
 	 * @since   11.1
@@ -50,7 +50,7 @@ class JObject
 	/**
 	 * Magic method to convert the object to a string gracefully.
 	 *
-	 * @return  string  The classname.
+     * @return  string  The classname.
 	 *
 	 * @since   11.1
 	 * @deprecated 12.3  Classes should provide their own __toString() implementation.
@@ -63,10 +63,10 @@ class JObject
 	/**
 	 * Sets a default value if not alreay assigned
 	 *
-	 * @param   string  $property  The name of the property.
-	 * @param   mixed   $default   The default value.
+     * @param  string  $property  The name of the property.
+     * @param  mixed   $default   The default value.
 	 *
-	 * @return  mixed
+     * @return  mixed
 	 *
 	 * @since   11.1
 	 */
@@ -79,10 +79,10 @@ class JObject
 	/**
 	 * Returns a property of the object or the default value if the property is not set.
 	 *
-	 * @param   string  $property  The name of the property.
-	 * @param   mixed   $default   The default value.
+     * @param  string  $property  The name of the property.
+     * @param  mixed   $default   The default value.
 	 *
-	 * @return  mixed    The value of the property.
+     * @return  mixed  The value of the property.
 	 *
 	 * @since   11.1
 	 *
@@ -100,9 +100,9 @@ class JObject
 	/**
 	 * Returns an associative array of object properties.
 	 *
-	 * @param   boolean  $public  If true, returns only the public properties.
+     * @param  boolean  $public  If true, returns only the public properties.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.1
 	 *
@@ -128,10 +128,10 @@ class JObject
 	/**
 	 * Get the most recent error message.
 	 *
-	 * @param   integer  $i         Option error index.
-	 * @param   boolean  $toString  Indicates if JError objects should return their error message.
+     * @param  integer  $i         Option error index.
+     * @param  boolean  $toString  Indicates if JError objects should return their error message.
 	 *
-	 * @return  string   Error message
+     * @return  string  Error message
 	 *
 	 * @since   11.1
 	 * @see     JError
@@ -167,7 +167,7 @@ class JObject
 	/**
 	 * Return all errors, if any.
 	 *
-	 * @return  array  Array of error messages or JErrors.
+     * @return  array  Array of error messages or JErrors.
 	 *
 	 * @since   11.1
 	 * @see     JError
@@ -181,10 +181,10 @@ class JObject
 	/**
 	 * Modifies a property of the object, creating it if it does not already exist.
 	 *
-	 * @param   string  $property  The name of the property.
-	 * @param   mixed   $value     The value of the property to set.
+     * @param  string  $property  The name of the property.
+     * @param  mixed   $value     The value of the property to set.
 	 *
-	 * @return  mixed  Previous value of the property.
+     * @return  mixed  Previous value of the property.
 	 *
 	 * @since   11.1
 	 */
@@ -198,9 +198,9 @@ class JObject
 	/**
 	 * Set the object properties based on a named array/hash.
 	 *
-	 * @param   mixed  $properties  Either an associative array or another object.
+     * @param  mixed  $properties  Either an associative array or another object.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   11.1
 	 *
@@ -224,9 +224,9 @@ class JObject
 	/**
 	 * Add an error message.
 	 *
-	 * @param   string  $error  Error message.
+     * @param  string  $error  Error message.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 * @see     JError

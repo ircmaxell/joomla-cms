@@ -27,10 +27,10 @@ class BannersControllerTracks extends JControllerLegacy
 	/**
 	 * Proxy for getModel.
 	 *
-	 * @param   string	$name	The name of the model.
-	 * @param   string	$prefix	The prefix for the model class name.
+     * @param  string  $name    The name of the model.
+     * @param  string  $prefix  The prefix for the model class name.
 	 *
-	 * @return  JModel
+     * @return  JModel
 	 * @since   1.6
 	 */
 	public function getModel($name = 'Tracks', $prefix = 'BannersModel', $config = array())
@@ -45,7 +45,7 @@ class BannersControllerTracks extends JControllerLegacy
 	 * @param   boolean			If true, the view output will be cached
 	 * @param   array  An array of safe url parameters and their variable types, for valid values see {@link JFilterInput::clean()}.
 	 *
-	 * @return  JController		This object to support chaining.
+     * @return  JController  This object to support chaining.
 	 * @since   1.5
 	 * @todo	This should be done as a view, not here!
 	 */

@@ -31,7 +31,7 @@ class JFormFieldRadio extends JFormField
 	/**
 	 * Method to get the radio button field input markup.
 	 *
-	 * @return  string  The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   11.1
 	 */
@@ -77,7 +77,7 @@ class JFormFieldRadio extends JFormField
 	/**
 	 * Method to get the field options for radio buttons.
 	 *
-	 * @return  array  The field option objects.
+     * @return  array  The field option objects.
 	 *
 	 * @since   11.1
 	 */

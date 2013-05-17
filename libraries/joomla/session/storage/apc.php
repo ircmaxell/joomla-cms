@@ -22,10 +22,10 @@ class JSessionStorageApc extends JSessionStorage
 	/**
 	 * Constructor
 	 *
-	 * @param   array  $options  Optional parameters
+     * @param  array  $options  Optional parameters
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function __construct($options = array())
 	{
@@ -41,9 +41,9 @@ class JSessionStorageApc extends JSessionStorage
 	 * Read the data for a particular session identifier from the
 	 * SessionHandler backend.
 	 *
-	 * @param   string  $id  The session identifier.
+     * @param  string  $id  The session identifier.
 	 *
-	 * @return  string  The session data.
+     * @return  string  The session data.
 	 *
 	 * @since   11.1
 	 */
@@ -56,10 +56,10 @@ class JSessionStorageApc extends JSessionStorage
 	/**
 	 * Write session data to the SessionHandler backend.
 	 *
-	 * @param   string  $id            The session identifier.
-	 * @param   string  $session_data  The session data.
+     * @param  string  $id            The session identifier.
+     * @param  string  $session_data  The session data.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   11.1
 	 */
@@ -72,9 +72,9 @@ class JSessionStorageApc extends JSessionStorage
 	/**
 	 * Destroy the data for a particular session identifier in the SessionHandler backend.
 	 *
-	 * @param   string  $id  The session identifier.
+     * @param  string  $id  The session identifier.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   11.1
 	 */
@@ -87,7 +87,7 @@ class JSessionStorageApc extends JSessionStorage
 	/**
 	 * Test to see if the SessionHandler is available.
 	 *
-	 * @return boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   12.1
 	 */

@@ -26,9 +26,9 @@ class JInstallerAdapterFile extends JAdapterInstance
 	/**
 	 * Custom loadLanguage method
 	 *
-	 * @param   string  $path  The path on which to find language files.
+     * @param  string  $path  The path on which to find language files.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -47,7 +47,7 @@ class JInstallerAdapterFile extends JAdapterInstance
 	/**
 	 * Custom install method
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -421,7 +421,7 @@ class JInstallerAdapterFile extends JAdapterInstance
 	/**
 	 * Custom update method
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -439,9 +439,9 @@ class JInstallerAdapterFile extends JAdapterInstance
 	/**
 	 * Custom uninstall method
 	 *
-	 * @param   string  $id  The id of the file to uninstall
+     * @param  string  $id  The id of the file to uninstall
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -634,9 +634,9 @@ class JInstallerAdapterFile extends JAdapterInstance
 	/**
 	 * Function used to check if extension is already installed
 	 *
-	 * @param   string  $extension  The element name of the extension to install
+     * @param  string  $extension  The element name of the extension to install
 	 *
-	 * @return  boolean  True if extension exists
+     * @return  boolean  True if extension exists
 	 *
 	 * @since   3.1
 	 */
@@ -677,7 +677,7 @@ class JInstallerAdapterFile extends JAdapterInstance
 	/**
 	 * Function used to populate files and folder list
 	 *
-	 * @return  boolean  none
+     * @return  boolean  none
 	 *
 	 * @since   3.1
 	 */
@@ -773,7 +773,7 @@ class JInstallerAdapterFile extends JAdapterInstance
 	/**
 	 * Refreshes the extension table cache
 	 *
-	 * @return  boolean result of operation, true if updated, false on failure
+     * @return  boolean  result of operation, true if updated, false on failure
 	 *
 	 * @since   3.1
 	 */

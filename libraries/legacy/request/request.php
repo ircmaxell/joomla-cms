@@ -40,7 +40,7 @@ class JRequest
 	/**
 	 * Gets the full request path.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 *
@@ -55,7 +55,7 @@ class JRequest
 	/**
 	 * Gets the request method.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 *
@@ -86,13 +86,13 @@ class JRequest
 	 * method  via current $_SERVER['REQUEST_METHOD']
 	 * default $_REQUEST
 	 *
-	 * @param   string   $name     Variable name.
-	 * @param   string   $default  Default value if the variable does not exist.
-	 * @param   string   $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD).
-	 * @param   string   $type     Return type for the variable, for valid values see {@link JFilterInput::clean()}.
-	 * @param   integer  $mask     Filter mask for the variable.
+     * @param  string   $name     Variable name.
+     * @param  string   $default  Default value if the variable does not exist.
+     * @param  string   $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD).
+     * @param  string   $type     Return type for the variable, for valid values see {@link JFilterInput::clean()}.
+     * @param  integer  $mask     Filter mask for the variable.
 	 *
-	 * @return  mixed  Requested variable.
+     * @return  mixed  Requested variable.
 	 *
 	 * @since   11.1
 	 *
@@ -176,11 +176,11 @@ class JRequest
 	 *
 	 * See getVar() for more in-depth documentation on the parameters.
 	 *
-	 * @param   string  $name     Variable name.
-	 * @param   string  $default  Default value if the variable does not exist.
-	 * @param   string  $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD).
+     * @param  string  $name     Variable name.
+     * @param  string  $default  Default value if the variable does not exist.
+     * @param  string  $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD).
 	 *
-	 * @return  integer  Requested variable.
+     * @return  integer  Requested variable.
 	 *
 	 * @since   11.1
 	 *
@@ -198,11 +198,11 @@ class JRequest
 	 *
 	 * See getVar() for more in-depth documentation on the parameters.
 	 *
-	 * @param   string  $name     Variable name.
-	 * @param   string  $default  Default value if the variable does not exist.
-	 * @param   string  $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD).
+     * @param  string  $name     Variable name.
+     * @param  string  $default  Default value if the variable does not exist.
+     * @param  string  $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD).
 	 *
-	 * @return  integer  Requested variable.
+     * @return  integer  Requested variable.
 	 *
 	 * @deprecated  12.1
 	 * @since       11.1
@@ -219,11 +219,11 @@ class JRequest
 	 *
 	 * See getVar() for more in-depth documentation on the parameters.
 	 *
-	 * @param   string  $name     Variable name.
-	 * @param   string  $default  Default value if the variable does not exist.
-	 * @param   string  $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD).
+     * @param  string  $name     Variable name.
+     * @param  string  $default  Default value if the variable does not exist.
+     * @param  string  $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD).
 	 *
-	 * @return  float  Requested variable.
+     * @return  float  Requested variable.
 	 *
 	 * @since   11.1
 	 *
@@ -241,11 +241,11 @@ class JRequest
 	 *
 	 * See getVar() for more in-depth documentation on the parameters.
 	 *
-	 * @param   string  $name     Variable name.
-	 * @param   string  $default  Default value if the variable does not exist.
-	 * @param   string  $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD).
+     * @param  string  $name     Variable name.
+     * @param  string  $default  Default value if the variable does not exist.
+     * @param  string  $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD).
 	 *
-	 * @return  boolean  Requested variable.
+     * @return  boolean  Requested variable.
 	 *
 	 * @deprecated  12.1
 	 * @since       11.1
@@ -262,11 +262,11 @@ class JRequest
 	 *
 	 * See getVar() for more in-depth documentation on the parameters.
 	 *
-	 * @param   string  $name     Variable name.
-	 * @param   string  $default  Default value if the variable does not exist.
-	 * @param   string  $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD).
+     * @param  string  $name     Variable name.
+     * @param  string  $default  Default value if the variable does not exist.
+     * @param  string  $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD).
 	 *
-	 * @return  string  Requested variable.
+     * @return  string  Requested variable.
 	 *
 	 * @since   11.1
 	 *
@@ -286,11 +286,11 @@ class JRequest
 	 *
 	 * See getVar() for more in-depth documentation on the parameters.
 	 *
-	 * @param   string  $name     Variable name
-	 * @param   string  $default  Default value if the variable does not exist
-	 * @param   string  $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD)
+     * @param  string  $name     Variable name
+     * @param  string  $default  Default value if the variable does not exist
+     * @param  string  $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD)
 	 *
-	 * @return  string  Requested variable
+     * @return  string  Requested variable
 	 *
 	 * @deprecated  12.1
 	 * @since       11.1
@@ -307,12 +307,12 @@ class JRequest
 	 *
 	 * See getVar() for more in-depth documentation on the parameters.
 	 *
-	 * @param   string   $name     Variable name
-	 * @param   string   $default  Default value if the variable does not exist
-	 * @param   string   $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD)
-	 * @param   integer  $mask     Filter mask for the variable
+     * @param  string   $name     Variable name
+     * @param  string   $default  Default value if the variable does not exist
+     * @param  string   $hash     Where the var should come from (POST, GET, FILES, COOKIE, METHOD)
+     * @param  integer  $mask     Filter mask for the variable
 	 *
-	 * @return  string   Requested variable
+     * @return  string  Requested variable
 	 *
 	 * @since   11.1
 	 *
@@ -327,12 +327,12 @@ class JRequest
 	/**
 	 * Set a variable in one of the request variables.
 	 *
-	 * @param   string   $name       Name
-	 * @param   string   $value      Value
-	 * @param   string   $hash       Hash
-	 * @param   boolean  $overwrite  Boolean
+     * @param  string   $name       Name
+     * @param  string   $value      Value
+     * @param  string   $hash       Hash
+     * @param  boolean  $overwrite  Boolean
 	 *
-	 * @return  string   Previous value
+     * @return  string  Previous value
 	 *
 	 * @since   11.1
 	 *
@@ -408,10 +408,10 @@ class JRequest
 	 * method   via current $_SERVER['REQUEST_METHOD']
 	 * default  $_REQUEST
 	 *
-	 * @param   string   $hash  to get (POST, GET, FILES, METHOD).
-	 * @param   integer  $mask  Filter mask for the variable.
+     * @param  string   $hash  to get (POST, GET, FILES, METHOD).
+     * @param  integer  $mask  Filter mask for the variable.
 	 *
-	 * @return  mixed    Request hash.
+     * @return  mixed  Request hash.
 	 *
 	 * @deprecated  12.1   User JInput::get
 	 * @see         JInput
@@ -465,11 +465,11 @@ class JRequest
 	/**
 	 * Sets a request variable.
 	 *
-	 * @param   array    $array      An associative array of key-value pairs.
-	 * @param   string   $hash       The request variable to set (POST, GET, FILES, METHOD).
-	 * @param   boolean  $overwrite  If true and an existing key is found, the value is overwritten, otherwise it is ignored.
+     * @param  array    $array      An associative array of key-value pairs.
+     * @param  string   $hash       The request variable to set (POST, GET, FILES, METHOD).
+     * @param  boolean  $overwrite  If true and an existing key is found, the value is overwritten, otherwise it is ignored.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @deprecated  12.1  Use JInput::Set
 	 * @see         JInput::Set
@@ -488,9 +488,9 @@ class JRequest
 	 *
 	 * Use in conjunction with JHtml::_('form.token').
 	 *
-	 * @param   string  $method  The request method in which to look for the token key.
+     * @param  string  $method  The request method in which to look for the token key.
 	 *
-	 * @return  boolean  True if found and valid, false otherwise.
+     * @return  boolean  True if found and valid, false otherwise.
 	 *
 	 * @deprecated  12.1 Use JSession::checkToken() instead. Note that 'default' has to become 'request'.
 	 * @since       11.1
@@ -508,16 +508,16 @@ class JRequest
 	/**
 	 * Clean up an input variable.
 	 *
-	 * @param   mixed    $var   The input variable.
-	 * @param   integer  $mask  Filter bit mask.
+     * @param  mixed    $var   The input variable.
+     * @param  integer  $mask  Filter bit mask.
 	 *                           1 = no trim: If this flag is cleared and the input is a string, the string will have leading and trailing
 	 *                               whitespace trimmed.
 	 *                           2 = allow_raw: If set, no more filtering is performed, higher bits are ignored.
 	 *                           4 = allow_html: HTML is allowed, but passed through a safe HTML filter first. If set, no more filtering
 	 *                               is performed. If no bits other than the 1 bit is set, a strict filter is applied.
-	 * @param   string   $type  The variable type {@see JFilterInput::clean()}.
+     * @param  string  $type  The variable type {@see JFilterInput::clean()}.
 	 *
-	 * @return  mixed  Same as $var
+     * @return  mixed  Same as $var
 	 *
 	 * @deprecated  12.1
 	 * @since       11.1

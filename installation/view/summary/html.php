@@ -45,7 +45,7 @@ class InstallationViewSummaryHtml extends InstallationViewDefault
 	/**
 	 * Method to render the view.
 	 *
-	 * @return  string  The rendered view.
+     * @return  string  The rendered view.
 	 *
 	 * @since   3.1
 	 */

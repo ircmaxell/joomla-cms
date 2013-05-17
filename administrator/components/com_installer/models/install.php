@@ -40,7 +40,7 @@ class InstallerModelInstall extends JModelLegacy
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -62,7 +62,7 @@ class InstallerModelInstall extends JModelLegacy
 	/**
 	 * Install an extension from either folder, url or upload.
 	 *
-	 * @return  boolean result of install
+     * @return  boolean  result of install
 	 *
 	 * @since   1.5
 	 */
@@ -144,7 +144,7 @@ class InstallerModelInstall extends JModelLegacy
 	/**
 	 * Works out an installation package from a HTTP upload
 	 *
-	 * @return package definition or false on failure
+     * @return  package  definition or false on failure
 	 */
 	protected function _getPackageFromUpload()
 	{
@@ -197,7 +197,7 @@ class InstallerModelInstall extends JModelLegacy
 	/**
 	 * Install an extension from a directory
 	 *
-	 * @return  array  Package details or false on failure
+     * @return  array  Package details or false on failure
 	 *
 	 * @since   1.5
 	 */
@@ -237,7 +237,7 @@ class InstallerModelInstall extends JModelLegacy
 	/**
 	 * Install an extension from a URL
 	 *
-	 * @return  Package details or false on failure
+     * @return  Package  details or false on failure
 	 *
 	 * @since   1.5
 	 */

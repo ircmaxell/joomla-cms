@@ -27,9 +27,9 @@ class BannersControllerBanner extends JControllerForm
 	/**
 	 * Method override to check if you can add a new record.
 	 *
-	 * @param   array  $data  An array of input data.
+     * @param  array  $data  An array of input data.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.6
 	 */
@@ -60,10 +60,10 @@ class BannersControllerBanner extends JControllerForm
 	/**
 	 * Method override to check if you can edit an existing record.
 	 *
-	 * @param   array   $data  An array of input data.
-	 * @param   string  $key   The name of the key for the primary key.
+     * @param  array   $data  An array of input data.
+     * @param  string  $key   The name of the key for the primary key.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.6
 	 */
@@ -93,9 +93,9 @@ class BannersControllerBanner extends JControllerForm
 	/**
 	 * Method to run batch operations.
 	 *
-	 * @param   string  $model  The model
+     * @param  string  $model  The model
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since	2.5
 	 */

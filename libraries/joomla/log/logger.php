@@ -45,7 +45,7 @@ abstract class JLogLogger
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  &$options  Log object options.
+     * @param  array  &$options  Log object options.
 	 *
 	 * @since   12.2
 	 */
@@ -58,9 +58,9 @@ abstract class JLogLogger
 	/**
 	 * Method to add an entry to the log.
 	 *
-	 * @param   JLogEntry  $entry  The log entry object to add to the log.
+     * @param  JLogEntry  $entry  The log entry object to add to the log.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.2
 	 */
@@ -80,7 +80,7 @@ abstract class JLogger extends JLogLogger
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  &$options  Log object options.
+     * @param  array  &$options  Log object options.
 	 *
 	 * @since   11.1
 	 * @deprecated  13.3

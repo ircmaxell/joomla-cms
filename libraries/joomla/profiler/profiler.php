@@ -58,7 +58,7 @@ class JProfiler
 	/**
 	 * Constructor
 	 *
-	 * @param   string  $prefix  Prefix for mark messages
+     * @param  string  $prefix  Prefix for mark messages
 	 *
 	 * @since  11.1
 	 */
@@ -73,9 +73,9 @@ class JProfiler
 	 * Returns the global Profiler object, only creating it
 	 * if it doesn't already exist.
 	 *
-	 * @param   string  $prefix  Prefix used to distinguish profiler objects.
+     * @param  string  $prefix  Prefix used to distinguish profiler objects.
 	 *
-	 * @return  JProfiler  The Profiler object.
+     * @return  JProfiler  The Profiler object.
 	 *
 	 * @since   11.1
 	 */
@@ -95,9 +95,9 @@ class JProfiler
 	 * The mark is returned as text enclosed in <div> tags
 	 * with a CSS class of 'profiler'.
 	 *
-	 * @param   string  $label  A label for the time mark
+     * @param  string  $label  A label for the time mark
 	 *
-	 * @return  string  Mark enclosed in <div> tags
+     * @return  string  Mark enclosed in <div> tags
 	 *
 	 * @since   11.1
 	 */
@@ -127,7 +127,7 @@ class JProfiler
 	/**
 	 * Get the current time.
 	 *
-	 * @return  float The current time
+     * @return  float  The current time
 	 *
 	 * @since   11.1
 	 */
@@ -141,7 +141,7 @@ class JProfiler
 	/**
 	 * Get information about current memory usage.
 	 *
-	 * @return  integer  The memory usage
+     * @return  integer  The memory usage
 	 *
 	 * @link    PHP_MANUAL#memory_get_usage
 	 * @since   11.1
@@ -158,7 +158,7 @@ class JProfiler
 	 * Returns an array of all marks created since the Profiler object
 	 * was instantiated.  Marks are strings as per {@link JProfiler::mark()}.
 	 *
-	 * @return  array  Array of profiler marks
+     * @return  array  Array of profiler marks
 	 */
 	public function getBuffer()
 	{

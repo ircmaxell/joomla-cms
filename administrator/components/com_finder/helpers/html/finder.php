@@ -23,7 +23,7 @@ abstract class JHtmlFinder
 	/**
 	 * Creates a list of types to filter on.
 	 *
-	 * @return  array  An array containing the types that can be selected.
+     * @return  array  An array containing the types that can be selected.
 	 *
 	 * @since   2.5
 	 */
@@ -66,7 +66,7 @@ abstract class JHtmlFinder
 	/**
 	 * Creates a list of maps.
 	 *
-	 * @return  array  An array containing the maps that can be selected.
+     * @return  array  An array containing the maps that can be selected.
 	 *
 	 * @since   2.5
 	 */
@@ -110,7 +110,7 @@ abstract class JHtmlFinder
 	/**
 	 * Creates a list of published states.
 	 *
-	 * @return  array  An array containing the states that can be selected.
+     * @return  array  An array containing the states that can be selected.
 	 *
 	 * @since   2.5
 	 */

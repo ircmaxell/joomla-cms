@@ -22,10 +22,10 @@ abstract class JDatabase
 	/**
 	 * Execute the SQL statement.
 	 *
-	 * @return  mixed  A database cursor resource on success, boolean false on failure.
+     * @return  mixed  A database cursor resource on success, boolean false on failure.
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function query()
 	{
@@ -39,7 +39,7 @@ abstract class JDatabase
 	 * the class exists and the static test method returns true.  This gives us the ability to have a multitude
 	 * of connector classes that are self-aware as to whether or not they are able to be used on a given system.
 	 *
-	 * @return  array  An array of available database connectors.
+     * @return  array  An array of available database connectors.
 	 *
 	 * @since   11.1
 	 * @deprecated  13.1
@@ -54,9 +54,9 @@ abstract class JDatabase
 	/**
 	 * Gets the error message from the database connection.
 	 *
-	 * @param   boolean  $escaped  True to escape the message string for use in JavaScript.
+     * @param  boolean  $escaped  True to escape the message string for use in JavaScript.
 	 *
-	 * @return  string  The error message for the most recent query.
+     * @return  string  The error message for the most recent query.
 	 *
 	 * @deprecated  12.1
 	 * @since   11.1
@@ -78,7 +78,7 @@ abstract class JDatabase
 	/**
 	 * Gets the error number from the database connection.
 	 *
-	 * @return      integer  The error number for the most recent query.
+     * @return  integer  The error number for the most recent query.
 	 *
 	 * @since       11.1
 	 * @deprecated  12.1
@@ -100,9 +100,9 @@ abstract class JDatabase
 	 * Instances are unique to the given options and new objects are only created when a unique options array is
 	 * passed into the method.  This ensures that we don't end up with unnecessary database connection resources.
 	 *
-	 * @param   array  $options  Parameters to be passed to the database driver.
+     * @param  array  $options  Parameters to be passed to the database driver.
 	 *
-	 * @return  JDatabaseDriver  A database object.
+     * @return  JDatabaseDriver  A database object.
 	 *
 	 * @since       11.1
 	 * @deprecated  13.1
@@ -117,9 +117,9 @@ abstract class JDatabase
 	/**
 	 * Splits a string of multiple queries into an array of individual queries.
 	 *
-	 * @param   string  $query  Input SQL string with which to split into individual queries.
+     * @param  string  $query  Input SQL string with which to split into individual queries.
 	 *
-	 * @return  array  The queries from the input string separated into an array.
+     * @return  array  The queries from the input string separated into an array.
 	 *
 	 * @since   11.1
 	 * @deprecated  13.1
@@ -134,9 +134,9 @@ abstract class JDatabase
 	/**
 	 * Return the most recent error message for the database connector.
 	 *
-	 * @param   boolean  $showSQL  True to display the SQL statement sent to the database as well as the error.
+     * @param  boolean  $showSQL  True to display the SQL statement sent to the database as well as the error.
 	 *
-	 * @return  string  The error message for the most recent query.
+     * @return  string  The error message for the most recent query.
 	 *
 	 * @since   11.1
 	 * @deprecated  12.1
@@ -159,7 +159,7 @@ abstract class JDatabase
 	/**
 	 * Test to see if the connector is available.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   11.1
 	 * @deprecated  12.3 Use JDatabaseDriver::isSupported() instead.

@@ -27,13 +27,13 @@ class JFeedFactory
 	/**
 	 * Method to load a URI into the feed reader for parsing.
 	 *
-	 * @param   string  $uri  The URI of the feed to load.
+     * @param  string  $uri  The URI of the feed to load.
 	 *
-	 * @return  JFeedReader
+     * @return  JFeedReader
 	 *
 	 * @since   12.3
-	 * @throws  InvalidArgumentException
-	 * @throws  RuntimeException
+     * @throws  InvalidArgumentException
+     * @throws  RuntimeException
 	 */
 	public function getFeed($uri)
 	{
@@ -69,14 +69,14 @@ class JFeedFactory
 	/**
 	 * Method to register a JFeedParser class for a given root tag name.
 	 *
-	 * @param   string   $tagName    The root tag name for which to register the parser class.
-	 * @param   string   $className  The JFeedParser class name to register for a root tag name.
-	 * @param   boolean  $overwrite  True to overwrite the parser class if one is already registered.
+     * @param  string   $tagName    The root tag name for which to register the parser class.
+     * @param  string   $className  The JFeedParser class name to register for a root tag name.
+     * @param  boolean  $overwrite  True to overwrite the parser class if one is already registered.
 	 *
-	 * @return  JFeedFactory
+     * @return  JFeedFactory
 	 *
 	 * @since   12.3
-	 * @throws  InvalidArgumentException
+     * @throws  InvalidArgumentException
 	 */
 	public function registerParser($tagName, $className, $overwrite = false)
 	{
@@ -104,13 +104,13 @@ class JFeedFactory
 	/**
 	 * Method to return a new JFeedParser object based on the registered parsers and a given type.
 	 *
-	 * @param   string     $type    The name of parser to return.
-	 * @param   XMLReader  $reader  The XMLReader instance for the feed.
+     * @param  string     $type    The name of parser to return.
+     * @param  XMLReader  $reader  The XMLReader instance for the feed.
 	 *
-	 * @return  JFeedParser
+     * @return  JFeedParser
 	 *
 	 * @since   12.3
-	 * @throws  LogicException
+     * @throws  LogicException
 	 */
 	private function _fetchFeedParser($type, XMLReader $reader)
 	{

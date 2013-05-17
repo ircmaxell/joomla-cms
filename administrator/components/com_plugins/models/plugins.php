@@ -52,10 +52,10 @@ class PluginsModelPlugins extends JModelList
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @param   string  $ordering   An optional ordering field.
-	 * @param   string  $direction  An optional direction (asc|desc).
+     * @param  string  $ordering   An optional ordering field.
+     * @param  string  $direction  An optional direction (asc|desc).
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -96,7 +96,7 @@ class PluginsModelPlugins extends JModelList
 	 *
 	 * @param   string    A prefix for the store id.
 	 *
-	 * @return  string    A store id.
+     * @return  string  A store id.
 	 */
 	protected function getStoreId($id = '')
 	{
@@ -116,7 +116,7 @@ class PluginsModelPlugins extends JModelList
 	 * @param   string The query
 	 * @param   int    Offset
 	 * @param   int    The number of records
-	 * @return  array
+     * @return  array
 	 */
 	protected function _getList($query, $limitstart = 0, $limit = 0)
 	{
@@ -174,7 +174,7 @@ class PluginsModelPlugins extends JModelList
 	 * Translate a list of objects
 	 *
 	 * @param   array The array of objects
-	 * @return  array The array of translated objects
+     * @return  array  The array of translated objects
 	 */
 	protected function translate(&$items)
 	{
@@ -195,7 +195,7 @@ class PluginsModelPlugins extends JModelList
 	/**
 	 * Build an SQL query to load the list data.
 	 *
-	 * @return  JDatabaseQuery
+     * @return  JDatabaseQuery
 	 */
 	protected function getListQuery()
 	{

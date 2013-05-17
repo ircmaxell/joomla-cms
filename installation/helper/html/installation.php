@@ -19,7 +19,7 @@ class JHtmlInstallation
 	/**
 	 * Method to generate the side bar
 	 *
-	 * @return  string  Markup for the side bar
+     * @return  string  Markup for the side bar
 	 *
 	 * @since   1.6
 	 */
@@ -52,7 +52,7 @@ class JHtmlInstallation
 	/**
 	 * Method to generate the side bar
 	 *
-	 * @return  string  Markup for the side bar
+     * @return  string  Markup for the side bar
 	 *
 	 * @since   3.1
 	 */
@@ -78,10 +78,10 @@ class JHtmlInstallation
 	/**
 	 * Method to generate the navigation tab
 	 *
-	 * @param   string  $id    The container ID
-	 * @param   array   $tabs  The navigation tabs
+     * @param  string  $id    The container ID
+     * @param  array   $tabs  The navigation tabs
 	 *
-	 * @return  string  Markup for the tab
+     * @return  string  Markup for the tab
 	 *
 	 * @since   3.1
 	 */
@@ -111,10 +111,10 @@ class JHtmlInstallation
 	/**
 	 * Method to determine the tab (step) number
 	 *
-	 * @param   string  $id    The container ID
-	 * @param   array   $tabs  The navigation tabs
+     * @param  string  $id    The container ID
+     * @param  array   $tabs  The navigation tabs
 	 *
-	 * @return  integer  Tab number in navigation sequence
+     * @return  integer  Tab number in navigation sequence
 	 *
 	 * @since   3.1
 	 */

@@ -83,7 +83,7 @@ class JEditor extends JObject
 	/**
 	 * Constructor
 	 *
-	 * @param   string  $editor  The editor name
+     * @param  string  $editor  The editor name
 	 */
 	public function __construct($editor = 'none')
 	{
@@ -94,9 +94,9 @@ class JEditor extends JObject
 	 * Returns the global Editor object, only creating it
 	 * if it doesn't already exist.
 	 *
-	 * @param   string  $editor  The editor to use.
+     * @param  string  $editor  The editor to use.
 	 *
-	 * @return  JEditor The Editor object.
+     * @return  JEditor  The Editor object.
 	 *
 	 * @since   1.5
 	 */
@@ -115,7 +115,7 @@ class JEditor extends JObject
 	/**
 	 * Get the state of the JEditor object
 	 *
-	 * @return  mixed    The state of the object.
+     * @return  mixed  The state of the object.
 	 *
 	 * @since   1.5
 	 */
@@ -127,9 +127,9 @@ class JEditor extends JObject
 	/**
 	 * Attach an observer object
 	 *
-	 * @param   object  $observer  An observer object to attach
+     * @param  object  $observer  An observer object to attach
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -195,9 +195,9 @@ class JEditor extends JObject
 	/**
 	 * Detach an observer object
 	 *
-	 * @param   object  $observer  An observer object to detach.
+     * @param  object  $observer  An observer object to detach.
 	 *
-	 * @return  boolean  True if the observer object was detached.
+     * @return  boolean  True if the observer object was detached.
 	 *
 	 * @since   1.5
 	 */
@@ -229,7 +229,7 @@ class JEditor extends JObject
 	/**
 	 * Initialise the editor
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -262,19 +262,19 @@ class JEditor extends JObject
 	/**
 	 * Display the editor area.
 	 *
-	 * @param   string   $name     The control name.
-	 * @param   string   $html     The contents of the text area.
-	 * @param   string   $width    The width of the text area (px or %).
-	 * @param   string   $height   The height of the text area (px or %).
-	 * @param   integer  $col      The number of columns for the textarea.
-	 * @param   integer  $row      The number of rows for the textarea.
-	 * @param   boolean  $buttons  True and the editor buttons will be displayed.
-	 * @param   string   $id       An optional ID for the textarea (note: since 1.6). If not supplied the name is used.
-	 * @param   string   $asset    The object asset
-	 * @param   object   $author   The author.
-	 * @param   array    $params   Associative array of editor parameters.
+     * @param  string   $name     The control name.
+     * @param  string   $html     The contents of the text area.
+     * @param  string   $width    The width of the text area (px or %).
+     * @param  string   $height   The height of the text area (px or %).
+     * @param  integer  $col      The number of columns for the textarea.
+     * @param  integer  $row      The number of rows for the textarea.
+     * @param  boolean  $buttons  True and the editor buttons will be displayed.
+     * @param  string   $id       An optional ID for the textarea (note: since 1.6). If not supplied the name is used.
+     * @param  string   $asset    The object asset
+     * @param  object   $author   The author.
+     * @param  array    $params   Associative array of editor parameters.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   1.5
 	 */
@@ -322,9 +322,9 @@ class JEditor extends JObject
 	/**
 	 * Save the editor content
 	 *
-	 * @param   string  $editor  The name of the editor control
+     * @param  string  $editor  The name of the editor control
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   1.5
 	 */
@@ -358,9 +358,9 @@ class JEditor extends JObject
 	/**
 	 * Get the editor contents
 	 *
-	 * @param   string  $editor  The name of the editor control
+     * @param  string  $editor  The name of the editor control
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   1.5
 	 */
@@ -388,10 +388,10 @@ class JEditor extends JObject
 	/**
 	 * Set the editor contents
 	 *
-	 * @param   string  $editor  The name of the editor control
-	 * @param   string  $html    The contents of the text area
+     * @param  string  $editor  The name of the editor control
+     * @param  string  $html    The contents of the text area
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   1.5
 	 */
@@ -420,11 +420,11 @@ class JEditor extends JObject
 	/**
 	 * Get the editor extended buttons (usually from plugins)
 	 *
-	 * @param   string  $editor   The name of the editor.
-	 * @param   mixed   $buttons  Can be boolean or array, if boolean defines if the buttons are
+     * @param  string  $editor   The name of the editor.
+     * @param  mixed   $buttons  Can be boolean or array, if boolean defines if the buttons are
 	 *                            displayed, if array defines a list of buttons not to show.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   1.5
 	 */
@@ -468,9 +468,9 @@ class JEditor extends JObject
 	/**
 	 * Load the editor
 	 *
-	 * @param   array  $config  Associative array of editor config paramaters
+     * @param  array  $config  Associative array of editor config paramaters
 	 *
-	 * @return  mixed
+     * @return  mixed
 	 *
 	 * @since   1.5
 	 */

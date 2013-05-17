@@ -22,7 +22,7 @@ class JCacheStorageWincache extends JCacheStorage
 	/**
 	 * Constructor
 	 *
-	 * @param   array  $options  Optional parameters.
+     * @param  array  $options  Optional parameters.
 	 *
 	 * @since   11.1
 	 */
@@ -34,11 +34,11 @@ class JCacheStorageWincache extends JCacheStorage
 	/**
 	 * Get cached data from WINCACHE by id and group
 	 *
-	 * @param   string   $id         The cache data id
-	 * @param   string   $group      The cache data group
-	 * @param   boolean  $checkTime  True to verify cache time expiration threshold
+     * @param  string   $id         The cache data id
+     * @param  string   $group      The cache data group
+     * @param  boolean  $checkTime  True to verify cache time expiration threshold
 	 *
-	 * @return  mixed  Boolean false on failure or a cached data string
+     * @return  mixed  Boolean false on failure or a cached data string
 	 *
 	 * @since   11.1
 	 */
@@ -52,7 +52,7 @@ class JCacheStorageWincache extends JCacheStorage
 	/**
 	 * Get all cached data
 	 *
-	 * @return  array    data
+     * @return  array  data
 	 *
 	 * @since   11.1
 	 */
@@ -99,11 +99,11 @@ class JCacheStorageWincache extends JCacheStorage
 	/**
 	 * Store the data to WINCACHE by id and group
 	 *
-	 * @param   string  $id     The cache data id
-	 * @param   string  $group  The cache data group
-	 * @param   string  $data   The data to store in cache
+     * @param  string  $id     The cache data id
+     * @param  string  $group  The cache data group
+     * @param  string  $data   The data to store in cache
 	 *
-	 * @return  boolean  True on success, false otherwise
+     * @return  boolean  True on success, false otherwise
 	 *
 	 * @since   11.1
 	 */
@@ -116,10 +116,10 @@ class JCacheStorageWincache extends JCacheStorage
 	/**
 	 * Remove a cached data entry by id and group
 	 *
-	 * @param   string  $id     The cache data id
-	 * @param   string  $group  The cache data group
+     * @param  string  $id     The cache data id
+     * @param  string  $group  The cache data group
 	 *
-	 * @return  boolean  True on success, false otherwise
+     * @return  boolean  True on success, false otherwise
 	 *
 	 * @since   11.1
 	 */
@@ -132,12 +132,12 @@ class JCacheStorageWincache extends JCacheStorage
 	/**
 	 * Clean cache for a group given a mode.
 	 *
-	 * @param   string  $group  The cache data group
-	 * @param   string  $mode   The mode for cleaning cache [group|notgroup]
+     * @param  string  $group  The cache data group
+     * @param  string  $mode   The mode for cleaning cache [group|notgroup]
 	 * group mode    : cleans all cache in the group
 	 * notgroup mode : cleans all cache not in the group
 	 *
-	 * @return  boolean  True on success, false otherwise
+     * @return  boolean  True on success, false otherwise
 	 *
 	 * @since   11.1
 	 */
@@ -160,7 +160,7 @@ class JCacheStorageWincache extends JCacheStorage
 	/**
 	 * Force garbage collect expired cache data as items are removed only on get/add/delete/info etc
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   11.1
 	 */
@@ -182,7 +182,7 @@ class JCacheStorageWincache extends JCacheStorage
 	/**
 	 * Test to see if the cache storage is available.
 	 *
-	 * @return boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   12.1
 	 */

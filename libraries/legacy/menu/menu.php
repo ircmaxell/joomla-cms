@@ -51,7 +51,7 @@ class JMenu
 	/**
 	 * Class constructor
 	 *
-	 * @param   array  $options  An array of configuration options.
+     * @param  array  $options  An array of configuration options.
 	 *
 	 * @since   11.1
 	 */
@@ -77,10 +77,10 @@ class JMenu
 	/**
 	 * Returns a JMenu object
 	 *
-	 * @param   string  $client   The name of the client
-	 * @param   array   $options  An associative array of options
+     * @param  string  $client   The name of the client
+     * @param  array   $options  An associative array of options
 	 *
-	 * @return  JMenu  A menu object.
+     * @return  JMenu  A menu object.
 	 *
 	 * @since   11.1
 	 */
@@ -124,9 +124,9 @@ class JMenu
 	/**
 	 * Get menu item by id
 	 *
-	 * @param   integer  $id  The item id
+     * @param  integer  $id  The item id
 	 *
-	 * @return  mixed    The item object, or null if not found
+     * @return  mixed  The item object, or null if not found
 	 *
 	 * @since   11.1
 	 */
@@ -144,10 +144,10 @@ class JMenu
 	/**
 	 * Set the default item by id and language code.
 	 *
-	 * @param   integer  $id        The menu item id.
-	 * @param   string   $language  The language cod (since 1.6).
+     * @param  integer  $id        The menu item id.
+     * @param  string   $language  The language cod (since 1.6).
 	 *
-	 * @return  boolean  True, if successful
+     * @return  boolean  True, if successful
 	 *
 	 * @since   11.1
 	 */
@@ -165,9 +165,9 @@ class JMenu
 	/**
 	 * Get the default item by language code.
 	 *
-	 * @param   string  $language  The language code, default value of * means all.
+     * @param  string  $language  The language code, default value of * means all.
 	 *
-	 * @return  object  The item object
+     * @return  object  The item object
 	 *
 	 * @since   11.1
 	 */
@@ -190,9 +190,9 @@ class JMenu
 	/**
 	 * Set the default item by id
 	 *
-	 * @param   integer  $id  The item id
+     * @param  integer  $id  The item id
 	 *
-	 * @return  mixed  If successful the active item, otherwise null
+     * @return  mixed  If successful the active item, otherwise null
 	 *
 	 * @since   11.1
 	 */
@@ -211,7 +211,7 @@ class JMenu
 	/**
 	 * Get menu item by id.
 	 *
-	 * @return  object  The item object.
+     * @return  object  The item object.
 	 *
 	 * @since   11.1
 	 */
@@ -229,11 +229,11 @@ class JMenu
 	/**
 	 * Gets menu items by attribute
 	 *
-	 * @param   string   $attributes  The field name
-	 * @param   string   $values      The value of the field
-	 * @param   boolean  $firstonly   If true, only returns the first item found
+     * @param  string   $attributes  The field name
+     * @param  string   $values      The value of the field
+     * @param  boolean  $firstonly   If true, only returns the first item found
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.1
 	 */
@@ -288,9 +288,9 @@ class JMenu
 	/**
 	 * Gets the parameter object for a certain menu item
 	 *
-	 * @param   integer  $id  The item id
+     * @param  integer  $id  The item id
 	 *
-	 * @return  JRegistry  A JRegistry object
+     * @return  JRegistry  A JRegistry object
 	 *
 	 * @since   11.1
 	 */
@@ -309,7 +309,7 @@ class JMenu
 	/**
 	 * Getter for the menu array
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.1
 	 */
@@ -322,9 +322,9 @@ class JMenu
 	 * Method to check JMenu object authorization against an access control
 	 * object and optionally an access extension object
 	 *
-	 * @param   integer  $id  The menu id
+     * @param  integer  $id  The menu id
 	 *
-	 * @return  boolean  True if authorised
+     * @return  boolean  True if authorised
 	 *
 	 * @since   11.1
 	 */
@@ -346,7 +346,7 @@ class JMenu
 	/**
 	 * Loads the menu items
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.1
 	 */

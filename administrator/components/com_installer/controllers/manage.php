@@ -21,7 +21,7 @@ class InstallerControllerManage extends JControllerLegacy
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $config  An optional associative array of configuration settings.
+     * @param  array  $config  An optional associative array of configuration settings.
 	 *
 	 * @see     JController
 	 * @since   1.6
@@ -37,7 +37,7 @@ class InstallerControllerManage extends JControllerLegacy
 	/**
 	 * Enable/Disable an extension (if supported).
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -85,7 +85,7 @@ class InstallerControllerManage extends JControllerLegacy
 	/**
 	 * Remove an extension (Uninstall).
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
@@ -107,7 +107,7 @@ class InstallerControllerManage extends JControllerLegacy
 	 *
 	 * Useful for debugging and testing purposes when the XML file might change.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */

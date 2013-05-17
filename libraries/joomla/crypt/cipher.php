@@ -21,10 +21,10 @@ interface JCryptCipher
 	/**
 	 * Method to decrypt a data string.
 	 *
-	 * @param   string     $data  The encrypted string to decrypt.
-	 * @param   JCryptKey  $key   The key[/pair] object to use for decryption.
+     * @param  string     $data  The encrypted string to decrypt.
+     * @param  JCryptKey  $key   The key[/pair] object to use for decryption.
 	 *
-	 * @return  string  The decrypted data string.
+     * @return  string  The decrypted data string.
 	 *
 	 * @since   12.1
 	 */
@@ -33,10 +33,10 @@ interface JCryptCipher
 	/**
 	 * Method to encrypt a data string.
 	 *
-	 * @param   string     $data  The data string to encrypt.
-	 * @param   JCryptKey  $key   The key[/pair] object to use for encryption.
+     * @param  string     $data  The data string to encrypt.
+     * @param  JCryptKey  $key   The key[/pair] object to use for encryption.
 	 *
-	 * @return  string  The encrypted data string.
+     * @return  string  The encrypted data string.
 	 *
 	 * @since   12.1
 	 */
@@ -44,11 +44,11 @@ interface JCryptCipher
 
 	/**
 	 * Method to generate a new encryption key[/pair] object.
-	 * 
-	 * @param   array  $options  Key generation options.
-	 * 
-	 * @return  JCryptKey
-	 * 
+	 *
+     * @param  array  $options  Key generation options.
+	 *
+     * @return  JCryptKey
+	 *
 	 * @since   12.1
 	 */
 	public function generateKey(array $options = array());

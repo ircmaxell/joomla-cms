@@ -32,7 +32,7 @@ class PlgSystemLogout extends JPlugin
 	 * @access	public
 	 * @param   object	The object to observe -- event dispatcher.
 	 * @param   object	The configuration object for the plugin.
-	 * @return  void
+     * @return  void
 	 * @since   1.6
 	 */
 	public function __construct(&$subject, $config)
@@ -57,10 +57,10 @@ class PlgSystemLogout extends JPlugin
 	/**
 	 * This method should handle any logout logic and report back to the subject
 	 *
-	 * @param   array  $user		Holds the user data.
-	 * @param   array  $options	Array holding options (client, ...).
+     * @param  array  $user     Holds the user data.
+     * @param  array  $options  Array holding options (client, ...).
 	 *
-	 * @return  boolean Always returns true
+     * @return  boolean  Always returns true
 	 * @since   1.6
 	 */
 	public function onUserLogout($user, $options = array())

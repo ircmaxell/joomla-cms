@@ -66,9 +66,9 @@ class ContentModelCategories extends JModelList
 	 * different modules that might need different sets of data or different
 	 * ordering requirements.
 	 *
-	 * @param   string  $id	A prefix for the store id.
+     * @param  string  $id  A prefix for the store id.
 	 *
-	 * @return  string  A store id.
+     * @return  string  A store id.
 	 */
 	protected function getStoreId($id = '')
 	{
@@ -84,9 +84,9 @@ class ContentModelCategories extends JModelList
 	/**
 	 * Redefine the function an add some properties to make the styling more easy
 	 *
-	 * @param   bool	$recursive	True if you want to return children recursively.
+     * @param  bool  $recursive  True if you want to return children recursively.
 	 *
-	 * @return  mixed  An array of data items on success, false on failure.
+     * @return  mixed  An array of data items on success, false on failure.
 	 * @since   1.6
 	 */
 	public function getItems($recursive = false)
@@ -112,7 +112,8 @@ class ContentModelCategories extends JModelList
 			{
 				$this->_items = $this->_parent->getChildren($recursive);
 			}
-			else {
+			else
+			{
 				$this->_items = false;
 			}
 		}

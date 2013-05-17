@@ -89,11 +89,11 @@ class JArchiveZip implements JArchiveExtractable
 	/**
 	 * Create a ZIP compressed file from an array of file data.
 	 *
-	 * @param   string  $archive  Path to save archive.
-	 * @param   array   $files    Array of files to add to archive.
-	 * @param   array   $options  Compression options (unused).
+     * @param  string  $archive  Path to save archive.
+     * @param  array   $files    Array of files to add to archive.
+     * @param  array   $options  Compression options (unused).
 	 *
-	 * @return  boolean  True if successful.
+     * @return  boolean  True if successful.
 	 *
 	 * @since   11.1
 	 *
@@ -115,14 +115,14 @@ class JArchiveZip implements JArchiveExtractable
 	/**
 	 * Extract a ZIP compressed file to a given path
 	 *
-	 * @param   string  $archive      Path to ZIP archive to extract
-	 * @param   string  $destination  Path to extract archive into
-	 * @param   array   $options      Extraction options [unused]
+     * @param  string  $archive      Path to ZIP archive to extract
+     * @param  string  $destination  Path to extract archive into
+     * @param  array   $options      Extraction options [unused]
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   11.1
-	 * @throws RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function extract($archive, $destination, array $options = array())
 	{
@@ -151,7 +151,7 @@ class JArchiveZip implements JArchiveExtractable
 	/**
 	 * Tests whether this adapter can unpack files on this computer.
 	 *
-	 * @return  boolean  True if supported
+     * @return  boolean  True if supported
 	 *
 	 * @since   11.3
 	 */
@@ -163,7 +163,7 @@ class JArchiveZip implements JArchiveExtractable
 	/**
 	 * Method to determine if the server has native zip support for faster handling
 	 *
-	 * @return  boolean  True if php has native ZIP support
+     * @return  boolean  True if php has native ZIP support
 	 *
 	 * @since   11.1
 	 */
@@ -175,9 +175,9 @@ class JArchiveZip implements JArchiveExtractable
 	/**
 	 * Checks to see if the data is a valid ZIP file.
 	 *
-	 * @param   string  &$data  ZIP archive data buffer.
+     * @param  string  &$data  ZIP archive data buffer.
 	 *
-	 * @return  boolean  True if valid, false if invalid.
+     * @return  boolean  True if valid, false if invalid.
 	 *
 	 * @since   11.1
 	 */
@@ -196,14 +196,14 @@ class JArchiveZip implements JArchiveExtractable
 	/**
 	 * Extract a ZIP compressed file to a given path using a php based algorithm that only requires zlib support
 	 *
-	 * @param   string  $archive      Path to ZIP archive to extract.
-	 * @param   string  $destination  Path to extract archive into.
-	 * @param   array   $options      Extraction options [unused].
+     * @param  string  $archive      Path to ZIP archive to extract.
+     * @param  string  $destination  Path to extract archive into.
+     * @param  array   $options      Extraction options [unused].
 	 *
-	 * @return  mixed   True if successful
+     * @return  mixed  True if successful
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	protected function extractCustom($archive, $destination, array $options)
 	{
@@ -289,14 +289,14 @@ class JArchiveZip implements JArchiveExtractable
 	/**
 	 * Extract a ZIP compressed file to a given path using native php api calls for speed
 	 *
-	 * @param   string  $archive      Path to ZIP archive to extract
-	 * @param   string  $destination  Path to extract archive into
-	 * @param   array   $options      Extraction options [unused]
+     * @param  string  $archive      Path to ZIP archive to extract
+     * @param  string  $destination  Path to extract archive into
+     * @param  array   $options      Extraction options [unused]
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	protected function extractNative($archive, $destination, array $options)
 	{
@@ -385,12 +385,12 @@ class JArchiveZip implements JArchiveExtractable
 	 * 'type'  --  File type
 	 * </pre>
 	 *
-	 * @param   string  &$data  The ZIP archive buffer.
+     * @param  string  &$data  The ZIP archive buffer.
 	 *
-	 * @return  boolean True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	private function _readZipInfo(&$data)
 	{
@@ -512,9 +512,9 @@ class JArchiveZip implements JArchiveExtractable
 	/**
 	 * Returns the file data for a file by offsest in the ZIP archive
 	 *
-	 * @param   integer  $key  The position of the file in the archive.
+     * @param  integer  $key  The position of the file in the archive.
 	 *
-	 * @return  string  Uncompressed file data buffer.
+     * @return  string  Uncompressed file data buffer.
 	 *
 	 * @since   11.1
 	 */
@@ -546,9 +546,9 @@ class JArchiveZip implements JArchiveExtractable
 	 * (date in high 2-bytes, time in low 2-bytes allowing magnitude
 	 * comparison).
 	 *
-	 * @param   int  $unixtime  The current UNIX timestamp.
+     * @param  int  $unixtime  The current UNIX timestamp.
 	 *
-	 * @return  int  The current date in a 4-byte DOS format.
+     * @return  int  The current date in a 4-byte DOS format.
 	 *
 	 * @since   11.1
 	 */
@@ -572,11 +572,11 @@ class JArchiveZip implements JArchiveExtractable
 	/**
 	 * Adds a "file" to the ZIP archive.
 	 *
-	 * @param   array  &$file      File data array to add
-	 * @param   array  &$contents  An array of existing zipped files.
-	 * @param   array  &$ctrldir   An array of central directory information.
+     * @param  array  &$file      File data array to add
+     * @param  array  &$contents  An array of existing zipped files.
+     * @param  array  &$ctrldir   An array of central directory information.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 *
@@ -682,11 +682,11 @@ class JArchiveZip implements JArchiveExtractable
 	 *
 	 * Official ZIP file format: http://www.pkware.com/appnote.txt
 	 *
-	 * @param   array   &$contents  An array of existing zipped files.
-	 * @param   array   &$ctrlDir   An array of central directory information.
-	 * @param   string  $path       The path to store the archive.
+     * @param  array   &$contents  An array of existing zipped files.
+     * @param  array   &$ctrlDir   An array of central directory information.
+     * @param  string  $path       The path to store the archive.
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   11.1
 	 *

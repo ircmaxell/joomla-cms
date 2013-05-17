@@ -64,9 +64,9 @@ class JInstallerAdapterModule extends JAdapterInstance
 	/**
 	 * Custom loadLanguage method
 	 *
-	 * @param   string  $path  The path where we find language files
+     * @param  string  $path  The path where we find language files
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -125,7 +125,7 @@ class JInstallerAdapterModule extends JAdapterInstance
 	/**
 	 * Custom install method
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -581,7 +581,7 @@ class JInstallerAdapterModule extends JAdapterInstance
 	 *
 	 * This is really a shell for the install system
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
 	 */
@@ -601,7 +601,7 @@ class JInstallerAdapterModule extends JAdapterInstance
 	/**
 	 * Custom discover method
 	 *
-	 * @return  array  JExtension list of extensions available
+     * @return  array  JExtension list of extensions available
 	 *
 	 * @since   3.1
 	 */
@@ -649,7 +649,7 @@ class JInstallerAdapterModule extends JAdapterInstance
 	/**
 	 * Custom discover_install method
 	 *
-	 * @return  mixed  Extension ID on success, boolean false on failure
+     * @return  mixed  Extension ID on success, boolean false on failure
 	 *
 	 * @since   3.1
 	 */
@@ -696,7 +696,7 @@ class JInstallerAdapterModule extends JAdapterInstance
 	/**
 	 * Refreshes the extension table cache
 	 *
-	 * @return  boolean  Result of operation, true if updated, false on failure.
+     * @return  boolean  Result of operation, true if updated, false on failure.
 	 *
 	 * @since   3.1
 	 */
@@ -725,9 +725,9 @@ class JInstallerAdapterModule extends JAdapterInstance
 	/**
 	 * Custom uninstall method
 	 *
-	 * @param   integer  $id  The id of the module to uninstall
+     * @param  integer  $id  The id of the module to uninstall
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -937,9 +937,9 @@ class JInstallerAdapterModule extends JAdapterInstance
 	 * Custom rollback method
 	 * - Roll back the menu item
 	 *
-	 * @param   array  $arg  Installation step to rollback
+     * @param  array  $arg  Installation step to rollback
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -966,9 +966,9 @@ class JInstallerAdapterModule extends JAdapterInstance
 	 * Custom rollback method
 	 * - Roll back the module item
 	 *
-	 * @param   array  $arg  Installation step to rollback
+     * @param  array  $arg  Installation step to rollback
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */

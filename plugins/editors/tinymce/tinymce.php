@@ -34,7 +34,7 @@ class PlgEditorTinymce extends JPlugin
 	/**
 	 * Initialises the Editor.
 	 *
-	 * @return  string  JavaScript Initialization string
+     * @return  string  JavaScript Initialization string
 	 *
 	 * @since 1.5
 	 */
@@ -625,7 +625,7 @@ class PlgEditorTinymce extends JPlugin
 	 *
 	 * @param  string  The name of the editor
 	 *
-	 * @return  string
+     * @return  string
 	 */
 	public function onGetContent($editor)
 	{
@@ -637,7 +637,7 @@ class PlgEditorTinymce extends JPlugin
 	 *
 	 * @param   string  The name of the editor
 	 *
-	 * @return  string
+     * @return  string
 	 */
 	public function onSetContent($editor, $html)
 	{
@@ -649,7 +649,7 @@ class PlgEditorTinymce extends JPlugin
 	 *
 	 * @param   string  The name of the editor
 	 *
-	 * @return  string
+     * @return  string
 	 */
 	public function onSave($editor)
 	{
@@ -658,7 +658,7 @@ class PlgEditorTinymce extends JPlugin
 
 	/**
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 */
 	public function onGetInsertMethod($name)
 	{
@@ -711,7 +711,7 @@ class PlgEditorTinymce extends JPlugin
 	 * @param   boolean  True and the editor buttons will be displayed.
 	 * @param   string   An optional ID for the textarea. If not supplied the name is used.
 	 *
-	 * @return  string
+     * @return  string
 	 */
 	public function onDisplay($name, $content, $width, $height, $col, $row, $buttons = true, $id = null, $asset = null, $author = null)
 	{
@@ -740,7 +740,7 @@ class PlgEditorTinymce extends JPlugin
 
 	/**
 	 *
-	 * @return  string
+     * @return  string
 	 */
 	private function _displayButtons($name, $buttons, $asset, $author)
 	{
@@ -796,7 +796,7 @@ class PlgEditorTinymce extends JPlugin
 
 	/**
 	 *
-	 * @return  string
+     * @return  string
 	 */
 	private function _toogleButton($name)
 	{

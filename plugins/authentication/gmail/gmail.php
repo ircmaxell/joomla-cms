@@ -21,11 +21,11 @@ class PlgAuthenticationGMail extends JPlugin
 	/**
 	 * This method should handle any authentication and report back to the subject
 	 *
-	 * @param   array   $credentials  Array holding the user credentials
-	 * @param   array   $options      Array of extra options
-	 * @param   object  $response     Authentication response object
+     * @param  array   $credentials  Array holding the user credentials
+     * @param  array   $options      Array of extra options
+     * @param  object  $response     Authentication response object
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.5
 	 */

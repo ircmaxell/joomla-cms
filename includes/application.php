@@ -351,7 +351,7 @@ final class JSite extends JApplication
 	 * Get the appliaction parameters
 	 *
 	 * @param   string    The component option
-	 * @return  object  The parameters object
+     * @return  object  The parameters object
 	 * @since   1.5
 	 */
 	public function getParams($option = null)
@@ -423,7 +423,7 @@ final class JSite extends JApplication
 	 *
 	 * @param   string    The component option
 	 *
-	 * @return  object  The parameters object
+     * @return  object  The parameters object
 	 * @since   1.5
 	 */
 	public function getPageParameters($option = null)
@@ -434,7 +434,7 @@ final class JSite extends JApplication
 	/**
 	 * Get the template
 	 *
-	 * @return  string The template name
+     * @return  string  The template name
 	 * @since 1.0
 	 */
 	public function getTemplate($params = false)
@@ -583,10 +583,10 @@ final class JSite extends JApplication
 	/**
 	 * Return a reference to the JPathway object.
 	 *
-	 * @param   string    $name        The name of the application/client.
-	 * @param   array     $options     An optional associative array of configuration settings.
+     * @param  string  $name     The name of the application/client.
+     * @param  array   $options  An optional associative array of configuration settings.
 	 *
-	 * @return  object  JMenu.
+     * @return  object  JMenu.
 	 * @since   1.5
 	 */
 	public function getMenu($name = null, $options = array())
@@ -599,10 +599,10 @@ final class JSite extends JApplication
 	/**
 	 * Return a reference to the JPathway object.
 	 *
-	 * @param   string    $name        The name of the application.
-	 * @param   array     $options     An optional associative array of configuration settings.
+     * @param  string  $name     The name of the application.
+     * @param  array   $options  An optional associative array of configuration settings.
 	 *
-	 * @return  object JPathway.
+     * @return  object  JPathway.
 	 * @since   1.5
 	 */
 	public function getPathway($name = null, $options = array())
@@ -615,13 +615,13 @@ final class JSite extends JApplication
 	/**
 	 * Return a reference to the JRouter object.
 	 *
-	 * @param   string    $name        The name of the application.
-	 * @param   array     $options     An optional associative array of configuration settings.
+     * @param  string  $name     The name of the application.
+     * @param  array   $options  An optional associative array of configuration settings.
 	 *
-	 * @return  JRouter
+     * @return  JRouter
 	 * @since   1.5
 	 */
-	static public function getRouter($name = null, array $options = array())
+	public static function getRouter($name = null, array $options = array())
 	{
 		$config = JFactory::getConfig();
 		$options['mode'] = $config->get('sef');
@@ -632,7 +632,7 @@ final class JSite extends JApplication
 	/**
 	 * Return the current state of the language filter.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 * @since   1.6
 	 */
 	public function getLanguageFilter()
@@ -643,7 +643,7 @@ final class JSite extends JApplication
 	/**
 	 * Set the current state of the language filter.
 	 *
-	 * @return  boolean  The old state
+     * @return  boolean  The old state
 	 * @since   1.6
 	 */
 	public function setLanguageFilter($state = false)
@@ -656,7 +656,7 @@ final class JSite extends JApplication
 	/**
 	 * Return the current state of the detect browser option.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 * @since   1.6
 	 */
 	public function getDetectBrowser()
@@ -667,7 +667,7 @@ final class JSite extends JApplication
 	/**
 	 * Set the current state of the detect browser option.
 	 *
-	 * @return  boolean  The old state
+     * @return  boolean  The old state
 	 * @since   1.6
 	 */
 	public function setDetectBrowser($state = false)
@@ -691,7 +691,7 @@ final class JSite extends JApplication
 	 * @param   string     An optional message type.
 	 * @param   boolean    True if the page is 301 Permanently Moved, otherwise 303 See Other is assumed.
 	 * @param   boolean    True if the enqueued messages are passed to the redirection, false else.
-	 * @return  none; calls exit().
+     * @return  none;  calls exit().
 	 * @since   1.5
 	 * @see     JApplication::enqueueMessage()
 	 */

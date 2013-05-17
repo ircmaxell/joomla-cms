@@ -19,7 +19,7 @@ abstract class JHtmlBootstrapInspector extends JHtmlBootstrap
 	/**
 	 * Resets the JHtmlBootstrap::$loaded array
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */

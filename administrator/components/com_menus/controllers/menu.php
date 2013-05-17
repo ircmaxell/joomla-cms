@@ -24,7 +24,7 @@ class MenusControllerMenu extends JControllerForm
 	 * @param   boolean			If true, the view output will be cached
 	 * @param   array  An array of safe url parameters and their variable types, for valid values see {@link JFilterInput::clean()}.
 	 *
-	 * @return  JController		This object to support chaining.
+     * @return  JController  This object to support chaining.
 	 * @since   1.5
 	 */
 	public function display($cachable = false, $urlparams = false)
@@ -35,7 +35,7 @@ class MenusControllerMenu extends JControllerForm
 	/**
 	 * Method to save a menu item.
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function save($key = null, $urlVar = null)
 	{
@@ -59,7 +59,8 @@ class MenusControllerMenu extends JControllerForm
 		}
 
 		// Make sure we are not trying to modify an administrator menu.
-		if (isset($data['client_id']) && $data['client_id'] == 1){
+		if (isset($data['client_id']) && $data['client_id'] == 1)
+		{
 			JError::raiseNotice(0, JText::_('COM_MENUS_MENU_TYPE_NOT_ALLOWED'));
 
 			// Redirect back to the edit screen.
@@ -96,7 +97,8 @@ class MenusControllerMenu extends JControllerForm
 				{
 					$app->enqueueMessage($errors[$i]->getMessage(), 'warning');
 				}
-				else {
+				else
+				{
 					$app->enqueueMessage($errors[$i], 'warning');
 				}
 			}

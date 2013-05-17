@@ -21,7 +21,7 @@ class FinderModelFilters extends JModelList
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $config  An associative array of configuration settings. [optional]
+     * @param  array  $config  An associative array of configuration settings. [optional]
 	 *
 	 * @since   2.5
 	 * @see     JController
@@ -46,7 +46,7 @@ class FinderModelFilters extends JModelList
 	/**
 	 * Build an SQL query to load the list data.
 	 *
-	 * @return  JDatabaseQuery  A JDatabaseQuery object
+     * @return  JDatabaseQuery  A JDatabaseQuery object
 	 *
 	 * @since   2.5
 	 */
@@ -92,9 +92,9 @@ class FinderModelFilters extends JModelList
 	 * different modules that might need different sets of data or different
 	 * ordering requirements.
 	 *
-	 * @param   string  $id  A prefix for the store id. [optional]
+     * @param  string  $id  A prefix for the store id. [optional]
 	 *
-	 * @return  string  A store id.
+     * @return  string  A store id.
 	 *
 	 * @since   2.5
 	 */
@@ -110,10 +110,10 @@ class FinderModelFilters extends JModelList
 	/**
 	 * Method to auto-populate the model state.  Calling getState in this method will result in recursion.
 	 *
-	 * @param   string  $ordering   An optional ordering field. [optional]
-	 * @param   string  $direction  An optional direction. [optional]
+     * @param  string  $ordering   An optional ordering field. [optional]
+     * @param  string  $direction  An optional direction. [optional]
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */

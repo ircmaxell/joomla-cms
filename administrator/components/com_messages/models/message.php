@@ -49,9 +49,9 @@ class MessagesModelMessage extends JModelAdmin
 	/**
 	 * Check that recipient user is the one trying to delete and then call parent delete method
 	 *
-	 * @param   array  &$pks  An array of record primary keys.
+     * @param  array  &$pks  An array of record primary keys.
 	 *
-	 * @return  boolean  True if successful, false if an error occurs.
+     * @return  boolean  True if successful, false if an error occurs.
 	 *
 	 * @since  3.1
 	 */
@@ -89,7 +89,7 @@ class MessagesModelMessage extends JModelAdmin
 	 * @param   type	The table type to instantiate
 	 * @param   string	A prefix for the table class name. Optional.
 	 * @param   array  Configuration array for model. Optional.
-	 * @return  JTable	A database object
+     * @return  JTable  A database object
 	 * @since   1.6
 	*/
 	public function getTable($type = 'Message', $prefix = 'MessagesTable', $config = array())
@@ -101,7 +101,7 @@ class MessagesModelMessage extends JModelAdmin
 	 * Method to get a single record.
 	 *
 	 * @param   integer	The id of the primary key.
-	 * @return  mixed  Object on success, false on failure.
+     * @return  mixed  Object on success, false on failure.
 	 * @since   1.6
 	 */
 	public function getItem($pk = null)
@@ -146,7 +146,8 @@ class MessagesModelMessage extends JModelAdmin
 					$this->setError(JText::_('JERROR_ALERTNOAUTHOR'));
 					return false;
 				}
-				else {
+				else
+				{
 					// Mark message read
 					$db		= $this->getDbo();
 					$query	= $db->getQuery(true)
@@ -169,9 +170,9 @@ class MessagesModelMessage extends JModelAdmin
 	/**
 	 * Method to get the record form.
 	 *
-	 * @param   array  $data		Data for the form.
-	 * @param   boolean	$loadData	True if the form is to load its own data (default case), false if not.
-	 * @return  JForm	A JForm object on success, false on failure
+     * @param   array    $data      Data for the form.
+     * @param   boolean  $loadData  True if the form is to load its own data (default case), false if not.
+     * @return  JForm    A JForm object on success, false on failure
 	 * @since   1.6
 	 */
 	public function getForm($data = array(), $loadData = true)
@@ -189,7 +190,7 @@ class MessagesModelMessage extends JModelAdmin
 	/**
 	 * Method to get the data that should be injected in the form.
 	 *
-	 * @return  mixed  The data for the form.
+     * @return  mixed  The data for the form.
 	 * @since   1.6
 	 */
 	protected function loadFormData()
@@ -210,10 +211,10 @@ class MessagesModelMessage extends JModelAdmin
 	/**
 	 * Checks that the current user matches the message recipient and calls the parent publish method
 	 *
-	 * @param   array    &$pks   A list of the primary keys to change.
-	 * @param   integer  $value  The value of the published state.
+     * @param  array    &$pks   A list of the primary keys to change.
+     * @param  integer  $value  The value of the published state.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
 	 */
@@ -249,7 +250,7 @@ class MessagesModelMessage extends JModelAdmin
 	 *
 	 * @param   array  The form data.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 */
 	public function save($data)
 	{

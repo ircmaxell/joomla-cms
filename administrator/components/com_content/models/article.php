@@ -29,11 +29,11 @@ class ContentModelArticle extends JModelAdmin
 	/**
 	 * Batch copy items to a new category or current.
 	 *
-	 * @param   integer  $value     The new category.
-	 * @param   array    $pks       An array of row IDs.
-	 * @param   array    $contexts  An array of item contexts.
+     * @param  integer  $value     The new category.
+     * @param  array    $pks       An array of row IDs.
+     * @param  array    $contexts  An array of item contexts.
 	 *
-	 * @return  mixed  An array of new IDs on success, boolean false on failure.
+     * @return  mixed  An array of new IDs on success, boolean false on failure.
 	 *
 	 * @since   11.1
 	 */
@@ -163,9 +163,9 @@ class ContentModelArticle extends JModelAdmin
 	/**
 	 * Method to test whether a record can be deleted.
 	 *
-	 * @param   object    $record    A record object.
+     * @param  object  $record  A record object.
 	 *
-	 * @return  boolean  True if allowed to delete the record. Defaults to the permission set in the component.
+     * @return  boolean  True if allowed to delete the record. Defaults to the permission set in the component.
 	 * @since   1.6
 	 */
 	protected function canDelete($record)
@@ -184,9 +184,9 @@ class ContentModelArticle extends JModelAdmin
 	/**
 	 * Method to test whether a record can have its state edited.
 	 *
-	 * @param   object    $record    A record object.
+     * @param  object  $record  A record object.
 	 *
-	 * @return  boolean  True if allowed to change the state of the record. Defaults to the permission set in the component.
+     * @return  boolean  True if allowed to change the state of the record. Defaults to the permission set in the component.
 	 * @since   1.6
 	 */
 	protected function canEditState($record)
@@ -215,7 +215,7 @@ class ContentModelArticle extends JModelAdmin
 	 *
 	 * @param   JTable    A JTable object.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.6
 	 */
 	protected function prepareTable($table)
@@ -249,7 +249,7 @@ class ContentModelArticle extends JModelAdmin
 	 * @param   string    A prefix for the table class name. Optional.
 	 * @param   array     Configuration array for model. Optional.
 	 *
-	 * @return  JTable    A database object
+     * @return  JTable  A database object
 	 */
 	public function getTable($type = 'Content', $prefix = 'JTable', $config = array())
 	{
@@ -261,7 +261,7 @@ class ContentModelArticle extends JModelAdmin
 	 *
 	 * @param   integer    The id of the primary key.
 	 *
-	 * @return  mixed  Object on success, false on failure.
+     * @return  mixed  Object on success, false on failure.
 	 */
 	public function getItem($pk = null)
 	{
@@ -322,10 +322,10 @@ class ContentModelArticle extends JModelAdmin
 	/**
 	 * Method to get the record form.
 	 *
-	 * @param   array      $data        Data for the form.
-	 * @param   boolean    $loadData    True if the form is to load its own data (default case), false if not.
+     * @param  array    $data      Data for the form.
+     * @param  boolean  $loadData  True if the form is to load its own data (default case), false if not.
 	 *
-	 * @return  mixed  A JForm object on success, false on failure
+     * @return  mixed  A JForm object on success, false on failure
 	 * @since   1.6
 	 */
 	public function getForm($data = array(), $loadData = true)
@@ -393,7 +393,7 @@ class ContentModelArticle extends JModelAdmin
 	/**
 	 * Method to get the data that should be injected in the form.
 	 *
-	 * @return  mixed  The data for the form.
+     * @return  mixed  The data for the form.
 	 * @since   1.6
 	 */
 	protected function loadFormData()
@@ -423,7 +423,7 @@ class ContentModelArticle extends JModelAdmin
 	 *
 	 * @param   array  The form data.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 * @since   1.6
 	 */
 	public function save($data)
@@ -538,7 +538,7 @@ class ContentModelArticle extends JModelAdmin
 	 * @param   array    The ids of the items to toggle.
 	 * @param   integer  The value to toggle to.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 */
 	public function featured($pks, $value = 0)
 	{
@@ -626,7 +626,7 @@ class ContentModelArticle extends JModelAdmin
 	 *
 	 * @param   object    A record object.
 	 *
-	 * @return  array  An array of conditions to add to add to ordering queries.
+     * @return  array  An array of conditions to add to add to ordering queries.
 	 * @since   1.6
 	 */
 	protected function getReorderConditions($table)
@@ -641,7 +641,7 @@ class ContentModelArticle extends JModelAdmin
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since    3.0
 	 */
 	protected function preprocessForm(JForm $form, $data, $group = 'content')

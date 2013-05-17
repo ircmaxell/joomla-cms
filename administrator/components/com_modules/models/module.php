@@ -41,7 +41,7 @@ class ModulesModelModule extends JModelAdmin
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -70,11 +70,11 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Method to perform batch operations on a set of modules.
 	 *
-	 * @param   array  $commands  An array of commands to perform.
-	 * @param   array  $pks       An array of item ids.
-	 * @param   array  $contexts  An array of item contexts.
+     * @param  array  $commands  An array of commands to perform.
+     * @param  array  $pks       An array of item ids.
+     * @param  array  $contexts  An array of item contexts.
 	 *
-	 * @return  boolean  Returns true on success, false on failure.
+     * @return  boolean  Returns true on success, false on failure.
 	 *
 	 * @since   1.7
 	 */
@@ -159,11 +159,11 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Batch copy modules to a new position or current.
 	 *
-	 * @param   integer  $value     The new value matching a module position.
-	 * @param   array    $pks       An array of row IDs.
-	 * @param   array    $contexts  An array of item contexts.
+     * @param  integer  $value     The new value matching a module position.
+     * @param  array    $pks       An array of row IDs.
+     * @param  array    $contexts  An array of item contexts.
 	 *
-	 * @return  boolean  True if successful, false otherwise and internal error is set.
+     * @return  boolean  True if successful, false otherwise and internal error is set.
 	 *
 	 * @since   2.5
 	 */
@@ -256,11 +256,11 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Batch move modules to a new position or current.
 	 *
-	 * @param   integer  $value     The new value matching a module position.
-	 * @param   array    $pks       An array of row IDs.
-	 * @param   array    $contexts  An array of item contexts.
+     * @param  integer  $value     The new value matching a module position.
+     * @param  array    $pks       An array of row IDs.
+     * @param  array    $contexts  An array of item contexts.
 	 *
-	 * @return  boolean  True if successful, false otherwise and internal error is set.
+     * @return  boolean  True if successful, false otherwise and internal error is set.
 	 *
 	 * @since   2.5
 	 */
@@ -321,12 +321,12 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Method to delete rows.
 	 *
-	 * @param   array  &$pks  An array of item ids.
+     * @param  array  &$pks  An array of item ids.
 	 *
-	 * @return  boolean  Returns true on success, false on failure.
+     * @return  boolean  Returns true on success, false on failure.
 	 *
 	 * @since   1.6
-	 * @throws  Exception
+     * @throws  Exception
 	 */
 	public function delete(&$pks)
 	{
@@ -379,12 +379,12 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Method to duplicate modules.
 	 *
-	 * @param   array  &$pks  An array of primary key IDs.
+     * @param  array  &$pks  An array of primary key IDs.
 	 *
-	 * @return  boolean  True if successful.
+     * @return  boolean  True if successful.
 	 *
 	 * @since   1.6
-	 * @throws  Exception
+     * @throws  Exception
 	 */
 	public function duplicate(&$pks)
 	{
@@ -473,11 +473,11 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Method to change the title.
 	 *
-	 * @param   integer  $category_id  The id of the category. Not used here.
-	 * @param   string   $title        The title.
-	 * @param   string   $position     The position.
+     * @param  integer  $category_id  The id of the category. Not used here.
+     * @param  string   $title        The title.
+     * @param  string   $position     The position.
 	 *
-	 * @return  array  Contains the modified title.
+     * @return  array  Contains the modified title.
 	 *
 	 * @since   2.5
 	 */
@@ -496,7 +496,7 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Method to get the client object
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -508,10 +508,10 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Method to get the record form.
 	 *
-	 * @param   array    $data      Data for the form.
-	 * @param   boolean  $loadData  True if the form is to load its own data (default case), false if not.
+     * @param  array    $data      Data for the form.
+     * @param  boolean  $loadData  True if the form is to load its own data (default case), false if not.
 	 *
-	 * @return  JForm  A JForm object on success, false on failure
+     * @return  JForm  A JForm object on success, false on failure
 	 *
 	 * @since   1.6
 	 */
@@ -566,7 +566,7 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Method to get the data that should be injected in the form.
 	 *
-	 * @return  mixed  The data for the form.
+     * @return  mixed  The data for the form.
 	 *
 	 * @since   1.6
 	 */
@@ -597,9 +597,9 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Method to get a single record.
 	 *
-	 * @param   integer  $pk  The id of the primary key.
+     * @param  integer  $pk  The id of the primary key.
 	 *
-	 * @return  mixed  Object on success, false on failure.
+     * @return  mixed  Object on success, false on failure.
 	 *
 	 * @since   1.6
 	 */
@@ -731,7 +731,7 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Get the necessary data to load an item help screen.
 	 *
-	 * @return  object  An object with key, url, and local properties for loading the item help screen.
+     * @return  object  An object with key, url, and local properties for loading the item help screen.
 	 *
 	 * @since   1.6
 	 */
@@ -743,11 +743,11 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Returns a reference to the a Table object, always creating it.
 	 *
-	 * @param   string  $type    The table type to instantiate
-	 * @param   string  $prefix  A prefix for the table class name. Optional.
-	 * @param   array   $config  Configuration array for model. Optional.
+     * @param  string  $type    The table type to instantiate
+     * @param  string  $prefix  A prefix for the table class name. Optional.
+     * @param  array   $config  Configuration array for model. Optional.
 	 *
-	 * @return  JTable  A database object
+     * @return  JTable  A database object
 	 *
 	 * @since   1.6
 	*/
@@ -759,9 +759,9 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Prepare and sanitise the table prior to saving.
 	 *
-	 * @param   JTable  $table  The database object
+     * @param  JTable  $table  The database object
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -788,14 +788,14 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Method to preprocess the form
 	 *
-	 * @param   JForm   $form   A form object.
-	 * @param   mixed   $data   The data expected for the form.
-	 * @param   string  $group  The name of the plugin group to import (defaults to "content").
+     * @param  JForm   $form   A form object.
+     * @param  mixed   $data   The data expected for the form.
+     * @param  string  $group  The name of the plugin group to import (defaults to "content").
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
-	 * @throws  Exception if there is an error loading the form.
+     * @throws  Exception  if there is an error loading the form.
 	 */
 	protected function preprocessForm(JForm $form, $data, $group = 'content')
 	{
@@ -852,11 +852,11 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Loads ContentHelper for filters before validating data.
 	 *
-	 * @param   object  $form   The form to validate against.
-	 * @param   array   $data   The data to validate.
-	 * @param   string  $group  The name of the group(defaults to null).
+     * @param  object  $form   The form to validate against.
+     * @param  array   $data   The data to validate.
+     * @param  string  $group  The name of the group(defaults to null).
 	 *
-	 * @return  mixed  Array of filtered data if valid, false otherwise.
+     * @return  mixed  Array of filtered data if valid, false otherwise.
 	 *
 	 * @since   1.1
 	 */
@@ -870,9 +870,9 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Method to save the form data.
 	 *
-	 * @param   array  $data  The form data.
+     * @param  array  $data  The form data.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   1.6
 	 */
@@ -1068,9 +1068,9 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * A protected method to get a set of ordering conditions.
 	 *
-	 * @param   object  $table  A record object.
+     * @param  object  $table  A record object.
 	 *
-	 * @return  array  An array of conditions to add to add to ordering queries.
+     * @return  array  An array of conditions to add to add to ordering queries.
 	 *
 	 * @since   1.6
 	 */
@@ -1086,10 +1086,10 @@ class ModulesModelModule extends JModelAdmin
 	/**
 	 * Custom clean cache method for different clients
 	 *
-	 * @param   string   $group      The name of the plugin group to import (defaults to null).
-	 * @param   integer  $client_id  The client ID. [optional]
+     * @param  string   $group      The name of the plugin group to import (defaults to null).
+     * @param  integer  $client_id  The client ID. [optional]
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */

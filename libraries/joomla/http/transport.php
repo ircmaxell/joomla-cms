@@ -21,7 +21,7 @@ interface JHttpTransport
 	/**
 	 * Constructor.
 	 *
-	 * @param   JRegistry  $options  Client options object.
+     * @param  JRegistry  $options  Client options object.
 	 *
 	 * @since   11.3
 	 */
@@ -30,14 +30,14 @@ interface JHttpTransport
 	/**
 	 * Send a request to the server and return a JHttpResponse object with the response.
 	 *
-	 * @param   string   $method     The HTTP method for sending the request.
-	 * @param   JUri     $uri        The URI to the resource to request.
-	 * @param   mixed    $data       Either an associative array or a string to be sent with the request.
-	 * @param   array    $headers    An array of request headers to send with the request.
-	 * @param   integer  $timeout    Read timeout in seconds.
-	 * @param   string   $userAgent  The optional user agent string to send with the request.
+     * @param  string   $method     The HTTP method for sending the request.
+     * @param  JUri     $uri        The URI to the resource to request.
+     * @param  mixed    $data       Either an associative array or a string to be sent with the request.
+     * @param  array    $headers    An array of request headers to send with the request.
+     * @param  integer  $timeout    Read timeout in seconds.
+     * @param  string   $userAgent  The optional user agent string to send with the request.
 	 *
-	 * @return  JHttpResponse
+     * @return  JHttpResponse
 	 *
 	 * @since   11.3
 	 */
@@ -45,10 +45,10 @@ interface JHttpTransport
 
 	/**
 	 * method to check if http transport layer available for using
-	 * 
-	 * @return bool true if available else false
-	 * 
+	 *
+     * @return  bool  true if available else false
+	 *
 	 * @since   12.1
 	 */
-	static public function isSupported();
+	public static function isSupported();
 }

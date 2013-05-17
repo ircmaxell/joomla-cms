@@ -24,11 +24,11 @@ abstract class JHtmlTel
 	 * By default, the ITU-T format will automatically be used.
 	 * However, one of the allowed unit types may also be used instead.
 	 *
-	 * @param   integer  $number       The integers in a phone number with dot separated country code
+     * @param  integer  $number  The integers in a phone number with dot separated country code
 	 *                                 ccc.nnnnnnn where ccc represents country code and nnn represents the local number.
-	 * @param   string   $displayplan  The numbering plan used to display the numbers.
+     * @param  string  $displayplan  The numbering plan used to display the numbers.
 	 *
-	 * @return  string  The formatted telephone number.
+     * @return  string  The formatted telephone number.
 	 *
 	 * @since   11.1
 	 *

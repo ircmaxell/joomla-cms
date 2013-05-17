@@ -20,42 +20,42 @@ require_once 'WebElement.php';
 class SelectElement
 {
 	private $_element;
-	
-	function __construct(WebElement $element)
+
+	public function __construct(WebElement $element)
 	{
 		$this->_element = $element;
 	}
-	
+
 	/**
 	 * Gets related WebElement
-	 * @return WebElement
+     * @return  WebElement
 	 */
 	public function getElement()
 	{
 		return $this->_element;
 	}
-	
+
 	/**
 	 * Sets an option selected by its value
-	 * @param String $value
-	 * @throws \Exception
+     * @param   String      $value
+     * @throws  \Exception
 	 */
 	public function selectByValue($value)
 	{
 		$options = $this->_element->findElements(By::xPath(".//option[@value = '" . $value . "']"));
-		
+
 		$matched = false;
 		foreach($options as $option)
 		{
-			
+
 			if(!$option->isSelected())
 			{
 				$option->click();
 			}
-			
+
 			$matched = true;
 		}
-		
+
 		if (!$matched)
 		{
 			throw new \Exception("Cannot locate option in select element with value: " . $value);
@@ -64,8 +64,8 @@ class SelectElement
 
 	/**
 	 * Sets an option selected by a partial text match
-	 * @param String $text
-	 * @throws \Exception
+     * @param   String      $text
+     * @throws  \Exception
 	 */
 	public function selectByPartialText($text)
 	{

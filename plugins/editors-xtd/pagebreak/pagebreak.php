@@ -29,7 +29,7 @@ class PlgButtonPagebreak extends JPlugin
 	/**
 	 * Display the button
 	 *
-	 * @return array A two element array of (imageName, textToInsert)
+     * @return  array  A two element array of (imageName, textToInsert)
 	 */
 	public function onDisplay($name)
 	{

@@ -30,8 +30,8 @@ class JInputJSON extends JInput
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $source   Source data (Optional, default is the raw HTTP input decoded from JSON)
-	 * @param   array  $options  Array of configuration parameters (Optional)
+     * @param  array  $source   Source data (Optional, default is the raw HTTP input decoded from JSON)
+     * @param  array  $options  Array of configuration parameters (Optional)
 	 *
 	 * @since   12.2
 	 */
@@ -63,7 +63,7 @@ class JInputJSON extends JInput
 	/**
 	 * Gets the raw JSON string from the request.
 	 *
-	 * @return  string  The raw JSON string from the request.
+     * @return  string  The raw JSON string from the request.
 	 *
 	 * @since   12.2
 	 */

@@ -21,7 +21,7 @@ class JInstallerManifestTest extends TestCase
 	 *
 	 * @todo    Implement loadManifestFromXML
 	 *
-	 * @return void
+     * @return  void
 	 */
 	public function testLoadManifestFromXml()
 	{

@@ -1,11 +1,6 @@
 <?php
 
 use SeleniumClient\By;
-use SeleniumClient\SelectElement;
-use SeleniumClient\WebDriver;
-use SeleniumClient\WebDriverWait;
-use SeleniumClient\DesiredCapabilities;
-use SeleniumClient\WebElement;
 
 /**
  * Class for the back-end control panel screen.
@@ -30,7 +25,6 @@ class MenuManagerPage extends AdminManagerPage
 	public $submenu = array (
 			'option=com_menus&view=items',
 	);
-
 
 	public function addMenu($title='Test Menu', $type='testMenu', $description='This is a test menu.')
 	{
@@ -73,8 +67,8 @@ class MenuManagerPage extends AdminManagerPage
 	/**
 	 * Returns an array of field values from an edit screen.
 	 *
-	 * @param string  $itemName    Name of item (user name, article title, and so on)
-	 * @param array   $fieldNames  Array of field labels to get values of.
+     * @param  string  $itemName    Name of item (user name, article title, and so on)
+     * @param  array   $fieldNames  Array of field labels to get values of.
 	 */
 	public function getFieldValues($className, $itemName, $fieldNames)
 	{

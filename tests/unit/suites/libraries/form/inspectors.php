@@ -19,10 +19,10 @@ class JFormInspector extends JForm
 	/**
 	 * Adds a new child SimpleXMLElement node to the source.
 	 *
-	 * @param   SimpleXMLElement  $source  The source element on which to append.
-	 * @param   SimpleXMLElement  $new     The new element to append.
+     * @param  SimpleXMLElement  $source  The source element on which to append.
+     * @param  SimpleXMLElement  $new     The new element to append.
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public static function addNode(SimpleXMLElement $source, SimpleXMLElement $new)
 	{
@@ -32,10 +32,10 @@ class JFormInspector extends JForm
 	/**
 	 * Update the attributes of a child node
 	 *
-	 * @param   SimpleXMLElement  $source  The source element on which to append the attributes
-	 * @param   SimpleXMLElement  $new     The new element to append
+     * @param  SimpleXMLElement  $source  The source element on which to append the attributes
+     * @param  SimpleXMLElement  $new     The new element to append
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public static function mergeNode(SimpleXMLElement $source, SimpleXMLElement $new)
 	{
@@ -45,10 +45,10 @@ class JFormInspector extends JForm
 	/**
 	 * Merges new elements into a source <fields> element.
 	 *
-	 * @param   SimpleXMLElement  $source  The source element.
-	 * @param   SimpleXMLElement  $new     The new element to merge.
+     * @param  SimpleXMLElement  $source  The source element.
+     * @param  SimpleXMLElement  $new     The new element to merge.
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public static function mergeNodes(SimpleXMLElement $source, SimpleXMLElement $new)
 	{
@@ -58,10 +58,10 @@ class JFormInspector extends JForm
 	/**
 	 * Method to apply an input filter to a value based on field data.
 	 *
-	 * @param   string  $element  The XML element object representation of the form field.
-	 * @param   mixed   $value    The value to filter for the field.
+     * @param  string  $element  The XML element object representation of the form field.
+     * @param  mixed   $value    The value to filter for the field.
 	 *
-	 * @return  mixed   The filtered value.
+     * @return  mixed  The filtered value.
 	 */
 	public function filterField($element, $value)
 	{
@@ -71,10 +71,10 @@ class JFormInspector extends JForm
 	/**
 	 * Method to get a form field represented as an XML element object.
 	 *
-	 * @param   string  $name   The name of the form field.
-	 * @param   string  $group  The optional dot-separated form group path on which to find the field.
+     * @param  string  $name   The name of the form field.
+     * @param  string  $group  The optional dot-separated form group path on which to find the field.
 	 *
-	 * @return  mixed  The XML element object for the field or boolean false on error.
+     * @return  mixed  The XML element object for the field or boolean false on error.
 	 */
 	public function findField($name, $group = null)
 	{
@@ -84,9 +84,9 @@ class JFormInspector extends JForm
 	/**
 	 * Method to get a form field group represented as an XML element object.
 	 *
-	 * @param   string  $group  The dot-separated form group path on which to find the group.
+     * @param  string  $group  The dot-separated form group path on which to find the group.
 	 *
-	 * @return  mixed  An array of XML element objects for the group or boolean false on error.
+     * @return  mixed  An array of XML element objects for the group or boolean false on error.
 	 */
 	public function &findGroup($group)
 	{
@@ -97,12 +97,12 @@ class JFormInspector extends JForm
 	 * Method to get an array of <field /> elements from the form XML document which are
 	 * in a control group by name.
 	 *
-	 * @param   mixed    $group   The optional dot-separated form group path on which to find the fields.
+     * @param  mixed  $group  The optional dot-separated form group path on which to find the fields.
 	 *                            Null will return all fields. False will return fields not in a group.
-	 * @param   boolean  $nested  True to also include fields in nested groups that are inside of the
+     * @param  boolean  $nested  True to also include fields in nested groups that are inside of the
 	 *                            group for which to find fields.
 	 *
-	 * @return  mixed  Boolean false on error or array of SimpleXMLElement objects.
+     * @return  mixed  Boolean false on error or array of SimpleXMLElement objects.
 	 */
 	public function &findFieldsByGroup($group = null, $nested = false)
 	{
@@ -113,9 +113,9 @@ class JFormInspector extends JForm
 	 * Method to get an array of <field /> elements from the form XML document which are
 	 * in a specified fieldset by name.
 	 *
-	 * @param   string  $name  The name of the fieldset.
+     * @param  string  $name  The name of the fieldset.
 	 *
-	 * @return  mixed  Boolean false on error or array of SimpleXMLElement objects.
+     * @return  mixed  Boolean false on error or array of SimpleXMLElement objects.
 	 */
 	public function findFieldsByFieldset($name)
 	{
@@ -125,7 +125,7 @@ class JFormInspector extends JForm
 	/**
 	 * Return the protected data object.
 	 *
-	 * @return  JRegistry
+     * @return  JRegistry
 	 */
 	public function getData()
 	{
@@ -135,7 +135,7 @@ class JFormInspector extends JForm
 	/**
 	 * Return the protected options array.
 	 *
-	 * @return  array
+     * @return  array
 	 */
 	public function getOptions()
 	{
@@ -145,7 +145,7 @@ class JFormInspector extends JForm
 	/**
 	 * Return the protected xml definition.
 	 *
-	 * @return  SimpleXMLElement
+     * @return  SimpleXMLElement
 	 */
 	public function getXML()
 	{
@@ -155,11 +155,11 @@ class JFormInspector extends JForm
 	/**
 	 * Method to load, setup and return a JFormField object based on field data.
 	 *
-	 * @param   string  $element  The XML element object representation of the form field.
-	 * @param   string  $group    The optional dot-separated form group path on which to find the field.
-	 * @param   mixed   $value    The optional value to use as the default for the field.
+     * @param  string  $element  The XML element object representation of the form field.
+     * @param  string  $group    The optional dot-separated form group path on which to find the field.
+     * @param  mixed   $value    The optional value to use as the default for the field.
 	 *
-	 * @return  mixed  The JFormField object for the field or boolean false on error.
+     * @return  mixed  The JFormField object for the field or boolean false on error.
 	 */
 	public function loadField($element, $group = null, $value = null)
 	{
@@ -169,10 +169,10 @@ class JFormInspector extends JForm
 	/**
 	 * Proxy for {@link JFormHelper::loadFieldType()}.
 	 *
-	 * @param   string   $type  The field type.
-	 * @param   boolean  $new   Flag to toggle whether we should get a new instance of the object.
+     * @param  string   $type  The field type.
+     * @param  boolean  $new   Flag to toggle whether we should get a new instance of the object.
 	 *
-	 * @return  mixed  JFormField object on success, false otherwise.
+     * @return  mixed  JFormField object on success, false otherwise.
 	 */
 	public function loadFieldType($type, $new = true)
 	{
@@ -182,10 +182,10 @@ class JFormInspector extends JForm
 	/**
 	 * Proxy for JFormHelper::loadRuleType().
 	 *
-	 * @param   string   $type  The rule type.
-	 * @param   boolean  $new   Flag to toggle whether we should get a new instance of the object.
+     * @param  string   $type  The rule type.
+     * @param  boolean  $new   Flag to toggle whether we should get a new instance of the object.
 	 *
-	 * @return  mixed  JFormRule object on success, false otherwise.
+     * @return  mixed  JFormRule object on success, false otherwise.
 	 */
 	public function loadRuleType($type, $new = true)
 	{
@@ -195,13 +195,13 @@ class JFormInspector extends JForm
 	/**
 	 * Method to validate a JFormField object based on field data.
 	 *
-	 * @param   SimpleXMLElement  $element  The XML element object representation of the form field.
-	 * @param   string            $group    The optional dot-separated form group path on which to find the field.
-	 * @param   mixed             $value    The optional value to use as the default for the field.
-	 * @param   JRegistry         $input    An optional JRegistry object with the entire data set to validate
+     * @param  SimpleXMLElement  $element  The XML element object representation of the form field.
+     * @param  string            $group    The optional dot-separated form group path on which to find the field.
+     * @param  mixed             $value    The optional value to use as the default for the field.
+     * @param  JRegistry         $input    An optional JRegistry object with the entire data set to validate
 	 *                                      against the entire form.
 	 *
-	 * @return  mixed  Boolean true if field value is valid, Exception on failure.
+     * @return  mixed  Boolean true if field value is valid, Exception on failure.
 	 */
 	public function validateField($element, $group = null, $value = null, $input = null)
 	{
@@ -221,9 +221,9 @@ class JFormFieldInspector extends JFormField
 	/**
 	 * Method to get certain otherwise inaccessible properties from the form field object.
 	 *
-	 * @param   string  $name  The property name for which to the the value.
+     * @param  string  $name  The property name for which to the the value.
 	 *
-	 * @return  mixed  The property value or null.
+     * @return  mixed  The property value or null.
 	 */
 	public function __get($name)
 	{
@@ -240,7 +240,7 @@ class JFormFieldInspector extends JFormField
 	/**
 	 * Method to get the field input markup.
 	 *
-	 * @return  string  The field input markup.
+     * @return  string  The field input markup.
 	 */
 	public function getInput()
 	{
@@ -250,7 +250,7 @@ class JFormFieldInspector extends JFormField
 	/**
 	 * Return the protected form object.
 	 *
-	 * @return  JForm
+     * @return  JForm
 	 */
 	public function getForm()
 	{
@@ -260,10 +260,10 @@ class JFormFieldInspector extends JFormField
 	/**
 	 * Method to get the id used for the field input tag.
 	 *
-	 * @param   string  $fieldId    The field element id.
-	 * @param   string  $fieldName  The field element name.
+     * @param  string  $fieldId    The field element id.
+     * @param  string  $fieldName  The field element name.
 	 *
-	 * @return  string  The id to be used for the field input tag.
+     * @return  string  The id to be used for the field input tag.
 	 */
 	public function getId($fieldId, $fieldName)
 	{
@@ -273,7 +273,7 @@ class JFormFieldInspector extends JFormField
 	/**
 	 * Method to get the field label markup.
 	 *
-	 * @return  string  The field label markup.
+     * @return  string  The field label markup.
 	 */
 	public function getLabel()
 	{
@@ -283,7 +283,7 @@ class JFormFieldInspector extends JFormField
 	/**
 	 * Method to get the field title.
 	 *
-	 * @return  string  The field title.
+     * @return  string  The field title.
 	 */
 	public function getTitle()
 	{

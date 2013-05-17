@@ -43,7 +43,7 @@ class JDatabaseQuerySqlsrv extends JDatabaseQuery
 	/**
 	 * Magic function to convert the query to a string.
 	 *
-	 * @return  string	The completed query.
+     * @return  string  The completed query.
 	 *
 	 * @since   11.1
 	 */
@@ -101,9 +101,9 @@ class JDatabaseQuerySqlsrv extends JDatabaseQuery
 	 *
 	 * Ensure that the value is properly quoted before passing to the method.
 	 *
-	 * @param   string  $value  The value to cast as a char.
+     * @param  string  $value  The value to cast as a char.
 	 *
-	 * @return  string  Returns the cast value.
+     * @return  string  Returns the cast value.
 	 *
 	 * @since   11.1
 	 */
@@ -115,11 +115,11 @@ class JDatabaseQuerySqlsrv extends JDatabaseQuery
 	/**
 	 * Gets the function to determine the length of a character string.
 	 *
-	 * @param   string  $field      A value.
-	 * @param   string  $operator   Comparison operator between charLength integer value and $condition
-	 * @param   string  $condition  Integer value to compare charLength with.
+     * @param  string  $field      A value.
+     * @param  string  $operator   Comparison operator between charLength integer value and $condition
+     * @param  string  $condition  Integer value to compare charLength with.
 	 *
-	 * @return  string  The required char length call.
+     * @return  string  The required char length call.
 	 *
 	 * @since 11.1
 	 */
@@ -131,10 +131,10 @@ class JDatabaseQuerySqlsrv extends JDatabaseQuery
 	/**
 	 * Concatenates an array of column names or values.
 	 *
-	 * @param   array   $values     An array of values to concatenate.
-	 * @param   string  $separator  As separator to place between each value.
+     * @param  array   $values     An array of values to concatenate.
+     * @param  string  $separator  As separator to place between each value.
 	 *
-	 * @return  string  The concatenated values.
+     * @return  string  The concatenated values.
 	 *
 	 * @since   11.1
 	 */
@@ -153,7 +153,7 @@ class JDatabaseQuerySqlsrv extends JDatabaseQuery
 	/**
 	 * Gets the current date and time.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -165,9 +165,9 @@ class JDatabaseQuerySqlsrv extends JDatabaseQuery
 	/**
 	 * Get the length of a string in bytes.
 	 *
-	 * @param   string  $value  The string to measure.
+     * @param  string  $value  The string to measure.
 	 *
-	 * @return  integer
+     * @return  integer
 	 *
 	 * @since   11.1
 	 */
@@ -182,11 +182,11 @@ class JDatabaseQuerySqlsrv extends JDatabaseQuery
 	 * $query->select($query->dateAdd());
 	 * Prefixing the interval with a - (negative sign) will cause subtraction to be used.
 	 *
-	 * @param   datetime  $date      The date to add to; type may be time or datetime.
-	 * @param   string    $interval  The string representation of the appropriate number of units
-	 * @param   string    $datePart  The part of the date to perform the addition on
+     * @param  datetime  $date      The date to add to; type may be time or datetime.
+     * @param  string    $interval  The string representation of the appropriate number of units
+     * @param  string    $datePart  The part of the date to perform the addition on
 	 *
-	 * @return  string  The string with the appropriate sql for addition of dates
+     * @return  string  The string with the appropriate sql for addition of dates
 	 *
 	 * @since   13.1
 	 * @note Not all drivers support all units.

@@ -18,19 +18,19 @@ defined('_JEXEC') or die;
 class PlgSystemCache extends JPlugin
 {
 
-	var $_cache		= null;
+	public $_cache		= null;
 
-	var $_cache_key	= null;
+	public $_cache_key	= null;
 
 	/**
 	 * Constructor
 	 *
 	 * @access	protected
-	 * @param   object	$subject The object to observe
-	 * @param   array  $config  An array that holds the plugin configuration
+     * @param  object  $subject  The object to observe
+     * @param  array   $config   An array that holds the plugin configuration
 	 * @since   1.0
 	 */
-	function __construct(& $subject, $config)
+	public function __construct(& $subject, $config)
 	{
 		parent::__construct($subject, $config);
 
@@ -50,7 +50,7 @@ class PlgSystemCache extends JPlugin
 	* Converting the site URL to fit to the HTTP request
 	*
 	*/
-	function onAfterInitialise()
+	public function onAfterInitialise()
 	{
 		global $_PROFILER;
 		$app  = JFactory::getApplication();
@@ -89,7 +89,7 @@ class PlgSystemCache extends JPlugin
 		}
 	}
 
-	function onAfterRender()
+	public function onAfterRender()
 	{
 		$app = JFactory::getApplication();
 

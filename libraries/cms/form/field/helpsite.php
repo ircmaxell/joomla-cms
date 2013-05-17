@@ -32,7 +32,7 @@ class JFormFieldHelpsite extends JFormFieldList
 	/**
 	 * Method to get the help site field options.
 	 *
-	 * @return  array  The field option objects.
+     * @return  array  The field option objects.
 	 *
 	 * @since   1.6.0
 	 */

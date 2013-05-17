@@ -19,10 +19,10 @@ abstract class JHtmlModules
 	/**
 	 * Builds an array of template options
 	 *
-	 * @param   integer  $clientId  The client id
-	 * @param   string   $state     The state of the template
+     * @param  integer  $clientId  The client id
+     * @param  string   $state     The state of the template
 	 *
-	 * @return  array
+     * @return  array
 	 */
 	public static function templates($clientId = 0, $state = '')
 	{
@@ -40,7 +40,7 @@ abstract class JHtmlModules
 	/**
 	 * Builds an array of template type options
 	 *
-	 * @return  array
+     * @return  array
 	 */
 	public static function types()
 	{
@@ -54,7 +54,7 @@ abstract class JHtmlModules
 	/**
 	 * Builds an array of template state options
 	 *
-	 * @return  array
+     * @return  array
 	 */
 	public static function templateStates()
 	{
@@ -68,12 +68,12 @@ abstract class JHtmlModules
 	/**
 	 * Returns a published state on a grid
 	 *
-	 * @param   integer  $value     The state value.
-	 * @param   integer  $i         The row index
-	 * @param   boolean  $enabled   An optional setting for access control on the action.
-	 * @param   string   $checkbox  An optional prefix for checkboxes.
+     * @param  integer  $value     The state value.
+     * @param  integer  $i         The row index
+     * @param  boolean  $enabled   An optional setting for access control on the action.
+     * @param  string   $checkbox  An optional prefix for checkboxes.
 	 *
-	 * @return  string        The Html code
+     * @return  string  The Html code
 	 *
 	 * @see     JHtmlJGrid::state
 	 * @since   1.7.1
@@ -125,9 +125,9 @@ abstract class JHtmlModules
 	/**
 	 * Display a batch widget for the module position selector.
 	 *
-	 * @param   integer  $clientId  The client ID
+     * @param  integer  $clientId  The client ID
 	 *
-	 * @return  string  The necessary HTML for the widget.
+     * @return  string  The necessary HTML for the widget.
 	 *
 	 * @since   2.5
 	 */
@@ -162,9 +162,9 @@ abstract class JHtmlModules
 	/**
 	 * Method to get the field options.
 	 *
-	 * @param   integer  $clientId  The client ID
+     * @param  integer  $clientId  The client ID
 	 *
-	 * @return  array  The field option objects.
+     * @return  array  The field option objects.
 	 *
 	 * @since   2.5
 	 */

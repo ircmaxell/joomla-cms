@@ -53,7 +53,7 @@ class WeblinksModelWeblink extends JModelItem
 	 *
 	 * @param   integer	The id of the object to get.
 	 *
-	 * @return  mixed  Object on success, false on failure.
+     * @return  mixed  Object on success, false on failure.
 	 */
 	public function getItem($id = null)
 	{
@@ -100,7 +100,7 @@ class WeblinksModelWeblink extends JModelItem
 	 * @param	type	The table type to instantiate
 	 * @param	string	A prefix for the table class name. Optional.
 	 * @param	array	Configuration array for model. Optional.
-	 * @return	JTable	A database object
+     * @return  JTable  A database object
 	 * @since	1.6
 	 */
 	public function getTable($type = 'Weblink', $prefix = 'WeblinksTable', $config = array())
@@ -111,9 +111,9 @@ class WeblinksModelWeblink extends JModelItem
 	/**
 	 * Method to increment the hit counter for the weblink
 	 *
-	 * @param   integer  $id  Optional ID of the weblink.
+     * @param  integer  $id  Optional ID of the weblink.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 */
 	public function hit($id = null)
 	{

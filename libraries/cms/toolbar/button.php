@@ -39,7 +39,7 @@ abstract class JToolbarButton
 	/**
 	 * Constructor
 	 *
-	 * @param   object  $parent  The parent
+     * @param  object  $parent  The parent
 	 */
 	public function __construct($parent = null)
 	{
@@ -49,7 +49,7 @@ abstract class JToolbarButton
 	/**
 	 * Get the element name
 	 *
-	 * @return  string   type of the parameter
+     * @return  string  type of the parameter
 	 *
 	 * @since   3.0
 	 */
@@ -61,9 +61,9 @@ abstract class JToolbarButton
 	/**
 	 * Get the HTML to render the button
 	 *
-	 * @param   array  &$definition  Parameters to be passed
+     * @param  array  &$definition  Parameters to be passed
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   3.0
 	 */
@@ -95,9 +95,9 @@ abstract class JToolbarButton
 	 *
 	 * Can be redefined in the final class
 	 *
-	 * @param   string  $identifier  Icon identification string
+     * @param  string  $identifier  Icon identification string
 	 *
-	 * @return  string  CSS class name
+     * @return  string  CSS class name
 	 *
 	 * @since   3.0
 	 */
@@ -111,7 +111,7 @@ abstract class JToolbarButton
 	 *
 	 * Defined in the final button class
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   3.0
 	 */
@@ -132,7 +132,7 @@ abstract class JButton extends JToolbarButton
 	/**
 	 * Constructor
 	 *
-	 * @param   object  $parent  The parent
+     * @param  object  $parent  The parent
 	 *
 	 * @deprecated  4.0  Use JToolbarButton instead.
 	 */

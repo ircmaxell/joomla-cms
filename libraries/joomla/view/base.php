@@ -29,7 +29,7 @@ abstract class JViewBase implements JView
 	/**
 	 * Method to instantiate the view.
 	 *
-	 * @param   JModel  $model  The model object.
+     * @param  JModel  $model  The model object.
 	 *
 	 * @since  12.1
 	 */
@@ -42,9 +42,9 @@ abstract class JViewBase implements JView
 	/**
 	 * Method to escape output.
 	 *
-	 * @param   string  $output  The output to escape.
+     * @param  string  $output  The output to escape.
 	 *
-	 * @return  string  The escaped output.
+     * @return  string  The escaped output.
 	 *
 	 * @see     JView::escape()
 	 * @since   12.1

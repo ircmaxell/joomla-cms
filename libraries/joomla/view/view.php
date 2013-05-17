@@ -21,9 +21,9 @@ interface JView
 	/**
 	 * Method to escape output.
 	 *
-	 * @param   string  $output  The output to escape.
+     * @param  string  $output  The output to escape.
 	 *
-	 * @return  string  The escaped output.
+     * @return  string  The escaped output.
 	 *
 	 * @since   12.1
 	 */
@@ -32,10 +32,10 @@ interface JView
 	/**
 	 * Method to render the view.
 	 *
-	 * @return  string  The rendered view.
+     * @return  string  The rendered view.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function render();
 }

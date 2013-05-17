@@ -54,7 +54,7 @@ class JTableAsset extends JTableNested
 	/**
 	 * Constructor
 	 *
-	 * @param   JDatabaseDriver  $db  Database driver object.
+     * @param  JDatabaseDriver  $db  Database driver object.
 	 *
 	 * @since   11.1
 	 */
@@ -66,9 +66,9 @@ class JTableAsset extends JTableNested
 	/**
 	 * Method to load an asset by its name.
 	 *
-	 * @param   string  $name  The name of the asset.
+     * @param  string  $name  The name of the asset.
 	 *
-	 * @return  integer
+     * @return  integer
 	 *
 	 * @since   11.1
 	 */
@@ -94,7 +94,7 @@ class JTableAsset extends JTableNested
 	/**
 	 * Assert that the nested set data is valid.
 	 *
-	 * @return  boolean  True if the instance is sane and able to be stored in the database.
+     * @return  boolean  True if the instance is sane and able to be stored in the database.
 	 *
 	 * @link    http://docs.joomla.org/JTable/check
 	 * @since   11.1

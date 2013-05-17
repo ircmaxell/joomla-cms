@@ -60,7 +60,7 @@ class JFormFieldTag extends JFormFieldList
 	/**
 	 * Method to get the field input for a tag field.
 	 *
-	 * @return  string  The field input.
+     * @return  string  The field input.
 	 *
 	 * @since   3.1
 	 */
@@ -106,7 +106,7 @@ class JFormFieldTag extends JFormFieldList
 	/**
 	 * Method to get a list of tags
 	 *
-	 * @return  array  The field option objects.
+     * @return  array  The field option objects.
 	 *
 	 * @since   3.1
 	 */
@@ -187,9 +187,9 @@ class JFormFieldTag extends JFormFieldList
 	/**
 	 * Add "-" before nested tags, depending on level
 	 *
-	 * @param   array  &$options  Array of tags
+     * @param  array  &$options  Array of tags
 	 *
-	 * @return  array  The field option objects.
+     * @return  array  The field option objects.
 	 *
 	 * @since   3.1
 	 */
@@ -210,7 +210,7 @@ class JFormFieldTag extends JFormFieldList
 	/**
 	 * Determine if the field has to be tagnested
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   3.1
 	 */
@@ -232,7 +232,7 @@ class JFormFieldTag extends JFormFieldList
 	/**
 	 * Determines if the field allows or denies custom values
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 */
 	public function allowCustom()
 	{

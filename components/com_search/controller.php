@@ -24,7 +24,7 @@ class SearchController extends JControllerLegacy
 	 * @param   boolean			If true, the view output will be cached
 	 * @param   array  An array of safe url parameters and their variable types, for valid values see {@link JFilterInput::clean()}.
 	 *
-	 * @return  JController		This object to support chaining.
+     * @return  JController  This object to support chaining.
 	 * @since   1.5
 	 */
 	public function display($cachable = false, $urlparams = false)
@@ -75,7 +75,8 @@ class SearchController extends JControllerLegacy
 		if (isset($items[0]))
 		{
 			$post['Itemid'] = $items[0]->id;
-		} elseif ($this->input->getInt('Itemid') > 0) { //use Itemid from requesting page only if there is no existing menu
+		}
+		elseif ($this->input->getInt('Itemid') > 0) { //use Itemid from requesting page only if there is no existing menu
 			$post['Itemid'] = $this->input->getInt('Itemid');
 		}
 

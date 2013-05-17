@@ -31,7 +31,7 @@ class JFormFieldSample extends JFormFieldRadio
 	/**
 	 * Method to get the field options.
 	 *
-	 * @return  array  The field option objects.
+     * @return  array  The field option objects.
 	 *
 	 * @since   1.6
 	 */
@@ -75,7 +75,7 @@ class JFormFieldSample extends JFormFieldRadio
 	/**
 	 * Method to get the field input markup.
 	 *
-	 * @return  string	The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   1.6
 	 */

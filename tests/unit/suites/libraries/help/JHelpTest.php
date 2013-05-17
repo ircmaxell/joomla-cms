@@ -54,7 +54,7 @@ class JHelpTest extends TestCase
 	/**
 	 * Tests the createURL method for com_content's Article Manager view
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -70,7 +70,7 @@ class JHelpTest extends TestCase
 	/**
 	 * Tests the createSiteList method with no XML file passed in the params
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -86,7 +86,7 @@ class JHelpTest extends TestCase
 	/**
 	 * Tests the createSiteList method with an XML file passed in the params
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

@@ -28,9 +28,9 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Constructor.
 	 *
-	 * @param   JRegistry  $options  Google options object
-	 * @param   JURI       $uri      URL of the page being rendered
-	 * @param   JHttp      $http     Http client for geocoding requests
+     * @param  JRegistry  $options  Google options object
+     * @param  JURI       $uri      URL of the page being rendered
+     * @param  JHttp      $http     Http client for geocoding requests
 	 *
 	 * @since   12.3
 	 */
@@ -43,7 +43,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to get the API key
 	 *
-	 * @return  string  The Google Maps API key
+     * @return  string  The Google Maps API key
 	 *
 	 * @since   12.3
 	 */
@@ -55,9 +55,9 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to set the API key
 	 *
-	 * @param   string  $key  The Google Maps API key
+     * @param  string  $key  The Google Maps API key
 	 *
-	 * @return  JGoogleEmbedMaps  The object for method chaining
+     * @return  JGoogleEmbedMaps  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -71,7 +71,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to get the id of the map div
 	 *
-	 * @return  string  The ID
+     * @return  string  The ID
 	 *
 	 * @since   12.3
 	 */
@@ -83,9 +83,9 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to set the map div id
 	 *
-	 * @param   string  $id  The ID
+     * @param  string  $id  The ID
 	 *
-	 * @return  JGoogleEmbedMaps  The object for method chaining
+     * @return  JGoogleEmbedMaps  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -99,7 +99,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to get the class of the map div
 	 *
-	 * @return  string  The class
+     * @return  string  The class
 	 *
 	 * @since   12.3
 	 */
@@ -111,9 +111,9 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to set the map div class
 	 *
-	 * @param   string  $class  The class
+     * @param  string  $class  The class
 	 *
-	 * @return  JGoogleEmbedMaps  The object for method chaining
+     * @return  JGoogleEmbedMaps  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -127,7 +127,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to get the style of the map div
 	 *
-	 * @return  string  The style
+     * @return  string  The style
 	 *
 	 * @since   12.3
 	 */
@@ -139,9 +139,9 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to set the map div style
 	 *
-	 * @param   string  $style  The style
+     * @param  string  $style  The style
 	 *
-	 * @return  JGoogleEmbedMaps  The object for method chaining
+     * @return  JGoogleEmbedMaps  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -155,7 +155,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to get the map type setting
 	 *
-	 * @return  string  The class
+     * @return  string  The class
 	 *
 	 * @since   12.3
 	 */
@@ -167,9 +167,9 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to set the map type ()
 	 *
-	 * @param   string  $type  Valid types are ROADMAP, SATELLITE, HYBRID, and TERRAIN
+     * @param  string  $type  Valid types are ROADMAP, SATELLITE, HYBRID, and TERRAIN
 	 *
-	 * @return  JGoogleEmbedMaps  The object for method chaining
+     * @return  JGoogleEmbedMaps  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -183,7 +183,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to get additional map options
 	 *
-	 * @return  string  The options
+     * @return  string  The options
 	 *
 	 * @since   12.3
 	 */
@@ -195,9 +195,9 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to add additional map options
 	 *
-	 * @param   array  $options  Additional map options
+     * @param  array  $options  Additional map options
 	 *
-	 * @return  JGoogleEmbedMaps  The object for method chaining
+     * @return  JGoogleEmbedMaps  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -211,7 +211,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to get additional map options
 	 *
-	 * @return  string  The options
+     * @return  string  The options
 	 *
 	 * @since   12.3
 	 */
@@ -223,9 +223,9 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to add additional javascript
 	 *
-	 * @param   array  $script  Additional javascript
+     * @param  array  $script  Additional javascript
 	 *
-	 * @return  JGoogleEmbedMaps  The object for method chaining
+     * @return  JGoogleEmbedMaps  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -239,7 +239,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to get the zoom
 	 *
-	 * @return  int  The zoom level
+     * @return  int  The zoom level
 	 *
 	 * @since   12.3
 	 */
@@ -251,9 +251,9 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to set the map zoom
 	 *
-	 * @param   int  $zoom  Zoom level (0 is whole world)
+     * @param  int  $zoom  Zoom level (0 is whole world)
 	 *
-	 * @return  JGoogleEmbedMaps  The object for method chaining
+     * @return  JGoogleEmbedMaps  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -267,7 +267,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to set the center of the map
 	 *
-	 * @return  mixed  A latitude longitude array or an address string
+     * @return  mixed  A latitude longitude array or an address string
 	 *
 	 * @since   12.3
 	 */
@@ -279,11 +279,11 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to set the center of the map
 	 *
-	 * @param   mixed  $location       A latitude/longitude array or an address string
-	 * @param   mixed  $title          Title of marker or false for no marker
-	 * @param   array  $markeroptions  Options for marker
+     * @param  mixed  $location       A latitude/longitude array or an address string
+     * @param  mixed  $title          Title of marker or false for no marker
+     * @param  array  $markeroptions  Options for marker
 	 *
-	 * @return  JGoogleEmbedMaps  The latitude/longitude of the center or false on failure
+     * @return  JGoogleEmbedMaps  The latitude/longitude of the center or false on failure
 	 *
 	 * @since   12.3
 	 */
@@ -320,11 +320,11 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Add a marker to the map
 	 *
-	 * @param   mixed  $location  A latitude longitude array or an address string
-	 * @param   mixed  $title     The hover-text for the marker
-	 * @param   array  $options   Options for marker
+     * @param  mixed  $location  A latitude longitude array or an address string
+     * @param  mixed  $title     The hover-text for the marker
+     * @param  array  $options   Options for marker
 	 *
-	 * @return  mixed  The marker or false on failure
+     * @return  mixed  The marker or false on failure
 	 *
 	 * @since   12.3
 	 */
@@ -364,7 +364,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * List the markers added to the map
 	 *
-	 * @return  array  A list of markers
+     * @return  array  A list of markers
 	 *
 	 * @since   12.3
 	 */
@@ -376,9 +376,9 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Delete a marker from the map
 	 *
-	 * @param   int  $index  Index of marker to delete (defaults to last added marker)
+     * @param  int  $index  Index of marker to delete (defaults to last added marker)
 	 *
-	 * @return  array The latitude/longitude of the deleted marker
+     * @return  array  The latitude/longitude of the deleted marker
 	 *
 	 * @since   12.3
 	 */
@@ -407,7 +407,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Checks if the javascript is set to be asynchronous
 	 *
-	 * @return  boolean  True if asynchronous
+     * @return  boolean  True if asynchronous
 	 *
 	 * @since   12.3
 	 */
@@ -419,7 +419,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Load javascript asynchronously
 	 *
-	 * @return  JGoogleEmbedMaps  The object for method chaining
+     * @return  JGoogleEmbedMaps  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -433,7 +433,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Load javascript synchronously
 	 *
-	 * @return  JGoogleEmbedAMaps  The object for method chaining
+     * @return  JGoogleEmbedAMaps  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -447,7 +447,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to get callback function for async javascript loading
 	 *
-	 * @return  string  The ID
+     * @return  string  The ID
 	 *
 	 * @since   12.3
 	 */
@@ -459,9 +459,9 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to set the callback function for async javascript loading
 	 *
-	 * @param   string  $callback  The callback function name
+     * @param  string  $callback  The callback function name
 	 *
-	 * @return  JGoogleEmbedMaps  The object for method chaining
+     * @return  JGoogleEmbedMaps  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -475,7 +475,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Checks if a sensor is set to be required
 	 *
-	 * @return  boolean  True if asynchronous
+     * @return  boolean  True if asynchronous
 	 *
 	 * @since   12.3
 	 */
@@ -487,7 +487,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Require access to sensor data
 	 *
-	 * @return  JGoogleEmbedMaps  The object for method chaining
+     * @return  JGoogleEmbedMaps  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -501,7 +501,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Don't require access to sensor data
 	 *
-	 * @return  JGoogleEmbedAMaps  The object for method chaining
+     * @return  JGoogleEmbedAMaps  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -515,7 +515,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Checks how the script should be loaded
 	 *
-	 * @return  string  Autoload type (onload, jquery, mootools, or false)
+     * @return  string  Autoload type (onload, jquery, mootools, or false)
 	 *
 	 * @since   12.3
 	 */
@@ -527,9 +527,9 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Automatically add the callback to the window
 	 *
-	 * @param   string  $type  The method to add the callback (options are onload, jquery, mootools, and false)
+     * @param  string  $type  The method to add the callback (options are onload, jquery, mootools, and false)
 	 *
-	 * @return  JGoogleEmbedAMaps  The object for method chaining
+     * @return  JGoogleEmbedAMaps  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -543,7 +543,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Get code to load Google Maps javascript
 	 *
-	 * @return  string  Javascript code
+     * @return  string  Javascript code
 	 *
 	 * @since   12.3
 	 */
@@ -636,7 +636,7 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to retrieve the div that the map is loaded into
 	 *
-	 * @return  string  The body
+     * @return  string  The body
 	 *
 	 * @since   12.3
 	 */
@@ -666,9 +666,9 @@ class JGoogleEmbedMaps extends JGoogleEmbed
 	/**
 	 * Method to get the location information back from an address
 	 *
-	 * @param   string  $address  The address to geocode
+     * @param  string  $address  The address to geocode
 	 *
-	 * @return  array  An array containing Google's geocode data
+     * @return  array  An array containing Google's geocode data
 	 *
 	 * @since   12.3
 	 */

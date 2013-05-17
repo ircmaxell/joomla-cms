@@ -28,9 +28,9 @@ class JLinkedinOauth extends JOAuth1Client
 	/**
 	 * Constructor.
 	 *
-	 * @param   JRegistry  $options  JLinkedinOauth options object.
-	 * @param   JHttp      $client   The HTTP client object.
-	 * @param   JInput     $input    The input object
+     * @param  JRegistry  $options  JLinkedinOauth options object.
+     * @param  JHttp      $client   The HTTP client object.
+     * @param  JInput     $input    The input object
 	 *
 	 * @since 13.1
 	 */
@@ -50,7 +50,7 @@ class JLinkedinOauth extends JOAuth1Client
 	/**
 	 * Method to verify if the access token is valid by making a request to an API endpoint.
 	 *
-	 * @return  boolean  Returns true if the access token is valid and false otherwise.
+     * @return  boolean  Returns true if the access token is valid and false otherwise.
 	 *
 	 * @since   13.1
 	 */
@@ -85,13 +85,13 @@ class JLinkedinOauth extends JOAuth1Client
 	/**
 	 * Method to validate a response.
 	 *
-	 * @param   string         $url       The request URL.
-	 * @param   JHttpResponse  $response  The response to validate.
+     * @param  string         $url       The request URL.
+     * @param  JHttpResponse  $response  The response to validate.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since  13.1
-	 * @throws DomainException
+     * @throws  DomainException
 	 */
 	public function validateResponse($url, $response)
 	{
@@ -116,9 +116,9 @@ class JLinkedinOauth extends JOAuth1Client
 	/**
 	 * Method used to set permissions.
 	 *
-	 * @param   mixed  $scope  String or an array of string containing permissions.
+     * @param  mixed  $scope  String or an array of string containing permissions.
 	 *
-	 * @return  JLinkedinOauth  This object for method chaining
+     * @return  JLinkedinOauth  This object for method chaining
 	 *
 	 * @see     https://developer.linkedin.com/documents/authentication
 	 * @since   13.1
@@ -133,7 +133,7 @@ class JLinkedinOauth extends JOAuth1Client
 	/**
 	 * Method to get the current scope
 	 *
-	 * @return  string String or an array of string containing permissions.
+     * @return  string  String or an array of string containing permissions.
 	 *
 	 * @since   13.1
 	 */

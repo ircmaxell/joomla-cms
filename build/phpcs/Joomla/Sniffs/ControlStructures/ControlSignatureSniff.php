@@ -14,7 +14,8 @@
  * @link      http://pear.php.net/package/PHP_CodeSniffer
  */
 
-if (class_exists('PHP_CodeSniffer_Standards_AbstractPatternSniff', true) === false) {
+if (class_exists('PHP_CodeSniffer_Standards_AbstractPatternSniff', true) === false)
+{
 	throw new PHP_CodeSniffer_Exception('Class PHP_CodeSniffer_Standards_AbstractPatternSniff not found');
 }
 
@@ -45,7 +46,7 @@ class Joomla_Sniffs_ControlStructures_ControlSignatureSniff extends PHP_CodeSnif
 	/**
 	 * Returns the patterns that this test wishes to verify.
 	 *
-	 * @return array(string)
+     * @return  array(string)
 	 */
 	protected function getPatterns()
 	{
@@ -73,12 +74,12 @@ class Joomla_Sniffs_ControlStructures_ControlSignatureSniff extends PHP_CodeSnif
 	 *
 	 * Returns if we are inside a "tmpl" folder - workaround for the Joomla! CMS :(
 	 *
-	 * @param array $patternInfo Information about the pattern used for checking, which includes are
+     * @param  array  $patternInfo  Information about the pattern used for checking, which includes are
 	 *               parsed token representation of the pattern.
-	 * @param PHP_CodeSniffer_File $phpcsFile The PHP_CodeSniffer file where the token occured.
-	 * @param integer $stackPtr The postion in the tokens stack where the listening token type was found.
+     * @param  PHP_CodeSniffer_File  $phpcsFile  The PHP_CodeSniffer file where the token occured.
+     * @param  integer               $stackPtr   The postion in the tokens stack where the listening token type was found.
 	 *
-	 * @return return_type
+     * @return  return_type
 	 */
 	protected function processPattern($patternInfo, PHP_CodeSniffer_File $phpcsFile
 	, $stackPtr)
@@ -102,5 +103,3 @@ class Joomla_Sniffs_ControlStructures_ControlSignatureSniff extends PHP_CodeSnif
 	}//function
 
 }//end class
-
-?>

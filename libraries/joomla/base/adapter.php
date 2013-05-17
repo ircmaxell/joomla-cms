@@ -60,9 +60,9 @@ class JAdapter extends JObject
 	/**
 	 * Constructor
 	 *
-	 * @param   string  $basepath       Base Path of the adapters
-	 * @param   string  $classprefix    Class prefix of adapters
-	 * @param   string  $adapterfolder  Name of folder to append to base path
+     * @param  string  $basepath       Base Path of the adapters
+     * @param  string  $classprefix    Class prefix of adapters
+     * @param  string  $adapterfolder  Name of folder to append to base path
 	 *
 	 * @since   11.1
 	 */
@@ -78,7 +78,7 @@ class JAdapter extends JObject
 	/**
 	 * Get the database connector object
 	 *
-	 * @return  JDatabaseDriver  Database connector object
+     * @return  JDatabaseDriver  Database connector object
 	 *
 	 * @since   11.1
 	 */
@@ -90,11 +90,11 @@ class JAdapter extends JObject
 	/**
 	 * Set an adapter by name
 	 *
-	 * @param   string  $name      Adapter name
-	 * @param   object  &$adapter  Adapter object
-	 * @param   array   $options   Adapter options
+     * @param  string  $name      Adapter name
+     * @param  object  &$adapter  Adapter object
+     * @param  array   $options   Adapter options
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   11.1
 	 */
@@ -129,10 +129,10 @@ class JAdapter extends JObject
 	/**
 	 * Return an adapter.
 	 *
-	 * @param   string  $name     Name of adapter to return
-	 * @param   array   $options  Adapter options
+     * @param  string  $name     Name of adapter to return
+     * @param  array   $options  Adapter options
 	 *
-	 * @return  object  Adapter of type 'name' or false
+     * @return  object  Adapter of type 'name' or false
 	 *
 	 * @since   11.1
 	 */
@@ -154,9 +154,9 @@ class JAdapter extends JObject
 	/**
 	 * Loads all adapters.
 	 *
-	 * @param   array  $options  Adapter options
+     * @param  array  $options  Adapter options
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */

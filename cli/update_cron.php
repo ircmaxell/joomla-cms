@@ -48,7 +48,7 @@ class Updatecron extends JApplicationCli
 	/**
 	 * Entry point for the script
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */

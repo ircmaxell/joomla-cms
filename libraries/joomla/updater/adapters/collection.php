@@ -59,7 +59,7 @@ class JUpdaterCollection extends JUpdateAdapter
 	/**
 	 * Gets the reference to the current direct parent
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.1
 	 */
@@ -71,7 +71,7 @@ class JUpdaterCollection extends JUpdateAdapter
 	/**
 	 * Get the parent tag
 	 *
-	 * @return  string   parent
+     * @return  string  parent
 	 *
 	 * @since   11.1
 	 */
@@ -83,11 +83,11 @@ class JUpdaterCollection extends JUpdateAdapter
 	/**
 	 * Opening an XML element
 	 *
-	 * @param   object  $parser  Parser object
-	 * @param   string  $name    Name of element that is opened
-	 * @param   array   $attrs   Array of attributes for the element
+     * @param  object  $parser  Parser object
+     * @param  string  $name    Name of element that is opened
+     * @param  array   $attrs   Array of attributes for the element
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -180,10 +180,10 @@ class JUpdaterCollection extends JUpdateAdapter
 	 * Closing an XML element
 	 * Note: This is a protected function though has to be exposed externally as a callback
 	 *
-	 * @param   object  $parser  Parser object
-	 * @param   string  $name    Name of the element closing
+     * @param  object  $parser  Parser object
+     * @param  string  $name    Name of the element closing
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -207,9 +207,9 @@ class JUpdaterCollection extends JUpdateAdapter
 	/**
 	 * Finds an update
 	 *
-	 * @param   array  $options  Options to use: update_site_id: the unique ID of the update site to look at
+     * @param  array  $options  Options to use: update_site_id: the unique ID of the update site to look at
 	 *
-	 * @return  array  Update_sites and updates discovered
+     * @return  array  Update_sites and updates discovered
 	 *
 	 * @since   11.1
 	 */

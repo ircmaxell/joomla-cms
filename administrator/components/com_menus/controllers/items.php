@@ -36,7 +36,7 @@ class MenusControllerItems extends JControllerAdmin
 	/**
 	 * Rebuild the nested set tree.
 	 *
-	 * @return  bool	False on failure or error, true on success.
+     * @return  bool  False on failure or error, true on success.
 	 * @since   1.6
 	 */
 	public function rebuild()
@@ -114,12 +114,14 @@ class MenusControllerItems extends JControllerAdmin
 			if (!$model->setHome($cid, $value))
 			{
 				JError::raiseWarning(500, $model->getError());
-			} else {
+			}
+			else {
 				if ($value == 1)
 				{
 					$ntext = 'COM_MENUS_ITEMS_SET_HOME';
 				}
-				else {
+				else
+				{
 					$ntext = 'COM_MENUS_ITEMS_UNSET_HOME';
 				}
 				$this->setMessage(JText::plural($ntext, count($cid)));
@@ -132,7 +134,7 @@ class MenusControllerItems extends JControllerAdmin
 	/**
 	 * Method to save the submitted ordering values for records via AJAX.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

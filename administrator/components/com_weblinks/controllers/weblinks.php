@@ -31,7 +31,7 @@ class WeblinksControllerWeblinks extends JControllerAdmin
 	/**
 	 * Method to save the submitted ordering values for records via AJAX.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -64,10 +64,10 @@ class WeblinksControllerWeblinks extends JControllerAdmin
 	/**
 	 * Method to provide child classes the opportunity to process after the delete task.
 	 *
-	 * @param   JModelLegacy   $model   The model for the component
-	 * @param   mixed          $ids     array of ids deleted.
+     * @param  JModelLegacy  $model  The model for the component
+     * @param  mixed         $ids    array of ids deleted.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */

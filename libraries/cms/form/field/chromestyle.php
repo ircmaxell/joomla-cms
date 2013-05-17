@@ -32,7 +32,7 @@ class JFormFieldChromeStyle extends JFormFieldGroupedList
 	 * Method to get the list of template chrome style options
 	 * grouped by template.
 	 *
-	 * @return  array  The field option objects as a nested array in groups.
+     * @return  array  The field option objects as a nested array in groups.
 	 *
 	 * @since   3.0
 	 */
@@ -67,7 +67,7 @@ class JFormFieldChromeStyle extends JFormFieldGroupedList
 	/**
 	 * Method to get the templates module styles.
 	 *
-	 * @return  array  The array of styles, grouped by templates.
+     * @return  array  The array of styles, grouped by templates.
 	 *
 	 * @since   3.0
 	 */
@@ -104,7 +104,7 @@ class JFormFieldChromeStyle extends JFormFieldGroupedList
 	/**
 	 * Method to get the system template as an object.
 	 *
-	 * @return  array  The object of system template.
+     * @return  array  The object of system template.
 	 *
 	 * @since   3.0
 	 */

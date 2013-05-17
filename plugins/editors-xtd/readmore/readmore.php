@@ -28,7 +28,7 @@ class PlgButtonReadmore extends JPlugin
 
 	/**
 	 * readmore button
-	 * @return array A two element array of (imageName, textToInsert)
+     * @return  array  A two element array of (imageName, textToInsert)
 	 */
 	public function onDisplay($name)
 	{
@@ -46,7 +46,8 @@ class PlgButtonReadmore extends JPlugin
 				{
 					alert('$present');
 					return false;
-				} else {
+				}
+				else {
 					jInsertEditorText('<hr id=\"system-readmore\" />', editor);
 				}
 			}

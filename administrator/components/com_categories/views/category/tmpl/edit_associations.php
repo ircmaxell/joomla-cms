@@ -21,4 +21,4 @@ foreach ($fields as $field) :
 		<?php echo $field->input; ?>
 	</div>
 </div>
-<?php endforeach; ?>
+<?php endforeach;

@@ -19,7 +19,7 @@ abstract class JHtmlJqueryInspector extends JHtmlJquery
 	/**
 	 * Resets the JHtmlJquery::$loaded array
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */

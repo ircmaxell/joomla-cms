@@ -26,7 +26,7 @@ class NewsfeedsTableNewsfeed extends JTable
 	/**
 	 * Constructor
 	 *
-	 * @param   JDatabaseDriver  &$db  A database connector object
+     * @param  JDatabaseDriver  &$db  A database connector object
 	 */
 	public function __construct(&$db)
 	{
@@ -38,10 +38,10 @@ class NewsfeedsTableNewsfeed extends JTable
 	/**
 	 * Overloaded bind function to pre-process the params.
 	 *
-	 * @param   mixed  $array   An associative array or object to bind to the JTable instance.
-	 * @param   mixed  $ignore  An optional array or space separated list of properties to ignore while binding.
+     * @param  mixed  $array   An associative array or object to bind to the JTable instance.
+     * @param  mixed  $ignore  An optional array or space separated list of properties to ignore while binding.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @see     JTable:bind
 	 * @since   1.5
@@ -75,7 +75,7 @@ class NewsfeedsTableNewsfeed extends JTable
 	/**
 	 * Overloaded check method to ensure data integrity.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 */
 	public function check()
 	{
@@ -136,12 +136,12 @@ class NewsfeedsTableNewsfeed extends JTable
 	/**
 	 * Override parent delete method to delete tags information.
 	 *
-	 * @param   integer  $pk  Primary key to delete.
+     * @param  integer  $pk  Primary key to delete.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
-	 * @throws  UnexpectedValueException
+     * @throws  UnexpectedValueException
 	 */
 	public function delete($pk = null)
 	{
@@ -153,9 +153,9 @@ class NewsfeedsTableNewsfeed extends JTable
 	/**
 	 * Overriden JTable::store to set modified data.
 	 *
-	 * @param   boolean	 $updateNulls  True to update fields even if they are null.
+     * @param  boolean  $updateNulls  True to update fields even if they are null.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   1.6
 	 */

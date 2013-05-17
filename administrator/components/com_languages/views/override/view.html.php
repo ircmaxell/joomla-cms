@@ -45,9 +45,9 @@ class LanguagesViewOverride extends JViewLegacy
 	/**
 	 * Displays the view
 	 *
-	 * @param   	string	$tpl	The name of the template file to parse
+     * @param  string  $tpl  The name of the template file to parse
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since		2.5
 	 */
@@ -85,7 +85,7 @@ class LanguagesViewOverride extends JViewLegacy
 	/**
 	 * Adds the page title and toolbar
 	 *
-	 * @return void
+     * @return  void
 	 *
 	 * @since	2.5
 	 */

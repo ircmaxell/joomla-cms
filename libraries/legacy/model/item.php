@@ -40,9 +40,9 @@ abstract class JModelItem extends JModelLegacy
 	 * different modules that might need different sets of data or different
 	 * ordering requirements.
 	 *
-	 * @param   string  $id  A prefix for the store id.
+     * @param  string  $id  A prefix for the store id.
 	 *
-	 * @return  string  A store id.
+     * @return  string  A store id.
 	 *
 	 * @since   12.2
 	 */

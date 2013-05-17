@@ -30,7 +30,7 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $options  Array of database options with keys: host, user, password, database, select.
+     * @param  array  $options  Array of database options with keys: host, user, password, database, select.
 	 *
 	 * @since   12.1
 	 */
@@ -63,10 +63,10 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Connects to the database if needed.
 	 *
-	 * @return  void  Returns void if the database connected successfully.
+     * @return  void  Returns void if the database connected successfully.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function connect()
 	{
@@ -103,7 +103,7 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Disconnects the database.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -118,10 +118,10 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Method to escape a string for usage in an SQL statement.
 	 *
-	 * @param   string   $text   The string to be escaped.
-	 * @param   boolean  $extra  Optional parameter to provide extra escaping.
+     * @param  string   $text   The string to be escaped.
+     * @param  boolean  $extra  Optional parameter to provide extra escaping.
 	 *
-	 * @return  string  The escaped string.
+     * @return  string  The escaped string.
 	 *
 	 * @since   12.1
 	 */
@@ -142,7 +142,7 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Test to see if the MySQL connector is available.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   12.1
 	 */
@@ -154,7 +154,7 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Determines if the connection to the server is active.
 	 *
-	 * @return  boolean  True if connected to the database engine.
+     * @return  boolean  True if connected to the database engine.
 	 *
 	 * @since   12.1
 	 */
@@ -171,7 +171,7 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Get the number of affected rows for the previous executed SQL statement.
 	 *
-	 * @return  integer  The number of affected rows.
+     * @return  integer  The number of affected rows.
 	 *
 	 * @since   12.1
 	 */
@@ -185,9 +185,9 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Get the number of returned rows for the previous executed SQL statement.
 	 *
-	 * @param   resource  $cursor  An optional database cursor resource to extract the row count from.
+     * @param  resource  $cursor  An optional database cursor resource to extract the row count from.
 	 *
-	 * @return  integer   The number of returned rows.
+     * @return  integer  The number of returned rows.
 	 *
 	 * @since   12.1
 	 */
@@ -201,7 +201,7 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Get the version of the database connector.
 	 *
-	 * @return  string  The database connector version.
+     * @return  string  The database connector version.
 	 *
 	 * @since   12.1
 	 */
@@ -215,7 +215,7 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Method to get the auto-incremented value from the last INSERT statement.
 	 *
-	 * @return  integer  The value of the auto-increment field from the last inserted row.
+     * @return  integer  The value of the auto-increment field from the last inserted row.
 	 *
 	 * @since   12.1
 	 */
@@ -229,10 +229,10 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Execute the SQL statement.
 	 *
-	 * @return  mixed  A database cursor resource on success, boolean false on failure.
+     * @return  mixed  A database cursor resource on success, boolean false on failure.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function execute()
 	{
@@ -316,12 +316,12 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Select a database for use.
 	 *
-	 * @param   string  $database  The name of the database to select for use.
+     * @param  string  $database  The name of the database to select for use.
 	 *
-	 * @return  boolean  True if the database was successfully selected.
+     * @return  boolean  True if the database was successfully selected.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function select($database)
 	{
@@ -343,7 +343,7 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Set the connection to use UTF-8 character encoding.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   12.1
 	 */
@@ -357,9 +357,9 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Method to fetch a row from the result set cursor as an array.
 	 *
-	 * @param   mixed  $cursor  The optional result set cursor from which to fetch the row.
+     * @param  mixed  $cursor  The optional result set cursor from which to fetch the row.
 	 *
-	 * @return  mixed  Either the next row from the result set or false if there are no more rows.
+     * @return  mixed  Either the next row from the result set or false if there are no more rows.
 	 *
 	 * @since   12.1
 	 */
@@ -371,9 +371,9 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Method to fetch a row from the result set cursor as an associative array.
 	 *
-	 * @param   mixed  $cursor  The optional result set cursor from which to fetch the row.
+     * @param  mixed  $cursor  The optional result set cursor from which to fetch the row.
 	 *
-	 * @return  mixed  Either the next row from the result set or false if there are no more rows.
+     * @return  mixed  Either the next row from the result set or false if there are no more rows.
 	 *
 	 * @since   12.1
 	 */
@@ -385,10 +385,10 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Method to fetch a row from the result set cursor as an object.
 	 *
-	 * @param   mixed   $cursor  The optional result set cursor from which to fetch the row.
-	 * @param   string  $class   The class name to use for the returned row object.
+     * @param  mixed   $cursor  The optional result set cursor from which to fetch the row.
+     * @param  string  $class   The class name to use for the returned row object.
 	 *
-	 * @return  mixed   Either the next row from the result set or false if there are no more rows.
+     * @return  mixed  Either the next row from the result set or false if there are no more rows.
 	 *
 	 * @since   12.1
 	 */
@@ -400,9 +400,9 @@ class JDatabaseDriverMysql extends JDatabaseDriverMysqli
 	/**
 	 * Method to free up the memory used for the result set.
 	 *
-	 * @param   mixed  $cursor  The optional result set cursor from which to fetch the row.
+     * @param  mixed  $cursor  The optional result set cursor from which to fetch the row.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */

@@ -1,11 +1,7 @@
 <?php
 
 use SeleniumClient\By;
-use SeleniumClient\SelectElement;
 use SeleniumClient\WebDriver;
-use SeleniumClient\WebDriverWait;
-use SeleniumClient\DesiredCapabilities;
-use SeleniumClient\WebElement;
 
 /**
  * @package     Joomla.Test
@@ -87,16 +83,16 @@ class MenuItemsManagerPage extends AdminManagerPage
 	/**
 	 * Add a new menu item in the Menu Manager: Menu Items screen.
 	 *
-	 * @param string   $title          Menu Title field
-	 * @param string   $menuItemType   One of the allowed Menu Item Types (Single Article, Featured Contacts, etc.)
-	 * @param string   $menuLocation   Menu Location field
-	 * @param array    $otherFields    associative array of other fields in the form label => value.
+     * @param  string  $title         Menu Title field
+     * @param  string  $menuItemType  One of the allowed Menu Item Types (Single Article, Featured Contacts, etc.)
+     * @param  string  $menuLocation  Menu Location field
+     * @param  array   $otherFields   associative array of other fields in the form label => value.
 	 *
 	 * Note that there a special field types for the request variable (e.g., article name or category name) which is required by some menu types.
 	 * This can be designated in the $otherFields with any of the following labels: 'request', 'category', 'article', 'contact', 'newsfeed', 'weblink'.
 	 * For example: array('article' => 'Australian Parks').
 	 *
-	 * @return  MenuItemsManagerPage
+     * @return  MenuItemsManagerPage
 	 */
 	public function addMenuItem($title='Test Menu Item', $menuItemType='List All Categories', $menuLocation = 'Main Menu', array $otherFields = array())
 	{
@@ -120,10 +116,10 @@ class MenuItemsManagerPage extends AdminManagerPage
 	/**
 	 * Edit a menu item in the Menu Manager: Menu Items screen.
 	 *
-	 * @param string   $title          Menu Title field
-	 * @param array    $fields         associative array of fields in the form label => value.
+     * @param  string  $title   Menu Title field
+     * @param  array   $fields  associative array of fields in the form label => value.
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function editMenuItem($title, $fields)
 	{

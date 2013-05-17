@@ -29,7 +29,7 @@ class WeblinksTableWeblink extends JTable
 	/**
 	 * Constructor
 	 *
-	 * @param   JDatabaseDriver  &$db  A database connector object
+     * @param  JDatabaseDriver  &$db  A database connector object
 	 */
 	public function __construct(&$db)
 	{
@@ -42,10 +42,10 @@ class WeblinksTableWeblink extends JTable
 	/**
 	 * Overloaded bind function to pre-process the params.
 	 *
-	 * @param   mixed  $array   An associative array or object to bind to the JTable instance.
-	 * @param   mixed  $ignore  An optional array or space separated list of properties to ignore while binding.
+     * @param  mixed  $array   An associative array or object to bind to the JTable instance.
+     * @param  mixed  $ignore  An optional array or space separated list of properties to ignore while binding.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @see     JTable:bind
 	 * @since   1.5
@@ -80,7 +80,7 @@ class WeblinksTableWeblink extends JTable
 	 * Overload the store method for the Weblinks table.
 	 *
 	 * @param   boolean	Toggle whether null values should be updated.
-	 * @return  boolean  True on success, false on failure.
+     * @return  boolean  True on success, false on failure.
 	 * @since   1.6
 	 */
 	public function store($updateNulls = false)
@@ -136,7 +136,7 @@ class WeblinksTableWeblink extends JTable
 	/**
 	 * Overloaded check method to ensure data integrity.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 */
 	public function check()
 	{
@@ -206,12 +206,12 @@ class WeblinksTableWeblink extends JTable
 	/**
 	 * Override parent delete method to delete tags information.
 	 *
-	 * @param   integer  $pk  Primary key to delete.
+     * @param  integer  $pk  Primary key to delete.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
-	 * @throws  UnexpectedValueException
+     * @throws  UnexpectedValueException
 	 */
 	public function delete($pk = null)
 	{
@@ -228,7 +228,7 @@ class WeblinksTableWeblink extends JTable
 	 *					set the instance property value is used.
 	 * @param   integer The publishing state. eg. [0 = unpublished, 1 = published]
 	 * @param   integer The user id of the user performing the operation.
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 * @since   1.0.4
 	 */
 	public function publish($pks = null, $state = 1, $userId = 0)
@@ -248,7 +248,8 @@ class WeblinksTableWeblink extends JTable
 				$pks = array($this->$k);
 			}
 			// Nothing to set publishing state on, return false.
-			else {
+			else
+			{
 				$this->setError(JText::_('JLIB_DATABASE_ERROR_NO_ROWS_SELECTED'));
 				return false;
 			}

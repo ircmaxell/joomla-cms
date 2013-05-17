@@ -32,7 +32,7 @@ class UsersControllerGroup extends JControllerForm
 	 * @param   array  An array of input data.
 	 * @param   string	The name of the key for the primary key.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 * @since   1.6
 	 */
 	protected function allowSave($data, $key = 'id')
@@ -48,7 +48,7 @@ class UsersControllerGroup extends JControllerForm
 	 * @param   array  An array of input data.
 	 * @param   string	The name of the key for the primary key.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 * @since   1.6
 	 */
 	protected function allowEdit($data = array(), $key = 'id')

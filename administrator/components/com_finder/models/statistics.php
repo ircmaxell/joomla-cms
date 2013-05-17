@@ -21,7 +21,7 @@ class FinderModelStatistics extends JModelLegacy
 	/**
 	 * Method to get the component statistics
 	 *
-	 * @return  object  The component statistics
+     * @return  object  The component statistics
 	 *
 	 * @since   2.5
 	 */

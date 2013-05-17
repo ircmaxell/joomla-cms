@@ -27,11 +27,11 @@ class JHttpTransportCurl implements JHttpTransport
 	/**
 	 * Constructor. CURLOPT_FOLLOWLOCATION must be disabled when open_basedir or safe_mode are enabled.
 	 *
-	 * @param   JRegistry  $options  Client options object.
+     * @param  JRegistry  $options  Client options object.
 	 *
 	 * @see     http://www.php.net/manual/en/function.curl-setopt.php
 	 * @since   11.3
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function __construct(JRegistry $options)
 	{
@@ -46,14 +46,14 @@ class JHttpTransportCurl implements JHttpTransport
 	/**
 	 * Send a request to the server and return a JHttpResponse object with the response.
 	 *
-	 * @param   string   $method     The HTTP method for sending the request.
-	 * @param   JUri     $uri        The URI to the resource to request.
-	 * @param   mixed    $data       Either an associative array or a string to be sent with the request.
-	 * @param   array    $headers    An array of request headers to send with the request.
-	 * @param   integer  $timeout    Read timeout in seconds.
-	 * @param   string   $userAgent  The optional user agent string to send with the request.
+     * @param  string   $method     The HTTP method for sending the request.
+     * @param  JUri     $uri        The URI to the resource to request.
+     * @param  mixed    $data       Either an associative array or a string to be sent with the request.
+     * @param  array    $headers    An array of request headers to send with the request.
+     * @param  integer  $timeout    Read timeout in seconds.
+     * @param  string   $userAgent  The optional user agent string to send with the request.
 	 *
-	 * @return  JHttpResponse
+     * @return  JHttpResponse
 	 *
 	 * @since   11.3
 	 */
@@ -157,13 +157,13 @@ class JHttpTransportCurl implements JHttpTransport
 	/**
 	 * Method to get a response object from a server response.
 	 *
-	 * @param   string  $content  The complete server response, including headers.
-	 * @param   array   $info     The cURL request information.
+     * @param  string  $content  The complete server response, including headers.
+     * @param  array   $info     The cURL request information.
 	 *
-	 * @return  JHttpResponse
+     * @return  JHttpResponse
 	 *
 	 * @since   11.3
-	 * @throws  UnexpectedValueException
+     * @throws  UnexpectedValueException
 	 */
 	protected function getResponse($content, $info)
 	{
@@ -219,11 +219,11 @@ class JHttpTransportCurl implements JHttpTransport
 	/**
 	 * Method to check if HTTP transport cURL is available for use
 	 *
-	 * @return boolean true if available, else false
+     * @return  boolean  true if available, else false
 	 *
 	 * @since   12.1
 	 */
-	static public function isSupported()
+	public static function isSupported()
 	{
 		return function_exists('curl_version') && curl_version();
 	}

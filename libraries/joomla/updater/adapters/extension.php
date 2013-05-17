@@ -22,11 +22,11 @@ class JUpdaterExtension extends JUpdateAdapter
 	/**
 	 * Start element parser callback.
 	 *
-	 * @param   object  $parser  The parser object.
-	 * @param   string  $name    The name of the element.
-	 * @param   array   $attrs   The attributes of the element.
+     * @param  object  $parser  The parser object.
+     * @param  string  $name    The name of the element.
+     * @param  array   $attrs   The attributes of the element.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -71,10 +71,10 @@ class JUpdaterExtension extends JUpdateAdapter
 	/**
 	 * Character Parser Function
 	 *
-	 * @param   object  $parser  Parser object.
-	 * @param   object  $name    The name of the element.
+     * @param  object  $parser  Parser object.
+     * @param  object  $name    The name of the element.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -122,10 +122,10 @@ class JUpdaterExtension extends JUpdateAdapter
 	/**
 	 * Character Parser Function
 	 *
-	 * @param   object  $parser  Parser object.
-	 * @param   object  $data    The data.
+     * @param  object  $parser  Parser object.
+     * @param  object  $data    The data.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @note    This is public because its called externally.
 	 * @since   11.1
@@ -148,9 +148,9 @@ class JUpdaterExtension extends JUpdateAdapter
 	/**
 	 * Finds an update.
 	 *
-	 * @param   array  $options  Update options.
+     * @param  array  $options  Update options.
 	 *
-	 * @return  array  Array containing the array of update sites and array of updates
+     * @return  array  Array containing the array of update sites and array of updates
 	 *
 	 * @since   11.1
 	 */

@@ -28,9 +28,9 @@ class JOpenstreetmapOauth extends JOAuth1Client
 	/**
 	 * Constructor.
 	 *
-	 * @param   JRegistry  $options  JOpenstreetmapOauth options object.
-	 * @param   JHttp      $client   The HTTP client object.
-	 * @param   JInput     $input    The input object
+     * @param  JRegistry  $options  JOpenstreetmapOauth options object.
+     * @param  JHttp      $client   The HTTP client object.
+     * @param  JInput     $input    The input object
 	 *
 	 * @since 13.1
 	 */
@@ -55,7 +55,7 @@ class JOpenstreetmapOauth extends JOAuth1Client
 	/**
 	 * Method to verify if the access token is valid by making a request to an API endpoint.
 	 *
-	 * @return  boolean  Returns true if the access token is valid and false otherwise.
+     * @return  boolean  Returns true if the access token is valid and false otherwise.
 	 *
 	 * @since   13.1
 	 */
@@ -67,13 +67,13 @@ class JOpenstreetmapOauth extends JOAuth1Client
 	/**
 	 * Method to validate a response.
 	 *
-	 * @param   string         $url       The request URL.
-	 * @param   JHttpResponse  $response  The response to validate.
+     * @param  string         $url       The request URL.
+     * @param  JHttpResponse  $response  The response to validate.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since  13.1
-	 * @throws DomainException
+     * @throws  DomainException
 	 */
 	public function validateResponse($url, $response)
 	{

@@ -41,7 +41,7 @@ class JPathway
 	/**
 	 * Class constructor
 	 *
-	 * @param   array  $options  The class options.
+     * @param  array  $options  The class options.
 	 *
 	 * @since   11.1
 	 */
@@ -52,13 +52,13 @@ class JPathway
 	/**
 	 * Returns a JPathway object
 	 *
-	 * @param   string  $client   The name of the client
-	 * @param   array   $options  An associative array of options
+     * @param  string  $client   The name of the client
+     * @param  array   $options  An associative array of options
 	 *
-	 * @return  JPathway  A JPathway object.
+     * @return  JPathway  A JPathway object.
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public static function getInstance($client, $options = array())
 	{
@@ -100,7 +100,7 @@ class JPathway
 	/**
 	 * Return the JPathWay items array
 	 *
-	 * @return  array  Array of pathway items
+     * @return  array  Array of pathway items
 	 *
 	 * @since   11.1
 	 */
@@ -115,9 +115,9 @@ class JPathway
 	/**
 	 * Set the JPathway items array.
 	 *
-	 * @param   array  $pathway  An array of pathway objects.
+     * @param  array  $pathway  An array of pathway objects.
 	 *
-	 * @return  array  The previous pathway data.
+     * @return  array  The previous pathway data.
 	 *
 	 * @since   11.1
 	 */
@@ -134,7 +134,7 @@ class JPathway
 	/**
 	 * Create and return an array of the pathway names.
 	 *
-	 * @return  array  Array of names of pathway items
+     * @return  array  Array of names of pathway items
 	 *
 	 * @since   11.1
 	 */
@@ -155,10 +155,10 @@ class JPathway
 	/**
 	 * Create and add an item to the pathway.
 	 *
-	 * @param   string  $name  The name of the item.
-	 * @param   string  $link  The link to the item.
+     * @param  string  $name  The name of the item.
+     * @param  string  $link  The link to the item.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   11.1
 	 */
@@ -178,10 +178,10 @@ class JPathway
 	/**
 	 * Set item name.
 	 *
-	 * @param   integer  $id    The id of the item on which to set the name.
-	 * @param   string   $name  The name to set.
+     * @param  integer  $id    The id of the item on which to set the name.
+     * @param  string   $name  The name to set.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   11.1
 	 */
@@ -201,10 +201,10 @@ class JPathway
 	/**
 	 * Create and return a new pathway object.
 	 *
-	 * @param   string  $name  Name of the item
-	 * @param   string  $link  Link to the item
+     * @param  string  $name  Name of the item
+     * @param  string  $link  Link to the item
 	 *
-	 * @return  JPathway  Pathway item object
+     * @return  JPathway  Pathway item object
 	 *
 	 * @since   11.1
 	 */

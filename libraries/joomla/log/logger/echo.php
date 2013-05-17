@@ -27,7 +27,7 @@ class JLogLoggerEcho extends JLogLogger
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  &$options  Log object options.
+     * @param  array  &$options  Log object options.
 	 *
 	 * @since   12.1
 	 */
@@ -44,9 +44,9 @@ class JLogLoggerEcho extends JLogLogger
 	/**
 	 * Method to add an entry to the log.
 	 *
-	 * @param   JLogEntry  $entry  The log entry object to add to the log.
+     * @param  JLogEntry  $entry  The log entry object to add to the log.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */

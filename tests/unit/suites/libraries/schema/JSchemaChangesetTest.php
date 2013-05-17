@@ -57,7 +57,7 @@ class JSchemaChangesetTest extends TestCase
 	/**
 	 * Tests the __construct method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -72,7 +72,7 @@ class JSchemaChangesetTest extends TestCase
 	/**
 	 * Tests the __construct method with the PostgreSQL driver
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -89,7 +89,7 @@ class JSchemaChangesetTest extends TestCase
 	/**
 	 * Tests the __construct method with the SQL Server driver
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -103,11 +103,10 @@ class JSchemaChangesetTest extends TestCase
 		);
 	}
 
-
 	/**
 	 * Tests the getInstance method with the MySQL driver
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -152,7 +151,7 @@ class JSchemaChangesetTest extends TestCase
 	/**
 	 * Tests the getSchema method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

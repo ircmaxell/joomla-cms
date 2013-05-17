@@ -40,7 +40,7 @@ class TemplatesControllerSource extends JControllerLegacy
 	 * @param   array  An array of input data.
 	 * @param   string	The name of the key for the primary key.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 */
 	protected function allowEdit()
 	{
@@ -55,7 +55,7 @@ class TemplatesControllerSource extends JControllerLegacy
 	 * @param   array  An array of input data.
 	 * @param   string	The name of the key for the primary key.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 */
 	protected function allowSave()
 	{
@@ -69,7 +69,7 @@ class TemplatesControllerSource extends JControllerLegacy
 	 * @param   string	The class prefix. Optional.
 	 * @param   array  Configuration array for model. Optional (note, the empty array is atypical compared to other models).
 	 *
-	 * @return  object  The model.
+     * @return  object  The model.
 	 */
 	public function getModel($name = 'Source', $prefix = 'TemplatesModel', $config = array())
 	{
@@ -83,7 +83,7 @@ class TemplatesControllerSource extends JControllerLegacy
 	 * @param   boolean			If true, the view output will be cached
 	 * @param   array  An array of safe url parameters and their variable types, for valid values see {@link JFilterInput::clean()}.
 	 *
-	 * @return  JController		This object to support chaining.
+     * @return  JController  This object to support chaining.
 	 * @since   1.5
 	 */
 	public function display($cachable = false, $urlparams = false)
@@ -94,7 +94,7 @@ class TemplatesControllerSource extends JControllerLegacy
 	/**
 	 * Method to edit an existing record.
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function edit()
 	{
@@ -124,7 +124,7 @@ class TemplatesControllerSource extends JControllerLegacy
 	/**
 	 * Method to cancel an edit
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function cancel()
 	{
@@ -198,7 +198,8 @@ class TemplatesControllerSource extends JControllerLegacy
 				{
 					$app->enqueueMessage($errors[$i]->getMessage(), 'warning');
 				}
-				else {
+				else
+				{
 					$app->enqueueMessage($errors[$i], 'warning');
 				}
 			}

@@ -35,10 +35,10 @@ class JDatabaseFactory
 	 * Instances are unique to the given options and new objects are only created when a unique options array is
 	 * passed into the method.  This ensures that we don't end up with unnecessary database connection resources.
 	 *
-	 * @param   string  $name     Name of the database driver you'd like to instantiate
-	 * @param   array   $options  Parameters to be passed to the database driver.
+     * @param  string  $name     Name of the database driver you'd like to instantiate
+     * @param  array   $options  Parameters to be passed to the database driver.
 	 *
-	 * @return  JDatabaseDriver  A database driver object.
+     * @return  JDatabaseDriver  A database driver object.
 	 *
 	 * @since   12.1
 	 */
@@ -74,13 +74,13 @@ class JDatabaseFactory
 	/**
 	 * Gets an exporter class object.
 	 *
-	 * @param   string           $name  Name of the driver you want an exporter for.
-	 * @param   JDatabaseDriver  $db    Optional JDatabaseDriver instance
+     * @param  string           $name  Name of the driver you want an exporter for.
+     * @param  JDatabaseDriver  $db    Optional JDatabaseDriver instance
 	 *
-	 * @return  JDatabaseExporter  An exporter object.
+     * @return  JDatabaseExporter  An exporter object.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function getExporter($name, JDatabaseDriver $db = null)
 	{
@@ -107,13 +107,13 @@ class JDatabaseFactory
 	/**
 	 * Gets an importer class object.
 	 *
-	 * @param   string           $name  Name of the driver you want an importer for.
-	 * @param   JDatabaseDriver  $db    Optional JDatabaseDriver instance
+     * @param  string           $name  Name of the driver you want an importer for.
+     * @param  JDatabaseDriver  $db    Optional JDatabaseDriver instance
 	 *
-	 * @return  JDatabaseImporter  An importer object.
+     * @return  JDatabaseImporter  An importer object.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function getImporter($name, JDatabaseDriver $db = null)
 	{
@@ -140,7 +140,7 @@ class JDatabaseFactory
 	/**
 	 * Gets an instance of the factory object.
 	 *
-	 * @return  JDatabaseFactory
+     * @return  JDatabaseFactory
 	 *
 	 * @since   12.1
 	 */
@@ -152,13 +152,13 @@ class JDatabaseFactory
 	/**
 	 * Get the current query object or a new JDatabaseQuery object.
 	 *
-	 * @param   string           $name  Name of the driver you want an importer for.
-	 * @param   JDatabaseDriver  $db    Optional JDatabaseDriver instance
+     * @param  string           $name  Name of the driver you want an importer for.
+     * @param  JDatabaseDriver  $db    Optional JDatabaseDriver instance
 	 *
-	 * @return  JDatabaseQuery  The current query object or a new object extending the JDatabaseQuery class.
+     * @return  JDatabaseQuery  The current query object or a new object extending the JDatabaseQuery class.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function getQuery($name, JDatabaseDriver $db = null)
 	{
@@ -178,9 +178,9 @@ class JDatabaseFactory
 	/**
 	 * Gets an instance of a factory object to return on subsequent calls of getInstance.
 	 *
-	 * @param   JDatabaseFactory  $instance  A JDatabaseFactory object.
+     * @param  JDatabaseFactory  $instance  A JDatabaseFactory object.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */

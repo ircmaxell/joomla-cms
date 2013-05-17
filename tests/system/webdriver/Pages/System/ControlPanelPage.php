@@ -1,11 +1,6 @@
 <?php
 
 use SeleniumClient\By;
-use SeleniumClient\SelectElement;
-use SeleniumClient\WebDriver;
-use SeleniumClient\WebDriverWait;
-use SeleniumClient\DesiredCapabilities;
-use SeleniumClient\WebElement;
 
 /**
  * Class for the back-end control panel screen.
@@ -40,7 +35,7 @@ class ControlPanelPage extends AdminPage
 	/**
 	 * Gets information about all control panel icons on the screen
 	 *
-	 * @return  array of stdClass objects
+     * @return  array  of stdClass objects
 	 */
 	public function getControlPanelIcons()
 	{
@@ -60,7 +55,7 @@ class ControlPanelPage extends AdminPage
 	/**
 	 * Gets the titles of modules in sliders
 	 *
-	 * @return  array of stdClass objects
+     * @return  array  of stdClass objects
 	 */
 	public function getModuleTitles()
 	{

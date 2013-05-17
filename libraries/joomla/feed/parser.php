@@ -39,7 +39,7 @@ abstract class JFeedParser
 	/**
 	 * Constructor.
 	 *
-	 * @param   XMLReader  $stream  The XMLReader stream object for the feed.
+     * @param  XMLReader  $stream  The XMLReader stream object for the feed.
 	 *
 	 * @since   12.3
 	 */
@@ -51,7 +51,7 @@ abstract class JFeedParser
 	/**
 	 * Method to parse the feed into a JFeed object.
 	 *
-	 * @return  JFeed
+     * @return  JFeed
 	 *
 	 * @since   12.3
 	 */
@@ -105,10 +105,10 @@ abstract class JFeedParser
 	/**
 	 * Method to register a namespace handler object.
 	 *
-	 * @param   string                $prefix     The XML namespace prefix for which to register the namespace object.
-	 * @param   JFeedParserNamespace  $namespace  The namespace object to register.
+     * @param  string                $prefix     The XML namespace prefix for which to register the namespace object.
+     * @param  JFeedParserNamespace  $namespace  The namespace object to register.
 	 *
-	 * @return  JFeed
+     * @return  JFeed
 	 *
 	 * @since   12.3
 	 */
@@ -123,7 +123,7 @@ abstract class JFeedParser
 	 * Method to initialise the feed for parsing.  If child parsers need to detect versions or other
 	 * such things this is where you'll want to implement that logic.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.3
 	 */
@@ -132,11 +132,11 @@ abstract class JFeedParser
 	/**
 	 * Method to parse a specific feed element.
 	 *
-	 * @param   JFeed             $feed        The JFeed object being built from the parsed feed.
-	 * @param   SimpleXMLElement  $el          The current XML element object to handle.
-	 * @param   array             $namespaces  The array of relevant namespace objects to process for the element.
+     * @param  JFeed             $feed        The JFeed object being built from the parsed feed.
+     * @param  SimpleXMLElement  $el          The current XML element object to handle.
+     * @param  array             $namespaces  The array of relevant namespace objects to process for the element.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.3
 	 */
@@ -187,9 +187,9 @@ abstract class JFeedParser
 	/**
 	 * Method to get a namespace object for a given namespace prefix.
 	 *
-	 * @param   string  $prefix  The XML prefix for which to fetch the namespace object.
+     * @param  string  $prefix  The XML prefix for which to fetch the namespace object.
 	 *
-	 * @return  mixed  JFeedParserNamespace or false if none exists.
+     * @return  mixed  JFeedParserNamespace or false if none exists.
 	 *
 	 * @since   12.3
 	 */
@@ -215,9 +215,9 @@ abstract class JFeedParser
 	/**
 	 * Method to move the stream parser to the next XML element node.
 	 *
-	 * @param   string  $name  The name of the element for which to move the stream forward until is found.
+     * @param  string  $name  The name of the element for which to move the stream forward until is found.
 	 *
-	 * @return  boolean  True if the stream parser is on an XML element node.
+     * @return  boolean  True if the stream parser is on an XML element node.
 	 *
 	 * @since   12.3
 	 */
@@ -245,10 +245,10 @@ abstract class JFeedParser
 	/**
 	 * Method to move the stream parser to the closing XML node of the current element.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.3
-	 * @throws  RuntimeException  If the closing tag cannot be found.
+     * @throws  RuntimeException  If the closing tag cannot be found.
 	 */
 	protected function moveToClosingElement()
 	{

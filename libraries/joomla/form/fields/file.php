@@ -33,7 +33,7 @@ class JFormFieldFile extends JFormField
 	 * Field attributes allow specification of a maximum file size and a string
 	 * of accepted file extensions.
 	 *
-	 * @return  string  The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   11.1
 	 *

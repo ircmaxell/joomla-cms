@@ -21,12 +21,12 @@ class JLanguageHelper
 	/**
 	 * Builds a list of the system languages which can be used in a select option
 	 *
-	 * @param   string   $actualLanguage  Client key for the area
-	 * @param   string   $basePath        Base path to use
-	 * @param   boolean  $caching         True if caching is used
-	 * @param   array    $installed       An array of arrays (text, value, selected)
+     * @param  string   $actualLanguage  Client key for the area
+     * @param  string   $basePath        Base path to use
+     * @param  boolean  $caching         True if caching is used
+     * @param  array    $installed       An array of arrays (text, value, selected)
 	 *
-	 * @return  array  List of system languages
+     * @return  array  List of system languages
 	 *
 	 * @since   11.1
 	 */
@@ -72,7 +72,7 @@ class JLanguageHelper
 	/**
 	 * Tries to detect the language.
 	 *
-	 * @return  string  locale or null if not found
+     * @return  string  locale or null if not found
 	 *
 	 * @since   11.1
 	 */
@@ -118,9 +118,9 @@ class JLanguageHelper
 	/**
 	 * Get available languages
 	 *
-	 * @param   string  $key  Array key
+     * @param  string  $key  Array key
 	 *
-	 * @return  array  An array of published languages
+     * @return  array  An array of published languages
 	 *
 	 * @since   11.1
 	 */

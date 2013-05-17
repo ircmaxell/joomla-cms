@@ -30,7 +30,8 @@ class ModulesControllerModules extends JControllerAdmin
 		$pks = $this->input->post->get('cid', array(), 'array');
 		JArrayHelper::toInteger($pks);
 
-		try {
+		try
+		{
 			if (empty($pks))
 			{
 				throw new Exception(JText::_('COM_MODULES_ERROR_NO_MODULES_SELECTED'));
@@ -38,7 +39,8 @@ class ModulesControllerModules extends JControllerAdmin
 			$model = $this->getModel();
 			$model->duplicate($pks);
 			$this->setMessage(JText::plural('COM_MODULES_N_MODULES_DUPLICATED', count($pks)));
-		} catch (Exception $e)
+		}
+		catch (Exception $e)
 		{
 			JError::raiseWarning(500, $e->getMessage());
 		}
@@ -49,11 +51,11 @@ class ModulesControllerModules extends JControllerAdmin
 	/**
 	 * Method to get a model object, loading it if required.
 	 *
-	 * @param   string  $name    The model name. Optional.
-	 * @param   string  $prefix  The class prefix. Optional.
-	 * @param   array   $config  Configuration array for model. Optional.
+     * @param  string  $name    The model name. Optional.
+     * @param  string  $prefix  The class prefix. Optional.
+     * @param  array   $config  Configuration array for model. Optional.
 	 *
-	 * @return  object  The model.
+     * @return  object  The model.
 	 *
 	 * @since   1.6
 	 */
@@ -65,7 +67,7 @@ class ModulesControllerModules extends JControllerAdmin
 	/**
 	 * Method to save the submitted ordering values for records via AJAX.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

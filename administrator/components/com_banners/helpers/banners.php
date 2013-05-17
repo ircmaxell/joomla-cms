@@ -23,7 +23,7 @@ class BannersHelper
 	 *
 	 * @param   string	The name of the active view.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.6
 	 */
 	public static function addSubmenu($vName)
@@ -64,7 +64,7 @@ class BannersHelper
 	 *
 	 * @param   integer  The category ID.
 	 *
-	 * @return  JObject
+     * @return  JObject
 	 * @since   1.6
 	 */
 	public static function getActions($categoryId = 0)
@@ -94,7 +94,7 @@ class BannersHelper
 	}
 
 	/**
-	 * @return  boolean
+     * @return  boolean
 	 * @since   1.6
 	 */
 	public static function updateReset()

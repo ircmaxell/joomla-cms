@@ -29,7 +29,7 @@ class PlgSearchWeblinks extends JPlugin
 	protected $autoloadLanguage = true;
 
 	/**
-	 * @return array An array of search areas
+     * @return  array  An array of search areas
 	 */
 	public function onContentSearchAreas()
 	{

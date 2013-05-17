@@ -41,7 +41,7 @@ class JHtmlIconsTest extends TestCase
 	/**
 	 * Tests the buttons and button methods
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

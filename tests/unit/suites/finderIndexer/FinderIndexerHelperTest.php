@@ -40,7 +40,7 @@ class FinderIndexerHelperTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the parse method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -111,7 +111,7 @@ class FinderIndexerHelperTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getPrimaryLanguage method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

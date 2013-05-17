@@ -200,10 +200,10 @@ class FinderIndexerResult
 	 * The magic set method is used to push additional values into the elements
 	 * array in order to preserve the cleanliness of the object.
 	 *
-	 * @param   string  $name   The name of the element.
-	 * @param   mixed   $value  The value of the element.
+     * @param  string  $name   The name of the element.
+     * @param  mixed   $value  The value of the element.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -216,9 +216,9 @@ class FinderIndexerResult
 	 * The magic get method is used to retrieve additional element values
 	 * from the elements array.
 	 *
-	 * @param   string  $name  The name of the element.
+     * @param  string  $name  The name of the element.
 	 *
-	 * @return  mixed  The value of the element if set, null otherwise.
+     * @return  mixed  The value of the element if set, null otherwise.
 	 *
 	 * @since   2.5
 	 */
@@ -239,9 +239,9 @@ class FinderIndexerResult
 	 * The magic isset method is used to check the state of additional element
 	 * values in the elements array.
 	 *
-	 * @param   string  $name  The name of the element.
+     * @param  string  $name  The name of the element.
 	 *
-	 * @return  boolean  True if set, false otherwise.
+     * @return  boolean  True if set, false otherwise.
 	 *
 	 * @since   2.5
 	 */
@@ -254,9 +254,9 @@ class FinderIndexerResult
 	 * The magic unset method is used to unset additional element values in the
 	 * elements array.
 	 *
-	 * @param   string  $name  The name of the element.
+     * @param  string  $name  The name of the element.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -268,9 +268,9 @@ class FinderIndexerResult
 	/**
 	 * Method to retrieve additional element values from the elements array.
 	 *
-	 * @param   string  $name  The name of the element.
+     * @param  string  $name  The name of the element.
 	 *
-	 * @return  mixed  The value of the element if set, null otherwise.
+     * @return  mixed  The value of the element if set, null otherwise.
 	 *
 	 * @since   2.5
 	 */
@@ -290,10 +290,10 @@ class FinderIndexerResult
 	/**
 	 * Method to set additional element values in the elements array.
 	 *
-	 * @param   string  $name   The name of the element.
-	 * @param   mixed   $value  The value of the element.
+     * @param  string  $name   The name of the element.
+     * @param  mixed   $value  The value of the element.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -305,7 +305,7 @@ class FinderIndexerResult
 	/**
 	 * Method to get all processing instructions.
 	 *
-	 * @return  array  An array of processing instructions.
+     * @return  array  An array of processing instructions.
 	 *
 	 * @since   2.5
 	 */
@@ -317,10 +317,10 @@ class FinderIndexerResult
 	/**
 	 * Method to add a processing instruction for an item property.
 	 *
-	 * @param   string  $group     The group to associate the property with.
-	 * @param   string  $property  The property to process.
+     * @param  string  $group     The group to associate the property with.
+     * @param  string  $property  The property to process.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -341,10 +341,10 @@ class FinderIndexerResult
 	/**
 	 * Method to remove a processing instruction for an item property.
 	 *
-	 * @param   string  $group     The group to associate the property with.
-	 * @param   string  $property  The property to process.
+     * @param  string  $group     The group to associate the property with.
+     * @param  string  $property  The property to process.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -367,9 +367,9 @@ class FinderIndexerResult
 	/**
 	 * Method to get the taxonomy maps for an item.
 	 *
-	 * @param   string  $branch  The taxonomy branch to get. [optional]
+     * @param  string  $branch  The taxonomy branch to get. [optional]
 	 *
-	 * @return  array  An array of taxonomy maps.
+     * @return  array  An array of taxonomy maps.
 	 *
 	 * @since   2.5
 	 */
@@ -390,12 +390,12 @@ class FinderIndexerResult
 	/**
 	 * Method to add a taxonomy map for an item.
 	 *
-	 * @param   string   $branch  The title of the taxonomy branch to add the node to.
-	 * @param   string   $title   The title of the taxonomy node.
-	 * @param   integer  $state   The published state of the taxonomy node. [optional]
-	 * @param   integer  $access  The access level of the taxonomy node. [optional]
+     * @param  string   $branch  The title of the taxonomy branch to add the node to.
+     * @param  string   $title   The title of the taxonomy node.
+     * @param  integer  $state   The published state of the taxonomy node. [optional]
+     * @param  integer  $access  The access level of the taxonomy node. [optional]
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -417,7 +417,7 @@ class FinderIndexerResult
 	/**
 	 * Method to set the item language
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

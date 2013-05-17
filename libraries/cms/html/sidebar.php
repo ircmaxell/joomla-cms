@@ -45,7 +45,7 @@ abstract class JHtmlSidebar
 	/**
 	 * Render the sidebar.
 	 *
-	 * @return  string  The necessary HTML to display the sidebar
+     * @return  string  The necessary HTML to display the sidebar
 	 *
 	 * @since   3.0
 	 */
@@ -70,11 +70,11 @@ abstract class JHtmlSidebar
 	/**
 	 * Method to add a menu item to submenu.
 	 *
-	 * @param   string  $name    Name of the menu item.
-	 * @param   string  $link    URL of the menu item.
-	 * @param   bool    $active  True if the item is active, false otherwise.
+     * @param  string  $name    Name of the menu item.
+     * @param  string  $link    URL of the menu item.
+     * @param  bool    $active  True if the item is active, false otherwise.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -86,7 +86,7 @@ abstract class JHtmlSidebar
 	/**
 	 * Returns an array of all submenu entries
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   3.0
 	 */
@@ -98,12 +98,12 @@ abstract class JHtmlSidebar
 	/**
 	 * Method to add a filter to the submenu
 	 *
-	 * @param   string  $label      Label for the menu item.
-	 * @param   string  $name       Name for the filter. Also used as id.
-	 * @param   string  $options    Options for the select field.
-	 * @param   bool    $noDefault  Don't the label as the empty option
+     * @param  string  $label      Label for the menu item.
+     * @param  string  $name       Name for the filter. Also used as id.
+     * @param  string  $options    Options for the select field.
+     * @param  bool    $noDefault  Don't the label as the empty option
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -115,7 +115,7 @@ abstract class JHtmlSidebar
 	/**
 	 * Returns an array of all filters
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   3.0
 	 */
@@ -127,9 +127,9 @@ abstract class JHtmlSidebar
 	/**
 	 * Set value for the action attribute of the filter form
 	 *
-	 * @param   string  $action  Value for the action attribute of the form
+     * @param  string  $action  Value for the action attribute of the form
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -141,7 +141,7 @@ abstract class JHtmlSidebar
 	/**
 	 * Get value for the action attribute of the filter form
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   3.0
 	 */

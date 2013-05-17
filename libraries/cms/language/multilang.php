@@ -22,7 +22,7 @@ class JLanguageMultilang
 	 * Method to determine if the language filter plugin is enabled.
 	 * This works for both site and administrator.
 	 *
-	 * @return  boolean  True if site is supporting multiple languages; false otherwise.
+     * @return  boolean  True if site is supporting multiple languages; false otherwise.
 	 *
 	 * @since   2.5.4
 	 */

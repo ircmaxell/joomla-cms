@@ -77,7 +77,7 @@ class BannersModelBanners extends JModelList
 	/**
 	 * Build an SQL query to load the list data.
 	 *
-	 * @return  JDatabaseQuery
+     * @return  JDatabaseQuery
 	 * @since   1.6
 	 */
 	protected function getListQuery()
@@ -187,8 +187,8 @@ class BannersModelBanners extends JModelList
 	 * different modules that might need different sets of data or different
 	 * ordering requirements.
 	 *
-	 * @param   string  $id    A prefix for the store id.
-	 * @return  string  A store id.
+     * @param   string  $id  A prefix for the store id.
+     * @return  string  A store id.
 	 * @since   1.6
 	 */
 	protected function getStoreId($id = '')
@@ -209,7 +209,7 @@ class BannersModelBanners extends JModelList
 	 * @param   type      The table type to instantiate
 	 * @param   string    A prefix for the table class name. Optional.
 	 * @param   array     Configuration array for model. Optional.
-	 * @return  JTable    A database object
+     * @return  JTable  A database object
 	 * @since   1.6
 	 */
 	public function getTable($type = 'Banner', $prefix = 'BannersTable', $config = array())

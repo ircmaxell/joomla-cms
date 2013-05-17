@@ -43,7 +43,7 @@ class MenusModelMenus extends JModelList
 	/**
 	 * Overrides the getItems method to attach additional metrics to the list.
 	 *
-	 * @return  mixed  An array of data items on success, false on failure.
+     * @return  mixed  An array of data items on success, false on failure.
 	 *
 	 * @since   1.6.1
 	 */
@@ -149,7 +149,7 @@ class MenusModelMenus extends JModelList
 	/**
 	 * Method to build an SQL query to load the list data.
 	 *
-	 * @return  string  An SQL query
+     * @return  string  An SQL query
 	 *
 	 * @since   1.6
 	 */
@@ -183,10 +183,10 @@ class MenusModelMenus extends JModelList
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @param   string  $ordering   An optional ordering field.
-	 * @param   string  $direction  An optional direction (asc|desc).
+     * @param  string  $ordering   An optional ordering field.
+     * @param  string  $direction  An optional direction (asc|desc).
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -204,7 +204,7 @@ class MenusModelMenus extends JModelList
 	/**
 	 * Gets the extension id of the core mod_menu module.
 	 *
-	 * @return  integer
+     * @return  integer
 	 *
 	 * @since   2.5
 	 */
@@ -225,7 +225,7 @@ class MenusModelMenus extends JModelList
 	/**
 	 * Gets a list of all mod_mainmenu modules and collates them by menutype
 	 *
-	 * @return  array
+     * @return  array
 	 */
 	public function &getModules()
 	{

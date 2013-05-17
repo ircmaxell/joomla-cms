@@ -21,7 +21,7 @@ class JPathwaySite extends JPathway
 	/**
 	 * Class constructor.
 	 *
-	 * @param   array  $options  The class options.
+     * @param  array  $options  The class options.
 	 *
 	 * @since   1.5
 	 */

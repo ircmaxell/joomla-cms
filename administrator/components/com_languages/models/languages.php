@@ -51,10 +51,10 @@ class LanguagesModelLanguages extends JModelList
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @param   string  $ordering   An optional ordering field.
-	 * @param   string  $direction  An optional direction (asc|desc).
+     * @param  string  $ordering   An optional ordering field.
+     * @param  string  $direction  An optional direction (asc|desc).
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -87,9 +87,9 @@ class LanguagesModelLanguages extends JModelList
 	 * different modules that might need different sets of data or different
 	 * ordering requirements.
 	 *
-	 * @param   string  $id    A prefix for the store id.
+     * @param  string  $id  A prefix for the store id.
 	 *
-	 * @return  string  A store id.
+     * @return  string  A store id.
 	 * @since   1.6
 	 */
 	protected function getStoreId($id = '')
@@ -105,7 +105,7 @@ class LanguagesModelLanguages extends JModelList
 	/**
 	 * Method to build an SQL query to load the list data.
 	 *
-	 * @return  string    An SQL query
+     * @return  string  An SQL query
 	 * @since   1.6
 	 */
 	protected function getListQuery()
@@ -160,10 +160,10 @@ class LanguagesModelLanguages extends JModelList
 	/**
 	 * Set the published language(s)
 	 *
-	 * @param   array    $cid      An array of language IDs.
-	 * @param   integer  $value    The value of the published state.
+     * @param  array    $cid    An array of language IDs.
+     * @param  integer  $value  The value of the published state.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 * @since   1.6
 	 */
 	public function setPublished($cid, $value = 0)
@@ -176,7 +176,7 @@ class LanguagesModelLanguages extends JModelList
 	 *
 	 * @param   array  An array of item primary keys.
 	 *
-	 * @return  boolean  Returns true on success, false on failure.
+     * @return  boolean  Returns true on success, false on failure.
 	 * @since   1.6
 	 */
 	public function delete($pks)

@@ -31,13 +31,13 @@ class FinderIndexerDriverSqlsrv extends FinderIndexer
 	/**
 	 * Method to index a content item.
 	 *
-	 * @param   FinderIndexerResult  $item    The content item to index.
-	 * @param   string               $format  The format of the content. [optional]
+     * @param  FinderIndexerResult  $item    The content item to index.
+     * @param  string               $format  The format of the content. [optional]
 	 *
-	 * @return  integer  The ID of the record in the links table.
+     * @return  integer  The ID of the record in the links table.
 	 *
 	 * @since   3.1
-	 * @throws  Exception on database error.
+     * @throws  Exception  on database error.
 	 */
 	public function index($item, $format = 'html')
 	{
@@ -448,12 +448,12 @@ class FinderIndexerDriverSqlsrv extends FinderIndexer
 	/**
 	 * Method to remove a link from the index.
 	 *
-	 * @param   integer  $linkId  The id of the link.
+     * @param  integer  $linkId  The id of the link.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
-	 * @throws  Exception on database error.
+     * @throws  Exception  on database error.
 	 */
 	public function remove($linkId)
 	{
@@ -505,10 +505,10 @@ class FinderIndexerDriverSqlsrv extends FinderIndexer
 	 * Method to optimize the index. We use this method to remove unused terms
 	 * and any other optimizations that might be necessary.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
-	 * @throws  Exception on database error.
+     * @throws  Exception  on database error.
 	 */
 	public function optimize()
 	{
@@ -531,13 +531,13 @@ class FinderIndexerDriverSqlsrv extends FinderIndexer
 	/**
 	 * Method to add a set of tokens to the database.
 	 *
-	 * @param   mixed  $tokens   An array or single FinderIndexerToken object.
-	 * @param   mixed  $context  The context of the tokens. See context constants. [optional]
+     * @param  mixed  $tokens   An array or single FinderIndexerToken object.
+     * @param  mixed  $context  The context of the tokens. See context constants. [optional]
 	 *
-	 * @return  integer  The number of tokens inserted into the database.
+     * @return  integer  The number of tokens inserted into the database.
 	 *
 	 * @since   3.1
-	 * @throws  Exception on database error.
+     * @throws  Exception  on database error.
 	 */
 	protected function addTokensToDB($tokens, $context = '')
 	{
@@ -613,12 +613,12 @@ class FinderIndexerDriverSqlsrv extends FinderIndexer
 	 * Method to switch the token tables from Memory tables to MyISAM tables
 	 * when they are close to running out of memory.
 	 *
-	 * @param   boolean  $memory  Flag to control how they should be toggled.
+     * @param  boolean  $memory  Flag to control how they should be toggled.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
-	 * @throws  Exception on database error.
+     * @throws  Exception  on database error.
 	 */
 	protected function toggleTables($memory)
 	{

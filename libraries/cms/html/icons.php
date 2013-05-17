@@ -21,9 +21,9 @@ abstract class JHtmlIcons
 	/**
 	 * Method to generate html code for a list of buttons
 	 *
-	 * @param   array  $buttons  Array of buttons
+     * @param  array  $buttons  Array of buttons
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   2.5
 	 */
@@ -40,9 +40,9 @@ abstract class JHtmlIcons
 	/**
 	 * Method to generate html code for a list of buttons
 	 *
-	 * @param   array  $button  Button properties
+     * @param  array  $button  Button properties
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   2.5
 	 */

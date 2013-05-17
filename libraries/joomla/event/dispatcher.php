@@ -59,7 +59,7 @@ class JEventDispatcher extends JObject
 	 * Returns the global Event Dispatcher object, only creating it
 	 * if it doesn't already exist.
 	 *
-	 * @return  JEventDispatcher  The EventDispatcher object.
+     * @return  JEventDispatcher  The EventDispatcher object.
 	 *
 	 * @since   11.1
 	 */
@@ -76,7 +76,7 @@ class JEventDispatcher extends JObject
 	/**
 	 * Get the state of the JEventDispatcher object
 	 *
-	 * @return  mixed    The state of the object.
+     * @return  mixed  The state of the object.
 	 *
 	 * @since   11.3
 	 */
@@ -88,13 +88,13 @@ class JEventDispatcher extends JObject
 	/**
 	 * Registers an event handler to the event dispatcher
 	 *
-	 * @param   string  $event    Name of the event to register handler for
-	 * @param   string  $handler  Name of the event handler
+     * @param  string  $event    Name of the event to register handler for
+     * @param  string  $handler  Name of the event handler
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
-	 * @throws InvalidArgumentException
+     * @throws  InvalidArgumentException
 	 */
 	public function register($event, $handler)
 	{
@@ -120,10 +120,10 @@ class JEventDispatcher extends JObject
 	 * Triggers an event by dispatching arguments to all observers that handle
 	 * the event and returning their return values.
 	 *
-	 * @param   string  $event  The event to trigger.
-	 * @param   array   $args   An array of arguments.
+     * @param  string  $event  The event to trigger.
+     * @param  array   $args   An array of arguments.
 	 *
-	 * @return  array  An array of results from each function call.
+     * @return  array  An array of results from each function call.
 	 *
 	 * @since   11.1
 	 */
@@ -177,9 +177,9 @@ class JEventDispatcher extends JObject
 	/**
 	 * Attach an observer object
 	 *
-	 * @param   object  $observer  An observer object to attach
+     * @param  object  $observer  An observer object to attach
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.3
 	 */
@@ -245,9 +245,9 @@ class JEventDispatcher extends JObject
 	/**
 	 * Detach an observer object
 	 *
-	 * @param   object  $observer  An observer object to detach.
+     * @param  object  $observer  An observer object to detach.
 	 *
-	 * @return  boolean  True if the observer object was detached.
+     * @return  boolean  True if the observer object was detached.
 	 *
 	 * @since   11.3
 	 */

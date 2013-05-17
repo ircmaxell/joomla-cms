@@ -80,9 +80,9 @@ class PlgContentFinder extends JPlugin
 	 * from outside the edit screen. This is fired when the item is published,
 	 * unpublished, archived, or unarchived from the list view.
 	 *
-	 * @param   string   $context  The context for the content passed to the plugin.
-	 * @param   array    $pks      A list of primary key ids of the content that has changed state.
-	 * @param   integer  $value    The value of the state that the content has been changed to.
+     * @param  string   $context  The context for the content passed to the plugin.
+     * @param  array    $pks      A list of primary key ids of the content that has changed state.
+     * @param  integer  $value    The value of the state that the content has been changed to.
 	 * @since   2.5
 	 */
 	public function onContentChangeState($context, $pks, $value)
@@ -99,9 +99,9 @@ class PlgContentFinder extends JPlugin
 	 * Article is passed by reference, but after the save, so no changes will be saved.
 	 * Method is called right after the content is saved
 	 *
-	 * @param   string   $extension  The extension whose category has been updated.
-	 * @param   array    $pks        A list of primary key ids of the content that has changed state.
-	 * @param   integer  $value      The value of the state that the content has been changed to.
+     * @param  string   $extension  The extension whose category has been updated.
+     * @param  array    $pks        A list of primary key ids of the content that has changed state.
+     * @param  integer  $value      The value of the state that the content has been changed to.
 	 * @since   2.5
 	 */
 	public function onCategoryChangeState($extension, $pks, $value)

@@ -31,7 +31,7 @@ class JFormFieldContenttype extends JFormFieldList
 	/**
 	 * Method to get the field input for a list of content types.
 	 *
-	 * @return  string  The field input.
+     * @return  string  The field input.
 	 *
 	 * @since   3.1
 	 */
@@ -58,7 +58,7 @@ class JFormFieldContenttype extends JFormFieldList
 	/**
 	 * Method to get a list of content types
 	 *
-	 * @return  array  The field option objects.
+     * @return  array  The field option objects.
 	 *
 	 * @since   3.1
 	 */

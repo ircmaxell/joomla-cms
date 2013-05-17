@@ -29,11 +29,11 @@ abstract class JPluginHelper
 	/**
 	 * Get the path to a layout from a Plugin
 	 *
-	 * @param   string  $type    Plugin type
-	 * @param   string  $name    Plugin name
-	 * @param   string  $layout  Layout name
+     * @param  string  $type    Plugin type
+     * @param  string  $name    Plugin name
+     * @param  string  $layout  Layout name
 	 *
-	 * @return  string  Layout path
+     * @return  string  Layout path
 	 *
 	 * @since   12.2
 	 */
@@ -75,10 +75,10 @@ abstract class JPluginHelper
 	 * Get the plugin data of a specific type if no specific plugin is specified
 	 * otherwise only the specific plugin data is returned.
 	 *
-	 * @param   string  $type    The plugin type, relates to the sub-directory in the plugins directory.
-	 * @param   string  $plugin  The plugin name.
+     * @param  string  $type    The plugin type, relates to the sub-directory in the plugins directory.
+     * @param  string  $plugin  The plugin name.
 	 *
-	 * @return  mixed  An array of plugin data objects, or a plugin data object.
+     * @return  mixed  An array of plugin data objects, or a plugin data object.
 	 *
 	 * @since   11.1
 	 */
@@ -118,10 +118,10 @@ abstract class JPluginHelper
 	/**
 	 * Checks if a plugin is enabled.
 	 *
-	 * @param   string  $type    The plugin type, relates to the sub-directory in the plugins directory.
-	 * @param   string  $plugin  The plugin name.
+     * @param  string  $type    The plugin type, relates to the sub-directory in the plugins directory.
+     * @param  string  $plugin  The plugin name.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   11.1
 	 */
@@ -136,12 +136,12 @@ abstract class JPluginHelper
 	 * Loads all the plugin files for a particular type if no specific plugin is specified
 	 * otherwise only the specific plugin is loaded.
 	 *
-	 * @param   string            $type        The plugin type, relates to the sub-directory in the plugins directory.
-	 * @param   string            $plugin      The plugin name.
-	 * @param   boolean           $autocreate  Autocreate the plugin.
-	 * @param   JEventDispatcher  $dispatcher  Optionally allows the plugin to use a different dispatcher.
+     * @param  string            $type        The plugin type, relates to the sub-directory in the plugins directory.
+     * @param  string            $plugin      The plugin name.
+     * @param  boolean           $autocreate  Autocreate the plugin.
+     * @param  JEventDispatcher  $dispatcher  Optionally allows the plugin to use a different dispatcher.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   11.1
 	 */
@@ -188,11 +188,11 @@ abstract class JPluginHelper
 	/**
 	 * Loads the plugin file.
 	 *
-	 * @param   object            $plugin      The plugin.
-	 * @param   boolean           $autocreate  True to autocreate.
-	 * @param   JEventDispatcher  $dispatcher  Optionally allows the plugin to use a different dispatcher.
+     * @param  object            $plugin      The plugin.
+     * @param  boolean           $autocreate  True to autocreate.
+     * @param  JEventDispatcher  $dispatcher  Optionally allows the plugin to use a different dispatcher.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -249,7 +249,7 @@ abstract class JPluginHelper
 	/**
 	 * Loads the published plugins.
 	 *
-	 * @return  array  An array of published plugins
+     * @return  array  An array of published plugins
 	 *
 	 * @since   11.1
 	 */

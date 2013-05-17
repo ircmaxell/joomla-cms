@@ -93,7 +93,8 @@ class ContentViewFeatured extends JViewLegacy
 		if ($state->get('filter.published') == -2 && $canDo->get('core.delete'))
 		{
 			JToolbarHelper::deleteList('', 'articles.delete', 'JTOOLBAR_EMPTY_TRASH');
-		} elseif ($canDo->get('core.edit.state'))
+		}
+		elseif ($canDo->get('core.edit.state'))
 		{
 			JToolbarHelper::trash('articles.trash');
 		}
@@ -146,7 +147,7 @@ class ContentViewFeatured extends JViewLegacy
 	/**
 	 * Returns an array of fields the table can be sorted by
 	 *
-	 * @return  array  Array containing the field name to sort by as the key and display text as value
+     * @return  array  Array containing the field name to sort by as the key and display text as value
 	 *
 	 * @since   3.0
 	 */

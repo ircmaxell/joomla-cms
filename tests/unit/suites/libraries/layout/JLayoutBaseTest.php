@@ -37,7 +37,7 @@ class JLayoutBaseTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the escape method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -52,7 +52,7 @@ class JLayoutBaseTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the render method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

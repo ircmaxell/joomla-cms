@@ -29,7 +29,7 @@ class PlgButtonArticle extends JPlugin
 	/**
 	 * Display the button
 	 *
-	 * @return array A four element array of (article_id, article_title, category_id, object)
+     * @return  array  A four element array of (article_id, article_title, category_id, object)
 	 */
 	public function onDisplay($name)
 	{

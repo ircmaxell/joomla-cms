@@ -97,12 +97,12 @@ class JStreamString
 	/**
 	 * Method to open a file or URL.
 	 *
-	 * @param   string   $path          The stream path.
-	 * @param   string   $mode          Not used.
-	 * @param   integer  $options       Not used.
-	 * @param   string   &$opened_path  Not used.
+     * @param  string   $path          The stream path.
+     * @param  string   $mode          Not used.
+     * @param  integer  $options       Not used.
+     * @param  string   &$opened_path  Not used.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   11.1
 	 */
@@ -127,7 +127,7 @@ class JStreamString
 	/**
 	 * Method to retrieve information from a file resource
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @see     http://www.php.net/manual/en/streamwrapper.stream-stat.php
 	 * @since   11.1
@@ -140,10 +140,10 @@ class JStreamString
 	/**
 	 * Method to retrieve information about a file.
 	 *
-	 * @param   string   $path   File path or URL to stat
-	 * @param   integer  $flags  Additional flags set by the streams API
+     * @param  string   $path   File path or URL to stat
+     * @param  integer  $flags  Additional flags set by the streams API
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @see     http://php.net/manual/en/streamwrapper.url-stat.php
 	 * @since   11.1
@@ -175,9 +175,9 @@ class JStreamString
 	 * and moving to the end of the string defined by the current position plus the
 	 * given number.
 	 *
-	 * @param   integer  $count  Bytes of data from the current position should be returned.
+     * @param  integer  $count  Bytes of data from the current position should be returned.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 *
@@ -194,9 +194,9 @@ class JStreamString
 	/**
 	 * Stream write, always returning false.
 	 *
-	 * @param   string  $data  The data to write.
+     * @param  string  $data  The data to write.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   11.1
 	 * @note    Updating the string is not supported.
@@ -210,7 +210,7 @@ class JStreamString
 	/**
 	 * Method to get the current position
 	 *
-	 * @return  integer  The position
+     * @return  integer  The position
 	 *
 	 * @since   11.1
 	 */
@@ -222,7 +222,7 @@ class JStreamString
 	/**
 	 * End of field check
 	 *
-	 * @return  boolean  True if at end of field.
+     * @return  boolean  True if at end of field.
 	 *
 	 * @since   11.1
 	 */
@@ -239,10 +239,10 @@ class JStreamString
 	/**
 	 * Stream offset
 	 *
-	 * @param   integer  $offset  The starting offset.
-	 * @param   integer  $whence  SEEK_SET, SEEK_CUR, SEEK_END
+     * @param  integer  $offset  The starting offset.
+     * @param  integer  $whence  SEEK_SET, SEEK_CUR, SEEK_END
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   11.1
 	 */
@@ -283,7 +283,7 @@ class JStreamString
 	/**
 	 * Stream flush, always returns true.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   11.1
 	 * @note    Data storage is not supported

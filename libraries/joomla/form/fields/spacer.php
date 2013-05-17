@@ -31,7 +31,7 @@ class JFormFieldSpacer extends JFormField
 	 * Method to get the field input markup for a spacer.
 	 * The spacer does not have accept input.
 	 *
-	 * @return  string  The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   11.1
 	 */
@@ -45,7 +45,7 @@ class JFormFieldSpacer extends JFormField
 	 * Use the label text or name from the XML element as the spacer or
 	 * Use a hr="true" to automatically generate plain hr markup
 	 *
-	 * @return  string  The field label markup.
+     * @return  string  The field label markup.
 	 *
 	 * @since   11.1
 	 */
@@ -100,7 +100,7 @@ class JFormFieldSpacer extends JFormField
 	/**
 	 * Method to get the field title.
 	 *
-	 * @return  string  The field title.
+     * @return  string  The field title.
 	 *
 	 * @since   11.1
 	 */

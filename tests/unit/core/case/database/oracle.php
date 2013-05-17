@@ -37,7 +37,7 @@ abstract class TestCaseDatabaseOracle extends TestCaseDatabase
 	 *
 	 * An example DSN would be: dbname=//localhost:1521/joomla_ut;charset=AL32UTF8;user=utuser;pass=ut1234
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -121,7 +121,7 @@ abstract class TestCaseDatabaseOracle extends TestCaseDatabase
 	/**
 	 * This method is called after the last test of this test class is run.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -134,7 +134,7 @@ abstract class TestCaseDatabaseOracle extends TestCaseDatabase
 	/**
 	 * Returns the default database connection for running the tests.
 	 *
-	 * @return  PHPUnit_Extensions_Database_DB_DefaultDatabaseConnection
+     * @return  PHPUnit_Extensions_Database_DB_DefaultDatabaseConnection
 	 *
 	 * @since   12.1
 	 */

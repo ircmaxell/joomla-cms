@@ -21,10 +21,10 @@ class JRegistryFormatJSON extends JRegistryFormat
 	/**
 	 * Converts an object into a JSON formatted string.
 	 *
-	 * @param   object  $object   Data source object.
-	 * @param   array   $options  Options used by the formatter.
+     * @param  object  $object   Data source object.
+     * @param  array   $options  Options used by the formatter.
 	 *
-	 * @return  string  JSON formatted string.
+     * @return  string  JSON formatted string.
 	 *
 	 * @since   11.1
 	 */
@@ -38,10 +38,10 @@ class JRegistryFormatJSON extends JRegistryFormat
 	 *
 	 * If the string is not in JSON format, this method will attempt to parse it as INI format.
 	 *
-	 * @param   string  $data     JSON formatted string to convert.
-	 * @param   array   $options  Options used by the formatter.
+     * @param  string  $data     JSON formatted string to convert.
+     * @param  array   $options  Options used by the formatter.
 	 *
-	 * @return  object   Data object.
+     * @return  object  Data object.
 	 *
 	 * @since   11.1
 	 */

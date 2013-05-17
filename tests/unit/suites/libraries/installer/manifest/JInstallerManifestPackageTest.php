@@ -28,7 +28,7 @@ class JInstallerManifestPackageTest extends TestCase
 	 * @covers  JInstallerManifest::loadManifestFromXML
 	 * @covers  JInstallerManifestPackage::loadManifestFromData
 	 *
-	 * @return void
+     * @return  void
 	 */
 	public function testLoadManifestFromData()
 	{

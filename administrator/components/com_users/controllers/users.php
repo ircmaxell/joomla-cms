@@ -27,9 +27,9 @@ class UsersControllerUsers extends JControllerAdmin
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $config  An optional associative array of configuration settings.
+     * @param  array  $config  An optional associative array of configuration settings.
 	 *
-	 * @return  UsersControllerUsers
+     * @return  UsersControllerUsers
 	 *
 	 * @since   1.6
 	 * @see     JController
@@ -45,11 +45,11 @@ class UsersControllerUsers extends JControllerAdmin
 	/**
 	 * Proxy for getModel.
 	 *
-	 * @param   string  $name    The model name. Optional.
-	 * @param   string  $prefix  The class prefix. Optional.
-	 * @param   array   $config  Configuration array for model. Optional.
+     * @param  string  $name    The model name. Optional.
+     * @param  string  $prefix  The class prefix. Optional.
+     * @param  array   $config  Configuration array for model. Optional.
 	 *
-	 * @return  object  The model.
+     * @return  object  The model.
 	 *
 	 * @since   1.6
 	 */
@@ -61,7 +61,7 @@ class UsersControllerUsers extends JControllerAdmin
 	/**
 	 * Method to change the block status on a record.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -108,7 +108,7 @@ class UsersControllerUsers extends JControllerAdmin
 	/**
 	 * Method to activate a record.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */

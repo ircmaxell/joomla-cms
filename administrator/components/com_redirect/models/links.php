@@ -48,10 +48,10 @@ class RedirectModelLinks extends JModelList
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @param   string  $ordering   An optional ordering field.
-	 * @param   string  $direction  An optional direction (asc|desc).
+     * @param  string  $ordering   An optional ordering field.
+     * @param  string  $direction  An optional direction (asc|desc).
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -83,7 +83,7 @@ class RedirectModelLinks extends JModelList
 	 *
 	 * @param   string    A prefix for the store id.
 	 *
-	 * @return  string    A store id.
+     * @return  string  A store id.
 	 * @since   1.6
 	 */
 	protected function getStoreId($id = '')
@@ -98,7 +98,7 @@ class RedirectModelLinks extends JModelList
 	/**
 	 * Build an SQL query to load the list data.
 	 *
-	 * @return  JDatabaseQuery
+     * @return  JDatabaseQuery
 	 * @since   1.6
 	 */
 	protected function getListQuery()

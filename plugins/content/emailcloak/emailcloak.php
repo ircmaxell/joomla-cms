@@ -21,12 +21,12 @@ class PlgContentEmailcloak extends JPlugin
 	/**
 	 * Plugin that cloaks all emails in content from spambots via Javascript.
 	 *
-	 * @param   string   $context  The context of the content being passed to the plugin.
-	 * @param   mixed    &$row     An object with a "text" property or the string to be cloaked.
-	 * @param   array    &$params  Additional parameters. See {@see PlgContentEmailcloak()}.
-	 * @param   integer  $page     Optional page number. Unused. Defaults to zero.
+     * @param  string   $context  The context of the content being passed to the plugin.
+     * @param  mixed    &$row     An object with a "text" property or the string to be cloaked.
+     * @param  array    &$params  Additional parameters. See {@see PlgContentEmailcloak()}.
+     * @param  integer  $page     Optional page number. Unused. Defaults to zero.
 	 *
-	 * @return  boolean	True on success.
+     * @return  boolean  True on success.
 	 */
 	public function onContentPrepare($context, &$row, &$params, $page = 0)
 	{
@@ -49,7 +49,7 @@ class PlgContentEmailcloak extends JPlugin
 	 *
 	 * @param   string	The target of an email link.
 	 * @param   string	The text enclosed by the link.
-	 * @return  string	A regular expression that matches a link containing the parameters.
+     * @return  string  A regular expression that matches a link containing the parameters.
 	 */
 	protected function _getPattern ($link, $text)
 	{
@@ -64,7 +64,7 @@ class PlgContentEmailcloak extends JPlugin
 	 * @param  string Js cloaked email.
 	 * @param  string Attributes before email.
 	 * @param  string Attributes after email.
-	 * @return string Js cloaked email with attributes.
+     * @return  string  Js cloaked email with attributes.
 	 */
 	protected function _addAttributesToEmail($jsEmail, $before, $after)
 	{
@@ -87,7 +87,7 @@ class PlgContentEmailcloak extends JPlugin
 	 * @param   string  The string to be cloaked.
 	 * @param   array   Additional parameters. Parameter "mode" (integer, default 1)
 	 *                  replaces addresses with "mailto:" links if nonzero.
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 */
 	protected function _cloak(&$text, &$params)
 	{

@@ -59,11 +59,11 @@ abstract class JOAuth1Client
 	/**
 	 * Constructor.
 	 *
-	 * @param   JRegistry        $options      OAuth1Client options object.
-	 * @param   JHttp            $client       The HTTP client object.
-	 * @param   JInput           $input        The input object
-	 * @param   JApplicationWeb  $application  The application object
-	 * @param   string           $version      Specify the OAuth version. By default we are using 1.0a.
+     * @param  JRegistry        $options      OAuth1Client options object.
+     * @param  JHttp            $client       The HTTP client object.
+     * @param  JInput           $input        The input object
+     * @param  JApplicationWeb  $application  The application object
+     * @param  string           $version      Specify the OAuth version. By default we are using 1.0a.
 	 *
 	 * @since 13.1
 	 */
@@ -80,11 +80,11 @@ abstract class JOAuth1Client
 	/**
 	 * Method to for the oauth flow.
 	 *
-	 * @return void
+     * @return  void
 	 *
 	 * @since  13.1
 	 *
-	 * @throws DomainException
+     * @throws  DomainException
 	 */
 	public function authenticate()
 	{
@@ -153,10 +153,10 @@ abstract class JOAuth1Client
 	/**
 	 * Method used to get a request token.
 	 *
-	 * @return void
+     * @return  void
 	 *
 	 * @since  13.1
-	 * @throws  DomainException
+     * @throws  DomainException
 	 */
 	private function _generateRequestToken()
 	{
@@ -194,7 +194,7 @@ abstract class JOAuth1Client
 	/**
 	 * Method used to authorise the application.
 	 *
-	 * @return void
+     * @return  void
 	 *
 	 * @since  13.1
 	 */
@@ -217,7 +217,7 @@ abstract class JOAuth1Client
 	/**
 	 * Method used to get an access token.
 	 *
-	 * @return void
+     * @return  void
 	 *
 	 * @since  13.1
 	 */
@@ -245,16 +245,16 @@ abstract class JOAuth1Client
 	/**
 	 * Method used to make an OAuth request.
 	 *
-	 * @param   string  $url         The request URL.
-	 * @param   string  $method      The request method.
-	 * @param   array   $parameters  Array containing request parameters.
-	 * @param   mixed   $data        The POST request data.
-	 * @param   array   $headers     An array of name-value pairs to include in the header of the request
+     * @param  string  $url         The request URL.
+     * @param  string  $method      The request method.
+     * @param  array   $parameters  Array containing request parameters.
+     * @param  mixed   $data        The POST request data.
+     * @param  array   $headers     An array of name-value pairs to include in the header of the request
 	 *
-	 * @return  object  The JHttpResponse object.
+     * @return  object  The JHttpResponse object.
 	 *
 	 * @since 13.1
-	 * @throws  DomainException
+     * @throws  DomainException
 	 */
 	public function oauthRequest($url, $method, $parameters, $data = array(), $headers = array())
 	{
@@ -319,22 +319,22 @@ abstract class JOAuth1Client
 	/**
 	 * Method to validate a response.
 	 *
-	 * @param   string         $url       The request URL.
-	 * @param   JHttpResponse  $response  The response to validate.
+     * @param  string         $url       The request URL.
+     * @param  JHttpResponse  $response  The response to validate.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since  13.1
-	 * @throws DomainException
+     * @throws  DomainException
 	 */
 	abstract public function validateResponse($url, $response);
 
 	/**
 	 * Method used to create the header for the POST request.
 	 *
-	 * @param   array  $parameters  Array containing request parameters.
+     * @param  array  $parameters  Array containing request parameters.
 	 *
-	 * @return  string  The header.
+     * @return  string  The header.
 	 *
 	 * @since 13.1
 	 */
@@ -360,10 +360,10 @@ abstract class JOAuth1Client
 	/**
 	 * Method to create the URL formed string with the parameters.
 	 *
-	 * @param   string  $url         The request URL.
-	 * @param   array   $parameters  Array containing request parameters.
+     * @param  string  $url         The request URL.
+     * @param  array   $parameters  Array containing request parameters.
 	 *
-	 * @return  string  The formed URL.
+     * @return  string  The formed URL.
 	 *
 	 * @since  13.1
 	 */
@@ -409,11 +409,11 @@ abstract class JOAuth1Client
 	/**
 	 * Method used to sign requests.
 	 *
-	 * @param   string  $url         The URL to sign.
-	 * @param   string  $method      The request method.
-	 * @param   array   $parameters  Array containing request parameters.
+     * @param  string  $url         The URL to sign.
+     * @param  string  $method      The request method.
+     * @param  array   $parameters  Array containing request parameters.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   13.1
 	 */
@@ -434,11 +434,11 @@ abstract class JOAuth1Client
 	/**
 	 * Prepare the signature base string.
 	 *
-	 * @param   string  $url         The URL to sign.
-	 * @param   string  $method      The request method.
-	 * @param   array   $parameters  Array containing request parameters.
+     * @param  string  $url         The URL to sign.
+     * @param  string  $method      The request method.
+     * @param  array   $parameters  Array containing request parameters.
 	 *
-	 * @return string  The base string.
+     * @return  string  The base string.
 	 *
 	 * @since 13.1
 	 */
@@ -484,9 +484,9 @@ abstract class JOAuth1Client
 	 * Encodes the string or array passed in a way compatible with OAuth.
 	 * If an array is passed each array value will will be encoded.
 	 *
-	 * @param   mixed  $data  The scalar or array to encode.
+     * @param  mixed  $data  The scalar or array to encode.
 	 *
-	 * @return  string  $data encoded in a way compatible with OAuth.
+     * @return  string  $data encoded in a way compatible with OAuth.
 	 *
 	 * @since 13.1
 	 */
@@ -513,7 +513,7 @@ abstract class JOAuth1Client
 	/**
 	 * Method used to generate the current nonce.
 	 *
-	 * @return  string  The current nonce.
+     * @return  string  The current nonce.
 	 *
 	 * @since 13.1
 	 */
@@ -529,7 +529,7 @@ abstract class JOAuth1Client
 	/**
 	 * Prepares the OAuth signing key.
 	 *
-	 * @return string  The prepared signing key.
+     * @return  string  The prepared signing key.
 	 *
 	 * @since 13.1
 	 */
@@ -542,7 +542,7 @@ abstract class JOAuth1Client
 	 * Returns an HTTP 200 OK response code and a representation of the requesting user if authentication was successful;
 	 * returns a 401 status code and an error message if not.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -551,9 +551,9 @@ abstract class JOAuth1Client
 	/**
 	 * Get an option from the JOauth1aClient instance.
 	 *
-	 * @param   string  $key  The name of the option to get
+     * @param  string  $key  The name of the option to get
 	 *
-	 * @return  mixed  The option value
+     * @return  mixed  The option value
 	 *
 	 * @since   13.1
 	 */
@@ -565,10 +565,10 @@ abstract class JOAuth1Client
 	/**
 	 * Set an option for the JOauth1aClient instance.
 	 *
-	 * @param   string  $key    The name of the option to set
-	 * @param   mixed   $value  The option value to set
+     * @param  string  $key    The name of the option to set
+     * @param  mixed   $value  The option value to set
 	 *
-	 * @return  JOAuth1Client  This object for method chaining
+     * @return  JOAuth1Client  This object for method chaining
 	 *
 	 * @since   13.1
 	 */
@@ -582,7 +582,7 @@ abstract class JOAuth1Client
 	/**
 	 * Get the oauth token key or secret.
 	 *
-	 * @return  array  The oauth token key and secret.
+     * @return  array  The oauth token key and secret.
 	 *
 	 * @since   13.1
 	 */
@@ -594,9 +594,9 @@ abstract class JOAuth1Client
 	/**
 	 * Set the oauth token.
 	 *
-	 * @param   array  $token  The access token key and secret.
+     * @param  array  $token  The access token key and secret.
 	 *
-	 * @return  JOAuth1Client  This object for method chaining.
+     * @return  JOAuth1Client  This object for method chaining.
 	 *
 	 * @since   13.1
 	 */

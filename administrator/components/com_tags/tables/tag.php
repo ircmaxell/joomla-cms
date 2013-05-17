@@ -31,11 +31,11 @@ class TagsTableTag extends JTableNested
 	/**
 	 * Overloaded bind function
 	 *
-	 * @param   array  $array   Named array
-	 * @param   mixed  $ignore  An optional array or space separated list of properties
+     * @param  array  $array   Named array
+     * @param  mixed  $ignore  An optional array or space separated list of properties
 	 * to ignore while binding.
 	 *
-	 * @return  mixed  Null if operation was satisfactory, otherwise returns an error string
+     * @return  mixed  Null if operation was satisfactory, otherwise returns an error string
 	 *
 	 * @see     JTable::bind
 	 * @since   3.1
@@ -76,10 +76,10 @@ class TagsTableTag extends JTableNested
 	/**
 	 * Overloaded check method to ensure data integrity.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
-	 * @throws  UnexpectedValueException
+     * @throws  UnexpectedValueException
 	 */
 	public function check()
 	{
@@ -132,7 +132,8 @@ class TagsTableTag extends JTableNested
 		}
 
 		// Clean up description -- eliminate quotes and <> brackets
-		if (!empty($this->metadesc)) {
+		if (!empty($this->metadesc))
+		{
 			// Only process if not empty
 			$bad_characters = array("\"", "<", ">");
 			$this->metadesc = JString::str_ireplace($bad_characters, "", $this->metadesc);
@@ -144,9 +145,9 @@ class TagsTableTag extends JTableNested
 	/**
 	 * Overriden JTable::store to set modified data and user id.
 	 *
-	 * @param   boolean  $updateNulls  True to update fields even if they are null.
+     * @param  boolean  $updateNulls  True to update fields even if they are null.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
 	 */
@@ -154,7 +155,8 @@ class TagsTableTag extends JTableNested
 	{
 		$date	= JFactory::getDate();
 		$user	= JFactory::getUser();
-		if ($this->id) {
+		if ($this->id)
+		{
 			// Existing item
 			$this->modified_time		= $date->toSql();
 			$this->modified_user_id	= $user->get('id');
@@ -163,10 +165,12 @@ class TagsTableTag extends JTableNested
 		{
 			// New tag. A tag created and created_by field can be set by the user,
 			// so we don't touch either of these if they are set.
-			if (!(int) $this->created_time) {
+			if (!(int) $this->created_time)
+			{
 				$this->created_time = $date->toSql();
 			}
-			if (empty($this->created_user_id)) {
+			if (empty($this->created_user_id))
+			{
 				$this->created_user_id = $user->get('id');
 			}
 		}
@@ -184,10 +188,10 @@ class TagsTableTag extends JTableNested
 	/**
 	 * Method to delete a node and, optionally, its child nodes from the table.
 	 *
-	 * @param   integer  $pk        The primary key of the node to delete.
-	 * @param   boolean  $children  True to delete child nodes, false to move them up a level.
+     * @param  integer  $pk        The primary key of the node to delete.
+     * @param  boolean  $children  True to delete child nodes, false to move them up a level.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
 	 * @see     http://docs.joomla.org/JTableNested/delete

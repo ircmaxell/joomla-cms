@@ -25,10 +25,10 @@ class TestMockSession
 	/**
 	 * Gets an option.
 	 *
-	 * @param   string  $name     The name of the option.
-	 * @param   string  $default  The default value to use if the option is not found.
+     * @param  string  $name     The name of the option.
+     * @param  string  $default  The default value to use if the option is not found.
 	 *
-	 * @return  mixed  The value of the option, or the default if not found.
+     * @return  mixed  The value of the option, or the default if not found.
 	 *
 	 * @since   11.3
 	 */
@@ -40,14 +40,14 @@ class TestMockSession
 	/**
 	 * Creates an instance of the mock JSession object.
 	 *
-	 * @param   object  $test     A test object.
-	 * @param   array   $options  An array of optional configuration values.
+     * @param  object  $test     A test object.
+     * @param  array   $options  An array of optional configuration values.
 	 *                            getId : the value to be returned by the mock getId method
 	 *                            get.user.id : the value to assign to the user object id returned by get('user')
 	 *                            get.user.name : the value to assign to the user object name returned by get('user')
 	 *                            get.user.username : the value to assign to the user object username returned by get('user')
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -113,9 +113,9 @@ class TestMockSession
 	/**
 	 * Mocking the get method.
 	 *
-	 * @param   string  $key  The key to get.
+     * @param  string  $key  The key to get.
 	 *
-	 * @return  mixed
+     * @return  mixed
 	 *
 	 * @since   11.3
 	 */

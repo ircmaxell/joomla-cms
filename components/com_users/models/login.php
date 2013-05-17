@@ -24,9 +24,9 @@ class UsersModelLogin extends JModelForm
 	 * The base form is loaded from XML and then an event is fired
 	 * for users plugins to extend the form with extra fields.
 	 *
-	 * @param   array  $data		An optional array of data for the form to interogate.
-	 * @param   boolean	$loadData	True if the form is to load its own data (default case), false if not.
-	 * @return  JForm	A JForm object on success, false on failure
+     * @param   array    $data      An optional array of data for the form to interogate.
+     * @param   boolean  $loadData  True if the form is to load its own data (default case), false if not.
+     * @return  JForm    A JForm object on success, false on failure
 	 * @since   1.6
 	 */
 	public function getForm($data = array(), $loadData = true)
@@ -44,7 +44,7 @@ class UsersModelLogin extends JModelForm
 	/**
 	 * Method to get the data that should be injected in the form.
 	 *
-	 * @return  array  The default data is an empty array.
+     * @return  array  The default data is an empty array.
 	 * @since   1.6
 	 */
 	protected function loadFormData()
@@ -94,14 +94,14 @@ class UsersModelLogin extends JModelForm
 	/**
 	 * Override JModelAdmin::preprocessForm to ensure the correct plugin group is loaded.
 	 *
-	 * @param   JForm   $form   A JForm object.
-	 * @param   mixed   $data   The data expected for the form.
-	 * @param   string  $group  The name of the plugin group to import (defaults to "content").
+     * @param  JForm   $form   A JForm object.
+     * @param  mixed   $data   The data expected for the form.
+     * @param  string  $group  The name of the plugin group to import (defaults to "content").
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
-	 * @throws  Exception if there is an error in the form event.
+     * @throws  Exception  if there is an error in the form event.
 	 */
 	protected function preprocessForm(JForm $form, $data, $group = 'user')
 	{

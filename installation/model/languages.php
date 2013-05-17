@@ -66,7 +66,7 @@ class InstallationModelLanguages extends JModelBase
 	/**
 	 * Generate a list of language choices to install in the Joomla CMS
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   3.1
 	 */
@@ -102,9 +102,9 @@ class InstallationModelLanguages extends JModelBase
 	/**
 	 * Method that installs in Joomla! the selected languages in the Languages View of the installer
 	 *
-	 * @param   array  $lids  list of the update_id value of the languages to install
+     * @param  array  $lids  list of the update_id value of the languages to install
 	 *
-	 * @return  boolean True if successful
+     * @return  boolean  True if successful
 	 */
 	public function install($lids)
 	{
@@ -175,9 +175,9 @@ class InstallationModelLanguages extends JModelBase
 	/**
 	 * Gets the manifest file of a selected language from a the language list in a update server.
 	 *
-	 * @param   integer  $uid  The id of the language in the #__updates table
+     * @param  integer  $uid  The id of the language in the #__updates table
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   3.1
 	 */
@@ -193,9 +193,9 @@ class InstallationModelLanguages extends JModelBase
 	/**
 	 * Finds the url of the package to download.
 	 *
-	 * @param   string  $remote_manifest  url to the manifest XML file of the remote package
+     * @param  string  $remote_manifest  url to the manifest XML file of the remote package
 	 *
-	 * @return  string|bool
+     * @return  string|bool
 	 *
 	 * @since   3.1
 	 */
@@ -211,9 +211,9 @@ class InstallationModelLanguages extends JModelBase
 	/**
 	 * Download a language package from a URL and unpack it in the tmp folder.
 	 *
-	 * @param   string  $url  url of the package
+     * @param  string  $url  url of the package
 	 *
-	 * @return  array|bool Package details or false on failure
+     * @return  array|bool  Package details or false on failure
 	 *
 	 * @since   3.1
 	 */
@@ -241,7 +241,7 @@ class InstallationModelLanguages extends JModelBase
 	/**
 	 * Method to get Languages item data for the Administrator
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   3.1
 	 */
@@ -253,7 +253,7 @@ class InstallationModelLanguages extends JModelBase
 	/**
 	 * Method to get Languages item data for the Frontend
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   3.1
 	 */
@@ -265,9 +265,9 @@ class InstallationModelLanguages extends JModelBase
 	/**
 	 * Method to get Languages item data
 	 *
-	 * @param   string  $cms_client  name of the cms client
+     * @param  string  $cms_client  name of the cms client
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   3.1
 	 */
@@ -322,9 +322,9 @@ class InstallationModelLanguages extends JModelBase
 	/**
 	 * Method to get installed languages data.
 	 *
-	 * @param   integer  $client_id  The client ID to retrieve data for
+     * @param  integer  $client_id  The client ID to retrieve data for
 	 *
-	 * @return  object  The language data
+     * @return  object  The language data
 	 *
 	 * @since   3.1
 	 */
@@ -353,10 +353,10 @@ class InstallationModelLanguages extends JModelBase
 	/**
 	 * Method to compare two languages in order to sort them
 	 *
-	 * @param   object  $lang1  the first language
-	 * @param   object  $lang2  the second language
+     * @param  object  $lang1  the first language
+     * @param  object  $lang2  the second language
 	 *
-	 * @return  integer
+     * @return  integer
 	 *
 	 * @since   3.1
 	 */
@@ -368,7 +368,7 @@ class InstallationModelLanguages extends JModelBase
 	/**
 	 * Method to get the path
 	 *
-	 * @return  string  The path to the languages folders
+     * @return  string  The path to the languages folders
 	 *
 	 * @since   3.1
 	 */
@@ -386,9 +386,9 @@ class InstallationModelLanguages extends JModelBase
 	/**
 	 * Method to get the client object of Administrator or FrontEnd
 	 *
-	 * @param   string  $client  name of the client object
+     * @param  string  $client  name of the client object
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   3.1
 	 */
@@ -402,10 +402,10 @@ class InstallationModelLanguages extends JModelBase
 	/**
 	 * Method to set the default language.
 	 *
-	 * @param   string  $language    The language to be set as default
-	 * @param   string  $cms_client  The name of the CMS client
+     * @param  string  $language    The language to be set as default
+     * @param  string  $cms_client  The name of the CMS client
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   3.1
 	 */
@@ -452,7 +452,7 @@ class InstallationModelLanguages extends JModelBase
 	/**
 	 * Get the current setup options from the session.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   3.1
 	 */

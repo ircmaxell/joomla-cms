@@ -63,7 +63,7 @@ class JCacheStorage
 	/**
 	 * Constructor
 	 *
-	 * @param   array  $options  Optional parameters
+     * @param  array  $options  Optional parameters
 	 *
 	 * @since   11.1
 	 */
@@ -95,14 +95,14 @@ class JCacheStorage
 	 * Returns a cache storage handler object, only creating it
 	 * if it doesn't already exist.
 	 *
-	 * @param   string  $handler  The cache storage handler to instantiate
-	 * @param   array   $options  Array of handler options
+     * @param  string  $handler  The cache storage handler to instantiate
+     * @param  array   $options  Array of handler options
 	 *
-	 * @return  JCacheStorage  A JCacheStorage instance
+     * @return  JCacheStorage  A JCacheStorage instance
 	 *
 	 * @since   11.1
-	 * @throws  UnexpectedValueException
-	 * @throws  RuntimeException
+     * @throws  UnexpectedValueException
+     * @throws  RuntimeException
 	 */
 	public static function getInstance($handler = null, $options = array())
 	{
@@ -151,11 +151,11 @@ class JCacheStorage
 	/**
 	 * Get cached data by id and group
 	 *
-	 * @param   string   $id         The cache data id
-	 * @param   string   $group      The cache data group
-	 * @param   boolean  $checkTime  True to verify cache time expiration threshold
+     * @param  string   $id         The cache data id
+     * @param  string   $group      The cache data group
+     * @param  boolean  $checkTime  True to verify cache time expiration threshold
 	 *
-	 * @return  mixed  Boolean  false on failure or a cached data object
+     * @return  mixed  Boolean  false on failure or a cached data object
 	 *
 	 * @since   11.1
 	 */
@@ -167,7 +167,7 @@ class JCacheStorage
 	/**
 	 * Get all cached data
 	 *
-	 * @return  mixed    Boolean false on failure or a cached data object
+     * @return  mixed  Boolean false on failure or a cached data object
 	 *
 	 * @since   11.1
 	 * @todo    Review this method. The docblock doesn't fit what it actually does.
@@ -184,11 +184,11 @@ class JCacheStorage
 	/**
 	 * Store the data to cache by id and group
 	 *
-	 * @param   string  $id     The cache data id
-	 * @param   string  $group  The cache data group
-	 * @param   string  $data   The data to store in cache
+     * @param  string  $id     The cache data id
+     * @param  string  $group  The cache data group
+     * @param  string  $data   The data to store in cache
 	 *
-	 * @return  boolean  True on success, false otherwise
+     * @return  boolean  True on success, false otherwise
 	 *
 	 * @since   11.1
 	 */
@@ -200,10 +200,10 @@ class JCacheStorage
 	/**
 	 * Remove a cached data entry by id and group
 	 *
-	 * @param   string  $id     The cache data id
-	 * @param   string  $group  The cache data group
+     * @param  string  $id     The cache data id
+     * @param  string  $group  The cache data group
 	 *
-	 * @return  boolean  True on success, false otherwise
+     * @return  boolean  True on success, false otherwise
 	 *
 	 * @since   11.1
 	 */
@@ -215,12 +215,12 @@ class JCacheStorage
 	/**
 	 * Clean cache for a group given a mode.
 	 *
-	 * @param   string  $group  The cache data group
-	 * @param   string  $mode   The mode for cleaning cache [group|notgroup]
+     * @param  string  $group  The cache data group
+     * @param  string  $mode   The mode for cleaning cache [group|notgroup]
 	 *                          group mode     : cleans all cache in the group
 	 *                          notgroup mode  : cleans all cache not in the group
 	 *
-	 * @return  boolean  True on success, false otherwise
+     * @return  boolean  True on success, false otherwise
 	 *
 	 * @since   11.1
 	 */
@@ -232,7 +232,7 @@ class JCacheStorage
 	/**
 	 * Garbage collect expired cache data
 	 *
-	 * @return boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   11.1
 	 */
@@ -244,7 +244,7 @@ class JCacheStorage
 	/**
 	 * Test to see if the storage handler is available.
 	 *
-	 * @return   boolean  True on success, false otherwise
+     * @return  boolean  True on success, false otherwise
 	 *
 	 * @since    12.1.
 	 */
@@ -256,7 +256,7 @@ class JCacheStorage
 	/**
 	 * Test to see if the storage handler is available.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   11.1
 	 * @deprecated  12.3
@@ -271,11 +271,11 @@ class JCacheStorage
 	/**
 	 * Lock cached item
 	 *
-	 * @param   string   $id        The cache data id
-	 * @param   string   $group     The cache data group
-	 * @param   integer  $locktime  Cached item max lock time
+     * @param  string   $id        The cache data id
+     * @param  string   $group     The cache data group
+     * @param  integer  $locktime  Cached item max lock time
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   11.1
 	 */
@@ -287,10 +287,10 @@ class JCacheStorage
 	/**
 	 * Unlock cached item
 	 *
-	 * @param   string  $id     The cache data id
-	 * @param   string  $group  The cache data group
+     * @param  string  $id     The cache data id
+     * @param  string  $group  The cache data group
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   11.1
 	 */
@@ -302,10 +302,10 @@ class JCacheStorage
 	/**
 	 * Get a cache_id string from an id/group pair
 	 *
-	 * @param   string  $id     The cache data id
-	 * @param   string  $group  The cache data group
+     * @param  string  $id     The cache data id
+     * @param  string  $group  The cache data group
 	 *
-	 * @return  string   The cache_id string
+     * @return  string  The cache_id string
 	 *
 	 * @since   11.1
 	 */
@@ -320,9 +320,9 @@ class JCacheStorage
 	 * Add a directory where JCacheStorage should search for handlers. You may
 	 * either pass a string or an array of directories.
 	 *
-	 * @param   string  $path  A path to search.
+     * @param  string  $path  A path to search.
 	 *
-	 * @return  array  An array with directory elements
+     * @return  array  An array with directory elements
 	 *
 	 * @since   11.1
 	 */

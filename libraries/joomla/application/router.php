@@ -90,7 +90,7 @@ class JRouter
 	/**
 	 * Class constructor
 	 *
-	 * @param   array  $options  Array of options
+     * @param  array  $options  Array of options
 	 *
 	 * @since 11.1
 	 */
@@ -110,13 +110,13 @@ class JRouter
 	 * Returns the global JRouter object, only creating it if it
 	 * doesn't already exist.
 	 *
-	 * @param   string  $client   The name of the client
-	 * @param   array   $options  An associative array of options
+     * @param  string  $client   The name of the client
+     * @param  array   $options  An associative array of options
 	 *
-	 * @return  JRouter A JRouter object.
+     * @return  JRouter  A JRouter object.
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public static function getInstance($client, $options = array())
 	{
@@ -158,9 +158,9 @@ class JRouter
 	/**
 	 * Function to convert a route to an internal URI
 	 *
-	 * @param   JURI  $uri  The uri.
+     * @param  JURI  $uri  The uri.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.1
 	 */
@@ -189,9 +189,9 @@ class JRouter
 	/**
 	 * Function to convert an internal URI to a route
 	 *
-	 * @param   string  $url  The internal URL
+     * @param  string  $url  The internal URL
 	 *
-	 * @return  string  The absolute search engine friendly URL
+     * @return  string  The absolute search engine friendly URL
 	 *
 	 * @since   11.1
 	 */
@@ -221,7 +221,7 @@ class JRouter
 	/**
 	 * Get the router mode
 	 *
-	 * @return  integer
+     * @return  integer
 	 *
 	 * @since   11.1
 	 */
@@ -233,9 +233,9 @@ class JRouter
 	/**
 	 * Set the router mode
 	 *
-	 * @param   integer  $mode  The routing mode.
+     * @param  integer  $mode  The routing mode.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -247,11 +247,11 @@ class JRouter
 	/**
 	 * Set a router variable, creating it if it doesn't exist
 	 *
-	 * @param   string   $key     The name of the variable
-	 * @param   mixed    $value   The value of the variable
-	 * @param   boolean  $create  If True, the variable will be created if it doesn't exist yet
+     * @param  string   $key     The name of the variable
+     * @param  mixed    $value   The value of the variable
+     * @param  boolean  $create  If True, the variable will be created if it doesn't exist yet
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -266,10 +266,10 @@ class JRouter
 	/**
 	 * Set the router variable array
 	 *
-	 * @param   array    $vars   An associative array with variables
-	 * @param   boolean  $merge  If True, the array will be merged instead of overwritten
+     * @param  array    $vars   An associative array with variables
+     * @param  boolean  $merge  If True, the array will be merged instead of overwritten
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -288,9 +288,9 @@ class JRouter
 	/**
 	 * Get a router variable
 	 *
-	 * @param   string  $key  The name of the variable
+     * @param  string  $key  The name of the variable
 	 *
-	 * @return  mixed  Value of the variable
+     * @return  mixed  Value of the variable
 	 *
 	 * @since   11.1
 	 */
@@ -307,7 +307,7 @@ class JRouter
 	/**
 	 * Get the router variable array
 	 *
-	 * @return  array  An associative array of router variables
+     * @return  array  An associative array of router variables
 	 *
 	 * @since   11.1
 	 */
@@ -319,9 +319,9 @@ class JRouter
 	/**
 	 * Attach a build rule
 	 *
-	 * @param   callback  $callback  The function to be called
+     * @param  callback  $callback  The function to be called
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1.
 	 */
@@ -333,9 +333,9 @@ class JRouter
 	/**
 	 * Attach a parse rule
 	 *
-	 * @param   callback  $callback  The function to be called.
+     * @param  callback  $callback  The function to be called.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -347,9 +347,9 @@ class JRouter
 	/**
 	 * Function to convert a raw route to an internal URI
 	 *
-	 * @param   JURI  $uri  The raw route
+     * @param  JURI  $uri  The raw route
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   11.1
 	 */
@@ -361,9 +361,9 @@ class JRouter
 	/**
 	 * Function to convert a sef route to an internal URI
 	 *
-	 * @param   JURI  $uri  The sef URI
+     * @param  JURI  $uri  The sef URI
 	 *
-	 * @return  string  Internal URI
+     * @return  string  Internal URI
 	 *
 	 * @since   11.1
 	 */
@@ -375,9 +375,9 @@ class JRouter
 	/**
 	 * Function to build a raw route
 	 *
-	 * @param   JURI  $uri  The internal URL
+     * @param  JURI  $uri  The internal URL
 	 *
-	 * @return  string  Raw Route
+     * @return  string  Raw Route
 	 *
 	 * @since   11.1
 	 */
@@ -388,9 +388,9 @@ class JRouter
 	/**
 	 * Function to build a sef route
 	 *
-	 * @param   JURI  $uri  The uri
+     * @param  JURI  $uri  The uri
 	 *
-	 * @return  string  The SEF route
+     * @return  string  The SEF route
 	 *
 	 * @since   11.1
 	 */
@@ -401,9 +401,9 @@ class JRouter
 	/**
 	 * Process the parsed router variables based on custom defined rules
 	 *
-	 * @param   JURI  $uri  The URI to parse
+     * @param  JURI  $uri  The URI to parse
 	 *
-	 * @return  array  The array of processed URI variables
+     * @return  array  The array of processed URI variables
 	 *
 	 * @since   11.1
 	 */
@@ -422,9 +422,9 @@ class JRouter
 	/**
 	 * Process the build uri query data based on custom defined rules
 	 *
-	 * @param   JURI  $uri  The URI
+     * @param  JURI  $uri  The URI
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -439,9 +439,9 @@ class JRouter
 	/**
 	 * Create a uri based on a full or partial url string
 	 *
-	 * @param   string  $url  The URI
+     * @param  string  $url  The URI
 	 *
-	 * @return  JURI
+     * @return  JURI
 	 *
 	 * @since   11.1
 	 */
@@ -478,9 +478,9 @@ class JRouter
 	/**
 	 * Encode route segments
 	 *
-	 * @param   array  $segments  An array of route segments
+     * @param  array  $segments  An array of route segments
 	 *
-	 * @return  array  Array of encoded route segments
+     * @return  array  Array of encoded route segments
 	 *
 	 * @since   11.1
 	 */
@@ -498,9 +498,9 @@ class JRouter
 	/**
 	 * Decode route segments
 	 *
-	 * @param   array  $segments  An array of route segments
+     * @param  array  $segments  An array of route segments
 	 *
-	 * @return  array  Array of decoded route segments
+     * @return  array  Array of decoded route segments
 	 *
 	 * @since 11.1
 	 */

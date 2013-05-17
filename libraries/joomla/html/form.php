@@ -23,7 +23,7 @@ abstract class JHtmlForm
 	 *
 	 * Use in conjunction with JSession::checkToken
 	 *
-	 * @return  string  A hidden input field with a token
+     * @return  string  A hidden input field with a token
 	 *
 	 * @see     JSession::checkToken
 	 * @since   11.1

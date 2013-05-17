@@ -27,7 +27,7 @@ class JHtmlFormbehaviorTest extends TestCase
 	 * Sets up the fixture, for example, opens a network connection.
 	 * This method is called before a test is executed.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -48,7 +48,7 @@ class JHtmlFormbehaviorTest extends TestCase
 	 * Tears down the fixture, for example, closes a network connection.
 	 * This method is called after a test is executed.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -64,7 +64,7 @@ class JHtmlFormbehaviorTest extends TestCase
 	/**
 	 * Tests the chosen method.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */

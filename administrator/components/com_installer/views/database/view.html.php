@@ -23,9 +23,9 @@ class InstallerViewDatabase extends InstallerViewDefault
 	/**
 	 * Display the view
 	 *
-	 * @param   string  $tpl  Template
+     * @param  string  $tpl  Template
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -64,7 +64,7 @@ class InstallerViewDatabase extends InstallerViewDefault
 	/**
 	 * Add the page title and toolbar.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */

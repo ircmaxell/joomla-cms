@@ -23,7 +23,7 @@ class TagsHelper
 	 *
 	 * @param   string  The extension.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -66,7 +66,7 @@ class TagsHelper
 	/**
 	 * Gets a list of the actions that can be performed.
 	 *
-	 * @return  JObject
+     * @return  JObject
 	 *
 	 * @since   3.1
 	 */

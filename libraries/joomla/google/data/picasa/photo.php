@@ -27,9 +27,9 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Constructor.
 	 *
-	 * @param   SimpleXMLElement  $xml      XML from Google
-	 * @param   JRegistry         $options  Google options object
-	 * @param   JGoogleAuth       $auth     Google data http client object
+     * @param  SimpleXMLElement  $xml      XML from Google
+     * @param  JRegistry         $options  Google options object
+     * @param  JGoogleAuth       $auth     Google data http client object
 	 *
 	 * @since   12.3
 	 */
@@ -48,12 +48,12 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to delete a Picasa photo
 	 *
-	 * @param   mixed  $match  Check for most up to date photo
+     * @param  mixed  $match  Check for most up to date photo
 	 *
-	 * @return  boolean  Success or failure.
+     * @return  boolean  Success or failure.
 	 *
 	 * @since   12.3
-	 * @throws UnexpectedValueException
+     * @throws  UnexpectedValueException
 	 */
 	public function delete($match = '*')
 	{
@@ -97,9 +97,9 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to get the photo link
 	 *
-	 * @param   string  $type  Type of link to return
+     * @param  string  $type  Type of link to return
 	 *
-	 * @return  string  Link or false on failure
+     * @return  string  Link or false on failure
 	 *
 	 * @since   12.3
 	 */
@@ -120,7 +120,7 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to get the photo's URL
 	 *
-	 * @return  string  Link
+     * @return  string  Link
 	 *
 	 * @since   12.3
 	 */
@@ -132,7 +132,7 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to get the photo's thumbnails
 	 *
-	 * @return  array  An array of thumbnails
+     * @return  array  An array of thumbnails
 	 *
 	 * @since   12.3
 	 */
@@ -153,7 +153,7 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to get the title of the photo
 	 *
-	 * @return  string  Photo title
+     * @return  string  Photo title
 	 *
 	 * @since   12.3
 	 */
@@ -165,7 +165,7 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to get the summary of the photo
 	 *
-	 * @return  string  Photo description
+     * @return  string  Photo description
 	 *
 	 * @since   12.3
 	 */
@@ -177,7 +177,7 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to get the access level of the photo
 	 *
-	 * @return  string  Photo access level
+     * @return  string  Photo access level
 	 *
 	 * @since   12.3
 	 */
@@ -189,7 +189,7 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to get the time of the photo
 	 *
-	 * @return  double  Photo time
+     * @return  double  Photo time
 	 *
 	 * @since   12.3
 	 */
@@ -201,7 +201,7 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to get the size of the photo
 	 *
-	 * @return  int  Photo size
+     * @return  int  Photo size
 	 *
 	 * @since   12.3
 	 */
@@ -213,7 +213,7 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to get the height of the photo
 	 *
-	 * @return  int  Photo height
+     * @return  int  Photo height
 	 *
 	 * @since   12.3
 	 */
@@ -225,7 +225,7 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to get the width of the photo
 	 *
-	 * @return  int  Photo width
+     * @return  int  Photo width
 	 *
 	 * @since   12.3
 	 */
@@ -237,9 +237,9 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to set the title of the photo
 	 *
-	 * @param   string  $title  New photo title
+     * @param  string  $title  New photo title
 	 *
-	 * @return  JGoogleDataPicasaPhoto  The object for method chaining
+     * @return  JGoogleDataPicasaPhoto  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -253,9 +253,9 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to set the summary of the photo
 	 *
-	 * @param   string  $summary  New photo description
+     * @param  string  $summary  New photo description
 	 *
-	 * @return  JGoogleDataPicasaPhoto  The object for method chaining
+     * @return  JGoogleDataPicasaPhoto  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -269,9 +269,9 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to set the access level of the photo
 	 *
-	 * @param   string  $access  New photo access level
+     * @param  string  $access  New photo access level
 	 *
-	 * @return  JGoogleDataPicasaPhoto  The object for method chaining
+     * @return  JGoogleDataPicasaPhoto  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -285,9 +285,9 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to set the time of the photo
 	 *
-	 * @param   int  $time  New photo time
+     * @param  int  $time  New photo time
 	 *
-	 * @return  JGoogleDataPicasaPhoto  The object for method chaining
+     * @return  JGoogleDataPicasaPhoto  The object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -301,9 +301,9 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Method to modify a Picasa Photo
 	 *
-	 * @param   string  $match  Optional eTag matching parameter
+     * @param  string  $match  Optional eTag matching parameter
 	 *
-	 * @return  mixed  Data from Google.
+     * @return  mixed  Data from Google.
 	 *
 	 * @since   12.3
 	 */
@@ -346,7 +346,7 @@ class JGoogleDataPicasaPhoto extends JGoogleData
 	/**
 	 * Refresh photo data
 	 *
-	 * @return  mixed  Data from Google
+     * @return  mixed  Data from Google
 	 *
 	 * @since   12.3
 	 */

@@ -39,8 +39,8 @@ class JGoogleDataPlus extends JGoogleData
 	/**
 	 * Constructor.
 	 *
-	 * @param   JRegistry    $options  Google options object
-	 * @param   JGoogleAuth  $auth     Google data http client object
+     * @param  JRegistry    $options  Google options object
+     * @param  JGoogleAuth  $auth     Google data http client object
 	 *
 	 * @since   1234
 	 */
@@ -60,9 +60,9 @@ class JGoogleDataPlus extends JGoogleData
 	/**
 	 * Magic method to lazily create API objects
 	 *
-	 * @param   string  $name  Name of property to retrieve
+     * @param  string  $name  Name of property to retrieve
 	 *
-	 * @return  JGoogleDataPlus  Google+ API object (people, activities, comments).
+     * @return  JGoogleDataPlus  Google+ API object (people, activities, comments).
 	 *
 	 * @since   12.3
 	 */

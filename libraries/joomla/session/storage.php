@@ -29,7 +29,7 @@ abstract class JSessionStorage
 	/**
 	 * Constructor
 	 *
-	 * @param   array  $options  Optional parameters.
+     * @param  array  $options  Optional parameters.
 	 *
 	 * @since   11.1
 	 */
@@ -41,10 +41,10 @@ abstract class JSessionStorage
 	/**
 	 * Returns a session storage handler object, only creating it if it doesn't already exist.
 	 *
-	 * @param   string  $name     The session store to instantiate
-	 * @param   array   $options  Array of options
+     * @param  string  $name     The session store to instantiate
+     * @param  array   $options  Array of options
 	 *
-	 * @return  JSessionStorage
+     * @return  JSessionStorage
 	 *
 	 * @since   11.1
 	 */
@@ -80,7 +80,7 @@ abstract class JSessionStorage
 	/**
 	 * Register the functions of this class with PHP's session handler
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -96,10 +96,10 @@ abstract class JSessionStorage
 	/**
 	 * Open the SessionHandler backend.
 	 *
-	 * @param   string  $save_path     The path to the session object.
-	 * @param   string  $session_name  The name of the session.
+     * @param  string  $save_path     The path to the session object.
+     * @param  string  $session_name  The name of the session.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   11.1
 	 */
@@ -111,7 +111,7 @@ abstract class JSessionStorage
 	/**
 	 * Close the SessionHandler backend.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   11.1
 	 */
@@ -124,9 +124,9 @@ abstract class JSessionStorage
 	 * Read the data for a particular session identifier from the
 	 * SessionHandler backend.
 	 *
-	 * @param   string  $id  The session identifier.
+     * @param  string  $id  The session identifier.
 	 *
-	 * @return  string  The session data.
+     * @return  string  The session data.
 	 *
 	 * @since   11.1
 	 */
@@ -138,10 +138,10 @@ abstract class JSessionStorage
 	/**
 	 * Write session data to the SessionHandler backend.
 	 *
-	 * @param   string  $id            The session identifier.
-	 * @param   string  $session_data  The session data.
+     * @param  string  $id            The session identifier.
+     * @param  string  $session_data  The session data.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   11.1
 	 */
@@ -154,9 +154,9 @@ abstract class JSessionStorage
 	 * Destroy the data for a particular session identifier in the
 	 * SessionHandler backend.
 	 *
-	 * @param   string  $id  The session identifier.
+     * @param  string  $id  The session identifier.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   11.1
 	 */
@@ -168,9 +168,9 @@ abstract class JSessionStorage
 	/**
 	 * Garbage collect stale sessions from the SessionHandler backend.
 	 *
-	 * @param   integer  $maxlifetime  The maximum age of a session.
+     * @param  integer  $maxlifetime  The maximum age of a session.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   11.1
 	 */
@@ -182,7 +182,7 @@ abstract class JSessionStorage
 	/**
 	 * Test to see if the SessionHandler is available.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   12.1
 	 */
@@ -194,7 +194,7 @@ abstract class JSessionStorage
 	/**
 	 * Test to see if the SessionHandler is available.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   11.1
 	 * @deprecated  12.3 Use JSessionStorage::isSupported() instead.

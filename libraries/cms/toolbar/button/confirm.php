@@ -28,15 +28,15 @@ class JToolbarButtonConfirm extends JToolbarButton
 	/**
 	 * Fetch the HTML for the button
 	 *
-	 * @param   string   $type      Unused string.
-	 * @param   string   $msg       Message to render
-	 * @param   string   $name      Name to be used as apart of the id
-	 * @param   string   $text      Button text
-	 * @param   string   $task      The task associated with the button
-	 * @param   boolean  $list      True to allow use of lists
-	 * @param   boolean  $hideMenu  True to hide the menu on click
+     * @param  string   $type      Unused string.
+     * @param  string   $msg       Message to render
+     * @param  string   $name      Name to be used as apart of the id
+     * @param  string   $text      Button text
+     * @param  string   $task      The task associated with the button
+     * @param  boolean  $list      True to allow use of lists
+     * @param  boolean  $hideMenu  True to hide the menu on click
 	 *
-	 * @return  string   HTML string for the button
+     * @return  string  HTML string for the button
 	 *
 	 * @since   3.0
 	 */
@@ -59,14 +59,14 @@ class JToolbarButtonConfirm extends JToolbarButton
 	/**
 	 * Get the button CSS Id
 	 *
-	 * @param   string   $type      Button type
-	 * @param   string   $name      Name to be used as apart of the id
-	 * @param   string   $text      Button text
-	 * @param   string   $task      The task associated with the button
-	 * @param   boolean  $list      True to allow use of lists
-	 * @param   boolean  $hideMenu  True to hide the menu on click
+     * @param  string   $type      Button type
+     * @param  string   $name      Name to be used as apart of the id
+     * @param  string   $text      Button text
+     * @param  string   $task      The task associated with the button
+     * @param  boolean  $list      True to allow use of lists
+     * @param  boolean  $hideMenu  True to hide the menu on click
 	 *
-	 * @return  string  Button CSS Id
+     * @return  string  Button CSS Id
 	 *
 	 * @since   3.0
 	 */
@@ -78,12 +78,12 @@ class JToolbarButtonConfirm extends JToolbarButton
 	/**
 	 * Get the JavaScript command for the button
 	 *
-	 * @param   object   $msg   The message to display.
-	 * @param   string   $name  Not used.
-	 * @param   string   $task  The task used by the application
-	 * @param   boolean  $list  True is requires a list confirmation.
+     * @param  object   $msg   The message to display.
+     * @param  string   $name  Not used.
+     * @param  string   $task  The task used by the application
+     * @param  boolean  $list  True is requires a list confirmation.
 	 *
-	 * @return  string  JavaScript command string
+     * @return  string  JavaScript command string
 	 *
 	 * @since   3.0
 	 */
@@ -95,11 +95,12 @@ class JToolbarButtonConfirm extends JToolbarButton
 
 		if ($list)
 		{
-			$cmd = "if (document.adminForm.boxchecked.value==0){alert('$message');}else{if (confirm('$msg')){Joomla.submitbutton('$task');}}";
+			$cmd = "if (document.adminForm.boxchecked.value==0) {alert('$message');}
+else{if (confirm('$msg')) {Joomla.submitbutton('$task');}}";
 		}
 		else
 		{
-			$cmd = "if (confirm('$msg')){Joomla.submitbutton('$task');}";
+			$cmd = "if (confirm('$msg')) {Joomla.submitbutton('$task');}";
 		}
 
 		return $cmd;

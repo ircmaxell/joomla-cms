@@ -28,18 +28,18 @@ class JToolbarButtonPopup extends JToolbarButton
 	/**
 	 * Fetch the HTML for the button
 	 *
-	 * @param   string   $type     Unused string, formerly button type.
-	 * @param   string   $name     Modal name, used to generate element ID
-	 * @param   string   $text     The link text
-	 * @param   string   $url      URL for popup
-	 * @param   integer  $width    Width of popup
-	 * @param   integer  $height   Height of popup
-	 * @param   integer  $top      Top attribute.  [@deprecated  Unused, will be removed in 4.0]
-	 * @param   integer  $left     Left attribute. [@deprecated  Unused, will be removed in 4.0]
-	 * @param   string   $onClose  JavaScript for the onClose event.
-	 * @param   string   $title    The title text
+     * @param  string   $type     Unused string, formerly button type.
+     * @param  string   $name     Modal name, used to generate element ID
+     * @param  string   $text     The link text
+     * @param  string   $url      URL for popup
+     * @param  integer  $width    Width of popup
+     * @param  integer  $height   Height of popup
+     * @param  integer  $top      Top attribute.  [@deprecated  Unused, will be removed in 4.0]
+     * @param  integer  $left     Left attribute. [@deprecated  Unused, will be removed in 4.0]
+     * @param  string   $onClose  JavaScript for the onClose event.
+     * @param  string   $title    The title text
 	 *
-	 * @return  string  HTML string for the button
+     * @return  string  HTML string for the button
 	 *
 	 * @since   3.0
 	 */
@@ -89,10 +89,10 @@ class JToolbarButtonPopup extends JToolbarButton
 	/**
 	 * Get the button id
 	 *
-	 * @param   string  $type  Button type
-	 * @param   string  $name  Button name
+     * @param  string  $type  Button type
+     * @param  string  $name  Button name
 	 *
-	 * @return  string	Button CSS Id
+     * @return  string  Button CSS Id
 	 *
 	 * @since   3.0
 	 */
@@ -104,9 +104,9 @@ class JToolbarButtonPopup extends JToolbarButton
 	/**
 	 * Get the JavaScript command for the button
 	 *
-	 * @param   string  $url  URL for popup
+     * @param  string  $url  URL for popup
 	 *
-	 * @return  string  JavaScript command string
+     * @return  string  JavaScript command string
 	 *
 	 * @since   3.0
 	 */

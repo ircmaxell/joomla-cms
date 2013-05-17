@@ -27,9 +27,9 @@ class InstallerModelWarnings extends JModelList
 	/**
 	 * Return the byte value of a particular string.
 	 *
-	 * @param   string  $val  String optionally with G, M or K suffix
+     * @param  string  $val  String optionally with G, M or K suffix
 	 *
-	 * @return  integer   size in bytes
+     * @return  integer  size in bytes
 	 *
 	 * @since 1.6
 	 */
@@ -54,7 +54,7 @@ class InstallerModelWarnings extends JModelList
 	/**
 	 * Load the data.
 	 *
-	 * @return  array  Messages
+     * @return  array  Messages
 	 *
 	 * @since   1.6
 	 */

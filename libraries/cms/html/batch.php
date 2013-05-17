@@ -21,7 +21,7 @@ abstract class JHtmlBatch
 	/**
 	 * Display a batch widget for the access level selector.
 	 *
-	 * @return  string  The necessary HTML for the widget.
+     * @return  string  The necessary HTML for the widget.
 	 *
 	 * @since   1.7
 	 */
@@ -47,9 +47,9 @@ abstract class JHtmlBatch
 	/**
 	 * Displays a batch widget for moving or copying items.
 	 *
-	 * @param   string  $extension  The extension that owns the category.
+     * @param  string  $extension  The extension that owns the category.
 	 *
-	 * @return  string  The necessary HTML for the widget.
+     * @return  string  The necessary HTML for the widget.
 	 *
 	 * @since   1.7
 	 */
@@ -73,7 +73,7 @@ abstract class JHtmlBatch
 	/**
 	 * Display a batch widget for the language selector.
 	 *
-	 * @return  string  The necessary HTML for the widget.
+     * @return  string  The necessary HTML for the widget.
 	 *
 	 * @since   2.5
 	 */
@@ -97,9 +97,9 @@ abstract class JHtmlBatch
 	/**
 	 * Display a batch widget for the user selector.
 	 *
-	 * @param   boolean  $noUser  Choose to display a "no user" option
+     * @param  boolean  $noUser  Choose to display a "no user" option
 	 *
-	 * @return  string  The necessary HTML for the widget.
+     * @return  string  The necessary HTML for the widget.
 	 *
 	 * @since   2.5
 	 */
@@ -130,7 +130,7 @@ abstract class JHtmlBatch
 	/**
 	 * Display a batch widget for the tag selector.
 	 *
-	 * @return  string  The necessary HTML for the widget.
+     * @return  string  The necessary HTML for the widget.
 	 *
 	 * @since   3.1
 	 */

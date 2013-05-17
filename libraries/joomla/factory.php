@@ -82,15 +82,15 @@ abstract class JFactory
 	 *
 	 * Returns the global {@link JApplication} object, only creating it if it doesn't already exist.
 	 *
-	 * @param   mixed   $id      A client identifier or name.
-	 * @param   array   $config  An optional associative array of configuration settings.
-	 * @param   string  $prefix  Application prefix
+     * @param  mixed   $id      A client identifier or name.
+     * @param  array   $config  An optional associative array of configuration settings.
+     * @param  string  $prefix  Application prefix
 	 *
-	 * @return  JApplication object
+     * @return  JApplication  object
 	 *
 	 * @see     JApplication
 	 * @since   11.1
-	 * @throws  Exception
+     * @throws  Exception
 	 */
 	public static function getApplication($id = null, array $config = array(), $prefix = 'J')
 	{
@@ -112,11 +112,11 @@ abstract class JFactory
 	 *
 	 * Returns the global {@link JRegistry} object, only creating it if it doesn't already exist.
 	 *
-	 * @param   string  $file       The path to the configuration file
-	 * @param   string  $type       The type of the configuration file
-	 * @param   string  $namespace  The namespace of the configuration file
+     * @param  string  $file       The path to the configuration file
+     * @param  string  $type       The type of the configuration file
+     * @param  string  $namespace  The namespace of the configuration file
 	 *
-	 * @return  JRegistry
+     * @return  JRegistry
 	 *
 	 * @see     JRegistry
 	 * @since   11.1
@@ -141,9 +141,9 @@ abstract class JFactory
 	 *
 	 * Returns the global {@link JSession} object, only creating it if it doesn't already exist.
 	 *
-	 * @param   array  $options  An array containing session options
+     * @param  array  $options  An array containing session options
 	 *
-	 * @return  JSession object
+     * @return  JSession  object
 	 *
 	 * @see     JSession
 	 * @since   11.1
@@ -163,7 +163,7 @@ abstract class JFactory
 	 *
 	 * Returns the global {@link JLanguage} object, only creating it if it doesn't already exist.
 	 *
-	 * @return  JLanguage object
+     * @return  JLanguage  object
 	 *
 	 * @see     JLanguage
 	 * @since   11.1
@@ -183,7 +183,7 @@ abstract class JFactory
 	 *
 	 * Returns the global {@link JDocument} object, only creating it if it doesn't already exist.
 	 *
-	 * @return  JDocument object
+     * @return  JDocument  object
 	 *
 	 * @see     JDocument
 	 * @since   11.1
@@ -203,9 +203,9 @@ abstract class JFactory
 	 *
 	 * Returns the global {@link JUser} object, only creating it if it doesn't already exist.
 	 *
-	 * @param   integer  $id  The user to load - Can be an integer or string - If string, it is converted to ID automatically.
+     * @param  integer  $id  The user to load - Can be an integer or string - If string, it is converted to ID automatically.
 	 *
-	 * @return  JUser object
+     * @return  JUser  object
 	 *
 	 * @see     JUser
 	 * @since   11.1
@@ -234,11 +234,11 @@ abstract class JFactory
 	 *
 	 * Returns the global {@link JCache} object
 	 *
-	 * @param   string  $group    The cache group name
-	 * @param   string  $handler  The handler to use
-	 * @param   string  $storage  The storage method
+     * @param  string  $group    The cache group name
+     * @param  string  $handler  The handler to use
+     * @param  string  $storage  The storage method
 	 *
-	 * @return  JCacheController object
+     * @return  JCacheController  object
 	 *
 	 * @see     JCache
 	 */
@@ -271,7 +271,7 @@ abstract class JFactory
 	 * Returns the global {@link JAccess} object, only creating it
 	 * if it doesn't already exist.
 	 *
-	 * @return  JAccess object
+     * @return  JAccess  object
 	 *
 	 * @deprecated  13.3  Use JAccess directly.
 	 */
@@ -292,7 +292,7 @@ abstract class JFactory
 	 *
 	 * Returns the global {@link JDatabaseDriver} object, only creating it if it doesn't already exist.
 	 *
-	 * @return  JDatabaseDriver
+     * @return  JDatabaseDriver
 	 *
 	 * @see     JDatabaseDriver
 	 * @since   11.1
@@ -317,7 +317,7 @@ abstract class JFactory
 	 *
 	 * Returns the global {@link JMail} object, only creating it if it doesn't already exist.
 	 *
-	 * @return  JMail object
+     * @return  JMail  object
 	 *
 	 * @see     JMail
 	 * @since   11.1
@@ -336,10 +336,10 @@ abstract class JFactory
 	/**
 	 * Get a parsed XML Feed Source
 	 *
-	 * @param   string   $url         Url for feed source.
-	 * @param   integer  $cache_time  Time to cache feed for (using internal cache mechanism).
+     * @param  string   $url         Url for feed source.
+     * @param  integer  $cache_time  Time to cache feed for (using internal cache mechanism).
 	 *
-	 * @return  mixed  SimplePie parsed object on success, false on failure.
+     * @return  mixed  SimplePie parsed object on success, false on failure.
 	 *
 	 * @since   11.1
 	 * @deprecated  4.0  Use directly JFeedFactory or supply SimplePie instead. Mehod will be proxied to JFeedFactory beginning in 3.2
@@ -359,10 +359,10 @@ abstract class JFactory
 	/**
 	 * Reads a XML file.
 	 *
-	 * @param   string   $data    Full path and file name.
-	 * @param   boolean  $isFile  true to load a file or false to load a string.
+     * @param  string   $data    Full path and file name.
+     * @param  boolean  $isFile  true to load a file or false to load a string.
 	 *
-	 * @return  mixed    JXMLElement or SimpleXMLElement on success or false on error.
+     * @return  mixed  JXMLElement or SimpleXMLElement on success or false on error.
 	 *
 	 * @see     JXMLElement
 	 * @since   11.1
@@ -414,9 +414,9 @@ abstract class JFactory
 	/**
 	 * Get an editor object.
 	 *
-	 * @param   string  $editor  The editor to load, depends on the editor plugins that are installed
+     * @param  string  $editor  The editor to load, depends on the editor plugins that are installed
 	 *
-	 * @return  JEditor instance of JEditor
+     * @return  JEditor  instance of JEditor
 	 *
 	 * @since   11.1
 	 * @deprecated 12.3 Use JEditor directly
@@ -445,9 +445,9 @@ abstract class JFactory
 	/**
 	 * Return a reference to the {@link JURI} object
 	 *
-	 * @param   string  $uri  Uri name.
+     * @param  string  $uri  Uri name.
 	 *
-	 * @return  JURI object
+     * @return  JURI  object
 	 *
 	 * @see     JURI
 	 * @since   11.1
@@ -463,10 +463,10 @@ abstract class JFactory
 	/**
 	 * Return the {@link JDate} object
 	 *
-	 * @param   mixed  $time      The initial time for the JDate object
-	 * @param   mixed  $tzOffset  The timezone offset.
+     * @param  mixed  $time      The initial time for the JDate object
+     * @param  mixed  $tzOffset  The timezone offset.
 	 *
-	 * @return  JDate object
+     * @return  JDate  object
 	 *
 	 * @see     JDate
 	 * @since   11.1
@@ -516,11 +516,11 @@ abstract class JFactory
 	/**
 	 * Create a configuration object
 	 *
-	 * @param   string  $file       The path to the configuration file.
-	 * @param   string  $type       The type of the configuration file.
-	 * @param   string  $namespace  The namespace of the configuration file.
+     * @param  string  $file       The path to the configuration file.
+     * @param  string  $type       The type of the configuration file.
+     * @param  string  $namespace  The namespace of the configuration file.
 	 *
-	 * @return  JRegistry
+     * @return  JRegistry
 	 *
 	 * @see     JRegistry
 	 * @since   11.1
@@ -557,9 +557,9 @@ abstract class JFactory
 	/**
 	 * Create a session object
 	 *
-	 * @param   array  $options  An array containing session options
+     * @param  array  $options  An array containing session options
 	 *
-	 * @return  JSession object
+     * @return  JSession  object
 	 *
 	 * @since   11.1
 	 */
@@ -584,7 +584,7 @@ abstract class JFactory
 	/**
 	 * Create an database object
 	 *
-	 * @return  JDatabaseDriver
+     * @return  JDatabaseDriver
 	 *
 	 * @see     JDatabaseDriver
 	 * @since   11.1
@@ -624,7 +624,7 @@ abstract class JFactory
 	/**
 	 * Create a mailer object
 	 *
-	 * @return  JMail object
+     * @return  JMail  object
 	 *
 	 * @see     JMail
 	 * @since   11.1
@@ -671,7 +671,7 @@ abstract class JFactory
 	/**
 	 * Create a language object
 	 *
-	 * @return  JLanguage object
+     * @return  JLanguage  object
 	 *
 	 * @see     JLanguage
 	 * @since   11.1
@@ -689,7 +689,7 @@ abstract class JFactory
 	/**
 	 * Create a document object
 	 *
-	 * @return  JDocument object
+     * @return  JDocument  object
 	 *
 	 * @see     JDocument
 	 * @since   11.1
@@ -710,12 +710,12 @@ abstract class JFactory
 	/**
 	 * Creates a new stream object with appropriate prefix
 	 *
-	 * @param   boolean  $use_prefix   Prefix the connections for writing
-	 * @param   boolean  $use_network  Use network if available for writing; use false to disable (e.g. FTP, SCP)
-	 * @param   string   $ua           UA User agent to use
-	 * @param   boolean  $uamask       User agent masking (prefix Mozilla)
+     * @param  boolean  $use_prefix   Prefix the connections for writing
+     * @param  boolean  $use_network  Use network if available for writing; use false to disable (e.g. FTP, SCP)
+     * @param  string   $ua           UA User agent to use
+     * @param  boolean  $uamask       User agent masking (prefix Mozilla)
 	 *
-	 * @return  JStream
+     * @return  JStream
 	 *
 	 * @see JStream
 	 * @since   11.1

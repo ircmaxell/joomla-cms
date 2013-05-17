@@ -7,9 +7,7 @@
  * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
-
 defined('JPATH_PLATFORM') or die();
-
 
 /**
  * Facebook API Checkin class for the Joomla Platform.
@@ -25,9 +23,9 @@ class JFacebookCheckin extends JFacebookObject
 	/**
 	 * Method to get a checkin. Requires authentication and user_checkins or friends_checkins permission.
 	 *
-	 * @param   string  $checkin  The checkin id.
+     * @param  string  $checkin  The checkin id.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -39,13 +37,13 @@ class JFacebookCheckin extends JFacebookObject
 	/**
 	 * Method to get a checkin's comments. Requires authentication and user_checkins or friends_checkins permission.
 	 *
-	 * @param   string   $checkin  The checkin id.
-	 * @param   integer  $limit    The number of objects per page.
-	 * @param   integer  $offset   The object's number on the page.
-	 * @param   string   $until    A unix timestamp or any date accepted by strtotime.
-	 * @param   string   $since    A unix timestamp or any date accepted by strtotime.
+     * @param  string   $checkin  The checkin id.
+     * @param  integer  $limit    The number of objects per page.
+     * @param  integer  $offset   The object's number on the page.
+     * @param  string   $until    A unix timestamp or any date accepted by strtotime.
+     * @param  string   $since    A unix timestamp or any date accepted by strtotime.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -57,10 +55,10 @@ class JFacebookCheckin extends JFacebookObject
 	/**
 	 * Method to post a comment to the checkin. Requires authentication and publish_stream and user_checkins or friends_checkins permission.
 	 *
-	 * @param   string  $checkin  The checkin id.
-	 * @param   string  $message  The checkin's text.
+     * @param  string  $checkin  The checkin id.
+     * @param  string  $message  The checkin's text.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -76,9 +74,9 @@ class JFacebookCheckin extends JFacebookObject
 	/**
 	 * Method to delete a comment. Requires authentication and publish_stream permission.
 	 *
-	 * @param   string  $comment  The comment's id.
+     * @param  string  $comment  The comment's id.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -90,13 +88,13 @@ class JFacebookCheckin extends JFacebookObject
 	/**
 	 * Method to get a checkin's likes. Requires authentication and user_checkins or friends_checkins permission.
 	 *
-	 * @param   string   $checkin  The checkin id.
-	 * @param   integer  $limit    The number of objects per page.
-	 * @param   integer  $offset   The object's number on the page.
-	 * @param   string   $until    A unix timestamp or any date accepted by strtotime.
-	 * @param   string   $since    A unix timestamp or any date accepted by strtotime.
+     * @param  string   $checkin  The checkin id.
+     * @param  integer  $limit    The number of objects per page.
+     * @param  integer  $offset   The object's number on the page.
+     * @param  string   $until    A unix timestamp or any date accepted by strtotime.
+     * @param  string   $since    A unix timestamp or any date accepted by strtotime.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -108,9 +106,9 @@ class JFacebookCheckin extends JFacebookObject
 	/**
 	 * Method to like a checkin. Requires authentication and publish_stream and user_checkins or friends_checkins permission.
 	 *
-	 * @param   string  $checkin  The checkin id.
+     * @param  string  $checkin  The checkin id.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -122,9 +120,9 @@ class JFacebookCheckin extends JFacebookObject
 	/**
 	 * Method to unlike a checkin. Requires authentication and publish_stream permission.
 	 *
-	 * @param   string  $checkin  The checkin id.
+     * @param  string  $checkin  The checkin id.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */

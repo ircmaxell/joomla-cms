@@ -21,7 +21,7 @@ interface JModel
 	/**
 	 * Get the model state.
 	 *
-	 * @return  JRegistry  The state object.
+     * @return  JRegistry  The state object.
 	 *
 	 * @since   12.1
 	 */
@@ -30,9 +30,9 @@ interface JModel
 	/**
 	 * Set the model state.
 	 *
-	 * @param   JRegistry  $state  The state object.
+     * @param  JRegistry  $state  The state object.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */

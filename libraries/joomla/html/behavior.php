@@ -28,10 +28,10 @@ abstract class JHtmlBehavior
 	 *
 	 * If debugging mode is on an uncompressed version of MooTools is included for easier debugging.
 	 *
-	 * @param   string  $extras  MooTools file to load
-	 * @param   mixed   $debug   Is debugging mode on? [optional]
+     * @param  string  $extras  MooTools file to load
+     * @param  mixed   $debug   Is debugging mode on? [optional]
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -67,9 +67,9 @@ abstract class JHtmlBehavior
 	/**
 	 * Add unobtrusive javascript support for image captions.
 	 *
-	 * @param   string  $selector  The selector for which a caption behaviour is to be applied.
+     * @param  string  $selector  The selector for which a caption behaviour is to be applied.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -105,7 +105,7 @@ abstract class JHtmlBehavior
 	 * Additional handlers can be added to the handler for username, password,
 	 * numeric and email. To use these add class="validate-email" and so on.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -131,7 +131,7 @@ abstract class JHtmlBehavior
 	 * Add unobtrusive javascript support for submenu switcher support in
 	 * Global Configuration and System Information.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -153,7 +153,8 @@ abstract class JHtmlBehavior
 			window.addEvent('domready', function(){
 				toggler = document.id('submenu');
 				element = document.id('config-document');
-				if (element) {
+				if (element)
+				{
 					document.switcher = new JSwitcher(toggler, element, {cookieName: toggler.getProperty('class')});
 				}
 			});";
@@ -168,7 +169,7 @@ abstract class JHtmlBehavior
 	 * Note that this control is only reliable in absolutely positioned elements.
 	 * Avoid using a combobox in a slider or dynamic pane.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -194,8 +195,8 @@ abstract class JHtmlBehavior
 	 *
 	 * Uses the core Tips class in MooTools.
 	 *
-	 * @param   string  $selector  The class selector for the tooltip.
-	 * @param   array   $params    An array of options for the tooltip.
+     * @param  string  $selector  The class selector for the tooltip.
+     * @param  array   $params    An array of options for the tooltip.
 	 *                             Options for the tooltip can be:
 	 *                             - maxTitleChars  integer   The maximum number of characters in the tooltip title (defaults to 50).
 	 *                             - offsets        object    The distance of your tooltip from the mouse (defaults to {'x': 16, 'y': 16}).
@@ -208,7 +209,7 @@ abstract class JHtmlBehavior
 	 *                             - onHide         function  The default function for the hide event, passes the currently
 	 *                               hovered element.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -243,7 +244,8 @@ abstract class JHtmlBehavior
 			"window.addEvent('domready', function() {
 			$$('$selector').each(function(el) {
 				var title = el.get('title');
-				if (title) {
+				if (title)
+				{
 					var parts = title.split('::', 2);
 					el.store('tip:title', parts[0]);
 					el.store('tip:text', parts[1]);
@@ -262,8 +264,8 @@ abstract class JHtmlBehavior
 	/**
 	 * Add unobtrusive javascript support for modal links.
 	 *
-	 * @param   string  $selector  The selector for which a modal behaviour is to be applied.
-	 * @param   array   $params    An array of parameters for the modal behaviour.
+     * @param  string  $selector  The selector for which a modal behaviour is to be applied.
+     * @param  array   $params    An array of parameters for the modal behaviour.
 	 *                             Options for the modal behaviour can be:
 	 *                            - ajaxOptions
 	 *                            - size
@@ -276,7 +278,7 @@ abstract class JHtmlBehavior
 	 *                            - onShow
 	 *                            - onHide
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -350,9 +352,9 @@ abstract class JHtmlBehavior
 	/**
 	 * JavaScript behavior to allow shift select in grids
 	 *
-	 * @param   string  $id  The id of the form for which a multiselect behaviour is to be applied.
+     * @param  string  $id  The id of the form for which a multiselect behaviour is to be applied.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -385,11 +387,11 @@ abstract class JHtmlBehavior
 	/**
 	 * Add unobtrusive javascript support for a collapsible tree.
 	 *
-	 * @param   string  $id      An index
-	 * @param   array   $params  An array of options.
-	 * @param   array   $root    The root node
+     * @param  string  $id      An index
+     * @param  array   $params  An array of options.
+     * @param  array   $root    The root node
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -449,7 +451,7 @@ abstract class JHtmlBehavior
 	/**
 	 * Add unobtrusive javascript support for a calendar control.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -480,7 +482,7 @@ abstract class JHtmlBehavior
 	/**
 	 * Add unobtrusive javascript support for a color picker.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.2
 	 */
@@ -516,7 +518,7 @@ abstract class JHtmlBehavior
 	/**
 	 * Add unobtrusive javascript support for a simple color picker.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.2
 	 */
@@ -546,7 +548,7 @@ abstract class JHtmlBehavior
 	/**
 	 * Keep session alive, for example, while editing or creating an article.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -591,15 +593,15 @@ abstract class JHtmlBehavior
 	/**
 	 * Highlight some words via Javascript.
 	 *
-	 * @param   array   $terms      Array of words that should be highlighted.
-	 * @param   string  $start      ID of the element that marks the begin of the section in which words
+     * @param  array   $terms  Array of words that should be highlighted.
+     * @param  string  $start  ID of the element that marks the begin of the section in which words
 	 *                              should be highlighted. Note this element will be removed from the DOM.
-	 * @param   string  $end        ID of the element that end this section.
+     * @param  string  $end  ID of the element that end this section.
 	 *                              Note this element will be removed from the DOM.
-	 * @param   string  $className  Class name of the element highlights are wrapped in.
-	 * @param   string  $tag        Tag that will be used to wrap the highlighted words.
+     * @param  string  $className  Class name of the element highlights are wrapped in.
+     * @param  string  $tag        Tag that will be used to wrap the highlighted words.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.4
 	 */
@@ -621,7 +623,8 @@ abstract class JHtmlBehavior
 			window.addEvent('domready', function () {
 				var start = document.id('" . $start . "');
 				var end = document.id('" . $end . "');
-				if (!start || !end || !Joomla.Highlighter) {
+				if (!start || !end || !Joomla.Highlighter)
+				{
 					return true;
 				}
 				highlighter = new Joomla.Highlighter({
@@ -644,7 +647,7 @@ abstract class JHtmlBehavior
 	/**
 	 * Break us out of any containing iframes
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -673,9 +676,9 @@ abstract class JHtmlBehavior
 	/**
 	 * Internal method to get a JavaScript object notation string from an array
 	 *
-	 * @param   array  $array  The array to convert to JavaScript object notation
+     * @param  array  $array  The array to convert to JavaScript object notation
 	 *
-	 * @return  string  JavaScript object notation representation of the array
+     * @return  string  JavaScript object notation representation of the array
 	 *
 	 * @since   11.1
 	 * @deprecated  13.3 Use JHtml::getJSObject() instead.
@@ -690,7 +693,7 @@ abstract class JHtmlBehavior
 	/**
 	 * Internal method to translate the JavaScript Calendar
 	 *
-	 * @return  string  JavaScript that translates the object
+     * @return  string  JavaScript that translates the object
 	 *
 	 * @since   11.1
 	 */

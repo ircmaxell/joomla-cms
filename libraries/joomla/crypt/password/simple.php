@@ -33,10 +33,10 @@ class JCryptPasswordSimple implements JCryptPassword
 	/**
 	 * Creates a password hash
 	 *
-	 * @param   string  $password  The password to hash.
-	 * @param   string  $type      The hash type.
+     * @param  string  $password  The password to hash.
+     * @param  string  $type      The hash type.
 	 *
-	 * @return  string  The hashed password.
+     * @return  string  The hashed password.
 	 *
 	 * @since   12.2
 	 */
@@ -86,9 +86,9 @@ class JCryptPasswordSimple implements JCryptPassword
 	/**
 	 * Sets the cost parameter for the generated hash for algorithms that use a cost factor.
 	 *
-	 * @param   integer  $cost  The new cost value.
+     * @param  integer  $cost  The new cost value.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.2
 	 */
@@ -100,9 +100,9 @@ class JCryptPasswordSimple implements JCryptPassword
 	/**
 	 * Generates a salt of specified length. The salt consists of characters in the set [./0-9A-Za-z].
 	 *
-	 * @param   integer  $length  The number of characters to return.
+     * @param  integer  $length  The number of characters to return.
 	 *
-	 * @return  string  The string of random characters.
+     * @return  string  The string of random characters.
 	 *
 	 * @since   12.2
 	 */
@@ -118,10 +118,10 @@ class JCryptPasswordSimple implements JCryptPassword
 	/**
 	 * Verifies a password hash
 	 *
-	 * @param   string  $password  The password to verify.
-	 * @param   string  $hash      The password hash to check.
+     * @param  string  $password  The password to verify.
+     * @param  string  $hash      The password hash to check.
 	 *
-	 * @return  boolean  True if the password is valid, false otherwise.
+     * @return  boolean  True if the password is valid, false otherwise.
 	 *
 	 * @since   12.2
 	 */
@@ -160,9 +160,9 @@ class JCryptPasswordSimple implements JCryptPassword
 	/**
 	 * Sets a default type
 	 *
-	 * @param   string  $type  The value to set as default.
+     * @param  string  $type  The value to set as default.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.3
 	 */
@@ -176,7 +176,7 @@ class JCryptPasswordSimple implements JCryptPassword
 	/**
 	 * Gets the default type
 	 *
-	 * @return   string  $type  The default type
+     * @return  string  $type  The default type
 	 *
 	 * @since   12.3
 	 */

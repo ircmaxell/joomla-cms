@@ -41,7 +41,7 @@ class TemplatesViewTemplates extends JViewLegacy
 	 *
 	 * @param   string
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.6
 	 */
 	public function display($tpl = null)
@@ -76,7 +76,7 @@ class TemplatesViewTemplates extends JViewLegacy
 	/**
 	 * Add the page title and toolbar.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.6
 	 */
 	protected function addToolbar()

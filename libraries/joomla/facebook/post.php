@@ -7,9 +7,7 @@
  * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
-
 defined('JPATH_PLATFORM') or die();
-
 
 /**
  * Facebook API Post class for the Joomla Platform.
@@ -25,9 +23,9 @@ class JFacebookPost extends JFacebookObject
 	/**
 	 * Method to get a post. Requires authentication and read_stream permission for all data.
 	 *
-	 * @param   string  $post  The post id.
+     * @param  string  $post  The post id.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -39,9 +37,9 @@ class JFacebookPost extends JFacebookObject
 	/**
 	 * Method to delete a post if it was created by this application. Requires authentication and publish_stream permission
 	 *
-	 * @param   string  $post  The post id.
+     * @param  string  $post  The post id.
 	 *
-	 * @return  boolean Returns true if successful, and false otherwise.
+     * @return  boolean  Returns true if successful, and false otherwise.
 	 *
 	 * @since   13.1
 	 */
@@ -53,13 +51,13 @@ class JFacebookPost extends JFacebookObject
 	/**
 	 * Method to get a post's comments. Requires authentication and read_stream permission.
 	 *
-	 * @param   string   $post    The post id.
-	 * @param   integer  $limit   The number of objects per page.
-	 * @param   integer  $offset  The object's number on the page.
-	 * @param   string   $until   A unix timestamp or any date accepted by strtotime.
-	 * @param   string   $since   A unix timestamp or any date accepted by strtotime.
+     * @param  string   $post    The post id.
+     * @param  integer  $limit   The number of objects per page.
+     * @param  integer  $offset  The object's number on the page.
+     * @param  string   $until   A unix timestamp or any date accepted by strtotime.
+     * @param  string   $since   A unix timestamp or any date accepted by strtotime.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -71,10 +69,10 @@ class JFacebookPost extends JFacebookObject
 	/**
 	 * Method to comment on a post. Requires authentication and publish_stream permission
 	 *
-	 * @param   string  $post     The post id.
-	 * @param   string  $message  The comment's text.
+     * @param  string  $post     The post id.
+     * @param  string  $message  The comment's text.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -89,9 +87,9 @@ class JFacebookPost extends JFacebookObject
 	/**
 	 * Method to delete a comment. Requires authentication and publish_stream permission
 	 *
-	 * @param   string  $comment  The comment's id.
+     * @param  string  $comment  The comment's id.
 	 *
-	 * @return  boolean Returns true if successful, and false otherwise.
+     * @return  boolean  Returns true if successful, and false otherwise.
 	 *
 	 * @since   13.1
 	 */
@@ -103,13 +101,13 @@ class JFacebookPost extends JFacebookObject
 	/**
 	 * Method to get post's likes. Requires authentication and read_stream permission.
 	 *
-	 * @param   string   $post    The post id.
-	 * @param   integer  $limit   The number of objects per page.
-	 * @param   integer  $offset  The object's number on the page.
-	 * @param   string   $until   A unix timestamp or any date accepted by strtotime.
-	 * @param   string   $since   A unix timestamp or any date accepted by strtotime.
+     * @param  string   $post    The post id.
+     * @param  integer  $limit   The number of objects per page.
+     * @param  integer  $offset  The object's number on the page.
+     * @param  string   $until   A unix timestamp or any date accepted by strtotime.
+     * @param  string   $since   A unix timestamp or any date accepted by strtotime.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -121,9 +119,9 @@ class JFacebookPost extends JFacebookObject
 	/**
 	 * Method to like a post. Requires authentication and publish_stream permission
 	 *
-	 * @param   string  $post  The post id.
+     * @param  string  $post  The post id.
 	 *
-	 * @return  boolean Returns true if successful, and false otherwise.
+     * @return  boolean  Returns true if successful, and false otherwise.
 	 *
 	 * @since   13.1
 	 */
@@ -135,9 +133,9 @@ class JFacebookPost extends JFacebookObject
 	/**
 	 * Method to unlike a post. Requires authentication and publish_stream permission
 	 *
-	 * @param   string  $post  The post id.
+     * @param  string  $post  The post id.
 	 *
-	 * @return  boolean Returns true if successful, and false otherwise.
+     * @return  boolean  Returns true if successful, and false otherwise.
 	 *
 	 * @since   13.1
 	 */

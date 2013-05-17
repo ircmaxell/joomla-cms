@@ -21,7 +21,7 @@ class JInstallerExtensionTest extends TestCase
 	 *
 	 * @since   3.1
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function test__constructPackage()
 	{
@@ -39,7 +39,7 @@ class JInstallerExtensionTest extends TestCase
 	 *
 	 * @since   3.1
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function test__constructModule()
 	{

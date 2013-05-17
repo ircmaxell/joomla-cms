@@ -21,7 +21,7 @@ class JInstallerHelperTest extends TestCase
 	 *
 	 * @since   3.1
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function testGetFilenameFromURL()
 	{

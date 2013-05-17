@@ -45,7 +45,7 @@ class InstallationViewCompleteHtml extends JViewHtml
 	/**
 	 * Method to render the view.
 	 *
-	 * @return  string  The rendered view.
+     * @return  string  The rendered view.
 	 *
 	 * @since   3.1
 	 */

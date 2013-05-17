@@ -22,7 +22,7 @@ class InstallerModelLanguages extends JModelList
 	/**
 	 * Constructor override, defines a white list of column filters.
 	 *
-	 * @param   array  $config  An optional associative array of configuration settings.
+     * @param  array  $config  An optional associative array of configuration settings.
 	 *
 	 * @since   2.5.7
 	 */
@@ -42,7 +42,7 @@ class InstallerModelLanguages extends JModelList
 	/**
 	 * Method to get the available languages database query.
 	 *
-	 * @return  JDatabaseQuery  The database query
+     * @return  JDatabaseQuery  The database query
 	 *
 	 * @since   2.5.7
 	 */
@@ -78,9 +78,9 @@ class InstallerModelLanguages extends JModelList
 	/**
 	 * Method to get a store id based on model configuration state.
 	 *
-	 * @param   string  $id  A prefix for the store id.
+     * @param  string  $id  A prefix for the store id.
 	 *
-	 * @return  string  A store id.
+     * @return  string  A store id.
 	 *
 	 * @since   2.5.7
 	 */
@@ -97,10 +97,10 @@ class InstallerModelLanguages extends JModelList
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @param   string  $ordering   list order
-	 * @param   string  $direction  direction in the list
+     * @param  string  $ordering   list order
+     * @param  string  $direction  direction in the list
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5.7
 	 */
@@ -119,9 +119,9 @@ class InstallerModelLanguages extends JModelList
 	/**
 	 * Method to find available languages in the Accredited Languages Update Site.
 	 *
-	 * @param   int  $cache_timeout  time before refreshing the cached updates
+     * @param  int  $cache_timeout  time before refreshing the cached updates
 	 *
-	 * @return  bool
+     * @return  bool
 	 *
 	 * @since   2.5.7
 	 */
@@ -141,9 +141,9 @@ class InstallerModelLanguages extends JModelList
 	/**
 	 * Install languages in the system.
 	 *
-	 * @param   array  $lids  array of language ids selected in the list
+     * @param  array  $lids  array of language ids selected in the list
 	 *
-	 * @return  bool
+     * @return  bool
 	 *
 	 * @since   2.5.7
 	 */
@@ -214,9 +214,9 @@ class InstallerModelLanguages extends JModelList
 	/**
 	 * Gets the manifest file of a selected language from a the language list in a update server.
 	 *
-	 * @param   int  $uid  the id of the language in the #__updates table
+     * @param  int  $uid  the id of the language in the #__updates table
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   2.5.7
 	 */
@@ -231,9 +231,9 @@ class InstallerModelLanguages extends JModelList
 	/**
 	 * Finds the url of the package to download.
 	 *
-	 * @param   string  $remote_manifest  url to the manifest XML file of the remote package
+     * @param  string  $remote_manifest  url to the manifest XML file of the remote package
 	 *
-	 * @return  string|bool
+     * @return  string|bool
 	 *
 	 * @since   2.5.7
 	 */
@@ -249,9 +249,9 @@ class InstallerModelLanguages extends JModelList
 	/**
 	 * Download a language package from a URL and unpack it in the tmp folder.
 	 *
-	 * @param   string  $url  hola
+     * @param  string  $url  hola
 	 *
-	 * @return  array|bool  Package details or false on failure
+     * @return  array|bool  Package details or false on failure
 	 *
 	 * @since   2.5.7
 	 */

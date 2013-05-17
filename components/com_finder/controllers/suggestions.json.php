@@ -21,10 +21,10 @@ class FinderControllerSuggestions extends JControllerLegacy
 	/**
 	 * Method to find search query suggestions.
 	 *
-	 * @param   boolean  $cachable   If true, the view output will be cached
-	 * @param   array    $urlparams  An array of safe url parameters and their variable types, for valid values see {@link JFilterInput::clean()}.
+     * @param  boolean  $cachable   If true, the view output will be cached
+     * @param  array    $urlparams  An array of safe url parameters and their variable types, for valid values see {@link JFilterInput::clean()}.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */

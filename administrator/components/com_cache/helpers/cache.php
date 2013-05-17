@@ -21,7 +21,7 @@ class CacheHelper
 	/**
 	 * Get a list of filter options for the application clients.
 	 *
-	 * @return  array  An array of JHtmlOption elements.
+     * @return  array  An array of JHtmlOption elements.
 	 */
 	public static function getClientOptions()
 	{
@@ -37,7 +37,7 @@ class CacheHelper
 	 *
 	 * @param   string	The name of the active view.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.6
 	 */
 	public static function addSubmenu($vName)

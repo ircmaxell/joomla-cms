@@ -52,9 +52,9 @@ final class JVersion
 	/**
 	 * Compares two a "PHP standardized" version number against the current Joomla version.
 	 *
-	 * @param   string  $minimum  The minimum version of the Joomla which is compatible.
+     * @param  string  $minimum  The minimum version of the Joomla which is compatible.
 	 *
-	 * @return  bool    True if the version is compatible.
+     * @return  bool  True if the version is compatible.
 	 *
 	 * @see     http://www.php.net/version_compare
 	 * @since   1.0
@@ -67,7 +67,7 @@ final class JVersion
 	/**
 	 * Method to get the help file version.
 	 *
-	 * @return  string  Version suffix for help files.
+     * @return  string  Version suffix for help files.
 	 *
 	 * @since   1.0
 	 */
@@ -79,7 +79,7 @@ final class JVersion
 	/**
 	 * Gets a "PHP standardized" version string for the current Joomla.
 	 *
-	 * @return  string  Version string.
+     * @return  string  Version string.
 	 *
 	 * @since   1.5
 	 */
@@ -91,7 +91,7 @@ final class JVersion
 	/**
 	 * Gets a version string for the current Joomla with all release information.
 	 *
-	 * @return  string  Complete version string.
+     * @return  string  Complete version string.
 	 *
 	 * @since   1.5
 	 */
@@ -105,11 +105,11 @@ final class JVersion
 	/**
 	 * Returns the user agent.
 	 *
-	 * @param   string  $component    Name of the component.
-	 * @param   bool    $mask         Mask as Mozilla/5.0 or not.
-	 * @param   bool    $add_version  Add version afterwards to component.
+     * @param  string  $component    Name of the component.
+     * @param  bool    $mask         Mask as Mozilla/5.0 or not.
+     * @param  bool    $add_version  Add version afterwards to component.
 	 *
-	 * @return  string  User Agent.
+     * @return  string  User Agent.
 	 *
 	 * @since   1.0
 	 */

@@ -7,9 +7,7 @@
  * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
-
 defined('JPATH_PLATFORM') or die();
-
 
 /**
  * Facebook API Note class for the Joomla Platform.
@@ -25,9 +23,9 @@ class JFacebookNote extends JFacebookObject
 	/**
 	 * Method to get a note. Requires authentication and user_notes or friends_notes permission for non-public notes.
 	 *
-	 * @param   string  $note  The note id.
+     * @param  string  $note  The note id.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -39,13 +37,13 @@ class JFacebookNote extends JFacebookObject
 	/**
 	 * Method to get a note's comments. Requires authentication and user_notes or friends_notes permission for non-public notes.
 	 *
-	 * @param   string   $note    The note id.
-	 * @param   integer  $limit   The number of objects per page.
-	 * @param   integer  $offset  The object's number on the page.
-	 * @param   string   $until   A unix timestamp or any date accepted by strtotime.
-	 * @param   string   $since   A unix timestamp or any date accepted by strtotime.
+     * @param  string   $note    The note id.
+     * @param  integer  $limit   The number of objects per page.
+     * @param  integer  $offset  The object's number on the page.
+     * @param  string   $until   A unix timestamp or any date accepted by strtotime.
+     * @param  string   $since   A unix timestamp or any date accepted by strtotime.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -57,10 +55,10 @@ class JFacebookNote extends JFacebookObject
 	/**
 	 * Method to comment on a note. Requires authentication and publish_stream and user_notes or friends_notes permissions.
 	 *
-	 * @param   string  $note     The note id.
-	 * @param   string  $message  The comment's text.
+     * @param  string  $note     The note id.
+     * @param  string  $message  The comment's text.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -76,9 +74,9 @@ class JFacebookNote extends JFacebookObject
 	/**
 	 * Method to delete a comment. Requires authentication and publish_stream and user_notes or friends_notes permissions.
 	 *
-	 * @param   string  $comment  The comment's id.
+     * @param  string  $comment  The comment's id.
 	 *
-	 * @return  boolean Returns true if successful, and false otherwise.
+     * @return  boolean  Returns true if successful, and false otherwise.
 	 *
 	 * @since   13.1
 	 */
@@ -90,13 +88,13 @@ class JFacebookNote extends JFacebookObject
 	/**
 	 * Method to get note's likes. Requires authentication and user_notes or friends_notes for non-public notes.
 	 *
-	 * @param   string   $note    The note id.
-	 * @param   integer  $limit   The number of objects per page.
-	 * @param   integer  $offset  The object's number on the page.
-	 * @param   string   $until   A unix timestamp or any date accepted by strtotime.
-	 * @param   string   $since   A unix timestamp or any date accepted by strtotime.
+     * @param  string   $note    The note id.
+     * @param  integer  $limit   The number of objects per page.
+     * @param  integer  $offset  The object's number on the page.
+     * @param  string   $until   A unix timestamp or any date accepted by strtotime.
+     * @param  string   $since   A unix timestamp or any date accepted by strtotime.
 	 *
-	 * @return  mixed   The decoded JSON response or false if the client is not authenticated.
+     * @return  mixed  The decoded JSON response or false if the client is not authenticated.
 	 *
 	 * @since   13.1
 	 */
@@ -108,9 +106,9 @@ class JFacebookNote extends JFacebookObject
 	/**
 	 * Method to like a note. Requires authentication and publish_stream and user_notes or friends_notes permissions.
 	 *
-	 * @param   string  $note  The note id.
+     * @param  string  $note  The note id.
 	 *
-	 * @return  boolean Returns true if successful, and false otherwise.
+     * @return  boolean  Returns true if successful, and false otherwise.
 	 *
 	 * @since   13.1
 	 */
@@ -122,9 +120,9 @@ class JFacebookNote extends JFacebookObject
 	/**
 	 * Method to unlike a note. Requires authentication and publish_stream and user_notes or friends_notes permissions.
 	 *
-	 * @param   string  $note  The note id.
+     * @param  string  $note  The note id.
 	 *
-	 * @return  boolean Returns true if successful, and false otherwise.
+     * @return  boolean  Returns true if successful, and false otherwise.
 	 *
 	 * @since   13.1
 	 */

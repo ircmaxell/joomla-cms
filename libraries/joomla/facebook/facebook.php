@@ -111,9 +111,9 @@ class JFacebook
 	/**
 	 * Constructor.
 	 *
-	 * @param   JFacebookOAuth  $oauth    OAuth client.
-	 * @param   JRegistry       $options  Facebook options object.
-	 * @param   JFacebookHttp   $client   The HTTP client object.
+     * @param  JFacebookOAuth  $oauth    OAuth client.
+     * @param  JRegistry       $options  Facebook options object.
+     * @param  JFacebookHttp   $client   The HTTP client object.
 	 *
 	 * @since   13.1
 	 */
@@ -130,9 +130,9 @@ class JFacebook
 	/**
 	 * Magic method to lazily create API objects
 	 *
-	 * @param   string  $name  Name of property to retrieve
+     * @param  string  $name  Name of property to retrieve
 	 *
-	 * @return  JFacebookObject  Facebook API object (status, user, friends etc).
+     * @return  JFacebookObject  Facebook API object (status, user, friends etc).
 	 *
 	 * @since   13.1
 	 */
@@ -229,9 +229,9 @@ class JFacebook
 	/**
 	 * Get an option from the JFacebook instance.
 	 *
-	 * @param   string  $key  The name of the option to get.
+     * @param  string  $key  The name of the option to get.
 	 *
-	 * @return  mixed  The option value.
+     * @return  mixed  The option value.
 	 *
 	 * @since   13.1
 	 */

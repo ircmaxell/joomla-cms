@@ -29,7 +29,7 @@ class JFormFieldOrdering extends JFormField
 	/**
 	 * Method to get the field input markup.
 	 *
-	 * @return  string	The field input markup.
+     * @return  string  The field input markup.
 	 * @since   1.6
 	 */
 	protected function getInput()
@@ -62,7 +62,8 @@ class JFormFieldOrdering extends JFormField
 			$html[] = '<input type="hidden" name="'.$this->name.'" value="'.htmlspecialchars($this->value).'"/>';
 		}
 		// Create a regular list.
-		else {
+		else
+		{
 			$html[] = JHtml::_('list.ordering', $this->name, $query, trim($attr), $this->value, $newsfeedId ? 0 : 1);
 		}
 

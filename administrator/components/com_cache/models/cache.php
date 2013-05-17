@@ -60,7 +60,7 @@ class CacheModelCache extends JModelList
 	/**
 	 * Method to get cache data
 	 *
-	 * @return array
+     * @return  array
 	 */
 	public function getData()
 	{
@@ -89,7 +89,8 @@ class CacheModelCache extends JModelList
 						$this->_data = array_slice($this->_data, $this->getState('list.start'), $this->getState('list.limit'));
 					}
 				}
-			} else {
+			}
+			else {
 				$this->_data = array();
 			}
 		}
@@ -99,7 +100,7 @@ class CacheModelCache extends JModelList
 	/**
 	 * Method to get cache instance
 	 *
-	 * @return object
+     * @return  object
 	 */
 	public function getCache()
 	{
@@ -120,7 +121,7 @@ class CacheModelCache extends JModelList
 	/**
 	 * Method to get client data
 	 *
-	 * @return array
+     * @return  array
 	 */
 	public function getClient()
 	{
@@ -130,7 +131,7 @@ class CacheModelCache extends JModelList
 	/**
 	 * Get the number of current Cache Groups
 	 *
-	 * @return  int
+     * @return  int
 	 */
 	public function getTotal()
 	{
@@ -145,7 +146,7 @@ class CacheModelCache extends JModelList
 	/**
 	 * Method to get a pagination object for the cache
 	 *
-	 * @return  integer
+     * @return  integer
 	 */
 	public function getPagination()
 	{
@@ -161,7 +162,7 @@ class CacheModelCache extends JModelList
 	 * Clean out a cache group as named by param.
 	 * If no param is passed clean all cache groups.
 	 *
-	 * @param String $group
+     * @param  String  $group
 	 */
 	public function clean($group = '')
 	{

@@ -21,7 +21,7 @@ class JAdministratorHelper
 	/**
 	 * Return the application option string [main component].
 	 *
-	 * @return  string  The component to access.
+     * @return  string  The component to access.
 	 *
 	 * @since   1.5
 	 */

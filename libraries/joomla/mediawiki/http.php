@@ -19,13 +19,13 @@ defined('JPATH_PLATFORM') or die;
 class JMediawikiHttp extends JHttp
 {
 	/**
-     * Constructor.
-     *
-     * @param   JRegistry       $options    Client options object.
-     * @param   JHttpTransport  $transport  The HTTP transport object.
-     *
-     * @since   12.3
-     */
+	 * Constructor.
+	 *
+     * @param  JRegistry       $options    Client options object.
+     * @param  JHttpTransport  $transport  The HTTP transport object.
+	 *
+	 * @since   12.3
+	 */
 	public function __construct(JRegistry $options = null, JHttpTransport $transport = null)
 	{
 		// Override the JHttp contructor to use JHttpTransportStream.
@@ -42,10 +42,10 @@ class JMediawikiHttp extends JHttp
 	/**
 	 * Method to send the GET command to the server.
 	 *
-	 * @param   string  $url      Path to the resource.
-	 * @param   array   $headers  An array of name-value pairs to include in the header of the request.
+     * @param  string  $url      Path to the resource.
+     * @param  array   $headers  An array of name-value pairs to include in the header of the request.
 	 *
-	 * @return  JHttpResponse
+     * @return  JHttpResponse
 	 *
 	 * @since   12.3
 	 */
@@ -68,11 +68,11 @@ class JMediawikiHttp extends JHttp
 	/**
 	 * Method to send the POST command to the server.
 	 *
-	 * @param   string  $url      Path to the resource.
-	 * @param   mixed   $data     Either an associative array or a string to be sent with the request.
-	 * @param   array   $headers  An array of name-value pairs to include in the header of the request.
+     * @param  string  $url      Path to the resource.
+     * @param  mixed   $data     Either an associative array or a string to be sent with the request.
+     * @param  array   $headers  An array of name-value pairs to include in the header of the request.
 	 *
-	 * @return  JHttpResponse
+     * @return  JHttpResponse
 	 *
 	 * @since   12.3
 	 */

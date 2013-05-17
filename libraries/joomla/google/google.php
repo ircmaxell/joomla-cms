@@ -48,8 +48,8 @@ class JGoogle
 	/**
 	 * Constructor.
 	 *
-	 * @param   JRegistry  $options  Google options object.
-	 * @param   JAuth      $auth     The authentication client object.
+     * @param  JRegistry  $options  Google options object.
+     * @param  JAuth      $auth     The authentication client object.
 	 *
 	 * @since   12.3
 	 */
@@ -62,11 +62,11 @@ class JGoogle
 	/**
 	 * Method to create JGoogleData objects
 	 *
-	 * @param   string     $name     Name of property to retrieve
-	 * @param   JRegistry  $options  Google options object.
-	 * @param   JAuth      $auth     The authentication client object.
+     * @param  string     $name     Name of property to retrieve
+     * @param  JRegistry  $options  Google options object.
+     * @param  JAuth      $auth     The authentication client object.
 	 *
-	 * @return  JGoogleData  Google data API object.
+     * @return  JGoogleData  Google data API object.
 	 *
 	 * @since   12.3
 	 */
@@ -102,10 +102,10 @@ class JGoogle
 	/**
 	 * Method to create JGoogleEmbed objects
 	 *
-	 * @param   string     $name     Name of property to retrieve
-	 * @param   JRegistry  $options  Google options object.
+     * @param  string     $name     Name of property to retrieve
+     * @param  JRegistry  $options  Google options object.
 	 *
-	 * @return  JGoogleEmbed  Google embed API object.
+     * @return  JGoogleEmbed  Google embed API object.
 	 *
 	 * @since   12.3
 	 */
@@ -131,9 +131,9 @@ class JGoogle
 	/**
 	 * Get an option from the JGoogle instance.
 	 *
-	 * @param   string  $key  The name of the option to get.
+     * @param  string  $key  The name of the option to get.
 	 *
-	 * @return  mixed  The option value.
+     * @return  mixed  The option value.
 	 *
 	 * @since   12.3
 	 */
@@ -145,10 +145,10 @@ class JGoogle
 	/**
 	 * Set an option for the JGoogle instance.
 	 *
-	 * @param   string  $key    The name of the option to set.
-	 * @param   mixed   $value  The option value to set.
+     * @param  string  $key    The name of the option to set.
+     * @param  mixed   $value  The option value to set.
 	 *
-	 * @return  JGoogle  This object for method chaining.
+     * @return  JGoogle  This object for method chaining.
 	 *
 	 * @since   12.3
 	 */

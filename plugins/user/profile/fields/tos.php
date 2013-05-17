@@ -31,7 +31,7 @@ class JFormFieldTos extends JFormFieldRadio
 	/**
 	 * Method to get the field label markup.
 	 *
-	 * @return  string  The field label markup.
+     * @return  string  The field label markup.
 	 *
 	 * @since   2.5.5
 	 */

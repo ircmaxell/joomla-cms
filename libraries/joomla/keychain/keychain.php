@@ -33,15 +33,15 @@ class JKeychain extends JRegistry
 	/**
 	 * Create a passphrase file
 	 *
-	 * @param   string  $passphrase            The passphrase to store in the passphrase file.
-	 * @param   string  $passphraseFile        Path to the passphrase file to create.
-	 * @param   string  $privateKeyFile        Path to the private key file to encrypt the passphrase file.
-	 * @param   string  $privateKeyPassphrase  The passphrase for the private key.
+     * @param  string  $passphrase            The passphrase to store in the passphrase file.
+     * @param  string  $passphraseFile        Path to the passphrase file to create.
+     * @param  string  $privateKeyFile        Path to the private key file to encrypt the passphrase file.
+     * @param  string  $privateKeyPassphrase  The passphrase for the private key.
 	 *
-	 * @return  boolean  Result of writing the passphrase file to disk.
+     * @return  boolean  Result of writing the passphrase file to disk.
 	 *
 	 * @since   12.3
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function createPassphraseFile($passphrase, $passphraseFile, $privateKeyFile, $privateKeyPassphrase)
 	{
@@ -65,9 +65,9 @@ class JKeychain extends JRegistry
 	/**
 	 * Delete a registry value (very simple method)
 	 *
-	 * @param   string  $path  Registry Path (e.g. joomla.content.showauthor)
+     * @param  string  $path  Registry Path (e.g. joomla.content.showauthor)
 	 *
-	 * @return  mixed  Value of old value or boolean false if operation failed
+     * @return  mixed  Value of old value or boolean false if operation failed
 	 *
 	 * @since   12.3
 	 */
@@ -104,14 +104,14 @@ class JKeychain extends JRegistry
 	/**
 	 * Load a keychain file into this object.
 	 *
-	 * @param   string  $keychainFile    Path to the keychain file.
-	 * @param   string  $passphraseFile  The path to the passphrase file to decript the keychain.
-	 * @param   string  $publicKeyFile   The file containing the public key to decrypt the passphrase file.
+     * @param  string  $keychainFile    Path to the keychain file.
+     * @param  string  $passphraseFile  The path to the passphrase file to decript the keychain.
+     * @param  string  $publicKeyFile   The file containing the public key to decrypt the passphrase file.
 	 *
-	 * @return  boolean  Result of loading the object.
+     * @return  boolean  Result of loading the object.
 	 *
 	 * @since   12.3
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function loadKeychain($keychainFile, $passphraseFile, $publicKeyFile)
 	{
@@ -134,14 +134,14 @@ class JKeychain extends JRegistry
 	/**
 	 * Save this keychain to a file.
 	 *
-	 * @param   string  $keychainFile    The path to the keychain file.
-	 * @param   string  $passphraseFile  The path to the passphrase file to encrypt the keychain.
-	 * @param   string  $publicKeyFile   The file containing the public key to decrypt the passphrase file.
+     * @param  string  $keychainFile    The path to the keychain file.
+     * @param  string  $passphraseFile  The path to the passphrase file to encrypt the keychain.
+     * @param  string  $publicKeyFile   The file containing the public key to decrypt the passphrase file.
 	 *
-	 * @return  boolean  Result of storing the file.
+     * @return  boolean  Result of storing the file.
 	 *
 	 * @since   12.3
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function saveKeychain($keychainFile, $passphraseFile, $publicKeyFile)
 	{
@@ -161,13 +161,13 @@ class JKeychain extends JRegistry
 	/**
 	 * Get the passphrase for this keychain
 	 *
-	 * @param   string  $passphraseFile  The file containing the passphrase to encrypt and decrypt.
-	 * @param   string  $publicKeyFile   The file containing the public key to decrypt the passphrase file.
+     * @param  string  $passphraseFile  The file containing the passphrase to encrypt and decrypt.
+     * @param  string  $publicKeyFile   The file containing the public key to decrypt the passphrase file.
 	 *
-	 * @return  string  The passphrase in from passphraseFile
+     * @return  string  The passphrase in from passphraseFile
 	 *
 	 * @since   12.3
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	protected function getPassphraseFromFile($passphraseFile, $publicKeyFile)
 	{

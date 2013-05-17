@@ -50,10 +50,10 @@ class JAdminCssMenu extends JObject
 	/**
 	 * Method to add a child
 	 *
-	 * @param   JMenuNode  &$node       The node to process
-	 * @param   boolean    $setCurrent  True to set as current working node
+     * @param  JMenuNode  &$node       The node to process
+     * @param  boolean    $setCurrent  True to set as current working node
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function addChild(JMenuNode &$node, $setCurrent = false)
 	{
@@ -67,7 +67,7 @@ class JAdminCssMenu extends JObject
 	/**
 	 * Method to get the parent
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function getParent()
 	{
@@ -77,7 +77,7 @@ class JAdminCssMenu extends JObject
 	/**
 	 * Method to get the parent
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function reset()
 	{
@@ -217,7 +217,8 @@ class JAdminCssMenu extends JObject
 					$id = ' id="menu-'.strtolower($this->_current->id).'"';
 				}
 				echo '<ul'.$id.' class="dropdown-menu menu-component">'."\n";
-			} else {
+			}
+			else {
 				echo '<ul class="dropdown-menu">'."\n";
 			}
 			foreach ($this->_current->getChildren() as $child)
@@ -235,8 +236,8 @@ class JAdminCssMenu extends JObject
 	 * a custom image path is passed as the identifier
 	 *
 	 * @access	public
-	 * @param   string	$identifier	Icon identification string
-	 * @return  string	CSS class name
+     * @param   string  $identifier  Icon identification string
+     * @return  string  CSS class name
 	 * @since   1.5
 	 */
 	public function getIconClass($identifier)
@@ -260,7 +261,8 @@ class JAdminCssMenu extends JObject
 				// We were passed a class name
 				$class = substr($identifier, 6);
 				$classes[$identifier] = "menu-$class";
-			} else {
+			}
+			else {
 				if ($identifier == null)
 				{
 					return null;
@@ -363,9 +365,9 @@ class JMenuNode extends JObject
 	 *
 	 * If the child already has a parent, the link is unset
 	 *
-	 * @param   JMenuNode  &$child  The child to be added
+     * @param  JMenuNode  &$child  The child to be added
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function addChild(JMenuNode &$child)
 	{
@@ -377,9 +379,9 @@ class JMenuNode extends JObject
 	 *
 	 * If the node already has a parent, the link is unset
 	 *
-	 * @param   JMenuNode   &$parent  The JMenuNode for parent to be set or null
+     * @param  JMenuNode  &$parent  The JMenuNode for parent to be set or null
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function setParent(JMenuNode &$parent = null)
 	{
@@ -398,7 +400,7 @@ class JMenuNode extends JObject
 	/**
 	 * Get the children of this node
 	 *
-	 * @return  array    The children
+     * @return  array  The children
 	 */
 	public function &getChildren()
 	{
@@ -408,7 +410,7 @@ class JMenuNode extends JObject
 	/**
 	 * Get the parent of this node
 	 *
-	 * @return  mixed   JMenuNode object with the parent or null for no parent
+     * @return  mixed  JMenuNode object with the parent or null for no parent
 	 */
 	public function &getParent()
 	{
@@ -418,7 +420,7 @@ class JMenuNode extends JObject
 	/**
 	 * Test if this node has children
 	 *
-	 * @return   boolean  True if there are children
+     * @return  boolean  True if there are children
 	 */
 	public function hasChildren()
 	{
@@ -428,7 +430,7 @@ class JMenuNode extends JObject
 	/**
 	 * Test if this node has a parent
 	 *
-	 * @return  boolean  True if there is a parent
+     * @return  boolean  True if there is a parent
 	 */
 	public function hasParent()
 	{

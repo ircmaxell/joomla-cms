@@ -1,11 +1,6 @@
 <?php
 
 use SeleniumClient\By;
-use SeleniumClient\SelectElement;
-use SeleniumClient\WebDriver;
-use SeleniumClient\WebDriverWait;
-use SeleniumClient\DesiredCapabilities;
-use SeleniumClient\WebElement;
 
 /**
  * Class for the back-end control panel screen.
@@ -47,8 +42,8 @@ abstract class AdminManagerPage extends AdminPage
 	/**
 	 * Returns an array of field values from an edit screen.
 	 *
-	 * @param string  $itemName    Name of item (user name, article title, and so on)
-	 * @param array   $fieldNames  Array of field labels to get values of.
+     * @param  string  $itemName    Name of item (user name, article title, and so on)
+     * @param  array   $fieldNames  Array of field labels to get values of.
 	 */
 	public function getFieldValues($className, $itemName, $fieldNames)
 	{
@@ -93,9 +88,9 @@ abstract class AdminManagerPage extends AdminPage
 	/**
 	 * Checks a table for a row containing the desired text
 	 *
-	 * @param  string  $name  Text that identifies the desired row
+     * @param  string  $name  Text that identifies the desired row
 	 *
-	 * @return mixed   row that contains the text or false if row not found
+     * @return  mixed  row that contains the text or false if row not found
 	 */
 	public function getRowNumber($name)
 	{

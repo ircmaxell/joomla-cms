@@ -129,9 +129,9 @@ class JApplicationWebClient
 	/**
 	 * Class constructor.
 	 *
-	 * @param   string  $userAgent       The optional user-agent string to parse.
-	 * @param   string  $acceptEncoding  The optional client accept encoding string to parse.
-	 * @param   string  $acceptLanguage  The optional client accept language string to parse.
+     * @param  string  $userAgent       The optional user-agent string to parse.
+     * @param  string  $acceptEncoding  The optional client accept encoding string to parse.
+     * @param  string  $acceptLanguage  The optional client accept language string to parse.
 	 *
 	 * @since   12.1
 	 */
@@ -171,9 +171,9 @@ class JApplicationWebClient
 	/**
 	 * Magic method to get an object property's value by name.
 	 *
-	 * @param   string  $name  Name of the property for which to return a value.
+     * @param  string  $name  Name of the property for which to return a value.
 	 *
-	 * @return  mixed  The requested value if it exists.
+     * @return  mixed  The requested value if it exists.
 	 *
 	 * @since   12.1
 	 */
@@ -236,9 +236,9 @@ class JApplicationWebClient
 	/**
 	 * Detects the client browser and version in a user agent string.
 	 *
-	 * @param   string  $userAgent  The user-agent string to parse.
+     * @param  string  $userAgent  The user-agent string to parse.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -317,9 +317,9 @@ class JApplicationWebClient
 	/**
 	 * Method to detect the accepted response encoding by the client.
 	 *
-	 * @param   string  $acceptEncoding  The client accept encoding string to parse.
+     * @param  string  $acceptEncoding  The client accept encoding string to parse.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -335,9 +335,9 @@ class JApplicationWebClient
 	/**
 	 * Detects the client rendering engine in a user agent string.
 	 *
-	 * @param   string  $userAgent  The user-agent string to parse.
+     * @param  string  $userAgent  The user-agent string to parse.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -381,9 +381,9 @@ class JApplicationWebClient
 	/**
 	 * Method to detect the accepted languages by the client.
 	 *
-	 * @param   mixed  $acceptLanguage  The client accept language string to parse.
+     * @param  mixed  $acceptLanguage  The client accept language string to parse.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -399,9 +399,9 @@ class JApplicationWebClient
 	/**
 	 * Detects the client platform in a user agent string.
 	 *
-	 * @param   string  $userAgent  The user-agent string to parse.
+     * @param  string  $userAgent  The user-agent string to parse.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -492,9 +492,9 @@ class JApplicationWebClient
 	/**
 	 * Determines if the browser is a robot or not.
 	 *
-	 * @param   string  $userAgent  The user-agent string to parse.
+     * @param  string  $userAgent  The user-agent string to parse.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.3
 	 */

@@ -20,16 +20,16 @@ class InstallationViewPreinstallHtml extends InstallationViewDefault
 {
 	/**
 	 * Array of PHP config options
-     *
-     * @var    array
+	 *
+	 * @var    array
 	 * @since  3.1
 	 */
 	protected $options;
 
 	/**
 	 * Array of PHP settings
-     *
-     * @var    array
+	 *
+	 * @var    array
 	 * @since  3.1
 	 */
 	protected $settings;
@@ -37,7 +37,7 @@ class InstallationViewPreinstallHtml extends InstallationViewDefault
 	/**
 	 * Method to render the view.
 	 *
-	 * @return  string  The rendered view.
+     * @return  string  The rendered view.
 	 *
 	 * @since   3.1
 	 */

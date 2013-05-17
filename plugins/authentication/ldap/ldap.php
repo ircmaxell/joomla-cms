@@ -22,10 +22,10 @@ class PlgAuthenticationLdap extends JPlugin
 	 * This method should handle any authentication and report back to the subject
 	 *
 	 * @access	public
-	 * @param   array  $credentials Array holding the user credentials
-	 * @param   array   $options	Array of extra options
-	 * @param   object	$response	Authentication response object
-	 * @return  object  boolean
+     * @param   array   $credentials  Array holding the user credentials
+     * @param   array   $options      Array of extra options
+     * @param   object  $response     Authentication response object
+     * @return  object  boolean
 	 * @since 1.5
 	 */
 	public function onUserAuthenticate($credentials, $options, &$response)
@@ -84,7 +84,8 @@ class PlgAuthenticationLdap extends JPlugin
 						$success = $ldap->bind($binddata[0]['dn'], $credentials['password'], 1);
 						// Get users details
 						$userdetails = $binddata;
-					} else {
+					}
+					else {
 						$response->status = JAuthentication::STATUS_FAILURE;
 						$response->error_message = JText::_('JGLOBAL_AUTH_USER_NOT_FOUND');
 					}
@@ -103,7 +104,8 @@ class PlgAuthenticationLdap extends JPlugin
 				if ($success)
 				{
 					$userdetails = $ldap->simple_search(str_replace("[search]", $credentials['username'], $this->params->get('search_string')));
-				} else {
+				}
+				else {
 					$response->status = JAuthentication::STATUS_FAILURE;
 					$response->error_message = JText::_('JGLOBAL_AUTH_BIND_FAILED');
 				}
@@ -134,7 +136,8 @@ class PlgAuthenticationLdap extends JPlugin
 			if (isset($userdetails[0][$ldap_fullname][0]))
 			{
 				$response->fullname = $userdetails[0][$ldap_fullname][0];
-			} else {
+			}
+			else {
 				$response->fullname = $credentials['username'];
 			}
 

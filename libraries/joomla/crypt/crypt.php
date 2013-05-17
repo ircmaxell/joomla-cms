@@ -34,8 +34,8 @@ class JCrypt
 	 * Object Constructor takes an optional key to be used for encryption/decryption. If no key is given then the
 	 * secret word from the configuration object is used.
 	 *
-	 * @param   JCryptCipher  $cipher  The encryption cipher object.
-	 * @param   JCryptKey     $key     The encryption key[/pair)].
+     * @param  JCryptCipher  $cipher  The encryption cipher object.
+     * @param  JCryptKey     $key     The encryption key[/pair)].
 	 *
 	 * @since   12.1
 	 */
@@ -51,9 +51,9 @@ class JCrypt
 	/**
 	 * Method to decrypt a data string.
 	 *
-	 * @param   string  $data  The encrypted string to decrypt.
+     * @param  string  $data  The encrypted string to decrypt.
 	 *
-	 * @return  string  The decrypted data string.
+     * @return  string  The decrypted data string.
 	 *
 	 * @since   12.1
 	 */
@@ -65,9 +65,9 @@ class JCrypt
 	/**
 	 * Method to encrypt a data string.
 	 *
-	 * @param   string  $data  The data string to encrypt.
+     * @param  string  $data  The data string to encrypt.
 	 *
-	 * @return  string  The encrypted data string.
+     * @return  string  The encrypted data string.
 	 *
 	 * @since   12.1
 	 */
@@ -79,9 +79,9 @@ class JCrypt
 	/**
 	 * Method to generate a new encryption key[/pair] object.
 	 *
-	 * @param   array  $options  Key generation options.
+     * @param  array  $options  Key generation options.
 	 *
-	 * @return  JCryptKey
+     * @return  JCryptKey
 	 *
 	 * @since   12.1
 	 */
@@ -93,9 +93,9 @@ class JCrypt
 	/**
 	 * Method to set the encryption key[/pair] object.
 	 *
-	 * @param   JCryptKey  $key  The key object to set.
+     * @param  JCryptKey  $key  The key object to set.
 	 *
-	 * @return  JCrypt
+     * @return  JCrypt
 	 *
 	 * @since   12.1
 	 */
@@ -109,9 +109,9 @@ class JCrypt
 	/**
 	 * Generate random bytes.
 	 *
-	 * @param   integer  $length  Length of the random data to generate
+     * @param  integer  $length  Length of the random data to generate
 	 *
-	 * @return  string  Random binary data
+     * @return  string  Random binary data
 	 *
 	 * @since  12.1
 	 */

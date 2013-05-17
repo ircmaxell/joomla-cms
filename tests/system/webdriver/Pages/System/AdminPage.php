@@ -1,11 +1,7 @@
 <?php
 
 use SeleniumClient\By;
-use SeleniumClient\SelectElement;
 use SeleniumClient\WebDriver;
-use SeleniumClient\WebDriverWait;
-use SeleniumClient\DesiredCapabilities;
-use SeleniumClient\WebElement;
 
 /**
  * Abstract Class that is the parent class for all back-end page classes
@@ -60,7 +56,7 @@ abstract class AdminPage
 	 *
 	 * @var  array  All top menu links in admin screens. These are common in all admin screens.
 	 */
-	public  $allMenuLinks = array(
+	public $allMenuLinks = array(
 			'System' 				=> 'administrator/index.php#',
 			'Control Panel' 		=> 'administrator/index.php',
 			'Global Configuration'	=> 'administrator/index.php?option=com_config',
@@ -143,7 +139,6 @@ abstract class AdminPage
 			'Tags'			=>	'administrator/index.php?option=com_tags',
 	);
 
-
 	/**
 	 * This variable creates a JavaScript function called moveToElementByAttribute.
 	 * This function is used to hover the mouse on an element so the tooltip for that element becomes visible.
@@ -167,9 +162,9 @@ abstract class AdminPage
 		matchingElements[0].fireEvent('mouseenter');";
 
 	/**
-	 * @param  Webdriver                 $driver    Driver for this test.
-	 * @param  JoomlaWebdriverTestClass  $test      Test class object (needed to create page class objects)
-	 * @param  string                    $url       Optional URL to load when object is created. Only use for initial page load.
+     * @param  Webdriver                 $driver  Driver for this test.
+     * @param  JoomlaWebdriverTestClass  $test    Test class object (needed to create page class objects)
+     * @param  string                    $url     Optional URL to load when object is created. Only use for initial page load.
 	 */
 	public function __construct(Webdriver $driver, $test, $url = null)
 	{
@@ -197,7 +192,7 @@ abstract class AdminPage
 	/**
 	 * Checks for notices on a page.
 	 *
-	 * @return  bool  true if notices or warnings present on page
+     * @return  bool  true if notices or warnings present on page
 	 */
 	public function checkForNotices()
 	{
@@ -271,14 +266,15 @@ abstract class AdminPage
 	/**
 	 * Finds all menu links in the top menu of an admin screen
 	 *
-	 * @return  array of stdClass objects
+     * @return  array  of stdClass objects
 	 */
 	public function getAllMenuLinks()
 	{
 		$menuContainer = $this->driver->findElement(By::id('menu'));
 		$menus = $menuContainer->findElements(By::tagName('a'));
 		$return = array();
-		foreach ($menus as $menu) {
+		foreach ($menus as $menu)
+		{
 			$menuObject = new stdClass;
 			$menuObject->href = $menu->getAttribute('href');
 			$menuObject->text = $menu->getText();
@@ -302,14 +298,15 @@ abstract class AdminPage
 	 * Gets array of visible links in the menu container
 	 * This is normally the header menu for back-end manager screens
 	 *
-	 * @return  array of stdClass objects
+     * @return  array  of stdClass objects
 	 */
 	public function getVisibleMenuLinks()
 	{
 		$menuContainer = $this->driver->findElement(By::id('menu'));
 		$menus = $menuContainer->findElements(By::tagName('a'));
 		$return = array();
-		foreach ($menus as $menu) {
+		foreach ($menus as $menu)
+		{
 			if ($text = $menu->getText())
 			{
 				$menuObject = new stdClass();

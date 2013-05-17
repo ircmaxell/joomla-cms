@@ -24,11 +24,11 @@ class MediaControllerFile extends JControllerLegacy
 	/**
 	 * Upload a file
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 */
-	function upload()
+	public function upload()
 	{
 		$params = JComponentHelper::getParams('com_media');
 
@@ -53,9 +53,9 @@ class MediaControllerFile extends JControllerLegacy
 
 		if (
 			$_SERVER['CONTENT_LENGTH']>($params->get('upload_maxsize', 0) * 1024 * 1024) ||
-			$_SERVER['CONTENT_LENGTH']>(int)(ini_get('upload_max_filesize'))* 1024 * 1024 ||
-			$_SERVER['CONTENT_LENGTH']>(int)(ini_get('post_max_size'))* 1024 * 1024 ||
-			$_SERVER['CONTENT_LENGTH']>(int)(ini_get('memory_limit'))* 1024 * 1024
+			$_SERVER['CONTENT_LENGTH']>(int) (ini_get('upload_max_filesize'))* 1024 * 1024 ||
+			$_SERVER['CONTENT_LENGTH']>(int) (ini_get('post_max_size'))* 1024 * 1024 ||
+			$_SERVER['CONTENT_LENGTH']>(int) (ini_get('memory_limit'))* 1024 * 1024
 		)
 		{
 			$response = array(

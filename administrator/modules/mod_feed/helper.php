@@ -21,11 +21,11 @@ class ModFeedHelper
 	/**
 	 * Method to load a feed.
 	 *
-	 * @param   JRegisty  $params  The parameters object.
+     * @param  JRegisty  $params  The parameters object.
 	 *
-	 * @return  JFeedReader|string  Return a JFeedReader object or a string message if error.
+     * @return  JFeedReader|string  Return a JFeedReader object or a string message if error.
 	 */
-	static function getFeed($params)
+	public static function getFeed($params)
 	{
 		// Module params
 		$rssurl = $params->get('rssurl', '');

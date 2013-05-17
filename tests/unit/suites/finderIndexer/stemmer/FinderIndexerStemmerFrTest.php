@@ -39,7 +39,7 @@ class FinderIndexerStemmerFrTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the stem method of the French language stemmer
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -54,7 +54,7 @@ class FinderIndexerStemmerFrTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the stem method of the French language stemmer to ensure it doesn't stem short words
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -69,7 +69,7 @@ class FinderIndexerStemmerFrTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the stem method of the French language stemmer to ensure it only stems French
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */

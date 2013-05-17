@@ -21,9 +21,9 @@ abstract class JHtmlQuery
 	/**
 	 * Method to get the explained (human-readable) search query.
 	 *
-	 * @param   FinderIndexerQuery  $query  A FinderIndexerQuery object to explain.
+     * @param  FinderIndexerQuery  $query  A FinderIndexerQuery object to explain.
 	 *
-	 * @return  mixed  String if there is data to explain, null otherwise.
+     * @return  mixed  String if there is data to explain, null otherwise.
 	 *
 	 * @since   2.5
 	 */
@@ -111,9 +111,9 @@ abstract class JHtmlQuery
 	/**
 	 * Method to get the suggested search query.
 	 *
-	 * @param   FinderIndexerQuery  $query  A FinderIndexerQuery object.
+     * @param  FinderIndexerQuery  $query  A FinderIndexerQuery object.
 	 *
-	 * @return  mixed  String if there is a suggestion, false otherwise.
+     * @return  mixed  String if there is a suggestion, false otherwise.
 	 *
 	 * @since   2.5
 	 */

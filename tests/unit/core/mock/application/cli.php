@@ -17,10 +17,10 @@ class TestMockApplicationCli
 	/**
 	 * Creates and instance of the mock JApplicationCli object.
 	 *
-	 * @param   TestCase  $test     A test object.
-	 * @param   array     $options  A set of options to configure the mock.
+     * @param  TestCase  $test     A test object.
+     * @param  array     $options  A set of options to configure the mock.
 	 *
-	 * @return  PHPUnit_Framework_MockObject_MockObject
+     * @return  PHPUnit_Framework_MockObject_MockObject
 	 *
 	 * @since   12.2
 	 */

@@ -29,8 +29,8 @@ abstract class JModelDatabase extends JModelBase
 	/**
 	 * Instantiate the model.
 	 *
-	 * @param   JRegistry        $state  The model state.
-	 * @param   JDatabaseDriver  $db     The database adpater.
+     * @param  JRegistry        $state  The model state.
+     * @param  JDatabaseDriver  $db     The database adpater.
 	 *
 	 * @since   12.1
 	 */
@@ -45,7 +45,7 @@ abstract class JModelDatabase extends JModelBase
 	/**
 	 * Get the database driver.
 	 *
-	 * @return  JDatabaseDriver  The database driver.
+     * @return  JDatabaseDriver  The database driver.
 	 *
 	 * @since   12.1
 	 */
@@ -57,9 +57,9 @@ abstract class JModelDatabase extends JModelBase
 	/**
 	 * Set the database driver.
 	 *
-	 * @param   JDatabaseDriver  $db  The database driver.
+     * @param  JDatabaseDriver  $db  The database driver.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -71,7 +71,7 @@ abstract class JModelDatabase extends JModelBase
 	/**
 	 * Load the database driver.
 	 *
-	 * @return  JDatabaseDriver  The database driver.
+     * @return  JDatabaseDriver  The database driver.
 	 *
 	 * @since   12.1
 	 */

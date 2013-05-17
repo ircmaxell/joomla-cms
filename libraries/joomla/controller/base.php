@@ -37,8 +37,8 @@ abstract class JControllerBase implements JController
 	/**
 	 * Instantiate the controller.
 	 *
-	 * @param   JInput            $input  The input object.
-	 * @param   JApplicationBase  $app    The application object.
+     * @param  JInput            $input  The input object.
+     * @param  JApplicationBase  $app    The application object.
 	 *
 	 * @since  12.1
 	 */
@@ -52,7 +52,7 @@ abstract class JControllerBase implements JController
 	/**
 	 * Get the application object.
 	 *
-	 * @return  JApplicationBase  The application object.
+     * @return  JApplicationBase  The application object.
 	 *
 	 * @since   12.1
 	 */
@@ -64,7 +64,7 @@ abstract class JControllerBase implements JController
 	/**
 	 * Get the input object.
 	 *
-	 * @return  JInput  The input object.
+     * @return  JInput  The input object.
 	 *
 	 * @since   12.1
 	 */
@@ -76,7 +76,7 @@ abstract class JControllerBase implements JController
 	/**
 	 * Serialize the controller.
 	 *
-	 * @return  string  The serialized controller.
+     * @return  string  The serialized controller.
 	 *
 	 * @since   12.1
 	 */
@@ -88,12 +88,12 @@ abstract class JControllerBase implements JController
 	/**
 	 * Unserialize the controller.
 	 *
-	 * @param   string  $input  The serialized controller.
+     * @param  string  $input  The serialized controller.
 	 *
-	 * @return  JController  Supports chaining.
+     * @return  JController  Supports chaining.
 	 *
 	 * @since   12.1
-	 * @throws  UnexpectedValueException if input is not the right class.
+     * @throws  UnexpectedValueException  if input is not the right class.
 	 */
 	public function unserialize($input)
 	{
@@ -114,7 +114,7 @@ abstract class JControllerBase implements JController
 	/**
 	 * Load the application object.
 	 *
-	 * @return  JApplicationBase  The application object.
+     * @return  JApplicationBase  The application object.
 	 *
 	 * @since   12.1
 	 */
@@ -126,7 +126,7 @@ abstract class JControllerBase implements JController
 	/**
 	 * Load the input object.
 	 *
-	 * @return  JInput  The input object.
+     * @return  JInput  The input object.
 	 *
 	 * @since   12.1
 	 */

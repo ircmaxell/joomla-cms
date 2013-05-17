@@ -19,7 +19,7 @@ abstract class MediaHelper
 	/**
 	 * Checks if the file is an image
 	 * @param string The filename
-	 * @return  boolean
+     * @return  boolean
 	 */
 	public static function isImage($fileName)
 	{
@@ -30,7 +30,7 @@ abstract class MediaHelper
 	/**
 	 * Checks if the file is an image
 	 * @param string The filename
-	 * @return  boolean
+     * @return  boolean
 	 */
 	public static function getTypeIcon($fileName)
 	{
@@ -43,7 +43,7 @@ abstract class MediaHelper
 	 *
 	 * @param array File information
 	 * @param string An error message to be returned
-	 * @return  boolean
+     * @return  boolean
 	 */
 	public static function canUpload($file, &$err)
 	{
@@ -93,11 +93,13 @@ abstract class MediaHelper
 						$err = 'COM_MEDIA_ERROR_WARNINVALID_IMG';
 						return false;
 					}
-				} else {
+				}
+				else {
 					$err = 'COM_MEDIA_ERROR_WARNFILETOOLARGE';
 					return false;
 				}
-			} elseif (!in_array($format, $ignored))
+			}
+			elseif (!in_array($format, $ignored))
 			{
 				// if its not an image...and we're not ignoring it
 				$allowed_mime = explode(',', $params->get('upload_mime'));
@@ -113,7 +115,8 @@ abstract class MediaHelper
 						return false;
 					}
 					finfo_close($finfo);
-				} elseif (function_exists('mime_content_type') && $params->get('check_mime', 1))
+				}
+				elseif (function_exists('mime_content_type') && $params->get('check_mime', 1))
 				{
 					// we have mime magic
 					$type = mime_content_type($file['tmp_name']);
@@ -122,7 +125,8 @@ abstract class MediaHelper
 						$err = 'COM_MEDIA_ERROR_WARNINVALID_MIME';
 						return false;
 					}
-				} elseif (!$user->authorise('core.manage'))
+				}
+				elseif (!$user->authorise('core.manage'))
 				{
 					$err = 'COM_MEDIA_ERROR_WARNNOTADMIN';
 					return false;
@@ -148,9 +152,9 @@ abstract class MediaHelper
 	/**
 	 * Method to parse a file size
 	 *
-	 * @param   integer  $size  The file size in bytes
+     * @param  integer  $size  The file size in bytes
 	 *
-	 * @return  string  The converted file size
+     * @return  string  The converted file size
 	 *
 	 * @since   1.6
 	 * @deprecated  4.0  Use JHtmlNumber::bytes() instead

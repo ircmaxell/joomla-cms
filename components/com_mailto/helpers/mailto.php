@@ -19,7 +19,7 @@ abstract class MailtoHelper
 	 * Adds a URL to the mailto system and returns the hash
 	 *
 	 * @param string url
-	 * @return URL hash
+     * @return  URL  hash
 	 */
 	public static function addLink($url)
 	{
@@ -41,7 +41,7 @@ abstract class MailtoHelper
 	 * Checks if a URL is a Flash file
 	 *
 	 * @param string
-	 * @return URL
+     * @return  URL
 	 */
 	public static function validateHash($hash)
 	{

@@ -22,9 +22,9 @@ class JWebClient extends JApplicationWebClient
 	/**
 	 * Class constructor.
 	 *
-	 * @param   mixed  $userAgent       The optional user-agent string to parse.
-	 * @param   mixed  $acceptEncoding  The optional client accept encoding string to parse.
-	 * @param   mixed  $acceptLanguage  The optional client accept language string to parse.
+     * @param  mixed  $userAgent       The optional user-agent string to parse.
+     * @param  mixed  $acceptEncoding  The optional client accept encoding string to parse.
+     * @param  mixed  $acceptLanguage  The optional client accept language string to parse.
 	 *
 	 * @since   11.3
 	 */

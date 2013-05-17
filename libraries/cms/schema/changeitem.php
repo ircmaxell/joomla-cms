@@ -112,9 +112,9 @@ abstract class JSchemaChangeitem
 	/**
 	 * Constructor: builds check query and message from $updateQuery
 	 *
-	 * @param   JDatabaseDriver  $db     Database connector object
-	 * @param   string           $file   Full path name of the sql file
-	 * @param   string           $query  Text of the sql query (one line of the file)
+     * @param  JDatabaseDriver  $db     Database connector object
+     * @param  string           $file   Full path name of the sql file
+     * @param  string           $query  Text of the sql query (one line of the file)
 	 *
 	 * @since   2.5
 	 */
@@ -129,14 +129,14 @@ abstract class JSchemaChangeitem
 	/**
 	 * Returns a reference to the JSchemaChangeitem object.
 	 *
-	 * @param   JDatabaseDriver  $db     Database connector object
-	 * @param   string           $file   Full path name of the sql file
-	 * @param   string           $query  Text of the sql query (one line of the file)
+     * @param  JDatabaseDriver  $db     Database connector object
+     * @param  string           $file   Full path name of the sql file
+     * @param  string           $query  Text of the sql query (one line of the file)
 	 *
-	 * @return  JSchemaChangeitem instance based on the database driver
+     * @return  JSchemaChangeitem  instance based on the database driver
 	 *
 	 * @since   2.5
-	 * @throws  RuntimeException if class for database driver not found
+     * @throws  RuntimeException  if class for database driver not found
 	 */
 	public static function getInstance($db, $file, $query)
 	{
@@ -176,7 +176,7 @@ abstract class JSchemaChangeitem
 	 * If not successful, $checkQuery is empty and , and $checkStatus is -1.
 	 * For example, this will happen if the current line is a non-DDL statement.
 	 *
-	 * @return void
+     * @return  void
 	 *
 	 * @since  2.5
 	 */
@@ -186,7 +186,7 @@ abstract class JSchemaChangeitem
 	 * Runs the check query and checks that 1 row is returned
 	 * If yes, return true, otherwise return false
 	 *
-	 * @return  boolean  true on success, false otherwise
+     * @return  boolean  true on success, false otherwise
 	 *
 	 * @since  2.5
 	 */
@@ -219,7 +219,7 @@ abstract class JSchemaChangeitem
 	/**
 	 * Runs the update query to apply the change to the database
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */

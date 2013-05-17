@@ -25,7 +25,7 @@ class PlgSystemHighlight extends JPlugin
 	 * The highlighting is done with JavaScript so we just
 	 * need to check a few parameters and the JHtml behavior will do the rest.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   2.5
 	 */

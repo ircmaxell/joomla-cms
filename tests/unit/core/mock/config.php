@@ -17,9 +17,9 @@ class TestMockConfig
 	/**
 	 * Creates and instance of the mock JApplication object.
 	 *
-	 * @param   object  $test  A test object.
+     * @param  object  $test  A test object.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */

@@ -17,9 +17,9 @@ class TestMockLanguage
 	/**
 	 * Creates and instance of the mock JLanguage object.
 	 *
-	 * @param   object  $test  A test object.
+     * @param  object  $test  A test object.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -68,11 +68,11 @@ class TestMockLanguage
 	/**
 	 * Callback for the mock JLanguage::_ method.
 	 *
-	 * @param   string   $string                The string to translate
-	 * @param   boolean  $jsSafe                Make the result javascript safe
-	 * @param   boolean  $interpretBackSlashes  Interpret \t and \n
+     * @param  string   $string                The string to translate
+     * @param  boolean  $jsSafe                Make the result javascript safe
+     * @param  boolean  $interpretBackSlashes  Interpret \t and \n
 	 *
-	 * @return void
+     * @return  void
 	 *
 	 * @since  11.3
 	 */

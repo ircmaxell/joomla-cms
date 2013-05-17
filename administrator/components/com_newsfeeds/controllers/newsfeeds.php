@@ -30,7 +30,7 @@ class NewsfeedsControllerNewsfeeds extends JControllerAdmin
 	/**
 	 * Method to save the submitted ordering values for records via AJAX.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

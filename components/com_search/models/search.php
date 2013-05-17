@@ -37,7 +37,7 @@ class SearchModelSearch extends JModelLegacy
 	 *
 	 * @var integer
 	 */
-	protected  $_areas = null;
+	protected $_areas = null;
 
 	/**
 	 * Pagination object
@@ -122,7 +122,7 @@ class SearchModelSearch extends JModelLegacy
 	 * Method to get weblink item data for the category
 	 *
 	 * @access public
-	 * @return array
+     * @return  array
 	 */
 	public function getData()
 	{
@@ -150,7 +150,8 @@ class SearchModelSearch extends JModelLegacy
 			if ($this->getState('limit') > 0)
 			{
 				$this->_data	= array_splice($rows, $this->getState('limitstart'), $this->getState('limit'));
-			} else {
+			}
+			else {
 				$this->_data = $rows;
 			}
 		}
@@ -162,7 +163,7 @@ class SearchModelSearch extends JModelLegacy
 	 * Method to get the total number of weblink items for the category
 	 *
 	 * @access public
-	 * @return  integer
+     * @return  integer
 	 */
 	public function getTotal()
 	{
@@ -173,7 +174,7 @@ class SearchModelSearch extends JModelLegacy
 	 * Method to get a pagination object of the weblink items for the category
 	 *
 	 * @access public
-	 * @return  integer
+     * @return  integer
 	 */
 	public function getPagination()
 	{

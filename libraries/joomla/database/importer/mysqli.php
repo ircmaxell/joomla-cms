@@ -83,7 +83,7 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Set the output option for the exporter to XML format.
 	 *
-	 * @return  JDatabaseImporterMysql  Method supports chaining.
+     * @return  JDatabaseImporterMysql  Method supports chaining.
 	 *
 	 * @since   11.1
 	 */
@@ -97,10 +97,10 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Checks if all data and options are in order prior to exporting.
 	 *
-	 * @return  JDatabaseImporterMysqli  Method supports chaining.
+     * @return  JDatabaseImporterMysqli  Method supports chaining.
 	 *
 	 * @since   11.1
-	 * @throws  Exception if an error is encountered.
+     * @throws  Exception  if an error is encountered.
 	 */
 	public function check()
 	{
@@ -122,9 +122,9 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Specifies the data source to import.
 	 *
-	 * @param   mixed  $from  The data source to import.
+     * @param  mixed  $from  The data source to import.
 	 *
-	 * @return  JDatabaseImporterMysql  Method supports chaining.
+     * @return  JDatabaseImporterMysql  Method supports chaining.
 	 *
 	 * @since   11.1
 	 */
@@ -138,10 +138,10 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Get the SQL syntax to add a column.
 	 *
-	 * @param   string            $table  The table name.
-	 * @param   SimpleXMLElement  $field  The XML field definition.
+     * @param  string            $table  The table name.
+     * @param  SimpleXMLElement  $field  The XML field definition.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -155,10 +155,10 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Get the SQL syntax to add a key.
 	 *
-	 * @param   string  $table  The table name.
-	 * @param   array   $keys   An array of the fields pertaining to this key.
+     * @param  string  $table  The table name.
+     * @param  array   $keys   An array of the fields pertaining to this key.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -172,9 +172,9 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Get alters for table if there is a difference.
 	 *
-	 * @param   SimpleXMLElement  $structure  The XML structure pf the table.
+     * @param  SimpleXMLElement  $structure  The XML structure pf the table.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.1
 	 */
@@ -321,10 +321,10 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Get the syntax to alter a column.
 	 *
-	 * @param   string            $table  The name of the database table to alter.
-	 * @param   SimpleXMLElement  $field  The XML definition for the field.
+     * @param  string            $table  The name of the database table to alter.
+     * @param  SimpleXMLElement  $field  The XML definition for the field.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -339,9 +339,9 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Get the SQL syntax for a single column that would be included in a table create or alter statement.
 	 *
-	 * @param   SimpleXMLElement  $field  The XML field definition.
+     * @param  SimpleXMLElement  $field  The XML field definition.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -394,10 +394,10 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Get the SQL syntax to drop a column.
 	 *
-	 * @param   string  $table  The table name.
-	 * @param   string  $name   The name of the field to drop.
+     * @param  string  $table  The table name.
+     * @param  string  $name   The name of the field to drop.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -411,10 +411,10 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Get the SQL syntax to drop a key.
 	 *
-	 * @param   string  $table  The table name.
-	 * @param   string  $name   The name of the key to drop.
+     * @param  string  $table  The table name.
+     * @param  string  $name   The name of the key to drop.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -428,9 +428,9 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Get the SQL syntax to drop a key.
 	 *
-	 * @param   string  $table  The table name.
+     * @param  string  $table  The table name.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -444,12 +444,12 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Get the details list of keys for a table.
 	 *
-	 * @param   array  $keys  An array of objects that comprise the keys for the table.
+     * @param  array  $keys  An array of objects that comprise the keys for the table.
 	 *
-	 * @return  array  The lookup array. array({key name} => array(object, ...))
+     * @return  array  The lookup array. array({key name} => array(object, ...))
 	 *
 	 * @since   11.1
-	 * @throws  Exception
+     * @throws  Exception
 	 */
 	protected function getKeyLookup($keys)
 	{
@@ -478,9 +478,9 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Get the SQL syntax for a key.
 	 *
-	 * @param   array  $columns  An array of SimpleXMLElement objects comprising the key.
+     * @param  array  $columns  An array of SimpleXMLElement objects comprising the key.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -525,9 +525,9 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Get the real name of the table, converting the prefix wildcard string if present.
 	 *
-	 * @param   string  $table  The name of the table.
+     * @param  string  $table  The name of the table.
 	 *
-	 * @return  string	The real name of the table.
+     * @return  string  The real name of the table.
 	 *
 	 * @since   11.1
 	 */
@@ -545,11 +545,11 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Merges the incoming structure definition with the existing structure.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @note    Currently only supports XML format.
 	 * @since   11.1
-	 * @throws  Exception on error.
+     * @throws  Exception  on error.
 	 * @todo    If it's not XML convert to XML first.
 	 */
 	protected function mergeStructure()
@@ -623,9 +623,9 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Sets the database connector to use for exporting structure and/or data from MySQL.
 	 *
-	 * @param   JDatabaseDriverMysqli  $db  The database connector.
+     * @param  JDatabaseDriverMysqli  $db  The database connector.
 	 *
-	 * @return  JDatabaseImporterMysqli  Method supports chaining.
+     * @return  JDatabaseImporterMysqli  Method supports chaining.
 	 *
 	 * @since   11.1
 	 */
@@ -639,9 +639,9 @@ class JDatabaseImporterMysqli extends JDatabaseImporter
 	/**
 	 * Sets an internal option to merge the structure based on the input data.
 	 *
-	 * @param   boolean  $setting  True to export the structure, false to not.
+     * @param  boolean  $setting  True to export the structure, false to not.
 	 *
-	 * @return  JDatabaseImporterMysql  Method supports chaining.
+     * @return  JDatabaseImporterMysql  Method supports chaining.
 	 *
 	 * @since   11.1
 	 */

@@ -28,8 +28,8 @@ class JGoogleAuthOauth2 extends JGoogleAuth
 	/**
 	 * Constructor.
 	 *
-	 * @param   JRegistry      $options  JGoogleAuth options object.
-	 * @param   JOAuth2Client  $client   OAuth client for Google authentication.
+     * @param  JRegistry      $options  JGoogleAuth options object.
+     * @param  JOAuth2Client  $client   OAuth client for Google authentication.
 	 *
 	 * @since   12.3
 	 */
@@ -42,7 +42,7 @@ class JGoogleAuthOauth2 extends JGoogleAuth
 	/**
 	 * Method to authenticate to Google
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   12.3
 	 */
@@ -56,7 +56,7 @@ class JGoogleAuthOauth2 extends JGoogleAuth
 	/**
 	 * Verify if the client has been authenticated
 	 *
-	 * @return  boolean  Is authenticated
+     * @return  boolean  Is authenticated
 	 *
 	 * @since   12.3
 	 */
@@ -68,12 +68,12 @@ class JGoogleAuthOauth2 extends JGoogleAuth
 	/**
 	 * Method to retrieve data from Google
 	 *
-	 * @param   string  $url      The URL for the request.
-	 * @param   mixed   $data     The data to include in the request.
-	 * @param   array   $headers  The headers to send with the request.
-	 * @param   string  $method   The type of http request to send.
+     * @param  string  $url      The URL for the request.
+     * @param  mixed   $data     The data to include in the request.
+     * @param  array   $headers  The headers to send with the request.
+     * @param  string  $method   The type of http request to send.
 	 *
-	 * @return  mixed  Data from Google.
+     * @return  mixed  Data from Google.
 	 *
 	 * @since   12.3
 	 */
@@ -87,7 +87,7 @@ class JGoogleAuthOauth2 extends JGoogleAuth
 	/**
 	 * Method to fill in Google-specific OAuth settings
 	 *
-	 * @return  JOAuth2Client  Google-configured Oauth2 client.
+     * @return  JOAuth2Client  Google-configured Oauth2 client.
 	 *
 	 * @since   12.3
 	 */

@@ -22,7 +22,7 @@ class TagsControllerTags extends JControllerLegacy
 	/**
 	 * Method to search tags with AJAX
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function searchAjax()
 	{

@@ -57,12 +57,12 @@ class JFeedLink
 	/**
 	 * Constructor.
 	 *
-	 * @param   string   $uri       The URI to the linked resource.
-	 * @param   string   $relation  The relationship between the feed and the linked resource.
-	 * @param   string   $type      The resource type.
-	 * @param   string   $language  The language of the resource found at the given URI.
-	 * @param   string   $title     The title of the resource.
-	 * @param   integer  $length    The length of the resource in bytes.
+     * @param  string   $uri       The URI to the linked resource.
+     * @param  string   $relation  The relationship between the feed and the linked resource.
+     * @param  string   $type      The resource type.
+     * @param  string   $language  The language of the resource found at the given URI.
+     * @param  string   $title     The title of the resource.
+     * @param  integer  $length    The length of the resource in bytes.
 	 *
 	 * @since   12.3
 	 */

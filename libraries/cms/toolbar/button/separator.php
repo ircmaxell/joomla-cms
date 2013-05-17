@@ -28,9 +28,9 @@ class JToolbarButtonSeparator extends JToolbarButton
 	/**
 	 * Get the HTML for a separator in the toolbar
 	 *
-	 * @param   array  &$definition  Class name and custom width
+     * @param  array  &$definition  Class name and custom width
 	 *
-	 * @return  string  The HTML for the separator
+     * @return  string  The HTML for the separator
 	 *
 	 * @see     JButton::render()
 	 * @since   3.0
@@ -52,7 +52,7 @@ class JToolbarButtonSeparator extends JToolbarButton
 	/**
 	 * Empty implementation (not required for separator)
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

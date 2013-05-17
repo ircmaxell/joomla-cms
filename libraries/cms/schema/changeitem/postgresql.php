@@ -31,7 +31,7 @@ class JSchemaChangeitemPostgresql extends JSchemaChangeitem
 	 * If not successful, $checkQuery is empty and , and $checkStatus is -1.
 	 * For example, this will happen if the current line is a non-DDL statement.
 	 *
-	 * @return void
+     * @return  void
 	 *
 	 * @since  3.0
 	 */
@@ -208,10 +208,10 @@ class JSchemaChangeitemPostgresql extends JSchemaChangeitem
 	 * If you change a column to "integer unsigned" it shows
 	 * as "int(10) unsigned" in the check query.
 	 *
-	 * @param   string  $type1  the column type
-	 * @param   string  $type2  the column attributes
+     * @param  string  $type1  the column type
+     * @param  string  $type2  the column attributes
 	 *
-	 * @return  string  The original or changed column type.
+     * @return  string  The original or changed column type.
 	 *
 	 * @since   3.0
 	 */
@@ -230,9 +230,9 @@ class JSchemaChangeitemPostgresql extends JSchemaChangeitem
 	 * Replaces name quote character with normal quote for literal.
 	 * Drops trailing semi-colon. Injects the database prefix.
 	 *
-	 * @param   string  $string  The input string to be cleaned up.
+     * @param  string  $string  The input string to be cleaned up.
 	 *
-	 * @return  string  The modified string.
+     * @return  string  The modified string.
 	 *
 	 * @since   3.0
 	 */

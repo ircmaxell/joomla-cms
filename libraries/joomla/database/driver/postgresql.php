@@ -62,7 +62,7 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Database object constructor
 	 *
-	 * @param   array  $options  List of options used to configure the connection
+     * @param  array  $options  List of options used to configure the connection
 	 *
 	 * @since	12.1
 	 */
@@ -93,10 +93,10 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Connects to the database if needed.
 	 *
-	 * @return  void  Returns void if the database connected successfully.
+     * @return  void  Returns void if the database connected successfully.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function connect()
 	{
@@ -127,7 +127,7 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Disconnects the database.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -145,10 +145,10 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Method to escape a string for usage in an SQL statement.
 	 *
-	 * @param   string   $text   The string to be escaped.
-	 * @param   boolean  $extra  Optional parameter to provide extra escaping.
+     * @param  string   $text   The string to be escaped.
+     * @param  boolean  $extra  Optional parameter to provide extra escaping.
 	 *
-	 * @return  string  The escaped string.
+     * @return  string  The escaped string.
 	 *
 	 * @since   12.1
 	 */
@@ -169,7 +169,7 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Test to see if the PostgreSQL connector is available
 	 *
-	 * @return boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 */
 	public static function test()
 	{
@@ -179,7 +179,7 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Determines if the connection to the server is active.
 	 *
-	 * @return	boolean
+     * @return  boolean
 	 *
 	 * @since	12.1
 	 */
@@ -198,13 +198,13 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Drops a table from the database.
 	 *
-	 * @param   string   $tableName  The name of the database table to drop.
-	 * @param   boolean  $ifExists   Optionally specify that the table must exist before it is dropped.
+     * @param  string   $tableName  The name of the database table to drop.
+     * @param  boolean  $ifExists   Optionally specify that the table must exist before it is dropped.
 	 *
-	 * @return  boolean	true
+     * @return  boolean  true
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function dropTable($tableName, $ifExists = true)
 	{
@@ -219,7 +219,7 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Get the number of affected rows for the previous executed SQL statement.
 	 *
-	 * @return int The number of affected rows in the previous operation
+     * @return  int  The number of affected rows in the previous operation
 	 *
 	 * @since 12.1
 	 */
@@ -233,10 +233,10 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Method to get the database collation in use by sampling a text field of a table in the database.
 	 *
-	 * @return  mixed  The collation in use by the database or boolean false if not supported.
+     * @return  mixed  The collation in use by the database or boolean false if not supported.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function getCollation()
 	{
@@ -250,9 +250,9 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Get the number of returned rows for the previous executed SQL statement.
 	 *
-	 * @param   resource  $cur  An optional database cursor resource to extract the row count from.
+     * @param  resource  $cur  An optional database cursor resource to extract the row count from.
 	 *
-	 * @return  integer   The number of returned rows.
+     * @return  integer  The number of returned rows.
 	 *
 	 * @since   12.1
 	 */
@@ -266,13 +266,13 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Get the current or query, or new JDatabaseQuery object.
 	 *
-	 * @param   boolean  $new    False to return the last query set, True to return a new JDatabaseQuery object.
-	 * @param   boolean  $asObj  False to return last query as string, true to get JDatabaseQueryPostgresql object.
+     * @param  boolean  $new    False to return the last query set, True to return a new JDatabaseQuery object.
+     * @param  boolean  $asObj  False to return last query as string, true to get JDatabaseQueryPostgresql object.
 	 *
-	 * @return  JDatabaseQuery  The current query object or a new object extending the JDatabaseQuery class.
+     * @return  JDatabaseQuery  The current query object or a new object extending the JDatabaseQuery class.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function getQuery($new = false, $asObj = false)
 	{
@@ -305,12 +305,12 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	 *
 	 * This is unsuported by PostgreSQL.
 	 *
-	 * @param   mixed  $tables  A table name or a list of table names.
+     * @param  mixed  $tables  A table name or a list of table names.
 	 *
-	 * @return  char  An empty char because this function is not supported by PostgreSQL.
+     * @return  char  An empty char because this function is not supported by PostgreSQL.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function getTableCreate($tables)
 	{
@@ -320,13 +320,13 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Retrieves field information about a given table.
 	 *
-	 * @param   string   $table     The name of the database table.
-	 * @param   boolean  $typeOnly  True to only return field types.
+     * @param  string   $table     The name of the database table.
+     * @param  boolean  $typeOnly  True to only return field types.
 	 *
-	 * @return  array  An array of fields for the database table.
+     * @return  array  An array of fields for the database table.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function getTableColumns($table, $typeOnly = true)
 	{
@@ -394,12 +394,12 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Get the details list of keys for a table.
 	 *
-	 * @param   string  $table  The name of the table.
+     * @param  string  $table  The name of the table.
 	 *
-	 * @return  array  An array of the column specification for the table.
+     * @return  array  An array of the column specification for the table.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function getTableKeys($table)
 	{
@@ -433,10 +433,10 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Method to get an array of all tables in the database.
 	 *
-	 * @return  array  An array of all the tables in the database.
+     * @return  array  An array of all the tables in the database.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function getTableList()
 	{
@@ -460,12 +460,12 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Get the details list of sequences for a table.
 	 *
-	 * @param   string  $table  The name of the table.
+     * @param  string  $table  The name of the table.
 	 *
-	 * @return  array  An array of sequences specification for the table.
+     * @return  array  An array of sequences specification for the table.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function getTableSequences($table)
 	{
@@ -508,7 +508,7 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Get the version of the database connector.
 	 *
-	 * @return  string  The database connector version.
+     * @return  string  The database connector version.
 	 *
 	 * @since   12.1
 	 */
@@ -545,7 +545,7 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	 *		$this->setQuery($query);
 	 *		$id = $this->loadResult();
 	 *
-	 * @return  integer  The value of the auto-increment field from the last inserted row.
+     * @return  integer  The value of the auto-increment field from the last inserted row.
 	 *
 	 * @since   12.1
 	 */
@@ -581,12 +581,12 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Locks a table in the database.
 	 *
-	 * @param   string  $tableName  The name of the table to unlock.
+     * @param  string  $tableName  The name of the table to unlock.
 	 *
-	 * @return  JDatabaseDriverPostgresql  Returns this object to support chaining.
+     * @return  JDatabaseDriverPostgresql  Returns this object to support chaining.
 	 *
 	 * @since   11.4
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function lockTable($tableName)
 	{
@@ -599,10 +599,10 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Execute the SQL statement.
 	 *
-	 * @return  mixed  A database cursor resource on success, boolean false on failure.
+     * @return  mixed  A database cursor resource on success, boolean false on failure.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function execute()
 	{
@@ -686,15 +686,15 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Renames a table in the database.
 	 *
-	 * @param   string  $oldTable  The name of the table to be renamed
-	 * @param   string  $newTable  The new name for the table.
-	 * @param   string  $backup    Not used by PostgreSQL.
-	 * @param   string  $prefix    Not used by PostgreSQL.
+     * @param  string  $oldTable  The name of the table to be renamed
+     * @param  string  $newTable  The new name for the table.
+     * @param  string  $backup    Not used by PostgreSQL.
+     * @param  string  $prefix    Not used by PostgreSQL.
 	 *
-	 * @return  JDatabaseDriverPostgresql  Returns this object to support chaining.
+     * @return  JDatabaseDriverPostgresql  Returns this object to support chaining.
 	 *
 	 * @since   11.4
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function renameTable($oldTable, $newTable, $backup = null, $prefix = null)
 	{
@@ -763,9 +763,9 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Selects the database, but redundant for PostgreSQL
 	 *
-	 * @param   string  $database  Database name to select.
+     * @param  string  $database  Database name to select.
 	 *
-	 * @return  boolean  Always true
+     * @return  boolean  Always true
 	 */
 	public function select($database)
 	{
@@ -775,7 +775,7 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Custom settings for UTF support
 	 *
-	 * @return  int  Zero on success, -1 on failure
+     * @return  int  Zero on success, -1 on failure
 	 *
 	 * @since   12.1
 	 */
@@ -789,11 +789,11 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * This function return a field value as a prepared string to be used in a SQL statement.
 	 *
-	 * @param   array   $columns      Array of table's column returned by ::getTableColumns.
-	 * @param   string  $field_name   The table field's name.
-	 * @param   string  $field_value  The variable value to quote and return.
+     * @param  array   $columns      Array of table's column returned by ::getTableColumns.
+     * @param  string  $field_name   The table field's name.
+     * @param  string  $field_value  The variable value to quote and return.
 	 *
-	 * @return  string  The quoted string.
+     * @return  string  The quoted string.
 	 *
 	 * @since   11.3
 	 */
@@ -840,10 +840,10 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Method to commit a transaction.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function transactionCommit()
 	{
@@ -856,12 +856,12 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Method to roll back a transaction.
 	 *
-	 * @param   string  $toSavepoint  If present rollback transaction to this savepoint
+     * @param  string  $toSavepoint  If present rollback transaction to this savepoint
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function transactionRollback($toSavepoint = null)
 	{
@@ -880,10 +880,10 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Method to initialize a transaction.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function transactionStart()
 	{
@@ -895,9 +895,9 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Method to fetch a row from the result set cursor as an array.
 	 *
-	 * @param   mixed  $cursor  The optional result set cursor from which to fetch the row.
+     * @param  mixed  $cursor  The optional result set cursor from which to fetch the row.
 	 *
-	 * @return  mixed  Either the next row from the result set or false if there are no more rows.
+     * @return  mixed  Either the next row from the result set or false if there are no more rows.
 	 *
 	 * @since   12.1
 	 */
@@ -909,9 +909,9 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Method to fetch a row from the result set cursor as an associative array.
 	 *
-	 * @param   mixed  $cursor  The optional result set cursor from which to fetch the row.
+     * @param  mixed  $cursor  The optional result set cursor from which to fetch the row.
 	 *
-	 * @return  mixed  Either the next row from the result set or false if there are no more rows.
+     * @return  mixed  Either the next row from the result set or false if there are no more rows.
 	 *
 	 * @since   12.1
 	 */
@@ -923,10 +923,10 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Method to fetch a row from the result set cursor as an object.
 	 *
-	 * @param   mixed   $cursor  The optional result set cursor from which to fetch the row.
-	 * @param   string  $class   The class name to use for the returned row object.
+     * @param  mixed   $cursor  The optional result set cursor from which to fetch the row.
+     * @param  string  $class   The class name to use for the returned row object.
 	 *
-	 * @return  mixed   Either the next row from the result set or false if there are no more rows.
+     * @return  mixed  Either the next row from the result set or false if there are no more rows.
 	 *
 	 * @since   12.1
 	 */
@@ -938,9 +938,9 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Method to free up the memory used for the result set.
 	 *
-	 * @param   mixed  $cursor  The optional result set cursor from which to fetch the row.
+     * @param  mixed  $cursor  The optional result set cursor from which to fetch the row.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -952,14 +952,14 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Inserts a row into a table based on an object's properties.
 	 *
-	 * @param   string  $table    The name of the database table to insert into.
-	 * @param   object  &$object  A reference to an object whose public properties match the table fields.
-	 * @param   string  $key      The name of the primary key. If provided the object property is updated.
+     * @param  string  $table    The name of the database table to insert into.
+     * @param  object  &$object  A reference to an object whose public properties match the table fields.
+     * @param  string  $key      The name of the primary key. If provided the object property is updated.
 	 *
-	 * @return  boolean    True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function insertObject($table, &$object, $key = null)
 	{
@@ -1027,7 +1027,7 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Test to see if the PostgreSQL connector is available.
 	 *
-	 * @return  boolean  True on success, false otherwise.
+     * @return  boolean  True on success, false otherwise.
 	 *
 	 * @since   12.1
 	 */
@@ -1039,7 +1039,7 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Returns an array containing database's table list.
 	 *
-	 * @return	array	The database's table list.
+     * @return  array  The database's table list.
 	 */
 	public function showTables()
 	{
@@ -1061,10 +1061,10 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Get the substring position inside a string
 	 *
-	 * @param   string  $substring  The string being sought
-	 * @param   string  $string     The string/column being searched
+     * @param  string  $substring  The string being sought
+     * @param  string  $string     The string/column being searched
 	 *
-	 * @return int   The position of $substring in $string
+     * @return  int  The position of $substring in $string
 	 */
 	public function getStringPositionSQL( $substring, $string )
 	{
@@ -1080,7 +1080,7 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Generate a random value
 	 *
-	 * @return float The random generated number
+     * @return  float  The random generated number
 	 */
 	public function getRandom()
 	{
@@ -1095,9 +1095,9 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Return the query string to alter the database character set.
 	 *
-	 * @param   string  $dbName  The database name
+     * @param  string  $dbName  The database name
 	 *
-	 * @return  string  The query that alter the database query string
+     * @return  string  The query that alter the database query string
 	 *
 	 * @since   12.2
 	 */
@@ -1111,11 +1111,11 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Return the query string to create new Database using PostgreSQL's syntax
 	 *
-	 * @param   stdClass  $options  Object used to pass user and database name to database driver.
+     * @param  stdClass  $options  Object used to pass user and database name to database driver.
 	 * 									This object must have "db_name" and "db_user" set.
-	 * @param   boolean   $utf      True if the database supports the UTF-8 character set.
+     * @param  boolean  $utf  True if the database supports the UTF-8 character set.
 	 *
-	 * @return  string  The query that creates database, owned by $options['user']
+     * @return  string  The query that creates database, owned by $options['user']
 	 *
 	 * @since   12.2
 	 */
@@ -1135,10 +1135,10 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	 * This function replaces a string identifier <var>$prefix</var> with the string held is the
 	 * <var>tablePrefix</var> class variable.
 	 *
-	 * @param   string  $query   The SQL statement to prepare.
-	 * @param   string  $prefix  The common table prefix.
+     * @param  string  $query   The SQL statement to prepare.
+     * @param  string  $prefix  The common table prefix.
 	 *
-	 * @return  string  The processed SQL statement.
+     * @return  string  The processed SQL statement.
 	 *
 	 * @since   12.1
 	 */
@@ -1205,9 +1205,9 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Method to release a savepoint.
 	 *
-	 * @param   string  $savepointName  Savepoint's name to release
+     * @param  string  $savepointName  Savepoint's name to release
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -1221,9 +1221,9 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Method to create a savepoint.
 	 *
-	 * @param   string  $savepointName  Savepoint's name to create
+     * @param  string  $savepointName  Savepoint's name to create
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -1238,10 +1238,10 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	 * Unlocks tables in the database, this command does not exist in PostgreSQL,
 	 * it is automatically done on commit or rollback.
 	 *
-	 * @return  JDatabaseDriverPostgresql  Returns this object to support chaining.
+     * @return  JDatabaseDriverPostgresql  Returns this object to support chaining.
 	 *
 	 * @since   11.4
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function unlockTables()
 	{
@@ -1252,15 +1252,15 @@ class JDatabaseDriverPostgresql extends JDatabaseDriver
 	/**
 	 * Updates a row in a table based on an object's properties.
 	 *
-	 * @param   string   $table    The name of the database table to update.
-	 * @param   object   &$object  A reference to an object whose public properties match the table fields.
-	 * @param   string   $key      The name of the primary key.
-	 * @param   boolean  $nulls    True to update null fields or false to ignore them.
+     * @param  string   $table    The name of the database table to update.
+     * @param  object   &$object  A reference to an object whose public properties match the table fields.
+     * @param  string   $key      The name of the primary key.
+     * @param  boolean  $nulls    True to update null fields or false to ignore them.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function updateObject($table, &$object, $key, $nulls = false)
 	{

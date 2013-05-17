@@ -55,10 +55,10 @@ class TagsModelTags extends JModelList
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @param   string  $ordering   An optional ordering field.
-	 * @param   string  $direction  An optional direction (asc|desc).
+     * @param  string  $ordering   An optional ordering field.
+     * @param  string  $direction  An optional direction (asc|desc).
 	 *
-	 * @return    void
+     * @return  void
 	 * @since    3.1
 	 */
 	protected function populateState($ordering = null, $direction = null)
@@ -96,9 +96,9 @@ class TagsModelTags extends JModelList
 	 * different modules that might need different sets of data or different
 	 * ordering requirements.
 	 *
-	 * @param   string  $id  A prefix for the store id.
+     * @param  string  $id  A prefix for the store id.
 	 *
-	 * @return  string  A store id.
+     * @return  string  A store id.
 	 * @since   3.1
 	 */
 	protected function getStoreId($id = '')
@@ -114,7 +114,7 @@ class TagsModelTags extends JModelList
 	/**
 	 * Method to create a query for a list of items.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since  3.1
 	 */
@@ -229,9 +229,9 @@ class TagsModelTags extends JModelList
 	/**
 	 * Method override to check-in a record or an array of record
 	 *
-	 * @param   mixed  $pks  The ID of the primary key or an array of IDs
+     * @param  mixed  $pks  The ID of the primary key or an array of IDs
 	 *
-	 * @return  mixed  Boolean false if there is an error, otherwise the count of records checked in.
+     * @return  mixed  Boolean false if there is an error, otherwise the count of records checked in.
 	 *
 	 * @since   12.2
 	 */
@@ -299,11 +299,11 @@ class TagsModelTags extends JModelList
 	/**
 	 * Method to get a table object, load it if necessary.
 	 *
-	 * @param   string  $type    The table name. Optional.
-	 * @param   string  $prefix  The class prefix. Optional.
-	 * @param   array   $config  Configuration array for model. Optional.
+     * @param  string  $type    The table name. Optional.
+     * @param  string  $prefix  The class prefix. Optional.
+     * @param  array   $config  Configuration array for model. Optional.
 	 *
-	 * @return  JTable  A JTable object
+     * @return  JTable  A JTable object
 	 *
 	 * @since   3.1
 	 */

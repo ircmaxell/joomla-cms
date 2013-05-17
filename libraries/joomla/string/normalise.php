@@ -33,10 +33,10 @@ abstract class JStringNormalise
 	 *
 	 * Non-grouped will split strings at each uppercase character.
 	 *
-	 * @param   string   $input    The string input (ASCII only).
-	 * @param   boolean  $grouped  Optionally allows splitting on groups of uppercase characters.
+     * @param  string   $input    The string input (ASCII only).
+     * @param  boolean  $grouped  Optionally allows splitting on groups of uppercase characters.
 	 *
-	 * @return  string  The space separated string.
+     * @return  string  The space separated string.
 	 *
 	 * @since   12.1
 	 */
@@ -50,9 +50,9 @@ abstract class JStringNormalise
 	/**
 	 * Method to convert a string into camel case.
 	 *
-	 * @param   string  $input  The string input (ASCII only).
+     * @param  string  $input  The string input (ASCII only).
 	 *
-	 * @return  string  The camel case string.
+     * @return  string  The camel case string.
 	 *
 	 * @since   11.3
 	 */
@@ -69,9 +69,9 @@ abstract class JStringNormalise
 	/**
 	 * Method to convert a string into dash separated form.
 	 *
-	 * @param   string  $input  The string input (ASCII only).
+     * @param  string  $input  The string input (ASCII only).
 	 *
-	 * @return  string  The dash separated string.
+     * @return  string  The dash separated string.
 	 *
 	 * @since   11.3
 	 */
@@ -86,9 +86,9 @@ abstract class JStringNormalise
 	/**
 	 * Method to convert a string into space separated form.
 	 *
-	 * @param   string  $input  The string input (ASCII only).
+     * @param  string  $input  The string input (ASCII only).
 	 *
-	 * @return  string  The space separated string.
+     * @return  string  The space separated string.
 	 *
 	 * @since   11.3
 	 */
@@ -103,9 +103,9 @@ abstract class JStringNormalise
 	/**
 	 * Method to convert a string into underscore separated form.
 	 *
-	 * @param   string  $input  The string input (ASCII only).
+     * @param  string  $input  The string input (ASCII only).
 	 *
-	 * @return  string  The underscore separated string.
+     * @return  string  The underscore separated string.
 	 *
 	 * @since   11.3
 	 */
@@ -120,9 +120,9 @@ abstract class JStringNormalise
 	/**
 	 * Method to convert a string into variable form.
 	 *
-	 * @param   string  $input  The string input (ASCII only).
+     * @param  string  $input  The string input (ASCII only).
 	 *
-	 * @return  string  The variable string.
+     * @return  string  The variable string.
 	 *
 	 * @since   11.3
 	 */
@@ -148,9 +148,9 @@ abstract class JStringNormalise
 	/**
 	 * Method to convert a string into key form.
 	 *
-	 * @param   string  $input  The string input (ASCII only).
+     * @param  string  $input  The string input (ASCII only).
 	 *
-	 * @return  string  The key string.
+     * @return  string  The key string.
 	 *
 	 * @since   11.3
 	 */

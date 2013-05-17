@@ -201,7 +201,7 @@ class JUser extends JObject
 	/**
 	 * Constructor activating the default information of the language
 	 *
-	 * @param   integer  $identifier  The primary key of the user to load (optional).
+     * @param  integer  $identifier  The primary key of the user to load (optional).
 	 *
 	 * @since   11.1
 	 */
@@ -229,9 +229,9 @@ class JUser extends JObject
 	 * Returns the global User object, only creating it if it
 	 * doesn't already exist.
 	 *
-	 * @param   integer  $identifier  The user to load - Can be an integer or string - If string, it is converted to ID automatically.
+     * @param  integer  $identifier  The user to load - Can be an integer or string - If string, it is converted to ID automatically.
 	 *
-	 * @return  JUser  The User object.
+     * @return  JUser  The User object.
 	 *
 	 * @since   11.1
 	 */
@@ -272,10 +272,10 @@ class JUser extends JObject
 	/**
 	 * Method to get a parameter value
 	 *
-	 * @param   string  $key      Parameter key
-	 * @param   mixed   $default  Parameter default value
+     * @param  string  $key      Parameter key
+     * @param  mixed   $default  Parameter default value
 	 *
-	 * @return  mixed  The value or the default if it did not exist
+     * @return  mixed  The value or the default if it did not exist
 	 *
 	 * @since   11.1
 	 */
@@ -287,10 +287,10 @@ class JUser extends JObject
 	/**
 	 * Method to set a parameter
 	 *
-	 * @param   string  $key    Parameter key
-	 * @param   mixed   $value  Parameter value
+     * @param  string  $key    Parameter key
+     * @param  mixed   $value  Parameter value
 	 *
-	 * @return  mixed  Set parameter value
+     * @return  mixed  Set parameter value
 	 *
 	 * @since   11.1
 	 */
@@ -302,10 +302,10 @@ class JUser extends JObject
 	/**
 	 * Method to set a default parameter if it does not exist
 	 *
-	 * @param   string  $key    Parameter key
-	 * @param   mixed   $value  Parameter value
+     * @param  string  $key    Parameter key
+     * @param  mixed   $value  Parameter value
 	 *
-	 * @return  mixed  Set parameter value
+     * @return  mixed  Set parameter value
 	 *
 	 * @since   11.1
 	 */
@@ -318,10 +318,10 @@ class JUser extends JObject
 	 * Method to check JUser object authorisation against an access control
 	 * object and optionally an access extension object
 	 *
-	 * @param   string  $action     The name of the action to check for permission.
-	 * @param   string  $assetname  The name of the asset on which to perform the action.
+     * @param  string  $action     The name of the action to check for permission.
+     * @param  string  $assetname  The name of the asset on which to perform the action.
 	 *
-	 * @return  boolean  True if authorised
+     * @return  boolean  True if authorised
 	 *
 	 * @since   11.1
 	 */
@@ -365,10 +365,10 @@ class JUser extends JObject
 	/**
 	 * Method to return a list of all categories that a user has permission for a given action
 	 *
-	 * @param   string  $component  The component from which to retrieve the categories
-	 * @param   string  $action     The name of the section within the component from which to retrieve the actions.
+     * @param  string  $component  The component from which to retrieve the categories
+     * @param  string  $action     The name of the section within the component from which to retrieve the actions.
 	 *
-	 * @return  array  List of categories that this group can do this action to (empty array if none). Categories must be published.
+     * @return  array  List of categories that this group can do this action to (empty array if none). Categories must be published.
 	 *
 	 * @since   11.1
 	 */
@@ -399,7 +399,7 @@ class JUser extends JObject
 	/**
 	 * Gets an array of the authorised access levels for the user
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.1
 	 */
@@ -420,7 +420,7 @@ class JUser extends JObject
 	/**
 	 * Gets an array of the authorised user groups
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.1
 	 */
@@ -441,9 +441,9 @@ class JUser extends JObject
 	/**
 	 * Pass through method to the table for setting the last visit date
 	 *
-	 * @param   integer  $timestamp  The timestamp, defaults to 'now'.
+     * @param  integer  $timestamp  The timestamp, defaults to 'now'.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   11.1
 	 */
@@ -461,7 +461,7 @@ class JUser extends JObject
 	 *
 	 * This method used to load the user parameters from a file.
 	 *
-	 * @return  object   The user parameters object.
+     * @return  object  The user parameters object.
 	 *
 	 * @since   11.1
 	 * @deprecated  12.3  Instead use JUser::getParam()
@@ -479,9 +479,9 @@ class JUser extends JObject
 	/**
 	 * Method to get the user parameters
 	 *
-	 * @param   object  $params  The user parameters object
+     * @param  object  $params  The user parameters object
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -497,10 +497,10 @@ class JUser extends JObject
 	 * instantiate. You can call this function statically to set the table name if
 	 * needed.
 	 *
-	 * @param   string  $type    The user table name to be used
-	 * @param   string  $prefix  The user table prefix to be used
+     * @param  string  $type    The user table name to be used
+     * @param  string  $prefix  The user table prefix to be used
 	 *
-	 * @return  object  The user table object
+     * @return  object  The user table object
 	 *
 	 * @since   11.1
 	 */
@@ -529,9 +529,9 @@ class JUser extends JObject
 	/**
 	 * Method to bind an associative array of data to a user object
 	 *
-	 * @param   array  &$array  The associative array to bind to the object
+     * @param  array  &$array  The associative array to bind to the object
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   11.1
 	 */
@@ -638,13 +638,13 @@ class JUser extends JObject
 	/**
 	 * Method to save the JUser object to the database
 	 *
-	 * @param   boolean  $updateOnly  Save the object only if not a new user
+     * @param  boolean  $updateOnly  Save the object only if not a new user
 	 *                                Currently only used in the user reset password method.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function save($updateOnly = false)
 	{
@@ -768,7 +768,7 @@ class JUser extends JObject
 	/**
 	 * Method to delete the JUser object from the database
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   11.1
 	 */
@@ -798,9 +798,9 @@ class JUser extends JObject
 	/**
 	 * Method to load a JUser object by user id number
 	 *
-	 * @param   mixed  $id  The user id of the user to load
+     * @param  mixed  $id  The user id of the user to load
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   11.1
 	 */

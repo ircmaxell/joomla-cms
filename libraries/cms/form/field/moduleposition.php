@@ -31,7 +31,7 @@ class JFormFieldModulePosition extends JFormFieldText
 	/**
 	 * Method to get the field input markup.
 	 *
-	 * @return  string	The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   1.6
 	 */

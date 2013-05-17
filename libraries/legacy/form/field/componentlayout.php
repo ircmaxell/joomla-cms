@@ -32,7 +32,7 @@ class JFormFieldComponentlayout extends JFormField
 	/**
 	 * Method to get the field input for a component layout field.
 	 *
-	 * @return  string   The field input.
+     * @return  string  The field input.
 	 *
 	 * @since   11.1
 	 */

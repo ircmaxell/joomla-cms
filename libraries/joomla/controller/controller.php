@@ -21,20 +21,20 @@ interface JController extends Serializable
 	/**
 	 * Execute the controller.
 	 *
-	 * @return  boolean  True if controller finished execution, false if the controller did not
+     * @return  boolean  True if controller finished execution, false if the controller did not
 	 *                   finish execution. A controller might return false if some precondition for
 	 *                   the controller to run has not been satisfied.
 	 *
 	 * @since   12.1
-	 * @throws  LogicException
-	 * @throws  RuntimeException
+     * @throws  LogicException
+     * @throws  RuntimeException
 	 */
 	public function execute();
 
 	/**
 	 * Get the application object.
 	 *
-	 * @return  JApplicationBase  The application object.
+     * @return  JApplicationBase  The application object.
 	 *
 	 * @since   12.1
 	 */
@@ -43,7 +43,7 @@ interface JController extends Serializable
 	/**
 	 * Get the input object.
 	 *
-	 * @return  JInput  The input object.
+     * @return  JInput  The input object.
 	 *
 	 * @since   12.1
 	 */

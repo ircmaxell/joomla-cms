@@ -62,7 +62,7 @@ class JObservable extends JObject
 	/**
 	 * Get the state of the JObservable object
 	 *
-	 * @return  mixed    The state of the object.
+     * @return  mixed  The state of the object.
 	 *
 	 * @since   11.1
 	 * @deprecated  12.3
@@ -75,7 +75,7 @@ class JObservable extends JObject
 	/**
 	 * Update each attached observer object and return an array of their return values
 	 *
-	 * @return  array    Array of return values from the observers
+     * @return  array  Array of return values from the observers
 	 *
 	 * @since   11.1
 	 * @deprecated  12.3
@@ -94,9 +94,9 @@ class JObservable extends JObject
 	/**
 	 * Attach an observer object
 	 *
-	 * @param   object  $observer  An observer object to attach
+     * @param  object  $observer  An observer object to attach
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 * @deprecated  12.3
@@ -163,9 +163,9 @@ class JObservable extends JObject
 	/**
 	 * Detach an observer object
 	 *
-	 * @param   object  $observer  An observer object to detach.
+     * @param  object  $observer  An observer object to detach.
 	 *
-	 * @return  boolean  True if the observer object was detached.
+     * @return  boolean  True if the observer object was detached.
 	 *
 	 * @since   11.1
 	 * @deprecated  12.3

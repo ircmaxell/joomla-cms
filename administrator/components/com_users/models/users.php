@@ -21,7 +21,7 @@ class UsersModelUsers extends JModelList
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $config  An optional associative array of configuration settings.
+     * @param  array  $config  An optional associative array of configuration settings.
 	 *
 	 * @see     JController
 	 * @since   1.6
@@ -51,7 +51,7 @@ class UsersModelUsers extends JModelList
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -110,9 +110,9 @@ class UsersModelUsers extends JModelList
 	 * different modules that might need different sets of data or different
 	 * ordering requirements.
 	 *
-	 * @param   string  $id  A prefix for the store id.
+     * @param  string  $id  A prefix for the store id.
 	 *
-	 * @return  string  A store id.
+     * @return  string  A store id.
 	 *
 	 * @since   1.6
 	 */
@@ -131,7 +131,7 @@ class UsersModelUsers extends JModelList
 	/**
 	 * Gets the list of users and adds expensive joins to the result set.
 	 *
-	 * @return  mixed  An array of data items on success, false on failure.
+     * @return  mixed  An array of data items on success, false on failure.
 	 *
 	 * @since   1.6
 	 */
@@ -246,7 +246,7 @@ class UsersModelUsers extends JModelList
 	/**
 	 * Build an SQL query to load the list data.
 	 *
-	 * @return  JDatabaseQuery
+     * @return  JDatabaseQuery
 	 *
 	 * @since   1.6
 	 */
@@ -402,7 +402,7 @@ class UsersModelUsers extends JModelList
 	}
 
 	//sqlsrv change
-	function _getUserDisplayedGroups($user_id)
+	public function _getUserDisplayedGroups($user_id)
 	{
 		$db = JFactory::getDbo();
 		$query = "SELECT title FROM " . $db->quoteName('#__usergroups') . " ug left join " .

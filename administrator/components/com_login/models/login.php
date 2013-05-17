@@ -55,10 +55,10 @@ class LoginModelLogin extends JModelLegacy
 	/**
 	 * Get the administrator login module by name (real, eg 'login' or folder, eg 'mod_login')
 	 *
-	 * @param   string  $name   The name of the module
-	 * @param   string  $title  The title of the module, optional
+     * @param  string  $name   The name of the module
+     * @param  string  $title  The title of the module, optional
 	 *
-	 * @return  object  The Module object
+     * @return  object  The Module object
 	 *
 	 * @since   11.1
 	 */
@@ -105,9 +105,9 @@ class LoginModelLogin extends JModelLegacy
 	 * This is put in as a failsafe to avoid super user lock out caused by an unpublished
 	 * login module or by a module set to have a viewing access level that is not Public.
 	 *
-	 * @param   string  $name   The name of the module
+     * @param  string  $name  The name of the module
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.1
 	 */

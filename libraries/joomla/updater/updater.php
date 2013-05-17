@@ -45,7 +45,7 @@ class JUpdater extends JAdapter
 	 * Returns a reference to the global Installer object, only creating it
 	 * if it doesn't already exist.
 	 *
-	 * @return  object  An installer object
+     * @return  object  An installer object
 	 *
 	 * @since   11.1
 	 */
@@ -61,10 +61,10 @@ class JUpdater extends JAdapter
 	/**
 	 * Finds an update for an extension
 	 *
-	 * @param   integer  $eid           Extension Identifier; if zero use all sites
-	 * @param   integer  $cacheTimeout  How many seconds to cache update information; if zero, force reload the update information
+     * @param  integer  $eid           Extension Identifier; if zero use all sites
+     * @param  integer  $cacheTimeout  How many seconds to cache update information; if zero, force reload the update information
 	 *
-	 * @return  boolean True if there are updates
+     * @return  boolean  True if there are updates
 	 *
 	 * @since   11.1
 	 */
@@ -193,9 +193,9 @@ class JUpdater extends JAdapter
 	/**
 	 * Finds an update for an extension
 	 *
-	 * @param   integer  $id  Id of the extension
+     * @param  integer  $id  Id of the extension
 	 *
-	 * @return  mixed
+     * @return  mixed
 	 *
 	 * @since   11.1
 	 */

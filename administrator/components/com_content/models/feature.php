@@ -25,7 +25,7 @@ class ContentModelFeature extends ContentModelArticle
 	 * @param   type	The table type to instantiate
 	 * @param   string	A prefix for the table class name. Optional.
 	 * @param   array  Configuration array for model. Optional.
-	 * @return  JTable	A database object
+     * @return  JTable  A database object
 	*/
 	public function getTable($type = 'Featured', $prefix = 'ContentTable', $config = array())
 	{
@@ -36,7 +36,7 @@ class ContentModelFeature extends ContentModelArticle
 	 * A protected method to get a set of ordering conditions.
 	 *
 	 * @param   object	A record object.
-	 * @return  array  An array of conditions to add to add to ordering queries.
+     * @return  array  An array of conditions to add to add to ordering queries.
 	 * @since   1.6
 	 */
 	protected function getReorderConditions($table)

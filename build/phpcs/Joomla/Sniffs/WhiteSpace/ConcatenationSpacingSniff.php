@@ -35,7 +35,7 @@ class Joomla_Sniffs_WhiteSpace_ConcatenationSpacingSniff implements PHP_CodeSnif
 	/**
 	 * Returns an array of tokens this test wants to listen for.
 	 *
-	 * @return array
+     * @return  array
 	 */
 	public function register()
 	{
@@ -45,11 +45,11 @@ class Joomla_Sniffs_WhiteSpace_ConcatenationSpacingSniff implements PHP_CodeSnif
 	/**
 	 * Processes this test, when one of its tokens is encountered.
 	 *
-	 * @param PHP_CodeSniffer_File $phpcsFile The file being scanned.
-	 * @param integer $stackPtr The position of the current token in the
+     * @param  PHP_CodeSniffer_File  $phpcsFile  The file being scanned.
+     * @param  integer               $stackPtr   The position of the current token in the
 	 *                                        stack passed in $tokens.
 	 *
-	 * @return void
+     * @return  void
 	 */
 	public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
 	{

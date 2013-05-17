@@ -107,7 +107,7 @@ class ModulesModelModules extends JModelList
 	 *
 	 * @param   string    A prefix for the store id.
 	 *
-	 * @return  string    A store id.
+     * @return  string  A store id.
 	 */
 	protected function getStoreId($id = '')
 	{
@@ -129,7 +129,7 @@ class ModulesModelModules extends JModelList
 	 * @param   string The query
 	 * @param   int    Offset
 	 * @param   int    The number of records
-	 * @return  array
+     * @return  array
 	 */
 	protected function _getList($query, $limitstart = 0, $limit = 0)
 	{
@@ -176,7 +176,7 @@ class ModulesModelModules extends JModelList
 	 * Translate a list of objects
 	 *
 	 * @param   array The array of objects
-	 * @return  array The array of translated objects
+     * @return  array  The array of translated objects
 	 */
 	protected function translate(&$items)
 	{
@@ -214,7 +214,7 @@ class ModulesModelModules extends JModelList
 	/**
 	 * Build an SQL query to load the list data.
 	 *
-	 * @return  JDatabaseQuery
+     * @return  JDatabaseQuery
 	 */
 	protected function getListQuery()
 	{
@@ -280,7 +280,6 @@ class ModulesModelModules extends JModelList
 		{
 			$query->where('a.position = ' . $db->quote($position));
 		}
-
 		elseif ($position == 'none')
 		{
 			$query->where('a.position = ' . $db->quote(''));

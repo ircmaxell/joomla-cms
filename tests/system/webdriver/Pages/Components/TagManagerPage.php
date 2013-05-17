@@ -1,11 +1,6 @@
 <?php
 
-use SeleniumClient\By;
-use SeleniumClient\SelectElement;
 use SeleniumClient\WebDriver;
-use SeleniumClient\WebDriverWait;
-use SeleniumClient\DesiredCapabilities;
-use SeleniumClient\WebElement;
 
 /**
  * @package     Joomla.Test
@@ -31,7 +26,7 @@ class TagManagerPage extends AdminManagerPage
 	 * @since  3.0
 	 */
   	protected $waitForXpath =  "//ul/li/a[@href='index.php?option=com_tags']";
-	
+
 	/**
 	 * URL used to uniquely identify this page
 	 *
@@ -39,7 +34,7 @@ class TagManagerPage extends AdminManagerPage
 	 * @since  3.0
 	 */
 	protected $url = 'administrator/index.php?option=com_tags';
-	
+
 	/**
 	 * Array of filter id values for this page
 	 *
@@ -51,7 +46,7 @@ class TagManagerPage extends AdminManagerPage
 			'Select Access' => 'filter_access',
 			'Select Language' => 'filter_language',
 			);
-	
+
 	/**
 	 * Array of toolbar id values for this page
 	 *
@@ -71,34 +66,34 @@ class TagManagerPage extends AdminManagerPage
 			'Options' => 'toolbar-options',
 			'Help' => 'toolbar-help',
 			);
-			
+
 	/**
 	 * Add a new Tag item in the Tag Manager: Component screen.
 	 *
-	 * @param string   $title          Test Tag Name
-	 * 
-	 * 
-	 * @return  TagManagerPage
+     * @param  string  $title  Test Tag Name
+	 *
+	 *
+     * @return  TagManagerPage
 	 */
 	public function addTag($name='Test Tag')
 	{
 		$new_name = $name . rand(1,100);
 		$login = "testing";
-		//echo $new_name; 
+		//echo $new_name;
 		$this->clickButton('toolbar-new');
 		$tagEditPage = $this->test->getPageObject('TagEditPage');
 		$tagEditPage->setFieldValues(array('Title' => $new_name));
 		$tagEditPage->clickButton('toolbar-save');
 		$this->test->getPageObject('TagManagerPage');
 	}
-	
+
 	/**
 	 * Edit a Tag item in the Tag Manager: Tag Items screen.
 	 *
-	 * @param string   $name	   Tag Title field
-	 * @param array    $fields         associative array of fields in the form label => value.
+     * @param  string  $name    Tag Title field
+     * @param  array   $fields  associative array of fields in the form label => value.
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function editTag($name, $fields)
 	{
@@ -110,5 +105,4 @@ class TagManagerPage extends AdminManagerPage
 		$this->searchFor();
 	}
 
-	
 }

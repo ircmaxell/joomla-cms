@@ -75,9 +75,9 @@ class JLinkedin
 	/**
 	 * Constructor.
 	 *
-	 * @param   JLinkedinOauth  $oauth    OAuth object
-	 * @param   JRegistry       $options  Linkedin options object.
-	 * @param   JHttp           $client   The HTTP client object.
+     * @param  JLinkedinOauth  $oauth    OAuth object
+     * @param  JRegistry       $options  Linkedin options object.
+     * @param  JHttp           $client   The HTTP client object.
 	 *
 	 * @since   13.1
 	 */
@@ -94,9 +94,9 @@ class JLinkedin
 	/**
 	 * Magic method to lazily create API objects
 	 *
-	 * @param   string  $name  Name of property to retrieve
+     * @param  string  $name  Name of property to retrieve
 	 *
-	 * @return  JLinkedinObject  Linkedin API object (statuses, users, favorites, etc.).
+     * @return  JLinkedinObject  Linkedin API object (statuses, users, favorites, etc.).
 	 *
 	 * @since   13.1
 	 */
@@ -157,9 +157,9 @@ class JLinkedin
 	/**
 	 * Get an option from the JLinkedin instance.
 	 *
-	 * @param   string  $key  The name of the option to get.
+     * @param  string  $key  The name of the option to get.
 	 *
-	 * @return  mixed  The option value.
+     * @return  mixed  The option value.
 	 *
 	 * @since   13.1
 	 */
@@ -171,10 +171,10 @@ class JLinkedin
 	/**
 	 * Set an option for the Linkedin instance.
 	 *
-	 * @param   string  $key    The name of the option to set.
-	 * @param   mixed   $value  The option value to set.
+     * @param  string  $key    The name of the option to set.
+     * @param  mixed   $value  The option value to set.
 	 *
-	 * @return  JLinkedin  This object for method chaining.
+     * @return  JLinkedin  This object for method chaining.
 	 *
 	 * @since   13.1
 	 */

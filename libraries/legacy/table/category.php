@@ -30,7 +30,7 @@ class JTableCategory extends JTableNested
 	/**
 	 * Constructor
 	 *
-	 * @param   JDatabaseDriver  $db  Database driver object.
+     * @param  JDatabaseDriver  $db  Database driver object.
 	 *
 	 * @since   11.1
 	 */
@@ -47,7 +47,7 @@ class JTableCategory extends JTableNested
 	 * The default name is in the form table_name.id
 	 * where id is the value of the primary key of the table.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -60,7 +60,7 @@ class JTableCategory extends JTableNested
 	/**
 	 * Method to return the title to use for the asset table.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -72,10 +72,10 @@ class JTableCategory extends JTableNested
 	/**
 	 * Get the parent asset id for the record
 	 *
-	 * @param   JTable   $table  A JTable object for the asset parent.
-	 * @param   integer  $id     The id for the asset
+     * @param  JTable   $table  A JTable object for the asset parent.
+     * @param  integer  $id     The id for the asset
 	 *
-	 * @return  integer  The id of the asset's parent
+     * @return  integer  The id of the asset's parent
 	 *
 	 * @since   11.1
 	 */
@@ -130,7 +130,7 @@ class JTableCategory extends JTableNested
 	/**
 	 * Override check function
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @see     JTable::check
 	 * @since   11.1
@@ -161,11 +161,11 @@ class JTableCategory extends JTableNested
 	/**
 	 * Overloaded bind function.
 	 *
-	 * @param   array   $array   named array
-	 * @param   string  $ignore  An optional array or space separated list of properties
+     * @param  array   $array   named array
+     * @param  string  $ignore  An optional array or space separated list of properties
 	 *                           to ignore while binding.
 	 *
-	 * @return  mixed   Null if operation was satisfactory, otherwise returns an error
+     * @return  mixed  Null if operation was satisfactory, otherwise returns an error
 	 *
 	 * @see     JTable::bind
 	 * @since   11.1
@@ -199,13 +199,13 @@ class JTableCategory extends JTableNested
 	/**
 	 * Override parent delete method to process tags
 	 *
-	 * @param   integer  $pk        The primary key of the node to delete.
-	 * @param   boolean  $children  True to delete child nodes, false to move them up a level.
+     * @param  integer  $pk        The primary key of the node to delete.
+     * @param  boolean  $children  True to delete child nodes, false to move them up a level.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
-	 * @throws  UnexpectedValueException
+     * @throws  UnexpectedValueException
 	 */
 	public function delete($pk = null, $children = true)
 	{
@@ -217,9 +217,9 @@ class JTableCategory extends JTableNested
 	/**
 	 * Overridden JTable::store to set created/modified and user id.
 	 *
-	 * @param   boolean  $updateNulls  True to update fields even if they are null.
+     * @param  boolean  $updateNulls  True to update fields even if they are null.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   11.1
 	 */

@@ -23,7 +23,7 @@ class InstallationControllerRemovefolder extends JControllerBase
 	/**
 	 * Execute the controller.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -140,9 +140,9 @@ class InstallationControllerRemovefolder extends JControllerBase
 	 * can be a Exception object for when an error has occurred or
 	 * a stdClass for a good response.
 	 *
-	 * @param   mixed  $response  stdClass on success, Exception on failure.
+     * @param  mixed  $response  stdClass on success, Exception on failure.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -178,7 +178,7 @@ class InstallationResponseJson
 	/**
 	 * Constructor for the JSON response
 	 *
-	 * @param   mixed  $data  Exception if there is an error, otherwise, the session data
+     * @param  mixed  $data  Exception if there is an error, otherwise, the session data
 	 *
 	 * @since   3.1
 	 */

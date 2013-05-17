@@ -30,7 +30,7 @@ class JDocumentJSON extends JDocument
 	/**
 	 * Class constructor
 	 *
-	 * @param   array  $options  Associative array of options
+     * @param  array  $options  Associative array of options
 	 *
 	 * @since  11.1
 	 */
@@ -48,10 +48,10 @@ class JDocumentJSON extends JDocument
 	/**
 	 * Render the document.
 	 *
-	 * @param   boolean  $cache   If true, cache the output
-	 * @param   array    $params  Associative array of attributes
+     * @param  boolean  $cache   If true, cache the output
+     * @param  array    $params  Associative array of attributes
 	 *
-	 * @return  The rendered data
+     * @return  The  rendered data
 	 *
 	 * @since  11.1
 	 */
@@ -68,7 +68,7 @@ class JDocumentJSON extends JDocument
 	/**
 	 * Returns the document name
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since  11.1
 	 */
@@ -80,9 +80,9 @@ class JDocumentJSON extends JDocument
 	/**
 	 * Sets the document name
 	 *
-	 * @param   string  $name  Document name
+     * @param  string  $name  Document name
 	 *
-	 * @return  JDocumentJSON instance of $this to allow chaining
+     * @return  JDocumentJSON  instance of $this to allow chaining
 	 *
 	 * @since   11.1
 	 */

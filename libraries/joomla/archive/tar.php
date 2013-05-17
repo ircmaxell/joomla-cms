@@ -62,13 +62,13 @@ class JArchiveTar implements JArchiveExtractable
 	/**
 	 * Extract a ZIP compressed file to a given path
 	 *
-	 * @param   string  $archive      Path to ZIP archive to extract
-	 * @param   string  $destination  Path to extract archive into
-	 * @param   array   $options      Extraction options [unused]
+     * @param  string  $archive      Path to ZIP archive to extract
+     * @param  string  $destination  Path to extract archive into
+     * @param  array   $options      Extraction options [unused]
 	 *
-	 * @return  boolean True if successful
+     * @return  boolean  True if successful
 	 *
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 * @since   11.1
 	 */
 	public function extract($archive, $destination, array $options = array())
@@ -130,7 +130,7 @@ class JArchiveTar implements JArchiveExtractable
 	/**
 	 * Tests whether this adapter can unpack files on this computer.
 	 *
-	 * @return  boolean  True if supported
+     * @return  boolean  True if supported
 	 *
 	 * @since   11.3
 	 */
@@ -142,9 +142,9 @@ class JArchiveTar implements JArchiveExtractable
 	/**
 	 * Get the list of files/data from a Tar archive buffer.
 	 *
-	 * @param   string  &$data  The Tar archive buffer.
+     * @param  string  &$data  The Tar archive buffer.
 	 *
-	 * @return   array  Archive metadata array
+     * @return  array  Archive metadata array
 	 * <pre>
 	 * KEY: Position in the array
 	 * VALUES: 'attr'  --  File attributes

@@ -33,7 +33,7 @@ abstract class ModQuickIconHelper
 	 *
 	 * @param   JRegistry	The module parameters.
 	 *
-	 * @return  array  An array of buttons
+     * @return  array  An array of buttons
 	 * @since   1.6
 	 */
 	public static function &getButtons($params)
@@ -172,7 +172,7 @@ abstract class ModQuickIconHelper
 	 * @param   JRegistry	The module parameters.
 	 * @param   object		The module.
 	 *
-	 * @return  string	The alternate title for the module.
+     * @return  string  The alternate title for the module.
 	 */
 	public static function getTitle($params, $module)
 	{

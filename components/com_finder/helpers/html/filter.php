@@ -24,9 +24,9 @@ abstract class JHtmlFilter
 	 * Method to generate filters using the slider widget and decorated
 	 * with the FinderFilter JavaScript behaviors.
 	 *
-	 * @param   array  $options  An array of configuration options. [optional]
+     * @param  array  $options  An array of configuration options. [optional]
 	 *
-	 * @return  mixed  A rendered HTML widget on success, null otherwise.
+     * @return  mixed  A rendered HTML widget on success, null otherwise.
 	 *
 	 * @since   2.5
 	 */
@@ -230,10 +230,10 @@ abstract class JHtmlFilter
 	/**
 	 * Method to generate filters using select box drop down controls.
 	 *
-	 * @param   FinderIndexerQuery  $idxQuery A FinderIndexerQuery object.
-	 * @param   array               $options  An array of options.
+     * @param  FinderIndexerQuery  $idxQuery  A FinderIndexerQuery object.
+     * @param  array               $options   An array of options.
 	 *
-	 * @return  mixed  A rendered HTML widget on success, null otherwise.
+     * @return  mixed  A rendered HTML widget on success, null otherwise.
 	 *
 	 * @since   2.5
 	 */
@@ -435,10 +435,10 @@ abstract class JHtmlFilter
 	/**
 	 * Method to generate fields for filtering dates
 	 *
-	 * @param   FinderIndexerQuery  $idxQuery A FinderIndexerQuery object.
-	 * @param   array               $options  An array of options.
+     * @param  FinderIndexerQuery  $idxQuery  A FinderIndexerQuery object.
+     * @param  array               $options   An array of options.
 	 *
-	 * @return  mixed  A rendered HTML widget on success, null otherwise.
+     * @return  mixed  A rendered HTML widget on success, null otherwise.
 	 *
 	 * @since   2.5
 	 */

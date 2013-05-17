@@ -21,9 +21,9 @@ class JHelperContent
 	/**
 	 * Configure the Linkbar. Must be implemented by each extension.
 	 *
-	 * @param   string  $vName  The name of the active view.
+     * @param  string  $vName  The name of the active view.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -34,11 +34,11 @@ class JHelperContent
 	/**
 	 * Gets a list of the actions that can be performed.
 	 *
-	 * @param   integer  $categoryId  The category ID.
-	 * @param   integer  $id          The item ID.
-	 * @param   string   $assetName   The asset name
+     * @param  integer  $categoryId  The category ID.
+     * @param  integer  $id          The item ID.
+     * @param  string   $assetName   The asset name
 	 *
-	 * @return  JObject
+     * @return  JObject
 	 *
 	 * @since   3.1
 	 */
@@ -63,9 +63,9 @@ class JHelperContent
 	/**
 	 * Gets the current language
 	 *
-	 * @param   boolean  $detectBrowser  Flag indicating whether to use the browser language as a fallback.
+     * @param  boolean  $detectBrowser  Flag indicating whether to use the browser language as a fallback.
 	 *
-	 * @return  string  The language string
+     * @return  string  The language string
 	 *
 	 * @since   3.1
 	 */
@@ -116,9 +116,9 @@ class JHelperContent
 	/**
 	 * Gets a row of data from a table
 	 *
-	 * @param   JTable  $table  JTable instance for a row.
+     * @param  JTable  $table  JTable instance for a row.
 	 *
-	 * @return  array  Associative array of all columns and values for a row in a table.
+     * @return  array  Associative array of all columns and values for a row in a table.
 	 *
 	 * @since   3.1
 	 */

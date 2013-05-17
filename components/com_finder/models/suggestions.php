@@ -32,7 +32,7 @@ class FinderModelSuggestions extends JModelList
 	/**
 	 * Method to get an array of data items.
 	 *
-	 * @return  array  An array of data items.
+     * @return  array  An array of data items.
 	 *
 	 * @since   2.5
 	 */
@@ -53,7 +53,7 @@ class FinderModelSuggestions extends JModelList
 	/**
 	 * Method to build a database query to load the list data.
 	 *
-	 * @return  JDatabaseQuery  A database query
+     * @return  JDatabaseQuery  A database query
 	 *
 	 * @since   2.5
 	 */
@@ -82,9 +82,9 @@ class FinderModelSuggestions extends JModelList
 	 * different modules that might need different sets of data or different
 	 * ordering requirements.
 	 *
-	 * @param   string  $id  An identifier string to generate the store id. [optional]
+     * @param  string  $id  An identifier string to generate the store id. [optional]
 	 *
-	 * @return  string  A store id.
+     * @return  string  A store id.
 	 *
 	 * @since   2.5
 	 */
@@ -104,10 +104,10 @@ class FinderModelSuggestions extends JModelList
 	/**
 	 * Method to auto-populate the model state.  Calling getState in this method will result in recursion.
 	 *
-	 * @param   string  $ordering   An optional ordering field.
-	 * @param   string  $direction  An optional direction (asc|desc).
+     * @param  string  $ordering   An optional ordering field.
+     * @param  string  $direction  An optional direction (asc|desc).
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */

@@ -31,7 +31,7 @@ class JFormFieldList extends JFormField
 	 * Method to get the field input markup for a generic list.
 	 * Use the multiple attribute to enable multiselect.
 	 *
-	 * @return  string  The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   11.1
 	 */
@@ -77,7 +77,7 @@ class JFormFieldList extends JFormField
 	/**
 	 * Method to get the field options.
 	 *
-	 * @return  array  The field option objects.
+     * @return  array  The field option objects.
 	 *
 	 * @since   11.1
 	 */

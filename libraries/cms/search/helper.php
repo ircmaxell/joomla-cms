@@ -21,10 +21,10 @@ class JSearchHelper
 	/**
 	 * Method to log search terms to the database
 	 *
-	 * @param   string  $term       The term being searched
-	 * @param   string  $component  The component being used for the search
+     * @param  string  $term       The term being searched
+     * @param  string  $component  The component being used for the search
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

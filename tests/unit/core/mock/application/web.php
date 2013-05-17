@@ -33,10 +33,10 @@ class TestMockApplicationWeb
 	 *
 	 * If any *Body methods are implemented in the test class, all should be implemented otherwise behaviour will be unreliable.
 	 *
-	 * @param   TestCase  $test     A test object.
-	 * @param   array     $options  A set of options to configure the mock.
+     * @param  TestCase  $test     A test object.
+     * @param  array     $options  A set of options to configure the mock.
 	 *
-	 * @return  PHPUnit_Framework_MockObject_MockObject
+     * @return  PHPUnit_Framework_MockObject_MockObject
 	 *
 	 * @since   11.3
 	 */
@@ -125,9 +125,9 @@ class TestMockApplicationWeb
 	/**
 	 * Mock JApplicationWeb->appendBody method.
 	 *
-	 * @param   string  $content  The content to append to the response body.
+     * @param  string  $content  The content to append to the response body.
 	 *
-	 * @return  mixed
+     * @return  mixed
 	 *
 	 * @since   12.2
 	 */
@@ -139,9 +139,9 @@ class TestMockApplicationWeb
 	/**
 	 * Mock JApplicationWeb->getBody method.
 	 *
-	 * @param   boolean  $asArray  True to return the body as an array of strings.
+     * @param  boolean  $asArray  True to return the body as an array of strings.
 	 *
-	 * @return  mixed
+     * @return  mixed
 	 *
 	 * @since   12.2
 	 */
@@ -153,9 +153,9 @@ class TestMockApplicationWeb
 	/**
 	 * Mock JApplicationWeb->appendBody method.
 	 *
-	 * @param   string  $content  The content to append to the response body.
+     * @param  string  $content  The content to append to the response body.
 	 *
-	 * @return  mixed
+     * @return  mixed
 	 *
 	 * @since   12.2
 	 */
@@ -167,9 +167,9 @@ class TestMockApplicationWeb
 	/**
 	 * Mock JApplicationWeb->setBody method.
 	 *
-	 * @param   string  $content  The body of the response.
+     * @param  string  $content  The body of the response.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.2
 	 */

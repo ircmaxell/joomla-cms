@@ -71,9 +71,9 @@ class UsersModelGroups extends JModelList
 	 * different modules that might need different sets of data or different
 	 * ordering requirements.
 	 *
-	 * @param   string  $id    A prefix for the store id.
+     * @param  string  $id  A prefix for the store id.
 	 *
-	 * @return  string  A store id.
+     * @return  string  A store id.
 	 */
 	protected function getStoreId($id = '')
 	{
@@ -87,7 +87,7 @@ class UsersModelGroups extends JModelList
 	/**
 	 * Gets the list of groups and adds expensive joins to the result set.
 	 *
-	 * @return  mixed  An array of data items on success, false on failure.
+     * @return  mixed  An array of data items on success, false on failure.
 	 * @since   1.6
 	 */
 	public function getItems()
@@ -158,7 +158,7 @@ class UsersModelGroups extends JModelList
 	/**
 	 * Build an SQL query to load the list data.
 	 *
-	 * @return  JDatabaseQuery
+     * @return  JDatabaseQuery
 	 */
 	protected function getListQuery()
 	{

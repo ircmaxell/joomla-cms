@@ -31,30 +31,30 @@ class JHelperRoute
 	 * @var    string  Option for the extension (such as com_content)
 	 * @since  3.1
 	 */
-	protected  $extension;
+	protected $extension;
 
 	/**
 	 * @var    string  Value of the primary key in the content type table
 	 * @since  3.1
 	 */
-	protected  $id;
+	protected $id;
 
 	/**
 	 * @var    string  Name of the view for the url
 	 * @since  3.1
 	 */
-	protected  $view;
+	protected $view;
 
 	/**
 	 * A method to get the route for a specific item
 	 *
-	 * @param   integer  $id         Value of the primary key for the item in its content table
-	 * @param   string   $typealias  The type_alias for the item being routed. Of the form extension.view.
-	 * @param   string   $link       The link to be routed
-	 * @param   string   $language   The language of the content for multilingual sites
-	 * @param   integer  $catid      Optional category id
+     * @param  integer  $id         Value of the primary key for the item in its content table
+     * @param  string   $typealias  The type_alias for the item being routed. Of the form extension.view.
+     * @param  string   $link       The link to be routed
+     * @param  string   $language   The language of the content for multilingual sites
+     * @param  integer  $catid      Optional category id
 	 *
-	 * @return  string  The route of the item
+     * @return  string  The route of the item
 	 *
 	 * @since   3.1
 	 */
@@ -129,9 +129,9 @@ class JHelperRoute
 	/**
 	 * Method to find the item in the menu structure
 	 *
-	 * @param   array  $needles  Array of lookup values
+     * @param  array  $needles  Array of lookup values
 	 *
-	 * @return  mixed
+     * @return  mixed
 	 *
 	 * @since   3.1
 	 */

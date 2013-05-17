@@ -29,10 +29,10 @@ class UsersControllerUser extends JControllerForm
 	 *
 	 * Checks that non-Super Admins are not editing Super Admins.
 	 *
-	 * @param   array   $data  An array of input data.
-	 * @param   string  $key   The name of the key for the primary key.
+     * @param  array   $data  An array of input data.
+     * @param  string  $key   The name of the key for the primary key.
 	 *
-	 * @return  boolean  True if allowed, false otherwise.
+     * @return  boolean  True if allowed, false otherwise.
 	 *
 	 * @since   1.6
 	 */
@@ -54,9 +54,9 @@ class UsersControllerUser extends JControllerForm
 	/**
 	 * Method to run batch operations.
 	 *
-	 * @param   object  $model  The model.
+     * @param  object  $model  The model.
 	 *
-	 * @return  boolean  True on success, false on failure
+     * @return  boolean  True on success, false on failure
 	 *
 	 * @since   2.5
 	 */
@@ -76,10 +76,10 @@ class UsersControllerUser extends JControllerForm
 	/**
 	 * Overrides parent save method to check the submitted passwords match.
 	 *
-	 * @param   string  $key     The name of the primary key of the URL variable.
-	 * @param   string  $urlVar  The name of the URL variable if different from the primary key (sometimes required to avoid router collisions).
+     * @param  string  $key     The name of the primary key of the URL variable.
+     * @param  string  $urlVar  The name of the URL variable if different from the primary key (sometimes required to avoid router collisions).
 	 *
-	 * @return  boolean  True if successful, false otherwise.
+     * @return  boolean  True if successful, false otherwise.
 	 *
 	 * @since   1.6
 	 */
@@ -106,10 +106,10 @@ class UsersControllerUser extends JControllerForm
 	/**
 	 * Function that allows child controller access to model data after the data has been saved.
 	 *
-	 * @param   JModelLegacy  $model      The data model object.
-	 * @param   array         $validData  The validated data.
+     * @param  JModelLegacy  $model      The data model object.
+     * @param  array         $validData  The validated data.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */

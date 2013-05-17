@@ -23,10 +23,10 @@ class AdminModelProfile extends UsersModelUser
 	/**
 	 * Method to get the record form.
 	 *
-	 * @param   array    $data      An optional array of data for the form to interogate.
-	 * @param   boolean  $loadData  True if the form is to load its own data (default case), false if not.
+     * @param  array    $data      An optional array of data for the form to interogate.
+     * @param  boolean  $loadData  True if the form is to load its own data (default case), false if not.
 	 *
-	 * @return  JForm    A JForm object on success, false on failure
+     * @return  JForm  A JForm object on success, false on failure
 	 *
 	 * @since   1.6
 	 */
@@ -51,7 +51,7 @@ class AdminModelProfile extends UsersModelUser
 	/**
 	 * Method to get the data that should be injected in the form.
 	 *
-	 * @return  mixed  The data for the form.
+     * @return  mixed  The data for the form.
 	 *
 	 * @since   1.6
 	 */
@@ -76,7 +76,7 @@ class AdminModelProfile extends UsersModelUser
 	/**
 	 * Method to get a single record.
 	 *
-	 * @return  mixed  Object on success, false on failure.
+     * @return  mixed  Object on success, false on failure.
 	 *
 	 * @since   1.6
 	 */
@@ -90,9 +90,9 @@ class AdminModelProfile extends UsersModelUser
 	/**
 	 * Method to save the form data.
 	 *
-	 * @param   array  $data  The form data.
+     * @param  array  $data  The form data.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   1.6
 	 */

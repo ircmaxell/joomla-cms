@@ -75,7 +75,7 @@ class FinderIndexerTest extends TestCaseDatabase
 	/**
 	 * Method to override the factory database instance
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -88,7 +88,7 @@ class FinderIndexerTest extends TestCaseDatabase
 	/**
 	 * Method to restore the factory database instance
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -100,7 +100,7 @@ class FinderIndexerTest extends TestCaseDatabase
 	/**
 	 * Tests the getInstance method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -121,7 +121,7 @@ class FinderIndexerTest extends TestCaseDatabase
 	/**
 	 * Tests the getInstance method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -144,7 +144,7 @@ class FinderIndexerTest extends TestCaseDatabase
 	/**
 	 * Tests the getInstance method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -166,7 +166,7 @@ class FinderIndexerTest extends TestCaseDatabase
 	/**
 	 * Tests the setState method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -181,7 +181,7 @@ class FinderIndexerTest extends TestCaseDatabase
 	/**
 	 * Tests the setState method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -216,7 +216,7 @@ class FinderIndexerTest extends TestCaseDatabase
 	/**
 	 * Tests the setState method with an invalid data object
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -243,7 +243,7 @@ class FinderIndexerTest extends TestCaseDatabase
 	/**
 	 * Tests the resetState method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

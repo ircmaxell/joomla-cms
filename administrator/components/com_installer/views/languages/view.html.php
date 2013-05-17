@@ -37,9 +37,9 @@ class InstallerViewLanguages extends InstallerViewDefault
 	/**
 	 * Display the view
 	 *
-	 * @param   null  $tpl  template to display
+     * @param  null  $tpl  template to display
 	 *
-	 * @return mixed|void
+     * @return  mixed|void
 	 */
 	public function display($tpl = null)
 	{
@@ -61,7 +61,7 @@ class InstallerViewLanguages extends InstallerViewDefault
 	/**
 	 * Add the page title and toolbar.
 	 *
-	 * @return void
+     * @return  void
 	 */
 	protected function addToolbar()
 	{

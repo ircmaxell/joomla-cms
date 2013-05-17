@@ -45,9 +45,9 @@ abstract class JApplicationBase
 	/**
 	 * Method to close the application.
 	 *
-	 * @param   integer  $code  The exit code (optional; default is 0).
+     * @param  integer  $code  The exit code (optional; default is 0).
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @codeCoverageIgnore
 	 * @since   12.1
@@ -60,7 +60,7 @@ abstract class JApplicationBase
 	/**
 	 * Get the application identity.
 	 *
-	 * @return  mixed  A JUser object or null.
+     * @return  mixed  A JUser object or null.
 	 *
 	 * @since   12.1
 	 */
@@ -72,10 +72,10 @@ abstract class JApplicationBase
 	/**
 	 * Registers a handler to a particular event group.
 	 *
-	 * @param   string    $event    The event name.
-	 * @param   callback  $handler  The handler, a function or an instance of a event object.
+     * @param  string    $event    The event name.
+     * @param  callback  $handler  The handler, a function or an instance of a event object.
 	 *
-	 * @return  JApplicationBase  The application to allow chaining.
+     * @return  JApplicationBase  The application to allow chaining.
 	 *
 	 * @since   12.1
 	 */
@@ -92,10 +92,10 @@ abstract class JApplicationBase
 	/**
 	 * Calls all handlers associated with an event group.
 	 *
-	 * @param   string  $event  The event name.
-	 * @param   array   $args   An array of arguments (optional).
+     * @param  string  $event  The event name.
+     * @param  array   $args   An array of arguments (optional).
 	 *
-	 * @return  array   An array of results from each function call, or null if no dispatcher is defined.
+     * @return  array  An array of results from each function call, or null if no dispatcher is defined.
 	 *
 	 * @since   12.1
 	 */
@@ -116,9 +116,9 @@ abstract class JApplicationBase
 	 * but for many applications it will make sense to override this method and create event
 	 * dispatchers, if required, based on more specific needs.
 	 *
-	 * @param   JEventDispatcher  $dispatcher  An optional dispatcher object. If omitted, the factory dispatcher is created.
+     * @param  JEventDispatcher  $dispatcher  An optional dispatcher object. If omitted, the factory dispatcher is created.
 	 *
-	 * @return  JApplicationBase This method is chainable.
+     * @return  JApplicationBase  This method is chainable.
 	 *
 	 * @since   12.1
 	 */
@@ -136,9 +136,9 @@ abstract class JApplicationBase
 	 * but for many applications it will make sense to override this method and create an identity,
 	 * if required, based on more specific needs.
 	 *
-	 * @param   JUser  $identity  An optional identity object. If omitted, the factory user is created.
+     * @param  JUser  $identity  An optional identity object. If omitted, the factory user is created.
 	 *
-	 * @return  JApplicationBase This method is chainable.
+     * @return  JApplicationBase  This method is chainable.
 	 *
 	 * @since   12.1
 	 */

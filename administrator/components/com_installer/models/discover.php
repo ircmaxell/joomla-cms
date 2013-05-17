@@ -27,10 +27,10 @@ class InstallerModelDiscover extends InstallerModel
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @param   string  $ordering   An optional ordering field.
-	 * @param   string  $direction  An optional direction (asc|desc).
+     * @param  string  $ordering   An optional ordering field.
+     * @param  string  $direction  An optional direction (asc|desc).
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -47,7 +47,7 @@ class InstallerModelDiscover extends InstallerModel
 	/**
 	 * Method to get the database query.
 	 *
-	 * @return  JDatabaseQuery  the database query
+     * @return  JDatabaseQuery  the database query
 	 *
 	 * @since   1.6
 	 */
@@ -66,7 +66,7 @@ class InstallerModelDiscover extends InstallerModel
 	 *
 	 * Finds uninstalled extensions
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -110,7 +110,7 @@ class InstallerModelDiscover extends InstallerModel
 	/**
 	 * Installs a discovered extension.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -155,7 +155,7 @@ class InstallerModelDiscover extends InstallerModel
 	/**
 	 * Cleans out the list of discovered extensions.
 	 *
-	 * @return  bool True on success
+     * @return  bool  True on success
 	 *
 	 * @since   1.6
 	 */

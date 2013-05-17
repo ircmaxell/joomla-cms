@@ -21,7 +21,7 @@ class ModulesControllerModule extends JControllerForm
 	/**
 	 * Override parent add method.
 	 *
-	 * @return  mixed  True if the record can be added, a JError object if not.
+     * @return  mixed  True if the record can be added, a JError object if not.
 	 *
 	 * @since   1.6
 	 */
@@ -55,9 +55,9 @@ class ModulesControllerModule extends JControllerForm
 	/**
 	 * Override parent cancel method to reset the add module state.
 	 *
-	 * @param   string  $key  The name of the primary key of the URL variable.
+     * @param  string  $key  The name of the primary key of the URL variable.
 	 *
-	 * @return  boolean  True if access level checks pass, false otherwise.
+     * @return  boolean  True if access level checks pass, false otherwise.
 	 *
 	 * @since   1.6
 	 */
@@ -76,10 +76,10 @@ class ModulesControllerModule extends JControllerForm
 	/**
 	 * Override parent allowSave method.
 	 *
-	 * @param   array   $data  An array of input data.
-	 * @param   string  $key   The name of the key for the primary key.
+     * @param  array   $data  An array of input data.
+     * @param  string  $key   The name of the key for the primary key.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.6
 	 */
@@ -102,9 +102,9 @@ class ModulesControllerModule extends JControllerForm
 	/**
 	 * Method to run batch operations.
 	 *
-	 * @param   string  $model  The model
+     * @param  string  $model  The model
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   1.7
 	 */
@@ -124,10 +124,10 @@ class ModulesControllerModule extends JControllerForm
 	/**
 	 * Function that allows child controller access to model data after the data has been saved.
 	 *
-	 * @param   JModelLegacy  $model      The data model object.
-	 * @param   array         $validData  The validated data.
+     * @param  JModelLegacy  $model      The data model object.
+     * @param  array         $validData  The validated data.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */

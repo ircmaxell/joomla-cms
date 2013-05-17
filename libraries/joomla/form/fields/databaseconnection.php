@@ -37,7 +37,7 @@ class JFormFieldDatabaseConnection extends JFormFieldList
 	 * This method produces a drop down list of available databases supported
 	 * by JDatabaseDriver classes that are also supported by the application.
 	 *
-	 * @return  array    The field option objects.
+     * @return  array  The field option objects.
 	 *
 	 * @since   11.3
 	 * @see		JDatabaseDriver

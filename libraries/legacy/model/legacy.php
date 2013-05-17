@@ -73,10 +73,10 @@ abstract class JModelLegacy extends JObject
 	 * Add a directory where JModelLegacy should search for models. You may
 	 * either pass a string or an array of directories.
 	 *
-	 * @param   mixed   $path    A path or array[sting] of paths to search.
-	 * @param   string  $prefix  A prefix for models.
+     * @param  mixed   $path    A path or array[sting] of paths to search.
+     * @param  string  $prefix  A prefix for models.
 	 *
-	 * @return  array  An array with directory elements. If prefix is equal to '', all directories are returned.
+     * @return  array  An array with directory elements. If prefix is equal to '', all directories are returned.
 	 *
 	 * @since   12.2
 	 */
@@ -120,9 +120,9 @@ abstract class JModelLegacy extends JObject
 	/**
 	 * Adds to the stack of model table paths in LIFO order.
 	 *
-	 * @param   mixed  $path  The directory as a string or directories as an array to add.
+     * @param  mixed  $path  The directory as a string or directories as an array to add.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.2
 	 */
@@ -134,10 +134,10 @@ abstract class JModelLegacy extends JObject
 	/**
 	 * Create the filename for a resource
 	 *
-	 * @param   string  $type   The resource type to create the filename for.
-	 * @param   array   $parts  An associative array of filename information.
+     * @param  string  $type   The resource type to create the filename for.
+     * @param  array   $parts  An associative array of filename information.
 	 *
-	 * @return  string  The filename
+     * @return  string  The filename
 	 *
 	 * @since   12.2
 	 */
@@ -158,11 +158,11 @@ abstract class JModelLegacy extends JObject
 	/**
 	 * Returns a Model object, always creating it
 	 *
-	 * @param   string  $type    The model type to instantiate
-	 * @param   string  $prefix  Prefix for the model class name. Optional.
-	 * @param   array   $config  Configuration array for model. Optional.
+     * @param  string  $type    The model type to instantiate
+     * @param  string  $prefix  Prefix for the model class name. Optional.
+     * @param  array   $config  Configuration array for model. Optional.
 	 *
-	 * @return  mixed   A model object or false on failure
+     * @return  mixed  A model object or false on failure
 	 *
 	 * @since   12.2
 	 */
@@ -201,10 +201,10 @@ abstract class JModelLegacy extends JObject
 	/**
 	 * Constructor
 	 *
-	 * @param   array  $config  An array of configuration options (name, state, dbo, table_path, ignore_request).
+     * @param  array  $config  An array of configuration options (name, state, dbo, table_path, ignore_request).
 	 *
 	 * @since   12.2
-	 * @throws  Exception
+     * @throws  Exception
 	 */
 	public function __construct($config = array())
 	{
@@ -285,14 +285,14 @@ abstract class JModelLegacy extends JObject
 	/**
 	 * Gets an array of objects from the results of database query.
 	 *
-	 * @param   string   $query       The query.
-	 * @param   integer  $limitstart  Offset.
-	 * @param   integer  $limit       The number of records.
+     * @param  string   $query       The query.
+     * @param  integer  $limitstart  Offset.
+     * @param  integer  $limit       The number of records.
 	 *
-	 * @return  array  An array of results.
+     * @return  array  An array of results.
 	 *
 	 * @since   12.2
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	protected function _getList($query, $limitstart = 0, $limit = 0)
 	{
@@ -305,9 +305,9 @@ abstract class JModelLegacy extends JObject
 	/**
 	 * Returns a record count for the query
 	 *
-	 * @param   string  $query  The query.
+     * @param  string  $query  The query.
 	 *
-	 * @return  integer  Number of rows for query
+     * @return  integer  Number of rows for query
 	 *
 	 * @since   12.2
 	 */
@@ -322,11 +322,11 @@ abstract class JModelLegacy extends JObject
 	/**
 	 * Method to load and return a model object.
 	 *
-	 * @param   string  $name    The name of the view
-	 * @param   string  $prefix  The class prefix. Optional.
-	 * @param   array   $config  Configuration settings to pass to JTable::getInstance
+     * @param  string  $name    The name of the view
+     * @param  string  $prefix  The class prefix. Optional.
+     * @param  array   $config  Configuration settings to pass to JTable::getInstance
 	 *
-	 * @return  mixed  Model object or boolean false if failed
+     * @return  mixed  Model object or boolean false if failed
 	 *
 	 * @since   12.2
 	 * @see     JTable::getInstance
@@ -349,7 +349,7 @@ abstract class JModelLegacy extends JObject
 	/**
 	 * Method to get the database driver object
 	 *
-	 * @return  JDatabaseDriver
+     * @return  JDatabaseDriver
 	 */
 	public function getDbo()
 	{
@@ -362,10 +362,10 @@ abstract class JModelLegacy extends JObject
 	 * The model name. By default parsed using the classname or it can be set
 	 * by passing a $config['name'] in the class constructor
 	 *
-	 * @return  string  The name of the model
+     * @return  string  The name of the model
 	 *
 	 * @since   12.2
-	 * @throws  Exception
+     * @throws  Exception
 	 */
 	public function getName()
 	{
@@ -385,10 +385,10 @@ abstract class JModelLegacy extends JObject
 	/**
 	 * Method to get model state variables
 	 *
-	 * @param   string  $property  Optional parameter name
-	 * @param   mixed   $default   Optional default value
+     * @param  string  $property  Optional parameter name
+     * @param  mixed   $default   Optional default value
 	 *
-	 * @return  object  The property where specified, the state object where omitted
+     * @return  object  The property where specified, the state object where omitted
 	 *
 	 * @since   12.2
 	 */
@@ -409,14 +409,14 @@ abstract class JModelLegacy extends JObject
 	/**
 	 * Method to get a table object, load it if necessary.
 	 *
-	 * @param   string  $name     The table name. Optional.
-	 * @param   string  $prefix   The class prefix. Optional.
-	 * @param   array   $options  Configuration array for model. Optional.
+     * @param  string  $name     The table name. Optional.
+     * @param  string  $prefix   The class prefix. Optional.
+     * @param  array   $options  Configuration array for model. Optional.
 	 *
-	 * @return  JTable  A JTable object
+     * @return  JTable  A JTable object
 	 *
 	 * @since   12.2
-	 * @throws  Exception
+     * @throws  Exception
 	 */
 	public function getTable($name = '', $prefix = 'Table', $options = array())
 	{
@@ -440,7 +440,7 @@ abstract class JModelLegacy extends JObject
 	 * to be called on the first call to the getState() method unless the model
 	 * configuration flag to ignore the request is set.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @note    Calling getState in this method will result in recursion.
 	 * @since   12.2
@@ -452,9 +452,9 @@ abstract class JModelLegacy extends JObject
 	/**
 	 * Method to set the database driver object
 	 *
-	 * @param   JDatabaseDriver  $db  A JDatabaseDriver based object
+     * @param  JDatabaseDriver  $db  A JDatabaseDriver based object
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.2
 	 */
@@ -466,10 +466,10 @@ abstract class JModelLegacy extends JObject
 	/**
 	 * Method to set model state variables
 	 *
-	 * @param   string  $property  The name of the property.
-	 * @param   mixed   $value     The value of the property to set or null.
+     * @param  string  $property  The name of the property.
+     * @param  mixed   $value     The value of the property to set or null.
 	 *
-	 * @return  mixed  The previous value of the property or null if not set.
+     * @return  mixed  The previous value of the property or null if not set.
 	 *
 	 * @since   12.2
 	 */
@@ -481,10 +481,10 @@ abstract class JModelLegacy extends JObject
 	/**
 	 * Clean the cache
 	 *
-	 * @param   string   $group      The cache group
-	 * @param   integer  $client_id  The ID of the client
+     * @param  string   $group      The cache group
+     * @param  integer  $client_id  The ID of the client
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.2
 	 */

@@ -60,7 +60,7 @@ class ContentModelArchive extends ContentModelArticles
 	}
 
 	/**
-	 * @return  JDatabaseQuery
+     * @return  JDatabaseQuery
 	 */
 	protected function getListQuery()
 	{
@@ -124,7 +124,7 @@ class ContentModelArchive extends ContentModelArticles
 	 * Method to get the archived article list
 	 *
 	 * @access public
-	 * @return array
+     * @return  array
 	 */
 	public function getData()
 	{

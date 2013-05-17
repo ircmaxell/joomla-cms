@@ -29,10 +29,10 @@ class JComponentHelper
 	/**
 	 * Get the component information.
 	 *
-	 * @param   string   $option  The component option.
-	 * @param   boolean  $strict  If set and the component does not exist, the enabled attribute will be set to false.
+     * @param  string   $option  The component option.
+     * @param  boolean  $strict  If set and the component does not exist, the enabled attribute will be set to false.
 	 *
-	 * @return  object   An object with the information for the component.
+     * @return  object  An object with the information for the component.
 	 *
 	 * @since   11.1
 	 */
@@ -62,9 +62,9 @@ class JComponentHelper
 	/**
 	 * Checks if the component is enabled
 	 *
-	 * @param   string  $option  The component option.
+     * @param  string  $option  The component option.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   11.1
 	 */
@@ -78,10 +78,10 @@ class JComponentHelper
 	/**
 	 * Gets the parameter object for the component
 	 *
-	 * @param   string   $option  The option for the component.
-	 * @param   boolean  $strict  If set and the component does not exist, false will be returned
+     * @param  string   $option  The option for the component.
+     * @param  boolean  $strict  If set and the component does not exist, false will be returned
 	 *
-	 * @return  JRegistry  A JRegistry object.
+     * @return  JRegistry  A JRegistry object.
 	 *
 	 * @see     JRegistry
 	 * @since   11.1
@@ -96,9 +96,9 @@ class JComponentHelper
 	/**
 	 * Applies the global text filters to arbitrary text as per settings for current user groups
 	 *
-	 * @param   string  $text  The string to filter
+     * @param  string  $text  The string to filter
 	 *
-	 * @return  string  The filtered string
+     * @return  string  The filtered string
 	 *
 	 * @since   11.4
 	 */
@@ -277,13 +277,13 @@ class JComponentHelper
 	/**
 	 * Render the component.
 	 *
-	 * @param   string  $option  The component option.
-	 * @param   array   $params  The component parameters
+     * @param  string  $option  The component option.
+     * @param  array   $params  The component parameters
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.1
-	 * @throws  Exception
+     * @throws  Exception
 	 */
 	public static function renderComponent($option, $params = array())
 	{
@@ -347,9 +347,9 @@ class JComponentHelper
 	/**
 	 * Execute the component.
 	 *
-	 * @param   string  $path  The component path.
+     * @param  string  $path  The component path.
 	 *
-	 * @return  string  The component output
+     * @return  string  The component output
 	 *
 	 * @since   11.3
 	 */
@@ -365,9 +365,9 @@ class JComponentHelper
 	/**
 	 * Load the installed components into the components property.
 	 *
-	 * @param   string  $option  The element value for the extension
+     * @param  string  $option  The element value for the extension
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   11.1
 	 */

@@ -61,7 +61,7 @@ class AdminModelSysInfo extends JModelLegacy
 	/**
 	 * Method to get the ChangeLog
 	 *
-	 * @return array some php settings
+     * @return  array  some php settings
 	 *
 	 * @since  1.6
 	 */
@@ -94,7 +94,7 @@ class AdminModelSysInfo extends JModelLegacy
 	/**
 	 * Method to get the config
 	 *
-	 * @return  array  config values
+     * @return  array  config values
 	 *
 	 * @since  1.6
 	 */
@@ -117,7 +117,7 @@ class AdminModelSysInfo extends JModelLegacy
 	/**
 	 * Method to get the system information
 	 *
-	 * @return  array system information values
+     * @return  array  system information values
 	 *
 	 * @since   1.6
 	 */
@@ -133,7 +133,8 @@ class AdminModelSysInfo extends JModelLegacy
 			{
 				$sf = $_SERVER['SERVER_SOFTWARE'];
 			}
-			else {
+			else
+			{
 				$sf = getenv('SERVER_SOFTWARE');
 			}
 			$this->info['php']			= php_uname();
@@ -152,7 +153,7 @@ class AdminModelSysInfo extends JModelLegacy
 	/**
 	 * Method to get the PHP info
 	 *
-	 * @return  string PHP info
+     * @return  string  PHP info
 	 *
 	 * @since  1.6
 	 */
@@ -182,7 +183,7 @@ class AdminModelSysInfo extends JModelLegacy
 	/**
 	 * Method to get the directory states
 	 *
-	 * @return array States of directories
+     * @return  array  States of directories
 	 *
 	 * @since  1.6
 	 */
@@ -296,7 +297,7 @@ class AdminModelSysInfo extends JModelLegacy
 	/**
 	 * Method to add a directory
 	 *
-	 * @return void
+     * @return  void
 	 * @since  1.6
 	 */
 	private function _addDirectory($name, $path, $message = '')
@@ -307,7 +308,7 @@ class AdminModelSysInfo extends JModelLegacy
 	/**
 	 * Method to get the editor
 	 *
-	 * @return  string The default editor
+     * @return  string  The default editor
 	 *
 	 * @note: has to be removed (it is present in the config...)
 	 *

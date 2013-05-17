@@ -27,7 +27,7 @@ class WeblinksViewWeblinks extends JViewLegacy
 	/**
 	 * Display the view
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function display($tpl = null)
 	{
@@ -73,8 +73,8 @@ class WeblinksViewWeblinks extends JViewLegacy
 		{
 			JToolbarHelper::editList('weblink.edit');
 		}
-		if ($canDo->get('core.edit.state')) {
-
+		if ($canDo->get('core.edit.state'))
+		{
 			JToolbarHelper::publish('weblinks.publish', 'JTOOLBAR_PUBLISH', true);
 			JToolbarHelper::unpublish('weblinks.unpublish', 'JTOOLBAR_UNPUBLISH', true);
 
@@ -84,7 +84,8 @@ class WeblinksViewWeblinks extends JViewLegacy
 		if ($state->get('filter.state') == -2 && $canDo->get('core.delete'))
 		{
 			JToolbarHelper::deleteList('', 'weblinks.delete', 'JTOOLBAR_EMPTY_TRASH');
-		} elseif ($canDo->get('core.edit.state'))
+		}
+		elseif ($canDo->get('core.edit.state'))
 		{
 			JToolbarHelper::trash('weblinks.trash');
 		}
@@ -142,7 +143,7 @@ class WeblinksViewWeblinks extends JViewLegacy
 	/**
 	 * Returns an array of fields the table can be sorted by
 	 *
-	 * @return  array  Array containing the field name to sort by as the key and display text as value
+     * @return  array  Array containing the field name to sort by as the key and display text as value
 	 *
 	 * @since   3.0
 	 */

@@ -40,7 +40,7 @@ class JFormFieldCheckboxes extends JFormField
 	/**
 	 * Method to get the field input markup for check boxes.
 	 *
-	 * @return  string  The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   11.1
 	 */
@@ -97,7 +97,7 @@ class JFormFieldCheckboxes extends JFormField
 	/**
 	 * Method to get the field options.
 	 *
-	 * @return  array  The field option objects.
+     * @return  array  The field option objects.
 	 *
 	 * @since   11.1
 	 */

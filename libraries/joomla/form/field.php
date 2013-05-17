@@ -192,7 +192,7 @@ abstract class JFormField
 	/**
 	 * Method to instantiate the form field object.
 	 *
-	 * @param   JForm  $form  The form to attach to the form field object.
+     * @param  JForm  $form  The form to attach to the form field object.
 	 *
 	 * @since   11.1
 	 */
@@ -223,9 +223,9 @@ abstract class JFormField
 	/**
 	 * Method to get certain otherwise inaccessible properties from the form field object.
 	 *
-	 * @param   string  $name  The property name for which to the the value.
+     * @param  string  $name  The property name for which to the the value.
 	 *
-	 * @return  mixed  The property value or null.
+     * @return  mixed  The property value or null.
 	 *
 	 * @since   11.1
 	 */
@@ -276,9 +276,9 @@ abstract class JFormField
 	/**
 	 * Method to attach a JForm object to the field.
 	 *
-	 * @param   JForm  $form  The JForm object to attach to the form field.
+     * @param  JForm  $form  The JForm object to attach to the form field.
 	 *
-	 * @return  JFormField  The form field object so that the method can be used in a chain.
+     * @return  JFormField  The form field object so that the method can be used in a chain.
 	 *
 	 * @since   11.1
 	 */
@@ -293,13 +293,13 @@ abstract class JFormField
 	/**
 	 * Method to attach a JForm object to the field.
 	 *
-	 * @param   SimpleXMLElement  $element  The SimpleXMLElement object representing the <field /> tag for the form field object.
-	 * @param   mixed             $value    The form field value to validate.
-	 * @param   string            $group    The field name group control value. This acts as as an array container for the field.
+     * @param  SimpleXMLElement  $element  The SimpleXMLElement object representing the <field /> tag for the form field object.
+     * @param  mixed             $value    The form field value to validate.
+     * @param  string            $group    The field name group control value. This acts as as an array container for the field.
 	 *                                      For example if the field has name="foo" and the group value is set to "bar" then the
 	 *                                      full field name would end up being "bar[foo]".
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   11.1
 	 */
@@ -385,10 +385,10 @@ abstract class JFormField
 	/**
 	 * Method to get the id used for the field input tag.
 	 *
-	 * @param   string  $fieldId    The field element id.
-	 * @param   string  $fieldName  The field element name.
+     * @param  string  $fieldId    The field element id.
+     * @param  string  $fieldName  The field element name.
 	 *
-	 * @return  string  The id to be used for the field input tag.
+     * @return  string  The id to be used for the field input tag.
 	 *
 	 * @since   11.1
 	 */
@@ -435,7 +435,7 @@ abstract class JFormField
 	/**
 	 * Method to get the field input markup.
 	 *
-	 * @return  string  The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   11.1
 	 */
@@ -444,7 +444,7 @@ abstract class JFormField
 	/**
 	 * Method to get the field title.
 	 *
-	 * @return  string  The field title.
+     * @return  string  The field title.
 	 *
 	 * @since   11.1
 	 */
@@ -468,7 +468,7 @@ abstract class JFormField
 	/**
 	 * Method to get the field label markup.
 	 *
-	 * @return  string  The field label markup.
+     * @return  string  The field label markup.
 	 *
 	 * @since   11.1
 	 */
@@ -519,9 +519,9 @@ abstract class JFormField
 	/**
 	 * Method to get the name used for the field input tag.
 	 *
-	 * @param   string  $fieldName  The field element name.
+     * @param  string  $fieldName  The field element name.
 	 *
-	 * @return  string  The name to be used for the field input tag.
+     * @return  string  The name to be used for the field input tag.
 	 *
 	 * @since   11.1
 	 */
@@ -592,9 +592,9 @@ abstract class JFormField
 	/**
 	 * Method to get the field name used.
 	 *
-	 * @param   string  $fieldName  The field element name.
+     * @param  string  $fieldName  The field element name.
 	 *
-	 * @return  string  The field name
+     * @return  string  The field name
 	 *
 	 * @since   11.1
 	 */

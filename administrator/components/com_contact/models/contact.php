@@ -23,11 +23,11 @@ class ContactModelContact extends JModelAdmin
 	/**
 	 * Method to perform batch operations on an item or a set of items.
 	 *
-	 * @param   array  $commands  An array of commands to perform.
-	 * @param   array  $pks       An array of item ids.
-	 * @param   array  $contexts  An array of item contexts.
+     * @param  array  $commands  An array of commands to perform.
+     * @param  array  $pks       An array of item ids.
+     * @param  array  $contexts  An array of item contexts.
 	 *
-	 * @return  boolean  Returns true on success, false on failure.
+     * @return  boolean  Returns true on success, false on failure.
 	 *
 	 * @since   2.5
 	 */
@@ -129,11 +129,11 @@ class ContactModelContact extends JModelAdmin
 	/**
 	 * Batch copy items to a new category or current.
 	 *
-	 * @param   integer  $value     The new category.
-	 * @param   array    $pks       An array of row IDs.
-	 * @param   array    $contexts  An array of item contexts.
+     * @param  integer  $value     The new category.
+     * @param  array    $pks       An array of row IDs.
+     * @param  array    $contexts  An array of item contexts.
 	 *
-	 * @return  mixed  An array of new IDs on success, boolean false on failure.
+     * @return  mixed  An array of new IDs on success, boolean false on failure.
 	 *
 	 * @since   11.1
 	 */
@@ -248,11 +248,11 @@ class ContactModelContact extends JModelAdmin
 	/**
 	 * Batch change a linked user.
 	 *
-	 * @param   integer  $value     The new value matching a User ID.
-	 * @param   array    $pks       An array of row IDs.
-	 * @param   array    $contexts  An array of item contexts.
+     * @param  integer  $value     The new value matching a User ID.
+     * @param  array    $pks       An array of row IDs.
+     * @param  array    $contexts  An array of item contexts.
 	 *
-	 * @return  boolean  True if successful, false otherwise and internal error is set.
+     * @return  boolean  True if successful, false otherwise and internal error is set.
 	 *
 	 * @since   2.5
 	 */
@@ -292,9 +292,9 @@ class ContactModelContact extends JModelAdmin
 	/**
 	 * Method to test whether a record can be deleted.
 	 *
-	 * @param   object  $record  A record object.
+     * @param  object  $record  A record object.
 	 *
-	 * @return  boolean  True if allowed to delete the record. Defaults to the permission set in the component.
+     * @return  boolean  True if allowed to delete the record. Defaults to the permission set in the component.
 	 * @since   1.6
 	 */
 	protected function canDelete($record)
@@ -313,9 +313,9 @@ class ContactModelContact extends JModelAdmin
 	/**
 	 * Method to test whether a record can have its state edited.
 	 *
-	 * @param   object    $record    A record object.
+     * @param  object  $record  A record object.
 	 *
-	 * @return  boolean  True if allowed to change the state of the record. Defaults to the permission set in the component.
+     * @return  boolean  True if allowed to change the state of the record. Defaults to the permission set in the component.
 	 * @since   1.6
 	 */
 	protected function canEditState($record)
@@ -337,11 +337,11 @@ class ContactModelContact extends JModelAdmin
 	/**
 	 * Returns a Table object, always creating it
 	 *
-	 * @param   type      $type      The table type to instantiate
-	 * @param   string    $prefix    A prefix for the table class name. Optional.
-	 * @param   array     $config    Configuration array for model. Optional.
+     * @param  type    $type    The table type to instantiate
+     * @param  string  $prefix  A prefix for the table class name. Optional.
+     * @param  array   $config  Configuration array for model. Optional.
 	 *
-	 * @return  JTable    A database object
+     * @return  JTable  A database object
 	 * @since   1.6
 	 */
 	public function getTable($type = 'Contact', $prefix = 'ContactTable', $config = array())
@@ -352,10 +352,10 @@ class ContactModelContact extends JModelAdmin
 	/**
 	 * Method to get the row form.
 	 *
-	 * @param   array      $data        Data for the form.
-	 * @param   boolean    $loadData    True if the form is to load its own data (default case), false if not.
+     * @param  array    $data      Data for the form.
+     * @param  boolean  $loadData  True if the form is to load its own data (default case), false if not.
 	 *
-	 * @return  mixed  A JForm object on success, false on failure
+     * @return  mixed  A JForm object on success, false on failure
 	 * @since   1.6
 	 */
 	public function getForm($data = array(), $loadData = true)
@@ -390,9 +390,9 @@ class ContactModelContact extends JModelAdmin
 	/**
 	 * Method to get a single record.
 	 *
-	 * @param   integer    $pk    The id of the primary key.
+     * @param  integer  $pk  The id of the primary key.
 	 *
-	 * @return  mixed  Object on success, false on failure.
+     * @return  mixed  Object on success, false on failure.
 	 * @since   1.6
 	 */
 	public function getItem($pk = null)
@@ -438,7 +438,7 @@ class ContactModelContact extends JModelAdmin
 	/**
 	 * Method to get the data that should be injected in the form.
 	 *
-	 * @return  mixed  The data for the form.
+     * @return  mixed  The data for the form.
 	 * @since   1.6
 	 */
 	protected function loadFormData()
@@ -468,7 +468,7 @@ class ContactModelContact extends JModelAdmin
 	 *
 	 * @param   array  The form data.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 * @since    3.0
 	 */
 	public function save($data)
@@ -561,9 +561,9 @@ class ContactModelContact extends JModelAdmin
 	/**
 	 * Prepare and sanitise the table prior to saving.
 	 *
-	 * @param   JTable    $table
+     * @param  JTable  $table
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.6
 	 */
 	protected function prepareTable($table)
@@ -607,9 +607,9 @@ class ContactModelContact extends JModelAdmin
 	/**
 	 * A protected method to get a set of ordering conditions.
 	 *
-	 * @param   JTable    $table    A record object.
+     * @param  JTable  $table  A record object.
 	 *
-	 * @return  array  An array of conditions to add to add to ordering queries.
+     * @return  array  An array of conditions to add to add to ordering queries.
 	 * @since   1.6
 	 */
 	protected function getReorderConditions($table)
@@ -664,10 +664,10 @@ class ContactModelContact extends JModelAdmin
 	/**
 	 * Method to toggle the featured setting of contacts.
 	 *
-	 * @param   array    $pks      The ids of the items to toggle.
-	 * @param   integer  $value    The value to toggle to.
+     * @param  array    $pks    The ids of the items to toggle.
+     * @param  integer  $value  The value to toggle to.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 * @since   1.6
 	 */
 	public function featured($pks, $value = 0)
@@ -712,11 +712,11 @@ class ContactModelContact extends JModelAdmin
 	/**
 	 * Method to change the title & alias.
 	 *
-	 * @param   integer  $parent_id  The id of the parent.
-	 * @param   string   $alias      The alias.
-	 * @param   string   $title      The title.
+     * @param  integer  $parent_id  The id of the parent.
+     * @param  string   $alias      The alias.
+     * @param  string   $title      The title.
 	 *
-	 * @return  array  Contains the modified title and alias.
+     * @return  array  Contains the modified title and alias.
 	 *
 	 * @since   3.1
 	 */

@@ -30,11 +30,11 @@ class JData implements JDataDumpable, IteratorAggregate, JsonSerializable, Count
 	/**
 	 * The class constructor.
 	 *
-	 * @param   mixed  $properties  Either an associative array or another object
+     * @param  mixed  $properties  Either an associative array or another object
 	 *                              by which to set the initial properties of the new object.
 	 *
 	 * @since   11.1
-	 * @throws  InvalidArgumentException
+     * @throws  InvalidArgumentException
 	 */
 	public function __construct($properties = array())
 	{
@@ -56,9 +56,9 @@ class JData implements JDataDumpable, IteratorAggregate, JsonSerializable, Count
 	 * requesting a non-visible property can trigger a call to a sub-function. If that references the property directly in
 	 * the object, it will cause a recursion into __get.
 	 *
-	 * @param   string  $property  The name of the data property.
+     * @param  string  $property  The name of the data property.
 	 *
-	 * @return  mixed  The value of the data property, or null if the data property does not exist.
+     * @return  mixed  The value of the data property, or null if the data property does not exist.
 	 *
 	 * @see     JData::getProperty()
 	 * @since   12.3
@@ -71,9 +71,9 @@ class JData implements JDataDumpable, IteratorAggregate, JsonSerializable, Count
 	/**
 	 * The magic isset method is used to check the state of an object property.
 	 *
-	 * @param   string  $property  The name of the data property.
+     * @param  string  $property  The name of the data property.
 	 *
-	 * @return  boolean  True if set, otherwise false is returned.
+     * @return  boolean  True if set, otherwise false is returned.
 	 *
 	 * @since   12.3
 	 */
@@ -87,10 +87,10 @@ class JData implements JDataDumpable, IteratorAggregate, JsonSerializable, Count
 	 *
 	 * This is a public proxy for the protected setProperty method.
 	 *
-	 * @param   string  $property  The name of the data property.
-	 * @param   mixed   $value     The value to give the data property.
+     * @param  string  $property  The name of the data property.
+     * @param  mixed   $value     The value to give the data property.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @see     JData::setProperty()
 	 * @since   12.3
@@ -103,9 +103,9 @@ class JData implements JDataDumpable, IteratorAggregate, JsonSerializable, Count
 	/**
 	 * The magic unset method is used to unset a data property.
 	 *
-	 * @param   string  $property  The name of the data property.
+     * @param  string  $property  The name of the data property.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.3
 	 */
@@ -117,13 +117,13 @@ class JData implements JDataDumpable, IteratorAggregate, JsonSerializable, Count
 	/**
 	 * Binds an array or object to this object.
 	 *
-	 * @param   mixed    $properties   An associative array of properties or an object.
-	 * @param   boolean  $updateNulls  True to bind null values, false to ignore null values.
+     * @param  mixed    $properties   An associative array of properties or an object.
+     * @param  boolean  $updateNulls  True to bind null values, false to ignore null values.
 	 *
-	 * @return  JData  Returns itself to allow chaining.
+     * @return  JData  Returns itself to allow chaining.
 	 *
 	 * @since   12.3
-	 * @throws  InvalidArgumentException
+     * @throws  InvalidArgumentException
 	 */
 	public function bind($properties, $updateNulls = true)
 	{
@@ -165,12 +165,12 @@ class JData implements JDataDumpable, IteratorAggregate, JsonSerializable, Count
 	/**
 	 * Dumps the data properties into a stdClass object, recursively if appropriate.
 	 *
-	 * @param   integer           $depth   The maximum depth of recursion (default = 3).
+     * @param  integer  $depth  The maximum depth of recursion (default = 3).
 	 *                                     For example, a depth of 0 will return a stdClass with all the properties in native
 	 *                                     form. A depth of 1 will recurse into the first level of properties only.
-	 * @param   SplObjectStorage  $dumped  An array of already serialized objects that is used to avoid infinite loops.
+     * @param  SplObjectStorage  $dumped  An array of already serialized objects that is used to avoid infinite loops.
 	 *
-	 * @return  stdClass  The data properties as a simple PHP stdClass object.
+     * @return  stdClass  The data properties as a simple PHP stdClass object.
 	 *
 	 * @since   12.3
 	 */
@@ -203,7 +203,7 @@ class JData implements JDataDumpable, IteratorAggregate, JsonSerializable, Count
 	 *
 	 * This allows the data properties to be access via a foreach statement.
 	 *
-	 * @return  ArrayIterator  This object represented as an ArrayIterator.
+     * @return  ArrayIterator  This object represented as an ArrayIterator.
 	 *
 	 * @see     IteratorAggregate::getIterator()
 	 * @since   12.3
@@ -216,7 +216,7 @@ class JData implements JDataDumpable, IteratorAggregate, JsonSerializable, Count
 	/**
 	 * Gets the data properties in a form that can be serialised to JSON format.
 	 *
-	 * @return  string  An object that can be serialised by json_encode().
+     * @return  string  An object that can be serialised by json_encode().
 	 *
 	 * @since   12.3
 	 */
@@ -231,11 +231,11 @@ class JData implements JDataDumpable, IteratorAggregate, JsonSerializable, Count
 	 * If recursion is set, this method will dump any object implementing JDumpable (like JData and JDataSet); it will
 	 * convert a JDate object to a string; and it will convert a JRegistry to an object.
 	 *
-	 * @param   string            $property  The name of the data property.
-	 * @param   integer           $depth     The current depth of recursion (a value of 0 will ignore recursion).
-	 * @param   SplObjectStorage  $dumped    An array of already serialized objects that is used to avoid infinite loops.
+     * @param  string            $property  The name of the data property.
+     * @param  integer           $depth     The current depth of recursion (a value of 0 will ignore recursion).
+     * @param  SplObjectStorage  $dumped    An array of already serialized objects that is used to avoid infinite loops.
 	 *
-	 * @return  mixed  The value of the dumped property.
+     * @return  mixed  The value of the dumped property.
 	 *
 	 * @since   12.3
 	 */
@@ -272,9 +272,9 @@ class JData implements JDataDumpable, IteratorAggregate, JsonSerializable, Count
 	/**
 	 * Gets a data property.
 	 *
-	 * @param   string  $property  The name of the data property.
+     * @param  string  $property  The name of the data property.
 	 *
-	 * @return  mixed  The value of the data property.
+     * @return  mixed  The value of the data property.
 	 *
 	 * @see     JData::__get()
 	 * @since   12.3
@@ -292,10 +292,10 @@ class JData implements JDataDumpable, IteratorAggregate, JsonSerializable, Count
 	 *
 	 * If the name of the property starts with a null byte, this method will return null.
 	 *
-	 * @param   string  $property  The name of the data property.
-	 * @param   mixed   $value     The value to give the data property.
+     * @param  string  $property  The name of the data property.
+     * @param  mixed   $value     The value to give the data property.
 	 *
-	 * @return  mixed  The value of the data property.
+     * @return  mixed  The value of the data property.
 	 *
 	 * @see     JData::__set()
 	 * @since   12.3
@@ -320,7 +320,7 @@ class JData implements JDataDumpable, IteratorAggregate, JsonSerializable, Count
 	/**
 	 * Count the number of data properties.
 	 *
-	 * @return  integer  The number of data properties.
+     * @return  integer  The number of data properties.
 	 *
 	 * @since   12.3
 	 */

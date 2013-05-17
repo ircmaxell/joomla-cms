@@ -46,10 +46,10 @@ class JOAuth2Client
 	/**
 	 * Constructor.
 	 *
-	 * @param   JRegistry        $options      JOAuth2Client options object
-	 * @param   JHttp            $http         The HTTP client object
-	 * @param   JInput           $input        The input object
-	 * @param   JApplicationWeb  $application  The application object
+     * @param  JRegistry        $options      JOAuth2Client options object
+     * @param  JHttp            $http         The HTTP client object
+     * @param  JInput           $input        The input object
+     * @param  JApplicationWeb  $application  The application object
 	 *
 	 * @since   12.3
 	 */
@@ -64,7 +64,7 @@ class JOAuth2Client
 	/**
 	 * Get the access token or redict to the authentication URL.
 	 *
-	 * @return  string  The access token
+     * @return  string  The access token
 	 *
 	 * @since   12.3
 	 */
@@ -111,7 +111,7 @@ class JOAuth2Client
 	/**
 	 * Verify if the client has been authenticated
 	 *
-	 * @return  boolean  Is authenticated
+     * @return  boolean  Is authenticated
 	 *
 	 * @since   12.3
 	 */
@@ -136,7 +136,7 @@ class JOAuth2Client
 	/**
 	 * Create the URL for authentication.
 	 *
-	 * @return  JHttpResponse  The HTTP response
+     * @return  JHttpResponse  The HTTP response
 	 *
 	 * @since   12.3
 	 */
@@ -191,13 +191,13 @@ class JOAuth2Client
 	/**
 	 * Send a signed Oauth request.
 	 *
-	 * @param   string  $url      The URL forf the request.
-	 * @param   mixed   $data     The data to include in the request
-	 * @param   array   $headers  The headers to send with the request
-	 * @param   string  $method   The method with which to send the request
-	 * @param   int     $timeout  The timeout for the request
+     * @param  string  $url      The URL forf the request.
+     * @param  mixed   $data     The data to include in the request
+     * @param  array   $headers  The headers to send with the request
+     * @param  string  $method   The method with which to send the request
+     * @param  int     $timeout  The timeout for the request
 	 *
-	 * @return  string  The URL.
+     * @return  string  The URL.
 	 *
 	 * @since   12.3
 	 */
@@ -259,9 +259,9 @@ class JOAuth2Client
 	/**
 	 * Get an option from the JOAuth2Client instance.
 	 *
-	 * @param   string  $key  The name of the option to get
+     * @param  string  $key  The name of the option to get
 	 *
-	 * @return  mixed  The option value
+     * @return  mixed  The option value
 	 *
 	 * @since   12.3
 	 */
@@ -273,10 +273,10 @@ class JOAuth2Client
 	/**
 	 * Set an option for the JOAuth2Client instance.
 	 *
-	 * @param   string  $key    The name of the option to set
-	 * @param   mixed   $value  The option value to set
+     * @param  string  $key    The name of the option to set
+     * @param  mixed   $value  The option value to set
 	 *
-	 * @return  JOAuth2Client  This object for method chaining
+     * @return  JOAuth2Client  This object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -290,7 +290,7 @@ class JOAuth2Client
 	/**
 	 * Get the access token from the JOAuth2Client instance.
 	 *
-	 * @return  array  The access token
+     * @return  array  The access token
 	 *
 	 * @since   12.3
 	 */
@@ -302,9 +302,9 @@ class JOAuth2Client
 	/**
 	 * Set an option for the JOAuth2Client instance.
 	 *
-	 * @param   array  $value  The access token
+     * @param  array  $value  The access token
 	 *
-	 * @return  JOAuth2Client  This object for method chaining
+     * @return  JOAuth2Client  This object for method chaining
 	 *
 	 * @since   12.3
 	 */
@@ -323,9 +323,9 @@ class JOAuth2Client
 	/**
 	 * Refresh the access token instance.
 	 *
-	 * @param   string  $token  The refresh token
+     * @param  string  $token  The refresh token
 	 *
-	 * @return  array  The new access token
+     * @return  array  The new access token
 	 *
 	 * @since   12.3
 	 */

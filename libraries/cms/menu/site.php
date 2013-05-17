@@ -21,7 +21,7 @@ class JMenuSite extends JMenu
 	/**
 	 * Loads the entire menu table into memory.
 	 *
-	 * @return  array
+     * @return  array
 	 */
 	public function load()
 	{
@@ -74,11 +74,11 @@ class JMenuSite extends JMenu
 	/**
 	 * Gets menu items by attribute
 	 *
-	 * @param   string   $attributes  The field name
-	 * @param   string   $values      The value of the field
-	 * @param   boolean  $firstonly   If true, only returns the first item found
+     * @param  string   $attributes  The field name
+     * @param  string   $values      The value of the field
+     * @param  boolean  $firstonly   If true, only returns the first item found
 	 *
-	 * @return  array
+     * @return  array
 	 */
 	public function getItems($attributes, $values, $firstonly = false)
 	{
@@ -126,9 +126,9 @@ class JMenuSite extends JMenu
 	/**
 	 * Get menu item by id
 	 *
-	 * @param   string  $language  The language code.
+     * @param  string  $language  The language code.
 	 *
-	 * @return  object  The item object
+     * @return  object  The item object
 	 *
 	 * @since   1.5
 	 */

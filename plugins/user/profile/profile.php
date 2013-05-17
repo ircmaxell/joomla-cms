@@ -37,8 +37,8 @@ class PlgUserProfile extends JPlugin
 	/**
 	 * Constructor
 	 *
-	 * @param   object  $subject  The object to observe
-	 * @param   array   $config   An array that holds the plugin configuration
+     * @param  object  $subject  The object to observe
+     * @param  array   $config   An array that holds the plugin configuration
 	 *
 	 * @since   1.5
 	 */
@@ -49,10 +49,10 @@ class PlgUserProfile extends JPlugin
 	}
 
 	/**
-	 * @param   string     $context  The context for the data
-	 * @param   integer    $data     The user id
+     * @param  string   $context  The context for the data
+     * @param  integer  $data     The user id
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.6
 	 */
@@ -164,10 +164,10 @@ class PlgUserProfile extends JPlugin
 	}
 
 	/**
-	 * @param   JForm    $form    The form to be altered.
-	 * @param   array    $data    The associated data for the form.
+     * @param  JForm  $form  The form to be altered.
+     * @param  array  $data  The associated data for the form.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 * @since   1.6
 	 */
 	public function onContentPrepareForm($form, $data)
@@ -294,14 +294,14 @@ class PlgUserProfile extends JPlugin
 	/**
 	 * Method is called before user data is stored in the database
 	 *
-	 * @param   array    $user   Holds the old user data.
-	 * @param   boolean  $isnew  True if a new user is stored.
-	 * @param   array    $data   Holds the new user data.
+     * @param  array    $user   Holds the old user data.
+     * @param  boolean  $isnew  True if a new user is stored.
+     * @param  array    $data   Holds the new user data.
 	 *
-	 * @return    boolean
+     * @return  boolean
 	 *
 	 * @since   3.1
-	 * @throws    InvalidArgumentException on invalid date.
+     * @throws  InvalidArgumentException  on invalid date.
 	 */
 	public function onUserBeforeSave($user, $isnew, $data)
 	{
@@ -368,11 +368,11 @@ class PlgUserProfile extends JPlugin
 	 *
 	 * Method is called after user data is deleted from the database
 	 *
-	 * @param   array    $user     Holds the user data
-	 * @param   boolean  $success  True if user was succesfully stored in the database
-	 * @param   string   $msg      Message
+     * @param  array    $user     Holds the user data
+     * @param  boolean  $success  True if user was succesfully stored in the database
+     * @param  string   $msg      Message
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 */
 	public function onUserAfterDelete($user, $success, $msg)
 	{

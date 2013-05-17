@@ -29,10 +29,10 @@ abstract class JHtmlTag
 	/**
 	 * Returns an array of tags.
 	 *
-	 * @param   array  $config  An array of configuration options. By default, only
+     * @param  array  $config  An array of configuration options. By default, only
 	 *                          published and unpublished categories are returned.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   3.1
 	 */
@@ -102,9 +102,9 @@ abstract class JHtmlTag
 	/**
 	 * Returns an array of tags.
 	 *
-	 * @param   array  $config  An array of configuration options. By default, only published and unpublished tags are returned.
+     * @param  array  $config  An array of configuration options. By default, only published and unpublished tags are returned.
 	 *
-	 * @return  array  Tag data
+     * @return  array  Tag data
 	 *
 	 * @since   3.1
 	 */
@@ -152,10 +152,10 @@ abstract class JHtmlTag
 	/**
 	 * This is just a proxy for the formbehavior.ajaxchosen method
 	 *
-	 * @param   string   $selector     DOM id of the tag field
-	 * @param   boolean  $allowCustom  Flag to allow custom values
+     * @param  string   $selector     DOM id of the tag field
+     * @param  boolean  $allowCustom  Flag to allow custom values
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -186,8 +186,8 @@ abstract class JHtmlTag
 						$('" . $selector . "_chzn input').keydown(function(event) {
 
 							// Tag is greater than 3 chars and enter pressed
-							if (this.value.length >= 3 && (event.which === 13 || event.which === 188)) {
-
+							if (this.value.length >= 3 && (event.which === 13 || event.which === 188))
+							{
 								// Search an highlighted result
 								var highlighted = $('" . $selector . "_chzn').find('li.active-result.highlighted').first();
 

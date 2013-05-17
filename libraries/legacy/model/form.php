@@ -32,9 +32,9 @@ abstract class JModelForm extends JModelLegacy
 	/**
 	 * Method to checkin a row.
 	 *
-	 * @param   integer  $pk  The numeric id of the primary key.
+     * @param  integer  $pk  The numeric id of the primary key.
 	 *
-	 * @return  boolean  False on failure or error, true otherwise.
+     * @return  boolean  False on failure or error, true otherwise.
 	 *
 	 * @since   12.2
 	 */
@@ -74,9 +74,9 @@ abstract class JModelForm extends JModelLegacy
 	/**
 	 * Method to check-out a row for editing.
 	 *
-	 * @param   integer  $pk  The numeric id of the primary key.
+     * @param  integer  $pk  The numeric id of the primary key.
 	 *
-	 * @return  boolean  False on failure or error, true otherwise.
+     * @return  boolean  False on failure or error, true otherwise.
 	 *
 	 * @since   12.2
 	 */
@@ -116,10 +116,10 @@ abstract class JModelForm extends JModelLegacy
 	/**
 	 * Abstract method for getting the form from the model.
 	 *
-	 * @param   array    $data      Data for the form.
-	 * @param   boolean  $loadData  True if the form is to load its own data (default case), false if not.
+     * @param  array    $data      Data for the form.
+     * @param  boolean  $loadData  True if the form is to load its own data (default case), false if not.
 	 *
-	 * @return  mixed  A JForm object on success, false on failure
+     * @return  mixed  A JForm object on success, false on failure
 	 *
 	 * @since   12.2
 	 */
@@ -128,13 +128,13 @@ abstract class JModelForm extends JModelLegacy
 	/**
 	 * Method to get a form object.
 	 *
-	 * @param   string   $name     The name of the form.
-	 * @param   string   $source   The form source. Can be XML string if file flag is set to false.
-	 * @param   array    $options  Optional array of options for the form creation.
-	 * @param   boolean  $clear    Optional argument to force load a new form.
-	 * @param   string   $xpath    An optional xpath to search for the fields.
+     * @param  string   $name     The name of the form.
+     * @param  string   $source   The form source. Can be XML string if file flag is set to false.
+     * @param  array    $options  Optional array of options for the form creation.
+     * @param  boolean  $clear    Optional argument to force load a new form.
+     * @param  string   $xpath    An optional xpath to search for the fields.
 	 *
-	 * @return  mixed  JForm object on success, False on error.
+     * @return  mixed  JForm object on success, False on error.
 	 *
 	 * @see     JForm
 	 * @since   12.2
@@ -194,7 +194,7 @@ abstract class JModelForm extends JModelLegacy
 	/**
 	 * Method to get the data that should be injected in the form.
 	 *
-	 * @return  array    The default data is an empty array.
+     * @return  array  The default data is an empty array.
 	 *
 	 * @since   12.2
 	 */
@@ -206,10 +206,10 @@ abstract class JModelForm extends JModelLegacy
 	/**
 	 * Method to allow derived classes to preprocess the data.
 	 *
-	 * @param   string  $context  The context identifier.
-	 * @param   mixed   &$data    The data to be processed. It gets altered directly.
+     * @param  string  $context  The context identifier.
+     * @param  mixed   &$data    The data to be processed. It gets altered directly.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -232,15 +232,15 @@ abstract class JModelForm extends JModelLegacy
 	/**
 	 * Method to allow derived classes to preprocess the form.
 	 *
-	 * @param   JForm   $form   A JForm object.
-	 * @param   mixed   $data   The data expected for the form.
-	 * @param   string  $group  The name of the plugin group to import (defaults to "content").
+     * @param  JForm   $form   A JForm object.
+     * @param  mixed   $data   The data expected for the form.
+     * @param  string  $group  The name of the plugin group to import (defaults to "content").
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @see     JFormField
 	 * @since   12.2
-	 * @throws  Exception if there is an error in the form event.
+     * @throws  Exception  if there is an error in the form event.
 	 */
 	protected function preprocessForm(JForm $form, $data, $group = 'content')
 	{
@@ -269,11 +269,11 @@ abstract class JModelForm extends JModelLegacy
 	/**
 	 * Method to validate the form data.
 	 *
-	 * @param   JForm   $form   The form to validate against.
-	 * @param   array   $data   The data to validate.
-	 * @param   string  $group  The name of the field group to validate.
+     * @param  JForm   $form   The form to validate against.
+     * @param  array   $data   The data to validate.
+     * @param  string  $group  The name of the field group to validate.
 	 *
-	 * @return  mixed  Array of filtered data if valid, false otherwise.
+     * @return  mixed  Array of filtered data if valid, false otherwise.
 	 *
 	 * @see     JFormRule
 	 * @see     JFilterInput

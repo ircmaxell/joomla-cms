@@ -25,7 +25,7 @@ class JInstallerTest extends TestCase
 	 * Sets up the fixture, for example, opens a network connection.
 	 * This method is called before a test is executed.
 	 *
-	 * @return void
+     * @return  void
 	 */
 	protected function setUp()
 	{
@@ -42,7 +42,7 @@ class JInstallerTest extends TestCase
 	 * Tears down the fixture, for example, closes a network connection.
 	 * This method is called after a test is executed.
 	 *
-	 * @return void
+     * @return  void
 	 */
 	protected function tearDown()
 	{
@@ -55,7 +55,7 @@ class JInstallerTest extends TestCase
 	 *
 	 * @covers  JInstaller::getInstance
 	 *
-	 * @return void
+     * @return  void
 	 */
 	public function testGetInstance()
 	{
@@ -72,7 +72,7 @@ class JInstallerTest extends TestCase
 	 * @covers  JInstaller::setOverwrite
 	 * @covers  JInstaller::isOverwrite
 	 *
-	 * @return void
+     * @return  void
 	 */
 	public function testIsAndSetOverwrite()
 	{
@@ -103,7 +103,7 @@ class JInstallerTest extends TestCase
 	 * @covers  JInstaller::setRedirectUrl
 	 * @covers  JInstaller::getRedirectUrl
 	 *
-	 * @return void
+     * @return  void
 	 */
 	public function testGetAndSetRedirectUrl()
 	{
@@ -122,7 +122,7 @@ class JInstallerTest extends TestCase
 	 * @covers  JInstaller::setUpgrade
 	 * @covers  JInstaller::isUpgrade
 	 *
-	 * @return void
+     * @return  void
 	 */
 	public function testIsAndSetUpgrade()
 	{
@@ -152,7 +152,7 @@ class JInstallerTest extends TestCase
 	 *
 	 * @covers  JInstaller::getPath
 	 *
-	 * @return void
+     * @return  void
 	 */
 	public function testGetPath()
 	{
@@ -176,7 +176,7 @@ class JInstallerTest extends TestCase
 	 *
 	 * @covers  JInstaller::abort
 	 *
-	 * @return void
+     * @return  void
 	 */
 	public function testAbortQuery()
 	{
@@ -193,7 +193,7 @@ class JInstallerTest extends TestCase
 	 *
 	 * @covers  JInstaller::abort
 	 *
-	 * @return void
+     * @return  void
 	 */
 	public function testAbortDefault()
 	{
@@ -219,7 +219,7 @@ class JInstallerTest extends TestCase
 	 *
 	 * @covers  JInstaller::abort
 	 *
-	 * @return void
+     * @return  void
 	 */
 	public function testAbortBadType()
 	{
@@ -238,7 +238,7 @@ class JInstallerTest extends TestCase
 	 *
 	 * @expectedException  RuntimeException
 	 *
-	 * @return void
+     * @return  void
 	 */
 	public function testAbortDebug()
 	{
@@ -262,7 +262,7 @@ class JInstallerTest extends TestCase
 	 *
 	 * @since   3.1
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function testParseXMLInstallFile()
 	{
@@ -288,7 +288,7 @@ class JInstallerTest extends TestCase
 	 *
 	 * @since   3.1
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function testIsManifest()
 	{

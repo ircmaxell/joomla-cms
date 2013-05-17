@@ -29,7 +29,7 @@ class JFormFieldLanguage extends JFormFieldList
 	/**
 	 * Method to get the field options.
 	 *
-	 * @return  array  The field option objects.
+     * @return  array  The field option objects.
 	 *
 	 * @since   1.6
 	 */
@@ -87,10 +87,10 @@ class JFormFieldLanguage extends JFormFieldList
 	/**
 	 * Method to sort languages by name.
 	 *
-	 * @param   string  $a  The first value to determine sort
-	 * @param   string  $b  The second value to determine sort
+     * @param  string  $a  The first value to determine sort
+     * @param  string  $b  The second value to determine sort
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since    3.1
 	 */

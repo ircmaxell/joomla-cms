@@ -23,9 +23,9 @@ class JRouterSite extends JRouter
 	/**
 	 * Function to convert a route to an internal URI
 	 *
-	 * @param   JURI  $uri  The uri.
+     * @param  JURI  $uri  The uri.
 	 *
-	 * @return  array
+     * @return  array
 	 */
 	public function parse($uri)
 	{
@@ -88,9 +88,9 @@ class JRouterSite extends JRouter
 	/**
 	 * Function to convert an internal URI to a route
 	 *
-	 * @param   string  $url  The internal URL
+     * @param  string  $url  The internal URL
 	 *
-	 * @return  string  The absolute search engine friendly URL
+     * @return  string  The absolute search engine friendly URL
 	 */
 	public function build($url)
 	{
@@ -136,9 +136,9 @@ class JRouterSite extends JRouter
 	/**
 	 * Function to convert a raw route to an internal URI
 	 *
-	 * @param   JURI  $uri  The raw route
+     * @param  JURI  $uri  The raw route
 	 *
-	 * @return  array
+     * @return  array
 	 */
 	protected function _parseRawRoute($uri)
 	{
@@ -193,9 +193,9 @@ class JRouterSite extends JRouter
 	/**
 	 * Function to convert a sef route to an internal URI
 	 *
-	 * @param   JURI  $uri  The sef URI
+     * @param  JURI  $uri  The sef URI
 	 *
-	 * @return  string  Internal URI
+     * @return  string  Internal URI
 	 */
 	protected function _parseSefRoute($uri)
 	{
@@ -377,9 +377,9 @@ class JRouterSite extends JRouter
 	/**
 	 * Function to build a raw route
 	 *
-	 * @param   JURI  $uri  The internal URL
+     * @param  JURI  $uri  The internal URL
 	 *
-	 * @return  string  Raw Route
+     * @return  string  Raw Route
 	 */
 	protected function _buildRawRoute($uri)
 	{
@@ -388,9 +388,9 @@ class JRouterSite extends JRouter
 	/**
 	 * Function to build a sef route
 	 *
-	 * @param   JURI  $uri  The uri
+     * @param  JURI  $uri  The uri
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	protected function _buildSefRoute($uri)
 	{
@@ -498,9 +498,9 @@ class JRouterSite extends JRouter
 	/**
 	 * Process the parsed router variables based on custom defined rules
 	 *
-	 * @param   JURI  $uri  The URI to parse
+     * @param  JURI  $uri  The URI to parse
 	 *
-	 * @return  array  The array of processed URI variables
+     * @return  array  The array of processed URI variables
 	 */
 	protected function _processParseRules($uri)
 	{
@@ -523,9 +523,9 @@ class JRouterSite extends JRouter
 	/**
 	 * Process the build uri query data based on custom defined rules
 	 *
-	 * @param   JURI  $uri  The URI
+     * @param  JURI  $uri  The URI
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	protected function _processBuildRules($uri)
 	{
@@ -569,9 +569,9 @@ class JRouterSite extends JRouter
 	/**
 	 * Create a uri based on a full or partial url string
 	 *
-	 * @param   string  $url  The URI
+     * @param  string  $url  The URI
 	 *
-	 * @return  JURI
+     * @return  JURI
 	 */
 	protected function _createURI($url)
 	{

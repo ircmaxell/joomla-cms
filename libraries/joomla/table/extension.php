@@ -22,7 +22,7 @@ class JTableExtension extends JTable
 	/**
 	 * Constructor
 	 *
-	 * @param   JDatabaseDriver  $db  Database driver object.
+     * @param  JDatabaseDriver  $db  Database driver object.
 	 *
 	 * @since   11.1
 	 */
@@ -34,7 +34,7 @@ class JTableExtension extends JTable
 	/**
 	 * Overloaded check function
 	 *
-	 * @return  boolean  True if the object is ok
+     * @return  boolean  True if the object is ok
 	 *
 	 * @see     JTable::check
 	 * @since   11.1
@@ -53,11 +53,11 @@ class JTableExtension extends JTable
 	/**
 	 * Overloaded bind function
 	 *
-	 * @param   array  $array   Named array
-	 * @param   mixed  $ignore  An optional array or space separated list of properties
+     * @param  array  $array   Named array
+     * @param  mixed  $ignore  An optional array or space separated list of properties
 	 * to ignore while binding.
 	 *
-	 * @return  mixed  Null if operation was satisfactory, otherwise returns an error
+     * @return  mixed  Null if operation was satisfactory, otherwise returns an error
 	 *
 	 * @see     JTable::bind
 	 * @since   11.1
@@ -84,9 +84,9 @@ class JTableExtension extends JTable
 	/**
 	 * Method to create and execute a SELECT WHERE query.
 	 *
-	 * @param   array  $options  Array of options
+     * @param  array  $options  Array of options
 	 *
-	 * @return  string  The database query result
+     * @return  string  The database query result
 	 *
 	 * @since   11.1
 	 */
@@ -111,12 +111,12 @@ class JTableExtension extends JTable
 	 * table.  The method respects checked out rows by other users and will attempt
 	 * to checkin rows that it can after adjustments are made.
 	 *
-	 * @param   mixed    $pks     An optional array of primary key values to update.  If not
+     * @param  mixed  $pks  An optional array of primary key values to update.  If not
 	 *                            set the instance property value is used.
-	 * @param   integer  $state   The publishing state. eg. [0 = unpublished, 1 = published]
-	 * @param   integer  $userId  The user id of the user performing the operation.
+     * @param  integer  $state   The publishing state. eg. [0 = unpublished, 1 = published]
+     * @param  integer  $userId  The user id of the user performing the operation.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   11.1
 	 */

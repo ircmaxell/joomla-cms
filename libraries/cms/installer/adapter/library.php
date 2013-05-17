@@ -24,9 +24,9 @@ class JInstallerAdapterLibrary extends JAdapterInstance
 	/**
 	 * Custom loadLanguage method
 	 *
-	 * @param   string  $path  The path where to find language files.
+     * @param  string  $path  The path where to find language files.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -52,7 +52,7 @@ class JInstallerAdapterLibrary extends JAdapterInstance
 	/**
 	 * Custom install method
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -220,7 +220,7 @@ class JInstallerAdapterLibrary extends JAdapterInstance
 	/**
 	 * Custom update method
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -266,9 +266,9 @@ class JInstallerAdapterLibrary extends JAdapterInstance
 	/**
 	 * Custom uninstall method
 	 *
-	 * @param   string  $id  The id of the library to uninstall.
+     * @param  string  $id  The id of the library to uninstall.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -365,7 +365,7 @@ class JInstallerAdapterLibrary extends JAdapterInstance
 	/**
 	 * Custom discover method
 	 *
-	 * @return  array  JExtension  list of extensions available
+     * @return  array  JExtension  list of extensions available
 	 *
 	 * @since   3.1
 	 */
@@ -395,7 +395,7 @@ class JInstallerAdapterLibrary extends JAdapterInstance
 	/**
 	 * Custom discover_install method
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -437,7 +437,7 @@ class JInstallerAdapterLibrary extends JAdapterInstance
 	/**
 	 * Refreshes the extension table cache
 	 *
-	 * @return  boolean  Result of operation, true if updated, false on failure
+     * @return  boolean  Result of operation, true if updated, false on failure
 	 *
 	 * @since   3.1
 	 */

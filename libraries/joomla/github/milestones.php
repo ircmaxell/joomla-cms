@@ -21,15 +21,15 @@ class JGithubMilestones extends JGithubObject
 	/**
 	 * Method to get the list of milestones for a repo.
 	 *
-	 * @param   string   $user       The name of the owner of the GitHub repository.
-	 * @param   string   $repo       The name of the GitHub repository.
-	 * @param   string   $state      The milestone state to retrieved.  Open (default) or closed.
-	 * @param   string   $sort       Sort can be due_date (default) or completeness.
-	 * @param   string   $direction  Direction is asc or desc (default).
-	 * @param   integer  $page       The page number from which to get items.
-	 * @param   integer  $limit      The number of items on a page.
+     * @param  string   $user       The name of the owner of the GitHub repository.
+     * @param  string   $repo       The name of the GitHub repository.
+     * @param  string   $state      The milestone state to retrieved.  Open (default) or closed.
+     * @param  string   $sort       Sort can be due_date (default) or completeness.
+     * @param  string   $direction  Direction is asc or desc (default).
+     * @param  integer  $page       The page number from which to get items.
+     * @param  integer  $limit      The number of items on a page.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   12.3
 	 */
@@ -59,11 +59,11 @@ class JGithubMilestones extends JGithubObject
 	/**
 	 * Method to get a specific milestone.
 	 *
-	 * @param   string   $user         The name of the owner of the GitHub repository.
-	 * @param   string   $repo         The name of the GitHub repository.
-	 * @param   integer  $milestoneId  The milestone id to get.
+     * @param  string   $user         The name of the owner of the GitHub repository.
+     * @param  string   $repo         The name of the GitHub repository.
+     * @param  integer  $milestoneId  The milestone id to get.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.3
 	 */
@@ -89,14 +89,14 @@ class JGithubMilestones extends JGithubObject
 	/**
 	 * Method to create a milestone for a repository.
 	 *
-	 * @param   string   $user         The name of the owner of the GitHub repository.
-	 * @param   string   $repo         The name of the GitHub repository.
-	 * @param   integer  $title        The title of the milestone.
-	 * @param   string   $state        Can be open (default) or closed.
-	 * @param   string   $description  Optional description for milestone.
-	 * @param   string   $due_on       Optional ISO 8601 time.
+     * @param  string   $user         The name of the owner of the GitHub repository.
+     * @param  string   $repo         The name of the GitHub repository.
+     * @param  integer  $title        The title of the milestone.
+     * @param  string   $state        Can be open (default) or closed.
+     * @param  string   $description  Optional description for milestone.
+     * @param  string   $due_on       Optional ISO 8601 time.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.3
 	 */
@@ -144,15 +144,15 @@ class JGithubMilestones extends JGithubObject
 	/**
 	 * Method to update a milestone.
 	 *
-	 * @param   string   $user         The name of the owner of the GitHub repository.
-	 * @param   string   $repo         The name of the GitHub repository.
-	 * @param   integer  $milestoneId  The id of the comment to update.
-	 * @param   integer  $title        Optional title of the milestone.
-	 * @param   string   $state        Can be open (default) or closed.
-	 * @param   string   $description  Optional description for milestone.
-	 * @param   string   $due_on       Optional ISO 8601 time.
+     * @param  string   $user         The name of the owner of the GitHub repository.
+     * @param  string   $repo         The name of the GitHub repository.
+     * @param  integer  $milestoneId  The id of the comment to update.
+     * @param  integer  $title        Optional title of the milestone.
+     * @param  string   $state        Can be open (default) or closed.
+     * @param  string   $description  Optional description for milestone.
+     * @param  string   $due_on       Optional ISO 8601 time.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.3
 	 */
@@ -203,11 +203,11 @@ class JGithubMilestones extends JGithubObject
 	/**
 	 * Method to delete a milestone.
 	 *
-	 * @param   string   $user         The name of the owner of the GitHub repository.
-	 * @param   string   $repo         The name of the GitHub repository.
-	 * @param   integer  $milestoneId  The id of the milestone to delete.
+     * @param  string   $user         The name of the owner of the GitHub repository.
+     * @param  string   $repo         The name of the GitHub repository.
+     * @param  integer  $milestoneId  The id of the milestone to delete.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.3
 	 */

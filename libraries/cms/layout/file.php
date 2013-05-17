@@ -41,8 +41,8 @@ class JLayoutFile extends JLayoutBase
 	/**
 	 * Method to instantiate the file-based layout.
 	 *
-	 * @param   string  $layoutId  Dot separated path to the layout file, relative to base path
-	 * @param   string  $basePath  Base path to use when loading layout files
+     * @param  string  $layoutId  Dot separated path to the layout file, relative to base path
+     * @param  string  $basePath  Base path to use when loading layout files
 	 *
 	 * @since   3.0
 	 */
@@ -55,9 +55,9 @@ class JLayoutFile extends JLayoutBase
 	/**
 	 * Method to render the layout.
 	 *
-	 * @param   object  $displayData  Object which properties are used inside the layout file to build displayed output
+     * @param  object  $displayData  Object which properties are used inside the layout file to build displayed output
 	 *
-	 * @return  string  The necessary HTML to display the layout
+     * @return  string  The necessary HTML to display the layout
 	 *
 	 * @since   3.0
 	 */
@@ -83,7 +83,7 @@ class JLayoutFile extends JLayoutBase
 	/**
 	 * Method to finds the full real file path, checking possible overrides
 	 *
-	 * @return  string  The full path to the layout file
+     * @return  string  The full path to the layout file
 	 *
 	 * @since   3.0
 	 */

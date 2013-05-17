@@ -24,9 +24,9 @@ class JHtmlNewsfeed
 	/**
 	 * Get the associated language flags
 	 *
-	 * @param   int  $newsfeedid  The item id to search associations
+     * @param  int  $newsfeedid  The item id to search associations
 	 *
-	 * @return  string  The language HTML
+     * @return  string  The language HTML
 	 */
 	public static function association($newsfeedid)
 	{

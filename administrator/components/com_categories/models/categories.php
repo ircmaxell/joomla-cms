@@ -58,7 +58,7 @@ class CategoriesModelCategories extends JModelList
 	 * @param   string    An optional ordering field.
 	 * @param   string    An optional direction (asc|desc).
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.6
 	 */
 	protected function populateState($ordering = null, $direction = null)
@@ -106,9 +106,9 @@ class CategoriesModelCategories extends JModelList
 	 * different modules that might need different sets of data or different
 	 * ordering requirements.
 	 *
-	 * @param   string  $id    A prefix for the store id.
+     * @param  string  $id  A prefix for the store id.
 	 *
-	 * @return  string  A store id.
+     * @return  string  A store id.
 	 * @since   1.6
 	 */
 	protected function getStoreId($id = '')
@@ -123,7 +123,7 @@ class CategoriesModelCategories extends JModelList
 	}
 
 	/**
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   1.6
 	 */
@@ -266,7 +266,7 @@ class CategoriesModelCategories extends JModelList
 	/**
 	 * Method to determine if an association exists
 	 *
-	 * @return  boolean  True if the association exists
+     * @return  boolean  True if the association exists
 	 *
 	 * @since  3.0
 	 */

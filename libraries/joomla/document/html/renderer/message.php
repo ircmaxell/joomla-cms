@@ -21,11 +21,11 @@ class JDocumentRendererMessage extends JDocumentRenderer
 	/**
 	 * Renders the error stack and returns the results as a string
 	 *
-	 * @param   string  $name     Not used.
-	 * @param   array   $params   Associative array of values
-	 * @param   string  $content  Not used.
+     * @param  string  $name     Not used.
+     * @param  array   $params   Associative array of values
+     * @param  string  $content  Not used.
 	 *
-	 * @return  string  The output of the script
+     * @return  string  The output of the script
 	 *
 	 * @since   11.1
 	 */
@@ -54,7 +54,7 @@ class JDocumentRendererMessage extends JDocumentRenderer
 	/**
 	 * Get and prepare system message data for output
 	 *
-	 * @return  array  An array contains system message
+     * @return  array  An array contains system message
 	 *
 	 * @since   12.2
 	 */
@@ -84,9 +84,9 @@ class JDocumentRendererMessage extends JDocumentRenderer
 	/**
 	 * Render the system message if no message template file found
 	 *
-	 * @param   array  $msgList  An array contains system message
+     * @param  array  $msgList  An array contains system message
 	 *
-	 * @return  string  System message markup
+     * @return  string  System message markup
 	 *
 	 * @since   12.2
 	 */

@@ -57,7 +57,7 @@ class JToolbar
 	/**
 	 * Constructor
 	 *
-	 * @param   string  $name  The toolbar name.
+     * @param  string  $name  The toolbar name.
 	 *
 	 * @since   1.5
 	 */
@@ -74,9 +74,9 @@ class JToolbar
 	 * Returns the global JToolbar object, only creating it if it
 	 * doesn't already exist.
 	 *
-	 * @param   string  $name  The name of the toolbar.
+     * @param  string  $name  The name of the toolbar.
 	 *
-	 * @return  JToolbar  The JToolbar object.
+     * @return  JToolbar  The JToolbar object.
 	 *
 	 * @since   1.5
 	 */
@@ -93,7 +93,7 @@ class JToolbar
 	/**
 	 * Set a value
 	 *
-	 * @return  string  The set value.
+     * @return  string  The set value.
 	 *
 	 * @since   1.5
 	 */
@@ -108,7 +108,7 @@ class JToolbar
 	/**
 	 * Get the list of toolbar links.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   1.6
 	 */
@@ -120,7 +120,7 @@ class JToolbar
 	/**
 	 * Get the name of the toolbar.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   1.6
 	 */
@@ -132,7 +132,7 @@ class JToolbar
 	/**
 	 * Get a value.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   1.5
 	 */
@@ -147,7 +147,7 @@ class JToolbar
 	/**
 	 * Render a tool bar.
 	 *
-	 * @return  string  HTML for the toolbar.
+     * @return  string  HTML for the toolbar.
 	 *
 	 * @since   1.5
 	 */
@@ -173,9 +173,9 @@ class JToolbar
 	/**
 	 * Render a button.
 	 *
-	 * @param   object  &$node  A toolbar node.
+     * @param  object  &$node  A toolbar node.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   1.5
 	 */
@@ -197,10 +197,10 @@ class JToolbar
 	/**
 	 * Loads a button type.
 	 *
-	 * @param   string   $type  Button Type
-	 * @param   boolean  $new   False by default
+     * @param  string   $type  Button Type
+     * @param  boolean  $new   False by default
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.5
 	 */
@@ -269,9 +269,9 @@ class JToolbar
 	 * added them. If the parameter type cannot be found in the custom folders,
 	 * it will look in libraries/joomla/html/toolbar/button.
 	 *
-	 * @param   mixed  $path  Directory or directories to search.
+     * @param  mixed  $path  Directory or directories to search.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   boolean
 	 * @see     JToolbar

@@ -32,7 +32,7 @@ class JFormFieldMenuOrdering extends JFormFieldList
 	 * Method to get the list of siblings in a menu.
 	 * The method requires that parent be set.
 	 *
-	 * @return  array  The field option objects or false if the parent field has not been set
+     * @return  array  The field option objects or false if the parent field has not been set
 	 * @since   1.7
 	 */
 	protected function getOptions()
@@ -90,7 +90,7 @@ class JFormFieldMenuOrdering extends JFormFieldList
 	/**
 	 * Method to get the field input markup
 	 *
-	 * @return  string  The field input markup.
+     * @return  string  The field input markup.
 	 * @since   1.7
 	 */
 	protected function getInput()

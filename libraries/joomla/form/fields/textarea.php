@@ -32,7 +32,7 @@ class JFormFieldTextarea extends JFormField
 	 * Method to get the textarea field input markup.
 	 * Use the rows and columns attributes to specify the dimensions of the area.
 	 *
-	 * @return  string  The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   11.1
 	 */

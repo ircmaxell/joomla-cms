@@ -21,7 +21,7 @@ class InstallationModelSetup extends JModelBase
 	/**
 	 * Get the current setup options from the session.
 	 *
-	 * @return  array  An array of options from the session
+     * @return  array  An array of options from the session
 	 *
 	 * @since   3.1
 	 */
@@ -36,9 +36,9 @@ class InstallationModelSetup extends JModelBase
 	/**
 	 * Store the current setup options in the session.
 	 *
-	 * @param   array  $options  The installation options
+     * @param  array  $options  The installation options
 	 *
-	 * @return  array  An array of options from the session
+     * @return  array  An array of options from the session
 	 *
 	 * @since   3.1
 	 */
@@ -64,9 +64,9 @@ class InstallationModelSetup extends JModelBase
 	/**
 	 * Method to get the form.
 	 *
-	 * @param   string  $view  The view being processed
+     * @param  string  $view  The view being processed
 	 *
-	 * @return  mixed  JForm object on success, false on failure.
+     * @return  mixed  JForm object on success, false on failure.
 	 *
 	 * @since   3.1
 	 */
@@ -110,9 +110,9 @@ class InstallationModelSetup extends JModelBase
 	/**
 	 * Method to check the form data
 	 *
-	 * @param   string  $page  The view being checked
+     * @param  string  $page  The view being checked
 	 *
-	 * @return  array  Validated form data
+     * @return  array  Validated form data
 	 *
 	 * @since   3.1
 	 */
@@ -152,7 +152,7 @@ class InstallationModelSetup extends JModelBase
 	/**
 	 * Generate a panel of language choices for the user to select their language
 	 *
-	 * @return  boolean True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since	3.1
 	 */
@@ -191,7 +191,7 @@ class InstallationModelSetup extends JModelBase
 	/**
 	 * Checks the availability of the parse_ini_file and parse_ini_string functions.
 	 *
-	 * @return	boolean  True if the method exists
+     * @return  boolean  True if the method exists
 	 *
 	 * @since	3.1
 	 */
@@ -224,7 +224,7 @@ class InstallationModelSetup extends JModelBase
 	/**
 	 * Gets PHP options.
 	 *
-	 * @return	array  Array of PHP config options
+     * @return  array  Array of PHP config options
 	 *
 	 * @since   3.1
 	 */
@@ -322,7 +322,7 @@ class InstallationModelSetup extends JModelBase
 	/**
 	 * Checks if all of the mandatory PHP options are met
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -345,7 +345,7 @@ class InstallationModelSetup extends JModelBase
 	/**
 	 * Gets PHP Settings.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   3.1
 	 */
@@ -408,10 +408,10 @@ class InstallationModelSetup extends JModelBase
 	/**
 	 * Method to validate the form data.
 	 *
-	 * @param   array   $data  The form data.
-	 * @param   string  $view  The view.
+     * @param  array   $data  The form data.
+     * @param  string  $view  The view.
 	 *
-	 * @return  mixed   Array of filtered data if valid, false otherwise.
+     * @return  mixed  Array of filtered data if valid, false otherwise.
 	 *
 	 * @since	3.1
 	 */

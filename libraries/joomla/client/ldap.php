@@ -101,7 +101,7 @@ class JClientLdap
 	/**
 	 * Constructor
 	 *
-	 * @param   object  $configObj  An object of configuration variables
+     * @param  object  $configObj  An object of configuration variables
 	 *
 	 * @since   12.1
 	 */
@@ -127,7 +127,7 @@ class JClientLdap
 	/**
 	 * Connect to server
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -169,7 +169,7 @@ class JClientLdap
 	/**
 	 * Close the connection
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -181,10 +181,10 @@ class JClientLdap
 	/**
 	 * Sets the DN with some template replacements
 	 *
-	 * @param   string  $username  The username
-	 * @param   string  $nosub     ...
+     * @param  string  $username  The username
+     * @param  string  $nosub     ...
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -207,7 +207,7 @@ class JClientLdap
 	/**
 	 * Get the DN
 	 *
-	 * @return  string  The current dn
+     * @return  string  The current dn
 	 *
 	 * @since   12.1
 	 */
@@ -219,7 +219,7 @@ class JClientLdap
 	/**
 	 * Anonymously binds to LDAP directory
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   12.1
 	 */
@@ -232,11 +232,11 @@ class JClientLdap
 	/**
 	 * Binds to the LDAP directory
 	 *
-	 * @param   string  $username  The username
-	 * @param   string  $password  The password
-	 * @param   string  $nosub     ...
+     * @param  string  $username  The username
+     * @param  string  $password  The password
+     * @param  string  $nosub     ...
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   12.1
 	 */
@@ -258,9 +258,9 @@ class JClientLdap
 	/**
 	 * Perform an LDAP search using comma separated search strings
 	 *
-	 * @param   string  $search  search string of search values
+     * @param  string  $search  search string of search values
 	 *
-	 * @return  array  Search results
+     * @return  array  Search results
 	 *
 	 * @since    12.1
 	 */
@@ -277,11 +277,11 @@ class JClientLdap
 	/**
 	 * Performs an LDAP search
 	 *
-	 * @param   array   $filters     Search Filters (array of strings)
-	 * @param   string  $dnoverride  DN Override
-	 * @param   array   $attributes  An array of attributes to return (if empty, all fields are returned).
+     * @param  array   $filters     Search Filters (array of strings)
+     * @param  string  $dnoverride  DN Override
+     * @param  array   $attributes  An array of attributes to return (if empty, all fields are returned).
 	 *
-	 * @return  array  Multidimensional array of results
+     * @return  array  Multidimensional array of results
 	 *
 	 * @since   12.1
 	 */
@@ -347,10 +347,10 @@ class JClientLdap
 	/**
 	 * Replace an entry and return a true or false result
 	 *
-	 * @param   string  $dn         The DN which contains the attribute you want to replace
-	 * @param   string  $attribute  The attribute values you want to replace
+     * @param  string  $dn         The DN which contains the attribute you want to replace
+     * @param  string  $attribute  The attribute values you want to replace
 	 *
-	 * @return  mixed  result of comparison (true, false, -1 on error)
+     * @return  mixed  result of comparison (true, false, -1 on error)
 	 *
 	 * @since   12.1
 	 */
@@ -362,10 +362,10 @@ class JClientLdap
 	/**
 	 * Modifies an entry and return a true or false result
 	 *
-	 * @param   string  $dn         The DN which contains the attribute you want to modify
-	 * @param   string  $attribute  The attribute values you want to modify
+     * @param  string  $dn         The DN which contains the attribute you want to modify
+     * @param  string  $attribute  The attribute values you want to modify
 	 *
-	 * @return  mixed  result of comparison (true, false, -1 on error)
+     * @return  mixed  result of comparison (true, false, -1 on error)
 	 *
 	 * @since   12.1
 	 */
@@ -377,10 +377,10 @@ class JClientLdap
 	/**
 	 * Removes attribute value from given dn and return a true or false result
 	 *
-	 * @param   string  $dn         The DN which contains the attribute you want to remove
-	 * @param   string  $attribute  The attribute values you want to remove
+     * @param  string  $dn         The DN which contains the attribute you want to remove
+     * @param  string  $attribute  The attribute values you want to remove
 	 *
-	 * @return  mixed  result of comparison (true, false, -1 on error)
+     * @return  mixed  result of comparison (true, false, -1 on error)
 	 *
 	 * @since   12.1
 	 */
@@ -393,11 +393,11 @@ class JClientLdap
 	/**
 	 * Compare an entry and return a true or false result
 	 *
-	 * @param   string  $dn         The DN which contains the attribute you want to compare
-	 * @param   string  $attribute  The attribute whose value you want to compare
-	 * @param   string  $value      The value you want to check against the LDAP attribute
+     * @param  string  $dn         The DN which contains the attribute you want to compare
+     * @param  string  $attribute  The attribute whose value you want to compare
+     * @param  string  $value      The value you want to check against the LDAP attribute
 	 *
-	 * @return  mixed  result of comparison (true, false, -1 on error)
+     * @return  mixed  result of comparison (true, false, -1 on error)
 	 *
 	 * @since   12.1
 	 */
@@ -409,9 +409,9 @@ class JClientLdap
 	/**
 	 * Read all or specified attributes of given dn
 	 *
-	 * @param   string  $dn  The DN of the object you want to read
+     * @param  string  $dn  The DN of the object you want to read
 	 *
-	 * @return  mixed  array of attributes or -1 on error
+     * @return  mixed  array of attributes or -1 on error
 	 *
 	 * @since   12.1
 	 */
@@ -434,9 +434,9 @@ class JClientLdap
 	/**
 	 * Deletes a given DN from the tree
 	 *
-	 * @param   string  $dn  The DN of the object you want to delete
+     * @param  string  $dn  The DN of the object you want to delete
 	 *
-	 * @return  boolean  Result of operation
+     * @return  boolean  Result of operation
 	 *
 	 * @since   12.1
 	 */
@@ -448,10 +448,10 @@ class JClientLdap
 	/**
 	 * Create a new DN
 	 *
-	 * @param   string  $dn       The DN where you want to put the object
-	 * @param   array   $entries  An array of arrays describing the object to add
+     * @param  string  $dn       The DN where you want to put the object
+     * @param  array   $entries  An array of arrays describing the object to add
 	 *
-	 * @return  boolean  Result of operation
+     * @return  boolean  Result of operation
 	 *
 	 * @since   12.1
 	 */
@@ -464,10 +464,10 @@ class JClientLdap
 	 * Add an attribute to the given DN
 	 * Note: DN has to exist already
 	 *
-	 * @param   string  $dn     The DN of the entry to add the attribute
-	 * @param   array   $entry  An array of arrays with attributes to add
+     * @param  string  $dn     The DN of the entry to add the attribute
+     * @param  array   $entry  An array of arrays with attributes to add
 	 *
-	 * @return  boolean   Result of operation
+     * @return  boolean  Result of operation
 	 *
 	 * @since   12.1
 	 */
@@ -479,12 +479,12 @@ class JClientLdap
 	/**
 	 * Rename the entry
 	 *
-	 * @param   string   $dn           The DN of the entry at the moment
-	 * @param   string   $newdn        The DN of the entry should be (only cn=newvalue)
-	 * @param   string   $newparent    The full DN of the parent (null by default)
-	 * @param   boolean  $deleteolddn  Delete the old values (default)
+     * @param  string   $dn           The DN of the entry at the moment
+     * @param  string   $newdn        The DN of the entry should be (only cn=newvalue)
+     * @param  string   $newparent    The full DN of the parent (null by default)
+     * @param  boolean  $deleteolddn  Delete the old values (default)
 	 *
-	 * @return  boolean  Result of operation
+     * @return  boolean  Result of operation
 	 *
 	 * @since   12.1
 	 */
@@ -496,7 +496,7 @@ class JClientLdap
 	/**
 	 * Returns the error message
 	 *
-	 * @return  string   error message
+     * @return  string  error message
 	 *
 	 * @since   12.1
 	 */
@@ -508,9 +508,9 @@ class JClientLdap
 	/**
 	 * Converts a dot notation IP address to net address (e.g. for Netware, etc)
 	 *
-	 * @param   string  $ip  IP Address (e.g. xxx.xxx.xxx.xxx)
+     * @param  string  $ip  IP Address (e.g. xxx.xxx.xxx.xxx)
 	 *
-	 * @return  string  Net address
+     * @return  string  Net address
 	 *
 	 * @since   12.1
 	 */
@@ -548,9 +548,9 @@ class JClientLdap
 	 * Enhancement made by Merijn van de Schoot:
 	 * If addresstype is 8 (UDP) or 9 (TCP) do some additional parsing like still returning the IP address
 	 *
-	 * @param   string  $networkaddress  The network address
+     * @param  string  $networkaddress  The network address
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @author  Jay Burrell, Systems & Networks, Mississippi State University
 	 * @since   12.1
@@ -614,10 +614,10 @@ class JClientLdap
 	/**
 	 * Generates a LDAP compatible password
 	 *
-	 * @param   string  $password  Clear text password to encrypt
-	 * @param   string  $type      Type of password hash, either md5 or SHA
+     * @param  string  $password  Clear text password to encrypt
+     * @param  string  $type      Type of password hash, either md5 or SHA
 	 *
-	 * @return  string   Encrypted password
+     * @return  string  Encrypted password
 	 *
 	 * @since   12.1
 	 */
@@ -651,7 +651,7 @@ class JLDAP extends JClientLdap
 	/**
 	 * Constructor
 	 *
-	 * @param   object  $configObj  An object of configuration variables
+     * @param  object  $configObj  An object of configuration variables
 	 *
 	 * @since   11.1
 	 */

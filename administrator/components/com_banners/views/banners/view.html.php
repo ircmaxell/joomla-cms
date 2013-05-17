@@ -29,9 +29,9 @@ class BannersViewBanners extends JViewLegacy
 	/**
 	 * Method to display the view.
 	 *
-	 * @param   string  $tpl  A template file to load. [optional]
+     * @param  string  $tpl  A template file to load. [optional]
 	 *
-	 * @return  mixed  A string if successful, otherwise a JError object.
+     * @return  mixed  A string if successful, otherwise a JError object.
 	 *
 	 * @since   1.6
 	 */
@@ -64,7 +64,7 @@ class BannersViewBanners extends JViewLegacy
 	/**
 	 * Add the page title and toolbar.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -170,7 +170,7 @@ class BannersViewBanners extends JViewLegacy
 	/**
 	 * Returns an array of fields the table can be sorted by
 	 *
-	 * @return  array  Array containing the field name to sort by as the key and display text as value
+     * @return  array  Array containing the field name to sort by as the key and display text as value
 	 *
 	 * @since   3.0
 	 */

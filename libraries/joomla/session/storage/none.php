@@ -22,7 +22,7 @@ class JSessionStorageNone extends JSessionStorage
 	/**
 	 * Register the functions of this class with PHP's session handler
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */

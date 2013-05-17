@@ -21,7 +21,7 @@ class JTableContenttype extends JTable
 	/**
 	 * Constructor
 	 *
-	 * @param   JDatabaseDriver  $db  A database connector object
+     * @param  JDatabaseDriver  $db  A database connector object
 	 *
 	 * @since   3.1
 	 */
@@ -33,10 +33,10 @@ class JTableContenttype extends JTable
 	/**
 	 * Overloaded check method to ensure data integrity.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
-	 * @throws  UnexpectedValueException
+     * @throws  UnexpectedValueException
 	 */
 	public function check()
 	{
@@ -59,9 +59,9 @@ class JTableContenttype extends JTable
 	/**
 	 * Overridden JTable::store.
 	 *
-	 * @param   boolean  $updateNulls  True to update fields even if they are null.
+     * @param  boolean  $updateNulls  True to update fields even if they are null.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   3.1
 	 */
@@ -82,9 +82,9 @@ class JTableContenttype extends JTable
 	/**
 	 * Method to expand the field mapping
 	 *
-	 * @param   boolean  $assoc  True to return an associative array.
+     * @param  boolean  $assoc  True to return an associative array.
 	 *
-	 * @return  mixed  Array or object with field mappings. Defaults to object.
+     * @return  mixed  Array or object with field mappings. Defaults to object.
 	 *
 	 * @since   3.1
 	 */

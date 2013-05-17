@@ -24,7 +24,7 @@ class FinderControllerIndexer extends JControllerLegacy
 	/**
 	 * Method to start the indexer.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -91,7 +91,7 @@ class FinderControllerIndexer extends JControllerLegacy
 	/**
 	 * Method to run the next batch of content through the indexer.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -212,7 +212,7 @@ class FinderControllerIndexer extends JControllerLegacy
 	/**
 	 * Method to optimize the index and perform any necessary cleanup.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -257,9 +257,9 @@ class FinderControllerIndexer extends JControllerLegacy
 	 * can be a Exception object for when an error has occurred or
 	 * a JObject for a good response.
 	 *
-	 * @param   mixed  $data  JObject on success, Exception on error. [optional]
+     * @param  mixed  $data  JObject on success, Exception on error. [optional]
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -313,7 +313,7 @@ class FinderIndexerResponse
 	/**
 	 * Class Constructor
 	 *
-	 * @param   mixed  $state  The processing state for the indexer
+     * @param  mixed  $state  The processing state for the indexer
 	 *
 	 * @since   2.5
 	 */

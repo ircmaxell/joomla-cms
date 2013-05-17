@@ -27,9 +27,9 @@ class FinderHelper
 	/**
 	 * Configure the Linkbar.
 	 *
-	 * @param   string  $vName  The name of the active view.
+     * @param  string  $vName  The name of the active view.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -55,7 +55,7 @@ class FinderHelper
 	/**
 	 * Gets a list of the actions that can be performed.
 	 *
-	 * @return  JObject  A JObject containing the allowed actions.
+     * @return  JObject  A JObject containing the allowed actions.
 	 *
 	 * @since   2.5
 	 */

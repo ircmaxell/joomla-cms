@@ -39,11 +39,11 @@ class JCacheControllerPage extends JCacheController
 	/**
 	 * Get the cached page data
 	 *
-	 * @param   string   $id          The cache data id
-	 * @param   string   $group       The cache data group
-	 * @param   boolean  $wrkarounds  True to use wrkarounds
+     * @param  string   $id          The cache data id
+     * @param  string   $group       The cache data group
+     * @param  boolean  $wrkarounds  True to use wrkarounds
 	 *
-	 * @return  boolean  True if the cache is hit (false else)
+     * @return  boolean  True if the cache is hit (false else)
 	 *
 	 * @since   11.1
 	 */
@@ -110,12 +110,12 @@ class JCacheControllerPage extends JCacheController
 	/**
 	 * Stop the cache buffer and store the cached data
 	 *
-	 * @param   mixed    $data        The data to store
-	 * @param   string   $id          The cache data id
-	 * @param   string   $group       The cache data group
-	 * @param   boolean  $wrkarounds  True to use wrkarounds
+     * @param  mixed    $data        The data to store
+     * @param  string   $id          The cache data id
+     * @param  string   $group       The cache data group
+     * @param  boolean  $wrkarounds  True to use wrkarounds
 	 *
-	 * @return  boolean  True if cache stored
+     * @return  boolean  True if cache stored
 	 *
 	 * @since   11.1
 	 */
@@ -155,7 +155,7 @@ class JCacheControllerPage extends JCacheController
 	/**
 	 * Generate a page cache id
 	 *
-	 * @return  string  MD5 Hash : page cache id
+     * @return  string  MD5 Hash : page cache id
 	 *
 	 * @since   11.1
 	 * @todo    Discuss whether this should be coupled to a data hash or a request
@@ -170,7 +170,7 @@ class JCacheControllerPage extends JCacheController
 	 * There is no change in page data so send an
 	 * unmodified header and die gracefully
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -186,9 +186,9 @@ class JCacheControllerPage extends JCacheController
 	/**
 	 * Set the ETag header in the response
 	 *
-	 * @param   string  $etag  The entity tag (etag) to set
+     * @param  string  $etag  The entity tag (etag) to set
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */

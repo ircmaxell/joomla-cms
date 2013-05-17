@@ -26,7 +26,7 @@ class AdminControllerProfile extends JControllerForm
 	 * @param   array  An array of input data.
 	 * @param   string	The name of the key for the primary key.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 * @since   1.6
 	 */
 	protected function allowEdit($data = array(), $key = 'id')
@@ -37,7 +37,7 @@ class AdminControllerProfile extends JControllerForm
 	/**
 	 * Overrides parent save method to check the submitted passwords match.
 	 *
-	 * @return  mixed  Boolean or JError.
+     * @return  mixed  Boolean or JError.
 	 * @since   1.6
 	 */
 	public function save($key = null, $urlVar = null)
@@ -72,9 +72,9 @@ class AdminControllerProfile extends JControllerForm
 	/**
 	 * Method to cancel an edit.
 	 *
-	 * @param   string	$key	The name of the primary key of the URL variable.
+     * @param  string  $key  The name of the primary key of the URL variable.
 	 *
-	 * @return  Boolean	True if access level checks pass, false otherwise.
+     * @return  Boolean  True if access level checks pass, false otherwise.
 	 * @since   1.6
 	 */
 	public function cancel($key = null)

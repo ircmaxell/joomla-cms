@@ -76,8 +76,8 @@ class JGithub
 	/**
 	 * Constructor.
 	 *
-	 * @param   JRegistry    $options  GitHub options object.
-	 * @param   JGithubHttp  $client   The HTTP client object.
+     * @param  JRegistry    $options  GitHub options object.
+     * @param  JGithubHttp  $client   The HTTP client object.
 	 *
 	 * @since   11.3
 	 */
@@ -93,9 +93,9 @@ class JGithub
 	/**
 	 * Magic method to lazily create API objects
 	 *
-	 * @param   string  $name  Name of property to retrieve
+     * @param  string  $name  Name of property to retrieve
 	 *
-	 * @return  JGithubObject  GitHub API object (gists, issues, pulls, etc).
+     * @return  JGithubObject  GitHub API object (gists, issues, pulls, etc).
 	 *
 	 * @since   11.3
 	 */
@@ -159,9 +159,9 @@ class JGithub
 	/**
 	 * Get an option from the JGitHub instance.
 	 *
-	 * @param   string  $key  The name of the option to get.
+     * @param  string  $key  The name of the option to get.
 	 *
-	 * @return  mixed  The option value.
+     * @return  mixed  The option value.
 	 *
 	 * @since   11.3
 	 */
@@ -173,10 +173,10 @@ class JGithub
 	/**
 	 * Set an option for the JGitHub instance.
 	 *
-	 * @param   string  $key    The name of the option to set.
-	 * @param   mixed   $value  The option value to set.
+     * @param  string  $key    The name of the option to set.
+     * @param  mixed   $value  The option value to set.
 	 *
-	 * @return  JGitHub  This object for method chaining.
+     * @return  JGitHub  This object for method chaining.
 	 *
 	 * @since   11.3
 	 */

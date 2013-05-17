@@ -29,7 +29,7 @@ class JFormFieldUser extends JFormField
 	/**
 	 * Method to get the user field input markup.
 	 *
-	 * @return  string  The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   1.6.0
 	 */
@@ -101,7 +101,7 @@ class JFormFieldUser extends JFormField
 	/**
 	 * Method to get the filtering groups (null means no filtering)
 	 *
-	 * @return  mixed  array of filtering groups or null.
+     * @return  mixed  array of filtering groups or null.
 	 *
 	 * @since   1.6.0
 	 */
@@ -113,7 +113,7 @@ class JFormFieldUser extends JFormField
 	/**
 	 * Method to get the users to exclude from the list of users
 	 *
-	 * @return  mixed  Array of users to exclude or null to to not exclude them
+     * @return  mixed  Array of users to exclude or null to to not exclude them
 	 *
 	 * @since   1.6.0
 	 */

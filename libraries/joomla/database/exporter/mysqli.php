@@ -85,10 +85,10 @@ class JDatabaseExporterMysqli extends JDatabaseExporter
 	/**
 	 * Magic function to exports the data to a string.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
-	 * @throws  Exception if an error is encountered.
+     * @throws  Exception  if an error is encountered.
 	 */
 	public function __toString()
 	{
@@ -112,7 +112,7 @@ class JDatabaseExporterMysqli extends JDatabaseExporter
 	/**
 	 * Set the output option for the exporter to XML format.
 	 *
-	 * @return  JDatabaseExporterMySQL  Method supports chaining.
+     * @return  JDatabaseExporterMySQL  Method supports chaining.
 	 *
 	 * @since   11.1
 	 */
@@ -126,10 +126,10 @@ class JDatabaseExporterMysqli extends JDatabaseExporter
 	/**
 	 * Builds the XML data for the tables to export.
 	 *
-	 * @return  string  An XML string
+     * @return  string  An XML string
 	 *
 	 * @since   11.1
-	 * @throws  Exception if an error occurs.
+     * @throws  Exception  if an error occurs.
 	 */
 	protected function buildXml()
 	{
@@ -150,10 +150,10 @@ class JDatabaseExporterMysqli extends JDatabaseExporter
 	/**
 	 * Builds the XML structure to export.
 	 *
-	 * @return  array  An array of XML lines (strings).
+     * @return  array  An array of XML lines (strings).
 	 *
 	 * @since   11.1
-	 * @throws  Exception if an error occurs.
+     * @throws  Exception  if an error occurs.
 	 */
 	protected function buildXmlStructure()
 	{
@@ -194,10 +194,10 @@ class JDatabaseExporterMysqli extends JDatabaseExporter
 	/**
 	 * Checks if all data and options are in order prior to exporting.
 	 *
-	 * @return  JDatabaseExporterMysqli  Method supports chaining.
+     * @return  JDatabaseExporterMysqli  Method supports chaining.
 	 *
 	 * @since   11.1
-	 * @throws  Exception if an error is encountered.
+     * @throws  Exception  if an error is encountered.
 	 */
 	public function check()
 	{
@@ -219,9 +219,9 @@ class JDatabaseExporterMysqli extends JDatabaseExporter
 	/**
 	 * Get the generic name of the table, converting the database prefix to the wildcard string.
 	 *
-	 * @param   string  $table  The name of the table.
+     * @param  string  $table  The name of the table.
 	 *
-	 * @return  string  The name of the table with the database prefix replaced with #__.
+     * @return  string  The name of the table with the database prefix replaced with #__.
 	 *
 	 * @since   11.1
 	 */
@@ -239,12 +239,12 @@ class JDatabaseExporterMysqli extends JDatabaseExporter
 	/**
 	 * Specifies a list of table names to export.
 	 *
-	 * @param   mixed  $from  The name of a single table, or an array of the table names to export.
+     * @param  mixed  $from  The name of a single table, or an array of the table names to export.
 	 *
-	 * @return  JDatabaseExporterMysql  Method supports chaining.
+     * @return  JDatabaseExporterMysql  Method supports chaining.
 	 *
 	 * @since   11.1
-	 * @throws  Exception if input is not a string or array.
+     * @throws  Exception  if input is not a string or array.
 	 */
 	public function from($from)
 	{
@@ -267,9 +267,9 @@ class JDatabaseExporterMysqli extends JDatabaseExporter
 	/**
 	 * Sets the database connector to use for exporting structure and/or data from MySQL.
 	 *
-	 * @param   JDatabaseDriverMysqli  $db  The database connector.
+     * @param  JDatabaseDriverMysqli  $db  The database connector.
 	 *
-	 * @return  JDatabaseExporterMysqli  Method supports chaining.
+     * @return  JDatabaseExporterMysqli  Method supports chaining.
 	 *
 	 * @since   11.1
 	 */
@@ -283,9 +283,9 @@ class JDatabaseExporterMysqli extends JDatabaseExporter
 	/**
 	 * Sets an internal option to export the structure of the input table(s).
 	 *
-	 * @param   boolean  $setting  True to export the structure, false to not.
+     * @param  boolean  $setting  True to export the structure, false to not.
 	 *
-	 * @return  JDatabaseExporterMysql  Method supports chaining.
+     * @return  JDatabaseExporterMysql  Method supports chaining.
 	 *
 	 * @since   11.1
 	 */

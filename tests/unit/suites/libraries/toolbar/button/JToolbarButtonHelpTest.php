@@ -54,7 +54,7 @@ class JToolbarButtonHelpTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the fetchId method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

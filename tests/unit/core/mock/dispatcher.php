@@ -33,10 +33,10 @@ class TestMockDispatcher
 	/**
 	 * Creates and instance of the mock JLanguage object.
 	 *
-	 * @param   object   $test      A test object.
-	 * @param   boolean  $defaults  True to create the default mock handlers and triggers.
+     * @param  object   $test      A test object.
+     * @param  boolean  $defaults  True to create the default mock handlers and triggers.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -91,11 +91,11 @@ class TestMockDispatcher
 	/**
 	 * Callback for the JEventDispatcher register method.
 	 *
-	 * @param   string  $event    Name of the event to register handler for.
-	 * @param   string  $handler  Name of the event handler.
-	 * @param   mixed   $return   The mock value to return for the given event handler.
+     * @param  string  $event    Name of the event to register handler for.
+     * @param  string  $handler  Name of the event handler.
+     * @param  mixed   $return   The mock value to return for the given event handler.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.3
 	 */
@@ -112,10 +112,10 @@ class TestMockDispatcher
 	/**
 	 * Callback for the JEventDispatcher trigger method.
 	 *
-	 * @param   string  $event  The event to trigger.
-	 * @param   array   $args   An array of arguments.
+     * @param  string  $event  The event to trigger.
+     * @param  array   $args   An array of arguments.
 	 *
-	 * @return  array  An array of results from each function call.
+     * @return  array  An array of results from each function call.
 	 *
 	 * @since  11.3
 	 */

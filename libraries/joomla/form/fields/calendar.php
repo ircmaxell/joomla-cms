@@ -33,7 +33,7 @@ class JFormFieldCalendar extends JFormField
 	/**
 	 * Method to get the field input markup.
 	 *
-	 * @return  string   The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   11.1
 	 */

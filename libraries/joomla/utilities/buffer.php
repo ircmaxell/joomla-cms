@@ -48,13 +48,13 @@ class JBuffer
 	/**
 	 * Function to open file or url
 	 *
-	 * @param   string   $path          The URL that was passed
-	 * @param   string   $mode          Mode used to open the file @see fopen
-	 * @param   integer  $options       Flags used by the API, may be STREAM_USE_PATH and
+     * @param  string   $path     The URL that was passed
+     * @param  string   $mode     Mode used to open the file @see fopen
+     * @param  integer  $options  Flags used by the API, may be STREAM_USE_PATH and
 	 *                                  STREAM_REPORT_ERRORS
-	 * @param   string   &$opened_path  Full path of the resource. Used with STREAN_USE_PATH option
+     * @param  string  &$opened_path  Full path of the resource. Used with STREAN_USE_PATH option
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   11.1
 	 * @see     streamWrapper::stream_open
@@ -72,9 +72,9 @@ class JBuffer
 	/**
 	 * Read stream
 	 *
-	 * @param   integer  $count  How many bytes of data from the current position should be returned.
+     * @param  integer  $count  How many bytes of data from the current position should be returned.
 	 *
-	 * @return  mixed    The data from the stream up to the specified number of bytes (all data if
+     * @return  mixed  The data from the stream up to the specified number of bytes (all data if
 	 *                   the total number of bytes in the stream is less than $count. Null if
 	 *                   the stream is empty.
 	 *
@@ -92,9 +92,9 @@ class JBuffer
 	/**
 	 * Write stream
 	 *
-	 * @param   string  $data  The data to write to the stream.
+     * @param  string  $data  The data to write to the stream.
 	 *
-	 * @return  integer
+     * @return  integer
 	 *
 	 * @see     streamWrapper::stream_write
 	 * @since   11.1
@@ -112,7 +112,7 @@ class JBuffer
 	/**
 	 * Function to get the current position of the stream
 	 *
-	 * @return  integer
+     * @return  integer
 	 *
 	 * @see     streamWrapper::stream_tell
 	 * @since   11.1
@@ -125,7 +125,7 @@ class JBuffer
 	/**
 	 * Function to test for end of file pointer
 	 *
-	 * @return  boolean  True if the pointer is at the end of the stream
+     * @return  boolean  True if the pointer is at the end of the stream
 	 *
 	 * @see     streamWrapper::stream_eof
 	 * @since   11.1
@@ -138,11 +138,11 @@ class JBuffer
 	/**
 	 * The read write position updates in response to $offset and $whence
 	 *
-	 * @param   integer  $offset  The offset in bytes
-	 * @param   integer  $whence  Position the offset is added to
+     * @param  integer  $offset  The offset in bytes
+     * @param  integer  $whence  Position the offset is added to
 	 *                            Options are SEEK_SET, SEEK_CUR, and SEEK_END
 	 *
-	 * @return  boolean  True if updated
+     * @return  boolean  True if updated
 	 *
 	 * @see     streamWrapper::stream_seek
 	 * @since   11.1

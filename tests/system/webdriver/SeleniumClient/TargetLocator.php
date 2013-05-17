@@ -20,21 +20,21 @@ require_once 'WebDriver.php';
 class TargetLocator
 {
 	private $_driver;
-	
+
 	public function __construct(WebDriver $driver)
 	{
 		$this->_driver = $driver;
 	}
-	
+
 	#region TargetLocator members
 	/**
 	 * Move to a different frame using its index
-	 * @param Integer $frameIndex
-	 * @return current WebDriver
+     * @param   Integer  $frameIndex
+     * @return  current  WebDriver
 	 */
 	public function getFrameByIndex($frameIndex)
 	{
-		
+
 		$this->_driver->getFrame($frameIndex);
 
 		return $this->_driver;
@@ -42,8 +42,8 @@ class TargetLocator
 
 	/**
 	 * Move to different frame using its name
-	 * @param String $frameName
-	 * @return current WebDriver
+     * @param   String   $frameName
+     * @return  current  WebDriver
 	 */
 	public function getFrameByName($frameName)
 	{
@@ -62,8 +62,8 @@ class TargetLocator
 
 	/**
 	 * Move to a frame element.
-	 * @param WebElement $frameElement
-	 * @return current WebDriver
+     * @param   WebElement  $frameElement
+     * @return  current     WebDriver
 	 */
 	public function getFrameByWebElement(WebElement $frameElement)
 	{
@@ -90,19 +90,19 @@ class TargetLocator
 
 	/**
 	 * Change to the Window by passing in the name
-	 * @param String $windowName
-	 * @return current WebDriver
+     * @param   String   $windowName
+     * @return  current  WebDriver
 	 */
 	public function getWindow($windowName)
 	{
 		$this->_driver->getWindow($windowName);
-		
+
 		return $this->_driver;
 	}
 
 	/**
 	 * Change the active frame to the default
-	 * @return current WebDriver
+     * @return  current  WebDriver
 	 */
 	public function getDefaultFrame()
 	{
@@ -113,7 +113,7 @@ class TargetLocator
 
 	/**
 	 * Finds the active element on the page and returns it
-	 * @return WebElement
+     * @return  WebElement
 	 */
 	public function getActiveElement()
 	{
@@ -124,10 +124,9 @@ class TargetLocator
 		return $webElement;
 	}
 
-
 	/**
 	 *  Switches to the currently active modal dialog for this particular driver instance.
-	 * @return \SeleniumClient\Alert
+     * @return  \SeleniumClient\Alert
 	 */
 	public function getAlert()
 	{

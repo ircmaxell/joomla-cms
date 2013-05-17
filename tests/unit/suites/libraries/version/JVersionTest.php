@@ -38,7 +38,7 @@ class JVersionTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the isCompatible method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -54,7 +54,7 @@ class JVersionTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getHelpVersion method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -70,7 +70,7 @@ class JVersionTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getShortVersion method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -86,7 +86,7 @@ class JVersionTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getLongVersion method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -102,7 +102,7 @@ class JVersionTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getUserAgent method for a mask not containing the Mozilla version string
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -118,7 +118,7 @@ class JVersionTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getUserAgent method for a mask containing the Mozilla version string
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -134,7 +134,7 @@ class JVersionTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getUserAgent method for a null component string
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -150,7 +150,7 @@ class JVersionTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getUserAgent method for a component string matching the specified option
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

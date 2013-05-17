@@ -41,7 +41,8 @@ class ModulesViewModules extends JViewLegacy
 		}
 
 		// Check if there are no matching items
-		if (!count($this->items)){
+		if (!count($this->items))
+		{
 			JFactory::getApplication()->enqueueMessage(
 				JText::_('COM_MODULES_MSG_MANAGE_NO_MODULES'),
 				'warning'
@@ -98,7 +99,8 @@ class ModulesViewModules extends JViewLegacy
 		if ($state->get('filter.state') == -2 && $canDo->get('core.delete'))
 		{
 			JToolbarHelper::deleteList('', 'modules.delete', 'JTOOLBAR_EMPTY_TRASH');
-		} elseif ($canDo->get('core.edit.state'))
+		}
+		elseif ($canDo->get('core.edit.state'))
 		{
 			JToolbarHelper::trash('modules.trash');
 		}
@@ -178,7 +180,7 @@ class ModulesViewModules extends JViewLegacy
 	/**
 	 * Returns an array of fields the table can be sorted by
 	 *
-	 * @return  array  Array containing the field name to sort by as the key and display text as value
+     * @return  array  Array containing the field name to sort by as the key and display text as value
 	 *
 	 * @since   3.0
 	 */

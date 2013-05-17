@@ -21,7 +21,7 @@ class JTableLanguage extends JTable
 	/**
 	 * Constructor
 	 *
-	 * @param   JDatabaseDriver  $db  Database driver object.
+     * @param  JDatabaseDriver  $db  Database driver object.
 	 *
 	 * @since   11.1
 	 */
@@ -33,7 +33,7 @@ class JTableLanguage extends JTable
 	/**
 	 * Overloaded check method to ensure data integrity
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   11.1
 	 */
@@ -51,9 +51,9 @@ class JTableLanguage extends JTable
 	/**
 	 * Overrides JTable::store to check unique fields.
 	 *
-	 * @param   boolean  $updateNulls  True to update fields even if they are null.
+     * @param  boolean  $updateNulls  True to update fields even if they are null.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   11.4
 	 */

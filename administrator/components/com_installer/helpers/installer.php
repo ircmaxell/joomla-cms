@@ -21,9 +21,9 @@ class InstallerHelper
 	/**
 	 * Configure the Linkbar.
 	 *
-	 * @param   string  $vName  The name of the active view.
+     * @param  string  $vName  The name of the active view.
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public static function addSubmenu($vName = 'install')
 	{
@@ -67,7 +67,7 @@ class InstallerHelper
 	/**
 	 * Get a list of filter options for the extension types.
 	 *
-	 * @return  array  An array of stdClass objects.
+     * @return  array  An array of stdClass objects.
 	 *
 	 * @since   3.0
 	 */
@@ -92,7 +92,7 @@ class InstallerHelper
 	/**
 	 * Get a list of filter options for the extension types.
 	 *
-	 * @return  array  An array of stdClass objects.
+     * @return  array  An array of stdClass objects.
 	 *
 	 * @since   3.0
 	 */
@@ -119,7 +119,7 @@ class InstallerHelper
 	/**
 	 * Gets a list of the actions that can be performed.
 	 *
-	 * @return  JObject
+     * @return  JObject
 	 *
 	 * @since   1.6
 	 */

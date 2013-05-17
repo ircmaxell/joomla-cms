@@ -208,7 +208,7 @@ class NewsfeedsViewNewsfeed extends JViewLegacy
 	/**
 	 * Prepares the document
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.6
 	 */
 	protected function _prepareDocument()

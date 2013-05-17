@@ -79,7 +79,7 @@ class FinderCli extends JApplicationCli
 	/**
 	 * Entry point for Finder CLI script
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -99,7 +99,7 @@ class FinderCli extends JApplicationCli
 	/**
 	 * Run the indexer
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */

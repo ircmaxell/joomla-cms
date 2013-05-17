@@ -18,7 +18,7 @@ JLoader::register('MenusHelper', JPATH_ADMINISTRATOR . '/components/com_menus/he
 abstract class MenusHtmlMenus
 {
 	/**
-	 * @param   int $itemid	The menu item id
+     * @param  int  $itemid  The menu item id
 	 */
 	public static function association($itemid)
 	{
@@ -63,12 +63,12 @@ abstract class MenusHtmlMenus
 	/**
 	 * Returns a published state on a grid
 	 *
-	 * @param   integer       $value			The state value.
-	 * @param   integer       $i				The row index
-	 * @param   boolean       $enabled			An optional setting for access control on the action.
-	 * @param   string        $checkbox			An optional prefix for checkboxes.
+     * @param  integer  $value     The state value.
+     * @param  integer  $i         The row index
+     * @param  boolean  $enabled   An optional setting for access control on the action.
+     * @param  string   $checkbox  An optional prefix for checkboxes.
 	 *
-	 * @return  string        The Html code
+     * @return  string  The Html code
 	 *
 	 * @see JHtmlJGrid::state
 	 *

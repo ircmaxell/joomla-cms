@@ -32,7 +32,7 @@ class SearchHelper
 	/**
 	 * Gets a list of the actions that can be performed.
 	 *
-	 * @return  JObject
+     * @return  JObject
 	 */
 	public static function getActions()
 	{
@@ -126,9 +126,9 @@ class SearchHelper
 	/**
 	 * Logs a search term
 	 *
-	 * @param   string  $search_term  The term being searched
+     * @param  string  $search_term  The term being searched
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.5
 	 * @deprecated  4.0  Use JSearchHelper::logSearch() instead
@@ -145,7 +145,7 @@ class SearchHelper
 	 *
 	 * @param string The source string
 	 * @param string The searchword to select around
-	 * @return  string
+     * @return  string
 	 *
 	 * @since  1.5
 	 */
@@ -213,7 +213,7 @@ class SearchHelper
 	 * @param string The source string
 	 * @param int Number of chars to return
 	 * @param string The searchword to select around
-	 * @return  string
+     * @return  string
 	 *
 	 * @since  1.5
 	 */
@@ -230,7 +230,8 @@ class SearchHelper
 			if (($wordpos = @JString::strpos($text, ' ', $pos + $length)) !== false)
 			{
 				$chunk_size = $wordpos - $pos;
-			} else {
+			}
+			else {
 				$chunk_size = $length;
 			}
 			$chunk = JString::substr($text, $pos, $chunk_size);
@@ -250,7 +251,8 @@ class SearchHelper
 			if (($wordpos = @JString::strpos($text, ' ', $length)) !== false)
 			{
 				return JString::substr($text, 0, $wordpos) . '&#160;...';
-			} else {
+			}
+			else {
 				return JString::substr($text, 0, $length);
 			}
 		}

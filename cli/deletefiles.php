@@ -50,7 +50,7 @@ class DeletefilesCli extends JApplicationCli
 	/**
 	 * Entry point for CLI script
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

@@ -74,11 +74,13 @@ class BannersControllerBanners extends JControllerAdmin
 			if (!$model->stick($ids, $value))
 			{
 				JError::raiseWarning(500, $model->getError());
-			} else {
+			}
+			else {
 				if ($value == 1)
 				{
 					$ntext = 'COM_BANNERS_N_BANNERS_STUCK';
-				} else {
+				}
+				else {
 					$ntext = 'COM_BANNERS_N_BANNERS_UNSTUCK';
 				}
 				$this->setMessage(JText::plural($ntext, count($ids)));
@@ -91,7 +93,7 @@ class BannersControllerBanners extends JControllerAdmin
 	/**
 	 * Method to save the submitted ordering values for records via AJAX.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

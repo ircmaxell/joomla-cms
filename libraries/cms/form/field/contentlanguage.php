@@ -33,7 +33,7 @@ class JFormFieldContentlanguage extends JFormFieldList
 	/**
 	 * Method to get the field options for content languages.
 	 *
-	 * @return  array  The options the field is going to show.
+     * @return  array  The options the field is going to show.
 	 *
 	 * @since   1.6
 	 */

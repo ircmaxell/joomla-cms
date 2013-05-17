@@ -29,9 +29,9 @@ class FinderViewSearch extends JViewLegacy
 	/**
 	 * Method to display the view.
 	 *
-	 * @param   string  $tpl  A template file to load. [optional]
+     * @param  string  $tpl  A template file to load. [optional]
 	 *
-	 * @return  mixed  JError object on failure, void on success.
+     * @return  mixed  JError object on failure, void on success.
 	 *
 	 * @since   2.5
 	 */
@@ -118,7 +118,7 @@ class FinderViewSearch extends JViewLegacy
 	 * Method to get hidden input fields for a get form so that control variables
 	 * are not lost upon form submission
 	 *
-	 * @return  string  A string of hidden input form fields
+     * @return  string  A string of hidden input form fields
 	 *
 	 * @since   2.5
 	 */
@@ -152,9 +152,9 @@ class FinderViewSearch extends JViewLegacy
 	/**
 	 * Method to get the layout file for a search result object.
 	 *
-	 * @param   string  $layout  The layout file to check. [optional]
+     * @param  string  $layout  The layout file to check. [optional]
 	 *
-	 * @return  string  The layout file to use.
+     * @return  string  The layout file to use.
 	 *
 	 * @since   2.5
 	 */
@@ -174,9 +174,9 @@ class FinderViewSearch extends JViewLegacy
 	/**
 	 * Prepares the document
 	 *
-	 * @param   FinderIndexerQuery  $query  The search query
+     * @param  FinderIndexerQuery  $query  The search query
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */

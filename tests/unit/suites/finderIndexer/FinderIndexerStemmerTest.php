@@ -18,7 +18,7 @@ class FinderIndexerStemmerTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getInstance method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -34,7 +34,7 @@ class FinderIndexerStemmerTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the getInstance method with a non-existing parser
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 *

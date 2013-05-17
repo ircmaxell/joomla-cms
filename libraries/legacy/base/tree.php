@@ -52,10 +52,10 @@ class JTree extends JObject
 	/**
 	 * Method to add a child
 	 *
-	 * @param   array    &$node       The node to process
-	 * @param   boolean  $setCurrent  True to set as current working node
+     * @param  array    &$node       The node to process
+     * @param  boolean  $setCurrent  True to set as current working node
 	 *
-	 * @return  mixed
+     * @return  mixed
 	 *
 	 * @since   11.1
 	 */
@@ -73,7 +73,7 @@ class JTree extends JObject
 	/**
 	 * Method to get the parent
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -87,7 +87,7 @@ class JTree extends JObject
 	/**
 	 * Method to get the parent
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */

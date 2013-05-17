@@ -21,9 +21,9 @@ class FinderIndexerParserTxt extends FinderIndexerParser
 	/**
 	 * Method to process Text input and extract the plain text.
 	 *
-	 * @param   string  $input  The input to process.
+     * @param  string  $input  The input to process.
 	 *
-	 * @return  string  The plain text input.
+     * @return  string  The plain text input.
 	 *
 	 * @since   2.5
 	 */

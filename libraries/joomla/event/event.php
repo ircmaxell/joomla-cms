@@ -29,7 +29,7 @@ abstract class JEvent extends JObject
 	/**
 	 * Constructor
 	 *
-	 * @param   object  &$subject  The object to observe.
+     * @param  object  &$subject  The object to observe.
 	 *
 	 * @since   11.3
 	 */
@@ -49,9 +49,9 @@ abstract class JEvent extends JObject
 	 * If the method exists it is called and returns its return value. If it does not exist it
 	 * returns null.
 	 *
-	 * @param   array  &$args  Arguments
+     * @param  array  &$args  Arguments
 	 *
-	 * @return  mixed  Routine return value
+     * @return  mixed  Routine return value
 	 *
 	 * @since   11.1
 	 */

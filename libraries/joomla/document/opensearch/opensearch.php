@@ -50,7 +50,7 @@ class JDocumentOpensearch extends JDocument
 	/**
 	 * Class constructor
 	 *
-	 * @param   array  $options  Associative array of options
+     * @param  array  $options  Associative array of options
 	 *
 	 * @since  11.1
 	 */
@@ -100,10 +100,10 @@ class JDocumentOpensearch extends JDocument
 	/**
 	 * Render the document
 	 *
-	 * @param   boolean  $cache   If true, cache the output
-	 * @param   array    $params  Associative array of attributes
+     * @param  boolean  $cache   If true, cache the output
+     * @param  array    $params  Associative array of attributes
 	 *
-	 * @return  The rendered data
+     * @return  The  rendered data
 	 *
 	 * @since   11.1
 	 */
@@ -166,9 +166,9 @@ class JDocumentOpensearch extends JDocument
 	/**
 	 * Sets the short name
 	 *
-	 * @param   string  $name  The name.
+     * @param  string  $name  The name.
 	 *
-	 * @return  JDocumentOpensearch instance of $this to allow chaining
+     * @return  JDocumentOpensearch  instance of $this to allow chaining
 	 *
 	 * @since   11.1
 	 */
@@ -182,9 +182,9 @@ class JDocumentOpensearch extends JDocument
 	/**
 	 * Adds an URL to the OpenSearch description.
 	 *
-	 * @param   JOpenSearchUrl  $url  The url to add to the description.
+     * @param  JOpenSearchUrl  $url  The url to add to the description.
 	 *
-	 * @return  JDocumentOpensearch instance of $this to allow chaining
+     * @return  JDocumentOpensearch  instance of $this to allow chaining
 	 *
 	 * @since   11.1
 	 */
@@ -198,9 +198,9 @@ class JDocumentOpensearch extends JDocument
 	/**
 	 * Adds an image to the OpenSearch description.
 	 *
-	 * @param   JOpenSearchImage  $image  The image to add to the description.
+     * @param  JOpenSearchImage  $image  The image to add to the description.
 	 *
-	 * @return  JDocumentOpensearch instance of $this to allow chaining
+     * @return  JDocumentOpensearch  instance of $this to allow chaining
 	 *
 	 * @since   11.1
 	 */

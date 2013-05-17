@@ -21,9 +21,9 @@ class FinderViewIndexer extends JViewLegacy
 	/**
 	 * Method to display the view.
 	 *
-	 * @param   string  $tpl  A template file to load. [optional]
+     * @param  string  $tpl  A template file to load. [optional]
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */

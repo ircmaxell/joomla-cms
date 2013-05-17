@@ -26,7 +26,7 @@ class JoomlaupdateModelDefault extends JModelLegacy
 	 * Detects if the Joomla! update site currently in use matches the one
 	 * configured in this component. If they don't match, it changes it.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since    2.5.4
 	 */
@@ -94,9 +94,9 @@ class JoomlaupdateModelDefault extends JModelLegacy
 	/**
 	 * Makes sure that the Joomla! update cache is up-to-date
 	 *
-	 * @param   boolean  $force  Force reload, ignoring the cache timeout
+     * @param  boolean  $force  Force reload, ignoring the cache timeout
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since    2.5.4
 	 */
@@ -119,7 +119,7 @@ class JoomlaupdateModelDefault extends JModelLegacy
 	/**
 	 * Returns an array with the Joomla! update information
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   2.5.4
 	 */
@@ -172,7 +172,7 @@ class JoomlaupdateModelDefault extends JModelLegacy
 	/**
 	 * Returns an array with the configured FTP options
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   2.5.4
 	 */
@@ -192,7 +192,7 @@ class JoomlaupdateModelDefault extends JModelLegacy
 	/**
 	 * Removes all of the updates from the table and enable all update streams.
 	 *
-	 * @return  boolean  Result of operation
+     * @return  boolean  Result of operation
 	 *
 	 * @since   3.0
 	 */
@@ -227,7 +227,7 @@ class JoomlaupdateModelDefault extends JModelLegacy
 	/**
 	 * Downloads the update package to the site
 	 *
-	 * @return  bool|string False on failure, basename of the file in any other case
+     * @return  bool|string  False on failure, basename of the file in any other case
 	 *
 	 * @since   2.5.4
 	 */
@@ -267,10 +267,10 @@ class JoomlaupdateModelDefault extends JModelLegacy
 	/**
 	 * Downloads a package file to a specific directory
 	 *
-	 * @param   string  $url     The URL to download from
-	 * @param   string  $target  The directory to store the file
+     * @param  string  $url     The URL to download from
+     * @param  string  $target  The directory to store the file
 	 *
-	 * @return  boolean True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   2.5.4
 	 */
@@ -500,7 +500,7 @@ ENDDATA;
 	 * manifest cache and #__extensions entry. Essentially, it is identical to
 	 * JInstallerFile::install() without the file copy.
 	 *
-	 * @return  boolean True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   2.5.4
 	 */
@@ -717,7 +717,7 @@ ENDDATA;
 	/**
 	 * Removes the extracted package file
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5.4
 	 */

@@ -41,12 +41,12 @@ class PlgExtensionJoomla extends JPlugin
 	/**
 	 * Adds an update site to the table if it doesn't exist.
 	 *
-	 * @param   string   $name      The friendly name of the site
-	 * @param   string   $type      The type of site (e.g. collection or extension)
-	 * @param   string   $location  The URI for the site
-	 * @param   boolean  $enabled   If this site is enabled
+     * @param  string   $name      The friendly name of the site
+     * @param  string   $type      The type of site (e.g. collection or extension)
+     * @param  string   $location  The URI for the site
+     * @param  boolean  $enabled   If this site is enabled
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -104,10 +104,10 @@ class PlgExtensionJoomla extends JPlugin
 	/**
 	 * Handle post extension install update sites
 	 *
-	 * @param   JInstaller  $installer  Installer object
-	 * @param   integer     $eid        Extension Identifier
+     * @param  JInstaller  $installer  Installer object
+     * @param  integer     $eid        Extension Identifier
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -126,11 +126,11 @@ class PlgExtensionJoomla extends JPlugin
 	/**
 	 * Handle extension uninstall
 	 *
-	 * @param   JInstaller  $installer  Installer instance
-	 * @param   integer     $eid        Extension id
-	 * @param   integer     $result     Installation result
+     * @param  JInstaller  $installer  Installer instance
+     * @param  integer     $eid        Extension id
+     * @param  integer     $result     Installation result
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -202,10 +202,10 @@ class PlgExtensionJoomla extends JPlugin
 	/**
 	 * After update of an extension
 	 *
-	 * @param   JInstaller  $installer  Installer object
-	 * @param   integer     $eid        Extension identifier
+     * @param  JInstaller  $installer  Installer object
+     * @param  integer     $eid        Extension identifier
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -224,7 +224,7 @@ class PlgExtensionJoomla extends JPlugin
 	/**
 	 * Processes the list of update sites for an extension.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */

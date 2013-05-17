@@ -132,7 +132,7 @@ class JClientFtp
 	/**
 	 * JClientFtp object constructor
 	 *
-	 * @param   array  $options  Associative array of options to set
+     * @param  array  $options  Associative array of options to set
 	 *
 	 * @since   12.1
 	 */
@@ -179,13 +179,13 @@ class JClientFtp
 	 * If you do not use this option, you must quit() the current connection when you
 	 * are done, to free it for use by others.
 	 *
-	 * @param   string  $host     Host to connect to
-	 * @param   string  $port     Port to connect to
-	 * @param   array   $options  Array with any of these options: type=>[FTP_AUTOASCII|FTP_ASCII|FTP_BINARY], timeout=>(int)
-	 * @param   string  $user     Username to use for a connection
-	 * @param   string  $pass     Password to use for a connection
+     * @param  string  $host     Host to connect to
+     * @param  string  $port     Port to connect to
+     * @param  array   $options  Array with any of these options: type=>[FTP_AUTOASCII|FTP_ASCII|FTP_BINARY], timeout=>(int)
+     * @param  string  $user     Username to use for a connection
+     * @param  string  $pass     Password to use for a connection
 	 *
-	 * @return  JClientFtp        The FTP Client object.
+     * @return  JClientFtp  The FTP Client object.
 	 *
 	 * @since   12.1
 	 */
@@ -219,9 +219,9 @@ class JClientFtp
 	/**
 	 * Set client options
 	 *
-	 * @param   array  $options  Associative array of options to set
+     * @param  array  $options  Associative array of options to set
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -241,10 +241,10 @@ class JClientFtp
 	/**
 	 * Method to connect to a FTP server
 	 *
-	 * @param   string  $host  Host to connect to [Default: 127.0.0.1]
-	 * @param   string  $port  Port to connect on [Default: port 21]
+     * @param  string  $host  Host to connect to [Default: 127.0.0.1]
+     * @param  string  $port  Port to connect on [Default: port 21]
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -297,7 +297,7 @@ class JClientFtp
 	/**
 	 * Method to determine if the object is connected to an FTP server
 	 *
-	 * @return  boolean  True if connected
+     * @return  boolean  True if connected
 	 *
 	 * @since   12.1
 	 */
@@ -309,10 +309,10 @@ class JClientFtp
 	/**
 	 * Method to login to a server once connected
 	 *
-	 * @param   string  $user  Username to login to the server
-	 * @param   string  $pass  Password to login to the server
+     * @param  string  $user  Username to login to the server
+     * @param  string  $pass  Password to login to the server
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -355,7 +355,7 @@ class JClientFtp
 	/**
 	 * Method to quit and close the connection
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -378,7 +378,7 @@ class JClientFtp
 	/**
 	 * Method to retrieve the current working directory on the FTP server
 	 *
-	 * @return  string   Current working directory
+     * @return  string  Current working directory
 	 *
 	 * @since   12.1
 	 */
@@ -414,7 +414,7 @@ class JClientFtp
 	/**
 	 * Method to system string from the FTP server
 	 *
-	 * @return  string   System identifier string
+     * @return  string  System identifier string
 	 *
 	 * @since   12.1
 	 */
@@ -461,9 +461,9 @@ class JClientFtp
 	/**
 	 * Method to change the current working directory on the FTP server
 	 *
-	 * @param   string  $path  Path to change into on the server
+     * @param  string  $path  Path to change into on the server
 	 *
-	 * @return  boolean True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -495,7 +495,7 @@ class JClientFtp
 	 *
 	 * NOTE: This command not available on all servers
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -525,10 +525,10 @@ class JClientFtp
 	/**
 	 * Method to rename a file/folder on the FTP server
 	 *
-	 * @param   string  $from  Path to change file/folder from
-	 * @param   string  $to    Path to change file/folder to
+     * @param  string  $from  Path to change file/folder from
+     * @param  string  $to    Path to change file/folder to
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -565,10 +565,10 @@ class JClientFtp
 	/**
 	 * Method to change mode for a path on the FTP server
 	 *
-	 * @param   string  $path  Path to change mode on
-	 * @param   mixed   $mode  Octal value to change mode to, e.g. '0777', 0777 or 511 (string or integer)
+     * @param  string  $path  Path to change mode on
+     * @param  mixed   $mode  Octal value to change mode to, e.g. '0777', 0777 or 511 (string or integer)
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -615,9 +615,9 @@ class JClientFtp
 	/**
 	 * Method to delete a path [file/folder] on the FTP server
 	 *
-	 * @param   string  $path  Path to delete
+     * @param  string  $path  Path to delete
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -652,9 +652,9 @@ class JClientFtp
 	/**
 	 * Method to create a directory on the FTP server
 	 *
-	 * @param   string  $path  Directory to create
+     * @param  string  $path  Directory to create
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -683,9 +683,9 @@ class JClientFtp
 	/**
 	 * Method to restart data transfer at a given byte
 	 *
-	 * @param   integer  $point  Byte to restart transfer at
+     * @param  integer  $point  Byte to restart transfer at
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -715,9 +715,9 @@ class JClientFtp
 	/**
 	 * Method to create an empty file on the FTP server
 	 *
-	 * @param   string  $path  Path local file to store on the FTP server
+     * @param  string  $path  Path local file to store on the FTP server
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -773,10 +773,10 @@ class JClientFtp
 	/**
 	 * Method to read a file from the FTP server's contents into a buffer
 	 *
-	 * @param   string  $remote   Path to remote file to read on the FTP server
-	 * @param   string  &$buffer  Buffer variable to read file contents into
+     * @param  string  $remote   Path to remote file to read on the FTP server
+     * @param  string  &$buffer  Buffer variable to read file contents into
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -863,10 +863,10 @@ class JClientFtp
 	/**
 	 * Method to get a file from the FTP server and save it to a local file
 	 *
-	 * @param   string  $local   Local path to save remote file to
-	 * @param   string  $remote  Path to remote file to get on the FTP server
+     * @param  string  $local   Local path to save remote file to
+     * @param  string  $remote  Path to remote file to get on the FTP server
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -940,10 +940,10 @@ class JClientFtp
 	/**
 	 * Method to store a file to the FTP server
 	 *
-	 * @param   string  $local   Path to local file to store on the FTP server
-	 * @param   string  $remote  FTP path to file to create
+     * @param  string  $local   Path to local file to store on the FTP server
+     * @param  string  $remote  FTP path to file to create
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -1043,10 +1043,10 @@ class JClientFtp
 	/**
 	 * Method to write a string to the FTP server
 	 *
-	 * @param   string  $remote  FTP path to file to write to
-	 * @param   string  $buffer  Contents to write to the FTP server
+     * @param  string  $remote  FTP path to file to write to
+     * @param  string  $buffer  Contents to write to the FTP server
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -1127,9 +1127,9 @@ class JClientFtp
 	 * Note: Some servers also return folder names. However, to be sure to list folders on all
 	 * servers, you should use listDetails() instead if you also need to deal with folders
 	 *
-	 * @param   string  $path  Path local file to store on the FTP server
+     * @param  string  $path  Path local file to store on the FTP server
 	 *
-	 * @return  string  Directory listing
+     * @return  string  Directory listing
 	 *
 	 * @since   12.1
 	 */
@@ -1225,10 +1225,10 @@ class JClientFtp
 	/**
 	 * Method to list the contents of a directory on the FTP server
 	 *
-	 * @param   string  $path  Path to the local file to be stored on the FTP server
-	 * @param   string  $type  Return type [raw|all|folders|files]
+     * @param  string  $path  Path to the local file to be stored on the FTP server
+     * @param  string  $type  Return type [raw|all|folders|files]
 	 *
-	 * @return  mixed  If $type is raw: string Directory listing, otherwise array of string with file-names
+     * @return  mixed  If $type is raw: string Directory listing, otherwise array of string with file-names
 	 *
 	 * @since   12.1
 	 */
@@ -1433,10 +1433,10 @@ class JClientFtp
 	/**
 	 * Send command to the FTP server and validate an expected response code
 	 *
-	 * @param   string  $cmd               Command to send to the FTP server
-	 * @param   mixed   $expectedResponse  Integer response code or array of integer response codes
+     * @param  string  $cmd               Command to send to the FTP server
+     * @param  mixed   $expectedResponse  Integer response code or array of integer response codes
 	 *
-	 * @return  boolean  True if command executed successfully
+     * @return  boolean  True if command executed successfully
 	 *
 	 * @since   12.1
 	 */
@@ -1461,9 +1461,9 @@ class JClientFtp
 	/**
 	 * Verify the response code from the server and log response if flag is set
 	 *
-	 * @param   mixed  $expected  Integer response code or array of integer response codes
+     * @param  mixed  $expected  Integer response code or array of integer response codes
 	 *
-	 * @return  boolean  True if response code from the server is expected
+     * @return  boolean  True if response code from the server is expected
 	 *
 	 * @since   12.1
 	 */
@@ -1520,7 +1520,7 @@ class JClientFtp
 	/**
 	 * Set server to passive mode and open a data port connection
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -1599,9 +1599,9 @@ class JClientFtp
 	/**
 	 * Method to find out the correct transfer mode for a specific file
 	 *
-	 * @param   string  $fileName  Name of the file
+     * @param  string  $fileName  Name of the file
 	 *
-	 * @return  integer Transfer-mode for this filetype [FTP_ASCII|FTP_BINARY]
+     * @return  integer  Transfer-mode for this filetype [FTP_ASCII|FTP_BINARY]
 	 *
 	 * @since   12.1
 	 */
@@ -1635,10 +1635,10 @@ class JClientFtp
 	/**
 	 * Set transfer mode
 	 *
-	 * @param   integer  $mode  Integer representation of data transfer mode [1:Binary|0:Ascii]
+     * @param  integer  $mode  Integer representation of data transfer mode [1:Binary|0:Ascii]
 	 * Defined constants can also be used [FTP_BINARY|FTP_ASCII]
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -1677,7 +1677,7 @@ class JFTP extends JClientFtp
 	/**
 	 * JFTP object constructor
 	 *
-	 * @param   array  $options  Associative array of options to set
+     * @param  array  $options  Associative array of options to set
 	 *
 	 * @since   11.1
 	 */

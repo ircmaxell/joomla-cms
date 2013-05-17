@@ -40,7 +40,7 @@ class FinderIndexerStemmerPorter_EnTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the stem method of the porter_en stemmer
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -55,7 +55,7 @@ class FinderIndexerStemmerPorter_EnTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the stem method of the porter_en language stemmer to ensure it doesn't stem short words
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -70,7 +70,7 @@ class FinderIndexerStemmerPorter_EnTest extends PHPUnit_Framework_TestCase
 	/**
 	 * Tests the stem method of the porter_en language stemmer to ensure it only stems English
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */

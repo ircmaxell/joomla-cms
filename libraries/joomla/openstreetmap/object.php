@@ -42,9 +42,9 @@ abstract class JOpenstreetmapObject
 	/**
 	 * Constructor.
 	 *
-	 * @param   JRegistry            &$options  Openstreetmap options object.
-	 * @param   JHttp                $client    The HTTP client object.
-	 * @param   JOpenstreetmapOauth  $oauth     Openstreetmap oauth client
+     * @param  JRegistry            &$options  Openstreetmap options object.
+     * @param  JHttp                $client    The HTTP client object.
+     * @param  JOpenstreetmapOauth  $oauth     Openstreetmap oauth client
 	 *
 	 * @since   13.1
 	 */
@@ -58,9 +58,9 @@ abstract class JOpenstreetmapObject
 	/**
 	 * Get an option from the JOpenstreetmapObject instance.
 	 *
-	 * @param   string  $key  The name of the option to get.
+     * @param  string  $key  The name of the option to get.
 	 *
-	 * @return  mixed  The option value.
+     * @return  mixed  The option value.
 	 *
 	 * @since   13.1
 	 */
@@ -72,10 +72,10 @@ abstract class JOpenstreetmapObject
 	/**
 	 * Set an option for the JOpenstreetmapObject instance.
 	 *
-	 * @param   string  $key    The name of the option to set.
-	 * @param   mixed   $value  The option value to set.
+     * @param  string  $key    The name of the option to set.
+     * @param  mixed   $value  The option value to set.
 	 *
-	 * @return  JOpenstreetmapObject  This object for method chaining.
+     * @return  JOpenstreetmapObject  This object for method chaining.
 	 *
 	 * @since   13.1
 	 */
@@ -89,15 +89,15 @@ abstract class JOpenstreetmapObject
 	/**
 	 * Method to send the request which does not require authentication.
 	 *
-	 * @param   string  $path     The path of the request to make
-	 * @param   string  $method   The request method.
-	 * @param   array   $headers  The headers passed in the request.
-	 * @param   mixed   $data     Either an associative array or a string to be sent with the post request.
+     * @param  string  $path     The path of the request to make
+     * @param  string  $method   The request method.
+     * @param  array   $headers  The headers passed in the request.
+     * @param  mixed   $data     Either an associative array or a string to be sent with the post request.
 	 *
-	 * @return  SimpleXMLElement  The XML response
+     * @return  SimpleXMLElement  The XML response
 	 *
 	 * @since   13.1
-	 * @throws  DomainException
+     * @throws  DomainException
 	 */
 	public function sendRequest($path, $method='GET', $headers = array(), $data='')
 	{

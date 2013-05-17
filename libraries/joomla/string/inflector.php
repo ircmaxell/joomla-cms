@@ -120,13 +120,13 @@ class JStringInflector
 	/**
 	 * Adds inflection regex rules to the inflector.
 	 *
-	 * @param   mixed   $data      A string or an array of strings or regex rules to add.
-	 * @param   string  $ruleType  The rule type: singular | plural | countable
+     * @param  mixed   $data      A string or an array of strings or regex rules to add.
+     * @param  string  $ruleType  The rule type: singular | plural | countable
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
-	 * @throws  InvalidArgumentException
+     * @throws  InvalidArgumentException
 	 */
 	private function _addRule($data, $ruleType)
 	{
@@ -150,9 +150,9 @@ class JStringInflector
 	/**
 	 * Gets an inflected word from the cache where the singular form is supplied.
 	 *
-	 * @param   string  $singular  A singular form of a word.
+     * @param  string  $singular  A singular form of a word.
 	 *
-	 * @return  mixed  The cached inflection or false if none found.
+     * @return  mixed  The cached inflection or false if none found.
 	 *
 	 * @since   12.1
 	 */
@@ -172,9 +172,9 @@ class JStringInflector
 	/**
 	 * Gets an inflected word from the cache where the plural form is supplied.
 	 *
-	 * @param   string  $plural  A plural form of a word.
+     * @param  string  $plural  A plural form of a word.
 	 *
-	 * @return  mixed  The cached inflection or false if none found.
+     * @return  mixed  The cached inflection or false if none found.
 	 *
 	 * @since   12.1
 	 */
@@ -191,10 +191,10 @@ class JStringInflector
 	 * The 'plural' rule type expects a singular word.
 	 * The 'singular' rule type expects a plural word.
 	 *
-	 * @param   string  $word      The string input.
-	 * @param   string  $ruleType  String (eg, singular|plural)
+     * @param  string  $word      The string input.
+     * @param  string  $ruleType  String (eg, singular|plural)
 	 *
-	 * @return  mixed  An inflected string, or false if no rule could be applied.
+     * @return  mixed  An inflected string, or false if no rule could be applied.
 	 *
 	 * @since   12.1
 	 */
@@ -218,10 +218,10 @@ class JStringInflector
 	/**
 	 * Sets an inflected word in the cache.
 	 *
-	 * @param   string  $singular  The singular form of the word.
-	 * @param   string  $plural    The plural form of the word. If omitted, it is assumed the singular and plural are identical.
+     * @param  string  $singular  The singular form of the word.
+     * @param  string  $plural    The plural form of the word. If omitted, it is assumed the singular and plural are identical.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -244,9 +244,9 @@ class JStringInflector
 	/**
 	 * Adds a countable word.
 	 *
-	 * @param   mixed  $data  A string or an array of strings to add.
+     * @param  mixed  $data  A string or an array of strings to add.
 	 *
-	 * @return  JStringInflector  Returns this object to support chaining.
+     * @return  JStringInflector  Returns this object to support chaining.
 	 *
 	 * @since   12.1
 	 */
@@ -260,10 +260,10 @@ class JStringInflector
 	/**
 	 * Adds a specific singular-plural pair for a word.
 	 *
-	 * @param   string  $singular  The singular form of the word.
-	 * @param   string  $plural    The plural form of the word. If omitted, it is assumed the singular and plural are identical.
+     * @param  string  $singular  The singular form of the word.
+     * @param  string  $plural    The plural form of the word. If omitted, it is assumed the singular and plural are identical.
 	 *
-	 * @return  JStringInflector  Returns this object to support chaining.
+     * @return  JStringInflector  Returns this object to support chaining.
 	 *
 	 * @since   12.1
 	 */
@@ -277,9 +277,9 @@ class JStringInflector
 	/**
 	 * Adds a pluralisation rule.
 	 *
-	 * @param   mixed  $data  A string or an array of regex rules to add.
+     * @param  mixed  $data  A string or an array of regex rules to add.
 	 *
-	 * @return  JStringInflector  Returns this object to support chaining.
+     * @return  JStringInflector  Returns this object to support chaining.
 	 *
 	 * @since   12.1
 	 */
@@ -293,9 +293,9 @@ class JStringInflector
 	/**
 	 * Adds a singularisation rule.
 	 *
-	 * @param   mixed  $data  A string or an array of regex rules to add.
+     * @param  mixed  $data  A string or an array of regex rules to add.
 	 *
-	 * @return  JStringInflector  Returns this object to support chaining.
+     * @return  JStringInflector  Returns this object to support chaining.
 	 *
 	 * @since   12.1
 	 */
@@ -309,10 +309,10 @@ class JStringInflector
 	/**
 	 * Gets an instance of the JStringInflector singleton.
 	 *
-	 * @param   boolean  $new  If true (default is false), returns a new instance regardless if one exists.
+     * @param  boolean  $new  If true (default is false), returns a new instance regardless if one exists.
 	 *                         This argument is mainly used for testing.
 	 *
-	 * @return  JStringInflector
+     * @return  JStringInflector
 	 *
 	 * @since   12.1
 	 */
@@ -333,9 +333,9 @@ class JStringInflector
 	/**
 	 * Checks if a word is countable.
 	 *
-	 * @param   string  $word  The string input.
+     * @param  string  $word  The string input.
 	 *
-	 * @return  boolean  True if word is countable, false otherwise.
+     * @return  boolean  True if word is countable, false otherwise.
 	 *
 	 * @since  12.1
 	 */
@@ -347,9 +347,9 @@ class JStringInflector
 	/**
 	 * Checks if a word is in a plural form.
 	 *
-	 * @param   string  $word  The string input.
+     * @param  string  $word  The string input.
 	 *
-	 * @return  boolean  True if word is plural, false if not.
+     * @return  boolean  True if word is plural, false if not.
 	 *
 	 * @since  12.1
 	 */
@@ -370,9 +370,9 @@ class JStringInflector
 	/**
 	 * Checks if a word is in a singular form.
 	 *
-	 * @param   string  $word  The string input.
+     * @param  string  $word  The string input.
 	 *
-	 * @return  boolean  True if word is singular, false if not.
+     * @return  boolean  True if word is singular, false if not.
 	 *
 	 * @since  12.1
 	 */
@@ -393,9 +393,9 @@ class JStringInflector
 	/**
 	 * Converts a word into its plural form.
 	 *
-	 * @param   string  $word  The singular word to pluralise.
+     * @param  string  $word  The singular word to pluralise.
 	 *
-	 * @return  mixed  An inflected string, or false if no rule could be applied.
+     * @return  mixed  An inflected string, or false if no rule could be applied.
 	 *
 	 * @since  12.1
 	 */
@@ -428,9 +428,9 @@ class JStringInflector
 	/**
 	 * Converts a word into its singular form.
 	 *
-	 * @param   string  $word  The plural word to singularise.
+     * @param  string  $word  The plural word to singularise.
 	 *
-	 * @return  mixed  An inflected string, or false if no rule could be applied.
+     * @return  mixed  An inflected string, or false if no rule could be applied.
 	 *
 	 * @since  12.1
 	 */

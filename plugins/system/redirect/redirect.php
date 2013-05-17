@@ -24,7 +24,7 @@ class PlgSystemRedirect extends JPlugin
 	 * @access    public
 	 * @param   object    The object to observe -- event dispatcher.
 	 * @param   object    The configuration object for the plugin.
-	 * @return  void
+     * @return  void
 	 * @since   1.6
 	 */
 	public function __construct(&$subject, $config)

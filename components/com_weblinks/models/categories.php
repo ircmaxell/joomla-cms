@@ -66,9 +66,9 @@ class WeblinksModelCategories extends JModelList
 	 * different modules that might need different sets of data or different
 	 * ordering requirements.
 	 *
-	 * @param   string  $id	A prefix for the store id.
+     * @param  string  $id  A prefix for the store id.
 	 *
-	 * @return  string  A store id.
+     * @return  string  A store id.
 	 */
 	protected function getStoreId($id = '')
 	{
@@ -84,7 +84,7 @@ class WeblinksModelCategories extends JModelList
 	/**
 	 * redefine the function an add some properties to make the styling more easy
 	 *
-	 * @return mixed An array of data items on success, false on failure.
+     * @return  mixed  An array of data items on success, false on failure.
 	 */
 	public function getItems()
 	{
@@ -105,7 +105,8 @@ class WeblinksModelCategories extends JModelList
 			if (is_object($this->_parent))
 			{
 				$this->_items = $this->_parent->getChildren();
-			} else {
+			}
+			else {
 				$this->_items = false;
 			}
 		}

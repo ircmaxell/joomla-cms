@@ -23,9 +23,9 @@ abstract class ModLatestHelper
 	/**
 	 * Get a list of articles.
 	 *
-	 * @param   JRegistry  $params  The module parameters.
+     * @param  JRegistry  $params  The module parameters.
 	 *
-	 * @return  mixed  An array of articles, or false on error.
+     * @return  mixed  An array of articles, or false on error.
 	 */
 	public static function getList($params)
 	{
@@ -108,9 +108,9 @@ abstract class ModLatestHelper
 	/**
 	 * Get the alternate title for the module.
 	 *
-	 * @param   JRegistry  $params  The module parameters.
+     * @param  JRegistry  $params  The module parameters.
 	 *
-	 * @return  string  The alternate title for the module.
+     * @return  string  The alternate title for the module.
 	 */
 	public static function getTitle($params)
 	{

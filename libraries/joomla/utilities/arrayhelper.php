@@ -53,10 +53,10 @@ abstract class JArrayHelper
 	/**
 	 * Function to convert array to integer values
 	 *
-	 * @param   array  &$array   The source array to convert
-	 * @param   mixed  $default  A default value (int|array) to assign if $array is not an array
+     * @param  array  &$array   The source array to convert
+     * @param  mixed  $default  A default value (int|array) to assign if $array is not an array
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -90,10 +90,10 @@ abstract class JArrayHelper
 	/**
 	 * Utility function to map an array to a stdClass object.
 	 *
-	 * @param   array   &$array  The array to map.
-	 * @param   string  $class   Name of the class to create
+     * @param  array   &$array  The array to map.
+     * @param  string  $class   Name of the class to create
 	 *
-	 * @return  object   The object mapped from the given array
+     * @return  object  The object mapped from the given array
 	 *
 	 * @since   11.1
 	 */
@@ -123,12 +123,12 @@ abstract class JArrayHelper
 	/**
 	 * Utility function to map an array to a string.
 	 *
-	 * @param   array    $array         The array to map.
-	 * @param   string   $inner_glue    The glue (optional, defaults to '=') between the key and the value.
-	 * @param   string   $outer_glue    The glue (optional, defaults to ' ') between array elements.
-	 * @param   boolean  $keepOuterKey  True if final key should be kept.
+     * @param  array    $array         The array to map.
+     * @param  string   $inner_glue    The glue (optional, defaults to '=') between the key and the value.
+     * @param  string   $outer_glue    The glue (optional, defaults to ' ') between array elements.
+     * @param  boolean  $keepOuterKey  True if final key should be kept.
 	 *
-	 * @return  string   The string mapped from the given array
+     * @return  string  The string mapped from the given array
 	 *
 	 * @since   11.1
 	 */
@@ -162,11 +162,11 @@ abstract class JArrayHelper
 	/**
 	 * Utility function to map an object to an array
 	 *
-	 * @param   object   $p_obj    The source object
-	 * @param   boolean  $recurse  True to recurse through multi-level objects
-	 * @param   string   $regex    An optional regular expression to match on field names
+     * @param  object   $p_obj    The source object
+     * @param  boolean  $recurse  True to recurse through multi-level objects
+     * @param  string   $regex    An optional regular expression to match on field names
 	 *
-	 * @return  array    The array mapped from the given object
+     * @return  array  The array mapped from the given object
 	 *
 	 * @since   11.1
 	 */
@@ -185,11 +185,11 @@ abstract class JArrayHelper
 	/**
 	 * Utility function to map an object or array to an array
 	 *
-	 * @param   mixed    $item     The source object or array
-	 * @param   boolean  $recurse  True to recurse through multi-level objects
-	 * @param   string   $regex    An optional regular expression to match on field names
+     * @param  mixed    $item     The source object or array
+     * @param  boolean  $recurse  True to recurse through multi-level objects
+     * @param  string   $regex    An optional regular expression to match on field names
 	 *
-	 * @return  array  The array mapped from the given object
+     * @return  array  The array mapped from the given object
 	 *
 	 * @since   11.1
 	 */
@@ -233,10 +233,10 @@ abstract class JArrayHelper
 	/**
 	 * Extracts a column from an array of arrays or objects
 	 *
-	 * @param   array   &$array  The source array
-	 * @param   string  $index   The index of the column or name of object property
+     * @param  array   &$array  The source array
+     * @param  string  $index   The index of the column or name of object property
 	 *
-	 * @return  array  Column of values from the source array
+     * @return  array  Column of values from the source array
 	 *
 	 * @since   11.1
 	 */
@@ -265,12 +265,12 @@ abstract class JArrayHelper
 	/**
 	 * Utility function to return a value from a named array or a specified default
 	 *
-	 * @param   array   &$array   A named array
-	 * @param   string  $name     The key to search for
-	 * @param   mixed   $default  The default value to give if no key found
-	 * @param   string  $type     Return type for the variable (INT, FLOAT, STRING, WORD, BOOLEAN, ARRAY)
+     * @param  array   &$array   A named array
+     * @param  string  $name     The key to search for
+     * @param  mixed   $default  The default value to give if no key found
+     * @param  string  $type     Return type for the variable (INT, FLOAT, STRING, WORD, BOOLEAN, ARRAY)
 	 *
-	 * @return  mixed  The value from the source array
+     * @return  mixed  The value from the source array
 	 *
 	 * @since   11.1
 	 */
@@ -355,9 +355,9 @@ abstract class JArrayHelper
 	 *     '6000' => 'Used'
 	 * );
 	 *
-	 * @param   array  $array  The source array.
+     * @param  array  $array  The source array.
 	 *
-	 * @return  array  The inverted array.
+     * @return  array  The inverted array.
 	 *
 	 * @since   12.3
 	 */
@@ -387,9 +387,9 @@ abstract class JArrayHelper
 	/**
 	 * Method to determine if an array is an associative array.
 	 *
-	 * @param   array  $array  An array to test.
+     * @param  array  $array  An array to test.
 	 *
-	 * @return  boolean  True if the array is an associative array.
+     * @return  boolean  True if the array is an associative array.
 	 *
 	 * @since   11.1
 	 */
@@ -412,10 +412,10 @@ abstract class JArrayHelper
 	/**
 	 * Pivots an array to create a reverse lookup of an array of scalars, arrays or objects.
 	 *
-	 * @param   array   $source  The source array.
-	 * @param   string  $key     Where the elements of the source array are objects or arrays, the key to pivot on.
+     * @param  array   $source  The source array.
+     * @param  string  $key     Where the elements of the source array are objects or arrays, the key to pivot on.
 	 *
-	 * @return  array  An array of arrays pivoted either on the value of the keys, or an individual key of an object or array.
+     * @return  array  An array of arrays pivoted either on the value of the keys, or an individual key of an object or array.
 	 *
 	 * @since   11.3
 	 */
@@ -487,13 +487,13 @@ abstract class JArrayHelper
 	/**
 	 * Utility function to sort an array of objects on a given field
 	 *
-	 * @param   array  &$a             An array of objects
-	 * @param   mixed  $k              The key (string) or a array of key to sort on
-	 * @param   mixed  $direction      Direction (integer) or an array of direction to sort in [1 = Ascending] [-1 = Descending]
-	 * @param   mixed  $caseSensitive  Boolean or array of booleans to let sort occur case sensitive or insensitive
-	 * @param   mixed  $locale         Boolean or array of booleans to let sort occur using the locale language or not
+     * @param  array  &$a             An array of objects
+     * @param  mixed  $k              The key (string) or a array of key to sort on
+     * @param  mixed  $direction      Direction (integer) or an array of direction to sort in [1 = Ascending] [-1 = Descending]
+     * @param  mixed  $caseSensitive  Boolean or array of booleans to let sort occur case sensitive or insensitive
+     * @param  mixed  $locale         Boolean or array of booleans to let sort occur using the locale language or not
 	 *
-	 * @return  array  The sorted array of objects
+     * @return  array  The sorted array of objects
 	 *
 	 * @since   11.1
 	 */
@@ -522,10 +522,10 @@ abstract class JArrayHelper
 	/**
 	 * Callback function for sorting an array of objects on a key
 	 *
-	 * @param   array  &$a  An array of objects
-	 * @param   array  &$b  An array of objects
+     * @param  array  &$a  An array of objects
+     * @param  array  &$b  An array of objects
 	 *
-	 * @return  integer  Comparison status
+     * @return  integer  Comparison status
 	 *
 	 * @see     JArrayHelper::sortObjects()
 	 * @since   11.1
@@ -585,9 +585,9 @@ abstract class JArrayHelper
 	/**
 	 * Multidimensional array safe unique test
 	 *
-	 * @param   array  $myArray  The array to make unique.
+     * @param  array  $myArray  The array to make unique.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @see     http://php.net/manual/en/function.array-unique.php
 	 * @since   11.2

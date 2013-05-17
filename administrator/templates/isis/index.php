@@ -281,7 +281,7 @@ $stickyToolbar = $this->params->get('stickyToolbar', '1');
 
 			// hack sad times - holdover until rewrite for 2.1
 			$nav.on('click', function ()
-			{
+ function (){
 				if (!isFixed) setTimeout(function () {  $win.scrollTop($win.scrollTop() - 47) }, 10)
 			})
 
@@ -294,7 +294,8 @@ $stickyToolbar = $this->params->get('stickyToolbar', '1');
 				{
 					isFixed = 1
 					$nav.addClass('subhead-fixed')
-				} else if (scrollTop <= navTop && isFixed)
+				}
+				else if (scrollTop <= navTop && isFixed)
 				{
 					isFixed = 0
 					$nav.removeClass('subhead-fixed')

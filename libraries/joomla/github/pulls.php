@@ -21,17 +21,17 @@ class JGithubPulls extends JGithubObject
 	/**
 	 * Method to create a pull request.
 	 *
-	 * @param   string  $user   The name of the owner of the GitHub repository.
-	 * @param   string  $repo   The name of the GitHub repository.
-	 * @param   string  $title  The title of the new pull request.
-	 * @param   string  $base   The branch (or git ref) you want your changes pulled into. This
+     * @param  string  $user   The name of the owner of the GitHub repository.
+     * @param  string  $repo   The name of the GitHub repository.
+     * @param  string  $title  The title of the new pull request.
+     * @param  string  $base   The branch (or git ref) you want your changes pulled into. This
 	 *                          should be an existing branch on the current repository. You cannot
 	 *                          submit a pull request to one repo that requests a merge to a base
 	 *                          of another repo.
-	 * @param   string  $head   The branch (or git ref) where your changes are implemented.
-	 * @param   string  $body   The body text for the new pull request.
+     * @param  string  $head  The branch (or git ref) where your changes are implemented.
+     * @param  string  $body  The body text for the new pull request.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -67,15 +67,15 @@ class JGithubPulls extends JGithubObject
 	/**
 	 * Method to create a comment on a pull request.
 	 *
-	 * @param   string   $user      The name of the owner of the GitHub repository.
-	 * @param   string   $repo      The name of the GitHub repository.
-	 * @param   integer  $pullId    The pull request number.
-	 * @param   string   $body      The comment body text.
-	 * @param   string   $commitId  The SHA1 hash of the commit to comment on.
-	 * @param   string   $filePath  The Relative path of the file to comment on.
-	 * @param   string   $position  The line index in the diff to comment on.
+     * @param  string   $user      The name of the owner of the GitHub repository.
+     * @param  string   $repo      The name of the GitHub repository.
+     * @param  integer  $pullId    The pull request number.
+     * @param  string   $body      The comment body text.
+     * @param  string   $commitId  The SHA1 hash of the commit to comment on.
+     * @param  string   $filePath  The Relative path of the file to comment on.
+     * @param  string   $position  The line index in the diff to comment on.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -111,13 +111,13 @@ class JGithubPulls extends JGithubObject
 	/**
 	 * Method to create a comment in reply to another comment.
 	 *
-	 * @param   string   $user       The name of the owner of the GitHub repository.
-	 * @param   string   $repo       The name of the GitHub repository.
-	 * @param   integer  $pullId     The pull request number.
-	 * @param   string   $body       The comment body text.
-	 * @param   integer  $inReplyTo  The id of the comment to reply to.
+     * @param  string   $user       The name of the owner of the GitHub repository.
+     * @param  string   $repo       The name of the GitHub repository.
+     * @param  integer  $pullId     The pull request number.
+     * @param  string   $body       The comment body text.
+     * @param  integer  $inReplyTo  The id of the comment to reply to.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -151,16 +151,16 @@ class JGithubPulls extends JGithubObject
 	/**
 	 * Method to create a pull request from an existing issue.
 	 *
-	 * @param   string   $user     The name of the owner of the GitHub repository.
-	 * @param   string   $repo     The name of the GitHub repository.
-	 * @param   integer  $issueId  The issue number for which to attach the new pull request.
-	 * @param   string   $base     The branch (or git ref) you want your changes pulled into. This
+     * @param  string   $user     The name of the owner of the GitHub repository.
+     * @param  string   $repo     The name of the GitHub repository.
+     * @param  integer  $issueId  The issue number for which to attach the new pull request.
+     * @param  string   $base     The branch (or git ref) you want your changes pulled into. This
 	 *                             should be an existing branch on the current repository. You cannot
 	 *                             submit a pull request to one repo that requests a merge to a base
 	 *                             of another repo.
-	 * @param   string   $head     The branch (or git ref) where your changes are implemented.
+     * @param  string  $head  The branch (or git ref) where your changes are implemented.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -195,11 +195,11 @@ class JGithubPulls extends JGithubObject
 	/**
 	 * Method to delete a comment on a pull request.
 	 *
-	 * @param   string   $user       The name of the owner of the GitHub repository.
-	 * @param   string   $repo       The name of the GitHub repository.
-	 * @param   integer  $commentId  The id of the comment to delete.
+     * @param  string   $user       The name of the owner of the GitHub repository.
+     * @param  string   $repo       The name of the GitHub repository.
+     * @param  integer  $commentId  The id of the comment to delete.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.3
 	 */
@@ -223,14 +223,14 @@ class JGithubPulls extends JGithubObject
 	/**
 	 * Method to update a pull request.
 	 *
-	 * @param   string   $user    The name of the owner of the GitHub repository.
-	 * @param   string   $repo    The name of the GitHub repository.
-	 * @param   integer  $pullId  The pull request number.
-	 * @param   string   $title   The optional new title for the pull request.
-	 * @param   string   $body    The optional new body text for the pull request.
-	 * @param   string   $state   The optional new state for the pull request. [open, closed]
+     * @param  string   $user    The name of the owner of the GitHub repository.
+     * @param  string   $repo    The name of the GitHub repository.
+     * @param  integer  $pullId  The pull request number.
+     * @param  string   $title   The optional new title for the pull request.
+     * @param  string   $body    The optional new body text for the pull request.
+     * @param  string   $state   The optional new state for the pull request. [open, closed]
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -280,12 +280,12 @@ class JGithubPulls extends JGithubObject
 	/**
 	 * Method to update a comment on a pull request.
 	 *
-	 * @param   string   $user       The name of the owner of the GitHub repository.
-	 * @param   string   $repo       The name of the GitHub repository.
-	 * @param   integer  $commentId  The id of the comment to update.
-	 * @param   string   $body       The new body text for the comment.
+     * @param  string   $user       The name of the owner of the GitHub repository.
+     * @param  string   $repo       The name of the GitHub repository.
+     * @param  integer  $commentId  The id of the comment to update.
+     * @param  string   $body       The new body text for the comment.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -318,11 +318,11 @@ class JGithubPulls extends JGithubObject
 	/**
 	 * Method to get a single pull request.
 	 *
-	 * @param   string   $user    The name of the owner of the GitHub repository.
-	 * @param   string   $repo    The name of the GitHub repository.
-	 * @param   integer  $pullId  The pull request number.
+     * @param  string   $user    The name of the owner of the GitHub repository.
+     * @param  string   $repo    The name of the GitHub repository.
+     * @param  integer  $pullId  The pull request number.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -348,11 +348,11 @@ class JGithubPulls extends JGithubObject
 	/**
 	 * Method to get a specific comment on a pull request.
 	 *
-	 * @param   string   $user       The name of the owner of the GitHub repository.
-	 * @param   string   $repo       The name of the GitHub repository.
-	 * @param   integer  $commentId  The comment id to get.
+     * @param  string   $user       The name of the owner of the GitHub repository.
+     * @param  string   $repo       The name of the GitHub repository.
+     * @param  integer  $commentId  The comment id to get.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -378,13 +378,13 @@ class JGithubPulls extends JGithubObject
 	/**
 	 * Method to get the list of comments on a pull request.
 	 *
-	 * @param   string   $user    The name of the owner of the GitHub repository.
-	 * @param   string   $repo    The name of the GitHub repository.
-	 * @param   integer  $pullId  The pull request number.
-	 * @param   integer  $page    The page number from which to get items.
-	 * @param   integer  $limit   The number of items on a page.
+     * @param  string   $user    The name of the owner of the GitHub repository.
+     * @param  string   $repo    The name of the GitHub repository.
+     * @param  integer  $pullId  The pull request number.
+     * @param  integer  $page    The page number from which to get items.
+     * @param  integer  $limit   The number of items on a page.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.3
 	 */
@@ -410,13 +410,13 @@ class JGithubPulls extends JGithubObject
 	/**
 	 * Method to get a list of commits for a pull request.
 	 *
-	 * @param   string   $user    The name of the owner of the GitHub repository.
-	 * @param   string   $repo    The name of the GitHub repository.
-	 * @param   integer  $pullId  The pull request number.
-	 * @param   integer  $page    The page number from which to get items.
-	 * @param   integer  $limit   The number of items on a page.
+     * @param  string   $user    The name of the owner of the GitHub repository.
+     * @param  string   $repo    The name of the GitHub repository.
+     * @param  integer  $pullId  The pull request number.
+     * @param  integer  $page    The page number from which to get items.
+     * @param  integer  $limit   The number of items on a page.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.3
 	 */
@@ -442,13 +442,13 @@ class JGithubPulls extends JGithubObject
 	/**
 	 * Method to get a list of files for a pull request.
 	 *
-	 * @param   string   $user    The name of the owner of the GitHub repository.
-	 * @param   string   $repo    The name of the GitHub repository.
-	 * @param   integer  $pullId  The pull request number.
-	 * @param   integer  $page    The page number from which to get items.
-	 * @param   integer  $limit   The number of items on a page.
+     * @param  string   $user    The name of the owner of the GitHub repository.
+     * @param  string   $repo    The name of the GitHub repository.
+     * @param  integer  $pullId  The pull request number.
+     * @param  integer  $page    The page number from which to get items.
+     * @param  integer  $limit   The number of items on a page.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.3
 	 */
@@ -474,13 +474,13 @@ class JGithubPulls extends JGithubObject
 	/**
 	 * Method to list pull requests.
 	 *
-	 * @param   string   $user   The name of the owner of the GitHub repository.
-	 * @param   string   $repo   The name of the GitHub repository.
-	 * @param   string   $state  The optional state to filter requests by. [open, closed]
-	 * @param   integer  $page   The page number from which to get items.
-	 * @param   integer  $limit  The number of items on a page.
+     * @param  string   $user   The name of the owner of the GitHub repository.
+     * @param  string   $repo   The name of the GitHub repository.
+     * @param  string   $state  The optional state to filter requests by. [open, closed]
+     * @param  integer  $page   The page number from which to get items.
+     * @param  integer  $limit  The number of items on a page.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.3
 	 */
@@ -512,11 +512,11 @@ class JGithubPulls extends JGithubObject
 	/**
 	 * Method to check if a pull request has been merged.
 	 *
-	 * @param   string   $user    The name of the owner of the GitHub repository.
-	 * @param   string   $repo    The name of the GitHub repository.
-	 * @param   integer  $pullId  The pull request number.  The pull request number.
+     * @param  string   $user    The name of the owner of the GitHub repository.
+     * @param  string   $repo    The name of the GitHub repository.
+     * @param  integer  $pullId  The pull request number.  The pull request number.
 	 *
-	 * @return  boolean  True if the pull request has been merged.
+     * @return  boolean  True if the pull request has been merged.
 	 *
 	 * @since   11.3
 	 */
@@ -548,12 +548,12 @@ class JGithubPulls extends JGithubObject
 	/**
 	 * Method to merge a pull request.
 	 *
-	 * @param   string   $user     The name of the owner of the GitHub repository.
-	 * @param   string   $repo     The name of the GitHub repository.
-	 * @param   integer  $pullId   The pull request number.
-	 * @param   string   $message  The message that will be used for the merge commit.
+     * @param  string   $user     The name of the owner of the GitHub repository.
+     * @param  string   $repo     The name of the GitHub repository.
+     * @param  integer  $pullId   The pull request number.
+     * @param  string   $message  The message that will be used for the merge commit.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */

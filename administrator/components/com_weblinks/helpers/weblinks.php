@@ -48,7 +48,7 @@ class WeblinksHelper
 	 * Gets a list of the actions that can be performed.
 	 *
 	 * @param   integer  The category ID.
-	 * @return  JObject
+     * @return  JObject
 	 * @since   1.6
 	 */
 	public static function getActions($categoryId = 0)

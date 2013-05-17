@@ -92,7 +92,7 @@ class JFilesystemPatcher
 	/**
 	 * Method to get a patcher
 	 *
-	 * @return  JFilesystemPatcher  an instance of the patcher
+     * @return  JFilesystemPatcher  an instance of the patcher
 	 *
 	 * @since   12.1
 	 */
@@ -108,7 +108,7 @@ class JFilesystemPatcher
 	/**
 	 * Reset the pacher
 	 *
-	 * @return  JFilesystemPatcher  This object for chaining
+     * @return  JFilesystemPatcher  This object for chaining
 	 */
 	public function reset()
 	{
@@ -124,7 +124,7 @@ class JFilesystemPatcher
 	 *
 	 * @throw  RuntimeException
 	 *
-	 * @return integer the number of files patched
+     * @return  integer  the number of files patched
 	 */
 	public function apply()
 	{
@@ -209,11 +209,11 @@ class JFilesystemPatcher
 	/**
 	 * Add a unified diff file to the patcher
 	 *
-	 * @param   string  $filename  Path to the unified diff file
-	 * @param   string  $root      The files root path
-	 * @param   string  $strip     The number of '/' to strip
+     * @param  string  $filename  Path to the unified diff file
+     * @param  string  $root      The files root path
+     * @param  string  $strip     The number of '/' to strip
 	 *
-	 * @return	JFilesystemPatch $this for chaining
+     * @return  JFilesystemPatch  $this for chaining
 	 *
 	 * @since   12.1
 	 */
@@ -225,11 +225,11 @@ class JFilesystemPatcher
 	/**
 	 * Add a unified diff string to the patcher
 	 *
-	 * @param   string  $udiff  Unified diff input string
-	 * @param   string  $root   The files root path
-	 * @param   string  $strip  The number of '/' to strip
+     * @param  string  $udiff  Unified diff input string
+     * @param  string  $root   The files root path
+     * @param  string  $strip  The number of '/' to strip
 	 *
-	 * @return	JFilesystemPatch $this for chaining
+     * @return  JFilesystemPatch  $this for chaining
 	 *
 	 * @since   12.1
 	 */
@@ -246,9 +246,9 @@ class JFilesystemPatcher
 	/**
 	 * Separate CR or CRLF lines
 	 *
-	 * @param   string  $data  Input string
+     * @param  string  $data  Input string
 	 *
-	 * @return  array  The lines of the inputdestination file
+     * @return  array  The lines of the inputdestination file
 	 *
 	 * @since   12.1
 	 */
@@ -262,11 +262,11 @@ class JFilesystemPatcher
 	 *
 	 * The internal array pointer of $lines is on the next line after the finding
 	 *
-	 * @param   array   &$lines  The udiff array of lines
-	 * @param   string  &$src    The source file
-	 * @param   string  &$dst    The destination file
+     * @param  array   &$lines  The udiff array of lines
+     * @param  string  &$src    The source file
+     * @param  string  &$dst    The destination file
 	 *
-	 * @return  boolean  TRUE in case of success, FALSE in case of failure
+     * @return  boolean  TRUE in case of success, FALSE in case of failure
 	 *
 	 * @throw  RuntimeException
 	 */
@@ -320,13 +320,13 @@ class JFilesystemPatcher
 	 *
 	 * The internal array pointer of $lines is on the next line after the finding
 	 *
-	 * @param   array   &$lines     The udiff array of lines
-	 * @param   string  &$src_line  The beginning of the patch for the source file
-	 * @param   string  &$src_size  The size of the patch for the source file
-	 * @param   string  &$dst_line  The beginning of the patch for the destination file
-	 * @param   string  &$dst_size  The size of the patch for the destination file
+     * @param  array   &$lines     The udiff array of lines
+     * @param  string  &$src_line  The beginning of the patch for the source file
+     * @param  string  &$src_size  The size of the patch for the source file
+     * @param  string  &$dst_line  The beginning of the patch for the destination file
+     * @param  string  &$dst_size  The size of the patch for the destination file
 	 *
-	 * @return  boolean  TRUE in case of success, false in case of failure
+     * @return  boolean  TRUE in case of success, false in case of failure
 	 *
 	 * @throw  RuntimeException
 	 */
@@ -371,15 +371,15 @@ class JFilesystemPatcher
 	/**
 	 * Apply the patch
 	 *
-	 * @param   array   &$lines    The udiff array of lines
-	 * @param   string  $src       The source file
-	 * @param   string  $dst       The destination file
-	 * @param   string  $src_line  The beginning of the patch for the source file
-	 * @param   string  $src_size  The size of the patch for the source file
-	 * @param   string  $dst_line  The beginning of the patch for the destination file
-	 * @param   string  $dst_size  The size of the patch for the destination file
+     * @param  array   &$lines    The udiff array of lines
+     * @param  string  $src       The source file
+     * @param  string  $dst       The destination file
+     * @param  string  $src_line  The beginning of the patch for the source file
+     * @param  string  $src_size  The size of the patch for the source file
+     * @param  string  $dst_line  The beginning of the patch for the destination file
+     * @param  string  $dst_size  The size of the patch for the destination file
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @throw  RuntimeException
 	 */
@@ -479,9 +479,9 @@ class JFilesystemPatcher
 	/**
 	 * Get the lines of a source file
 	 *
-	 * @param   string  $src  The path of a file
+     * @param  string  $src  The path of a file
 	 *
-	 * @return  array  The lines of the source file
+     * @return  array  The lines of the source file
 	 *
 	 * @since   12.1
 	 */
@@ -504,10 +504,10 @@ class JFilesystemPatcher
 	/**
 	 * Get the lines of a destination file
 	 *
-	 * @param   string  $dst  The path of a destination file
-	 * @param   string  $src  The path of a source file
+     * @param  string  $dst  The path of a destination file
+     * @param  string  $src  The path of a source file
 	 *
-	 * @return  array  The lines of the destination file
+     * @return  array  The lines of the destination file
 	 *
 	 * @since   12.1
 	 */

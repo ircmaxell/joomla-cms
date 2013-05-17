@@ -21,12 +21,12 @@ class JImageFilterEdgedetect extends JImageFilter
 	/**
 	 * Method to apply a filter to an image resource.
 	 *
-	 * @param   array  $options  An array of options for the filter.
+     * @param  array  $options  An array of options for the filter.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.3
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function execute(array $options = array())
 	{

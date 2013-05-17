@@ -29,11 +29,11 @@ abstract class JHtmlCategory
 	/**
 	 * Returns an array of categories for the given extension.
 	 *
-	 * @param   string  $extension  The extension option e.g. com_something.
-	 * @param   array   $config     An array of configuration options. By default, only
+     * @param  string  $extension  The extension option e.g. com_something.
+     * @param  array   $config     An array of configuration options. By default, only
 	 *                              published and unpublished categories are returned.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   1.5
 	 */
@@ -106,10 +106,10 @@ abstract class JHtmlCategory
 	/**
 	 * Returns an array of categories for the given extension.
 	 *
-	 * @param   string  $extension  The extension option.
-	 * @param   array   $config     An array of configuration options. By default, only published and unpublished categories are returned.
+     * @param  string  $extension  The extension option.
+     * @param  array   $config     An array of configuration options. By default, only published and unpublished categories are returned.
 	 *
-	 * @return  array   Categories for the extension
+     * @return  array  Categories for the extension
 	 *
 	 * @since   1.6
 	 */

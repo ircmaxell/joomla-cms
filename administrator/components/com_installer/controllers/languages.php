@@ -20,7 +20,7 @@ class InstallerControllerLanguages extends JControllerLegacy
 	/**
 	 * Finds new Languages.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5.7
 	 */
@@ -49,7 +49,7 @@ class InstallerControllerLanguages extends JControllerLegacy
 	/**
 	 * Purge the updates list.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5.7
 	 */
@@ -68,7 +68,7 @@ class InstallerControllerLanguages extends JControllerLegacy
 	/**
 	 * Install languages.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5.7
 	 */

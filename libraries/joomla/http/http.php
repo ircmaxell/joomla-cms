@@ -33,9 +33,9 @@ class JHttp
 	/**
 	 * Constructor.
 	 *
-	 * @param   JRegistry       $options    Client options object. If the registry contains any headers.* elements,
+     * @param  JRegistry  $options  Client options object. If the registry contains any headers.* elements,
 	 *                                      these will be added to the request headers.
-	 * @param   JHttpTransport  $transport  The HTTP transport object.
+     * @param  JHttpTransport  $transport  The HTTP transport object.
 	 *
 	 * @since   11.3
 	 */
@@ -48,9 +48,9 @@ class JHttp
 	/**
 	 * Get an option from the HTTP client.
 	 *
-	 * @param   string  $key  The name of the option to get.
+     * @param  string  $key  The name of the option to get.
 	 *
-	 * @return  mixed  The option value.
+     * @return  mixed  The option value.
 	 *
 	 * @since   11.3
 	 */
@@ -62,10 +62,10 @@ class JHttp
 	/**
 	 * Set an option for the HTTP client.
 	 *
-	 * @param   string  $key    The name of the option to set.
-	 * @param   mixed   $value  The option value to set.
+     * @param  string  $key    The name of the option to set.
+     * @param  mixed   $value  The option value to set.
 	 *
-	 * @return  JHttp  This object for method chaining.
+     * @return  JHttp  This object for method chaining.
 	 *
 	 * @since   11.3
 	 */
@@ -79,11 +79,11 @@ class JHttp
 	/**
 	 * Method to send the OPTIONS command to the server.
 	 *
-	 * @param   string   $url      Path to the resource.
-	 * @param   array    $headers  An array of name-value pairs to include in the header of the request.
-	 * @param   integer  $timeout  Read timeout in seconds.
+     * @param  string   $url      Path to the resource.
+     * @param  array    $headers  An array of name-value pairs to include in the header of the request.
+     * @param  integer  $timeout  Read timeout in seconds.
 	 *
-	 * @return  JHttpResponse
+     * @return  JHttpResponse
 	 *
 	 * @since   11.3
 	 */
@@ -111,11 +111,11 @@ class JHttp
 	/**
 	 * Method to send the HEAD command to the server.
 	 *
-	 * @param   string   $url      Path to the resource.
-	 * @param   array    $headers  An array of name-value pairs to include in the header of the request.
-	 * @param   integer  $timeout  Read timeout in seconds.
+     * @param  string   $url      Path to the resource.
+     * @param  array    $headers  An array of name-value pairs to include in the header of the request.
+     * @param  integer  $timeout  Read timeout in seconds.
 	 *
-	 * @return  JHttpResponse
+     * @return  JHttpResponse
 	 *
 	 * @since   11.3
 	 */
@@ -143,11 +143,11 @@ class JHttp
 	/**
 	 * Method to send the GET command to the server.
 	 *
-	 * @param   string   $url      Path to the resource.
-	 * @param   array    $headers  An array of name-value pairs to include in the header of the request.
-	 * @param   integer  $timeout  Read timeout in seconds.
+     * @param  string   $url      Path to the resource.
+     * @param  array    $headers  An array of name-value pairs to include in the header of the request.
+     * @param  integer  $timeout  Read timeout in seconds.
 	 *
-	 * @return  JHttpResponse
+     * @return  JHttpResponse
 	 *
 	 * @since   11.3
 	 */
@@ -175,12 +175,12 @@ class JHttp
 	/**
 	 * Method to send the POST command to the server.
 	 *
-	 * @param   string   $url      Path to the resource.
-	 * @param   mixed    $data     Either an associative array or a string to be sent with the request.
-	 * @param   array    $headers  An array of name-value pairs to include in the header of the request
-	 * @param   integer  $timeout  Read timeout in seconds.
+     * @param  string   $url      Path to the resource.
+     * @param  mixed    $data     Either an associative array or a string to be sent with the request.
+     * @param  array    $headers  An array of name-value pairs to include in the header of the request
+     * @param  integer  $timeout  Read timeout in seconds.
 	 *
-	 * @return  JHttpResponse
+     * @return  JHttpResponse
 	 *
 	 * @since   11.3
 	 */
@@ -208,12 +208,12 @@ class JHttp
 	/**
 	 * Method to send the PUT command to the server.
 	 *
-	 * @param   string   $url      Path to the resource.
-	 * @param   mixed    $data     Either an associative array or a string to be sent with the request.
-	 * @param   array    $headers  An array of name-value pairs to include in the header of the request.
-	 * @param   integer  $timeout  Read timeout in seconds.
+     * @param  string   $url      Path to the resource.
+     * @param  mixed    $data     Either an associative array or a string to be sent with the request.
+     * @param  array    $headers  An array of name-value pairs to include in the header of the request.
+     * @param  integer  $timeout  Read timeout in seconds.
 	 *
-	 * @return  JHttpResponse
+     * @return  JHttpResponse
 	 *
 	 * @since   11.3
 	 */
@@ -241,11 +241,11 @@ class JHttp
 	/**
 	 * Method to send the DELETE command to the server.
 	 *
-	 * @param   string   $url      Path to the resource.
-	 * @param   array    $headers  An array of name-value pairs to include in the header of the request.
-	 * @param   integer  $timeout  Read timeout in seconds.
+     * @param  string   $url      Path to the resource.
+     * @param  array    $headers  An array of name-value pairs to include in the header of the request.
+     * @param  integer  $timeout  Read timeout in seconds.
 	 *
-	 * @return  JHttpResponse
+     * @return  JHttpResponse
 	 *
 	 * @since   11.3
 	 */
@@ -273,11 +273,11 @@ class JHttp
 	/**
 	 * Method to send the TRACE command to the server.
 	 *
-	 * @param   string   $url      Path to the resource.
-	 * @param   array    $headers  An array of name-value pairs to include in the header of the request.
-	 * @param   integer  $timeout  Read timeout in seconds.
+     * @param  string   $url      Path to the resource.
+     * @param  array    $headers  An array of name-value pairs to include in the header of the request.
+     * @param  integer  $timeout  Read timeout in seconds.
 	 *
-	 * @return  JHttpResponse
+     * @return  JHttpResponse
 	 *
 	 * @since   11.3
 	 */
@@ -305,12 +305,12 @@ class JHttp
 	/**
 	 * Method to send the PATCH command to the server.
 	 *
-	 * @param   string   $url      Path to the resource.
-	 * @param   mixed    $data     Either an associative array or a string to be sent with the request.
-	 * @param   array    $headers  An array of name-value pairs to include in the header of the request.
-	 * @param   integer  $timeout  Read timeout in seconds.
+     * @param  string   $url      Path to the resource.
+     * @param  mixed    $data     Either an associative array or a string to be sent with the request.
+     * @param  array    $headers  An array of name-value pairs to include in the header of the request.
+     * @param  integer  $timeout  Read timeout in seconds.
 	 *
-	 * @return  JHttpResponse
+     * @return  JHttpResponse
 	 *
 	 * @since   12.2
 	 */

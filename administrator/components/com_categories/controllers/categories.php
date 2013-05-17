@@ -21,10 +21,10 @@ class CategoriesControllerCategories extends JControllerAdmin
 	/**
 	 * Proxy for getModel
 	 *
-	 * @param   string	$name	The model name. Optional.
-	 * @param   string	$prefix	The class prefix. Optional.
+     * @param  string  $name    The model name. Optional.
+     * @param  string  $prefix  The class prefix. Optional.
 	 *
-	 * @return  object  The model.
+     * @return  object  The model.
 	 * @since   1.6
 	 */
 	public function getModel($name = 'Category', $prefix = 'CategoriesModel', $config = array('ignore_request' => true))
@@ -36,7 +36,7 @@ class CategoriesControllerCategories extends JControllerAdmin
 	/**
 	 * Rebuild the nested set tree.
 	 *
-	 * @return  bool	False on failure or error, true on success.
+     * @return  bool  False on failure or error, true on success.
 	 * @since   1.6
 	 */
 	public function rebuild()
@@ -65,7 +65,7 @@ class CategoriesControllerCategories extends JControllerAdmin
 	/**
 	 * Save the manual order inputs from the categories list page.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.6
 	 */
 	public function saveorder()
@@ -92,7 +92,7 @@ class CategoriesControllerCategories extends JControllerAdmin
 	/**
 	 * Method to save the submitted ordering values for records via AJAX.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

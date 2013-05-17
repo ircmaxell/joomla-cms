@@ -56,7 +56,7 @@ class CheckinController extends JControllerLegacy
 	 *
 	 * @param   string	The name of the active view.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   1.6
 	 */
 	protected function addSubmenu($vName)

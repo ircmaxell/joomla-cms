@@ -22,7 +22,7 @@ class PlgEditorNone extends JPlugin
 	 * Method to handle the onInitEditor event.
 	 *  - Initialises the Editor
 	 *
-	 * @return  string	JavaScript Initialization string
+     * @return  string  JavaScript Initialization string
 	 * @since 1.5
 	 */
 	public function onInit()
@@ -36,7 +36,8 @@ class PlgEditorNone extends JPlugin
 							myField.focus();
 							sel = document.selection.createRange();
 							sel.text = myValue;
-						} else if (myField.selectionStart || myField.selectionStart == '0')
+						}
+						else if (myField.selectionStart || myField.selectionStart == '0')
 						{
 							// MOZILLA/NETSCAPE support
 							var startPos = myField.selectionStart;
@@ -44,7 +45,8 @@ class PlgEditorNone extends JPlugin
 							myField.value = myField.value.substring(0, startPos)
 								+ myValue
 								+ myField.value.substring(endPos, myField.value.length);
-						} else {
+						}
+						else {
 							myField.value += myValue;
 						}
 					}
@@ -58,7 +60,7 @@ class PlgEditorNone extends JPlugin
 	 *
 	 * Not applicable in this editor.
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function onSave()
 	{
@@ -68,9 +70,9 @@ class PlgEditorNone extends JPlugin
 	/**
 	 * Get the editor content.
 	 *
-	 * @param   string	$id		The id of the editor field.
+     * @param  string  $id  The id of the editor field.
 	 *
-	 * @return  string
+     * @return  string
 	 */
 	public function onGetContent($id)
 	{
@@ -80,10 +82,10 @@ class PlgEditorNone extends JPlugin
 	/**
 	 * Set the editor content.
 	 *
-	 * @param   string	$id		The id of the editor field.
-	 * @param   string	$html	The content to set.
+     * @param  string  $id    The id of the editor field.
+     * @param  string  $html  The content to set.
 	 *
-	 * @return  string
+     * @return  string
 	 */
 	public function onSetContent($id, $html)
 	{
@@ -91,9 +93,9 @@ class PlgEditorNone extends JPlugin
 	}
 
 	/**
-	 * @param   string	$id
+     * @param  string  $id
 	 *
-	 * @return  string
+     * @return  string
 	 */
 	public function onGetInsertMethod($id)
 	{
@@ -116,19 +118,19 @@ class PlgEditorNone extends JPlugin
 	/**
 	 * Display the editor area.
 	 *
-	 * @param   string	$name		The control name.
-	 * @param   string	$html		The contents of the text area.
-	 * @param   string	$width		The width of the text area (px or %).
-	 * @param   string	$height		The height of the text area (px or %).
-	 * @param   integer  $col		The number of columns for the textarea.
-	 * @param   integer  $row		The number of rows for the textarea.
-	 * @param   boolean	$buttons	True and the editor buttons will be displayed.
-	 * @param   string	$id			An optional ID for the textarea (note: since 1.6). If not supplied the name is used.
-	 * @param   string	$asset
-	 * @param   object	$author
-	 * @param   array  $params		Associative array of editor parameters.
+     * @param  string   $name     The control name.
+     * @param  string   $html     The contents of the text area.
+     * @param  string   $width    The width of the text area (px or %).
+     * @param  string   $height   The height of the text area (px or %).
+     * @param  integer  $col      The number of columns for the textarea.
+     * @param  integer  $row      The number of rows for the textarea.
+     * @param  boolean  $buttons  True and the editor buttons will be displayed.
+     * @param  string   $id       An optional ID for the textarea (note: since 1.6). If not supplied the name is used.
+     * @param  string   $asset
+     * @param  object   $author
+     * @param  array    $params   Associative array of editor parameters.
 	 *
-	 * @return  string
+     * @return  string
 	 */
 	public function onDisplay($name, $content, $width, $height, $col, $row, $buttons = true, $id = null, $asset = null, $author = null, $params = array())
 	{

@@ -33,13 +33,13 @@ class JApplicationCli extends JApplicationBase
 	/**
 	 * Class constructor.
 	 *
-	 * @param   mixed  $input       An optional argument to provide dependency injection for the application's
+     * @param  mixed  $input  An optional argument to provide dependency injection for the application's
 	 *                              input object.  If the argument is a JInputCli object that object will become
 	 *                              the application's input object, otherwise a default input object is created.
-	 * @param   mixed  $config      An optional argument to provide dependency injection for the application's
+     * @param  mixed  $config  An optional argument to provide dependency injection for the application's
 	 *                              config object.  If the argument is a JRegistry object that object will become
 	 *                              the application's config object, otherwise a default config object is created.
-	 * @param   mixed  $dispatcher  An optional argument to provide dependency injection for the application's
+     * @param  mixed  $dispatcher  An optional argument to provide dependency injection for the application's
 	 *                              event dispatcher.  If the argument is a JEventDispatcher object that object will become
 	 *                              the application's event dispatcher, if it is null then the default event dispatcher
 	 *                              will be created based on the application's loadDispatcher() method.
@@ -98,10 +98,10 @@ class JApplicationCli extends JApplicationBase
 	/**
 	 * Returns a property of the object or the default value if the property is not set.
 	 *
-	 * @param   string  $key      The name of the property.
-	 * @param   mixed   $default  The default value (optional) if none is set.
+     * @param  string  $key      The name of the property.
+     * @param  mixed   $default  The default value (optional) if none is set.
 	 *
-	 * @return  mixed   The value of the configuration.
+     * @return  mixed  The value of the configuration.
 	 *
 	 * @since   11.3
 	 */
@@ -115,9 +115,9 @@ class JApplicationCli extends JApplicationBase
 	 *
 	 * This method must be invoked as: $cli = JApplicationCli::getInstance();
 	 *
-	 * @param   string  $name  The name (optional) of the JApplicationCli class to instantiate.
+     * @param  string  $name  The name (optional) of the JApplicationCli class to instantiate.
 	 *
-	 * @return  JApplicationCli
+     * @return  JApplicationCli
 	 *
 	 * @since   11.1
 	 */
@@ -142,7 +142,7 @@ class JApplicationCli extends JApplicationBase
 	/**
 	 * Execute the application.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -161,9 +161,9 @@ class JApplicationCli extends JApplicationBase
 	/**
 	 * Load an object or array into the application configuration object.
 	 *
-	 * @param   mixed  $data  Either an array or object to be loaded into the configuration object.
+     * @param  mixed  $data  Either an array or object to be loaded into the configuration object.
 	 *
-	 * @return  JApplicationCli  Instance of $this to allow chaining.
+     * @return  JApplicationCli  Instance of $this to allow chaining.
 	 *
 	 * @since   11.1
 	 */
@@ -185,10 +185,10 @@ class JApplicationCli extends JApplicationBase
 	/**
 	 * Write a string to standard output.
 	 *
-	 * @param   string   $text  The text to display.
-	 * @param   boolean  $nl    True (default) to append a new line at the end of the output string.
+     * @param  string   $text  The text to display.
+     * @param  boolean  $nl    True (default) to append a new line at the end of the output string.
 	 *
-	 * @return  JApplicationCli  Instance of $this to allow chaining.
+     * @return  JApplicationCli  Instance of $this to allow chaining.
 	 *
 	 * @codeCoverageIgnore
 	 * @since   11.1
@@ -203,7 +203,7 @@ class JApplicationCli extends JApplicationBase
 	/**
 	 * Get a value from standard input.
 	 *
-	 * @return  string  The input string from standard input.
+     * @return  string  The input string from standard input.
 	 *
 	 * @codeCoverageIgnore
 	 * @since   11.1
@@ -216,10 +216,10 @@ class JApplicationCli extends JApplicationBase
 	/**
 	 * Modifies a property of the object, creating it if it does not already exist.
 	 *
-	 * @param   string  $key    The name of the property.
-	 * @param   mixed   $value  The value of the property to set (optional).
+     * @param  string  $key    The name of the property.
+     * @param  mixed   $value  The value of the property to set (optional).
 	 *
-	 * @return  mixed   Previous value of the property
+     * @return  mixed  Previous value of the property
 	 *
 	 * @since   11.3
 	 */
@@ -236,11 +236,11 @@ class JApplicationCli extends JApplicationBase
 	 * will extend this method in child classes to provide configuration data from whatever data source is relevant
 	 * for your specific application.
 	 *
-	 * @param   string  $file   The path and filename of the configuration file. If not provided, configuration.php
+     * @param  string  $file  The path and filename of the configuration file. If not provided, configuration.php
 	 *                          in JPATH_BASE will be used.
-	 * @param   string  $class  The class name to instantiate.
+     * @param  string  $class  The class name to instantiate.
 	 *
-	 * @return  mixed   Either an array or object to be loaded into the configuration object.
+     * @return  mixed  Either an array or object to be loaded into the configuration object.
 	 *
 	 * @since   11.1
 	 */
@@ -282,7 +282,7 @@ class JApplicationCli extends JApplicationBase
 	 * Method to run the application routines.  Most likely you will want to instantiate a controller
 	 * and execute it, or perform some sort of task directly.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @codeCoverageIgnore
 	 * @since   11.3

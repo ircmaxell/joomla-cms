@@ -20,7 +20,7 @@ class ContentModelArticles extends JModelList
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $config  An optional associative array of configuration settings.
+     * @param  array  $config  An optional associative array of configuration settings.
 	 *
 	 * @since   1.6
 	 * @see     JController
@@ -65,10 +65,10 @@ class ContentModelArticles extends JModelList
 	 *
 	 * Note. Calling getState in this method will result in recursion.
 	 *
-	 * @param   string  $ordering   An optional ordering field.
-	 * @param   string  $direction  An optional direction (asc|desc).
+     * @param  string  $ordering   An optional ordering field.
+     * @param  string  $direction  An optional direction (asc|desc).
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   1.6
 	 */
@@ -125,9 +125,9 @@ class ContentModelArticles extends JModelList
 	 * different modules that might need different sets of data or different
 	 * ordering requirements.
 	 *
-	 * @param   string  $id    A prefix for the store id.
+     * @param  string  $id  A prefix for the store id.
 	 *
-	 * @return  string  A store id.
+     * @return  string  A store id.
 	 * @since   1.6
 	 */
 	protected function getStoreId($id = '')
@@ -146,7 +146,7 @@ class ContentModelArticles extends JModelList
 	/**
 	 * Build an SQL query to load the list data.
 	 *
-	 * @return  JDatabaseQuery
+     * @return  JDatabaseQuery
 	 * @since   1.6
 	 */
 	protected function getListQuery()
@@ -319,7 +319,7 @@ class ContentModelArticles extends JModelList
 	/**
 	 * Build a list of authors
 	 *
-	 * @return  JDatabaseQuery
+     * @return  JDatabaseQuery
 	 * @since   1.6
 	 */
 	public function getAuthors()
@@ -346,7 +346,7 @@ class ContentModelArticles extends JModelList
 	 * Method to get a list of articles.
 	 * Overridden to add a check for access levels.
 	 *
-	 * @return  mixed  An array of data items on success, false on failure.
+     * @return  mixed  An array of data items on success, false on failure.
 	 * @since   1.6.1
 	 */
 	public function getItems()

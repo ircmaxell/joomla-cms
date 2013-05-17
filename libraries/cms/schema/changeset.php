@@ -50,8 +50,8 @@ class JSchemaChangeset
 	 * Constructor: builds array of $changeItems by processing the .sql files in a folder.
 	 * The folder for the Joomla core updates is administrator/components/com_admin/sql/updates/<database>.
 	 *
-	 * @param   JDatabaseDriver  $db      The current database object
-	 * @param   string           $folder  The full path to the folder containing the update queries
+     * @param  JDatabaseDriver  $db      The current database object
+     * @param  string           $folder  The full path to the folder containing the update queries
 	 *
 	 * @since   2.5
 	 */
@@ -70,10 +70,10 @@ class JSchemaChangeset
 	/**
 	 * Returns a reference to the JSchemaChangeset object, only creating it if it doesn't already exist.
 	 *
-	 * @param   JDatabaseDriver  $db      The current database object
-	 * @param   string           $folder  The full path to the folder containing the update queries
+     * @param  JDatabaseDriver  $db      The current database object
+     * @param  string           $folder  The full path to the folder containing the update queries
 	 *
-	 * @return  JSchemaChangeset
+     * @return  JSchemaChangeset
 	 *
 	 * @since   2.5
 	 */
@@ -94,7 +94,7 @@ class JSchemaChangeset
 	 * Note these are not database errors but rather situations where
 	 * the current schema is not up to date.
 	 *
-	 * @return   array Array of errors if any.
+     * @return  array  Array of errors if any.
 	 *
 	 * @since    2.5
 	 */
@@ -115,7 +115,7 @@ class JSchemaChangeset
 	/**
 	 * Runs the update query to apply the change to the database
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -165,7 +165,7 @@ class JSchemaChangeset
 	 * the file name of the last file should match the database schema version
 	 * in the #__schemas table.
 	 *
-	 * @return  string  the schema version for the database
+     * @return  string  the schema version for the database
 	 *
 	 * @since   2.5
 	 */
@@ -179,7 +179,7 @@ class JSchemaChangeset
 	/**
 	 * Get list of SQL update files for this database
 	 *
-	 * @return  array  list of sql update full-path names
+     * @return  array  list of sql update full-path names
 	 *
 	 * @since   2.5
 	 */
@@ -211,9 +211,9 @@ class JSchemaChangeset
 	/**
 	 * Get array of SQL queries
 	 *
-	 * @param   array  $sqlfiles  Array of .sql update filenames.
+     * @param  array  $sqlfiles  Array of .sql update filenames.
 	 *
-	 * @return  array  Array of stdClass objects where:
+     * @return  array  Array of stdClass objects where:
 	 *                    file=filename,
 	 *                    update_query = text of SQL update query
 	 *

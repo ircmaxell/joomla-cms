@@ -21,15 +21,15 @@ class JGithubIssues extends JGithubObject
 	/**
 	 * Method to create an issue.
 	 *
-	 * @param   string   $user       The name of the owner of the GitHub repository.
-	 * @param   string   $repo       The name of the GitHub repository.
-	 * @param   string   $title      The title of the new issue.
-	 * @param   string   $body       The body text for the new issue.
-	 * @param   string   $assignee   The login for the GitHub user that this issue should be assigned to.
-	 * @param   integer  $milestone  The milestone to associate this issue with.
-	 * @param   array    $labels     The labels to associate with this issue.
+     * @param  string   $user       The name of the owner of the GitHub repository.
+     * @param  string   $repo       The name of the GitHub repository.
+     * @param  string   $title      The title of the new issue.
+     * @param  string   $body       The body text for the new issue.
+     * @param  string   $assignee   The login for the GitHub user that this issue should be assigned to.
+     * @param  integer  $milestone  The milestone to associate this issue with.
+     * @param  array    $labels     The labels to associate with this issue.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -72,12 +72,12 @@ class JGithubIssues extends JGithubObject
 	/**
 	 * Method to create a comment on an issue.
 	 *
-	 * @param   string   $user     The name of the owner of the GitHub repository.
-	 * @param   string   $repo     The name of the GitHub repository.
-	 * @param   integer  $issueId  The issue number.
-	 * @param   string   $body     The comment body text.
+     * @param  string   $user     The name of the owner of the GitHub repository.
+     * @param  string   $repo     The name of the GitHub repository.
+     * @param  integer  $issueId  The issue number.
+     * @param  string   $body     The comment body text.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -110,12 +110,12 @@ class JGithubIssues extends JGithubObject
 	/**
 	 * Method to create a label on a repo.
 	 *
-	 * @param   string  $user   The name of the owner of the GitHub repository.
-	 * @param   string  $repo   The name of the GitHub repository.
-	 * @param   string  $name   The label name.
-	 * @param   string  $color  The label color.
+     * @param  string  $user   The name of the owner of the GitHub repository.
+     * @param  string  $repo   The name of the GitHub repository.
+     * @param  string  $name   The label name.
+     * @param  string  $color  The label color.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.3
 	 */
@@ -149,11 +149,11 @@ class JGithubIssues extends JGithubObject
 	/**
 	 * Method to delete a comment on an issue.
 	 *
-	 * @param   string   $user       The name of the owner of the GitHub repository.
-	 * @param   string   $repo       The name of the GitHub repository.
-	 * @param   integer  $commentId  The id of the comment to delete.
+     * @param  string   $user       The name of the owner of the GitHub repository.
+     * @param  string   $repo       The name of the GitHub repository.
+     * @param  integer  $commentId  The id of the comment to delete.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.3
 	 */
@@ -177,11 +177,11 @@ class JGithubIssues extends JGithubObject
 	/**
 	 * Method to delete a label on a repo.
 	 *
-	 * @param   string  $user   The name of the owner of the GitHub repository.
-	 * @param   string  $repo   The name of the GitHub repository.
-	 * @param   string  $label  The label name.
+     * @param  string  $user   The name of the owner of the GitHub repository.
+     * @param  string  $repo   The name of the GitHub repository.
+     * @param  string  $label  The label name.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.3
 	 */
@@ -205,17 +205,17 @@ class JGithubIssues extends JGithubObject
 	/**
 	 * Method to update an issue.
 	 *
-	 * @param   string   $user       The name of the owner of the GitHub repository.
-	 * @param   string   $repo       The name of the GitHub repository.
-	 * @param   integer  $issueId    The issue number.
-	 * @param   string   $state      The optional new state for the issue. [open, closed]
-	 * @param   string   $title      The title of the new issue.
-	 * @param   string   $body       The body text for the new issue.
-	 * @param   string   $assignee   The login for the GitHub user that this issue should be assigned to.
-	 * @param   integer  $milestone  The milestone to associate this issue with.
-	 * @param   array    $labels     The labels to associate with this issue.
+     * @param  string   $user       The name of the owner of the GitHub repository.
+     * @param  string   $repo       The name of the GitHub repository.
+     * @param  integer  $issueId    The issue number.
+     * @param  string   $state      The optional new state for the issue. [open, closed]
+     * @param  string   $title      The title of the new issue.
+     * @param  string   $body       The body text for the new issue.
+     * @param  string   $assignee   The login for the GitHub user that this issue should be assigned to.
+     * @param  integer  $milestone  The milestone to associate this issue with.
+     * @param  array    $labels     The labels to associate with this issue.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -289,12 +289,12 @@ class JGithubIssues extends JGithubObject
 	/**
 	 * Method to update a comment on an issue.
 	 *
-	 * @param   string   $user       The name of the owner of the GitHub repository.
-	 * @param   string   $repo       The name of the GitHub repository.
-	 * @param   integer  $commentId  The id of the comment to update.
-	 * @param   string   $body       The new body text for the comment.
+     * @param  string   $user       The name of the owner of the GitHub repository.
+     * @param  string   $repo       The name of the GitHub repository.
+     * @param  integer  $commentId  The id of the comment to update.
+     * @param  string   $body       The new body text for the comment.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -327,13 +327,13 @@ class JGithubIssues extends JGithubObject
 	/**
 	 * Method to update a label on a repo.
 	 *
-	 * @param   string  $user   The name of the owner of the GitHub repository.
-	 * @param   string  $repo   The name of the GitHub repository.
-	 * @param   string  $label  The label name.
-	 * @param   string  $name   The label name.
-	 * @param   string  $color  The label color.
+     * @param  string  $user   The name of the owner of the GitHub repository.
+     * @param  string  $repo   The name of the GitHub repository.
+     * @param  string  $label  The label name.
+     * @param  string  $name   The label name.
+     * @param  string  $color  The label color.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.3
 	 */
@@ -367,11 +367,11 @@ class JGithubIssues extends JGithubObject
 	/**
 	 * Method to get a single issue.
 	 *
-	 * @param   string   $user     The name of the owner of the GitHub repository.
-	 * @param   string   $repo     The name of the GitHub repository.
-	 * @param   integer  $issueId  The issue number.
+     * @param  string   $user     The name of the owner of the GitHub repository.
+     * @param  string   $repo     The name of the GitHub repository.
+     * @param  integer  $issueId  The issue number.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -397,11 +397,11 @@ class JGithubIssues extends JGithubObject
 	/**
 	 * Method to get a specific comment on an issue.
 	 *
-	 * @param   string   $user       The name of the owner of the GitHub repository.
-	 * @param   string   $repo       The name of the GitHub repository.
-	 * @param   integer  $commentId  The comment id to get.
+     * @param  string   $user       The name of the owner of the GitHub repository.
+     * @param  string   $repo       The name of the GitHub repository.
+     * @param  integer  $commentId  The comment id to get.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -427,13 +427,13 @@ class JGithubIssues extends JGithubObject
 	/**
 	 * Method to get the list of comments on an issue.
 	 *
-	 * @param   string   $user     The name of the owner of the GitHub repository.
-	 * @param   string   $repo     The name of the GitHub repository.
-	 * @param   integer  $issueId  The issue number.
-	 * @param   integer  $page     The page number from which to get items.
-	 * @param   integer  $limit    The number of items on a page.
+     * @param  string   $user     The name of the owner of the GitHub repository.
+     * @param  string   $repo     The name of the GitHub repository.
+     * @param  integer  $issueId  The issue number.
+     * @param  integer  $page     The page number from which to get items.
+     * @param  integer  $limit    The number of items on a page.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.3
 	 */
@@ -459,11 +459,11 @@ class JGithubIssues extends JGithubObject
 	/**
 	 * Method to get a specific label on a repo.
 	 *
-	 * @param   string  $user  The name of the owner of the GitHub repository.
-	 * @param   string  $repo  The name of the GitHub repository.
-	 * @param   string  $name  The label name to get.
+     * @param  string  $user  The name of the owner of the GitHub repository.
+     * @param  string  $repo  The name of the GitHub repository.
+     * @param  string  $name  The label name to get.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.3
 	 */
@@ -489,10 +489,10 @@ class JGithubIssues extends JGithubObject
 	/**
 	 * Method to get the list of labels on a repo.
 	 *
-	 * @param   string  $user  The name of the owner of the GitHub repository.
-	 * @param   string  $repo  The name of the GitHub repository.
+     * @param  string  $user  The name of the owner of the GitHub repository.
+     * @param  string  $repo  The name of the GitHub repository.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   12.3
 	 */
@@ -518,16 +518,16 @@ class JGithubIssues extends JGithubObject
 	/**
 	 * Method to list an authenticated user's issues.
 	 *
-	 * @param   string   $filter     The filter type: assigned, created, mentioned, subscribed.
-	 * @param   string   $state      The optional state to filter requests by. [open, closed]
-	 * @param   string   $labels     The list of comma separated Label names. Example: bug,ui,@high.
-	 * @param   string   $sort       The sort order: created, updated, comments, default: created.
-	 * @param   string   $direction  The list direction: asc or desc, default: desc.
-	 * @param   JDate    $since      The date/time since when issues should be returned.
-	 * @param   integer  $page       The page number from which to get items.
-	 * @param   integer  $limit      The number of items on a page.
+     * @param  string   $filter     The filter type: assigned, created, mentioned, subscribed.
+     * @param  string   $state      The optional state to filter requests by. [open, closed]
+     * @param  string   $labels     The list of comma separated Label names. Example: bug,ui,@high.
+     * @param  string   $sort       The sort order: created, updated, comments, default: created.
+     * @param  string   $direction  The list direction: asc or desc, default: desc.
+     * @param  JDate    $since      The date/time since when issues should be returned.
+     * @param  integer  $page       The page number from which to get items.
+     * @param  integer  $limit      The number of items on a page.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.3
 	 */
@@ -555,20 +555,20 @@ class JGithubIssues extends JGithubObject
 	/**
 	 * Method to list issues.
 	 *
-	 * @param   string   $user       The name of the owner of the GitHub repository.
-	 * @param   string   $repo       The name of the GitHub repository.
-	 * @param   string   $milestone  The milestone number, 'none', or *.
-	 * @param   string   $state      The optional state to filter requests by. [open, closed]
-	 * @param   string   $assignee   The assignee name, 'none', or *.
-	 * @param   string   $mentioned  The GitHub user name.
-	 * @param   string   $labels     The list of comma separated Label names. Example: bug,ui,@high.
-	 * @param   string   $sort       The sort order: created, updated, comments, default: created.
-	 * @param   string   $direction  The list direction: asc or desc, default: desc.
-	 * @param   JDate    $since      The date/time since when issues should be returned.
-	 * @param   integer  $page       The page number from which to get items.
-	 * @param   integer  $limit      The number of items on a page.
+     * @param  string   $user       The name of the owner of the GitHub repository.
+     * @param  string   $repo       The name of the GitHub repository.
+     * @param  string   $milestone  The milestone number, 'none', or *.
+     * @param  string   $state      The optional state to filter requests by. [open, closed]
+     * @param  string   $assignee   The assignee name, 'none', or *.
+     * @param  string   $mentioned  The GitHub user name.
+     * @param  string   $labels     The list of comma separated Label names. Example: bug,ui,@high.
+     * @param  string   $sort       The sort order: created, updated, comments, default: created.
+     * @param  string   $direction  The list direction: asc or desc, default: desc.
+     * @param  JDate    $since      The date/time since when issues should be returned.
+     * @param  integer  $page       The page number from which to get items.
+     * @param  integer  $limit      The number of items on a page.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.3
 	 */

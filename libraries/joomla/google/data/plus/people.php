@@ -21,8 +21,8 @@ class JGoogleDataPlusPeople extends JGoogleData
 	/**
 	 * Constructor.
 	 *
-	 * @param   JRegistry    $options  Google options object
-	 * @param   JGoogleAuth  $auth     Google data http client object
+     * @param  JRegistry    $options  Google options object
+     * @param  JGoogleAuth  $auth     Google data http client object
 	 *
 	 * @since   1234
 	 */
@@ -39,10 +39,10 @@ class JGoogleDataPlusPeople extends JGoogleData
 	/**
 	 * Get a person's profile.
 	 *
-	 * @param   string  $id      The ID of the person to get the profile for. The special value "me" can be used to indicate the authenticated user.
-	 * @param   string  $fields  Used to specify the fields you want returned.
+     * @param  string  $id      The ID of the person to get the profile for. The special value "me" can be used to indicate the authenticated user.
+     * @param  string  $fields  Used to specify the fields you want returned.
 	 *
-	 * @return  mixed  Data from Google
+     * @return  mixed  Data from Google
 	 *
 	 * @since   1234
 	 */
@@ -71,14 +71,14 @@ class JGoogleDataPlusPeople extends JGoogleData
 	/**
 	 * Search all public profiles.
 	 *
-	 * @param   string   $query     Specify a query string for full text search of public text in all profiles.
-	 * @param   string   $fields    Used to specify the fields you want returned.
-	 * @param   string   $language  Specify the preferred language to search with. https://developers.google.com/+/api/search#available-languages
-	 * @param   integer  $max       The maximum number of people to include in the response, used for paging.
-	 * @param   string   $token     The continuation token, used to page through large result sets. To get the next page of results, set this
+     * @param  string   $query     Specify a query string for full text search of public text in all profiles.
+     * @param  string   $fields    Used to specify the fields you want returned.
+     * @param  string   $language  Specify the preferred language to search with. https://developers.google.com/+/api/search#available-languages
+     * @param  integer  $max       The maximum number of people to include in the response, used for paging.
+     * @param  string   $token     The continuation token, used to page through large result sets. To get the next page of results, set this
 	 * 								parameter to the value of "nextPageToken" from the previous response. This token may be of any length.
 	 *
-	 * @return  mixed  Data from Google
+     * @return  mixed  Data from Google
 	 *
 	 * @since   1234
 	 */
@@ -125,14 +125,14 @@ class JGoogleDataPlusPeople extends JGoogleData
 	/**
 	 * List all of the people in the specified collection for a particular activity.
 	 *
-	 * @param   string   $activityId  The ID of the activity to get the list of people for.
-	 * @param   string   $collection  The collection of people to list. Acceptable values are "plusoners" and "resharers".
-	 * @param   string   $fields      Used to specify the fields you want returned.
-	 * @param   integer  $max         The maximum number of people to include in the response, used for paging.
-	 * @param   string   $token       The continuation token, used to page through large result sets. To get the next page of results, set this
+     * @param  string   $activityId  The ID of the activity to get the list of people for.
+     * @param  string   $collection  The collection of people to list. Acceptable values are "plusoners" and "resharers".
+     * @param  string   $fields      Used to specify the fields you want returned.
+     * @param  integer  $max         The maximum number of people to include in the response, used for paging.
+     * @param  string   $token       The continuation token, used to page through large result sets. To get the next page of results, set this
 	 * 								  parameter to the value of "nextPageToken" from the previous response. This token may be of any length.
 	 *
-	 * @return  mixed  Data from Google
+     * @return  mixed  Data from Google
 	 *
 	 * @since   1234
 	 */

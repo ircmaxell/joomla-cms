@@ -93,10 +93,10 @@ abstract class FinderIndexer
 	/**
 	 * Returns a reference to the FinderIndexer object.
 	 *
-	 * @return  FinderIndexer instance based on the database driver
+     * @return  FinderIndexer  instance based on the database driver
 	 *
 	 * @since   3.0
-	 * @throws  RuntimeException if driver class for indexer not present.
+     * @throws  RuntimeException  if driver class for indexer not present.
 	 */
 	public static function getInstance()
 	{
@@ -131,7 +131,7 @@ abstract class FinderIndexer
 	/**
 	 * Method to get the indexer state.
 	 *
-	 * @return  object  The indexer state object.
+     * @return  object  The indexer state object.
 	 *
 	 * @since   2.5
 	 */
@@ -195,9 +195,9 @@ abstract class FinderIndexer
 	/**
 	 * Method to set the indexer state.
 	 *
-	 * @param   object  $data  A new indexer state object.
+     * @param  object  $data  A new indexer state object.
 	 *
-	 * @return  boolean  True on success, false on failure.
+     * @return  boolean  True on success, false on failure.
 	 *
 	 * @since   2.5
 	 */
@@ -222,7 +222,7 @@ abstract class FinderIndexer
 	/**
 	 * Method to reset the indexer state.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -239,25 +239,25 @@ abstract class FinderIndexer
 	/**
 	 * Method to index a content item.
 	 *
-	 * @param   FinderIndexerResult  $item    The content item to index.
-	 * @param   string               $format  The format of the content. [optional]
+     * @param  FinderIndexerResult  $item    The content item to index.
+     * @param  string               $format  The format of the content. [optional]
 	 *
-	 * @return  integer  The ID of the record in the links table.
+     * @return  integer  The ID of the record in the links table.
 	 *
 	 * @since   2.5
-	 * @throws  Exception on database error.
+     * @throws  Exception  on database error.
 	 */
 	abstract public function index($item, $format = 'html');
 
 	/**
 	 * Method to remove a link from the index.
 	 *
-	 * @param   integer  $linkId  The id of the link.
+     * @param  integer  $linkId  The id of the link.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   2.5
-	 * @throws  Exception on database error.
+     * @throws  Exception  on database error.
 	 */
 	abstract public function remove($linkId);
 
@@ -265,19 +265,19 @@ abstract class FinderIndexer
 	 * Method to optimize the index. We use this method to remove unused terms
 	 * and any other optimizations that might be necessary.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   2.5
-	 * @throws  Exception on database error.
+     * @throws  Exception  on database error.
 	 */
 	abstract public function optimize();
 
 	/**
 	 * Method to get a content item's signature.
 	 *
-	 * @param   object  $item  The content item to index.
+     * @param  object  $item  The content item to index.
 	 *
-	 * @return  string  The content item's signature.
+     * @return  string  The content item's signature.
 	 *
 	 * @since   2.5
 	 */
@@ -298,15 +298,15 @@ abstract class FinderIndexer
 	/**
 	 * Method to parse input, tokenize it, and then add it to the database.
 	 *
-	 * @param   mixed    $input    String or resource to use as input. A resource
+     * @param  mixed  $input  String or resource to use as input. A resource
 	 *                             input will automatically be chunked to conserve
 	 *                             memory. Strings will be chunked if longer than
 	 *                             2K in size.
-	 * @param   integer  $context  The context of the input. See context constants.
-	 * @param   string   $lang     The language of the input.
-	 * @param   string   $format   The format of the input.
+     * @param  integer  $context  The context of the input. See context constants.
+     * @param  string   $lang     The language of the input.
+     * @param  string   $format   The format of the input.
 	 *
-	 * @return  integer  The number of tokens extracted from the input.
+     * @return  integer  The number of tokens extracted from the input.
 	 *
 	 * @since   2.5
 	 */
@@ -456,13 +456,13 @@ abstract class FinderIndexer
 	/**
 	 * Method to add a set of tokens to the database.
 	 *
-	 * @param   mixed  $tokens   An array or single FinderIndexerToken object.
-	 * @param   mixed  $context  The context of the tokens. See context constants. [optional]
+     * @param  mixed  $tokens   An array or single FinderIndexerToken object.
+     * @param  mixed  $context  The context of the tokens. See context constants. [optional]
 	 *
-	 * @return  integer  The number of tokens inserted into the database.
+     * @return  integer  The number of tokens inserted into the database.
 	 *
 	 * @since   2.5
-	 * @throws  Exception on database error.
+     * @throws  Exception  on database error.
 	 */
 	abstract protected function addTokensToDB($tokens, $context = '');
 
@@ -470,12 +470,12 @@ abstract class FinderIndexer
 	 * Method to switch the token tables from Memory tables to MyISAM tables
 	 * when they are close to running out of memory.
 	 *
-	 * @param   boolean  $memory  Flag to control how they should be toggled.
+     * @param  boolean  $memory  Flag to control how they should be toggled.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   2.5
-	 * @throws  Exception on database error.
+     * @throws  Exception  on database error.
 	 */
 	abstract protected function toggleTables($memory);
 }

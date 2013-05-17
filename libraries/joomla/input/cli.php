@@ -38,8 +38,8 @@ class JInputCLI extends JInput
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $source   Source data (Optional, default is $_REQUEST)
-	 * @param   array  $options  Array of configuration parameters (Optional)
+     * @param  array  $source   Source data (Optional, default is $_REQUEST)
+     * @param  array  $options  Array of configuration parameters (Optional)
 	 *
 	 * @since   11.1
 	 */
@@ -64,7 +64,7 @@ class JInputCLI extends JInput
 	/**
 	 * Method to serialize the input.
 	 *
-	 * @return  string  The serialized input.
+     * @return  string  The serialized input.
 	 *
 	 * @since   12.1
 	 */
@@ -85,9 +85,9 @@ class JInputCLI extends JInput
 	/**
 	 * Method to unserialize the input.
 	 *
-	 * @param   string  $input  The serialized input.
+     * @param  string  $input  The serialized input.
 	 *
-	 * @return  JInput  The input object.
+     * @return  JInput  The input object.
 	 *
 	 * @since   12.1
 	 */
@@ -110,7 +110,7 @@ class JInputCLI extends JInput
 	/**
 	 * Initialise the options and arguments
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */

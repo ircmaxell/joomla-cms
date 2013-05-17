@@ -37,10 +37,10 @@ class FinderModelFilter extends JModelAdmin
 	/**
 	 * Custom clean cache method.
 	 *
-	 * @param   string   $group      The component name. [optional]
-	 * @param   integer  $client_id  The client ID. [optional]
+     * @param  string   $group      The component name. [optional]
+     * @param  integer  $client_id  The client ID. [optional]
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -52,7 +52,7 @@ class FinderModelFilter extends JModelAdmin
 	/**
 	 * Method to get the filter data.
 	 *
-	 * @return  mixed  The filter data.
+     * @return  mixed  The filter data.
 	 *
 	 * @since   2.5
 	 */
@@ -96,10 +96,10 @@ class FinderModelFilter extends JModelAdmin
 	/**
 	 * Method to get the record form.
 	 *
-	 * @param   array    $data      Data for the form. [optional]
-	 * @param   boolean  $loadData  True if the form is to load its own data (default case), false if not. [optional]
+     * @param  array    $data      Data for the form. [optional]
+     * @param  boolean  $loadData  True if the form is to load its own data (default case), false if not. [optional]
 	 *
-	 * @return  mixed  A JForm object on success, false on failure
+     * @return  mixed  A JForm object on success, false on failure
 	 *
 	 * @since   2.5
 	 */
@@ -119,11 +119,11 @@ class FinderModelFilter extends JModelAdmin
 	/**
 	 * Returns a JTable object, always creating it.
 	 *
-	 * @param   string  $type    The table type to instantiate. [optional]
-	 * @param   string  $prefix  A prefix for the table class name. [optional]
-	 * @param   array   $config  Configuration array for model. [optional]
+     * @param  string  $type    The table type to instantiate. [optional]
+     * @param  string  $prefix  A prefix for the table class name. [optional]
+     * @param  array   $config  Configuration array for model. [optional]
 	 *
-	 * @return  JTable  A database object
+     * @return  JTable  A database object
 	 *
 	 * @since   2.5
 	 */
@@ -135,7 +135,7 @@ class FinderModelFilter extends JModelAdmin
 	/**
 	 * Method to get the data that should be injected in the form.
 	 *
-	 * @return  mixed  The data for the form.
+     * @return  mixed  The data for the form.
 	 *
 	 * @since   2.5
 	 */

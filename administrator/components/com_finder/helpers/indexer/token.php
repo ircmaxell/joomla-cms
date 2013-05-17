@@ -90,9 +90,9 @@ class FinderIndexerToken
 	/**
 	 * Method to construct the token object.
 	 *
-	 * @param   mixed   $term    The term as a string for words or an array for phrases.
-	 * @param   string  $lang    The simple language identifier.
-	 * @param   string  $spacer  The space separator for phrases. [optional]
+     * @param  mixed   $term    The term as a string for words or an array for phrases.
+     * @param  string  $lang    The simple language identifier.
+     * @param  string  $spacer  The space separator for phrases. [optional]
 	 *
 	 * @since   2.5
 	 */

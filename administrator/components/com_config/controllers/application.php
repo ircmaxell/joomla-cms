@@ -21,8 +21,8 @@ class ConfigControllerApplication extends JControllerLegacy
 	/**
 	 * Class Constructor
 	 *
-	 * @param   array  $config		An optional associative array of configuration settings.
-	 * @return  void
+     * @param   array  $config  An optional associative array of configuration settings.
+     * @return  void
 	 * @since   1.5
 	 */
 	public function __construct($config = array())
@@ -36,7 +36,7 @@ class ConfigControllerApplication extends JControllerLegacy
 	/**
 	 * Method to save the configuration.
 	 *
-	 * @return  bool	True on success, false on failure.
+     * @return  bool  True on success, false on failure.
 	 * @since   1.5
 	 */
 	public function save()
@@ -74,7 +74,8 @@ class ConfigControllerApplication extends JControllerLegacy
 				if ($errors[$i] instanceof Exception)
 				{
 					$app->enqueueMessage($errors[$i]->getMessage(), 'warning');
-				} else {
+				}
+				else {
 					$app->enqueueMessage($errors[$i], 'warning');
 				}
 			}
@@ -154,7 +155,8 @@ class ConfigControllerApplication extends JControllerLegacy
 		if (($data = file_get_contents('http://help.joomla.org/helpsites.xml')) === false)
 		{
 			$this->setRedirect('index.php?option=com_config', JText::_('COM_CONFIG_ERROR_HELPREFRESH_FETCH'), 'error');
-		} elseif (!JFile::write(JPATH_BASE . '/help/helpsites.xml', $data))
+		}
+		elseif (!JFile::write(JPATH_BASE . '/help/helpsites.xml', $data))
 		{
 			$this->setRedirect('index.php?option=com_config', JText::_('COM_CONFIG_ERROR_HELPREFRESH_ERROR_STORE'), 'error');
 		}
@@ -167,7 +169,7 @@ class ConfigControllerApplication extends JControllerLegacy
 	/**
 	 * Method to remove the root property from the configuration.
 	 *
-	 * @return  bool	True on success, false on failure.
+     * @return  bool  True on success, false on failure.
 	 * @since   1.5
 	 */
 	public function removeroot()

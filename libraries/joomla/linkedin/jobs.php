@@ -21,10 +21,10 @@ class JLinkedinJobs extends JLinkedinObject
 	/**
 	 * Method to retrieve detailed information about a job.
 	 *
-	 * @param   integer  $id      The unique identifier for a job.
-	 * @param   string   $fields  Request fields beyond the default ones.
+     * @param  integer  $id      The unique identifier for a job.
+     * @param  string   $fields  Request fields beyond the default ones.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -61,9 +61,9 @@ class JLinkedinJobs extends JLinkedinObject
 	/**
 	 * Method to get a list of bookmarked jobs for the current member.
 	 *
-	 * @param   string  $fields  Request fields beyond the default ones.
+     * @param  string  $fields  Request fields beyond the default ones.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -100,9 +100,9 @@ class JLinkedinJobs extends JLinkedinObject
 	/**
 	 * Method to bookmark a job to the current user's account.
 	 *
-	 * @param   integer  $id  The unique identifier for a job.
+     * @param  integer  $id  The unique identifier for a job.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -138,9 +138,9 @@ class JLinkedinJobs extends JLinkedinObject
 	/**
 	 * Method to delete a bookmark.
 	 *
-	 * @param   integer  $id  The unique identifier for a job.
+     * @param  integer  $id  The unique identifier for a job.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -171,11 +171,11 @@ class JLinkedinJobs extends JLinkedinObject
 	/**
 	 * Method to retrieve job suggestions for the current user.
 	 *
-	 * @param   string   $fields  Request fields beyond the default ones.
-	 * @param   integer  $start   Starting location within the result set for paginated returns.
-	 * @param   integer  $count   The number of results returned.
+     * @param  string   $fields  Request fields beyond the default ones.
+     * @param  integer  $start   Starting location within the result set for paginated returns.
+     * @param  integer  $count   The number of results returned.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -223,24 +223,24 @@ class JLinkedinJobs extends JLinkedinObject
 	/**
 	 * Method to search across LinkedIn's job postings.
 	 *
-	 * @param   string   $fields        Request fields beyond the default ones.
-	 * @param   string   $keywords      Members who have all the keywords anywhere in their profile.
-	 * @param   string   $company_name  Jobs with a matching company name.
-	 * @param   string   $job_title     Matches jobs with the same job title.
-	 * @param   string   $country_code  Matches members with a location in a specific country. Values are defined in by ISO 3166 standard.
+     * @param  string  $fields        Request fields beyond the default ones.
+     * @param  string  $keywords      Members who have all the keywords anywhere in their profile.
+     * @param  string  $company_name  Jobs with a matching company name.
+     * @param  string  $job_title     Matches jobs with the same job title.
+     * @param  string  $country_code  Matches members with a location in a specific country. Values are defined in by ISO 3166 standard.
 	 * 									Country codes must be in all lower case.
-	 * @param   integer  $postal_code   Matches members centered around a Postal Code. Must be combined with the country-code parameter.
+     * @param  integer  $postal_code  Matches members centered around a Postal Code. Must be combined with the country-code parameter.
 	 * 									Not supported for all countries.
-	 * @param   integer  $distance      Matches members within a distance from a central point. This is measured in miles.
-	 * @param   string   $facets        Facet buckets to return, e.g. location.
-	 * @param   array    $facet         Array of facet values to search over. Contains values for company, date-posted, location, job-function,
+     * @param  integer  $distance  Matches members within a distance from a central point. This is measured in miles.
+     * @param  string   $facets    Facet buckets to return, e.g. location.
+     * @param  array    $facet     Array of facet values to search over. Contains values for company, date-posted, location, job-function,
 	 * 									industry, and salary, in exactly this order, null must be specified for an element if no value.
-	 * @param   integer  $start         Starting location within the result set for paginated returns.
-	 * @param   integer  $count         The number of results returned.
-	 * @param   string   $sort          Controls the search result order. There are four options: R (relationship), DA (date-posted-asc),
+     * @param  integer  $start  Starting location within the result set for paginated returns.
+     * @param  integer  $count  The number of results returned.
+     * @param  string   $sort   Controls the search result order. There are four options: R (relationship), DA (date-posted-asc),
 	 * 									DD (date-posted-desc).
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */

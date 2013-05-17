@@ -34,7 +34,7 @@ class JFormFieldRules extends JFormField
 	 *
 	 * TODO: Add access check.
 	 *
-	 * @return  string  The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   11.1
 	 */
@@ -82,7 +82,8 @@ class JFormFieldRules extends JFormField
 		// Use the compact form for the content rules (deprecated).
 
 		/* @todo remove code:
-		if (!empty($component) && $section != 'component') {
+		if (!empty($component) && $section != 'component')
+		{
 			return JHtml::_('rules.assetFormWidget', $actions, $assetId, $assetId ? null : $component, $this->name, $this->id);
 		}
 		 */
@@ -295,7 +296,7 @@ class JFormFieldRules extends JFormField
 	/**
 	 * Get a list of the user groups.
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.1
 	 */

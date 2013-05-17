@@ -141,7 +141,7 @@ class JUpdate extends JObject
 	/**
 	 * Gets the reference to the current direct parent
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.1
 	 */
@@ -153,7 +153,7 @@ class JUpdate extends JObject
 	/**
 	 * Get the last position in stack count
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -165,11 +165,11 @@ class JUpdate extends JObject
 	/**
 	 * XML Start Element callback
 	 *
-	 * @param   object  $parser  Parser object
-	 * @param   string  $name    Name of the tag found
-	 * @param   array   $attrs   Attributes of the tag
+     * @param  object  $parser  Parser object
+     * @param  string  $name    Name of the tag found
+     * @param  array   $attrs   Attributes of the tag
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @note    This is public because it is called externally
 	 * @since   11.1
@@ -218,10 +218,10 @@ class JUpdate extends JObject
 	/**
 	 * Callback for closing the element
 	 *
-	 * @param   object  $parser  Parser object
-	 * @param   string  $name    Name of element that was closed
+     * @param  object  $parser  Parser object
+     * @param  string  $name    Name of element that was closed
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @note This is public because it is called externally
 	 * @since  11.1
@@ -279,10 +279,10 @@ class JUpdate extends JObject
 	/**
 	 * Character Parser Function
 	 *
-	 * @param   object  $parser  Parser object.
-	 * @param   object  $data    The data.
+     * @param  object  $parser  Parser object.
+     * @param  object  $data    The data.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @note    This is public because its called externally.
 	 * @since   11.1
@@ -305,9 +305,9 @@ class JUpdate extends JObject
 	/**
 	 * Loads an XML file from a URL.
 	 *
-	 * @param   string  $url  The URL.
+     * @param  string  $url  The URL.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   11.1
 	 */

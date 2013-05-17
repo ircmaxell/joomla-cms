@@ -21,7 +21,7 @@ class InstallationControllerDefault extends JControllerBase
 	/**
 	 * Execute the controller.
 	 *
-	 * @return  string  The rendered view.
+     * @return  string  The rendered view.
 	 *
 	 * @since   3.1
 	 */

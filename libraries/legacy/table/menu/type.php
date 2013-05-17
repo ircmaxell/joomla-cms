@@ -21,7 +21,7 @@ class JTableMenuType extends JTable
 	/**
 	 * Constructor
 	 *
-	 * @param   JDatabaseDriver  $db  Database driver object.
+     * @param  JDatabaseDriver  $db  Database driver object.
 	 *
 	 * @since  11.1
 	 */
@@ -33,7 +33,7 @@ class JTableMenuType extends JTable
 	/**
 	 * Overloaded check function
 	 *
-	 * @return  boolean  True on success, false on failure
+     * @return  boolean  True on success, false on failure
 	 *
 	 * @see     JTable::check
 	 * @since   11.1
@@ -77,9 +77,9 @@ class JTableMenuType extends JTable
 	 * a new row will be inserted into the database with the properties from the
 	 * JTable instance.
 	 *
-	 * @param   boolean  $updateNulls  True to update fields even if they are null.
+     * @param  boolean  $updateNulls  True to update fields even if they are null.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @link    http://docs.joomla.org/JTable/store
 	 * @since   11.1
@@ -154,9 +154,9 @@ class JTableMenuType extends JTable
 	/**
 	 * Override parent delete method to delete tags information.
 	 *
-	 * @param   mixed  $pk  An optional primary key value to delete.  If not set the instance property value is used.
+     * @param  mixed  $pk  An optional primary key value to delete.  If not set the instance property value is used.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @link    http://docs.joomla.org/JTable/delete
 	 * @since   11.1

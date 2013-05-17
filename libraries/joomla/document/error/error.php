@@ -29,7 +29,7 @@ class JDocumentError extends JDocument
 	/**
 	 * Class constructor
 	 *
-	 * @param   array  $options  Associative array of attributes
+     * @param  array  $options  Associative array of attributes
 	 *
 	 * @since   11.1
 	 */
@@ -47,9 +47,9 @@ class JDocumentError extends JDocument
 	/**
 	 * Set error object
 	 *
-	 * @param   object  $error  Error object to set
+     * @param  object  $error  Error object to set
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   11.1
 	 */
@@ -69,10 +69,10 @@ class JDocumentError extends JDocument
 	/**
 	 * Render the document
 	 *
-	 * @param   boolean  $cache   If true, cache the output
-	 * @param   array    $params  Associative array of attributes
+     * @param  boolean  $cache   If true, cache the output
+     * @param  array    $params  Associative array of attributes
 	 *
-	 * @return  string   The rendered data
+     * @return  string  The rendered data
 	 *
 	 * @since   11.1
 	 */
@@ -113,10 +113,10 @@ class JDocumentError extends JDocument
 	/**
 	 * Load a template file
 	 *
-	 * @param   string  $directory  The name of the template
-	 * @param   string  $filename   The actual filename
+     * @param  string  $directory  The name of the template
+     * @param  string  $filename   The actual filename
 	 *
-	 * @return  string  The contents of the template
+     * @return  string  The contents of the template
 	 *
 	 * @since   11.1
 	 */
@@ -143,7 +143,7 @@ class JDocumentError extends JDocument
 	/**
 	 * Render the backtrace
 	 *
-	 * @return  string  The contents of the backtrace
+     * @return  string  The contents of the backtrace
 	 *
 	 * @since   11.1
 	 */

@@ -24,7 +24,7 @@ class MenusController extends JControllerLegacy
 	 * @param   boolean			If true, the view output will be cached
 	 * @param   array  An array of safe url parameters and their variable types, for valid values see {@link JFilterInput::clean()}.
 	 *
-	 * @return  JController		This object to support chaining.
+     * @return  JController  This object to support chaining.
 	 * @since   1.5
 	 */
 	public function display($cachable = false, $urlparams = false)
@@ -36,8 +36,8 @@ class MenusController extends JControllerLegacy
 		$id     = $this->input->getInt('id');
 
 		// Check for edit form.
-		if ($view == 'menu' && $layout == 'edit' && !$this->checkEditId('com_menus.edit.menu', $id)) {
-
+		if ($view == 'menu' && $layout == 'edit' && !$this->checkEditId('com_menus.edit.menu', $id))
+		{
 			// Somehow the person just went to the form - we don't allow that.
 			$this->setError(JText::sprintf('JLIB_APPLICATION_ERROR_UNHELD_ID', $id));
 			$this->setMessage($this->getError(), 'error');
@@ -45,8 +45,8 @@ class MenusController extends JControllerLegacy
 
 			return false;
 		}
-		elseif ($view == 'item' && $layout == 'edit' && !$this->checkEditId('com_menus.edit.item', $id)) {
-
+		elseif ($view == 'item' && $layout == 'edit' && !$this->checkEditId('com_menus.edit.item', $id))
+		{
 			// Somehow the person just went to the form - we don't allow that.
 			$this->setError(JText::sprintf('JLIB_APPLICATION_ERROR_UNHELD_ID', $id));
 			$this->setMessage($this->getError(), 'error');

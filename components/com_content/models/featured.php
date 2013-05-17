@@ -52,7 +52,8 @@ class ContentModelFeatured extends ContentModelArticles
 
 		$this->setState('filter.frontpage', true);
 
-		if ((!$user->authorise('core.edit.state', 'com_content')) &&  (!$user->authorise('core.edit', 'com_content'))){
+		if ((!$user->authorise('core.edit.state', 'com_content')) &&  (!$user->authorise('core.edit', 'com_content')))
+		{
 			// filter on published for those who do not have edit or edit.state rights.
 			$this->setState('filter.published', 1);
 		}
@@ -72,7 +73,7 @@ class ContentModelFeatured extends ContentModelArticles
 	/**
 	 * Method to get a list of articles.
 	 *
-	 * @return  mixed  An array of objects on success, false on failure.
+     * @return  mixed  An array of objects on success, false on failure.
 	 */
 	public function getItems()
 	{
@@ -94,9 +95,9 @@ class ContentModelFeatured extends ContentModelArticles
 	 * different modules that might need different sets of data or different
 	 * ordering requirements.
 	 *
-	 * @param   string  $id	A prefix for the store id.
+     * @param  string  $id  A prefix for the store id.
 	 *
-	 * @return  string  A store id.
+     * @return  string  A store id.
 	 */
 	protected function getStoreId($id = '')
 	{
@@ -107,7 +108,7 @@ class ContentModelFeatured extends ContentModelArticles
 	}
 
 	/**
-	 * @return  JDatabaseQuery
+     * @return  JDatabaseQuery
 	 */
 	protected function getListQuery()
 	{

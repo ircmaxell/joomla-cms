@@ -24,14 +24,14 @@ class TagsHelperRoute extends JHelperRoute
 	/**
 	 * Tries to load the router for the component and calls it. Otherwise uses getTagRoute.
 	 *
-	 * @param   integer  $contentItemId     Component item id
-	 * @param   string   $contentItemAlias  Component item alias
-	 * @param   integer  $contentCatId      Component item category id
-	 * @param   string   $language          Component item language
-	 * @param   string   $typeAlias         Component type alias
-	 * @param   string   $routerName        Component router
+     * @param  integer  $contentItemId     Component item id
+     * @param  string   $contentItemAlias  Component item alias
+     * @param  integer  $contentCatId      Component item category id
+     * @param  string   $language          Component item language
+     * @param  string   $typeAlias         Component type alias
+     * @param  string   $routerName        Component router
 	 *
-	 * @return  string  URL link to pass to JRoute
+     * @return  string  URL link to pass to JRoute
 	 *
 	 * @since   3.1
 	 */
@@ -69,9 +69,9 @@ class TagsHelperRoute extends JHelperRoute
 	/**
 	 * Tries to load the router for the component and calls it. Otherwise calls getRoute.
 	 *
-	 * @param   integer  $id  The ID of the tag
+     * @param  integer  $id  The ID of the tag
 	 *
-	 * @return  string  URL link to pass to JRoute
+     * @return  string  URL link to pass to JRoute
 	 *
 	 * @since   3.1
 	 */
@@ -114,7 +114,8 @@ class TagsHelperRoute extends JHelperRoute
 			$component	= JComponentHelper::getComponent('com_tags');
 			$items		= $menus->getItems('component_id', $component->id);
 
-			if ($items) {
+			if ($items)
+			{
 				foreach ($items as $item)
 				{
 					if (isset($item->query) && isset($item->query['view']))

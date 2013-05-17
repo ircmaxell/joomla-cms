@@ -29,7 +29,7 @@ class JTableUser extends JTable
 	/**
 	 * Constructor
 	 *
-	 * @param   JDatabaseDriver  $db  Database driver object.
+     * @param  JDatabaseDriver  $db  Database driver object.
 	 *
 	 * @since  11.1
 	 */
@@ -46,11 +46,11 @@ class JTableUser extends JTable
 	 * Method to load a user, user groups, and any other necessary data
 	 * from the database so that it can be bound to the user object.
 	 *
-	 * @param   integer  $userId  An optional user id.
-	 * @param   boolean  $reset   False if row not found or on error
+     * @param  integer  $userId  An optional user id.
+     * @param  boolean  $reset   False if row not found or on error
 	 *                           (internal error state set in that case).
 	 *
-	 * @return  boolean  True on success, false on failure.
+     * @return  boolean  True on success, false on failure.
 	 *
 	 * @since   11.1
 	 */
@@ -112,10 +112,10 @@ class JTableUser extends JTable
 	/**
 	 * Method to bind the user, user groups, and any other necessary data.
 	 *
-	 * @param   array  $array   The data to bind.
-	 * @param   mixed  $ignore  An array or space separated list of fields to ignore.
+     * @param  array  $array   The data to bind.
+     * @param  mixed  $ignore  An array or space separated list of fields to ignore.
 	 *
-	 * @return  boolean  True on success, false on failure.
+     * @return  boolean  True on success, false on failure.
 	 *
 	 * @since   11.1
 	 */
@@ -156,7 +156,7 @@ class JTableUser extends JTable
 	/**
 	 * Validation and filtering
 	 *
-	 * @return  boolean  True if satisfactory
+     * @return  boolean  True if satisfactory
 	 *
 	 * @since   11.1
 	 */
@@ -263,9 +263,9 @@ class JTableUser extends JTable
 	 * a new row will be inserted into the database with the properties from the
 	 * JTable instance.
 	 *
-	 * @param   boolean  $updateNulls  True to update fields even if they are null.
+     * @param  boolean  $updateNulls  True to update fields even if they are null.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @link    http://docs.joomla.org/JTable/store
 	 * @since   11.1
@@ -328,9 +328,9 @@ class JTableUser extends JTable
 	/**
 	 * Method to delete a user, user groups, and any other necessary data from the database.
 	 *
-	 * @param   integer  $userId  An optional user id.
+     * @param  integer  $userId  An optional user id.
 	 *
-	 * @return  boolean  True on success, false on failure.
+     * @return  boolean  True on success, false on failure.
 	 *
 	 * @since   11.1
 	 */
@@ -379,10 +379,10 @@ class JTableUser extends JTable
 	/**
 	 * Updates last visit time of user
 	 *
-	 * @param   integer  $timeStamp  The timestamp, defaults to 'now'.
-	 * @param   integer  $userId     The user id (optional).
+     * @param  integer  $timeStamp  The timestamp, defaults to 'now'.
+     * @param  integer  $userId     The user id (optional).
 	 *
-	 * @return  boolean  False if an error occurs
+     * @return  boolean  False if an error occurs
 	 *
 	 * @since   11.1
 	 */

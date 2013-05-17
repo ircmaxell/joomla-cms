@@ -20,7 +20,7 @@ class PlgSystemSef extends JPlugin
 	/**
 	 * Add the canonical uri to the head
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -57,7 +57,7 @@ class PlgSystemSef extends JPlugin
 	/**
 	 * Converting the site URL to fit to the HTTP request
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function onAfterRender()
 	{
@@ -115,9 +115,9 @@ class PlgSystemSef extends JPlugin
 	}
 
 	/**
-	 * @param   string  $buffer
+     * @param  string  $buffer
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	private function checkBuffer($buffer)
 	{
@@ -144,9 +144,9 @@ class PlgSystemSef extends JPlugin
 	/**
 	 * Replaces the matched tags
 	 *
-	 * @param   array  &$matches  An array of matches (see preg_match_all)
+     * @param  array  &$matches  An array of matches (see preg_match_all)
 	 *
-	 * @return  string
+     * @return  string
 	 */
 	protected static function route(&$matches)
 	{

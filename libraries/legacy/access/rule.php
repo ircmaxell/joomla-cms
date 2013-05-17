@@ -25,7 +25,7 @@ class JRule extends JAccessRule
 	 * The input array must be in the form: array(-42 => true, 3 => true, 4 => false)
 	 * or an equivalent JSON encoded string.
 	 *
-	 * @param   mixed  $identities  A JSON format string (probably from the database) or a named array.
+     * @param  mixed  $identities  A JSON format string (probably from the database) or a named array.
 	 *
 	 * @since   11.1
 	 * @deprecated  12.3

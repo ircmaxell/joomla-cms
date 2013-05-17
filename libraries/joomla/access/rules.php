@@ -32,7 +32,7 @@ class JAccessRules
 	 * The input array must be in the form: array('action' => array(-42 => true, 3 => true, 4 => false))
 	 * or an equivalent JSON encoded string, or an object where properties are arrays.
 	 *
-	 * @param   mixed  $input  A JSON format string (probably from the database) or a nested array.
+     * @param  mixed  $input  A JSON format string (probably from the database) or a nested array.
 	 *
 	 * @since   11.1
 	 */
@@ -61,7 +61,7 @@ class JAccessRules
 	/**
 	 * Get the data for the action.
 	 *
-	 * @return  array  A named array of JAccessRule objects.
+     * @return  array  A named array of JAccessRule objects.
 	 *
 	 * @since   11.1
 	 */
@@ -73,9 +73,9 @@ class JAccessRules
 	/**
 	 * Method to merge a collection of JAccessRules.
 	 *
-	 * @param   mixed  $input  JAccessRule or array of JAccessRules
+     * @param  mixed  $input  JAccessRule or array of JAccessRules
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -94,9 +94,9 @@ class JAccessRules
 	/**
 	 * Method to merge actions with this object.
 	 *
-	 * @param   mixed  $actions  JAccessRule object, an array of actions or a JSON string array of actions.
+     * @param  mixed  $actions  JAccessRule object, an array of actions or a JSON string array of actions.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -128,10 +128,10 @@ class JAccessRules
 	/**
 	 * Merges an array of identities for an action.
 	 *
-	 * @param   string  $action      The name of the action.
-	 * @param   array   $identities  An array of identities
+     * @param  string  $action      The name of the action.
+     * @param  array   $identities  An array of identities
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -155,10 +155,10 @@ class JAccessRules
 	 * The identity is an integer where +ve represents a user group,
 	 * and -ve represents a user.
 	 *
-	 * @param   string  $action    The name of the action.
-	 * @param   mixed   $identity  An integer representing the identity, or an array of identities
+     * @param  string  $action    The name of the action.
+     * @param  mixed   $identity  An integer representing the identity, or an array of identities
 	 *
-	 * @return  mixed   Object or null if there is no information about the action.
+     * @return  mixed  Object or null if there is no information about the action.
 	 *
 	 * @since   11.1
 	 */
@@ -176,9 +176,9 @@ class JAccessRules
 	/**
 	 * Get the allowed actions for an identity.
 	 *
-	 * @param   mixed  $identity  An integer representing the identity or an array of identities
+     * @param  mixed  $identity  An integer representing the identity or an array of identities
 	 *
-	 * @return  object  Allowed actions for the identity or identities
+     * @return  object  Allowed actions for the identity or identities
 	 *
 	 * @since   11.1
 	 */
@@ -199,7 +199,7 @@ class JAccessRules
 	/**
 	 * Magic method to convert the object to JSON string representation.
 	 *
-	 * @return  string  JSON representation of the actions array
+     * @return  string  JSON representation of the actions array
 	 *
 	 * @since   11.1
 	 */

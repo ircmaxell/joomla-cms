@@ -24,7 +24,7 @@ class TagsController extends JControllerLegacy
 	 * @param   boolean  If true, the view output will be cached
 	 * @param   array    An array of safe url parameters and their variable types, for valid values see {@link JFilterInput::clean()}.
 	 *
-	 * @return  JController  This object to support chaining.
+     * @return  JController  This object to support chaining.
 	 *
 	 * @since   3.1
 	 */

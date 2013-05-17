@@ -22,9 +22,9 @@ class ModFinderHelper
 	 * Method to get hidden input fields for a get form so that control variables
 	 * are not lost upon form submission.
 	 *
-	 * @param   string  $route  The route to the page. [optional]
+     * @param  string  $route  The route to the page. [optional]
 	 *
-	 * @return  string  A string of hidden input form fields
+     * @return  string  A string of hidden input form fields
 	 *
 	 * @since   2.5
 	 */
@@ -59,7 +59,7 @@ class ModFinderHelper
 	 *
 	 * @param   JRegistry object containing module parameters.
 	 *
-	 * @return  FinderIndexerQuery object
+     * @return  FinderIndexerQuery  object
 	 *
 	 * @since   2.5
 	 */

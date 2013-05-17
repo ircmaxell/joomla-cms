@@ -17,9 +17,9 @@ class TestMockRules
 	/**
 	 * Creates an instance of the mock JDatabase object.
 	 *
-	 * @param   object  $test  A test object.
+     * @param  object  $test  A test object.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   11.3
 	 */
@@ -55,10 +55,10 @@ class TestMockRules
 	/**
 	 * Mocking the allow method.
 	 *
-	 * @param   string   $action    The action.
-	 * @param   integer  $identity  The identity ID.
+     * @param  string   $action    The action.
+     * @param  integer  $identity  The identity ID.
 	 *
-	 * @return  mixed  Boolean or null.
+     * @return  mixed  Boolean or null.
 	 *
 	 * @since   11.3
 	 */

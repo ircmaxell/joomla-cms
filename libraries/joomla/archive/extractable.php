@@ -21,11 +21,11 @@ interface JArchiveExtractable
 	/**
 	 * Extract a compressed file to a given path
 	 *
-	 * @param   string  $archive      Path to archive to extract
-	 * @param   string  $destination  Path to extract archive to
-	 * @param   array   $options      Extraction options [may be unused]
+     * @param  string  $archive      Path to archive to extract
+     * @param  string  $destination  Path to extract archive to
+     * @param  array   $options      Extraction options [may be unused]
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   12.1
 	 */
@@ -34,7 +34,7 @@ interface JArchiveExtractable
 	/**
 	 * Tests whether this adapter can unpack files on this computer.
 	 *
-	 * @return  boolean  True if supported
+     * @return  boolean  True if supported
 	 *
 	 * @since   12.1
 	 */

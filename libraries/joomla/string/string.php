@@ -74,9 +74,9 @@ abstract class JString
 	 * "ThisIsA_NASAAstronaut"   becomes  array("This", "Is", "A_NASA", "Astronaut")),
 	 * "JohnFitzgerald_Kennedy"  becomes  array("John", "Fitzgerald_Kennedy")),
 	 *
-	 * @param   string  $string  The source string.
+     * @param  string  $string  The source string.
 	 *
-	 * @return  array   The splitted string.
+     * @return  array  The splitted string.
 	 *
 	 * @deprecated  12.3 Use JStringNormalise::fromCamelCase()
 	 * @since   11.3
@@ -96,11 +96,11 @@ abstract class JString
 	 * default: "Label" becomes "Label (2)"
 	 * dash:    "Label" becomes "Label-2"
 	 *
-	 * @param   string   $string  The source string.
-	 * @param   string   $style   The the style (default|dash).
-	 * @param   integer  $n       If supplied, this number is used for the copy, otherwise it is the 'next' number.
+     * @param  string   $string  The source string.
+     * @param  string   $style   The the style (default|dash).
+     * @param  integer  $n       If supplied, this number is used for the copy, otherwise it is the 'next' number.
 	 *
-	 * @return  string  The incremented string.
+     * @return  string  The incremented string.
 	 *
 	 * @since   11.3
 	 */
@@ -150,11 +150,11 @@ abstract class JString
 	 *
 	 * Find position of first occurrence of a string.
 	 *
-	 * @param   string   $str     String being examined
-	 * @param   string   $search  String being searched for
-	 * @param   integer  $offset  Optional, specifies the position from which the search should be performed
+     * @param  string   $str     String being examined
+     * @param  string   $search  String being searched for
+     * @param  integer  $offset  Optional, specifies the position from which the search should be performed
 	 *
-	 * @return  mixed  Number of characters before the first match or FALSE on failure
+     * @return  mixed  Number of characters before the first match or FALSE on failure
 	 *
 	 * @see     http://www.php.net/strpos
 	 * @since   11.1
@@ -175,11 +175,11 @@ abstract class JString
 	 * UTF-8 aware alternative to strrpos
 	 * Finds position of last occurrence of a string
 	 *
-	 * @param   string   $str     String being examined.
-	 * @param   string   $search  String being searched for.
-	 * @param   integer  $offset  Offset from the left of the string.
+     * @param  string   $str     String being examined.
+     * @param  string   $search  String being searched for.
+     * @param  integer  $offset  Offset from the left of the string.
 	 *
-	 * @return  mixed  Number of characters before the last match or false on failure
+     * @return  mixed  Number of characters before the last match or false on failure
 	 *
 	 * @see     http://www.php.net/strrpos
 	 * @since   11.1
@@ -193,11 +193,11 @@ abstract class JString
 	 * UTF-8 aware alternative to substr
 	 * Return part of a string given character offset (and optionally length)
 	 *
-	 * @param   string   $str     String being processed
-	 * @param   integer  $offset  Number of UTF-8 characters offset (from left)
-	 * @param   integer  $length  Optional length in UTF-8 characters from offset
+     * @param  string   $str     String being processed
+     * @param  integer  $offset  Number of UTF-8 characters offset (from left)
+     * @param  integer  $length  Optional length in UTF-8 characters from offset
 	 *
-	 * @return  mixed string or FALSE if failure
+     * @return  mixed  string or FALSE if failure
 	 *
 	 * @see     http://www.php.net/substr
 	 * @since   11.1
@@ -223,9 +223,9 @@ abstract class JString
 	 * not exist in the Chinese alphabet, for example. See Unicode Standard
 	 * Annex #21: Case Mappings
 	 *
-	 * @param   string  $str  String being processed
+     * @param  string  $str  String being processed
 	 *
-	 * @return  mixed  Either string in lowercase or FALSE is UTF-8 invalid
+     * @return  mixed  Either string in lowercase or FALSE is UTF-8 invalid
 	 *
 	 * @see http://www.php.net/strtolower
 	 * @since   11.1
@@ -243,9 +243,9 @@ abstract class JString
 	 * not exist in the Chinese alphabet, for example. See Unicode Standard
 	 * Annex #21: Case Mappings
 	 *
-	 * @param   string  $str  String being processed
+     * @param  string  $str  String being processed
 	 *
-	 * @return  mixed  Either string in uppercase or FALSE is UTF-8 invalid
+     * @return  mixed  Either string in uppercase or FALSE is UTF-8 invalid
 	 *
 	 * @see     http://www.php.net/strtoupper
 	 * @since   11.1
@@ -260,9 +260,9 @@ abstract class JString
 	 *
 	 * Returns the number of characters in the string (NOT THE NUMBER OF BYTES),
 	 *
-	 * @param   string  $str  UTF-8 string.
+     * @param  string  $str  UTF-8 string.
 	 *
-	 * @return  integer  Number of UTF-8 characters in string.
+     * @return  integer  Number of UTF-8 characters in string.
 	 *
 	 * @see http://www.php.net/strlen
 	 * @since   11.1
@@ -276,12 +276,12 @@ abstract class JString
 	 * UTF-8 aware alternative to str_ireplace
 	 * Case-insensitive version of str_replace
 	 *
-	 * @param   string   $search   String to search
-	 * @param   string   $replace  Existing string to replace
-	 * @param   string   $str      New string to replace with
-	 * @param   integer  $count    Optional count value to be passed by referene
+     * @param  string   $search   String to search
+     * @param  string   $replace  Existing string to replace
+     * @param  string   $str      New string to replace with
+     * @param  integer  $count    Optional count value to be passed by referene
 	 *
-	 * @return  string  UTF-8 String
+     * @return  string  UTF-8 String
 	 *
 	 * @see     http://www.php.net/str_ireplace
 	 * @since   11.1
@@ -304,10 +304,10 @@ abstract class JString
 	 * UTF-8 aware alternative to str_split
 	 * Convert a string to an array
 	 *
-	 * @param   string   $str        UTF-8 encoded string to process
-	 * @param   integer  $split_len  Number to characters to split string by
+     * @param  string   $str        UTF-8 encoded string to process
+     * @param  integer  $split_len  Number to characters to split string by
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @see     http://www.php.net/str_split
 	 * @since   11.1
@@ -323,11 +323,11 @@ abstract class JString
 	 * UTF-8/LOCALE aware alternative to strcasecmp
 	 * A case insensitive string comparison
 	 *
-	 * @param   string  $str1    string 1 to compare
-	 * @param   string  $str2    string 2 to compare
-	 * @param   mixed   $locale  The locale used by strcoll or false to use classical comparison
+     * @param  string  $str1    string 1 to compare
+     * @param  string  $str2    string 2 to compare
+     * @param  mixed   $locale  The locale used by strcoll or false to use classical comparison
 	 *
-	 * @return  integer   < 0 if str1 is less than str2; > 0 if str1 is greater than str2, and 0 if they are equal.
+     * @return  integer  < 0 if str1 is less than str2; > 0 if str1 is greater than str2, and 0 if they are equal.
 	 *
 	 * @see     http://www.php.net/strcasecmp
 	 * @see     http://www.php.net/strcoll
@@ -383,11 +383,11 @@ abstract class JString
 	 * UTF-8/LOCALE aware alternative to strcmp
 	 * A case sensitive string comparison
 	 *
-	 * @param   string  $str1    string 1 to compare
-	 * @param   string  $str2    string 2 to compare
-	 * @param   mixed   $locale  The locale used by strcoll or false to use classical comparison
+     * @param  string  $str1    string 1 to compare
+     * @param  string  $str2    string 2 to compare
+     * @param  mixed   $locale  The locale used by strcoll or false to use classical comparison
 	 *
-	 * @return  integer  < 0 if str1 is less than str2; > 0 if str1 is greater than str2, and 0 if they are equal.
+     * @return  integer  < 0 if str1 is less than str2; > 0 if str1 is greater than str2, and 0 if they are equal.
 	 *
 	 * @see     http://www.php.net/strcmp
 	 * @see     http://www.php.net/strcoll
@@ -440,12 +440,12 @@ abstract class JString
 	 * UTF-8 aware alternative to strcspn
 	 * Find length of initial segment not matching mask
 	 *
-	 * @param   string   $str     The string to process
-	 * @param   string   $mask    The mask
-	 * @param   integer  $start   Optional starting character position (in characters)
-	 * @param   integer  $length  Optional length
+     * @param  string   $str     The string to process
+     * @param  string   $mask    The mask
+     * @param  integer  $start   Optional starting character position (in characters)
+     * @param  integer  $length  Optional length
 	 *
-	 * @return  integer  The length of the initial segment of str1 which does not contain any of the characters in str2
+     * @return  integer  The length of the initial segment of str1 which does not contain any of the characters in str2
 	 *
 	 * @see     http://www.php.net/strcspn
 	 * @since   11.1
@@ -474,10 +474,10 @@ abstract class JString
 	 * needle and haystack are examined in a case-insensitive manner
 	 * Find first occurrence of a string using case insensitive comparison
 	 *
-	 * @param   string  $str     The haystack
-	 * @param   string  $search  The needle
+     * @param  string  $str     The haystack
+     * @param  string  $search  The needle
 	 *
-	 * @return string the sub string
+     * @return  string  the sub string
 	 *
 	 * @see     http://www.php.net/stristr
 	 * @since   11.1
@@ -493,9 +493,9 @@ abstract class JString
 	 * UTF-8 aware alternative to strrev
 	 * Reverse a string
 	 *
-	 * @param   string  $str  String to be reversed
+     * @param  string  $str  String to be reversed
 	 *
-	 * @return  string   The string in reverse character order
+     * @return  string  The string in reverse character order
 	 *
 	 * @see     http://www.php.net/strrev
 	 * @since   11.1
@@ -511,12 +511,12 @@ abstract class JString
 	 * UTF-8 aware alternative to strspn
 	 * Find length of initial segment matching mask
 	 *
-	 * @param   string   $str     The haystack
-	 * @param   string   $mask    The mask
-	 * @param   integer  $start   Start optional
-	 * @param   integer  $length  Length optional
+     * @param  string   $str     The haystack
+     * @param  string   $mask    The mask
+     * @param  integer  $start   Start optional
+     * @param  integer  $length  Length optional
 	 *
-	 * @return  integer
+     * @return  integer
 	 *
 	 * @see     http://www.php.net/strspn
 	 * @since   11.1
@@ -543,12 +543,12 @@ abstract class JString
 	 * UTF-8 aware substr_replace
 	 * Replace text within a portion of a string
 	 *
-	 * @param   string   $str     The haystack
-	 * @param   string   $repl    The replacement string
-	 * @param   integer  $start   Start
-	 * @param   integer  $length  Length (optional)
+     * @param  string   $str     The haystack
+     * @param  string   $repl    The replacement string
+     * @param  integer  $start   Start
+     * @param  integer  $length  Length (optional)
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @see     http://www.php.net/substr_replace
 	 * @since   11.1
@@ -574,10 +574,10 @@ abstract class JString
 	 * optional arg and it contains UTF-8 characters. Otherwise ltrim will
 	 * work normally on a UTF-8 string
 	 *
-	 * @param   string  $str       The string to be trimmed
-	 * @param   string  $charlist  The optional charlist of additional characters to trim
+     * @param  string  $str       The string to be trimmed
+     * @param  string  $charlist  The optional charlist of additional characters to trim
 	 *
-	 * @return  string  The trimmed string
+     * @return  string  The trimmed string
 	 *
 	 * @see     http://www.php.net/ltrim
 	 * @since   11.1
@@ -608,10 +608,10 @@ abstract class JString
 	 * optional arg and it contains UTF-8 characters. Otherwise rtrim will
 	 * work normally on a UTF-8 string
 	 *
-	 * @param   string  $str       The string to be trimmed
-	 * @param   string  $charlist  The optional charlist of additional characters to trim
+     * @param  string  $str       The string to be trimmed
+     * @param  string  $charlist  The optional charlist of additional characters to trim
 	 *
-	 * @return  string  The trimmed string
+     * @return  string  The trimmed string
 	 *
 	 * @see     http://www.php.net/rtrim
 	 * @since   11.1
@@ -642,10 +642,10 @@ abstract class JString
 	 * optional arg and it contains UTF-8 characters. Otherwise trim will
 	 * work normally on a UTF-8 string
 	 *
-	 * @param   string  $str       The string to be trimmed
-	 * @param   string  $charlist  The optional charlist of additional characters to trim
+     * @param  string  $str       The string to be trimmed
+     * @param  string  $charlist  The optional charlist of additional characters to trim
 	 *
-	 * @return  string  The trimmed string
+     * @return  string  The trimmed string
 	 *
 	 * @see     http://www.php.net/trim
 	 * @since   11.1
@@ -673,11 +673,11 @@ abstract class JString
 	 * UTF-8 aware alternative to ucfirst
 	 * Make a string's first character uppercase or all words' first character uppercase
 	 *
-	 * @param   string  $str           String to be processed
-	 * @param   string  $delimiter     The words delimiter (null means do not split the string)
-	 * @param   string  $newDelimiter  The new words delimiter (null means equal to $delimiter)
+     * @param  string  $str           String to be processed
+     * @param  string  $delimiter     The words delimiter (null means do not split the string)
+     * @param  string  $newDelimiter  The new words delimiter (null means equal to $delimiter)
 	 *
-	 * @return  string  If $delimiter is null, return the string with first character as upper case (if applicable)
+     * @return  string  If $delimiter is null, return the string with first character as upper case (if applicable)
 	 *                  else consider the string of words separated by the delimiter, apply the ucfirst to each words
 	 *                  and return the string with the new delimiter
 	 *
@@ -706,9 +706,9 @@ abstract class JString
 	 * UTF-8 aware alternative to ucwords
 	 * Uppercase the first character of each word in a string
 	 *
-	 * @param   string  $str  String to be processed
+     * @param  string  $str  String to be processed
 	 *
-	 * @return  string  String with first char of each word uppercase
+     * @return  string  String with first char of each word uppercase
 	 *
 	 * @see     http://www.php.net/ucwords
 	 * @since   11.1
@@ -723,11 +723,11 @@ abstract class JString
 	/**
 	 * Transcode a string.
 	 *
-	 * @param   string  $source         The string to transcode.
-	 * @param   string  $from_encoding  The source encoding.
-	 * @param   string  $to_encoding    The target encoding.
+     * @param  string  $source         The string to transcode.
+     * @param  string  $from_encoding  The source encoding.
+     * @param  string  $to_encoding    The target encoding.
 	 *
-	 * @return  mixed  The transcoded string, or null if the source was not a string.
+     * @return  mixed  The transcoded string, or null if the source was not a string.
 	 *
 	 * @link    https://bugs.php.net/bug.php?id=48147
 	 *
@@ -755,9 +755,9 @@ abstract class JString
 	 *
 	 * Note: this function has been modified to simple return true or false.
 	 *
-	 * @param   string  $str  UTF-8 encoded string.
+     * @param  string  $str  UTF-8 encoded string.
 	 *
-	 * @return  boolean  true if valid
+     * @return  boolean  true if valid
 	 *
 	 * @author  <hsivonen@iki.fi>
 	 * @see     http://hsivonen.iki.fi/php-utf8/
@@ -907,9 +907,9 @@ abstract class JString
 	 * may or may not be a significant risk, depending on what you are
 	 * are doing)
 	 *
-	 * @param   string  $str  UTF-8 string to check
+     * @param  string  $str  UTF-8 string to check
 	 *
-	 * @return  boolean  TRUE if string is valid UTF-8
+     * @return  boolean  TRUE if string is valid UTF-8
 	 *
 	 * @see     valid
 	 * @see     http://www.php.net/manual/en/reference.pcre.pattern.modifiers.php#54805
@@ -934,9 +934,9 @@ abstract class JString
 	/**
 	 * Does a UTF-8 safe version of PHP parse_url function
 	 *
-	 * @param   string  $url  URL to parse
+     * @param  string  $url  URL to parse
 	 *
-	 * @return  mixed  Associative array or false if badly formed URL.
+     * @return  mixed  Associative array or false if badly formed URL.
 	 *
 	 * @see     http://us3.php.net/manual/en/function.parse-url.php
 	 * @since   11.1

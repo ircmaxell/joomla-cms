@@ -43,7 +43,7 @@ class FinderIndexerResultTest extends TestCaseDatabase
 	/**
 	 * Tests the magic get and set methods
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -60,7 +60,7 @@ class FinderIndexerResultTest extends TestCaseDatabase
 	/**
 	 * Tests the magic get method for a null return
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -75,7 +75,7 @@ class FinderIndexerResultTest extends TestCaseDatabase
 	/**
 	 * Tests the magic isset and unset methods
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -100,7 +100,7 @@ class FinderIndexerResultTest extends TestCaseDatabase
 	/**
 	 * Tests the getElement method for a null return
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -115,7 +115,7 @@ class FinderIndexerResultTest extends TestCaseDatabase
 	/**
 	 * Tests the getElement and setElement methods
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -132,7 +132,7 @@ class FinderIndexerResultTest extends TestCaseDatabase
 	/**
 	 * Method to test adding an instruction, retrieving the instructions array, and removing it
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -166,7 +166,7 @@ class FinderIndexerResultTest extends TestCaseDatabase
 	/**
 	 * Tests the getTaxonomy method for returning the full taxonomy array
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -181,7 +181,7 @@ class FinderIndexerResultTest extends TestCaseDatabase
 	/**
 	 * Tests the addTaxonomy and getTaxonomy methods
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -203,7 +203,7 @@ class FinderIndexerResultTest extends TestCaseDatabase
 	/**
 	 * Tests the setLanguage method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */

@@ -28,10 +28,10 @@ class JApplicationWebRouterBase extends JApplicationWebRouter
 	/**
 	 * Add a route map to the router.  If the pattern already exists it will be overwritten.
 	 *
-	 * @param   string  $pattern     The route pattern to use for matching.
-	 * @param   string  $controller  The controller name to map to the given pattern.
+     * @param  string  $pattern     The route pattern to use for matching.
+     * @param  string  $controller  The controller name to map to the given pattern.
 	 *
-	 * @return  JApplicationWebRouter  This object for method chaining.
+     * @return  JApplicationWebRouter  This object for method chaining.
 	 *
 	 * @since   12.2
 	 */
@@ -100,9 +100,9 @@ class JApplicationWebRouterBase extends JApplicationWebRouter
 	/**
 	 * Add a route map to the router.  If the pattern already exists it will be overwritten.
 	 *
-	 * @param   array  $maps  A list of route maps to add to the router as $pattern => $controller.
+     * @param  array  $maps  A list of route maps to add to the router as $pattern => $controller.
 	 *
-	 * @return  JApplicationWebRouter  This object for method chaining.
+     * @return  JApplicationWebRouter  This object for method chaining.
 	 *
 	 * @since   12.2
 	 */
@@ -119,12 +119,12 @@ class JApplicationWebRouterBase extends JApplicationWebRouter
 	/**
 	 * Parse the given route and return the name of a controller mapped to the given route.
 	 *
-	 * @param   string  $route  The route string for which to find and execute a controller.
+     * @param  string  $route  The route string for which to find and execute a controller.
 	 *
-	 * @return  string  The controller name for the given route excluding prefix.
+     * @return  string  The controller name for the given route excluding prefix.
 	 *
 	 * @since   12.2
-	 * @throws  InvalidArgumentException
+     * @throws  InvalidArgumentException
 	 */
 	protected function parseRoute($route)
 	{

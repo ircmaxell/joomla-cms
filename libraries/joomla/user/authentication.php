@@ -112,7 +112,7 @@ class JAuthentication extends JObject
 	 * Returns the global authentication object, only creating it
 	 * if it doesn't already exist.
 	 *
-	 * @return  JAuthentication  The global JAuthentication object
+     * @return  JAuthentication  The global JAuthentication object
 	 *
 	 * @since   11.1
 	 */
@@ -129,7 +129,7 @@ class JAuthentication extends JObject
 	/**
 	 * Get the state of the JAuthentication object
 	 *
-	 * @return  mixed    The state of the object.
+     * @return  mixed  The state of the object.
 	 *
 	 * @since   11.1
 	 */
@@ -141,9 +141,9 @@ class JAuthentication extends JObject
 	/**
 	 * Attach an observer object
 	 *
-	 * @param   object  $observer  An observer object to attach
+     * @param  object  $observer  An observer object to attach
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -209,9 +209,9 @@ class JAuthentication extends JObject
 	/**
 	 * Detach an observer object
 	 *
-	 * @param   object  $observer  An observer object to detach.
+     * @param  object  $observer  An observer object to detach.
 	 *
-	 * @return  boolean  True if the observer object was detached.
+     * @return  boolean  True if the observer object was detached.
 	 *
 	 * @since   11.1
 	 */
@@ -244,10 +244,10 @@ class JAuthentication extends JObject
 	 * Finds out if a set of login credentials are valid by asking all observing
 	 * objects to run their respective authentication routines.
 	 *
-	 * @param   array  $credentials  Array holding the user credentials.
-	 * @param   array  $options      Array holding user options.
+     * @param  array  $credentials  Array holding the user credentials.
+     * @param  array  $options      Array holding user options.
 	 *
-	 * @return  JAuthenticationResponse  Response object with status variable filled in for last plugin or first successful plugin.
+     * @return  JAuthenticationResponse  Response object with status variable filled in for last plugin or first successful plugin.
 	 *
 	 * @see     JAuthenticationResponse
 	 * @since   11.1
@@ -316,10 +316,10 @@ class JAuthentication extends JObject
 	/**
 	 * Authorises that a particular user should be able to login
 	 *
-	 * @param   JAuthenticationResponse  $response  response including username of the user to authorise
-	 * @param   array                    $options   list of options
+     * @param  JAuthenticationResponse  $response  response including username of the user to authorise
+     * @param  array                    $options   list of options
 	 *
-	 * @return  array[JAuthenticationResponse]  results of authorisation
+     * @return  array[JAuthenticationResponse]  results of authorisation
 	 *
 	 * @since  11.2
 	 */

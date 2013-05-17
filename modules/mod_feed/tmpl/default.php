@@ -30,12 +30,10 @@ else
 	{
 			$direction = " redirect-ltr";
 	}
-
 	elseif ($lang->isRTL() && $myrtl == 2)
 	{
 		$direction = " redirect-rtl";
 	}
-
 	elseif ($myrtl == 0)
 	{
 		$direction = " redirect-ltr";

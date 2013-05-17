@@ -32,9 +32,9 @@ class JInstallerAdapterPackage extends JAdapterInstance
 	/**
 	 * Load language from a path
 	 *
-	 * @param   string  $path  The path of the language.
+     * @param  string  $path  The path of the language.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -53,7 +53,7 @@ class JInstallerAdapterPackage extends JAdapterInstance
 	/**
 	 * Custom install method
 	 *
-	 * @return  int  The extension id
+     * @return  int  The extension id
 	 *
 	 * @since   3.1
 	 */
@@ -375,7 +375,7 @@ class JInstallerAdapterPackage extends JAdapterInstance
 	 * The only difference between an update and a full install
 	 * is how we handle the database
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -388,9 +388,9 @@ class JInstallerAdapterPackage extends JAdapterInstance
 	/**
 	 * Custom uninstall method
 	 *
-	 * @param   integer  $id  The id of the package to uninstall.
+     * @param  integer  $id  The id of the package to uninstall.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -536,12 +536,12 @@ class JInstallerAdapterPackage extends JAdapterInstance
 	/**
 	 * Gets the extension id.
 	 *
-	 * @param   string   $type    The extension type.
-	 * @param   string   $id      The name of the extension (the element field).
-	 * @param   integer  $client  The application id (0: Joomla CMS site; 1: Joomla CMS administrator).
-	 * @param   string   $group   The extension group (mainly for plugins).
+     * @param  string   $type    The extension type.
+     * @param  string   $id      The name of the extension (the element field).
+     * @param  integer  $client  The application id (0: Joomla CMS site; 1: Joomla CMS administrator).
+     * @param  string   $group   The extension group (mainly for plugins).
 	 *
-	 * @return  integer
+     * @return  integer
 	 *
 	 * @since   3.1
 	 */
@@ -589,7 +589,7 @@ class JInstallerAdapterPackage extends JAdapterInstance
 	/**
 	 * Refreshes the extension table cache
 	 *
-	 * @return  boolean  Result of operation, true if updated, false on failure
+     * @return  boolean  Result of operation, true if updated, false on failure
 	 *
 	 * @since   3.1
 	 */

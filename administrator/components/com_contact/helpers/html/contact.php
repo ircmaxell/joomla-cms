@@ -20,9 +20,9 @@ abstract class JHtmlContact
 	/**
 	 * Get the associated language flags
 	 *
-	 * @param   int  $contactid  The item id to search associations
+     * @param  int  $contactid  The item id to search associations
 	 *
-	 * @return  string  The language HTML
+     * @return  string  The language HTML
 	 */
 	public static function association($contactid)
 	{
@@ -86,11 +86,11 @@ abstract class JHtmlContact
 	}
 
 	/**
-	 * @param   int $value	The featured value
-	 * @param   int $i
-	 * @param   bool $canChange Whether the value can be changed or not
+     * @param  int   $value      The featured value
+     * @param  int   $i
+     * @param  bool  $canChange  Whether the value can be changed or not
 	 *
-	 * @return  string	The anchor tag to toggle featured/unfeatured contacts.
+     * @return  string  The anchor tag to toggle featured/unfeatured contacts.
 	 * @since   1.6
 	 */
 	public static function featured($value = 0, $i, $canChange = true)

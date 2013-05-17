@@ -69,8 +69,8 @@ class JCaptcha extends JObject
 	/**
 	 * Class constructor.
 	 *
-	 * @param   string  $captcha  The editor to use.
-	 * @param   array   $options  Associative array of options.
+     * @param  string  $captcha  The editor to use.
+     * @param  array   $options  Associative array of options.
 	 *
 	 * @since 2.5
 	 */
@@ -84,10 +84,10 @@ class JCaptcha extends JObject
 	 * Returns the global Captcha object, only creating it
 	 * if it doesn't already exist.
 	 *
-	 * @param   string  $captcha  The plugin to use.
-	 * @param   array   $options  Associative array of options.
+     * @param  string  $captcha  The plugin to use.
+     * @param  array   $options  Associative array of options.
 	 *
-	 * @return  JCaptcha  Instance of this class.
+     * @return  JCaptcha  Instance of this class.
 	 *
 	 * @since 2.5
 	 */
@@ -114,9 +114,9 @@ class JCaptcha extends JObject
 	/**
 	 * Fire the onInit event to initialise the captcha plug-in.
 	 *
-	 * @param   string  $id  The id of the field.
+     * @param  string  $id  The id of the field.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since	2.5
 	 */
@@ -141,11 +141,11 @@ class JCaptcha extends JObject
 	/**
 	 * Get the HTML for the captcha.
 	 *
-	 * @param   string  $name   The control name.
-	 * @param   string  $id     The id for the control.
-	 * @param   string  $class  Value for the HTML class attribute
+     * @param  string  $name   The control name.
+     * @param  string  $id     The id for the control.
+     * @param  string  $class  Value for the HTML class attribute
 	 *
-	 * @return  mixed  The return value of the function "onDisplay" of the selected Plugin.
+     * @return  mixed  The return value of the function "onDisplay" of the selected Plugin.
 	 *
 	 * @since   2.5
 	 */
@@ -174,9 +174,9 @@ class JCaptcha extends JObject
 	/**
 	 * Checks if the answer is correct.
 	 *
-	 * @param   string  $code  The answer.
+     * @param  string  $code  The answer.
 	 *
-	 * @return  mixed   The return value of the function "onCheckAnswer" of the selected Plugin.
+     * @return  mixed  The return value of the function "onCheckAnswer" of the selected Plugin.
 	 *
 	 * @since	2.5
 	 */
@@ -197,12 +197,12 @@ class JCaptcha extends JObject
 	/**
 	 * Load the Captcha plug-in.
 	 *
-	 * @param   array  $options  Associative array of options.
+     * @param  array  $options  Associative array of options.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since	2.5
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	private function _load(array $options = array())
 	{
@@ -235,7 +235,7 @@ class JCaptcha extends JObject
 	/**
 	 * Get the state of the JEditor object
 	 *
-	 * @return  mixed  The state of the object.
+     * @return  mixed  The state of the object.
 	 *
 	 * @since   2.5
 	 */
@@ -247,9 +247,9 @@ class JCaptcha extends JObject
 	/**
 	 * Attach an observer object
 	 *
-	 * @param   object  $observer  An observer object to attach
+     * @param  object  $observer  An observer object to attach
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   2.5
 	 */
@@ -315,9 +315,9 @@ class JCaptcha extends JObject
 	/**
 	 * Detach an observer object
 	 *
-	 * @param   object  $observer  An observer object to detach.
+     * @param  object  $observer  An observer object to detach.
 	 *
-	 * @return  boolean  True if the observer object was detached.
+     * @return  boolean  True if the observer object was detached.
 	 *
 	 * @since   2.5
 	 */

@@ -87,7 +87,7 @@ abstract class JInstallerManifest
 	/**
 	 * Constructor
 	 *
-	 * @param   string  $xmlpath  Path to XML manifest file.
+     * @param  string  $xmlpath  Path to XML manifest file.
 	 *
 	 * @since   3.1
 	 */
@@ -102,9 +102,9 @@ abstract class JInstallerManifest
 	/**
 	 * Load a manifest from a file
 	 *
-	 * @param   string  $xmlfile  Path to file to load
+     * @param  string  $xmlfile  Path to file to load
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   3.1
 	 */
@@ -131,9 +131,9 @@ abstract class JInstallerManifest
 	/**
 	 * Apply manifest data from a SimpleXMLElement to the object.
 	 *
-	 * @param   SimpleXMLElement  $xml  Data to load
+     * @param  SimpleXMLElement  $xml  Data to load
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */

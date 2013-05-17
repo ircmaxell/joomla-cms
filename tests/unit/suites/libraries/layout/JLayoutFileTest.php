@@ -42,7 +42,7 @@ class JLayoutFileTest extends TestCase
 	/**
 	 * Tests the escape method
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

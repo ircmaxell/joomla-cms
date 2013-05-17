@@ -53,9 +53,9 @@ class JUcmContent extends JUcmBase
 	/**
 	 * Instantiate JUcmContent.
 	 *
-	 * @param   JTable    $table  The table object
-	 * @param   sring     $alias  The type alias
-	 * @param   JUcmType  $type   The type object
+     * @param  JTable    $table  The table object
+     * @param  sring     $alias  The type alias
+     * @param  JUcmType  $type   The type object
 	 *
 	 * @since   3.1
 	 */
@@ -81,10 +81,10 @@ class JUcmContent extends JUcmBase
 	/**
 	 * Method to save the data
 	 *
-	 * @param   array     $original  The original data to be saved
-	 * @param   JUcmType  $type      The UCM Type object
+     * @param  array     $original  The original data to be saved
+     * @param  JUcmType  $type      The UCM Type object
 	 *
-	 * @return  boolean  true
+     * @return  boolean  true
 	 *
 	 * @since   3.1
 	 */
@@ -109,10 +109,10 @@ class JUcmContent extends JUcmBase
 	/**
 	 * Delete content from the Core Content table
 	 *
-	 * @param   mixed     $pk    The string/array of id's to delete
-	 * @param   JUcmType  $type  The content type object
+     * @param  mixed     $pk    The string/array of id's to delete
+     * @param  JUcmType  $type  The content type object
 	 *
-	 * @return  boolean  True if success
+     * @return  boolean  True if success
 	 *
 	 * @since   3.1
 	 */
@@ -140,10 +140,10 @@ class JUcmContent extends JUcmBase
 	/**
 	 * Map the original content to the Core Content fields
 	 *
-	 * @param   array     $original  The original data array
-	 * @param   JUcmType  $type      Type object for this data
+     * @param  array     $original  The original data array
+     * @param  JUcmType  $type      Type object for this data
 	 *
-	 * @return  object  $ucmData  The mapped UCM data
+     * @return  object  $ucmData  The mapped UCM data
 	 *
 	 * @since   3.1
 	 */
@@ -190,11 +190,11 @@ class JUcmContent extends JUcmBase
 	/**
 	 * Store data to the appropriate table
 	 *
-	 * @param   array    $data        Data to be stored
-	 * @param   JTable   $table       JTable Object
-	 * @param   boolean  $primaryKey  Flag that is true for data that are using #__ucm_content as their primary table
+     * @param  array    $data        Data to be stored
+     * @param  JTable   $table       JTable Object
+     * @param  boolean  $primaryKey  Flag that is true for data that are using #__ucm_content as their primary table
 	 *
-	 * @return  Boolean  true on success
+     * @return  Boolean  true on success
 	 *
 	 * @since   3.1
 	 */
@@ -225,10 +225,10 @@ class JUcmContent extends JUcmBase
 	/**
 	 * Get the value of the primary key from #__ucm_base
 	 *
-	 * @param   string   $typeId         The ID for the type
-	 * @param   integer  $contentItemId  Value of the primary key in the legacy or secondary table
+     * @param  string   $typeId         The ID for the type
+     * @param  integer  $contentItemId  Value of the primary key in the legacy or secondary table
 	 *
-	 * @return  integer  The integer of the primary key
+     * @return  integer  The integer of the primary key
 	 *
 	 * @since   3.1
 	 */

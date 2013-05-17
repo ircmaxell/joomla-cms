@@ -36,10 +36,10 @@ class JCacheControllerOutput extends JCacheController
 	/**
 	 * Start the cache
 	 *
-	 * @param   string  $id     The cache data id
-	 * @param   string  $group  The cache data group
+     * @param  string  $id     The cache data id
+     * @param  string  $group  The cache data group
 	 *
-	 * @return  boolean  True if the cache is hit (false else)
+     * @return  boolean  True if the cache is hit (false else)
 	 *
 	 * @since   11.1
 	 */
@@ -92,7 +92,7 @@ class JCacheControllerOutput extends JCacheController
 	/**
 	 * Stop the cache buffer and store the cached data
 	 *
-	 * @return  boolean  True if cache stored
+     * @return  boolean  True if cache stored
 	 *
 	 * @since   11.1
 	 */

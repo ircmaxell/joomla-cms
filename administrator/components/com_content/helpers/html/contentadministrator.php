@@ -20,9 +20,9 @@ abstract class JHtmlContentAdministrator
 	/**
 	 * Get the associated language flags
 	 *
-	 * @param   int  $articleid  The article item id
+     * @param  int  $articleid  The article item id
 	 *
-	 * @return  string  The language HTML
+     * @return  string  The language HTML
 	 */
 	public static function association($articleid)
 	{
@@ -89,8 +89,8 @@ abstract class JHtmlContentAdministrator
 	}
 
 	/**
-	 * @param   int $value	The state value
-	 * @param   int $i
+     * @param  int  $value  The state value
+     * @param  int  $i
 	 */
 	public static function featured($value = 0, $i, $canChange = true)
 	{

@@ -21,11 +21,11 @@ class JClientHelper
 	/**
 	 * Method to return the array of client layer configuration options
 	 *
-	 * @param   string   $client  Client name, currently only 'ftp' is supported
-	 * @param   boolean  $force   Forces re-creation of the login credentials. Set this to
+     * @param  string   $client  Client name, currently only 'ftp' is supported
+     * @param  boolean  $force   Forces re-creation of the login credentials. Set this to
 	 *                            true if login credentials in the session storage have changed
 	 *
-	 * @return  array    Client layer configuration options, consisting of at least
+     * @return  array  Client layer configuration options, consisting of at least
 	 *                   these fields: enabled, host, port, user, pass, root
 	 *
 	 * @since   11.1
@@ -82,11 +82,11 @@ class JClientHelper
 	/**
 	 * Method to set client login credentials
 	 *
-	 * @param   string  $client  Client name, currently only 'ftp' is supported
-	 * @param   string  $user    Username
-	 * @param   string  $pass    Password
+     * @param  string  $client  Client name, currently only 'ftp' is supported
+     * @param  string  $user    Username
+     * @param  string  $pass    Password
 	 *
-	 * @return  boolean  True if the given login credentials have been set and are valid
+     * @return  boolean  True if the given login credentials have been set and are valid
 	 *
 	 * @since   11.1
 	 */
@@ -139,9 +139,9 @@ class JClientHelper
 	/**
 	 * Method to determine if client login credentials are present
 	 *
-	 * @param   string  $client  Client name, currently only 'ftp' is supported
+     * @param  string  $client  Client name, currently only 'ftp' is supported
 	 *
-	 * @return  boolean  True if login credentials are available
+     * @return  boolean  True if login credentials are available
 	 *
 	 * @since   11.1
 	 */
@@ -195,12 +195,12 @@ class JClientHelper
 	 * This functions returns an exception if invalid credentials have been given or if the
 	 * connection to the server failed for some other reason.
 	 *
-	 * @param   string  $client  The name of the client.
+     * @param  string  $client  The name of the client.
 	 *
-	 * @return  mixed  True, if FTP settings; JError if using legacy tree.
+     * @return  mixed  True, if FTP settings; JError if using legacy tree.
 	 *
 	 * @since   11.1
-	 * @throws  InvalidArgumentException if credentials invalid
+     * @throws  InvalidArgumentException  if credentials invalid
 	 */
 	public static function setCredentialsFromRequest($client)
 	{

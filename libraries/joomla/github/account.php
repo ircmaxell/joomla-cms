@@ -21,11 +21,11 @@ class JGithubAccount extends JGithubObject
 	/**
 	 * Method to create an authorisation.
 	 *
-	 * @param   array   $scopes  A list of scopes that this authorisation is in.
-	 * @param   string  $note    A note to remind you what the OAuth token is for.
-	 * @param   string  $url     A URL to remind you what app the OAuth token is for.
+     * @param  array   $scopes  A list of scopes that this authorisation is in.
+     * @param  string  $note    A note to remind you what the OAuth token is for.
+     * @param  string  $url     A URL to remind you what app the OAuth token is for.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.3
 	 */
@@ -55,9 +55,9 @@ class JGithubAccount extends JGithubObject
 	/**
 	 * Method to delete an authorisation
 	 *
-	 * @param   integer  $id  ID of the authorisation to delete
+     * @param  integer  $id  ID of the authorisation to delete
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.3
 	 */
@@ -83,17 +83,17 @@ class JGithubAccount extends JGithubObject
 	/**
 	 * Method to edit an authorisation.
 	 *
-	 * @param   integer  $id            ID of the authorisation to edit
-	 * @param   array    $scopes        Replaces the authorisation scopes with these.
-	 * @param   array    $addScopes     A list of scopes to add to this authorisation.
-	 * @param   array    $removeScopes  A list of scopes to remove from this authorisation.
-	 * @param   string   $note          A note to remind you what the OAuth token is for.
-	 * @param   string   $url           A URL to remind you what app the OAuth token is for.
+     * @param  integer  $id            ID of the authorisation to edit
+     * @param  array    $scopes        Replaces the authorisation scopes with these.
+     * @param  array    $addScopes     A list of scopes to add to this authorisation.
+     * @param  array    $removeScopes  A list of scopes to remove from this authorisation.
+     * @param  string   $note          A note to remind you what the OAuth token is for.
+     * @param  string   $url           A URL to remind you what app the OAuth token is for.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.3
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function editAuthorisation($id, array $scopes = array(), array $addScopes = array(), array $removeScopes = array(), $note = '', $url = '')
 	{
@@ -153,9 +153,9 @@ class JGithubAccount extends JGithubObject
 	/**
 	 * Method to get details about an authorised application for the authenticated user.
 	 *
-	 * @param   integer  $id  ID of the authorisation to retrieve
+     * @param  integer  $id  ID of the authorisation to retrieve
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.3
 	 * @note    This method will only accept Basic Authentication
@@ -182,7 +182,7 @@ class JGithubAccount extends JGithubObject
 	/**
 	 * Method to get the authorised applications for the authenticated user.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.3
 	 * @note    This method will only accept Basic Authentication
@@ -209,7 +209,7 @@ class JGithubAccount extends JGithubObject
 	/**
 	 * Method to get the rate limit for the authenticated user.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @since   12.3
 	 */

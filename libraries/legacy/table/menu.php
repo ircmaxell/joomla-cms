@@ -21,7 +21,7 @@ class JTableMenu extends JTableNested
 	/**
 	 * Constructor
 	 *
-	 * @param   JDatabaseDriver  $db  Database driver object.
+     * @param  JDatabaseDriver  $db  Database driver object.
 	 *
 	 * @since   11.1
 	 */
@@ -36,10 +36,10 @@ class JTableMenu extends JTableNested
 	/**
 	 * Overloaded bind function
 	 *
-	 * @param   array  $array   Named array
-	 * @param   mixed  $ignore  An optional array or space separated list of properties to ignore while binding.
+     * @param  array  $array   Named array
+     * @param  mixed  $ignore  An optional array or space separated list of properties to ignore while binding.
 	 *
-	 * @return  mixed  Null if operation was satisfactory, otherwise returns an error
+     * @return  mixed  Null if operation was satisfactory, otherwise returns an error
 	 *
 	 * @see     JTable::bind
 	 * @since   11.1
@@ -79,7 +79,7 @@ class JTableMenu extends JTableNested
 	/**
 	 * Overloaded check function
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @see     JTable::check
 	 * @since   11.1
@@ -131,9 +131,9 @@ class JTableMenu extends JTableNested
 	/**
 	 * Overloaded store function
 	 *
-	 * @param   boolean  $updateNulls  True to update fields even if they are null.
+     * @param  boolean  $updateNulls  True to update fields even if they are null.
 	 *
-	 * @return  mixed  False on failure, positive integer on success.
+     * @return  mixed  False on failure, positive integer on success.
 	 *
 	 * @see     JTable::store
 	 * @since   11.1

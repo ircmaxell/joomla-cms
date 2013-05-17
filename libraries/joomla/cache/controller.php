@@ -33,7 +33,7 @@ class JCacheController
 	/**
 	 * Constructor
 	 *
-	 * @param   array  $options  Array of options
+     * @param  array  $options  Array of options
 	 *
 	 * @since   11.1
 	 */
@@ -55,10 +55,10 @@ class JCacheController
 	/**
 	 * Magic method to proxy JCacheControllerMethods
 	 *
-	 * @param   string  $name       Name of the function
-	 * @param   array   $arguments  Array of arguments for the function
+     * @param  string  $name       Name of the function
+     * @param  array   $arguments  Array of arguments for the function
 	 *
-	 * @return  mixed
+     * @return  mixed
 	 *
 	 * @since   11.1
 	 */
@@ -71,13 +71,13 @@ class JCacheController
 	/**
 	 * Returns a reference to a cache adapter object, always creating it
 	 *
-	 * @param   string  $type     The cache object type to instantiate; default is output.
-	 * @param   array   $options  Array of options
+     * @param  string  $type     The cache object type to instantiate; default is output.
+     * @param  array   $options  Array of options
 	 *
-	 * @return  JCache  A JCache object
+     * @return  JCache  A JCache object
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public static function getInstance($type = 'output', $options = array())
 	{
@@ -108,9 +108,9 @@ class JCacheController
 	/**
 	 * Set caching enabled state
 	 *
-	 * @param   boolean  $enabled  True to enable caching
+     * @param  boolean  $enabled  True to enable caching
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -122,9 +122,9 @@ class JCacheController
 	/**
 	 * Set cache lifetime
 	 *
-	 * @param   integer  $lt  Cache lifetime
+     * @param  integer  $lt  Cache lifetime
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -137,9 +137,9 @@ class JCacheController
 	 * Add a directory where JCache should search for controllers. You may
 	 * either pass a string or an array of directories.
 	 *
-	 * @param   string  $path  A path to search.
+     * @param  string  $path  A path to search.
 	 *
-	 * @return  array   An array with directory elements
+     * @return  array  An array with directory elements
 	 *
 	 * @since   11.1
 	 */
@@ -162,10 +162,10 @@ class JCacheController
 	/**
 	 * Get stored cached data by id and group
 	 *
-	 * @param   string  $id     The cache data id
-	 * @param   string  $group  The cache data group
+     * @param  string  $id     The cache data id
+     * @param  string  $group  The cache data group
 	 *
-	 * @return  mixed   False on no result, cached object otherwise
+     * @return  mixed  False on no result, cached object otherwise
 	 *
 	 * @since   11.1
 	 */
@@ -202,13 +202,13 @@ class JCacheController
 	/**
 	 * Store data to cache by id and group
 	 *
-	 * @param   mixed    $data        The data to store
-	 * @param   string   $id          The cache data id
-	 * @param   string   $group       The cache data group
-	 * @param   boolean  $wrkarounds  True to use wrkarounds
+     * @param  mixed    $data        The data to store
+     * @param  string   $id          The cache data id
+     * @param  string   $group       The cache data group
+     * @param  boolean  $wrkarounds  True to use wrkarounds
 	 *
-	 * @return  boolean  True if cache stored
-	 * 
+     * @return  boolean  True if cache stored
+	 *
 	 * @since   11.1
 	 */
 	public function store($data, $id, $group = null, $wrkarounds = true)

@@ -21,10 +21,10 @@ class JDatabaseImporterMysql extends JDatabaseImporterMysqli
 	/**
 	 * Checks if all data and options are in order prior to exporting.
 	 *
-	 * @return  JDatabaseImporterMysql  Method supports chaining.
+     * @return  JDatabaseImporterMysql  Method supports chaining.
 	 *
 	 * @since   11.1
-	 * @throws  Exception if an error is encountered.
+     * @throws  Exception  if an error is encountered.
 	 */
 	public function check()
 	{
@@ -46,9 +46,9 @@ class JDatabaseImporterMysql extends JDatabaseImporterMysqli
 	/**
 	 * Sets the database connector to use for exporting structure and/or data from MySQL.
 	 *
-	 * @param   JDatabaseDriverMysql  $db  The database connector.
+     * @param  JDatabaseDriverMysql  $db  The database connector.
 	 *
-	 * @return  JDatabaseImporterMysql  Method supports chaining.
+     * @return  JDatabaseImporterMysql  Method supports chaining.
 	 *
 	 * @since   11.1
 	 */

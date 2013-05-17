@@ -24,10 +24,10 @@ abstract class ContactHelperAssociation extends CategoryHelperAssociation
 	/**
 	 * Method to get the associations for a given item
 	 *
-	 * @param   integer  $id    Id of the item
-	 * @param   string   $view  Name of the view
+     * @param  integer  $id    Id of the item
+     * @param  string   $view  Name of the view
 	 *
-	 * @return  array   Array of associations for the item
+     * @return  array  Array of associations for the item
 	 *
 	 * @since  3.0
 	 */

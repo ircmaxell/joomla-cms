@@ -88,9 +88,9 @@ class JInstallerAdapterComponent extends JAdapterInstance
 	/**
 	 * Custom loadLanguage method
 	 *
-	 * @param   string  $path  The path language files are on.
+     * @param  string  $path  The path language files are on.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -153,7 +153,7 @@ class JInstallerAdapterComponent extends JAdapterInstance
 	/**
 	 * Custom install method for components
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -561,7 +561,7 @@ class JInstallerAdapterComponent extends JAdapterInstance
 	/**
 	 * Custom update method for components
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -960,9 +960,9 @@ class JInstallerAdapterComponent extends JAdapterInstance
 	/**
 	 * Custom uninstall method for components
 	 *
-	 * @param   integer  $id  The unique extension id of the component to uninstall
+     * @param  integer  $id  The unique extension id of the component to uninstall
 	 *
-	 * @return  mixed  Return value for uninstall method in component uninstall file
+     * @return  mixed  Return value for uninstall method in component uninstall file
 	 *
 	 * @since   3.1
 	 */
@@ -1202,7 +1202,7 @@ class JInstallerAdapterComponent extends JAdapterInstance
 	/**
 	 * Method to build menu database entries for a component
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   3.1
 	 */
@@ -1478,9 +1478,9 @@ class JInstallerAdapterComponent extends JAdapterInstance
 	/**
 	 * Method to remove admin menu references to a component
 	 *
-	 * @param   object  &$row  Component table object.
+     * @param  object  &$row  Component table object.
 	 *
-	 * @return  boolean  True if successful.
+     * @return  boolean  True if successful.
 	 *
 	 * @since   3.1
 	 */
@@ -1525,9 +1525,9 @@ class JInstallerAdapterComponent extends JAdapterInstance
 	 * Custom rollback method
 	 * - Roll back the component menu item
 	 *
-	 * @param   array  $step  Installation step to rollback.
+     * @param  array  $step  Installation step to rollback.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -1539,7 +1539,7 @@ class JInstallerAdapterComponent extends JAdapterInstance
 	/**
 	 * Discover unregistered extensions.
 	 *
-	 * @return  array  A list of extensions.
+     * @return  array  A list of extensions.
 	 *
 	 * @since   3.1
 	 */
@@ -1594,7 +1594,7 @@ class JInstallerAdapterComponent extends JAdapterInstance
 	/**
 	 * Install unregistered extensions that have been discovered.
 	 *
-	 * @return  mixed
+     * @return  mixed
 	 *
 	 * @since   3.1
 	 */
@@ -1851,7 +1851,7 @@ class JInstallerAdapterComponent extends JAdapterInstance
 	/**
 	 * Refreshes the extension table cache
 	 *
-	 * @return  boolean  Result of operation, true if updated, false on failure
+     * @return  boolean  Result of operation, true if updated, false on failure
 	 *
 	 * @since   3.1
 	 */

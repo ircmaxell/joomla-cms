@@ -29,12 +29,12 @@ abstract class FinderIndexerStemmer
 	/**
 	 * Method to get a stemmer, creating it if necessary.
 	 *
-	 * @param   string  $adapter  The type of stemmer to load.
+     * @param  string  $adapter  The type of stemmer to load.
 	 *
-	 * @return  FinderIndexerStemmer  A FinderIndexerStemmer instance.
+     * @return  FinderIndexerStemmer  A FinderIndexerStemmer instance.
 	 *
 	 * @since   2.5
-	 * @throws  Exception on invalid stemmer.
+     * @throws  Exception  on invalid stemmer.
 	 */
 	public static function getInstance($adapter)
 	{
@@ -76,10 +76,10 @@ abstract class FinderIndexerStemmer
 	/**
 	 * Method to stem a token and return the root.
 	 *
-	 * @param   string  $token  The token to stem.
-	 * @param   string  $lang   The language of the token.
+     * @param  string  $token  The token to stem.
+     * @param  string  $lang   The language of the token.
 	 *
-	 * @return  string  The root token.
+     * @return  string  The root token.
 	 *
 	 * @since   2.5
 	 */

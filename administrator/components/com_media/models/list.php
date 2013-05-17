@@ -64,7 +64,7 @@ class MediaModelList extends JModelLegacy
 	/**
 	 * Build imagelist
 	 *
-	 * @param string $listFolder The image directory to display
+     * @param  string  $listFolder  The image directory to display
 	 * @since 1.5
 	 */
 	public function getList()
@@ -148,7 +148,8 @@ class MediaModelList extends JModelLegacy
 								$tmp->width_60 = $dimensions[0];
 								$tmp->height_60 = $dimensions[1];
 							}
-							else {
+							else
+							{
 								$tmp->width_60 = $tmp->width;
 								$tmp->height_60 = $tmp->height;
 							}
@@ -159,7 +160,8 @@ class MediaModelList extends JModelLegacy
 								$tmp->width_16 = $dimensions[0];
 								$tmp->height_16 = $dimensions[1];
 							}
-							else {
+							else
+							{
 								$tmp->width_16 = $tmp->width;
 								$tmp->height_16 = $tmp->height;
 							}

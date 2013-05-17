@@ -69,11 +69,11 @@ abstract class JDatabaseIterator implements Countable, Iterator
 	/**
 	 * Database iterator constructor.
 	 *
-	 * @param   mixed   $cursor  The database cursor.
-	 * @param   string  $column  An option column to use as the iterator key.
-	 * @param   string  $class   The class of object that is returned.
+     * @param  mixed   $cursor  The database cursor.
+     * @param  string  $column  An option column to use as the iterator key.
+     * @param  string  $class   The class of object that is returned.
 	 *
-	 * @throws  InvalidArgumentException
+     * @throws  InvalidArgumentException
 	 */
 	public function __construct($cursor, $column = null, $class = 'stdClass')
 	{
@@ -105,7 +105,7 @@ abstract class JDatabaseIterator implements Countable, Iterator
 	/**
 	 * The current element in the iterator.
 	 *
-	 * @return  object
+     * @return  object
 	 *
 	 * @see     Iterator::current()
 	 * @since   12.1
@@ -118,7 +118,7 @@ abstract class JDatabaseIterator implements Countable, Iterator
 	/**
 	 * The key of the current element in the iterator.
 	 *
-	 * @return  scalar
+     * @return  scalar
 	 *
 	 * @see     Iterator::key()
 	 * @since   12.1
@@ -131,7 +131,7 @@ abstract class JDatabaseIterator implements Countable, Iterator
 	/**
 	 * Moves forward to the next result from the SQL query.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @see     Iterator::next()
 	 * @since   12.1
@@ -163,7 +163,7 @@ abstract class JDatabaseIterator implements Countable, Iterator
 	 *
 	 * This iterator cannot be rewound.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @see     Iterator::rewind()
 	 * @since   12.1
@@ -175,7 +175,7 @@ abstract class JDatabaseIterator implements Countable, Iterator
 	/**
 	 * Checks if the current position of the iterator is valid.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @see     Iterator::valid()
 	 * @since   12.1
@@ -188,7 +188,7 @@ abstract class JDatabaseIterator implements Countable, Iterator
 	/**
 	 * Method to fetch a row from the result set cursor as an object.
 	 *
-	 * @return  mixed  Either the next row from the result set or false if there are no more rows.
+     * @return  mixed  Either the next row from the result set or false if there are no more rows.
 	 *
 	 * @since   12.1
 	 */
@@ -197,7 +197,7 @@ abstract class JDatabaseIterator implements Countable, Iterator
 	/**
 	 * Method to free up the memory used for the result set.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */

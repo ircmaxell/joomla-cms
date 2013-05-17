@@ -101,11 +101,11 @@ class JFilterInput
 	/**
 	 * Constructor for inputFilter class. Only first parameter is required.
 	 *
-	 * @param   array    $tagsArray   List of user-defined tags
-	 * @param   array    $attrArray   List of user-defined attributes
-	 * @param   integer  $tagsMethod  WhiteList method = 0, BlackList method = 1
-	 * @param   integer  $attrMethod  WhiteList method = 0, BlackList method = 1
-	 * @param   integer  $xssAuto     Only auto clean essentials = 0, Allow clean blacklisted tags/attr = 1
+     * @param  array    $tagsArray   List of user-defined tags
+     * @param  array    $attrArray   List of user-defined attributes
+     * @param  integer  $tagsMethod  WhiteList method = 0, BlackList method = 1
+     * @param  integer  $attrMethod  WhiteList method = 0, BlackList method = 1
+     * @param  integer  $xssAuto     Only auto clean essentials = 0, Allow clean blacklisted tags/attr = 1
 	 *
 	 * @since   11.1
 	 */
@@ -126,13 +126,13 @@ class JFilterInput
 	/**
 	 * Returns an input filter object, only creating it if it doesn't already exist.
 	 *
-	 * @param   array    $tagsArray   List of user-defined tags
-	 * @param   array    $attrArray   List of user-defined attributes
-	 * @param   integer  $tagsMethod  WhiteList method = 0, BlackList method = 1
-	 * @param   integer  $attrMethod  WhiteList method = 0, BlackList method = 1
-	 * @param   integer  $xssAuto     Only auto clean essentials = 0, Allow clean blacklisted tags/attr = 1
+     * @param  array    $tagsArray   List of user-defined tags
+     * @param  array    $attrArray   List of user-defined attributes
+     * @param  integer  $tagsMethod  WhiteList method = 0, BlackList method = 1
+     * @param  integer  $attrMethod  WhiteList method = 0, BlackList method = 1
+     * @param  integer  $xssAuto     Only auto clean essentials = 0, Allow clean blacklisted tags/attr = 1
 	 *
-	 * @return  JFilterInput  The JFilterInput object.
+     * @return  JFilterInput  The JFilterInput object.
 	 *
 	 * @since   11.1
 	 */
@@ -152,10 +152,10 @@ class JFilterInput
 	 * Method to be called by another php script. Processes for XSS and
 	 * specified bad code.
 	 *
-	 * @param   mixed   $source  Input string/array-of-string to be 'cleaned'
-	 * @param   string  $type    Return type for the variable (INT, UINT, FLOAT, BOOLEAN, WORD, ALNUM, CMD, BASE64, STRING, ARRAY, PATH, NONE)
+     * @param  mixed   $source  Input string/array-of-string to be 'cleaned'
+     * @param  string  $type    Return type for the variable (INT, UINT, FLOAT, BOOLEAN, WORD, ALNUM, CMD, BASE64, STRING, ARRAY, PATH, NONE)
 	 *
-	 * @return  mixed  'Cleaned' version of input parameter
+     * @return  mixed  'Cleaned' version of input parameter
 	 *
 	 * @since   11.1
 	 */
@@ -269,9 +269,9 @@ class JFilterInput
 	/**
 	 * Function to determine if contents of an attribute are safe
 	 *
-	 * @param   array  $attrSubSet  A 2 element array for attribute's name, value
+     * @param  array  $attrSubSet  A 2 element array for attribute's name, value
 	 *
-	 * @return  boolean  True if bad code is detected
+     * @return  boolean  True if bad code is detected
 	 *
 	 * @since   11.1
 	 */
@@ -288,9 +288,9 @@ class JFilterInput
 	/**
 	 * Internal method to iteratively remove all unwanted tags and attributes
 	 *
-	 * @param   string  $source  Input string to be 'cleaned'
+     * @param  string  $source  Input string to be 'cleaned'
 	 *
-	 * @return  string  'Cleaned' version of input parameter
+     * @return  string  'Cleaned' version of input parameter
 	 *
 	 * @since   11.1
 	 */
@@ -311,9 +311,9 @@ class JFilterInput
 	/**
 	 * Internal method to strip a string of certain tags
 	 *
-	 * @param   string  $source  Input string to be 'cleaned'
+     * @param  string  $source  Input string to be 'cleaned'
 	 *
-	 * @return  string  'Cleaned' version of input parameter
+     * @return  string  'Cleaned' version of input parameter
 	 *
 	 * @since   11.1
 	 */
@@ -537,9 +537,9 @@ class JFilterInput
 	/**
 	 * Internal method to strip a tag of certain attributes
 	 *
-	 * @param   array  $attrSet  Array of attribute pairs to filter
+     * @param  array  $attrSet  Array of attribute pairs to filter
 	 *
-	 * @return  array  Filtered array of attribute pairs
+     * @return  array  Filtered array of attribute pairs
 	 *
 	 * @since   11.1
 	 */
@@ -639,9 +639,9 @@ class JFilterInput
 	/**
 	 * Try to convert to plaintext
 	 *
-	 * @param   string  $source  The source string.
+     * @param  string  $source  The source string.
 	 *
-	 * @return  string  Plaintext string
+     * @return  string  Plaintext string
 	 *
 	 * @since   11.1
 	 */
@@ -671,9 +671,9 @@ class JFilterInput
 	/**
 	 * Escape < > and " inside attribute values
 	 *
-	 * @param   string  $source  The source string.
+     * @param  string  $source  The source string.
 	 *
-	 * @return  string  Filtered string
+     * @return  string  Filtered string
 	 *
 	 * @since    11.1
 	 */
@@ -725,9 +725,9 @@ class JFilterInput
 	/**
 	 * Remove CSS Expressions in the form of <property>:expression(...)
 	 *
-	 * @param   string  $source  The source string.
+     * @param  string  $source  The source string.
 	 *
-	 * @return  string  Filtered string
+     * @return  string  Filtered string
 	 *
 	 * @since   11.1
 	 */

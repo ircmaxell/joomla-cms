@@ -85,7 +85,7 @@ class BannersModelTracks extends JModelList
 	/**
 	 * Build an SQL query to load the list data.
 	 *
-	 * @return  JDatabaseQuery
+     * @return  JDatabaseQuery
 	 * @since   1.6
 	 */
 	protected function getListQuery()
@@ -164,7 +164,7 @@ class BannersModelTracks extends JModelList
 	 *
 	 * @param   array  An array of item ids.
 	 *
-	 * @return  boolean  Returns true on success, false on failure.
+     * @return  boolean  Returns true on success, false on failure.
 	 */
 	public function delete()
 	{
@@ -249,7 +249,7 @@ class BannersModelTracks extends JModelList
 	/**
 	 * Get file name
 	 *
-	 * @return  string    The file name
+     * @return  string  The file name
 	 * @since   1.6
 	 */
 	public function getBaseName()
@@ -346,7 +346,7 @@ class BannersModelTracks extends JModelList
 	/**
 	 * Get the category name.
 	 *
-	 * @return  string    The category name
+     * @return  string  The category name
 	 * @since   1.6
 	 */
 	protected function getCategoryName()
@@ -383,7 +383,7 @@ class BannersModelTracks extends JModelList
 	/**
 	 * Get the category name
 	 *
-	 * @return  string    The category name.
+     * @return  string  The category name.
 	 * @since   1.6
 	 */
 	protected function getClientName()
@@ -420,7 +420,7 @@ class BannersModelTracks extends JModelList
 	/**
 	 * Get the file type.
 	 *
-	 * @return  string    The file type
+     * @return  string  The file type
 	 * @since   1.6
 	 */
 	public function getFileType()
@@ -431,7 +431,7 @@ class BannersModelTracks extends JModelList
 	/**
 	 * Get the mime type.
 	 *
-	 * @return  string    The mime type.
+     * @return  string  The mime type.
 	 * @since   1.6
 	 */
 	public function getMimeType()
@@ -442,7 +442,7 @@ class BannersModelTracks extends JModelList
 	/**
 	 * Get the content
 	 *
-	 * @return  string    The content.
+     * @return  string  The content.
 	 * @since   1.6
 	 */
 	public function getContent()

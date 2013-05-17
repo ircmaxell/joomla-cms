@@ -32,7 +32,7 @@ class JFormFieldEMail extends JFormField
 	/**
 	 * Method to get the field input markup for e-mail addresses.
 	 *
-	 * @return  string  The field input markup.
+     * @return  string  The field input markup.
 	 *
 	 * @since   11.1
 	 */

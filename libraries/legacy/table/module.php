@@ -21,7 +21,7 @@ class JTableModule extends JTable
 	/**
 	 * Constructor.
 	 *
-	 * @param   JDatabaseDriver  $db  Database driver object.
+     * @param  JDatabaseDriver  $db  Database driver object.
 	 *
 	 * @since   11.1
 	 */
@@ -35,7 +35,7 @@ class JTableModule extends JTable
 	/**
 	 * Overloaded check function.
 	 *
-	 * @return  boolean  True if the instance is sane and able to be stored in the database.
+     * @return  boolean  True if the instance is sane and able to be stored in the database.
 	 *
 	 * @see     JTable::check
 	 * @since   11.1
@@ -64,10 +64,10 @@ class JTableModule extends JTable
 	/**
 	 * Overloaded bind function.
 	 *
-	 * @param   array  $array   Named array.
-	 * @param   mixed  $ignore  An optional array or space separated list of properties to ignore while binding.
+     * @param  array  $array   Named array.
+     * @param  mixed  $ignore  An optional array or space separated list of properties to ignore while binding.
 	 *
-	 * @return  mixed  Null if operation was satisfactory, otherwise returns an error
+     * @return  mixed  Null if operation was satisfactory, otherwise returns an error
 	 *
 	 * @see     JTable::bind
 	 * @since   11.1

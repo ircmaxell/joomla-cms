@@ -127,7 +127,8 @@ class ContentModelCategory extends JModelList
 		$query	= $db->getQuery(true);
 		$groups	= implode(',', $user->getAuthorisedViewLevels());
 
-		if ((!$user->authorise('core.edit.state', 'com_content')) &&  (!$user->authorise('core.edit', 'com_content'))){
+		if ((!$user->authorise('core.edit.state', 'com_content')) &&  (!$user->authorise('core.edit', 'com_content')))
+		{
 			// limit to published for people who can't edit or edit.state.
 			$this->setState('filter.published', 1);
 			// Filter by start and end dates.
@@ -205,10 +206,10 @@ class ContentModelCategory extends JModelList
 	/**
 	 * Get the articles in the category
 	 *
-	 * @return  mixed  An array of articles or false if an error occurs.
+     * @return  mixed  An array of articles or false if an error occurs.
 	 * @since   1.5
 	 */
-	function getItems()
+	public function getItems()
 	{
 		$params = $this->getState()->get('params');
 		$limit = $this->getState('list.limit');
@@ -254,7 +255,7 @@ class ContentModelCategory extends JModelList
 	/**
 	 * Build the orderby for the query
 	 *
-	 * @return  string	$orderby portion of query
+     * @return  string  $orderby portion of query
 	 * @since   1.5
 	 */
 	protected function _buildContentOrderBy()
@@ -307,7 +308,7 @@ class ContentModelCategory extends JModelList
 	 *
 	 * @param   integer  An optional ID
 	 *
-	 * @return  object
+     * @return  object
 	 * @since   1.5
 	 */
 	public function getCategory()
@@ -320,7 +321,8 @@ class ContentModelCategory extends JModelList
 				$options = array();
 				$options['countItems'] = $params->get('show_cat_num_articles', 1) || !$params->get('show_empty_categories_cat', 0);
 			}
-			else {
+			else
+			{
 				$options['countItems'] = 0;
 			}
 
@@ -352,7 +354,8 @@ class ContentModelCategory extends JModelList
 				$this->_rightsibling = $this->_item->getSibling();
 				$this->_leftsibling = $this->_item->getSibling(false);
 			}
-			else {
+			else
+			{
 				$this->_children = false;
 				$this->_parent = false;
 			}
@@ -366,7 +369,7 @@ class ContentModelCategory extends JModelList
 	 *
 	 * @param   integer  An optional category id. If not supplied, the model state 'category.id' will be used.
 	 *
-	 * @return  mixed  An array of categories or false if an error occurs.
+     * @return  mixed  An array of categories or false if an error occurs.
 	 * @since   1.6
 	 */
 	public function getParent()
@@ -382,7 +385,7 @@ class ContentModelCategory extends JModelList
 	/**
 	 * Get the left sibling (adjacent) categories.
 	 *
-	 * @return  mixed  An array of categories or false if an error occurs.
+     * @return  mixed  An array of categories or false if an error occurs.
 	 * @since   1.6
 	 */
 	function &getLeftSibling()
@@ -398,7 +401,7 @@ class ContentModelCategory extends JModelList
 	/**
 	 * Get the right sibling (adjacent) categories.
 	 *
-	 * @return  mixed  An array of categories or false if an error occurs.
+     * @return  mixed  An array of categories or false if an error occurs.
 	 * @since   1.6
 	 */
 	function &getRightSibling()
@@ -416,7 +419,7 @@ class ContentModelCategory extends JModelList
 	 *
 	 * @param   integer  An optional category id. If not supplied, the model state 'category.id' will be used.
 	 *
-	 * @return  mixed  An array of categories or false if an error occurs.
+     * @return  mixed  An array of categories or false if an error occurs.
 	 * @since   1.6
 	 */
 	function &getChildren()
@@ -443,9 +446,9 @@ class ContentModelCategory extends JModelList
 	/**
 	 * Increment the hit counter for the category.
 	 *
-	 * @param   int  $pk  Optional primary key of the category to increment.
+     * @param  int  $pk  Optional primary key of the category to increment.
 	 *
-	 * @return  boolean True if successful; false otherwise and internal error set.
+     * @return  boolean  True if successful; false otherwise and internal error set.
 	 */
 	public function hit($pk = 0)
 	{

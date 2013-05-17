@@ -57,9 +57,9 @@ class JInstallerAdapterTemplate extends JAdapterInstance
 	/**
 	 * Custom loadLanguage method
 	 *
-	 * @param   string  $path  The path where to find language files.
+     * @param  string  $path  The path where to find language files.
 	 *
-	 * @return  JInstallerTemplate
+     * @return  JInstallerTemplate
 	 *
 	 * @since   3.1
 	 */
@@ -98,7 +98,7 @@ class JInstallerAdapterTemplate extends JAdapterInstance
 	/**
 	 * Custom install method
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -350,7 +350,7 @@ class JInstallerAdapterTemplate extends JAdapterInstance
 	/**
 	 * Custom update method for components
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -364,9 +364,9 @@ class JInstallerAdapterTemplate extends JAdapterInstance
 	/**
 	 * Custom uninstall method
 	 *
-	 * @param   integer  $id  The extension ID
+     * @param  integer  $id  The extension ID
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -485,7 +485,7 @@ class JInstallerAdapterTemplate extends JAdapterInstance
 	/**
 	 * Discover existing but uninstalled templates
 	 *
-	 * @return  array  JExtensionTable list
+     * @return  array  JExtensionTable list
 	 */
 	public function discover()
 	{
@@ -543,7 +543,7 @@ class JInstallerAdapterTemplate extends JAdapterInstance
 	 * Discover_install
 	 * Perform an install for a discovered extension
 	 *
-	 * @return boolean
+     * @return  boolean
 	 *
 	 * @since 3.1
 	 */
@@ -621,7 +621,7 @@ class JInstallerAdapterTemplate extends JAdapterInstance
 	/**
 	 * Refreshes the extension table cache
 	 *
-	 * @return  boolean  Result of operation, true if updated, false on failure
+     * @return  boolean  Result of operation, true if updated, false on failure
 	 *
 	 * @since   3.1
 	 */

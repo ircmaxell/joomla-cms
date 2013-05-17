@@ -21,10 +21,10 @@ class TagsControllerTags extends JControllerAdmin
 	/**
 	 * Proxy for getModel
 	 *
-	 * @param   string  $name    The model name. Optional.
-	 * @param   string  $prefix  The class prefix. Optional.
+     * @param  string  $name    The model name. Optional.
+     * @param  string  $prefix  The class prefix. Optional.
 	 *
-	 * @return  JModelLegacy  The model.
+     * @return  JModelLegacy  The model.
 	 * @since   3.1
 	 */
 	public function getModel($name = 'Tag', $prefix = 'TagsModel', $config = array('ignore_request' => true))
@@ -36,7 +36,7 @@ class TagsControllerTags extends JControllerAdmin
 	/**
 	 * Rebuild the nested set tree.
 	 *
-	 * @return  boolean  False on failure or error, true on success.
+     * @return  boolean  False on failure or error, true on success.
 	 *
 	 * @since   3.1
 	 */
@@ -49,11 +49,13 @@ class TagsControllerTags extends JControllerAdmin
 
 		$model = $this->getModel();
 
-		if ($model->rebuild()) {
+		if ($model->rebuild())
+		{
 			// Rebuild succeeded.
 			$this->setMessage(JText::_('COM_TAGS_REBUILD_SUCCESS'));
 			return true;
-		} else {
+		}
+		else {
 			// Rebuild failed.
 			$this->setMessage(JText::_('COM_TAGSS_REBUILD_FAILURE'));
 			return false;
@@ -63,7 +65,7 @@ class TagsControllerTags extends JControllerAdmin
 	/**
 	 * Method to save the submitted ordering values for records via AJAX.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

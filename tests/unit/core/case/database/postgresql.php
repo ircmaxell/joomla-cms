@@ -37,7 +37,7 @@ abstract class TestCaseDatabasePostgresql extends TestCaseDatabase
 	 *
 	 * An example DSN would be: host=localhost;port=5432;dbname=joomla_ut;user=utuser;pass=ut1234
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -111,7 +111,7 @@ abstract class TestCaseDatabasePostgresql extends TestCaseDatabase
 	/**
 	 * This method is called after the last test of this test class is run.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -124,7 +124,7 @@ abstract class TestCaseDatabasePostgresql extends TestCaseDatabase
 	/**
 	 * Returns the default database connection for running the tests.
 	 *
-	 * @return  PHPUnit_Extensions_Database_DB_DefaultDatabaseConnection
+     * @return  PHPUnit_Extensions_Database_DB_DefaultDatabaseConnection
 	 *
 	 * @since   12.1
 	 */

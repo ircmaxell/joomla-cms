@@ -31,14 +31,14 @@ class JArchiveBzip2 implements JArchiveExtractable
 	/**
 	 * Extract a Bzip2 compressed file to a given path
 	 *
-	 * @param   string  $archive      Path to Bzip2 archive to extract
-	 * @param   string  $destination  Path to extract archive to
-	 * @param   array   $options      Extraction options [unused]
+     * @param  string  $archive      Path to Bzip2 archive to extract
+     * @param  string  $destination  Path to extract archive to
+     * @param  array   $options      Extraction options [unused]
 	 *
-	 * @return  boolean  True if successful
+     * @return  boolean  True if successful
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function extract($archive, $destination, array $options = array ())
 	{
@@ -165,7 +165,7 @@ class JArchiveBzip2 implements JArchiveExtractable
 	/**
 	 * Tests whether this adapter can unpack files on this computer.
 	 *
-	 * @return  boolean  True if supported
+     * @return  boolean  True if supported
 	 *
 	 * @since   11.3
 	 */

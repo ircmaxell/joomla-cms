@@ -25,10 +25,10 @@ abstract class CategoryHelperAssociation
 	/**
 	 * Method to get the associations for a given category
 	 *
-	 * @param   integer  $id         Id of the item
-	 * @param   string   $extension  Name of the component
+     * @param  integer  $id         Id of the item
+     * @param  string   $extension  Name of the component
 	 *
-	 * @return  array   Array of associations for the component categories
+     * @return  array  Array of associations for the component categories
 	 *
 	 * @since  3.0
 	 */

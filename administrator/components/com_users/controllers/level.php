@@ -32,7 +32,7 @@ class UsersControllerLevel extends JControllerForm
 	 * @param   array  An array of input data.
 	 * @param   string	The name of the key for the primary key.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 * @since   1.6
 	 */
 	protected function allowSave($data, $key = 'id')
@@ -72,7 +72,8 @@ class UsersControllerLevel extends JControllerForm
 			{
 				JError::raiseWarning(500, $model->getError());
 			}
-			else {
+			else
+			{
 				$this->setMessage(JText::plural('COM_USERS_N_LEVELS_DELETED', count($ids)));
 			}
 		}

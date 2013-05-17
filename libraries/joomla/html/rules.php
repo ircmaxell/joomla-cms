@@ -21,13 +21,13 @@ abstract class JHtmlRules
 	/**
 	 * Creates the HTML for the permissions widget
 	 *
-	 * @param   array    $actions   Array of action objects
-	 * @param   integer  $assetId   Id of a specific asset to  create a widget for.
-	 * @param   integer  $parent    Id of the parent of the asset
-	 * @param   string   $control   The form control
-	 * @param   string   $idPrefix  Prefix for the ids assigned to specific action-group pairs
+     * @param  array    $actions   Array of action objects
+     * @param  integer  $assetId   Id of a specific asset to  create a widget for.
+     * @param  integer  $parent    Id of the parent of the asset
+     * @param  string   $control   The form control
+     * @param  string   $idPrefix  Prefix for the ids assigned to specific action-group pairs
 	 *
-	 * @return  string   HTML for the permissions widget
+     * @return  string  HTML for the permissions widget
 	 *
 	 * @since   11.1
 	 *
@@ -140,9 +140,9 @@ abstract class JHtmlRules
 	/**
 	 * Get the id of the parent asset
 	 *
-	 * @param   integer  $assetId  The asset for which the parentid will be returned
+     * @param  integer  $assetId  The asset for which the parentid will be returned
 	 *
-	 * @return  integer  The id of the parent asset
+     * @return  integer  The id of the parent asset
 	 *
 	 * @since   11.1
 	 */
@@ -164,7 +164,7 @@ abstract class JHtmlRules
 	/**
 	 * Get the user groups
 	 *
-	 * @return  array  Array of user groups
+     * @return  array  Array of user groups
 	 *
 	 * @since   11.1
 	 */
@@ -206,7 +206,7 @@ abstract class JHtmlRules
 	/**
 	 * Get the array of images associate with specific permissions
 	 *
-	 * @return  array  An associative  array of permissions and images
+     * @return  array  An associative  array of permissions and images
 	 *
 	 * @since   11.1
 	 */

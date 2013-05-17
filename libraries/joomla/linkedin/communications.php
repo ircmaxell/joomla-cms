@@ -21,14 +21,14 @@ class JLinkedinCommunications extends JLinkedinObject
 	/**
 	 * Method used to invite people.
 	 *
-	 * @param   string  $email       A string containing email of the recipient.
-	 * @param   string  $first_name  A string containing frist name of the recipient.
-	 * @param   string  $last_name   A string containing last name of the recipient.
-	 * @param   string  $subject     The subject of the message that will be sent to the recipient
-	 * @param   string  $body        A text of the message.
-	 * @param   string  $connection  Only connecting as a 'friend' is supported presently.
+     * @param  string  $email       A string containing email of the recipient.
+     * @param  string  $first_name  A string containing frist name of the recipient.
+     * @param  string  $last_name   A string containing last name of the recipient.
+     * @param  string  $subject     The subject of the message that will be sent to the recipient
+     * @param  string  $body        A text of the message.
+     * @param  string  $connection  Only connecting as a 'friend' is supported presently.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -80,14 +80,14 @@ class JLinkedinCommunications extends JLinkedinObject
 	/**
 	 * Method used to invite people.
 	 *
-	 * @param   string  $id          Member id.
-	 * @param   string  $first_name  A string containing frist name of the recipient.
-	 * @param   string  $last_name   A string containing last name of the recipient.
-	 * @param   string  $subject     The subject of the message that will be sent to the recipient
-	 * @param   string  $body        A text of the message.
-	 * @param   string  $connection  Only connecting as a 'friend' is supported presently.
+     * @param  string  $id          Member id.
+     * @param  string  $first_name  A string containing frist name of the recipient.
+     * @param  string  $last_name   A string containing last name of the recipient.
+     * @param  string  $subject     The subject of the message that will be sent to the recipient
+     * @param  string  $body        A text of the message.
+     * @param  string  $connection  Only connecting as a 'friend' is supported presently.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */
@@ -169,11 +169,11 @@ class JLinkedinCommunications extends JLinkedinObject
 	/**
 	 * Method used to send messages via LinkedIn between two or more individuals connected to the member sending the message..
 	 *
-	 * @param   mixed   $recipient  A string containing the member id or an array of ids.
-	 * @param   string  $subject    The subject of the message that will be sent to the recipient
-	 * @param   string  $body       A text of the message.
+     * @param  mixed   $recipient  A string containing the member id or an array of ids.
+     * @param  string  $subject    The subject of the message that will be sent to the recipient
+     * @param  string  $body       A text of the message.
 	 *
-	 * @return  array  The decoded JSON response
+     * @return  array  The decoded JSON response
 	 *
 	 * @since   13.1
 	 */

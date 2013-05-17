@@ -21,9 +21,9 @@ class ContactControllerContact extends JControllerForm
 	/**
 	 * Method override to check if you can add a new record.
 	 *
-	 * @param   array  $data  An array of input data.
+     * @param  array  $data  An array of input data.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.6
 	 */
@@ -53,10 +53,10 @@ class ContactControllerContact extends JControllerForm
 	/**
 	 * Method override to check if you can edit an existing record.
 	 *
-	 * @param   array   $data  An array of input data.
-	 * @param   string  $key   The name of the key for the primary key.
+     * @param  array   $data  An array of input data.
+     * @param  string  $key   The name of the key for the primary key.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.6
 	 */
@@ -85,9 +85,9 @@ class ContactControllerContact extends JControllerForm
 	/**
 	 * Method to run batch operations.
 	 *
-	 * @param   object  $model  The model.
+     * @param  object  $model  The model.
 	 *
-	 * @return  boolean   True if successful, false otherwise and internal error is set.
+     * @return  boolean  True if successful, false otherwise and internal error is set.
 	 *
 	 * @since   2.5
 	 */
@@ -107,10 +107,10 @@ class ContactControllerContact extends JControllerForm
 	/**
 	 * Function that allows child controller access to model data after the data has been saved.
 	 *
-	 * @param   JModelLegacy  $model      The data model object.
-	 * @param   array         $validData  The validated data.
+     * @param  JModelLegacy  $model      The data model object.
+     * @param  array         $validData  The validated data.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   3.1
 	 */
 	protected function postSaveHook(JModelLegacy $model, $validData = array())

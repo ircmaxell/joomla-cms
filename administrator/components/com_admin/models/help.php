@@ -61,7 +61,7 @@ class AdminModelHelp extends JModelLegacy
 	/**
 	 * Method to get the help search string
 	 *
-	 * @return  string  Help search string
+     * @return  string  Help search string
 	 *
 	 * @since  1.6
 	 */
@@ -77,7 +77,7 @@ class AdminModelHelp extends JModelLegacy
 	/**
 	 * Method to get the page
 	 *
-	 * @return  string  The page
+     * @return  string  The page
 	 *
 	 * @since  1.6
 	 */
@@ -94,7 +94,7 @@ class AdminModelHelp extends JModelLegacy
 	/**
 	 * Method to get the lang tag
 	 *
-	 * @return  string  lang iso tag
+     * @return  string  lang iso tag
 	 *
 	 * @since  1.6
 	 */
@@ -119,7 +119,7 @@ class AdminModelHelp extends JModelLegacy
 	/**
 	 * Method to get the toc
 	 *
-	 * @return  array  Table of contents
+     * @return  array  Table of contents
 	 */
 	public function &getToc()
 	{
@@ -171,7 +171,7 @@ class AdminModelHelp extends JModelLegacy
 	/**
 	 * Method to get the latest version check
 	 *
-	 * @return  string  Latest Version Check URL
+     * @return  string  Latest Version Check URL
 	 */
 	public function &getLatestVersionCheck()
 	{

@@ -26,7 +26,7 @@ class JTableContenttypeTest extends TestCaseDatabase
 	 * Sets up the fixture, for example, opens a network connection.
 	 * This method is called before a test is executed.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -40,7 +40,7 @@ class JTableContenttypeTest extends TestCaseDatabase
 	/**
 	 * Gets the data set to be loaded into the database during setup
 	 *
-	 * @return  CSV database tables
+     * @return  CSV  database tables
 	 *
 	 * @since   3.1
 	 */
@@ -56,7 +56,7 @@ class JTableContenttypeTest extends TestCaseDatabase
 	/**
 	 * Tests JTableContenttype::check
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -102,7 +102,7 @@ class JTableContenttypeTest extends TestCaseDatabase
 	/**
 	 * Tests JTableContenttype::store
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */

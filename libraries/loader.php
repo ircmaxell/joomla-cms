@@ -43,12 +43,12 @@ abstract class JLoader
 	/**
 	 * Method to discover classes of a given type in a given path.
 	 *
-	 * @param   string   $classPrefix  The class name prefix to use for discovery.
-	 * @param   string   $parentPath   Full path to the parent folder for the classes to discover.
-	 * @param   boolean  $force        True to overwrite the autoload path value for the class if it already exists.
-	 * @param   boolean  $recurse      Recurse through all child directories as well as the parent path.
+     * @param  string   $classPrefix  The class name prefix to use for discovery.
+     * @param  string   $parentPath   Full path to the parent folder for the classes to discover.
+     * @param  boolean  $force        True to overwrite the autoload path value for the class if it already exists.
+     * @param  boolean  $recurse      Recurse through all child directories as well as the parent path.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -96,7 +96,7 @@ abstract class JLoader
 	/**
 	 * Method to get the list of registered classes and their respective file paths for the autoloader.
 	 *
-	 * @return  array  The array of class => path values for the autoloader.
+     * @return  array  The array of class => path values for the autoloader.
 	 *
 	 * @since   11.1
 	 */
@@ -108,10 +108,10 @@ abstract class JLoader
 	/**
 	 * Loads a class from specified directories.
 	 *
-	 * @param   string  $key   The class name to look for (dot notation).
-	 * @param   string  $base  Search this directory for the class.
+     * @param  string  $key   The class name to look for (dot notation).
+     * @param  string  $base  Search this directory for the class.
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   11.1
 	 */
@@ -174,9 +174,9 @@ abstract class JLoader
 	/**
 	 * Load the file for a class.
 	 *
-	 * @param   string  $class  The class to be loaded.
+     * @param  string  $class  The class to be loaded.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   11.1
 	 */
@@ -204,11 +204,11 @@ abstract class JLoader
 	/**
 	 * Directly register a class to the autoload list.
 	 *
-	 * @param   string   $class  The class name to register.
-	 * @param   string   $path   Full path to the file that holds the class to register.
-	 * @param   boolean  $force  True to overwrite the autoload path value for the class if it already exists.
+     * @param  string   $class  The class name to register.
+     * @param  string   $path   Full path to the file that holds the class to register.
+     * @param  boolean  $force  True to overwrite the autoload path value for the class if it already exists.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -235,11 +235,11 @@ abstract class JLoader
 	 * set to true then any registered lookups for the given prefix will be overwritten with the current
 	 * lookup path.
 	 *
-	 * @param   string   $prefix  The class prefix to register.
-	 * @param   string   $path    Absolute file path to the library root where classes with the given prefix can be found.
-	 * @param   boolean  $reset   True to reset the prefix with only the given lookup path.
+     * @param  string   $prefix  The class prefix to register.
+     * @param  string   $path    Absolute file path to the library root where classes with the given prefix can be found.
+     * @param  boolean  $reset   True to reset the prefix with only the given lookup path.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */
@@ -269,7 +269,7 @@ abstract class JLoader
 	 * fall back on the autoloader based on conventions.  This will allow people to register a
 	 * class in a specific location and override platform libraries as was previously possible.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.3
 	 */
@@ -286,9 +286,9 @@ abstract class JLoader
 	/**
 	 * Autoload a class based on name.
 	 *
-	 * @param   string  $class  The class to be loaded.
+     * @param  string  $class  The class to be loaded.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.3
 	 */
@@ -307,10 +307,10 @@ abstract class JLoader
 	/**
 	 * Load a class based on name and lookup array.
 	 *
-	 * @param   string  $class   The class to be loaded (wihtout prefix).
-	 * @param   array   $lookup  The array of base paths to use for finding the class file.
+     * @param  string  $class   The class to be loaded (wihtout prefix).
+     * @param  array   $lookup  The array of base paths to use for finding the class file.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.1
 	 */

@@ -54,10 +54,10 @@ abstract class JHtml
 	/**
 	 * Method to extract a key
 	 *
-	 * @param   string  $key  The name of helper method to load, (prefix).(class).function
+     * @param  string  $key  The name of helper method to load, (prefix).(class).function
 	 *                        prefix and class are optional and can be used to load custom html helpers.
 	 *
-	 * @return  array  Contains lowercase key, prefix, file, function.
+     * @return  array  Contains lowercase key, prefix, file, function.
 	 *
 	 * @since   11.1
 	 */
@@ -81,14 +81,14 @@ abstract class JHtml
 	 * Additional arguments may be supplied and are passed to the sub-class.
 	 * Additional include paths are also able to be specified for third-party use
 	 *
-	 * @param   string  $key  The name of helper method to load, (prefix).(class).function
+     * @param  string  $key  The name of helper method to load, (prefix).(class).function
 	 *                        prefix and class are optional and can be used to load custom
 	 *                        html helpers.
 	 *
-	 * @return  mixed  JHtml::call($function, $args) or False on error
+     * @return  mixed  JHtml::call($function, $args) or False on error
 	 *
 	 * @since   11.1
-	 * @throws  InvalidArgumentException
+     * @throws  InvalidArgumentException
 	 */
 	public static function _($key)
 	{
@@ -147,10 +147,10 @@ abstract class JHtml
 	/**
 	 * Registers a function to be called with a specific key
 	 *
-	 * @param   string  $key       The name of the key
-	 * @param   string  $function  Function or method
+     * @param  string  $key       The name of the key
+     * @param  string  $function  Function or method
 	 *
-	 * @return  boolean  True if the function is callable
+     * @return  boolean  True if the function is callable
 	 *
 	 * @since   11.1
 	 */
@@ -170,9 +170,9 @@ abstract class JHtml
 	/**
 	 * Removes a key for a method from registry.
 	 *
-	 * @param   string  $key  The name of the key
+     * @param  string  $key  The name of the key
 	 *
-	 * @return  boolean  True if a set key is unset
+     * @return  boolean  True if a set key is unset
 	 *
 	 * @since   11.1
 	 */
@@ -193,9 +193,9 @@ abstract class JHtml
 	/**
 	 * Test if the key is registered.
 	 *
-	 * @param   string  $key  The name of the key
+     * @param  string  $key  The name of the key
 	 *
-	 * @return  boolean  True if the key is registered.
+     * @return  boolean  True if the key is registered.
 	 *
 	 * @since   11.1
 	 */
@@ -209,14 +209,14 @@ abstract class JHtml
 	/**
 	 * Function caller method
 	 *
-	 * @param   callable  $function  Function or method to call
-	 * @param   array     $args      Arguments to be passed to function
+     * @param  callable  $function  Function or method to call
+     * @param  array     $args      Arguments to be passed to function
 	 *
-	 * @return  mixed   Function result or false on error.
+     * @return  mixed  Function result or false on error.
 	 *
 	 * @see     http://php.net/manual/en/function.call-user-func-array.php
 	 * @since   11.1
-	 * @throws  InvalidArgumentException
+     * @throws  InvalidArgumentException
 	 */
 	protected static function call($function, $args)
 	{
@@ -238,11 +238,11 @@ abstract class JHtml
 	/**
 	 * Write a <a></a> element
 	 *
-	 * @param   string  $url      The relative URL to use for the href attribute
-	 * @param   string  $text     The target attribute to use
-	 * @param   array   $attribs  An associative array of attributes to add
+     * @param  string  $url      The relative URL to use for the href attribute
+     * @param  string  $text     The target attribute to use
+     * @param  array   $attribs  An associative array of attributes to add
 	 *
-	 * @return  string  <a></a> string
+     * @return  string  <a></a> string
 	 *
 	 * @since   11.1
 	 */
@@ -259,12 +259,12 @@ abstract class JHtml
 	/**
 	 * Write a <iframe></iframe> element
 	 *
-	 * @param   string  $url       The relative URL to use for the src attribute
-	 * @param   string  $name      The target attribute to use
-	 * @param   array   $attribs   An associative array of attributes to add
-	 * @param   string  $noFrames  The message to display if the iframe tag is not supported
+     * @param  string  $url       The relative URL to use for the src attribute
+     * @param  string  $name      The target attribute to use
+     * @param  array   $attribs   An associative array of attributes to add
+     * @param  string  $noFrames  The message to display if the iframe tag is not supported
 	 *
-	 * @return  string  <iframe></iframe> element or message if not supported
+     * @return  string  <iframe></iframe> element or message if not supported
 	 *
 	 * @since   11.1
 	 */
@@ -281,13 +281,13 @@ abstract class JHtml
 	/**
 	 * Compute the files to be included
 	 *
-	 * @param   string   $folder          folder name to search into (images, css, js, ...)
-	 * @param   string   $file            path to file
-	 * @param   boolean  $relative        path to file is relative to /media folder  (and searches in template)
-	 * @param   boolean  $detect_browser  detect browser to include specific browser files
-	 * @param   boolean  $detect_debug    detect debug to include compressed files if debug is on
+     * @param  string   $folder          folder name to search into (images, css, js, ...)
+     * @param  string   $file            path to file
+     * @param  boolean  $relative        path to file is relative to /media folder  (and searches in template)
+     * @param  boolean  $detect_browser  detect browser to include specific browser files
+     * @param  boolean  $detect_debug    detect debug to include compressed files if debug is on
 	 *
-	 * @return  array    files to be included
+     * @return  array  files to be included
 	 *
 	 * @see     JBrowser
 	 * @since   11.1
@@ -539,13 +539,13 @@ abstract class JHtml
 	/**
 	 * Write a <img></img> element
 	 *
-	 * @param   string   $file      The relative or absolute URL to use for the src attribute
-	 * @param   string   $alt       The alt text.
-	 * @param   mixed    $attribs   String or associative array of attribute(s) to use
-	 * @param   boolean  $relative  Path to file is relative to /media folder (and searches in template)
-	 * @param   mixed    $path_rel  Return html tag without (-1) or with file computing(false). Return computed path only (true)
+     * @param  string   $file      The relative or absolute URL to use for the src attribute
+     * @param  string   $alt       The alt text.
+     * @param  mixed    $attribs   String or associative array of attribute(s) to use
+     * @param  boolean  $relative  Path to file is relative to /media folder (and searches in template)
+     * @param  mixed    $path_rel  Return html tag without (-1) or with file computing(false). Return computed path only (true)
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -572,11 +572,11 @@ abstract class JHtml
 	/**
 	 * Write a <link rel="stylesheet" style="text/css" /> element
 	 *
-	 * @param   string   $file            path to file
-	 * @param   array    $attribs         attributes to be added to the stylesheet
-	 * @param   boolean  $relative        path to file is relative to /media folder
-	 * @param   boolean  $path_only       return the path to the file only
-	 * @param   boolean  $detect_browser  detect browser to include specific browser css files
+     * @param  string   $file            path to file
+     * @param  array    $attribs         attributes to be added to the stylesheet
+     * @param  boolean  $relative        path to file is relative to /media folder
+     * @param  boolean  $path_only       return the path to the file only
+     * @param  boolean  $detect_browser  detect browser to include specific browser css files
 	 *                                    will try to include file, file_*browser*, file_*browser*_*major*, file_*browser*_*major*_*minor*
 	 *                                    <table>
 	 *                                       <tr><th>Navigator</th>                  <th>browser</th>	<th>major.minor</th></tr>
@@ -601,9 +601,9 @@ abstract class JHtml
 	 *                                       <tr><td>Firefox</td>                    <td>mozilla</td>	<td>5.0</td></tr>
 	 *                                    </table>
 	 *                                    a lot of others
-	 * @param   boolean  $detect_debug    detect debug to search for compressed files if debug is on
+     * @param  boolean  $detect_debug  detect debug to search for compressed files if debug is on
 	 *
-	 * @return  mixed  nothing if $path_only is false, null, path or array of path if specific css browser files were detected
+     * @return  mixed  nothing if $path_only is false, null, path or array of path if specific css browser files were detected
 	 *
 	 * @see     JBrowser
 	 * @since   11.1
@@ -643,14 +643,14 @@ abstract class JHtml
 	/**
 	 * Write a <script></script> element
 	 *
-	 * @param   string   $file            path to file
-	 * @param   boolean  $framework       load the JS framework
-	 * @param   boolean  $relative        path to file is relative to /media folder
-	 * @param   boolean  $path_only       return the path to the file only
-	 * @param   boolean  $detect_browser  detect browser to include specific browser js files
-	 * @param   boolean  $detect_debug    detect debug to search for compressed files if debug is on
+     * @param  string   $file            path to file
+     * @param  boolean  $framework       load the JS framework
+     * @param  boolean  $relative        path to file is relative to /media folder
+     * @param  boolean  $path_only       return the path to the file only
+     * @param  boolean  $detect_browser  detect browser to include specific browser js files
+     * @param  boolean  $detect_debug    detect debug to search for compressed files if debug is on
 	 *
-	 * @return  mixed  nothing if $path_only is false, null, path or array of path if specific js browser files were detected
+     * @return  mixed  nothing if $path_only is false, null, path or array of path if specific js browser files were detected
 	 *
 	 * @see     JHtml::stylesheet
 	 * @since   11.1
@@ -699,9 +699,9 @@ abstract class JHtml
 	 * Updates the formatOptions array with all valid values in the passed
 	 * array. See {@see JHtml::$formatOptions} for details.
 	 *
-	 * @param   array  $options  Option key/value pairs.
+     * @param  array  $options  Option key/value pairs.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -719,13 +719,13 @@ abstract class JHtml
 	/**
 	 * Returns formated date according to a given format and time zone.
 	 *
-	 * @param   string   $input      String in a format accepted by date(), defaults to "now".
-	 * @param   string   $format     The date format specification string (see {@link PHP_MANUAL#date})
-	 * @param   mixed    $tz         Time zone to be used for the date.  Special cases: boolean true for user
+     * @param  string  $input   String in a format accepted by date(), defaults to "now".
+     * @param  string  $format  The date format specification string (see {@link PHP_MANUAL#date})
+     * @param  mixed   $tz      Time zone to be used for the date.  Special cases: boolean true for user
 	 *                               setting, boolean false for server setting.
-	 * @param   boolean  $gregorian  True to use Gregorian calenar
+     * @param  boolean  $gregorian  True to use Gregorian calenar
 	 *
-	 * @return  string    A date translated by the given format and time zone.
+     * @return  string  A date translated by the given format and time zone.
 	 *
 	 * @see     strftime
 	 * @since   11.1
@@ -793,16 +793,16 @@ abstract class JHtml
 	/**
 	 * Creates a tooltip with an image as button
 	 *
-	 * @param   string  $tooltip  The tip string
-	 * @param   mixed   $title    The title of the tooltip or an associative array with keys contained in
+     * @param  string  $tooltip  The tip string
+     * @param  mixed   $title    The title of the tooltip or an associative array with keys contained in
 	 *                            {'title','image','text','href','alt'} and values corresponding to parameters of the same name.
-	 * @param   string  $image    The image for the tip, if no text is provided
-	 * @param   string  $text     The text for the tip
-	 * @param   string  $href     An URL that will be used to create the link
-	 * @param   string  $alt      The alt attribute for img tag
-	 * @param   string  $class    CSS class for the tool tip
+     * @param  string  $image  The image for the tip, if no text is provided
+     * @param  string  $text   The text for the tip
+     * @param  string  $href   An URL that will be used to create the link
+     * @param  string  $alt    The alt attribute for img tag
+     * @param  string  $class  CSS class for the tool tip
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -856,13 +856,13 @@ abstract class JHtml
 	/**
 	 * Displays a calendar control field
 	 *
-	 * @param   string  $value    The date value
-	 * @param   string  $name     The name of the text field
-	 * @param   string  $id       The id of the text field
-	 * @param   string  $format   The date format
-	 * @param   array   $attribs  Additional HTML attributes
+     * @param  string  $value    The date value
+     * @param  string  $name     The name of the text field
+     * @param  string  $id       The id of the text field
+     * @param  string  $format   The date format
+     * @param  array   $attribs  Additional HTML attributes
 	 *
-	 * @return  string  HTML markup for a calendar field
+     * @return  string  HTML markup for a calendar field
 	 *
 	 * @since   11.1
 	 */
@@ -926,9 +926,9 @@ abstract class JHtml
 	 * Add a directory where JHtml should search for helpers. You may
 	 * either pass a string or an array of directories.
 	 *
-	 * @param   string  $path  A path to search.
+     * @param  string  $path  A path to search.
 	 *
-	 * @return  array  An array with directory elements
+     * @return  array  An array with directory elements
 	 *
 	 * @since   11.1
 	 */
@@ -953,9 +953,9 @@ abstract class JHtml
 	/**
 	 * Internal method to get a JavaScript object notation string from an array
 	 *
-	 * @param   array  $array  The array to convert to JavaScript object notation
+     * @param  array  $array  The array to convert to JavaScript object notation
 	 *
-	 * @return  string  JavaScript object notation representation of the array
+     * @return  string  JavaScript object notation representation of the array
 	 *
 	 * @since   12.2
 	 */

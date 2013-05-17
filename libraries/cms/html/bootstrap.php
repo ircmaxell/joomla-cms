@@ -27,9 +27,9 @@ abstract class JHtmlBootstrap
 	/**
 	 * Add javascript support for Bootstrap alerts
 	 *
-	 * @param   string  $selector  Common class for the alerts
+     * @param  string  $selector  Common class for the alerts
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -59,15 +59,15 @@ abstract class JHtmlBootstrap
 	/**
 	 * Add javascript support for Bootstrap carousels
 	 *
-	 * @param   string  $selector  Common class for the carousels.
-	 * @param   array   $params    An array of options for the modal.
+     * @param  string  $selector  Common class for the carousels.
+     * @param  array   $params    An array of options for the modal.
 	 *                             Options for the modal can be:
 	 *                             - interval  number  The amount of time to delay between automatically cycling an item.
 	 *                                                 If false, carousel will not automatically cycle.
 	 *                             - pause     string  Pauses the cycling of the carousel on mouseenter and resumes the cycling
 	 *                                                 of the carousel on mouseleave.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -103,9 +103,9 @@ abstract class JHtmlBootstrap
 	/**
 	 * Add javascript support for Bootstrap dropdowns
 	 *
-	 * @param   string  $selector  Common class for the dropdowns
+     * @param  string  $selector  Common class for the dropdowns
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -137,9 +137,9 @@ abstract class JHtmlBootstrap
 	 *
 	 * If debugging mode is on an uncompressed version of Bootstrap is included for easier debugging.
 	 *
-	 * @param   mixed  $debug  Is debugging mode on? [optional]
+     * @param  mixed  $debug  Is debugging mode on? [optional]
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -170,15 +170,15 @@ abstract class JHtmlBootstrap
 	/**
 	 * Add javascript support for Bootstrap modals
 	 *
-	 * @param   string  $selector  The ID selector for the modal.
-	 * @param   array   $params    An array of options for the modal.
+     * @param  string  $selector  The ID selector for the modal.
+     * @param  array   $params    An array of options for the modal.
 	 *                             Options for the modal can be:
 	 *                             - backdrop  boolean  Includes a modal-backdrop element.
 	 *                             - keyboard  boolean  Closes the modal when escape key is pressed.
 	 *                             - show      boolean  Shows the modal when initialized.
 	 *                             - remote    string   An optional remote URL to load
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -216,11 +216,11 @@ abstract class JHtmlBootstrap
 	/**
 	 * Method to render a Bootstrap modal
 	 *
-	 * @param   string  $selector  The ID selector for the modal.
-	 * @param   array   $params    An array of options for the modal.
-	 * @param   string  $footer    Optional markup for the modal footer
+     * @param  string  $selector  The ID selector for the modal.
+     * @param  array   $params    An array of options for the modal.
+     * @param  string  $footer    Optional markup for the modal footer
 	 *
-	 * @return  string  HTML markup for a modal
+     * @return  string  HTML markup for a modal
 	 *
 	 * @since   3.0
 	 */
@@ -253,8 +253,8 @@ abstract class JHtmlBootstrap
 	 *
 	 * Use element's Title as popover content
 	 *
-	 * @param   string  $selector  Selector for the tooltip
-	 * @param   array   $params    An array of options for the tooltip.
+     * @param  string  $selector  Selector for the tooltip
+     * @param  array   $params    An array of options for the tooltip.
 	 *                  Options for the tooltip can be:
 	 *                      animation  boolean          apply a css fade transition to the tooltip
 	 *                      html       boolean          Insert HTML into the tooltip. If false, jQuery's text method will be used to insert
@@ -268,7 +268,7 @@ abstract class JHtmlBootstrap
 	 *                                                  If a number is supplied, delay is applied to both hide/show
 	 *                                                  Object structure is: delay: { show: 500, hide: 100 }
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -296,8 +296,8 @@ abstract class JHtmlBootstrap
 
 		// Attach the popover to the document
 		JFactory::getDocument()->addScriptDeclaration(
-			"jQuery(document).ready(function()
-			{
+			"jQuery(document).ready(function()(
+(function(){
 				jQuery('" . $selector . "').popover(" . $options . ");
 			});"
 		);
@@ -310,12 +310,12 @@ abstract class JHtmlBootstrap
 	/**
 	 * Add javascript support for Bootstrap ScrollSpy
 	 *
-	 * @param   string  $selector  The ID selector for the ScrollSpy element.
-	 * @param   array   $params    An array of options for the ScrollSpy.
+     * @param  string  $selector  The ID selector for the ScrollSpy element.
+     * @param  array   $params    An array of options for the ScrollSpy.
 	 *                             Options for the modal can be:
 	 *                             - offset  number  Pixels to offset from top when calculating position of scroll.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -353,8 +353,8 @@ abstract class JHtmlBootstrap
 	 * Add a title attribute to any element in the form
 	 * title="title::text"
 	 *
-	 * @param   string  $selector  The ID selector for the tooltip.
-	 * @param   array   $params    An array of options for the tooltip.
+     * @param  string  $selector  The ID selector for the tooltip.
+     * @param  array   $params    An array of options for the tooltip.
 	 *                             Options for the tooltip can be:
 	 *                             - animation  boolean          Apply a CSS fade transition to the tooltip
 	 *                             - html       boolean          Insert HTML into the tooltip. If false, jQuery's text method will be used to insert
@@ -367,7 +367,7 @@ abstract class JHtmlBootstrap
 	 *                                                           If a number is supplied, delay is applied to both hide/show
 	 *                                                           Object structure is: delay: { show: 500, hide: 100 }
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
@@ -391,8 +391,8 @@ abstract class JHtmlBootstrap
 
 			// Attach tooltips to document
 			JFactory::getDocument()->addScriptDeclaration(
-				"jQuery(document).ready(function()
-				{
+				"jQuery(document).ready(function()(
+(function(){
 					jQuery('" . $selector . "').tooltip(" . $options . ");
 				});"
 			);
@@ -407,15 +407,15 @@ abstract class JHtmlBootstrap
 	/**
 	 * Add javascript support for Bootstrap accordians and insert the accordian
 	 *
-	 * @param   string  $selector  The ID selector for the tooltip.
-	 * @param   array   $params    An array of options for the tooltip.
+     * @param  string  $selector  The ID selector for the tooltip.
+     * @param  array   $params    An array of options for the tooltip.
 	 *                             Options for the tooltip can be:
 	 *                             - parent  selector  If selector then all collapsible elements under the specified parent will be closed when this
 	 *                                                 collapsible item is shown. (similar to traditional accordion behavior)
 	 *                             - toggle  boolean   Toggles the collapsible element on invocation
 	 *                             - active  string    Sets the active slide during load
 	 *
-	 * @return  string  HTML for the accordian
+     * @return  string  HTML for the accordian
 	 *
 	 * @since   3.0
 	 */
@@ -453,7 +453,7 @@ abstract class JHtmlBootstrap
 	/**
 	 * Close the current accordion
 	 *
-	 * @return  string  HTML to close the accordian
+     * @return  string  HTML to close the accordian
 	 *
 	 * @since   3.0
 	 */
@@ -465,12 +465,12 @@ abstract class JHtmlBootstrap
 	/**
 	 * Begins the display of a new accordion slide.
 	 *
-	 * @param   string  $selector  Identifier of the accordion group.
-	 * @param   string  $text      Text to display.
-	 * @param   string  $id        Identifier of the slide.
-	 * @param   string  $class     Class of the accordion group.
+     * @param  string  $selector  Identifier of the accordion group.
+     * @param  string  $text      Text to display.
+     * @param  string  $id        Identifier of the slide.
+     * @param  string  $class     Class of the accordion group.
 	 *
-	 * @return  string  HTML to add the slide
+     * @return  string  HTML to add the slide
 	 *
 	 * @since   3.0
 	 */
@@ -494,7 +494,7 @@ abstract class JHtmlBootstrap
 	/**
 	 * Close the current slide
 	 *
-	 * @return  string  HTML to close the slide
+     * @return  string  HTML to close the slide
 	 *
 	 * @since   3.0
 	 */
@@ -506,10 +506,10 @@ abstract class JHtmlBootstrap
 	/**
 	 * Creates a tab pane
 	 *
-	 * @param   string  $selector  The pane identifier.
-	 * @param   array   $params    The parameters for the pane
+     * @param  string  $selector  The pane identifier.
+     * @param  array   $params    The parameters for the pane
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   3.1
 	 */
@@ -544,7 +544,7 @@ abstract class JHtmlBootstrap
 	/**
 	 * Close the current tab pane
 	 *
-	 * @return  string  HTML to close the pane
+     * @return  string  HTML to close the pane
 	 *
 	 * @since   3.1
 	 */
@@ -558,11 +558,11 @@ abstract class JHtmlBootstrap
 	/**
 	 * Begins the display of a new tab content panel.
 	 *
-	 * @param   string  $selector  Identifier of the panel.
-	 * @param   string  $id        The ID of the div element
-	 * @param   string  $title     The title text for the new UL tab
+     * @param  string  $selector  Identifier of the panel.
+     * @param  string  $id        The ID of the div element
+     * @param  string  $title     The title text for the new UL tab
 	 *
-	 * @return  string  HTML to start a new panel
+     * @return  string  HTML to start a new panel
 	 *
 	 * @since   3.1
 	 */
@@ -588,7 +588,7 @@ abstract class JHtmlBootstrap
 	/**
 	 * Close the current tab content panel
 	 *
-	 * @return  string  HTML to close the pane
+     * @return  string  HTML to close the pane
 	 *
 	 * @since   3.1
 	 */
@@ -602,10 +602,10 @@ abstract class JHtmlBootstrap
 	/**
 	 * Creates a tab pane
 	 *
-	 * @param   string  $selector  The pane identifier.
-	 * @param   array   $params    The parameters for the pane
+     * @param  string  $selector  The pane identifier.
+     * @param  array   $params    The parameters for the pane
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   3.0
 	 * @deprecated  4.0	Use JHtml::_('bootstrap.startTabSet') instead.
@@ -644,7 +644,7 @@ abstract class JHtmlBootstrap
 	/**
 	 * Close the current tab pane
 	 *
-	 * @return  string  HTML to close the pane
+     * @return  string  HTML to close the pane
 	 *
 	 * @since   3.0
 	 * @deprecated  4.0	Use JHtml::_('bootstrap.endTabSet') instead.
@@ -657,10 +657,10 @@ abstract class JHtmlBootstrap
 	/**
 	 * Begins the display of a new tab content panel.
 	 *
-	 * @param   string  $selector  Identifier of the panel.
-	 * @param   string  $id        The ID of the div element
+     * @param  string  $selector  Identifier of the panel.
+     * @param  string  $id        The ID of the div element
 	 *
-	 * @return  string  HTML to start a new panel
+     * @return  string  HTML to start a new panel
 	 *
 	 * @since   3.0
 	 * @deprecated  4.0 Use JHtml::_('bootstrap.addTab') instead.
@@ -675,7 +675,7 @@ abstract class JHtmlBootstrap
 	/**
 	 * Close the current tab content panel
 	 *
-	 * @return  string  HTML to close the pane
+     * @return  string  HTML to close the pane
 	 *
 	 * @since   3.0
 	 * @deprecated  4.0 Use JHtml::_('bootstrap.endTab') instead.
@@ -688,11 +688,11 @@ abstract class JHtmlBootstrap
 	/**
 	 * Loads CSS files needed by Bootstrap
 	 *
-	 * @param   boolean  $includeMainCss  If true, main bootstrap.css files are loaded
-	 * @param   string   $direction       rtl or ltr direction. If empty, ltr is assumed
-	 * @param   array    $attribs         Optional array of attributes to be passed to JHtml::_('stylesheet')
+     * @param  boolean  $includeMainCss  If true, main bootstrap.css files are loaded
+     * @param  string   $direction       rtl or ltr direction. If empty, ltr is assumed
+     * @param  array    $attribs         Optional array of attributes to be passed to JHtml::_('stylesheet')
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

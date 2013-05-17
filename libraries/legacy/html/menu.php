@@ -37,7 +37,7 @@ abstract class JHtmlMenu
 	/**
 	 * Get a list of the available menus.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -60,9 +60,9 @@ abstract class JHtmlMenu
 	/**
 	 * Returns an array of menu items grouped by menu.
 	 *
-	 * @param   array  $config  An array of configuration options.
+     * @param  array  $config  An array of configuration options.
 	 *
-	 * @return  array
+     * @return  array
 	 */
 	public static function menuitems($config = array())
 	{
@@ -143,12 +143,12 @@ abstract class JHtmlMenu
 	/**
 	 * Displays an HTML select list of menu items.
 	 *
-	 * @param   string  $name      The name of the control.
-	 * @param   string  $selected  The value of the selected option.
-	 * @param   string  $attribs   Attributes for the control.
-	 * @param   array   $config    An array of options for the control.
+     * @param  string  $name      The name of the control.
+     * @param  string  $selected  The value of the selected option.
+     * @param  string  $attribs   Attributes for the control.
+     * @param  array   $config    An array of options for the control.
 	 *
-	 * @return  string
+     * @return  string
 	 */
 	public static function menuitemlist($name, $selected = null, $attribs = null, $config = array())
 	{
@@ -170,10 +170,10 @@ abstract class JHtmlMenu
 	/**
 	 * Build the select list for Menu Ordering
 	 *
-	 * @param   object   &$row  The row object
-	 * @param   integer  $id    The id for the row. Must exist to enable menu ordering
+     * @param  object   &$row  The row object
+     * @param  integer  $id    The id for the row. Must exist to enable menu ordering
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -207,10 +207,10 @@ abstract class JHtmlMenu
 	/**
 	 * Build the multiple select list for Menu Links/Pages
 	 *
-	 * @param   boolean  $all         True if all can be selected
-	 * @param   boolean  $unassigned  True if unassigned can be selected
+     * @param  boolean  $all         True if all can be selected
+     * @param  boolean  $unassigned  True if unassigned can be selected
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   11.1
 	 */
@@ -294,15 +294,15 @@ abstract class JHtmlMenu
 	/**
 	 * Build the list representing the menu tree
 	 *
-	 * @param   integer  $id         Id of the menu item
-	 * @param   string   $indent     The indentation string
-	 * @param   array    $list       The list to process
-	 * @param   array    &$children  The children of the current item
-	 * @param   integer  $maxlevel   The maximum number of levels in the tree
-	 * @param   integer  $level      The starting level
-	 * @param   string   $type       Type of link: component, URL, alias, separator
+     * @param  integer  $id         Id of the menu item
+     * @param  string   $indent     The indentation string
+     * @param  array    $list       The list to process
+     * @param  array    &$children  The children of the current item
+     * @param  integer  $maxlevel   The maximum number of levels in the tree
+     * @param  integer  $level      The starting level
+     * @param  string   $type       Type of link: component, URL, alias, separator
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.1
 	 */

@@ -21,7 +21,7 @@ class JTableUsergroup extends JTable
 	/**
 	 * Constructor
 	 *
-	 * @param   JDatabaseDriver  $db  Database driver object.
+     * @param  JDatabaseDriver  $db  Database driver object.
 	 *
 	 * @since   11.1
 	 */
@@ -33,7 +33,7 @@ class JTableUsergroup extends JTable
 	/**
 	 * Method to check the current record to save
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   11.1
 	 */
@@ -69,10 +69,10 @@ class JTableUsergroup extends JTable
 	/**
 	 * Method to recursively rebuild the nested set tree.
 	 *
-	 * @param   integer  $parent_id  The root of the tree to rebuild.
-	 * @param   integer  $left       The left id to start with in building the tree.
+     * @param  integer  $parent_id  The root of the tree to rebuild.
+     * @param  integer  $left       The left id to start with in building the tree.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   11.1
 	 */
@@ -118,9 +118,9 @@ class JTableUsergroup extends JTable
 	/**
 	 * Inserts a new row if id is zero or updates an existing row in the database table
 	 *
-	 * @param   boolean  $updateNulls  If false, null object variables are not updated
+     * @param  boolean  $updateNulls  If false, null object variables are not updated
 	 *
-	 * @return  boolean  True if successful, false otherwise and an internal error message is set
+     * @return  boolean  True if successful, false otherwise and an internal error message is set
 	 *
 	 * @since   11.1
 	 */
@@ -138,13 +138,13 @@ class JTableUsergroup extends JTable
 	/**
 	 * Delete this object and its dependencies
 	 *
-	 * @param   integer  $oid  The primary key of the user group to delete.
+     * @param  integer  $oid  The primary key of the user group to delete.
 	 *
-	 * @return  mixed  Boolean or Exception.
+     * @return  mixed  Boolean or Exception.
 	 *
 	 * @since   11.1
-	 * @throws  RuntimeException on database error.
-	 * @throws  UnexpectedValueException on data error.
+     * @throws  RuntimeException          on database error.
+     * @throws  UnexpectedValueException  on data error.
 	 */
 	public function delete($oid = null)
 	{

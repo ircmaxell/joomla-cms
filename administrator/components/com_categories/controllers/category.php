@@ -29,7 +29,7 @@ class CategoriesControllerCategory extends JControllerForm
 	/**
 	 * Constructor.
 	 *
-	 * @param  array  $config  An optional associative array of configuration settings.
+     * @param  array  $config  An optional associative array of configuration settings.
 	 *
 	 * @since  1.6
 	 * @see    JController
@@ -48,9 +48,9 @@ class CategoriesControllerCategory extends JControllerForm
 	/**
 	 * Method to check if you can add a new record.
 	 *
-	 * @param   array  $data  An array of input data.
+     * @param  array  $data  An array of input data.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.6
 	 */
@@ -63,10 +63,10 @@ class CategoriesControllerCategory extends JControllerForm
 	/**
 	 * Method to check if you can edit a record.
 	 *
-	 * @param   array   $data  An array of input data.
-	 * @param   string  $key   The name of the key for the primary key.
+     * @param  array   $data  An array of input data.
+     * @param  string  $key   The name of the key for the primary key.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   1.6
 	 */
@@ -119,9 +119,9 @@ class CategoriesControllerCategory extends JControllerForm
 	/**
 	 * Method to run batch operations.
 	 *
-	 * @param   object  $model  The model.
+     * @param  object  $model  The model.
 	 *
-	 * @return  boolean   True if successful, false otherwise and internal error is set.
+     * @return  boolean  True if successful, false otherwise and internal error is set.
 	 *
 	 * @since   1.6
 	 */
@@ -141,10 +141,10 @@ class CategoriesControllerCategory extends JControllerForm
 	/**
 	 * Gets the URL arguments to append to an item redirect.
 	 *
-	 * @param   integer  $recordId  The primary key id for the item.
-	 * @param   string   $urlVar    The name of the URL variable for the id.
+     * @param  integer  $recordId  The primary key id for the item.
+     * @param  string   $urlVar    The name of the URL variable for the id.
 	 *
-	 * @return  string  The arguments to append to the redirect URL.
+     * @return  string  The arguments to append to the redirect URL.
 	 *
 	 * @since   1.6
 	 */
@@ -159,7 +159,7 @@ class CategoriesControllerCategory extends JControllerForm
 	/**
 	 * Gets the URL arguments to append to a list redirect.
 	 *
-	 * @return  string  The arguments to append to the redirect URL.
+     * @return  string  The arguments to append to the redirect URL.
 	 *
 	 * @since   1.6
 	 */
@@ -173,10 +173,10 @@ class CategoriesControllerCategory extends JControllerForm
 	/**
 	 * Function that allows child controller access to model data after the data has been saved.
 	 *
-	 * @param   JModelLegacy  $model      The data model object.
-	 * @param   array         $validData  The validated data.
+     * @param  JModelLegacy  $model      The data model object.
+     * @param  array         $validData  The validated data.
 	 *
-	 * @return  void
+     * @return  void
 	 * @since   3.1
 	 */
 	protected function postSaveHook(JModelLegacy $model, $validData = array())

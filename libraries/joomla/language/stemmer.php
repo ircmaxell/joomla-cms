@@ -35,12 +35,12 @@ abstract class JLanguageStemmer
 	/**
 	 * Method to get a stemmer, creating it if necessary.
 	 *
-	 * @param   string  $adapter  The type of stemmer to load.
+     * @param  string  $adapter  The type of stemmer to load.
 	 *
-	 * @return  JLanguageStemmer  A JLanguageStemmer instance.
+     * @return  JLanguageStemmer  A JLanguageStemmer instance.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException on invalid stemmer.
+     * @throws  RuntimeException  on invalid stemmer.
 	 */
 	public static function getInstance($adapter)
 	{
@@ -67,10 +67,10 @@ abstract class JLanguageStemmer
 	/**
 	 * Method to stem a token and return the root.
 	 *
-	 * @param   string  $token  The token to stem.
-	 * @param   string  $lang   The language of the token.
+     * @param  string  $token  The token to stem.
+     * @param  string  $lang   The language of the token.
 	 *
-	 * @return  string  The root token.
+     * @return  string  The root token.
 	 *
 	 * @since   12.1
 	 */

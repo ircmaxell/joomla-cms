@@ -45,9 +45,9 @@ class JUcmType implements JUcm
 	/**
 	 * Class constructor
 	 *
-	 * @param   string            $alias        The alias for the item
-	 * @param   JDatabaseDriver   $database     The database object
-	 * @param   JApplicationBase  $application  The application object
+     * @param  string            $alias        The alias for the item
+     * @param  JDatabaseDriver   $database     The database object
+     * @param  JApplicationBase  $application  The application object
 	 *
 	 * @since   3.1
 	 */
@@ -92,9 +92,9 @@ class JUcmType implements JUcm
 	/**
 	 * Retrieves the UCM type ID
 	 *
-	 * @param   string  $alias  The string of the type alias
+     * @param  string  $alias  The string of the type alias
 	 *
-	 * @return  integer  The ID of the requested type
+     * @return  integer  The ID of the requested type
 	 *
 	 * @since   3.1
 	 */

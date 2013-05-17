@@ -21,9 +21,9 @@ class JErrorPage
 	/**
 	 * Render the error page based on an exception.
 	 *
-	 * @param   Exception  $error  The exception for which to render the error page.
+     * @param  Exception  $error  The exception for which to render the error page.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */

@@ -79,8 +79,8 @@ abstract class WeblinksHelperRoute
 	}
 
 	/**
-	 * @param   integer  $id		The id of the weblink.
-	 * @param   string	$return	The return page variable.
+     * @param  integer  $id      The id of the weblink.
+     * @param  string   $return  The return page variable.
 	 */
 	public static function getFormRoute($id, $return = null)
 	{

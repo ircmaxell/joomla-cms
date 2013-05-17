@@ -21,8 +21,8 @@ class ConfigControllerComponent extends JControllerLegacy
 	/**
 	 * Class Constructor
 	 *
-	 * @param   array  $config		An optional associative array of configuration settings.
-	 * @return  void
+     * @param   array  $config  An optional associative array of configuration settings.
+     * @return  void
 	 * @since   1.5
 	 */
 	public function __construct($config = array())
@@ -36,11 +36,11 @@ class ConfigControllerComponent extends JControllerLegacy
 	/**
 	 * Cancel operation
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.0
 	 */
-	function cancel()
+	public function cancel()
 	{
 		// Clean the session data.
 		$app = JFactory::getApplication();
@@ -102,7 +102,8 @@ class ConfigControllerComponent extends JControllerLegacy
 				if ($errors[$i] instanceof Exception)
 				{
 					$app->enqueueMessage($errors[$i]->getMessage(), 'warning');
-				} else {
+				}
+				else {
 					$app->enqueueMessage($errors[$i], 'warning');
 				}
 			}

@@ -93,7 +93,7 @@ class JCategories
 	/**
 	 * Class constructor
 	 *
-	 * @param   array  $options  Array of options
+     * @param  array  $options  Array of options
 	 *
 	 * @since   11.1
 	 */
@@ -114,10 +114,10 @@ class JCategories
 	/**
 	 * Returns a reference to a JCategories object
 	 *
-	 * @param   string  $extension  Name of the categories extension
-	 * @param   array   $options    An array of options
+     * @param  string  $extension  Name of the categories extension
+     * @param  array   $options    An array of options
 	 *
-	 * @return  JCategories         JCategories object
+     * @return  JCategories  JCategories object
 	 *
 	 * @since   11.1
 	 */
@@ -156,10 +156,10 @@ class JCategories
 	/**
 	 * Loads a specific category and all its children in a JCategoryNode object
 	 *
-	 * @param   mixed    $id         an optional id integer or equal to 'root'
-	 * @param   boolean  $forceload  True to force  the _load method to execute
+     * @param  mixed    $id         an optional id integer or equal to 'root'
+     * @param  boolean  $forceload  True to force  the _load method to execute
 	 *
-	 * @return  mixed    JCategoryNode object or null if $id is not valid
+     * @return  mixed  JCategoryNode object or null if $id is not valid
 	 *
 	 * @since   11.1
 	 */
@@ -198,9 +198,9 @@ class JCategories
 	/**
 	 * Load method
 	 *
-	 * @param   integer  $id  Id of category to load
+     * @param  integer  $id  Id of category to load
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -655,8 +655,8 @@ class JCategoryNode extends JObject
 	/**
 	 * Class constructor
 	 *
-	 * @param   array          $category     The category data.
-	 * @param   JCategoryNode  $constructor  The tree constructor.
+     * @param  array          $category     The category data.
+     * @param  JCategoryNode  $constructor  The tree constructor.
 	 *
 	 * @since   11.1
 	 */
@@ -681,9 +681,9 @@ class JCategoryNode extends JObject
 	 *
 	 * If the category already has a parent, the link is unset
 	 *
-	 * @param   mixed  $parent  JCategoryNode for the parent to be set or null
+     * @param  mixed  $parent  JCategoryNode for the parent to be set or null
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -727,9 +727,9 @@ class JCategoryNode extends JObject
 	 *
 	 * If the child already has a parent, the link is unset
 	 *
-	 * @param   JCategoryNode  $child  The child to be added.
+     * @param  JCategoryNode  $child  The child to be added.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -744,9 +744,9 @@ class JCategoryNode extends JObject
 	/**
 	 * Remove a specific child
 	 *
-	 * @param   integer  $id  ID of a category
+     * @param  integer  $id  ID of a category
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -759,9 +759,9 @@ class JCategoryNode extends JObject
 	/**
 	 * Get the children of this node
 	 *
-	 * @param   boolean  $recursive  False by default
+     * @param  boolean  $recursive  False by default
 	 *
-	 * @return  array  The children
+     * @return  array  The children
 	 *
 	 * @since   11.1
 	 */
@@ -796,7 +796,7 @@ class JCategoryNode extends JObject
 	/**
 	 * Get the parent of this node
 	 *
-	 * @return  mixed  JCategoryNode or null
+     * @return  mixed  JCategoryNode or null
 	 *
 	 * @since   11.1
 	 */
@@ -808,7 +808,7 @@ class JCategoryNode extends JObject
 	/**
 	 * Test if this node has children
 	 *
-	 * @return  boolean  True if there is a child
+     * @return  boolean  True if there is a child
 	 *
 	 * @since   11.1
 	 */
@@ -820,7 +820,7 @@ class JCategoryNode extends JObject
 	/**
 	 * Test if this node has a parent
 	 *
-	 * @return  boolean    True if there is a parent
+     * @return  boolean  True if there is a parent
 	 *
 	 * @since   11.1
 	 */
@@ -832,10 +832,10 @@ class JCategoryNode extends JObject
 	/**
 	 * Function to set the left or right sibling of a category
 	 *
-	 * @param   JCategoryNode  $sibling  JCategoryNode object for the sibling
-	 * @param   boolean        $right    If set to false, the sibling is the left one
+     * @param  JCategoryNode  $sibling  JCategoryNode object for the sibling
+     * @param  boolean        $right    If set to false, the sibling is the left one
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   11.1
 	 */
@@ -854,9 +854,9 @@ class JCategoryNode extends JObject
 	/**
 	 * Returns the right or left sibling of a category
 	 *
-	 * @param   boolean  $right  If set to false, returns the left sibling
+     * @param  boolean  $right  If set to false, returns the left sibling
 	 *
-	 * @return  mixed  JCategoryNode object with the sibling information or
+     * @return  mixed  JCategoryNode object with the sibling information or
 	 *                 NULL if there is no sibling on that side.
 	 *
 	 * @since          11.1
@@ -885,7 +885,7 @@ class JCategoryNode extends JObject
 	/**
 	 * Returns the category parameters
 	 *
-	 * @return  JRegistry
+     * @return  JRegistry
 	 *
 	 * @since   11.1
 	 */
@@ -904,7 +904,7 @@ class JCategoryNode extends JObject
 	/**
 	 * Returns the category metadata
 	 *
-	 * @return  JRegistry  A JRegistry object containing the metadata
+     * @return  JRegistry  A JRegistry object containing the metadata
 	 *
 	 * @since   11.1
 	 */
@@ -923,7 +923,7 @@ class JCategoryNode extends JObject
 	/**
 	 * Returns the category path to the root category
 	 *
-	 * @return  array
+     * @return  array
 	 *
 	 * @since   11.1
 	 */
@@ -935,9 +935,9 @@ class JCategoryNode extends JObject
 	/**
 	 * Returns the user that created the category
 	 *
-	 * @param   boolean  $modified_user  Returns the modified_user when set to true
+     * @param  boolean  $modified_user  Returns the modified_user when set to true
 	 *
-	 * @return  JUser  A JUser object containing a userid
+     * @return  JUser  A JUser object containing a userid
 	 *
 	 * @since   11.1
 	 */
@@ -954,7 +954,7 @@ class JCategoryNode extends JObject
 	/**
 	 * Set to load all children
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since 11.1
 	 */
@@ -970,9 +970,9 @@ class JCategoryNode extends JObject
 	/**
 	 * Returns the number of items.
 	 *
-	 * @param   boolean  $recursive  If false number of children, if true number of descendants
+     * @param  boolean  $recursive  If false number of children, if true number of descendants
 	 *
-	 * @return  integer  Number of children or descendants
+     * @return  integer  Number of children or descendants
 	 *
 	 * @since 11.1
 	 */

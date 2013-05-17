@@ -26,7 +26,7 @@ class JTableCorecontentTest extends TestCaseDatabase
 	 * Sets up the fixture, for example, opens a network connection.
 	 * This method is called before a test is executed.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -46,7 +46,7 @@ class JTableCorecontentTest extends TestCaseDatabase
 	 * Tears down the fixture, for example, closes a network connection.
 	 * This method is called after a test is executed.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -60,7 +60,7 @@ class JTableCorecontentTest extends TestCaseDatabase
 	/**
 	 * Gets the data set to be loaded into the database during setup
 	 *
-	 * @return  CSV database tables
+     * @return  CSV  database tables
 	 *
 	 * @since   3.1
 	 */
@@ -80,7 +80,7 @@ class JTableCorecontentTest extends TestCaseDatabase
 	 *
 	 * @todo   Implement testBind().
 	 *
-	 * @return  void
+     * @return  void
 	 */
 	public function testBind()
 	{
@@ -91,7 +91,7 @@ class JTableCorecontentTest extends TestCaseDatabase
 	/**
 	 * Tests JTableCorecontent::check
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -145,7 +145,7 @@ class JTableCorecontentTest extends TestCaseDatabase
 	/**
 	 * Tests JTableCorecontent::store
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */
@@ -182,7 +182,7 @@ class JTableCorecontentTest extends TestCaseDatabase
 	/**
 	 * Tests JTableCorecontent::publish
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   3.1
 	 */

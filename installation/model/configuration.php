@@ -23,9 +23,9 @@ class InstallationModelConfiguration extends JModelBase
 	/**
 	 * Method to setup the configuration file
 	 *
-	 * @param   array  $options  The session options
+     * @param  array  $options  The session options
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
@@ -52,13 +52,13 @@ class InstallationModelConfiguration extends JModelBase
 	/**
 	 * Method to create the configuration file
 	 *
-	 * @param   array  $options  The session options
+     * @param  array  $options  The session options
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */
-	function _createConfiguration($options)
+	public function _createConfiguration($options)
 	{
 		// Create a new registry to build the configuration options.
 		$registry = new JRegistry;
@@ -224,9 +224,9 @@ class InstallationModelConfiguration extends JModelBase
 	/**
 	 * Method to create the root user for the site
 	 *
-	 * @param   array  $options  The session options
+     * @param  array  $options  The session options
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   3.1
 	 */

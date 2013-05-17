@@ -13,8 +13,8 @@
  * @copyright 2008 OpenSourceMatters
  */
 
-
-class plgSystemAlpha extends JPlugin {
+class plgSystemAlpha extends JPlugin
+{
 	/**
 	 * Constructor
 	 *
@@ -22,10 +22,11 @@ class plgSystemAlpha extends JPlugin {
 	 * because func_get_args ( void ) returns a copy of all passed arguments NOT references.
 	 * This causes problems with cross-referencing necessary for the observer design pattern.
 	 *
-	 * @param object $subject The object to observe
+     * @param  object  $subject  The object to observe
 	 * @since 1.5
 	 */
-	function plgSystemAlpha(& $subject, $config) {
+	public function plgSystemAlpha(& $subject, $config)
+	{
 		parent :: __construct($subject, $config);
 	}
 }

@@ -48,11 +48,11 @@ class JControllerAdmin extends JControllerLegacy
 	/**
 	 * Constructor.
 	 *
-	 * @param   array  $config  An optional associative array of configuration settings.
+     * @param  array  $config  An optional associative array of configuration settings.
 	 *
 	 * @see     JControllerLegacy
 	 * @since   12.2
-	 * @throws  Exception
+     * @throws  Exception
 	 */
 	public function __construct($config = array())
 	{
@@ -101,7 +101,7 @@ class JControllerAdmin extends JControllerLegacy
 	/**
 	 * Removes an item.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.2
 	 */
@@ -146,10 +146,10 @@ class JControllerAdmin extends JControllerLegacy
 	 * Function that allows child controller access to model data
 	 * after the item has been deleted.
 	 *
-	 * @param   JModelLegacy  $model  The data model object.
-	 * @param   integer       $id     The validated data.
+     * @param  JModelLegacy  $model  The data model object.
+     * @param  integer       $id     The validated data.
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.2
 	 */
@@ -160,10 +160,10 @@ class JControllerAdmin extends JControllerLegacy
 	/**
 	 * Display is not supported by this controller.
 	 *
-	 * @param   boolean  $cachable   If true, the view output will be cached
-	 * @param   array    $urlparams  An array of safe url parameters and their variable types, for valid values see {@link JFilterInput::clean()}.
+     * @param  boolean  $cachable   If true, the view output will be cached
+     * @param  array    $urlparams  An array of safe url parameters and their variable types, for valid values see {@link JFilterInput::clean()}.
 	 *
-	 * @return  JControllerLegacy  A JControllerLegacy object to support chaining.
+     * @return  JControllerLegacy  A JControllerLegacy object to support chaining.
 	 *
 	 * @since   12.2
 	 */
@@ -175,7 +175,7 @@ class JControllerAdmin extends JControllerLegacy
 	/**
 	 * Method to publish a list of items
 	 *
-	 * @return  void
+     * @return  void
 	 *
 	 * @since   12.2
 	 */
@@ -239,7 +239,7 @@ class JControllerAdmin extends JControllerLegacy
 	/**
 	 * Changes the order of one or more records.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   12.2
 	 */
@@ -272,7 +272,7 @@ class JControllerAdmin extends JControllerLegacy
 	/**
 	 * Method to save the submitted ordering values for records.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   12.2
 	 */
@@ -314,7 +314,7 @@ class JControllerAdmin extends JControllerLegacy
 	/**
 	 * Check in of one or more records.
 	 *
-	 * @return  boolean  True on success
+     * @return  boolean  True on success
 	 *
 	 * @since   12.2
 	 */

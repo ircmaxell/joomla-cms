@@ -39,8 +39,8 @@ abstract class JViewHtml extends JViewBase
 	/**
 	 * Method to instantiate the view.
 	 *
-	 * @param   JModel            $model  The model object.
-	 * @param   SplPriorityQueue  $paths  The paths queue.
+     * @param  JModel            $model  The model object.
+     * @param  SplPriorityQueue  $paths  The paths queue.
 	 *
 	 * @since   12.1
 	 */
@@ -55,7 +55,7 @@ abstract class JViewHtml extends JViewBase
 	/**
 	 * Magic toString method that is a proxy for the render method.
 	 *
-	 * @return  string
+     * @return  string
 	 *
 	 * @since   12.1
 	 */
@@ -67,9 +67,9 @@ abstract class JViewHtml extends JViewBase
 	/**
 	 * Method to escape output.
 	 *
-	 * @param   string  $output  The output to escape.
+     * @param  string  $output  The output to escape.
 	 *
-	 * @return  string  The escaped output.
+     * @return  string  The escaped output.
 	 *
 	 * @see     JView::escape()
 	 * @since   12.1
@@ -83,7 +83,7 @@ abstract class JViewHtml extends JViewBase
 	/**
 	 * Method to get the view layout.
 	 *
-	 * @return  string  The layout name.
+     * @return  string  The layout name.
 	 *
 	 * @since   12.1
 	 */
@@ -95,9 +95,9 @@ abstract class JViewHtml extends JViewBase
 	/**
 	 * Method to get the layout path.
 	 *
-	 * @param   string  $layout  The layout name.
+     * @param  string  $layout  The layout name.
 	 *
-	 * @return  mixed  The layout file name if found, false otherwise.
+     * @return  mixed  The layout file name if found, false otherwise.
 	 *
 	 * @since   12.1
 	 */
@@ -115,7 +115,7 @@ abstract class JViewHtml extends JViewBase
 	/**
 	 * Method to get the view paths.
 	 *
-	 * @return  SplPriorityQueue  The paths queue.
+     * @return  SplPriorityQueue  The paths queue.
 	 *
 	 * @since   12.1
 	 */
@@ -127,10 +127,10 @@ abstract class JViewHtml extends JViewBase
 	/**
 	 * Method to render the view.
 	 *
-	 * @return  string  The rendered view.
+     * @return  string  The rendered view.
 	 *
 	 * @since   12.1
-	 * @throws  RuntimeException
+     * @throws  RuntimeException
 	 */
 	public function render()
 	{
@@ -158,9 +158,9 @@ abstract class JViewHtml extends JViewBase
 	/**
 	 * Method to set the view layout.
 	 *
-	 * @param   string  $layout  The layout name.
+     * @param  string  $layout  The layout name.
 	 *
-	 * @return  JViewHtml  Method supports chaining.
+     * @return  JViewHtml  Method supports chaining.
 	 *
 	 * @since   12.1
 	 */
@@ -174,9 +174,9 @@ abstract class JViewHtml extends JViewBase
 	/**
 	 * Method to set the view paths.
 	 *
-	 * @param   SplPriorityQueue  $paths  The paths queue.
+     * @param  SplPriorityQueue  $paths  The paths queue.
 	 *
-	 * @return  JViewHtml  Method supports chaining.
+     * @return  JViewHtml  Method supports chaining.
 	 *
 	 * @since   12.1
 	 */
@@ -190,7 +190,7 @@ abstract class JViewHtml extends JViewBase
 	/**
 	 * Method to load the paths queue.
 	 *
-	 * @return  SplPriorityQueue  The paths queue.
+     * @return  SplPriorityQueue  The paths queue.
 	 *
 	 * @since   12.1
 	 */

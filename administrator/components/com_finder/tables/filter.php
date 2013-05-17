@@ -21,7 +21,7 @@ class FinderTableFilter extends JTable
 	/**
 	 * Constructor
 	 *
-	 * @param   JDatabaseDriver  &$db  JDatabaseDriver connector object.
+     * @param  JDatabaseDriver  &$db  JDatabaseDriver connector object.
 	 *
 	 * @since   2.5
 	 */
@@ -35,11 +35,11 @@ class FinderTableFilter extends JTable
 	 * method only binds properties that are publicly accessible and optionally
 	 * takes an array of properties to ignore when binding.
 	 *
-	 * @param   array  $array   Named array
-	 * @param   mixed  $ignore  An optional array or space separated list of properties
+     * @param  array  $array   Named array
+     * @param  mixed  $ignore  An optional array or space separated list of properties
 	 *                          to ignore while binding. [optional]
 	 *
-	 * @return  mixed  Null if operation was satisfactory, otherwise returns an error string
+     * @return  mixed  Null if operation was satisfactory, otherwise returns an error string
 	 *
 	 * @since   2.5
 	 */
@@ -61,7 +61,7 @@ class FinderTableFilter extends JTable
 	 * method to make sure the data they are storing in the database is safe and
 	 * as expected before storage.
 	 *
-	 * @return  boolean  True if the instance is sane and able to be stored in the database.
+     * @return  boolean  True if the instance is sane and able to be stored in the database.
 	 *
 	 * @since   2.5
 	 */
@@ -96,12 +96,12 @@ class FinderTableFilter extends JTable
 	 * table. The method respects checked out rows by other users and will attempt
 	 * to checkin rows that it can after adjustments are made.
 	 *
-	 * @param   mixed    $pks     An array of primary key values to update.  If not
+     * @param  mixed  $pks  An array of primary key values to update.  If not
 	 *                            set the instance property value is used. [optional]
-	 * @param   integer  $state   The publishing state. eg. [0 = unpublished, 1 = published] [optional]
-	 * @param   integer  $userId  The user id of the user performing the operation. [optional]
+     * @param  integer  $state   The publishing state. eg. [0 = unpublished, 1 = published] [optional]
+     * @param  integer  $userId  The user id of the user performing the operation. [optional]
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   2.5
 	 */
@@ -187,9 +187,9 @@ class FinderTableFilter extends JTable
 	 * a new row will be inserted into the database with the properties from the
 	 * JTable instance.
 	 *
-	 * @param   boolean  $updateNulls  True to update fields even if they are null. [optional]
+     * @param  boolean  $updateNulls  True to update fields even if they are null. [optional]
 	 *
-	 * @return  boolean  True on success.
+     * @return  boolean  True on success.
 	 *
 	 * @since   2.5
 	 */

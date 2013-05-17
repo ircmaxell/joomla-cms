@@ -87,7 +87,7 @@ class PlgContentJoomla extends JPlugin
 	 *
 	 * @param   string    The context for the content passed to the plugin.
 	 * @param   object    The data relating to the content that was deleted.
-	 * @return  boolean
+     * @return  boolean
 	 * @since   1.6
 	 */
 	public function onContentBeforeDelete($context, $data)
@@ -166,7 +166,7 @@ class PlgContentJoomla extends JPlugin
 	 *
 	 * @param   string    table name of component table (column is catid)
 	 * @param   integer   id of the category to check
-	 * @return  mixed  count of items found or false if db error
+     * @return  mixed  count of items found or false if db error
 	 * @since   1.6
 	 */
 	private function _countItemsInCategory($table, $catid)
@@ -197,7 +197,7 @@ class PlgContentJoomla extends JPlugin
 	 *
 	 * @param   string    table name of component table (column is catid)
 	 * @param   integer   id of the category to check
-	 * @return  mixed  count of items found or false if db error
+     * @return  mixed  count of items found or false if db error
 	 * @since   1.6
 	 */
 	private function _countItemsInChildren($table, $catid, $data)
@@ -245,11 +245,11 @@ class PlgContentJoomla extends JPlugin
 	/**
 	 * Change the state in core_content if the state in a table is changed
 	 *
-	 * @param   string   $context  The context for the content passed to the plugin.
-	 * @param   array    $pks      A list of primary key ids of the content that has changed state.
-	 * @param   integer  $value    The value of the state that the content has been changed to.
+     * @param  string   $context  The context for the content passed to the plugin.
+     * @param  array    $pks      A list of primary key ids of the content that has changed state.
+     * @param  integer  $value    The value of the state that the content has been changed to.
 	 *
-	 * @return  boolean
+     * @return  boolean
 	 *
 	 * @since   3.1
 	 */
