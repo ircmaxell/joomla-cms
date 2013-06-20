@@ -1778,7 +1778,7 @@ CREATE TABLE IF NOT EXISTS `#__users` (
   `params` text NOT NULL,
   `lastResetTime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00' COMMENT 'Date of last password reset',
   `resetCount` int(11) NOT NULL DEFAULT '0' COMMENT 'Count of password resets since lastResetTime',
-  `loginToken` varchar(44) NOT NULL DEFAULT '' COMMENT 'Holds the login token for cookie based authentication',
+  `loginToken` text COMMENT 'Holds the login token for cookie based authentication',
   PRIMARY KEY (`id`),
   KEY `idx_name` (`name`),
   KEY `idx_block` (`block`),

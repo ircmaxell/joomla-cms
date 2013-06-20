@@ -52,14 +52,16 @@ class PlgAuthenticationCookie extends JPlugin
 		// Get a database object
 		$db		= JFactory::getDbo();
 		$query	= $db->getQuery(true)
-			->select('id, username')
+			->select('loginToken')
 			->from('#__users')
-			->where('username = ' . $db->quote($credentials['username']))
-			->where('loginToken = ' . $db->quote($credentials['password']));
+			->where('username = ' . $db->quote($credentials['username']));
 
 		$result = $db->setQuery($query)->loadObject();
 
-		if ($result && $result->username === $credentials['username'])
+		// The password here is really the loginToken.
+		$loginToken = $credentials['password'];
+
+		if ($result && $this->timingSafeCompare($result->loginToken, $loginToken))
 		{
 			$response->status = JAuthentication::STATUS_SUCCESS;
 			$response->error_message = '';
@@ -77,5 +79,34 @@ class PlgAuthenticationCookie extends JPlugin
 			$response->status = JAuthentication::STATUS_FAILURE;
 			$response->error_message = JText::_('JGLOBAL_AUTH_NO_USER');
 		}
+	}
+
+	/**
+	 * @param   string  $known    A known string to check against.
+	 * @param   string  $unknown  An unknown string to check.
+	 *
+	 * @return  bool    True if the two strings are exactly the same.
+	 */
+	protected function timingSafeCompare($known, $unknown)
+	{
+		// Prevent issues if string length is 0
+		$known .= chr(0);
+		$unknown .= chr(0);
+
+		$knownLength = strlen($known);
+		$unknownLength = strlen($unknown);
+
+		// Set the result to the difference between the lengths
+		$result = $knownLength - $unknownLength;
+
+		// Note that we ALWAYS iterate over the user-supplied length to prevent leaking length info.
+		for ($i = 0; $i < $unknownLength; $i++) {
+			// Using % here is a trick to prevent notices. It's safe, since
+			// if the lengths are different, $result is already non-0
+			$result |= (ord($known[$i % $knownLength]) ^ ord($unknown[$i]));
+		}
+
+		// They are only identical strings if $result is exactly 0...
+		return $result === 0;
 	}
 }
