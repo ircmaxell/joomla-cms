@@ -31,78 +31,60 @@ class PlgSystemRemember extends JPlugin
 		$user = JFactory::getUser();
 		if ($user->get('guest'))
 		{
-			$hash = JApplication::getHash('JLOGIN_REMEMBER');
+			// The login cookie uses a hashed value for the cookie name.
+			$cookieName = JApplication::getHash('JLOGIN_REMEMBER');
 
-			if ($str = JRequest::getString($hash, '', 'cookie', JREQUEST_ALLOWRAW | JREQUEST_NOTRIM))
+			// The login cookie is in "user_id:token" format.
+			$cookieVal = $app->input->cookie->getString($cookieName);
+
+			// A cookie was found, let's try it out.
+			if ($cookieVal !== null)
 			{
-				$credentials = array();
-				$goodCookie = true;
-				$filter = JFilterInput::getInstance();
+				$parts = explode(':', $cookieVal, 2);
 
-				// Create the encryption key, apply extra hardening using the user agent string.
-				// Since we're decoding, no UA validity check is required.
-				$privateKey = JApplication::getHash(@$_SERVER['HTTP_USER_AGENT']);
-
-				$key = new JCryptKey('simple', $privateKey, $privateKey);
-				$crypt = new JCrypt(new JCryptCipherSimple, $key);
-
-				try
+				// If the cookie is in the valid format, hand off the remaining checks to the cookie auth plugin.
+				if (count($parts) === 2 && is_numeric($parts[0]))
 				{
-					$str = $crypt->decrypt($str);
-					if (!is_string($str))
-					{
-						throw new Exception('Decoded cookie is not a string.');
-					}
-
-					$cookieData = json_decode($str);
-					if (null === $cookieData)
-					{
-						throw new Exception('JSON could not be docoded.');
-					}
-					if (!is_object($cookieData))
-					{
-						throw new Exception('Decoded JSON is not an object.');
-					}
-
-					// json_decoded cookie could be any object structure, so make sure the
-					// credentials are well structured and only have user and password.
-					if (isset($cookieData->username) && is_string($cookieData->username))
-					{
-						$credentials['username'] = $filter->clean($cookieData->username, 'username');
-					}
-					else
-					{
-						throw new Exception('Malformed username.');
-					}
-					if (isset($cookieData->password) && is_string($cookieData->password))
-					{
-						$credentials['password'] = $filter->clean($cookieData->password, 'string');
-					}
-					else
-					{
-						throw new Exception('Malformed password.');
-					}
-
-					$return = $app->login($credentials, array('silent' => true));
-					if (!$return)
-					{
-						throw new Exception('Log-in failed.');
-					}
-
-				}
-				catch (Exception $e)
-				{
-					$config = JFactory::getConfig();
-					$cookie_domain = $config->get('cookie_domain', '');
-					$cookie_path = $config->get('cookie_path', '/');
-					// Clear the remember me cookie
-					setcookie(
-						JApplication::getHash('JLOGIN_REMEMBER'), false, time() - 86400,
-						$cookie_path, $cookie_domain
+					// Use the user_id as the username and the token as the password.
+					$credentials = array(
+						'username' => $parts[0],
+						'password' => $parts[1]
 					);
-					JLog::add('A remember me cookie was unset for the following reason: ' . $e->getMessage(), JLog::WARNING, 'security');
+
+					return $app->login($credentials, array('silent' => true));
 				}
 			}
 		}
+	}
+
+	/**
+	 * Generate a new login cookie.
+	 *
+	 * @param  array  $user     Holds the user data
+	 * @param  array  $options  Array holding options (remember, autoregister, group)
+	 */
+	public function onUserLogin($user, $options = array())
+	{
+		$app = JFactory::getApplication();
+
+		// Let's create a new login cookie.
+		$cookieName = JApplication::getHash('JLOGIN_REMEMBER');
+
+		// Generate a secure 256 bit random token string.
+		$token = JCrypt::genRandomBytes(32);
+
+		$cookieVal = $user->id . ':' . $token;
+
+		// Get the number of days to stay logged in. Defaults to 30.
+		$loginTokenExpire = (int) $this->params->get('login_token_expire', 30);
+		$cookieExpire = time() + (3600 * 24 * $loginTokenExpire);
+		$cookiePath = $app->getCfg('cookie_path', '/');
+		$cookieDomain = $app->getCfg('cookie_domain', '');
+		$isSsl = $app->isSSLConnection();
+
+		// The final true is to make the cookie available ONLY have http. Reduces XSS vulnerability.
+		$app->input->cookie->set($cookieName, $cookieVal, $cookieExpire, $cookiePath, $cookieDomain, $isSsl, true);
+
+		return true;
 	}
 }
