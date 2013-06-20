@@ -82,6 +82,9 @@ class PlgAuthenticationCookie extends JPlugin
 	}
 
 	/**
+	 * A timing safe comparison method. This defeats hacking
+	 * attempts that use timing based attack vectors.
+	 *
 	 * @param   string  $known    A known string to check against.
 	 * @param   string  $unknown  An unknown string to check.
 	 *
