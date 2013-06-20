@@ -49,25 +49,20 @@ class PlgAuthenticationCookie extends JPlugin
 			return false;
 		}
 
-		$loginToken = implode(':', $credentials);
-
 		// Get a database object
 		$db		= JFactory::getDbo();
 		$query	= $db->getQuery(true)
-			->select('id, loginToken')
+			->select('id, username')
 			->from('#__users')
-			->where('loginToken = ' . $db->quote($loginToken));
+			->where('username = ' . $db->quote($credentials['username']))
+			->where('loginToken = ' . $db->quote($credentials['password']));
 
 		$result = $db->setQuery($query)->loadObject();
 
-		if ($result)
+		if ($result && $result->username === $credentials['username'])
 		{
-			// If the found row matches the user_id in the cookie, we have success.
-			if ($result->id === $credentials['username'])
-			{
-				$response->status = JAuthentication::STATUS_SUCCESS;
-				$response->error_message = '';
-			}
+			$response->status = JAuthentication::STATUS_SUCCESS;
+			$response->error_message = '';
 		}
 		else
 		{

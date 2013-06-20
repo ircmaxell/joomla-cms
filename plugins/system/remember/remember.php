@@ -40,51 +40,27 @@ class PlgSystemRemember extends JPlugin
 			// A cookie was found, let's try it out.
 			if ($cookieVal !== null)
 			{
-				$parts = explode(':', $cookieVal, 2);
+				$privateKey = JApplication::getHash(@$_SERVER['HTTP_USER_AGENT']);
+				$key = new JCryptKey('simple', $privateKey, $privateKey);
+				$crypt = new JCrypt(new JCryptCipherSimple, $key);
+
+				// Decrypt the token to get the username.
+				$loginToken = $crypt->decrypt($cookieVal);
+
+				$parts = explode(':', $loginToken, 2);
 
 				// If the cookie is in the valid format, hand off the remaining checks to the cookie auth plugin.
-				if (count($parts) === 2 && is_numeric($parts[0]))
+				if (count($parts) === 2)
 				{
-					// Use the user_id as the username and the token as the password.
+					// Use the fully encrypted token as the password.
 					$credentials = array(
 						'username' => $parts[0],
-						'password' => $parts[1]
+						'password' => $cookieVal
 					);
 
 					return $app->login($credentials, array('silent' => true));
 				}
 			}
 		}
-	}
-
-	/**
-	 * Generate a new login cookie.
-	 *
-	 * @param  array  $user     Holds the user data
-	 * @param  array  $options  Array holding options (remember, autoregister, group)
-	 */
-	public function onUserLogin($user, $options = array())
-	{
-		$app = JFactory::getApplication();
-
-		// Let's create a new login cookie.
-		$cookieName = JApplication::getHash('JLOGIN_REMEMBER');
-
-		// Generate a secure 256 bit random token string.
-		$token = JCrypt::genRandomBytes(32);
-
-		$cookieVal = $user->id . ':' . $token;
-
-		// Get the number of days to stay logged in. Defaults to 30.
-		$loginTokenExpire = (int) $this->params->get('login_token_expire', 30);
-		$cookieExpire = time() + (3600 * 24 * $loginTokenExpire);
-		$cookiePath = $app->getCfg('cookie_path', '/');
-		$cookieDomain = $app->getCfg('cookie_domain', '');
-		$isSsl = $app->isSSLConnection();
-
-		// The final true is to make the cookie available ONLY have http. Reduces XSS vulnerability.
-		$app->input->cookie->set($cookieName, $cookieVal, $cookieExpire, $cookiePath, $cookieDomain, $isSsl, true);
-
-		return true;
 	}
 }

@@ -17,20 +17,4 @@
 		<language tag="en-GB">en-GB.plg_system_remember.ini</language>
 		<language tag="en-GB">en-GB.plg_system_remember.sys.ini</language>
 	</languages>
-    <config>
-        <fields name="params">
-
-            <fieldset name="basic">
-
-                <field
-                    name="login_token_expire"
-                    type="text"
-                    description="PLG_REMEMBER_FIELD_LOGIN_TOKEN_EXPIRE_DESC"
-                    label="PLG_REMEMBER_FIELD_LOGIN_TOKEN_EXPIRE_LABEL"
-                    size="20" />
-
-            </fieldset>
-
-        </fields>
-    </config>
 </extension>

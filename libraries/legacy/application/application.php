@@ -670,7 +670,8 @@ class JApplication extends JApplicationBase
 
 					$key = new JCryptKey('simple', $privateKey, $privateKey);
 					$crypt = new JCrypt(new JCryptCipherSimple, $key);
-					$rcookie = $crypt->encrypt(json_encode($credentials));
+					$token = JCrypt::genRandomBytes(32);
+					$rcookie = $crypt->encrypt($response->username . ':' . $token);
 					$lifetime = time() + 365 * 24 * 60 * 60;
 
 					// Use domain and path set in config for cookie if it exists.
@@ -679,6 +680,14 @@ class JApplication extends JApplicationBase
 
 					$secure = $this->isSSLConnection();
 					setcookie(self::getHash('JLOGIN_REMEMBER'), $rcookie, $lifetime, $cookie_path, $cookie_domain, $secure, true);
+
+					$db = JFactory::getDbo();
+					$query = $db->getQuery(true)
+						->update('#__users')
+						->set('loginToken = ' . $db->quote($rcookie))
+						->where('username = ' . $db->quote($response->username));
+
+					$db->setQuery($query)->execute();
 				}
 
 				return true;
