@@ -666,9 +666,8 @@ class JApplication extends JApplicationBase
 				if (isset($options['remember']) && $options['remember'])
 				{
 					$app = JFactory::getApplication();
-					$token = JCrypt::genRandomBytes(32);
-					$db_token = base64_encode($response->username . ':' . $token);
-					$cookie_token = base64_encode($response->username . ':' . $token . ':' . hash_hmac('sha256', $token, $app->getCfg('secret')));
+					$token = base64_encode(JCrypt::genRandomBytes(32));
+					$cookie_token = $response->username . ':' . $token . ':' . hash_hmac('sha256', $token, $app->getCfg('secret'));
 					$lifetime = time() + 365 * 24 * 60 * 60;
 
 					// Use domain and path set in config for cookie if it exists.
@@ -681,7 +680,7 @@ class JApplication extends JApplicationBase
 					$db = JFactory::getDbo();
 					$query = $db->getQuery(true)
 						->update('#__users')
-						->set('loginToken = ' . $db->quote($db_token))
+						->set('loginToken = ' . $db->quote($token))
 						->where('username = ' . $db->quote($response->username));
 
 					$db->setQuery($query)->execute();

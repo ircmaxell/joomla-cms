@@ -40,21 +40,22 @@ class PlgSystemRemember extends JPlugin
 			// A cookie was found, let's try it out.
 			if ($cookieVal !== null)
 			{
-				// Decrypt the token to get the username.
-				$loginToken = base64_decode($cookieVal);
-
-				$parts = explode(':', $loginToken, 2);
+				$parts = explode(':', $cookieVal, 3);
 
 				// If the cookie is in the valid format, hand off the remaining checks to the cookie auth plugin.
-				if (count($parts) === 2)
+				if (count($parts) === 3)
 				{
-					// Use the fully encrypted token as the password.
-					$credentials = array(
-						'username' => $parts[0],
-						'password' => $cookieVal
-					);
-
-					return $app->login($credentials, array('silent' => true));
+					list ($userName, $token, $mac) = $parts;
+ 					$app = JFactory::getApplication();
+					if (JCrypt::timingSafeCompare(hash_hmac('sha256', $token, $app->getCfg('secret')), $mac)) {
+						// Use the token as the password, only if the authentication hash is successful
+						$credentials = array(
+							'username' => $userName,
+							'password' => $token
+						);
+	
+						return $app->login($credentials, array('silent' => true));
+					}
 				}
 			}
 		}

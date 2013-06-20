@@ -60,11 +60,7 @@ class PlgAuthenticationCookie extends JPlugin
 
 		if ($result && !empty($result->loginToken))
 		{
-			list($username, $token) = explode(':', base64_decode($result->loginToken));
-
-			$loginToken = base64_encode($username . ':' . $token . ':' . hash_hmac('sha256', $token, $app->getCfg('secret')));
-
-			if ($this->timingSafeCompare($loginToken, $credentials['password']))
+			if (JCrypt::timingSafeCompare($result->loginToken, $credentials['password']))
 			{
 				$response->status = JAuthentication::STATUS_SUCCESS;
 				$response->error_message = '';
@@ -85,35 +81,4 @@ class PlgAuthenticationCookie extends JPlugin
 		}
 	}
 
-	/**
-	 * A timing safe comparison method. This defeats hacking
-	 * attempts that use timing based attack vectors.
-	 *
-	 * @param   string  $known    A known string to check against.
-	 * @param   string  $unknown  An unknown string to check.
-	 *
-	 * @return  bool    True if the two strings are exactly the same.
-	 */
-	protected function timingSafeCompare($known, $unknown)
-	{
-		// Prevent issues if string length is 0
-		$known .= chr(0);
-		$unknown .= chr(0);
-
-		$knownLength = strlen($known);
-		$unknownLength = strlen($unknown);
-
-		// Set the result to the difference between the lengths
-		$result = $knownLength - $unknownLength;
-
-		// Note that we ALWAYS iterate over the user-supplied length to prevent leaking length info.
-		for ($i = 0; $i < $unknownLength; $i++) {
-			// Using % here is a trick to prevent notices. It's safe, since
-			// if the lengths are different, $result is already non-0
-			$result |= (ord($known[$i % $knownLength]) ^ ord($unknown[$i]));
-		}
-
-		// They are only identical strings if $result is exactly 0...
-		return $result === 0;
-	}
 }
