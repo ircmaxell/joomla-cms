@@ -40,12 +40,8 @@ class PlgSystemRemember extends JPlugin
 			// A cookie was found, let's try it out.
 			if ($cookieVal !== null)
 			{
-				$privateKey = JApplication::getHash(@$_SERVER['HTTP_USER_AGENT']);
-				$key = new JCryptKey('simple', $privateKey, $privateKey);
-				$crypt = new JCrypt(new JCryptCipherSimple, $key);
-
 				// Decrypt the token to get the username.
-				$loginToken = $crypt->decrypt($cookieVal);
+				$loginToken = base64_decode($cookieVal);
 
 				$parts = explode(':', $loginToken, 2);
 

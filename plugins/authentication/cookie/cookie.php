@@ -58,13 +58,17 @@ class PlgAuthenticationCookie extends JPlugin
 
 		$result = $db->setQuery($query)->loadObject();
 
-		// The password here is really the loginToken.
-		$loginToken = $credentials['password'];
-
-		if ($result && !empty($result->loginToken) && $this->timingSafeCompare($result->loginToken, $loginToken))
+		if ($result && !empty($result->loginToken))
 		{
-			$response->status = JAuthentication::STATUS_SUCCESS;
-			$response->error_message = '';
+			list($username, $token) = explode(':', base64_decode($result->loginToken));
+
+			$loginToken = base64_encode($username . ':' . $token . ':' . hash_hmac('sha256', $token, $app->getCfg('secret')));
+
+			if ($this->timingSafeCompare($loginToken, $credentials['password']))
+			{
+				$response->status = JAuthentication::STATUS_SUCCESS;
+				$response->error_message = '';
+			}
 		}
 		else
 		{

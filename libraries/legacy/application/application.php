@@ -665,26 +665,23 @@ class JApplication extends JApplicationBase
 				// Set the remember me cookie if enabled.
 				if (isset($options['remember']) && $options['remember'])
 				{
-					// Create the encryption key, apply extra hardening using the user agent string.
-					$privateKey = self::getHash(@$_SERVER['HTTP_USER_AGENT']);
-
-					$key = new JCryptKey('simple', $privateKey, $privateKey);
-					$crypt = new JCrypt(new JCryptCipherSimple, $key);
+					$app = JFactory::getApplication();
 					$token = JCrypt::genRandomBytes(32);
-					$rcookie = $crypt->encrypt($response->username . ':' . $token);
+					$db_token = base64_encode($response->username . ':' . $token);
+					$cookie_token = base64_encode($response->username . ':' . $token . ':' . hash_hmac('sha256', $token, $app->getCfg('secret')));
 					$lifetime = time() + 365 * 24 * 60 * 60;
 
 					// Use domain and path set in config for cookie if it exists.
 					$cookie_domain = $this->getCfg('cookie_domain', '');
 					$cookie_path = $this->getCfg('cookie_path', '/');
+					$isSsl = $this->isSSLConnection();
 
-					$secure = $this->isSSLConnection();
-					setcookie(self::getHash('JLOGIN_REMEMBER'), $rcookie, $lifetime, $cookie_path, $cookie_domain, $secure, true);
+					$app->input->cookie->set(self::getHash('JLOGIN_REMEMBER'), $cookie_token, $lifetime, $cookie_path, $cookie_domain, $isSsl, true);
 
 					$db = JFactory::getDbo();
 					$query = $db->getQuery(true)
 						->update('#__users')
-						->set('loginToken = ' . $db->quote($rcookie))
+						->set('loginToken = ' . $db->quote($db_token))
 						->where('username = ' . $db->quote($response->username));
 
 					$db->setQuery($query)->execute();
